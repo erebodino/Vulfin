@@ -1,0 +1,129 @@
+VULCANOS.A                                            Reporte de Fichadas (Por Legajo)
+
+PERIODO:    01/10/2020  AL   16/10/2020                                       IMPRESO EL DÍA:  16/10/2020
+
+Tipo de equipo:   TODOS
+
+Empleado:         52 - SIRAGUSA JAVIER CARLOS S.                                  Tarjeta Nº          52
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 08:00    12:53   13:16           16:49
+Viernes    02/10/2020 07:50            12:37   12:38           13:09           16:50
+Lunes      05/10/2020 07:53    12:43   13:13   16:57
+Martes     06/10/2020 07:58            09:17           10:53           13:10   17:54
+Miércoles  07/10/2020 07:49    12:40           17:49
+Jueves     08/10/2020 07:48            13:14   17:04
+Viernes    09/10/2020 07:58    12:34   13:11   16:56
+Martes     13/10/2020 07:53    12:42   13:14   17:50
+Miércoles  14/10/2020 07:50    17:48
+Jueves     15/10/2020 07:55    17:48
+Viernes    16/10/2020 07:51
+
+
+
+Empleado:        145 - ALVAREZ CARLOS MARIANO                                     Tarjeta Nº         145
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 08:24    12:43   13:12   17:21
+Viernes    02/10/2020 07:59    12:43   13:15   16:52
+Lunes      05/10/2020 07:59    13:15   13:50   18:17
+Martes     06/10/2020 07:58    13:19           18:15
+Miércoles  07/10/2020 08:02            13:19   13:19   13:51   17:48
+Jueves     08/10/2020 08:04    13:21   13:52   17:01
+Viernes    09/10/2020 08:01    14:37           15:01
+Martes     13/10/2020 08:02    12:46   13:13   18:22
+Miércoles  14/10/2020 08:02            13:08   18:12
+Jueves     15/10/2020 07:56    12:42   13:12   18:16
+Viernes    16/10/2020 08:10
+
+
+
+Empleado:        253 - VALDEZ EDUARDO CEFERINO                                    Tarjeta Nº         253
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020          08:12           08:12   19:50           19:50
+Viernes    02/10/2020          08:08           08:08   19:47           19:47            19:47
+Sábado     03/10/2020          08:04           08:04
+Lunes      05/10/2020 07:55    20:07           20:07
+Martes     06/10/2020 07:45            07:46   20:11           20:11
+Miércoles  07/10/2020 07:45            07:45   20:13           20:13
+Jueves     08/10/2020 07:45            07:45   20:06           20:07
+Viernes    09/10/2020 07:53            07:53   16:08           16:08
+Sábado     10/10/2020 07:46            07:46   16:09           16:09
+Martes     13/10/2020 19:42            19:42
+Miércoles  14/10/2020          08:10           08:10           08:10   19:48            19:48
+Jueves     15/10/2020          08:15           08:15           08:15
+
+
+
+Empleado:        260 - MONTIVERO CLAUDIO GUSTAVO                                  Tarjeta Nº         260
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 15:52
+Viernes    02/10/2020          00:03   07:41   16:07
+Lunes      05/10/2020 07:49    17:21
+Martes     06/10/2020 07:55    16:44
+Miércoles  07/10/2020 07:45    16:49
+Jueves     08/10/2020 07:50    16:52
+Viernes    09/10/2020 07:49    16:07
+Martes     13/10/2020 15:46
+Miércoles  14/10/2020          00:09   15:47
+Jueves     15/10/2020          00:01
+
+
+
+Empleado:        261 - CASTILLO YONATHAN                                          Tarjeta Nº         261
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 08:00    12:31           12:47   12:47   17:15
+Viernes    02/10/2020 08:00    12:51   12:51   16:54
+Lunes      05/10/2020 07:57    12:30   12:45   16:56
+Martes     06/10/2020 07:54    12:31   12:47   17:31
+Miércoles  07/10/2020 07:54    12:49           16:49
+Jueves     08/10/2020 07:56    12:55   12:56   17:27
+Viernes    09/10/2020 07:50    12:58   12:59   16:50           16:51
+Martes     13/10/2020 07:53    12:31   12:48   16:48
+Miércoles  14/10/2020 07:55    12:30   12:44   16:49
+Jueves     15/10/2020 07:53
+
+
+
+Empleado:        654 - CHOCOBAR SEBASTIAN ES                                      Tarjeta Nº         654
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020          08:03   23:43
+Viernes    02/10/2020          08:03   23:42
+Sábado     03/10/2020          08:08
+Lunes      05/10/2020 07:55    16:07
+Martes     06/10/2020 07:41    16:13
+Miércoles  07/10/2020 07:45    16:08
+Jueves     08/10/2020 07:42    16:12
+Viernes    09/10/2020 07:46    16:06
+Sábado     10/10/2020 07:46    16:08
+Martes     13/10/2020 15:40
+Miércoles  14/10/2020          00:07   15:40
+Jueves     15/10/2020          00:10
+
+
+
+
+
+CLRESFIC.RPT-2.0                                   ClockCard 2000 de LARCON-SIA       PÁGINA N°:
