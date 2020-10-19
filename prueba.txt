@@ -49,7 +49,7 @@ Empleado:        253 - VALDEZ EDUARDO CEFERINO                                  
 Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
 
 
-
+Miércoles  30/09/2020          08:06           08:06   19:49           19:49
 Jueves     01/10/2020          08:12           08:12   19:50           19:50
 Viernes    02/10/2020          08:08           08:08   19:47           19:47            19:47
 Sábado     03/10/2020          08:04           08:04
@@ -62,7 +62,7 @@ Sábado     10/10/2020 07:46            07:46   16:09           16:09
 Martes     13/10/2020 19:42            19:42
 Miércoles  14/10/2020          08:10           08:10           08:10   19:48            19:48
 Jueves     15/10/2020          08:15           08:15           08:15
-
+Viernes    16/10/2020          08:16           08:16           08:16
 
 
 Empleado:        260 - MONTIVERO CLAUDIO GUSTAVO                                  Tarjeta Nº         260
