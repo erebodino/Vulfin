@@ -80,7 +80,7 @@ def frameFichadas():
 
     return frame
 
-def logicaRotativos(frame,fechaInicio=None,fechaFin=None):
+def logicaRotativos(frame,inyeccion=False,fechaInicio=None,fechaFin=None):
     """
     Esta funcion se encarga de limpiar los registros de los dataframes individuales de cada
     empleado rotativo, aqui dentro esta toda la logica de limpieza de esos registros.
@@ -106,7 +106,7 @@ def logicaRotativos(frame,fechaInicio=None,fechaFin=None):
     frameOriginal = frame
     frameEnAnalisis = frame.loc[mascara].copy()
     limpiador = Analizador(frameOriginal=frameOriginal,frameEnAnalisis=frameEnAnalisis)
-    newFrame = limpiador.limpiador()
+    newFrame = limpiador.limpiador(inyeccion=inyeccion)
     
         
     return newFrame 
@@ -124,16 +124,25 @@ def frameAnalisisIndividual(frame):
 
     """
     legajos = frame['Empleado'].unique()
-    legajos_query = ['253','260','261']
+    legajosQueryInyeccion = ['253','260','261']
+    legajosQuerySoplado = ['130','202']
     
     fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
     fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
     
-    lista =[]
+    lista =[] 
     for legajo in legajos:
         newFrame = frame[frame['Empleado']==legajo]
-        if legajo in legajos_query:
-            newFrame = logicaRotativos(newFrame,fechaInicio=fechaInicio,fechaFin=fechaFin)
+        if legajo in legajosQueryInyeccion:
+            newFrame = logicaRotativos(newFrame,fechaInicio=fechaInicio,fechaFin=fechaFin,
+                                       inyeccion=True)
+        elif legajo in legajosQuerySoplado:
+            newFrame = logicaRotativos(newFrame,fechaInicio=fechaInicio,fechaFin=fechaFin,
+                                       inyeccion=False)
+        else:
+            mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
+            newFrame = newFrame.loc[mascara].copy()
+            
         
         lista.append(newFrame)
     
