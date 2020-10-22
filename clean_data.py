@@ -2,7 +2,11 @@ import pandas as pd
 #from limpieza import ingreso_egreso
 from paths import empleados_text
 import pyinputplus as pyip
-from analizador import Analizador
+from analizador import Analizador,CalculadorHoras,informeNoFichadas
+import numpy as np
+
+
+
 def validador(eleccion):
     if eleccion not in ['1','2','3']:
         raise Exception('\nEleccion de turno invalida, reingrese una de las opciones sugeridas\n\n')
@@ -47,6 +51,12 @@ def ingreso_egreso(line,frame,legajo,nombre):
         print(e)
         #logger.exception('',exc_info=True)
 
+def creacionFrameVacio():
+    columnas = ['Empleado','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1',
+                        'Ingreso_2','Egreso_2','Ingreso_3','Egreso_3','Ingreso_4','Egreso_4',
+                        ]
+    frame = pd.DataFrame(columns=columnas)
+    return frame
 
 
 def frameFichadas():
@@ -60,13 +70,11 @@ def frameFichadas():
                        'Domingo':6,
               }
     
-    columnas = ['Empleado','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1',
-                        'Ingreso_2','Egreso_2','Ingreso_3','Egreso_3','Ingreso_4','Egreso_4',
-                        ]
+    frame = creacionFrameVacio()
     MedioDia = None
     # fechaInicioAnalisis = pd.to_datetime(pyip.inputDate('Primer dia de analisis en formato DD/MM/AAAA: ',formats=["%d/%m/%Y"]))
     # fechaFinAnalisis = pd.to_datetime(pyip.inputDate('Ultimo dia de analisis en formato DD/MM/AAAA: ',formats=["%d/%m/%Y"]))
-    frame = pd.DataFrame(columns=columnas)
+
     with open(empleados_text) as file: 
     #with open(empleados_text,encoding="utf-8") as file:    
                     for line in file.readlines():
@@ -123,6 +131,9 @@ def frameAnalisisIndividual(frame):
     Dataframe
 
     """
+    columnas = ['Empleado','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1',
+                        'Ingreso_2','Egreso_2','Ingreso_3','Egreso_3','Ingreso_4','Egreso_4',
+                        ]
     legajos = frame['Empleado'].unique()
     legajosQueryInyeccion = ['253','260','261']
     legajosQuerySoplado = ['130','202']
@@ -130,13 +141,16 @@ def frameAnalisisIndividual(frame):
     fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
     fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
     
-    lista =[] 
+    lista =[]
+    frameAnalisis = creacionFrameVacio()
     for legajo in legajos:
         newFrame = frame[frame['Empleado']==legajo]
         if legajo in legajosQueryInyeccion:
+            continue
             newFrame = logicaRotativos(newFrame,fechaInicio=fechaInicio,fechaFin=fechaFin,
                                        inyeccion=True)
         elif legajo in legajosQuerySoplado:
+            continue
             newFrame = logicaRotativos(newFrame,fechaInicio=fechaInicio,fechaFin=fechaFin,
                                        inyeccion=False)
         else:
@@ -144,9 +158,50 @@ def frameAnalisisIndividual(frame):
             newFrame = newFrame.loc[mascara].copy()
             
         
-        lista.append(newFrame)
+        frameAnalisis = frameAnalisis.append(newFrame)
+    #Escritura en base de datos Aqui<<<<<<<<<
     
-    return lista
+    return frameAnalisis
+
+def calculos(frame):
+    
+    sql_conection = None
+    columnasExcel = ['LEG','APELLIDO','NOMBRE','AREA','TIPO DE PAGO']
+    consultaEmpleados = pd.read_excel(r'J:\Emma\Vulcano\RelojRRHH\Proyecto\BD Modif.xlsx',names = columnasExcel)
+    #legajosBD = consultaEmpleados['LEG'] #Son enteros
+    
+    fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+    fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+    
+    legajosSinInyeccion = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') &(consultaEmpleados['AREA'] != 'SOPLADO')] 
+    legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
+
+    legajosFrame = frame['Empleado'].unique()
+
+    frameAnalisis = creacionFrameVacio()
+    
+    for legajo in legajosFrame:
+
+        if int(legajo) in legajosSinInyeccion:
+            print(legajo)
+            newFrame = frame[frame['Empleado']==legajo].copy()
+            calculador = CalculadorHoras()
+            frameCalculado = calculador.horasTrabajadas(newFrame)        
+            frameAnalisis = frameAnalisis.append(frameCalculado)
+        
+    frameAnalisis = frameAnalisis.reset_index(drop=True) 
+    informeNoFichadas(frameAnalisis,fechaInicio,fechaFin,mediosDias=[],feriados=[])
+    
+    
+    return frameAnalisis
+    #newFrame = calculador.horasExtrasTrabajadas(newFrame)
+        
+    
+        
+    
+    
+    
+    
     
 
     
@@ -160,5 +215,6 @@ def frameAnalisisIndividual(frame):
 
 valor = frameFichadas()
 legajos = frameAnalisisIndividual(valor)
-valdez = legajos[0]
-montivero = legajos[1]
+conHoras = calculos(legajos)
+# valdez = legajos[0]
+# montivero = legajos[1]
