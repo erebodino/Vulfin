@@ -1,0 +1,123 @@
+commit d05eac0624db2efcccbf4491a32e3c21bb8436f2 (HEAD -> master)
+Author: erebodino <erebodino@gmail.com>
+Date:   Wed Oct 21 23:11:46 2020 -0300
+
+    Agregue una nueva clase para generar los analisis de faltas de fichaje, esta
+ funcional la parte de creacion de informe en PDF, pero quedaris refactorizar pa
+ra que ser una clase
+
+diff --git a/BD Modif.xlsx b/BD Modif.xlsx
+new file mode 100644
+index 0000000..fb810d5
+Binary files /dev/null and b/BD Modif.xlsx differ
+diff --git a/Informe No fichaje del 2020-10-01 al 2020-10-15 .pdf b/Informe No f
+ichaje del 2020-10-01 al 2020-10-15 .pdf
+new file mode 100644
+index 0000000..1a4ea98
+Binary files /dev/null and b/Informe No fichaje del 2020-10-01 al 2020-10-15 .pd
+f differ
+diff --git a/__pycache__/analizador.cpython-37.pyc b/__pycache__/analizador.cpyt
+hon-37.pyc
+index a0787a7..165bbe1 100644
+Binary files a/__pycache__/analizador.cpython-37.pyc and b/__pycache__/analizado
+r.cpython-37.pyc differ
+diff --git a/analizador.py b/analizador.py
+index 298022f..5fda191 100644
+--- a/analizador.py
++++ b/analizador.py
+@@ -1,3 +1,7 @@
++import docx
++import pandas as pd
++import os
++import win32com.client
+ class Analizador:
+     """
+     Clase que viene a hacer de limpieza para el dataframe, se encarga de leer l
+inea por linea
+@@ -30,10 +34,11 @@ class Analizador:
+         import pandas as pd
+         import datetime
+         
+-        for renglon in range(len(self.frameEnAnalisis)-1):
++        for renglon in range(len(self.frameEnAnalisis)):
+             if inyeccion:
+                 dia = self.frameEnAnalisis.iloc[renglon,3]
+                 ayer = dia - datetime.timedelta(days=1)
++                mañana = dia + datetime.timedelta(days=1)
+                 
+                 turnoMañanaIngreso = pd.to_datetime(('{} 8:00').format(dia))
+                 turnoMañanaSalida = pd.to_datetime(('{} 16:48').format(dia))
+@@ -56,15 +61,22 @@ class Analizador:
+                 ceroAyer = pd.to_datetime(('{} 00:00').format(ayer))
+                 medioDiaAyer = pd.to_datetime(('{} 12:00').format(ayer))
+                 
++                turnoTardeIngresoTomorrow = pd.to_datetime(('{} 16:00').format(
+mañana))
++                turnoMañanaIngresoTomorrow = pd.to_datetime(('{} 8:00').format
+(mañana))
++                turnoNocheIngresoTomorrow = pd.to_datetime(('{} 00:00').format(
+mañana))
++                
+                 
+                 for posicion in range(4,14,2):# iteracion sobre las columnas de
+l dataFrame, arrancando con el primer ingreso.
+                     
+-                    if (self.frameEnAnalisis.iloc[renglon,posicion] >= turnoMa�
+�anaIngreso and self.frameEnAnalisis.iloc[renglon,posicion] < medioDia) and self
+.frameOriginal.iloc[renglon,posicion +1] > turnoTardeIngresoAyer:
+-                        # condiciones sobre si el primer registro del dataFrame
+ para ver si pertenece al primer turno del dia (NOCHE)
+-                        #print('pasando 1',dia)
+-                        fechaIngreso = self.frameOriginal.iloc[renglon,posicion
+ +1]                                       
+-                        self.frameEnAnalisis.iloc[renglon,posicion +1] =  self.
+frameEnAnalisis.iloc[renglon,posicion]
+-                        self.frameEnAnalisis.iloc[renglon,posicion] = fechaIngr
+eso
++                    if (self.frameEnAnalisis.iloc[renglon,posicion] >= turnoMa�
+�anaIngreso and self.frameEnAnalisis.iloc[renglon,posicion] < medioDia) and \
++                        (self.frameEnAnalisis.iloc[renglon,posicion +1] > turno
+TardeIngreso or self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):
++                            # condiciones sobre si el primer registro del dataF
+rame para ver si pertenece al primer turno del dia (NOCHE)
++                            #print('pasando 1',dia)
++                            fechaIngreso = self.frameOriginal.iloc[renglon,posi
+cion +1]                                       
++                            self.frameEnAnalisis.iloc[renglon,posicion +1] =  s
+elf.frameEnAnalisis.iloc[renglon,posicion]
++                            self.frameEnAnalisis.iloc[renglon,posicion] = fecha
+Ingreso
++                            
++                                
+                     
+                     elif self.frameEnAnalisis.iloc[renglon,posicion] == self.fr
+ameEnAnalisis.iloc[renglon -1,posicion +1] :
+                         #Correcion del dataFrame cuando hay solo un registro en
+ 1 dia y pertenece al ultimo turno
+@@ -81,32 +93,49 @@ class Analizador:
+                         break
+                                  
+                         
+-                    if (self.frameEnAnalisis.iloc[renglon,posicion] > medioDia 
+and self.frameEnAnalisis.iloc[renglon,posicion] < turnoTardeIngreso) and self.fr
+ameEnAnalisis.iloc[renglon,posicion +1] == cero:
++                    if (self.frameEnAnalisis.iloc[renglon,posicion] > medioDia 
+and self.frameEnAnalisis.iloc[renglon,posicion] < turnoTardeIngreso) and self.fr
+ameEnAnalisis.iloc[renglon,posicion +1] == cero and \
++                        self.frameEnAnalisis.iloc[renglon +1 ,posicion] > turno
+NocheIngresoTomorrow and \
++                        self.frameEnAnalisis.iloc[renglon +1 ,posicion +1] <= t
+urnoMañanaIngresoTomorrow :
+                         #Condicion para ver si pertenece al turno tarde y no ha
+y mas registros en ese dia
+                         #print('pasando 3',dia)
+-                        fechaSalida = self.frameOriginal.iloc[renglon +1,posici
+on]
++                        fechaSalida = self.frameOriginal.iloc[renglon +2,posici
+on]
+                         self.frameEnAnalisis.iloc[renglon,posicion +1] =  fecha
+Salida
++                        self.frameEnAnalisis.iloc[renglon +1,posicion] =  self.
+frameEnAnalisis.iloc[renglon +1,posicion +1]
++                        self.frameEnAnalisis.iloc[renglon +1,posicion +1] =  se
+lf.frameEnAnalisis.iloc[renglon +1,posicion +2]

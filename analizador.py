@@ -2,6 +2,10 @@ import docx
 import pandas as pd
 import os
 import win32com.client
+import datetime
+import pyinputplus as pyip
+from termcolor import colored
+
 class Analizador:
     """
     Clase que viene a hacer de limpieza para el dataframe, se encarga de leer linea por linea
@@ -195,7 +199,7 @@ class Analizador:
                               self.frameEnAnalisis.iloc[renglon,posicion +1] > turnoTardeIngreso and \
                               self.frameEnAnalisis.iloc[renglon -1,posicion +2] > turnoTardeIngresoAyer:
                             #Condicion para ver si pertenece al turno tarde y la fecha tiene que ser corrida en 1 posicion hacia abajo.
-                                print('pasando 3',dia)
+
                                 fechaIngreso = self.frameEnAnalisis.iloc[renglon -1,posicion +2]
                                 self.frameEnAnalisis.iloc[renglon,posicion +2] = self.frameEnAnalisis.iloc[renglon,posicion +1]
                                 self.frameEnAnalisis.iloc[renglon,posicion +1] = self.frameEnAnalisis.iloc[renglon,posicion]              
@@ -203,21 +207,6 @@ class Analizador:
                                 self.frameEnAnalisis.iloc[renglon -1,posicion +2] = ceroAyer
                                 break
 
-
-                            
-                
-                            
-                        # elif self.frameEnAnalisis.iloc[renglon,posicion] > turnoTardeIngreso and self.frameEnAnalisis.iloc[renglon,posicion +1] == cero:
-                        #     #Condicion para ver si corresponde a un ingreso nocturno que hace horas extras y no hay mas
-                        #     #registros en la linea.
-                        #     #print('pasando 4',dia)
-                        #     fechaIngreso = self.frameEnAnalisis.iloc[renglon,posicion]
-                            
-                        #     self.frameEnAnalisis.iloc[renglon +1,posicion +1] = self.frameEnAnalisis.iloc[renglon +1,posicion]
-                        #     self.frameEnAnalisis.iloc[renglon +1,posicion] = fechaIngreso
-                            
-                        #     self.frameEnAnalisis.iloc[renglon,posicion] = pd.to_datetime(('{} 00:00').format(dia))
-                        #     break
                     
         
         return self.frameEnAnalisis
@@ -232,116 +221,223 @@ class CalculadorHoras:
         frame['H. 50'] = 0
         frame['H. 100'] = 0
         
+        ingreso = '08:00'
+        salida = '16:48'
+        horaSalidaSabado = '13:00'
+        
+        
         for fila in range(len(frame)):
                 horas_trabajadas = 0
                 fecha = frame.iloc[fila,3]
                 dia = frame.iloc[fila,2]
+                salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
+                ceroHoy = pd.to_datetime(('{} 00:00').format(fecha))
+                horaIngreso = pd.to_datetime(('{} {}').format(fecha,ingreso))
+                horaSalida =pd.to_datetime(('{} {}').format(fecha,salida))
         
                 for idx in range(4,14,2):
                     if frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] != pd.to_datetime(('{} 00:00').format(fecha)):
                         horas_trabajadas = 0
                         break
-                    else:
-                        horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds
+                    elif frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] == pd.to_datetime(('{} 00:00').format(fecha)): 
+                        break
+                    else:# Aca comienza a contar las horas trabajadas reales.
+                        if frame.iloc[fila,idx + 1] <= horaSalida:
+                            
+                            if frame.iloc[fila,idx] <= horaIngreso: 
+                                horas_trabajadas += (frame.iloc[fila,idx + 1] - horaIngreso).seconds
+                        
+                            else:
+                                horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds
+                        else:
+                            horas_trabajadas += (horaSalida - frame.iloc[fila,idx]).seconds
+
                 
                 horas_trabajadas = round(horas_trabajadas /3600,2)
                 frame.iloc[fila,14] = horas_trabajadas
 
         return frame
     
-    def horasExtrasTrabajadas(self,frame,frameEmpleados,feriados=None,toleranciaHoraria=1):
+    def horasExtrasTrabajadas(self,frame,feriados=[],toleranciaHoraria=1):
+        """
         
-        indices = [frame[frame['H.Norm.'] != 0].index[x] for x in range(len(frame[frame['H.Norm.Emp'] != 0]))]
-        fecha = frame.iloc[fila,3]
-        dia = frame.iloc[fila,2]
+        Parameters
+        ----------
+        frame : dataFrame
+            Frame con todos los registros (datos del operarios e ingresos/egresos por dia).
+        feriados : List, optional
+            DESCRIPTION. The default is []. Opcional, una lista con los dias feriados dentro de los dias a analizar
+        toleranciaHoraria : int, optional
+            DESCRIPTION. The default is 1. Opcional, un numero que representa el valor minimo de minutos que tiene que pasar desde
+            la hora de ingreso/egreso para que se empiezen a computar minutos extras.
+
+        Returns
+        -------
+        frame : dataFrame
+            dataFrame con todos los campos calculados Horas extras al 50% y al 100%.
+
+        """
         
-        for indice in indices:
+        #indices = [frame[frame['H.Norm.'] != 0].index[x] for x in range(len(frame[frame['H.Norm.Emp'] != 0]))]
+        ingreso = '08:00'
+        salida = '16:48'
+        horaSalidaSabado = '13:00'
+        for fila in range(len(frame)):
+            fecha = frame.iloc[fila,3]
+            dia = frame.iloc[fila,2]
             minutosExtras100 = 0
-            minutosExtras50 = 0
-            fecha = frame.iloc[indice,3]
-            ingreso = '08:00'
-            salida = '16:00'
-            horaSalidaSabado = '13:00'
+            minutosExtras50 = 0            
             salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
-            ceroHoy = pd.to_datetime(('{} {00:00}').format(fecha))
+            ceroHoy = pd.to_datetime(('{} 00:00').format(fecha))#Media noche del dia en analisis
             horaIngreso = pd.to_datetime(pd.to_datetime(('{} {}').format(fecha,ingreso)) - datetime.timedelta(minutes=toleranciaHoraria))
-            horaSalida = pd.to_datetime(pd.to_datetime(('{} {}').format(fecha,salida)) + datetime.timedelta(minutes=toleranciaHoraria))
+            #Hora con el limite de tiempo ya asiganado, en el ingreso se resta, en la salida se suma.
+            horaSalida = pd.to_datetime(pd.to_datetime(('{} {}').format(fecha,salida)) + datetime.timedelta(minutes=toleranciaHoraria))#Same above.
             
-            ingresoOperario = frame.iloc[indice,4]
+            ingresoOperario = frame.iloc[fila,4]
             salidaOperario = 0
             
             for x in range(5,15,2):
-                if frame.iloc[indice,x + 1] ==  ceroHoy:
-                    salidaOperario = frame.iloc[indice,x + 1]
+                if frame.iloc[fila,x] ==  ceroHoy:
+                    salidaOperario = frame.iloc[fila,x -2]
                     break
             
-            if (dia == 'Sábado' and salidaOperario > salidaSabado):
-                minutosExtras100 += ((salidaOperario - salidaSabado).second)/3600
-                frame.iloc[indice,15] = frame.iloc[indice,15] - minutosExtras100
-                break
+            if (dia == 'Sábado' and salidaOperario > salidaSabado): #Checkea si es sabado pasadas las 13
+                minutosExtras100 += ((salidaOperario - salidaSabado).seconds)/3600
+                frame.iloc[fila,16] = minutosExtras100 #Asigna las horas extras al 100%
+
             
             elif dia in feriados:
-                minutosExtras100 += frame.iloc[indice,15]
-                frame.iloc[indice,15] = 0
-                frame.iloc[indice,17] = minutosExtras100
-                break
+                minutosExtras100 += frame.iloc[fila,14]
+                frame.iloc[fila,14] = 0
+                frame.iloc[fila,16] = minutosExtras100
+
             
             else:
                 if salidaOperario > horaSalida:
-                    minutosExtras50 += ((salidaOperario - horaSalida).second)/3600
-                elif ingresoOperario < horaIngreso:
-                    minutosExtras50 += ((horaIngreso - ingresoOperario).second)/3600
+                    minutosExtras50 += ((salidaOperario - horaSalida).seconds)/3600
+                if ingresoOperario < horaIngreso:
+                    minutosExtras50 += ((horaIngreso - ingresoOperario).seconds)/3600
+
             
-            frame.iloc[indice,15] = frame.iloc[indice,15] - minutosExtras50
-            frame.iloc[indice,16] = minutosExtras50
+            frame.iloc[fila,15] = round(minutosExtras50,2) #Asigna las horas extras al 50%
         
         return frame
     
-def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias,feriados):
+def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):
+        """
+        Parameters
+        ----------
+        frame : dataFrame
+            Frame con todos los registros (datos del operarios e ingresos/egresos por dia).
+        fechaInicio : datetime.date
+            Fecha de inicio de analisis de los registros.
+        fechaFin : datetime.date
+            Fecha de fin de analisis de los registros.
+        mediosDias : List, optional
+            DESCRIPTION. The default is []. Opcional, una lista con los medios dias en los
+            dias bajo analisis.
+        feriados : List, optional
+            DESCRIPTION. The default is [].Opcional, una lista con los feriados en los
+            dias bajo analisis.
+    
+        Returns
+        -------
+        None.
+        
+        La forma de analisis es en forma de pares ingreso-egreso, en funcion de eso se aplica la logica.
+    
+        """
 
       
-        len_noMarca = len(frame[frame['H.Norm'] == 0])
-        print(len_noMarca)
+        campo = 'H.Norm' #campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
+        len_noMarca = len(frame[frame[campo] == 0]) #Devuelve la cantidad de filas a las que no se le calculo
+        #horas trabajasdas debido a un error en los registros (faltan datos)
         doc = docx.Document()
         doc.add_heading(('Olvidos de fichaje entre {} y {}').format(fechaInicio,fechaFin), 0)
         c = doc.add_paragraph('Personal que no ha fichado: \n')
-        for x in range(len_noMarca):
-            legajo = frame.iloc[frame[frame['H.Norm'] == 0].index[x],0]
-            nombre = frame.iloc[frame[frame['H.Norm'] == 0].index[x],1]
-            dia = frame.iloc[frame[frame['H.Norm'] == 0].index[x],2]
-            fecha = frame.iloc[frame[frame['H.Norm'] == 0].index[x],3]
-            print(x,nombre)
-            
-            hora = frame.iloc[frame[frame['H.Norm'] == 0].index[x],4]
-            hora_2 = frame.iloc[frame[frame['H.Norm'] == 0].index[x],6]
-            if dia not in feriados and dia in mediosDias: 
-                
-                if hora_2 == pd.to_datetime(('{} 00:00').format(fecha)):                   
-                    if hora >= pd.to_datetime(('{} 10:00').format(fecha)):
-                        c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Ingreso.').format(dia,nombre))
-                    else:
-                        c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Salida.').format(dia,nombre))
-    
-                else:
-                    if hora_2 >= pd.to_datetime(('{} 10:00').format(fecha)):
-                        c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Re-ingreso.').format(dia,nombre))
-                    else:   
-                        c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Salida.').format(dia,nombre))
-                        
-            else:
-                if dia not in feriados: 
-                
-                    if hora_2 == pd.to_datetime(('{} 00:00').format(fecha)):                   
-                        if hora >= pd.to_datetime(('{} 15:00').format(fecha)):
-                            c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Ingreso.').format(dia,nombre))
-                        else:
-                            c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Salida.').format(dia,nombre))
+        msgWord = '\n\tEl dia {} ({}) el empleado {:10s} no ficho {}, {} a las {}.'
+        ingreso = 'ingreso'
+        reIngreso = 're-ingreso'
+        salida = 'salida'
+        almuerzo = salida+' o '+reIngreso
         
-                    else:
-                        if hora_2 >= pd.to_datetime(('{} 15:00').format(fecha)):
-                            c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Re-ingreso.').format(dia,nombre))
-                        else:   
-                            c.add_run(('\n\tEl dia {} el empleado {:10s} no ficho Salida.').format(dia,nombre)) 
+        for x in range(len_noMarca):
+            legajo = frame.iloc[frame[frame[campo] == 0].index[x],0]
+            nombre = frame.iloc[frame[frame[campo] == 0].index[x],1]
+            dia = frame.iloc[frame[frame[campo] == 0].index[x],2]
+            fecha = frame.iloc[frame[frame[campo] == 0].index[x],3]            
+            #----------------- limites horarios -------------------
+            cero = pd.to_datetime(('{} 00:00').format(fecha))
+            salidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
+            mitadMañana = pd.to_datetime(('{} 10:30').format(fecha))
+            treceHoras = pd.to_datetime(('{} 13:00').format(fecha))
+            
+            
+            if dia in mediosDias: #Checkea que sea medio dia. Analisis diferente para dias completos y medios dias. 
+                for posicion in range(4,14,2): #Itera sobre los ingresos/egresos
+                    hora_ingreso = frame.iloc[frame[frame[campo] == 0].index[x],posicion]
+                    hora_egreso = frame.iloc[frame[frame[campo] == 0].index[x],(posicion +1)]
+                    
+                    hora_ingresoHoras = '{:02d}:{:02d}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
+                    hora_salidaHoras = '{:02d}:{:02d}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
+                
+                    if (hora_ingreso and hora_egreso) != cero: #Si el par esta completo, sigue.
+                        continue
+                    
+                    elif hora_ingreso != cero and hora_egreso == cero:
+                        if posicion == 4 and hora_ingreso > mitadMañana:# condicion para ver si no ficho INGRESO (solo 1 par ingreso-egreso)
+                            c.add_run((msgWord).format(dia,fecha,nombre,ingreso,salida,hora_ingresoHoras))
+                            break
+                        elif posicion == 4 and hora_ingreso < mitadMañana:# condicion para ver si no ficho EGRESO (solo 1 par ingreso-egreso)
+                            c.add_run((msgWord).format(dia,fecha,nombre,salida,ingreso,hora_ingresoHoras))
+                            break                           
+                            
+                        elif hora_ingreso < salidaMedioDia:# condicion para ver si no ficho INGRESO (MAS de 1 par de ingresos-egresos)
+                            c.add_run((msgWord).format(dia,fecha,nombre,salida,reIngreso,hora_ingresoHoras))
+                            break
+                            
+                        elif hora_ingreso > salidaMedioDia:# condicion para ver si no ficho EGRESO (MAS de 1 par de ingresos-egresos)
+                            c.add_run((msgWord).format(dia,fecha,nombre,reIngreso,salida,hora_ingresoHoras))
+                            break
+            else:
+                for posicion in range(4,14,2):#analisis de las columnas en pares de 2 (ingreso,egreso)
+                    hora_ingreso = frame.iloc[frame[frame[campo] == 0].index[x],posicion]#(ingreso)
+                    hora_egreso = frame.iloc[frame[frame[campo] == 0].index[x],(posicion +1)]#(egreso)
+                    
+                    hora_ingresoHoras = '{}:{}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
+                    hora_salidaHoras = '{}:{}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
+                    
+
+                    if posicion > 4:#Si hay mas de 1 pas de ingreso-egreso, carga el egreso inmediato anterior
+                        hora_egreso_anterior = frame.iloc[frame[frame[campo] == 0].index[x],(posicion -1)]                        
+
+                    
+                    if (hora_ingreso and hora_egreso) != cero: #si el par esta completo sigue
+                        continue
+                    
+
+                    if hora_ingreso != cero and hora_egreso == cero: #condicion de par INCOMPLETO, con solo 1 par de ingreso-egreso                    
+                        if posicion == 4 and hora_ingreso > mitadMañana: #condicion para ver si no ficho INGRESO 
+                            c.add_run((msgWord).format(dia,fecha,nombre,ingreso,salida,hora_ingresoHoras))
+                            break
+                        
+                        elif posicion == 4 and hora_ingreso < mitadMañana:#condicion para ver si no ficho EGRESO
+                            c.add_run((msgWord).format(dia,fecha,nombre,salida,ingreso,hora_ingresoHoras))
+                            break
+                    
+                    # A partir de aca, estas condiciones implican mas de 1 par de ingreso-egreso.
+                    if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+                    # es mayor a 1 hora, en ese caso considera que no se ficho el INGRESO o EGRESO del ALMUERZO.
+                        c.add_run((msgWord).format(dia,fecha,nombre,almuerzo,salida,hora_ingresoHoras))
+                        break
+                    
+                    elif ((hora_ingreso - hora_egreso_anterior).seconds)/3600 < 1.0:#Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+                    # es menor a 1 hora, en ese caso considera que no se ficho EGRESO del dia.
+                        c.add_run((msgWord).format(dia,fecha,nombre,salida,salida,hora_ingresoHoras))
+                        break
+                        
+                        
+        
         fechaInicio = str(fechaInicio)
         fechaFin = str(fechaFin)
         fini = '\\Informe No fichaje del {} al {} .docx'.format(fechaInicio.replace('/','-'),fechaFin.replace('/','-'))
@@ -351,8 +447,7 @@ def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias,feriados):
         doc.save(pathToWord)
         
         
-        wordFilename = pathToWord
-        
+        wordFilename = pathToWord        
         pdfFilename = pathToPDF
         
         
@@ -363,16 +458,155 @@ def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias,feriados):
         docObj.Close()
         wordObj.Quit()
         os.remove(pathToWord)
-
-                
-                
-            
-                
         
+def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
+        """
         
     
-                
-                
-                
-            
+        Parameters
+        ----------
+        frame : dataFrame
+            Frame con todos los registros (datos del operarios e ingresos/egresos por dia).
+        MedioDia : List, optional
+            DESCRIPTION. The default is []. Opcional, una lista con los medios dias en los
+            dias bajo analisis.
+        feriados : List, optional
+            DESCRIPTION. The default is [].Opcional, una lista con los feriados en los
+            dias bajo analisis.
+    
+        Returns
+        -------
+        frame : dataFrame
+            dataFrame corregido ya con todos los registros de manera correcta, a partir de este se puede guardar en la
+            BD o hacer calculos.    
+        """
         
+        print('\n\nLos siguientes operarios no ficharon, ingrese las horas en formato HH:MM\n')
+        campo = 'H.Norm' #campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
+        len_noMarca = len(frame[frame[campo] == 0]) #Devuelve la cantidad de filas a las que no se le calculo
+
+        msgWord = '\n\tEl dia {} ({}) el empleado {:10s} no ficho {}, {} a las {}.'
+        ingreso = 'ingreso'
+        reIngreso = 're-ingreso'
+        salida = 'salida'
+        almuerzo = colored(salida+' o '+reIngreso,attrs=['underline']) #Se les asigna color y subrayado a las palabras ingreso-egreso        
+        ingresoColor = colored('Ingreso: ','green',attrs=['bold','dark','underline']) #Se les asigna color y subrayado a las palabras ingreso-egreso
+        egresoColor = colored('Egreso: ','red',attrs=['bold','dark','underline']) #Se les asigna color y subrayado a las palabras ingreso-egreso
+        for x in range(len_noMarca): #Itera sobre las filas que tienen algun error,
+
+            legajo = frame.iloc[frame[frame[campo] == 0].index[x],0] #con x y el filtro establece la fila con error.
+            nombre = frame.iloc[frame[frame[campo] == 0].index[x],1]
+            nombre = colored(nombre,'grey',on_color='on_red')
+            dia = frame.iloc[frame[frame[campo] == 0].index[x],2]
+            fecha = frame.iloc[frame[frame[campo] == 0].index[x],3]
+            
+            #-------- limites horarios ----------
+            cero = pd.to_datetime(('{} 00:00').format(fecha))
+            salidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
+            mitadMañana = pd.to_datetime(('{} 10:30').format(fecha))
+            treceHoras = pd.to_datetime(('{} 13:00').format(fecha))
+                       
+            for posicion in range(4,14,2):#analisis de las columnas en pares de 2 (ingreso,egreso)
+                    hora_ingreso = frame.iloc[frame[frame[campo] == 0].index[x],posicion]#(ingreso)
+                    hora_egreso = frame.iloc[frame[frame[campo] == 0].index[x],(posicion +1)]#(egreso)
+                    
+                    hora_ingresoHoras = '{}:{}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
+                    hora_salidaHoras = '{}:{}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
+                    
+
+                    if posicion > 4:
+                        hora_egreso_anterior = frame.iloc[frame[frame[campo] == 0].index[x],(posicion -1)]                        
+
+                    
+                    if (hora_ingreso and hora_egreso) != cero: #si el par esta completo sigue
+                        continue
+                    
+
+                    if hora_ingreso != cero and hora_egreso == cero:                        
+                        if posicion == 4 and hora_ingreso > mitadMañana: # Verifica si solo hay 1 par de ingreso-egreso y si no se ficho INGRESO.
+                            print(('El dia {} el operario {:10s} no ficho INGRESO. Ingreso  a la hora: ').format(fecha,nombre))
+                            horaEntrada = str(pyip.inputDatetime('Ingrese el horario de Ingreso en formato HH:MM: ',formats=["%H:%M"]))
+                            horaEntrada = horaEntrada.split()[1] #Rompe la str ya que inputDatetime devuelve '1900-01-01 HH:MM:SS' y se queda
+                            # con la segunda parte HH:MM:SS
+                            horaEntrada = horaEntrada.split(':')[0]+':'+horaEntrada.split(':')[1] #Vuelve a romper y se queda con HH y MM
+                            horaEntrada = pd.to_datetime(('{} {}').format(fecha,str(horaEntrada))) #Da el formato correcto con 'fecha HH:MM'
+                            
+                            horaSalida = frame.iloc[frame[frame[campo] == 0].index[x],4] #guarda la hora salida para no borrarla.
+                            frame.iloc[frame[frame[campo] == 0].index[x],4] = horaEntrada #Donde esta la hora de salida, pone el ingreso
+                            frame.iloc[frame[frame[campo] == 0].index[x],5] = horaSalida #Donde esta la hora de ingreso, pone el salida.
+                            break
+                        
+                        elif posicion == 4 and hora_ingreso < mitadMañana:# Verifica si solo hay 1 par de ingreso-egreso y si no se ficho EGRESO.
+                            print(('El dia {} el operario {:10s} no ficho SALIDA. Salio  a la hora: ').format(fecha,nombre))
+                            horaSalida = str(pyip.inputDatetime('Ingrese el horario de SALIDA en formato HH:MM: ',formats=["%H:%M"]))
+                            horaSalida = horaEntrada.split()[1]
+                            horaSalida = horaEntrada.split(':')[0]+':'+horaEntrada.split(':')[1]
+                            horaSalida = pd.to_datetime(('{} {}').format(fecha,str(horaEntrada)))
+                            
+                            horaEntrada = frame.iloc[frame[frame[campo] == 0].index[x],4]
+                            frame.iloc[frame[frame[campo] == 0].index[x],4] = horaEntrada
+                            frame.iloc[frame[frame[campo] == 0].index[x],5] = horaSalida
+                            break
+                    
+                    # A partir de aca, estas condiciones implican mas de 1 par de ingreso-egreso.
+                    if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+                    # es mayor a 1 hora, en ese caso considera que no se ficho el INGRESO o EGRESO del ALMUERZO.
+                        print('='*30)
+                        print(('El dia {} el operario {:10s} no ficho Salida o re-ingreso (Almuerzo). Re-ingrese las horas:\n').format(fecha,nombre))
+                        print('Entradas y salidas del dia:\n')
+                        cantidad = 0
+                        for horario in range(4,12,1):#Itera sobre los registros con error y los imprime
+                            cantidad +=1
+                            hora = frame.iloc[frame[frame[campo] == 0].index[x],horario]
+
+                            if hora != cero:
+                                if horario % 2 == 0:#Verifica si es par(ingreso) o impar(egreso)
+                                    print(('{} {}').format(ingresoColor,str(hora))+'\n')
+                                else:
+                                    print(('    {} {}').format(egresoColor,str(hora))+'\n')
+                            else:#en caso de llegar a un registro 00:00 corta el ciclo
+                                break
+                        #En esta variable se almacenan TODOS los horarios NUEVAMENTE, mas el horario que faltaba.
+                        horarios = [str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"])) for x in range(cantidad)]
+                        
+                        
+                        horasLimpio = []
+                        
+                        for y in range(len(horarios)):
+                            hora = horarios[y]
+                            hora = hora.split()[1]
+                            hora = hora.split(':')[0]+':'+hora.split(':')[1]
+                            hora = pd.to_datetime(('{} {}').format(fecha,str(hora)))
+                            horasLimpio.append(hora)
+                        
+                        for idx in range(len(horasLimpio)):#Iterera sobre los nuevos horarios que van a quedar y los imprime
+                            if idx % 2 == 0:
+                                print((' {} {}\n').format(ingresoColor,horasLimpio[idx]))
+                                frame.iloc[frame[frame[campo] == 0].index[x],4 +idx] = horasLimpio[idx]
+                            else:
+                                print(('    {} {}\n').format(egresoColor,horasLimpio[idx]))
+                                frame.iloc[frame[frame[campo] == 0].index[x],4 +idx] = horasLimpio[idx]
+                        print('='*30)
+                        break
+                    
+                    elif ((hora_ingreso - hora_egreso_anterior).seconds)/3600 < 1.0:#Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+                    # es menor a 1 hora, en ese caso considera que no se ficho EGRESO del dia.
+                        print('='*30)
+                        print(('El dia {} el operario {:10s} no ficho SALIDA. Ingrese la hora:\n').format(fecha,nombre))
+                        cantidad = 0
+                        for horario in range(4,12,1):
+                            hora = frame.iloc[frame[frame[campo] == 0].index[x],horario]
+                            if hora == cero:
+                                break
+                            else:
+                                cantidad +=1
+                        hora = str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"])) 
+                        hora = hora.split()[1]
+                        hora = hora.split(':')[0]+':'+hora.split(':')[1]
+                        hora = pd.to_datetime(('{} {}').format(fecha,str(hora)))
+                        frame.iloc[frame[frame[campo] == 0].index[x],4 +cantidad] = hora
+                        print('='*30)
+                        break
+    
+       
+        return frame
