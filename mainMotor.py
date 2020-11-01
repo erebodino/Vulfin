@@ -9,7 +9,7 @@ def mainLoop():
     tareas = ['Ordenado de registros','Creación de informes','Gestion de Base de datos','Salir']
     tareasOrdenado = ['Limpieza de registros','Actualización de registros','Volver','Salir']
     tareasInformes = ['Ingreso de fechas','Volver','Salir']
-    tareasBD = ['Actualizar','Descargar','Salir']
+    tareasBD = ['Actualizar','Descargar','Volver','Salir']
     
     
     respuesta = pyip.inputMenu(tareas,prompt='¿Que desea hacer?\n',lettered=True)

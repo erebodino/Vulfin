@@ -5,6 +5,10 @@ import win32com.client
 import datetime
 import pyinputplus as pyip
 from termcolor import colored
+from paths import(nombreInformeNoFichadasWord,nombreInformeNoFichadasPDF,pathInformesNoFichadas,
+pathInformesFaltasTardanzas,
+nombreInformeFaltasTardanzasWord,
+nombreInformeFaltasTardanzasPDF)
 
 class Analizador:
     """
@@ -254,6 +258,8 @@ class CalculadorHoras:
 
                 
                 horas_trabajadas = round(horas_trabajadas /3600,2)
+                if horas_trabajadas > 8:
+                    horas_trabajadas = 8
                 frame.iloc[fila,14] = horas_trabajadas
 
         return frame
@@ -404,8 +410,8 @@ def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):
                     hora_ingreso = frame.iloc[frame[frame[campo] == 0].index[x],posicion]#(ingreso)
                     hora_egreso = frame.iloc[frame[frame[campo] == 0].index[x],(posicion +1)]#(egreso)
                     
-                    hora_ingresoHoras = '{}:{}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
-                    hora_salidaHoras = '{}:{}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
+                    hora_ingresoHoras = '{:02d}:{:02d}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
+                    hora_salidaHoras = '{:02d}:{:02d}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
                     
 
                     if posicion > 4:#Si hay mas de 1 pas de ingreso-egreso, carga el egreso inmediato anterior
@@ -438,26 +444,23 @@ def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):
                         
                         
         
-        fechaInicio = str(fechaInicio)
-        fechaFin = str(fechaFin)
-        fini = '\\Informe No fichaje del {} al {} .docx'.format(fechaInicio.replace('/','-'),fechaFin.replace('/','-'))
-        pathToWord = os.getcwd() + fini
-        fini_pdf = ('\\Informe No fichaje del {} al {} .pdf').format(fechaInicio.replace('/',' '),fechaFin.replace('/','-'))
-        pathToPDF = os.getcwd() + fini_pdf
+
+        word = nombreInformeNoFichadasWord.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
+        pathToWord = os.path.join(os.getcwd(),pathInformesNoFichadas,word)
+        pdf = nombreInformeNoFichadasPDF.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
+        pathToPDF = os.path.join(os.getcwd(),pathInformesNoFichadas,pdf)
         doc.save(pathToWord)
-        
-        
-        wordFilename = pathToWord        
-        pdfFilename = pathToPDF
-        
-        
+ 
         wdFormatPDF = 17 # Word's numeric code for PDFs.
         wordObj = win32com.client.Dispatch('Word.Application')
-        docObj = wordObj.Documents.Open(wordFilename)
-        docObj.SaveAs(pdfFilename, FileFormat=wdFormatPDF)
+        docObj = wordObj.Documents.Open(pathToWord)
+        docObj.SaveAs(pathToPDF, FileFormat=wdFormatPDF)
         docObj.Close()
         wordObj.Quit()
         os.remove(pathToWord)
+
+
+    
         
 def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
         """
@@ -555,19 +558,22 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
                         print(('El dia {} el operario {:10s} no ficho Salida o re-ingreso (Almuerzo). Re-ingrese las horas:\n').format(fecha,nombre))
                         print('Entradas y salidas del dia:\n')
                         cantidad = 0
-                        for horario in range(4,12,1):#Itera sobre los registros con error y los imprime
-                            cantidad +=1
-                            hora = frame.iloc[frame[frame[campo] == 0].index[x],horario]
+                        for horario in range(4,12,2):#Itera sobre los registros con error y los imprime
+                            
+                            ingreso = frame.iloc[frame[frame[campo] == 0].index[x],horario]
+                            egreso = frame.iloc[frame[frame[campo] == 0].index[x],horario +1]
+                            
+                            if egreso != cero:
+                                cantidad +=2
+                                print(('{} {}').format(ingresoColor,str(ingreso))+'      '+('{} {}').format(egresoColor,str(egreso))+'\n')
 
-                            if hora != cero:
-                                if horario % 2 == 0:#Verifica si es par(ingreso) o impar(egreso)
-                                    print(('{} {}').format(ingresoColor,str(hora))+'\n')
-                                else:
-                                    print(('    {} {}').format(egresoColor,str(hora))+'\n')
                             else:#en caso de llegar a un registro 00:00 corta el ciclo
+                                cantidad+= 1
+                                if ingreso != cero:
+                                    print(('{} {}').format(ingresoColor,str(ingreso))+'\n')                                    
                                 break
                         #En esta variable se almacenan TODOS los horarios NUEVAMENTE, mas el horario que faltaba.
-                        horarios = [str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"])) for x in range(cantidad)]
+                        horarios = [str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"])) for x in range(cantidad +1)]
                         
                         
                         horasLimpio = []
@@ -579,13 +585,14 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
                             hora = pd.to_datetime(('{} {}').format(fecha,str(hora)))
                             horasLimpio.append(hora)
                         
-                        for idx in range(len(horasLimpio)):#Iterera sobre los nuevos horarios que van a quedar y los imprime
-                            if idx % 2 == 0:
-                                print((' {} {}\n').format(ingresoColor,horasLimpio[idx]))
-                                frame.iloc[frame[frame[campo] == 0].index[x],4 +idx] = horasLimpio[idx]
-                            else:
-                                print(('    {} {}\n').format(egresoColor,horasLimpio[idx]))
-                                frame.iloc[frame[frame[campo] == 0].index[x],4 +idx] = horasLimpio[idx]
+                        for idx in range(0,len(horasLimpio),2):#Iterera sobre los nuevos horarios que van a quedar y los imprime
+                            ingreso = horasLimpio[idx]
+                            egreso = horasLimpio[idx +1]
+
+                            print(('{} {}').format(ingresoColor,str(ingreso))+'      '+('{} {}').format(egresoColor,str(egreso))+'\n')
+                                
+                            frame.iloc[frame[frame[campo] == 0].index[x],4 +idx] = ingreso
+                            frame.iloc[frame[frame[campo] == 0].index[x],4 +(idx +1)] = egreso
                         print('='*30)
                         break
                     

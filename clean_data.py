@@ -1,10 +1,36 @@
 import pandas as pd
 #from limpieza import ingreso_egreso
-from paths import empleados_text
+from paths import empleados_text,pathExcelTemporal,nombreExcelTemporal,pathExcelInforme
 import pyinputplus as pyip
 from analizador import Analizador,CalculadorHoras,informeNoFichadas,ingresoNoFichadas
 import numpy as np
+from createDB import ManagerSQL
+from queryes import queryConsultaEmpleados,insertRegistros,selectAll,selectSome
+import os
 
+
+from paths import(nombreInformeNoFichadasWord,nombreInformeNoFichadasPDF,pathInformesNoFichadas,
+pathInformesFaltasTardanzas,
+nombreInformeFaltasTardanzasWord,
+nombreInformeFaltasTardanzasPDF)
+import win32com.client
+import docx
+
+fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+feriados =[]
+feriado = None
+while feriado != '':
+    feriado = pyip.inputDate(prompt='Ingrese el/los dias feriados DD/MM/AAAA',formats=["%d/%m/%Y"],blank=True)
+    if feriado != '':
+        feriados.append(feriado)
+
+mediosDias =[]
+medioDia = None
+while medioDia != '':
+    medioDia = pyip.inputDate(prompt='Ingrese el/los medios dias DD/MM/AAAA',formats=["%d/%m/%Y"],blank=True)
+    if medioDia != '':
+        mediosDias.append(medioDia)
 
 
 def ingreso_egreso(line,frame,legajo,nombre):
@@ -51,6 +77,17 @@ def creacionFrameVacio():
     frame = pd.DataFrame(columns=columnas)
     return frame
 
+def insercionBD(managerSQL,frame,query):
+    
+    for index, row in frame.iterrows():
+        queryInsercion = query.format(row['Empleado'],row['Nombre'], row['Dia'],str(row['Fecha']),
+          str(row['Ingreso_0']),str(row['Egreso_0']),
+          str(row['Ingreso_1']),str(row['Egreso_1']),
+          str(row['Ingreso_2']),str(row['Egreso_2']),
+          str(row['Ingreso_3']),str(row['Egreso_3']),
+          str(row['Ingreso_4']),str(row['Egreso_4']))
+        managerSQL.executeQuery(managerSQL.conexion(),queryInsercion)        
+        
 
 def frameFichadas():
     
@@ -112,7 +149,7 @@ def logicaRotativos(frame,inyeccion=False,fechaInicio=None,fechaFin=None):
         
     return newFrame 
 
-def frameAnalisisIndividual(frame):
+def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     """
     Esta funcion se encarga de tomar el frame completo de todas las horas e ir armando 1 frame por cada empleado
     y si esta dentro de los rotativos encara con una logica distinta.    
@@ -124,51 +161,48 @@ def frameAnalisisIndividual(frame):
     Dataframe
 
     """
-    columnas = ['Empleado','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1',
-                        'Ingreso_2','Egreso_2','Ingreso_3','Egreso_3','Ingreso_4','Egreso_4',
-                        ]
-    legajos = frame['Empleado'].unique()
-    legajosQueryInyeccion = ['253','260','261']
-    legajosQuerySoplado = ['130','202']
     
-    fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
-    fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+    manager = ManagerSQL()
+    sql_conection = manager.conexion()
+    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
+
+    
+    legajosSinInyeccion = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') &(consultaEmpleados['AREA'] != 'SOPLADO')] 
+    legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
+    legajosSinInyeccion = [int(x) for x in legajosSinInyeccion]#los pasa de numpy.int64 a int
+
+    legajosFrame = frame['Empleado'].unique()
+
+    legajos = frame['Empleado'].unique()
+    
+    fechaInicio = fechaInicio
+    fechaFin = fechaFin
     
     lista =[]
     frameAnalisis = creacionFrameVacio()
     for legajo in legajos:
-        newFrame = frame[frame['Empleado']==legajo]
-        if legajo in legajosQueryInyeccion:
-            continue
-            newFrame = logicaRotativos(newFrame,fechaInicio=fechaInicio,fechaFin=fechaFin,
-                                       inyeccion=True)
-        elif legajo in legajosQuerySoplado:
-            continue
-            newFrame = logicaRotativos(newFrame,fechaInicio=fechaInicio,fechaFin=fechaFin,
-                                       inyeccion=False)
-        else:
+        newFrame = frame[frame['Empleado']==legajo]#legajo es un STR
+        if int(legajo) in legajosSinInyeccion:
             mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
             newFrame = newFrame.loc[mascara].copy()
+        else:
+            continue
             
         
         frameAnalisis = frameAnalisis.append(newFrame)
-    #Escritura en base de datos Aqui<<<<<<<<<
     
     return frameAnalisis
 
-def calculos(frame):
+def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
     
-    sql_conection = None
-    columnasExcel = ['LEG','APELLIDO','NOMBRE','AREA','TIPO DE PAGO']
-    consultaEmpleados = pd.read_excel(r'J:\Emma\Vulcano\RelojRRHH\Proyecto\BD Modif.xlsx',names = columnasExcel)
-    #legajosBD = consultaEmpleados['LEG'] #Son enteros
-    
-    fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
-    print(type(fechaInicio))
-    fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+    manager = ManagerSQL()
+    sql_conection = manager.conexion()
+    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
+
     
     legajosSinInyeccion = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') &(consultaEmpleados['AREA'] != 'SOPLADO')] 
     legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
+    legajosSinInyeccion = [int(x) for x in legajosSinInyeccion]#los pasa de numpy.int64 a int
 
     legajosFrame = frame['Empleado'].unique()
 
@@ -176,24 +210,304 @@ def calculos(frame):
     calculador = CalculadorHoras()
     
     for legajo in legajosFrame:
-
         if int(legajo) in legajosSinInyeccion:
-            print(legajo)
             newFrame = frame[frame['Empleado']==legajo].copy()            
             frameCalculado = calculador.horasTrabajadas(newFrame)        
             frameAnalisis = frameAnalisis.append(frameCalculado)
         
     frameAnalisis = frameAnalisis.reset_index(drop=True) 
-    informeNoFichadas(frameAnalisis,fechaInicio,fechaFin,mediosDias=[],feriados=[])
-    frameCorregido = ingresoNoFichadas(frameAnalisis)
+    informeNoFichadas(frameAnalisis,fechaInicio,fechaFin,mediosDias=[],feriados=[])#Crea el informe de no fichadas
+    campo = 'H.Norm' #campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
+    len_noMarca = len(frameAnalisis[frameAnalisis[campo] == 0])
+    
+    if len_noMarca == 0:
+        print('TODOS los registros se encuentran completos, se procede a escribir la Base de datos.')
+        insercionBD(manager,frameAnalisis,insertRegistros)
+    else:
+        nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
+        nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
+        frameAnalisis.to_excel(nombre,index=False)
+    
+    return frameAnalisis
+          
+    
+def actualizacionRegistros(fechaInicio,fechaFin):
+    
+    listaExcels = os.listdir(pathExcelTemporal)
+    listaCodigosClean = [x for x in listaExcels if 'Excel' in x]
+    archivo = pyip.inputMenu(listaCodigosClean,prompt='Elija uno de los archivos:\n',lettered=True)
+    
+    manager = ManagerSQL()
+    calculador = CalculadorHoras()
+    
+    # nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
+    nombre = os.path.join(os.getcwd(),pathExcelTemporal,archivo)
+    
+    frameAnalisis = pd.read_excel(nombre)
+    frameAnalisis['Fecha'] = pd.to_datetime(frameAnalisis['Fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01
+    
+    frameCorregido = ingresoNoFichadas(frameAnalisis)#Corrige los registros que estan en cero    
+    insercionBD(manager,frameCorregido,insertRegistros)#Escribe la BD    
+
+
+def validador(eleccion):
+    for letter in eleccion:
+        if letter in ["\\","/",":","*","?","<",">","|"]:
+            raise Exception('\nExisten caracteres que no pueden estar incluidos en el nombre\n\n')
+    
+def seleccionInformes(fechaInicio,fechaFin):    
+    
+    
+    columnas = ['fecha','ingreso0','egreso0',
+                'ingreso1','egreso1',
+                'ingreso2','egreso2',
+                'ingreso3','egreso3',
+                'ingreso4','egreso4']
+    columnasReemplazo = {'legajo':'Legajo','nombre':'Nombre',
+                         'dia':'Dia','fecha':'Fecha',
+                         'ingreso0':'Ingreso_0','egreso0':'Egreso_0',
+                         'ingreso1':'Ingreso_1','egreso1':'Egreso_1',
+                         'ingreso2':'Ingreso_2','egreso2':'Egreso_2',
+                         'ingreso3':'Ingreso_3','egreso3':'Egreso_3',
+                         'ingreso4':'Ingreso_4','egreso4':'Egreso_4'}
+    calculador = CalculadorHoras() 
+    manager = ManagerSQL()
+    informes = ['Todos los legajos','Algunos legajos']
+    respuesta = pyip.inputMenu(informes,prompt='Seleccione alguno de los informes disponibles: \n',
+                               lettered=True)
+    if respuesta == 'Todos los legajos':        
+        query = selectAll.format(fechaInicio,fechaFin)
+        frameCorregido = pd.read_sql(query,manager.conexion(),parse_dates=columnas)
+        frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date
+        frameCorregido.rename(columns = columnasReemplazo,inplace=True)
+    
+    elif respuesta == 'Algunos legajos':
+        legajosTupla =[]
+        legajo = None
+        while legajo != '':
+            legajo = pyip.inputInt(prompt='Ingrese el numero de legajo',blank=True)
+            legajosTupla.append(str(legajo))
+        legajosTupla = tuple(legajosTupla)
+        query = selectSome.format(fechaInicio,fechaFin,legajosTupla)
+        frameCorregido = pd.read_sql(query,manager.conexion(),parse_dates=columnas)
+        frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date
+        frameCorregido.rename(columns = columnasReemplazo,inplace=True)
+        
+    frameCorregido.drop(['id'],axis=1,inplace=True)  
     frameCorregido = calculador.horasTrabajadas(frameCorregido)
     frameExtras = calculador.horasExtrasTrabajadas(frameCorregido)
     
+    archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al EXCEL: \n',
+                            customValidationFunc=validador)
+
+    nombre = os.path.join(os.getcwd(),pathExcelInforme,archivo)
+    nombre = nombre+ '.xlsx'
+    frameExtras.to_excel(nombre,index=False)
     
-    return frameAnalisis,frameCorregido,frameExtras
-    #newFrame = calculador.horasExtrasTrabajadas(newFrame)
+    
+    return frameCorregido
+
+def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
+    
+        fechaInicio = pd.to_datetime(fechaInicio).date()
+        fechaFin = pd.to_datetime(fechaFin).date()
+        diasLaborales = list(pd.bdate_range(fechaInicio,fechaFin))
+        diasLaborales = [x.date() for x in diasLaborales]
+
+        faltasWord = '\tFalta registrada el dia {}.\n'
+        tardanzasWord = '\tTardanza de {} minutos registrada el dia {} ({}).\n'
+        retirosWord = '\tRetiro anticipado de {} minutos registrado el dia {} ({}).\n'
+        
+        legajosFrame = frame['Legajo'].unique()
+
+        if len(feriados) >= 1 :
+                for feria in feriados:
+                    diasLaborales.remove(feria)
+        empleados = {}
+        for legajo in legajosFrame:
+            empleados[str(legajo)]={}
+            empleados[str(legajo)]['Tardanzas'] = {}
+            empleados[str(legajo)]['Retiros'] = {}
+            empleados[str(legajo)]['Nombre'] = ''
+
+        for legajo in legajosFrame:    
+            faltas = []
+            newFrame = frame[frame['Legajo']==int(legajo)].copy()
+            diasTrabajados = list(newFrame['Fecha'])
+            #print('FeriadosTipo: ',type(feriados[0]),feriados[0],'  ',len(feriados))
+            #print('DiasTipo: ',type(diasLaborales[0]),diasLaborales[0],'  ',len(diasLaborales))
+            
+            for dia in diasLaborales:
+                if dia not in diasTrabajados:
+                    faltas.append(dia)
+            empleados[str(legajo)]['Faltas'] = faltas
+            
+            for x in range(len(newFrame)):
+                legajo = newFrame.iloc[x,0]
+                nombre = newFrame.iloc[x,1]
+                dia = newFrame.iloc[x,2]
+                fecha = newFrame.iloc[x,3]
+                horaIngreso = pd.to_datetime(('{} 08:00').format(fecha))
+                horaSalida = pd.to_datetime(('{} 16:48').format(fecha))
+                horaSalidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
+                cero = pd.to_datetime(('{} 00:00').format(fecha))
+                tardanza = 0
+                retiro= 0
+                
+                for idx in range(5,13,2):
+                    if newFrame.iloc[x,idx] == cero:
+                        salida = newFrame.iloc[x,idx -2]
+                        break
+                
+                if newFrame.iloc[x,4] > horaIngreso:
+                    tardanza = round((((newFrame.iloc[x,4] - horaIngreso).seconds)/60),2)               
+                
+                if fecha in medioDias:
+                    if salida < horaSalidaMedioDia:
+                        print(salida,'   ',horaSalidaMedioDia)
+                        retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
+                elif fecha not in medioDias:
+                    if salida < horaSalida and dia != 'Sábado':
+                        retiro = round((((horaSalida - salida).seconds)/60),2)  
+
+                if tardanza != 0:                    
+                    empleados[str(legajo)]['Tardanzas'][str(fecha)] = (dia,tardanza)
+                if retiro != 0:
+                    empleados[str(legajo)]['Retiros'][str(fecha)] = (dia,retiro)
+                
+                empleados[str(legajo)]['Nombre']= nombre
+        
+        doc = docx.Document()
+        doc.add_heading(('Faltas, tardanzas y retiros entre {} y {}').format(fechaInicio,fechaFin), 0)
+        for key in empleados.keys():
+            
+            doc.add_heading(('Informe sobre {}:').format(empleados[key]['Nombre']),level=1)
+            
+            
+            doc.add_heading(('Faltas:'),level=2)
+            primerParrafo = doc.add_paragraph()
+            for falta in empleados[key]['Faltas']:#es una lista el resultado 
+                primerParrafo.add_run((faltasWord).format(falta))
+                
+            
+            doc.add_heading(('Tardanzas:'),level=2)
+            segundoParrafo = doc.add_paragraph()
+            for llave,valor in empleados[key]['Tardanzas'].items():
+                segundoParrafo.add_run((tardanzasWord).format(valor[1],llave,valor[0]))
+            
+            
+            doc.add_heading(('Retiros anticipados:'),level=2)
+            tercerParrafoInterno = doc.add_paragraph()
+            for llave,valor in empleados[key]['Retiros'].items():
+                tercerParrafoInterno.add_run((retirosWord).format(valor[1],llave,valor[0]))
+        
+        archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al informe PDF: \n',
+                            customValidationFunc=validador)
+
+        nombre = os.path.join(os.getcwd(),pathInformesFaltasTardanzas,archivo)
+        word = nombre+ '.docx'
+        pdf = nombre + '.pdf'
+        
+        pathToWord = word
+        pathToPDF = pdf
+        doc.save(pathToWord)
+ 
+        wdFormatPDF = 17 # Word's numeric code for PDFs.
+        wordObj = win32com.client.Dispatch('Word.Application')
+        docObj = wordObj.Documents.Open(pathToWord)
+        docObj.SaveAs(pathToPDF, FileFormat=wdFormatPDF)
+        docObj.Close()
+        wordObj.Quit()
+        os.remove(pathToWord)
+        return empleados
+
+    
+def mainLoop():
+    print('-'*100)
+    print(' '*50,'Bienvenido',' '*50)
+    print('-'*100)
+    
+    
+    tareas = ['Ordenado de registros','Creación de informes','Gestion de Base de datos','Salir']
+    tareasOrdenado = ['Limpieza de registros','Actualización de registros','Volver','Salir']
+    tareasInformes = ['Ingreso de fechas','Volver','Salir']
+    tareasBD = ['Actualizar','Descargar','Volver','Salir']
+    
+    continuar = True
+    
+    
+    while continuar:
+        respuesta = pyip.inputMenu(tareas,prompt='¿Que desea hacer?\n',lettered=True)
+        continuarOrdenado = True
+        continuarCreacion = True
+        continuarGestionBD = True
+        
+        if respuesta == 'Ordenado de registros':
+            while continuarOrdenado:
+                
+                ordenadoRespuesta = pyip.inputMenu(tareasOrdenado,prompt='¿Que desea hacer?\n',lettered=True)
+            
+                if ordenadoRespuesta == 'Limpieza de registros':
+                    print('Aca va la PRMER funcion')                
+                elif ordenadoRespuesta == 'Actualización de registros':
+                    print('Aca va la SEGUNDA funcion')                
+                elif ordenadoRespuesta == 'Volver':
+                    print('Volviendo al PRIMER MENU')
+                    continuarOrdenado = False                    
+                elif ordenadoRespuesta == 'Salir':
+                    continuarOrdenado = False
+                    continuar = False
+        
+        
+        elif respuesta == 'Creación de informes':
+            while continuarCreacion:
+                informesRespuesta = pyip.inputMenu(tareasInformes,prompt='¿Que desea hacer?\n',lettered=True)
+                if informesRespuesta == 'Ingreso de fechas':
+                    print('Aca va la PRMER funcion')
+                    continuarCreacion = True                
+                
+                elif informesRespuesta == 'Volver':
+                    print('Volviendo al PRIMER MENU')
+                    continuarCreacion = False
+                    
+                elif informesRespuesta == 'Salir':
+                    continuarCreacion = False
+                    continuar = False
+
+        
+        
+        elif respuesta == 'Gestion de Base de datos':
+            while continuarGestionBD:
+                baseDeDatosRespuesta = pyip.inputMenu(tareasBD,prompt='¿Que desea hacer?\n',lettered=True)
+                if baseDeDatosRespuesta == 'Actualizar':
+                    print('Aca va la PRMER funcion')
+                    continuarGestionBD = True                
+                
+                elif baseDeDatosRespuesta == 'Descargar':
+                    print('Volviendo al PRIMER MENU')
+                    continuarGestionBD = True
+                
+                elif baseDeDatosRespuesta == 'Volver':
+                    print('Volviendo al PRIMER MENU')
+                    continuarGestionBD = False
+                    
+                elif baseDeDatosRespuesta == 'Salir':
+                    continuarGestionBD = False
+                    continuar = False
+
+        
+        elif respuesta == 'Salir':
+            continuar= False
+
+
         
     
+    
+    
+# if __name__ == '__main__':
+#     notDone = True
+#     mainLoop()
+#     SystemExit()    
         
 
     
@@ -210,9 +524,12 @@ def calculos(frame):
     
 
 
-valor = frameFichadas()
-legajos = frameAnalisisIndividual(valor)
-conHoras = calculos(legajos)
-frameExtras = conHoras[2]
-# valdez = legajos[0]
-# montivero = legajos[1]
+# valor = frameFichadas()
+# legajos = frameAnalisisIndividual(valor,fechaInicio,fechaFin)
+# conHoras = limpiezaDeRegistros(legajos, fechaInicio, fechaFin)
+#actualizacionRegistros(fechaInicio, fechaFin)
+
+
+frameCorregido = seleccionInformes(fechaInicio, fechaFin)
+empleados = informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
+                                   feriados=feriados,medioDias = mediosDias)
