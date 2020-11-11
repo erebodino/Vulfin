@@ -1,12 +1,18 @@
 import pandas as pd
-#from limpieza import ingreso_egreso
-from paths import empleados_text,pathExcelTemporal,nombreExcelTemporal,pathExcelInforme
+from paths import empleados_text,pathExcelTemporal,nombreExcelTemporal,pathExcelInforme,pathTXT
 import pyinputplus as pyip
 from analizador import Analizador,CalculadorHoras,informeNoFichadas,ingresoNoFichadas
 import numpy as np
 from createDB import ManagerSQL
 from queryes import queryConsultaEmpleados,insertRegistros,selectAll,selectSome
 import os
+import logging.config
+import traceback
+import sys
+from openpyxl import load_workbook
+
+logging.config.fileConfig('logger.ini', disable_existing_loggers=False)
+logger = logging.getLogger(__name__)
 
 
 from paths import(nombreInformeNoFichadasWord,nombreInformeNoFichadasPDF,pathInformesNoFichadas,
@@ -16,21 +22,25 @@ nombreInformeFaltasTardanzasPDF)
 import win32com.client
 import docx
 
-fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
-fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
-feriados =[]
-feriado = None
-while feriado != '':
-    feriado = pyip.inputDate(prompt='Ingrese el/los dias feriados DD/MM/AAAA',formats=["%d/%m/%Y"],blank=True)
-    if feriado != '':
-        feriados.append(feriado)
-
-mediosDias =[]
-medioDia = None
-while medioDia != '':
-    medioDia = pyip.inputDate(prompt='Ingrese el/los medios dias DD/MM/AAAA',formats=["%d/%m/%Y"],blank=True)
-    if medioDia != '':
-        mediosDias.append(medioDia)
+def fechasDeCalculo():
+    logger.info("Registrando fechas")
+    fechaInicio = pyip.inputDate('Ingrese el primer dia habil DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+    fechaFin = pyip.inputDate('Ingrese el ultimo dia habil  DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+    feriados =[]
+    feriado = None
+    while feriado != '':
+        feriado = pyip.inputDate(prompt='Ingrese el/los dias feriados DD/MM/AAAA',formats=["%d/%m/%Y"],blank=True)
+        if feriado != '':
+            feriados.append(feriado)
+    
+    mediosDias =[]
+    medioDia = None
+    while medioDia != '':
+        medioDia = pyip.inputDate(prompt='Ingrese el/los medios dias DD/MM/AAAA',formats=["%d/%m/%Y"],blank=True)
+        if medioDia != '':
+            mediosDias.append(medioDia)
+    
+    return fechaInicio,fechaFin,feriados,mediosDias
 
 
 def ingreso_egreso(line,frame,legajo,nombre):
@@ -67,8 +77,8 @@ def ingreso_egreso(line,frame,legajo,nombre):
                                 
         return frame
     except Exception as e:
-        print(e)
-        #logger.exception('',exc_info=True)
+        logger.error('',exc_info=True)
+        return None
 
 def creacionFrameVacio():
     columnas = ['Empleado','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1',
@@ -78,7 +88,7 @@ def creacionFrameVacio():
     return frame
 
 def insercionBD(managerSQL,frame,query):
-    
+    logger.info('Insertando registros en la BD')
     for index, row in frame.iterrows():
         queryInsercion = query.format(row['Empleado'],row['Nombre'], row['Dia'],str(row['Fecha']),
           str(row['Ingreso_0']),str(row['Egreso_0']),
@@ -101,12 +111,28 @@ def frameFichadas():
               }
     
     frame = creacionFrameVacio()
-    MedioDia = None
-    # fechaInicioAnalisis = pd.to_datetime(pyip.inputDate('Primer dia de analisis en formato DD/MM/AAAA: ',formats=["%d/%m/%Y"]))
-    # fechaFinAnalisis = pd.to_datetime(pyip.inputDate('Ultimo dia de analisis en formato DD/MM/AAAA: ',formats=["%d/%m/%Y"]))
-
-    #with open(empleados_text) as file: 
-    with open(empleados_text,encoding="utf-8") as file:    
+    MedioDia = None   
+    
+    listaTXT = os.listdir(pathTXT)
+    
+    if len(listaTXT) == 0:
+        
+        return False
+    else:
+        archivo = pyip.inputMenu(listaTXT,prompt='Elija uno de los archivos:\n',lettered=True)
+    archivo = os.path.join(os.getcwd(),pathTXT,archivo)
+    try:
+        with open(archivo) as file:
+            for line in file.readlines():
+                        if line.startswith('Empleado'):
+                            legajo = line.split()[1].replace('.',"")
+                            nombre = line.split()[3] +' '+ line.split()[4]+' '+ line.split()[5]
+                        
+                        for jour in semaine.keys():        
+                            if line.startswith(jour):
+                                frame = ingreso_egreso(line,frame,legajo,nombre)
+    except:
+        with open(archivo,encoding="utf-8") as file:    
                     for line in file.readlines():
                         if line.startswith('Empleado'):
                             legajo = line.split()[1].replace('.',"")
@@ -227,15 +253,18 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
         nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
         frameAnalisis.to_excel(nombre,index=False)
-    
-    return frameAnalisis
           
     
-def actualizacionRegistros(fechaInicio,fechaFin):
+def actualizacionRegistros():
     
     listaExcels = os.listdir(pathExcelTemporal)
     listaCodigosClean = [x for x in listaExcels if 'Excel' in x]
-    archivo = pyip.inputMenu(listaCodigosClean,prompt='Elija uno de los archivos:\n',lettered=True)
+    if len(listaCodigosClean) == 1:
+        archivo = listaCodigosClean[0]
+        msg = 'Se procede a utilizar el unico archivo en la carpeta\n{}'.format(str(listaCodigosClean[0]))
+        print(msg)
+    else: 
+        archivo = pyip.inputMenu(listaCodigosClean,prompt='Elija uno de los archivos:\n',lettered=True)
     
     manager = ManagerSQL()
     calculador = CalculadorHoras()
@@ -254,8 +283,30 @@ def validador(eleccion):
     for letter in eleccion:
         if letter in ["\\","/",":","*","?","<",">","|"]:
             raise Exception('\nExisten caracteres que no pueden estar incluidos en el nombre\n\n')
+def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados):
     
-def seleccionInformes(fechaInicio,fechaFin):    
+    fechaInicio = pd.to_datetime(fechaInicio).date()
+    fechaFin = pd.to_datetime(fechaFin).date()
+    diasLaborales = list(pd.bdate_range(fechaInicio,fechaFin))
+    print(diasLaborales)
+    
+    diasLaborales = len(list(pd.bdate_range(fechaInicio,fechaFin)))
+    print(diasLaborales,'Feriados: ',len(feriados))
+    diasLaborales = diasLaborales - len(feriados)
+    frame = frame.groupby(["Legajo","Nombre"])
+    frameLegajo = frame.sum()
+    frameLegajo.reset_index(inplace=True)
+    frameDiasLaborales = frame[['Dia']].count()
+    frameConcatenado = pd.merge(frameLegajo,frameDiasLaborales,on='Legajo')
+    frameConcatenado = frameConcatenado.rename(columns={'Dia':'Dias Trabajados'})
+    frameConcatenado['Faltas'] = diasLaborales - frameConcatenado['Dias Trabajados']
+    
+    return frameConcatenado
+    
+    
+    
+    
+def seleccionInformes(fechaInicio,fechaFin,medioDias=[],feriados=[]):    
     
     
     columnas = ['fecha','ingreso0','egreso0',
@@ -295,14 +346,28 @@ def seleccionInformes(fechaInicio,fechaFin):
         
     frameCorregido.drop(['id'],axis=1,inplace=True)  
     frameCorregido = calculador.horasTrabajadas(frameCorregido)
+    frameCorregido = calculador.restaRetrasosTardanzas(frameCorregido,medioDias = medioDias)
     frameExtras = calculador.horasExtrasTrabajadas(frameCorregido)
     
-    archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al EXCEL: \n',
-                            customValidationFunc=validador)
-
-    nombre = os.path.join(os.getcwd(),pathExcelInforme,archivo)
-    nombre = nombre+ '.xlsx'
-    frameExtras.to_excel(nombre,index=False)
+    if frameCorregido.empty:
+        print('No hay registros sobre los cuales trabajar')
+    else:
+        archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al EXCEL: \n',
+                                customValidationFunc=validador)
+        
+        nombre = os.path.join(os.getcwd(),pathExcelInforme,archivo)
+        nombre = nombre+ '.xlsx'
+        frameExtras = frameExtras.sort_values(by=['Legajo'])
+        frameExtras.to_excel(nombre,sheet_name='Registros',index=False)
+        
+        book = load_workbook(nombre)
+        writer = pd.ExcelWriter(nombre, engine = 'openpyxl')
+        writer.book = book      
+        
+        frameTotalizado = hojaTotalizadora(frameExtras, fechaInicio, fechaFin,feriados)
+        frameTotalizado.to_excel(writer, sheet_name = 'Totalizado',index=False)
+        writer.save()
+        writer.close()     
     
     
     return frameCorregido
@@ -419,95 +484,110 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
         docObj.Close()
         wordObj.Quit()
         os.remove(pathToWord)
-        return empleados
 
-    
-def mainLoop():
-    print('-'*100)
-    print(' '*50,'Bienvenido',' '*50)
-    print('-'*100)
-    
-    
-    tareas = ['Ordenado de registros','Creación de informes','Gestion de Base de datos','Salir']
-    tareasOrdenado = ['Limpieza de registros','Actualización de registros','Volver','Salir']
-    tareasInformes = ['Ingreso de fechas','Volver','Salir']
-    tareasBD = ['Actualizar','Descargar','Volver','Salir']
-    
-    continuar = True
+class Motor:
+    def mainLoop(self):
+        print('-'*100)
+        print(' '*50,'Bienvenido',' '*50)
+        print('-'*100)
     
     
-    while continuar:
-        respuesta = pyip.inputMenu(tareas,prompt='¿Que desea hacer?\n',lettered=True)
-        continuarOrdenado = True
-        continuarCreacion = True
-        continuarGestionBD = True
+        tareas = ['Ordenado de registros','Creación de informes','Gestion de Base de datos','Salir']
+        tareasOrdenado = ['Limpieza de registros','Actualización de registros','Volver','Salir']
+        tareasInformes = ['Ingreso de fechas','Volver','Salir']
+        tareasBD = ['Actualizar','Descargar','Volver','Salir']
         
-        if respuesta == 'Ordenado de registros':
-            while continuarOrdenado:
-                
-                ordenadoRespuesta = pyip.inputMenu(tareasOrdenado,prompt='¿Que desea hacer?\n',lettered=True)
+        continuar = True
+        
+        
+        while continuar:
+            respuesta = pyip.inputMenu(tareas,prompt='¿Que desea hacer?\n',lettered=True)
+            continuarOrdenado = True
+            continuarCreacion = True
+            continuarGestionBD = True
             
-                if ordenadoRespuesta == 'Limpieza de registros':
-                    print('Aca va la PRMER funcion')                
-                elif ordenadoRespuesta == 'Actualización de registros':
-                    print('Aca va la SEGUNDA funcion')                
-                elif ordenadoRespuesta == 'Volver':
-                    print('Volviendo al PRIMER MENU')
-                    continuarOrdenado = False                    
-                elif ordenadoRespuesta == 'Salir':
-                    continuarOrdenado = False
-                    continuar = False
-        
-        
-        elif respuesta == 'Creación de informes':
-            while continuarCreacion:
-                informesRespuesta = pyip.inputMenu(tareasInformes,prompt='¿Que desea hacer?\n',lettered=True)
-                if informesRespuesta == 'Ingreso de fechas':
-                    print('Aca va la PRMER funcion')
-                    continuarCreacion = True                
-                
-                elif informesRespuesta == 'Volver':
-                    print('Volviendo al PRIMER MENU')
-                    continuarCreacion = False
+            if respuesta == 'Ordenado de registros':
+                while continuarOrdenado:
                     
-                elif informesRespuesta == 'Salir':
-                    continuarCreacion = False
-                    continuar = False
-
-        
-        
-        elif respuesta == 'Gestion de Base de datos':
-            while continuarGestionBD:
-                baseDeDatosRespuesta = pyip.inputMenu(tareasBD,prompt='¿Que desea hacer?\n',lettered=True)
-                if baseDeDatosRespuesta == 'Actualizar':
-                    print('Aca va la PRMER funcion')
-                    continuarGestionBD = True                
+                    ordenadoRespuesta = pyip.inputMenu(tareasOrdenado,prompt='¿Que desea hacer?\n',lettered=True)
                 
-                elif baseDeDatosRespuesta == 'Descargar':
-                    print('Volviendo al PRIMER MENU')
-                    continuarGestionBD = True
-                
-                elif baseDeDatosRespuesta == 'Volver':
-                    print('Volviendo al PRIMER MENU')
-                    continuarGestionBD = False
+                    if ordenadoRespuesta == 'Limpieza de registros':
+                        fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                        frame = frameFichadas()
+                        
+                        if frame.empty:
+                            print('No existen archivos que limpiar\n')
+                        else:
+                            legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+                            limpiezaDeRegistros(legajos, fechaInicio, fechaFin)
+                        print('Aca va la PRMER funcion')                
+                    elif ordenadoRespuesta == 'Actualización de registros':
+                        actualizacionRegistros()
+                        print('Aca va la SEGUNDA funcion')                
+                    elif ordenadoRespuesta == 'Volver':
+                        print('Volviendo al PRIMER MENU')
+                        continuarOrdenado = False                    
+                    elif ordenadoRespuesta == 'Salir':
+                        continuarOrdenado = False
+                        continuar = False
+            
+            
+            elif respuesta == 'Creación de informes':
+                while continuarCreacion:
+                    informesRespuesta = pyip.inputMenu(tareasInformes,prompt='¿Que desea hacer?\n',lettered=True)
+                    if informesRespuesta == 'Ingreso de fechas':
+                        fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                        frameCorregido = seleccionInformes(fechaInicio, fechaFin,feriados = feriados,medioDias= mediosDias)
+                        if frameCorregido.empty:
+                            pass
+                        else:
+                            informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
+                                    feriados=feriados,medioDias = mediosDias)
+                        print('Aca va la PRMER funcion')
+                        continuarCreacion = True                
                     
-                elif baseDeDatosRespuesta == 'Salir':
-                    continuarGestionBD = False
-                    continuar = False
+                    elif informesRespuesta == 'Volver':
+                        print('Volviendo al PRIMER MENU')
+                        continuarCreacion = False
+                        
+                    elif informesRespuesta == 'Salir':
+                        continuarCreacion = False
+                        continuar = False
+    
+            
+            
+            elif respuesta == 'Gestion de Base de datos':
+                while continuarGestionBD:
+                    baseDeDatosRespuesta = pyip.inputMenu(tareasBD,prompt='¿Que desea hacer?\n',lettered=True)
+                    if baseDeDatosRespuesta == 'Actualizar':
+                        print('Aca va la PRMER funcion')
+                        continuarGestionBD = True                
+                    
+                    elif baseDeDatosRespuesta == 'Descargar':
+                        print('Volviendo al PRIMER MENU')
+                        continuarGestionBD = True
+                    
+                    elif baseDeDatosRespuesta == 'Volver':
+                        print('Volviendo al PRIMER MENU')
+                        continuarGestionBD = False
+                        
+                    elif baseDeDatosRespuesta == 'Salir':
+                        continuarGestionBD = False
+                        continuar = False
+    
+            
+            elif respuesta == 'Salir':
+                continuar= False
+
 
         
-        elif respuesta == 'Salir':
-            continuar= False
-
-
-        
     
     
     
-# if __name__ == '__main__':
-#     notDone = True
-#     mainLoop()
-#     SystemExit()    
+if __name__ == '__main__':
+    motor = Motor()
+    motor.mainLoop()
+    sys.exit()
         
 
     
@@ -530,6 +610,6 @@ def mainLoop():
 #actualizacionRegistros(fechaInicio, fechaFin)
 
 
-frameCorregido = seleccionInformes(fechaInicio, fechaFin)
-empleados = informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
-                                   feriados=feriados,medioDias = mediosDias)
+# frameCorregido = seleccionInformes(fechaInicio, fechaFin,medioDias= mediosDias)
+# empleados = informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
+#                                    feriados=feriados,medioDias = mediosDias)

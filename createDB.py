@@ -1,33 +1,42 @@
 import sqlite3
 import os
-import pandas as pd
-#sqlite3.connect('RRHH_VULCANO.db')
-db_file = os.path.join(os.getcwd(), 'RRHH_VULCANO.db')
-conn = sqlite3.connect(db_file)
+import logging.config
+import traceback
+import sys
+from time import sleep
 
 
-# conn.execute(insertUno)
-# conn.commit()
 
-#datos = pd.read_excel(r'J:\Emma\14. Vulcano\RelojRRHH\Proyecto\BD Modif.xlsx')
+logging.config.fileConfig('logger.ini', disable_existing_loggers=False)
+logger = logging.getLogger(__name__)
 
 class ManagerSQL:
     
     def __init__(self):
         self.path = os.path.join(os.getcwd(), 'RRHH_VULCANO.db')
         
+        
     def conexion(self):
+        logger.info('Iniciando conexion')
         conn = None
         try:
-            conn = sqlite3.connect(self.path)
+            conn = sqlite3.connect(self.path,uri=True)
             return conn
         except Exception as e:
-            print(e)
+            if sqlite3.OperationalError == type(e):
+                if e.args[0].startswith('unable to open database file'):
+                    logger.warning("No esta la BD")
+                    print('ERROR, la base de datos ha sido comprometida, se procede al cierre')
+                    sleep(5)
+                    sys.exit()
+                else:
+                    logger.error("excepcion desconocida: %s", traceback.format_exc())
     
         return conn
     
     def executeQuery(self,conn,query):
         try:
+            logger.info('Ejecutando query')
             c = conn.cursor()
             c.execute(query)
             conn.commit()
@@ -35,19 +44,12 @@ class ManagerSQL:
         except Exception as e:
             if sqlite3.IntegrityError == type(e):              
                 print('Legajo repetido, por favor cambiarlo')
+                logger.warning("excepcion por legajo duplicado")
+            elif sqlite3.OperationalError == type(e):
+                if e.args[0].startswith('no such table'):
+                    logger.warning("no se encuentran las tablas de la BD")
+                    print('ERROR, la base de datos ha sido comprometida, se procede al cierre')
+                    sleep(5)
+                    sys.exit()
             else:
-                print(e,type(e))
-
-# dbObject = ManagerSQL()
-# conexion = dbObject.conexion()
-# dbObject.executeQuery(conexion,insertTres)
-# dbObject.executeQuery(conexion,insertCuatro)
-# dbObject.executeQuery(conexion,insertCinco)
-
-
-# # datos.to_sql('legajos', con=conexion,if_exists='replace', index = False)
-# datosDesdeSQL = pd.read_sql("SELECT * from legajos", con=conexion)
-
-# datosRotativos = datosDesdeSQL.loc[(datosDesdeSQL['AREA']=='INYECCION') | (datosDesdeSQL['AREA']=='MECANIZADO')]
- 
-# datosSinRotativos = datosDesdeSQL.loc[(datosDesdeSQL['AREA']!='INYECCION') & (datosDesdeSQL['AREA']!='MECANIZADO')]
+                logger.error("excepcion desconocida: %s", traceback.format_exc())

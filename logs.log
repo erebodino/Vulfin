@@ -1,0 +1,555 @@
+[2020-11-08 13:07:28,537] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas 9440 MainProcess
+[2020-11-08 13:16:59,157] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 13:17:07,382] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 19:15:50,736] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:19:39,947] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:20:10,263] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:22:12,615] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:23:13,342] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:33:20,302] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:35:10,788] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:35:20,587] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 19:35:20,597] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 19:35:20,618] analizador [horasTrabajadas Linea : 338] --> INFO :Contabilizando horas dias normales, se trabajo {}
+[2020-11-08 19:38:03,128] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:38:14,302] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 19:38:14,311] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 19:38:14,331] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-08 19:38:14,350] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-08 19:38:14,364] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-08 19:38:14,381] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-08 19:38:14,382] analizador [informeNoFichadas Linea : 486] --> INFO :Comenzando escritura en el word
+[2020-11-08 19:42:14,512] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 19:42:25,900] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 19:42:25,909] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 19:42:25,930] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-08 19:42:25,949] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-08 19:42:25,963] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-08 19:42:25,981] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-08 19:42:25,982] analizador [informeNoFichadas Linea : 486] --> INFO :Comenzando escritura en el word
+[2020-11-08 19:44:12,300] analizador [ingresoNoFichadas Linea : 619] --> INFO :Comenzando inform de no fichadas
+[2020-11-08 19:54:27,409] analizador [ingresoNoFichadas Linea : 755] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 678, in ingresoNoFichadas
+    horaSalida = horaEntrada.split()[1]
+AttributeError: 'Timestamp' object has no attribute 'split'
+
+[2020-11-08 19:54:27,409] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-08 20:01:11,518] analizador [ingresoNoFichadas Linea : 619] --> INFO :Comenzando inform de no fichadas
+[2020-11-08 20:05:22,738] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-08 20:05:22,739] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:22,739] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:22,802] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:22,802] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:22,853] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:22,853] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:22,926] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:22,926] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:22,969] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:22,969] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,024] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,024] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,083] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,083] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,141] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,141] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,207] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,208] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,266] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,266] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,316] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,316] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,374] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,374] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,437] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,437] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,499] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,499] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,566] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,566] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,634] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,634] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,699] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,700] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,759] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,759] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,817] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,817] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,874] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,874] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,925] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,925] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:23,974] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:23,975] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,040] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,041] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,102] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,103] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,163] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,163] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,224] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,224] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,279] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,279] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,341] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,341] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,405] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,405] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,475] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,475] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,548] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,549] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,605] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,605] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,661] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,661] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,716] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,716] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,766] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,766] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,835] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,835] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,900] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,900] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:24,966] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:24,966] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:25,019] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:25,020] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:05:25,084] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:05:25,084] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-08 20:06:11,781] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 20:06:27,615] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:06:27,680] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-08 20:06:27,680] analizador [restaRetrasosTardanzas Linea : 416] --> INFO :Iniciando resta de minutos tardes
+[2020-11-08 20:06:27,724] analizador [horasExtrasTrabajadas Linea : 411] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-08 20:06:43,361] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 20:07:19,550] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:07:19,595] analizador [horasTrabajadas Linea : 339] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-08 20:07:19,595] analizador [restaRetrasosTardanzas Linea : 416] --> INFO :Iniciando resta de minutos tardes
+[2020-11-08 20:07:19,628] analizador [horasExtrasTrabajadas Linea : 411] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-08 20:42:33,293] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 20:42:46,976] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:42:47,038] analizador [horasTrabajadas Linea : 342] --> INFO :Contabilizando horas dias normales, se trabajo 8
+[2020-11-08 20:42:47,039] analizador [restaRetrasosTardanzas Linea : 419] --> INFO :Iniciando resta de minutos tardes
+[2020-11-08 20:42:47,082] analizador [horasExtrasTrabajadas Linea : 414] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-08 20:51:19,117] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 20:51:29,654] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 20:51:29,718] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-08 20:51:29,718] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-08 20:51:29,764] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-08 21:03:05,483] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 21:03:17,077] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 21:03:17,144] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-08 21:03:17,144] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-08 21:03:17,190] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-08 21:10:27,017] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 21:10:40,281] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 21:10:40,341] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-08 21:10:40,346] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-08 21:10:59,692] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-08 21:11:06,636] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-08 21:11:06,700] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-08 21:11:06,701] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-08 21:11:06,747] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-09 20:47:12,043] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 20:48:54,799] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 20:49:45,350] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 20:50:45,828] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 20:52:39,651] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 20:52:54,202] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-09 20:52:54,203] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-09 20:52:54,203] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-09 20:52:54,204] createDB [executeQuery Linea : 39] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 31, in executeQuery
+    c.execute(query)
+sqlite3.OperationalError: no such table: REGISTROS
+
+[2020-11-09 20:52:54,204] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-09 20:52:54,204] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-09 20:52:54,204] createDB [executeQuery Linea : 39] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 31, in executeQuery
+    c.execute(query)
+sqlite3.OperationalError: no such table: REGISTROS
+
+[2020-11-09 20:52:54,204] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-09 20:52:54,205] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-09 20:52:54,205] createDB [executeQuery Linea : 39] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 31, in executeQuery
+    c.execute(query)
+sqlite3.OperationalError: no such table: REGISTROS
+
+[2020-11-09 20:52:54,205] createDB [conexion Linea : 16] --> INFO :Iniciando conexion
+[2020-11-09 20:52:54,205] createDB [executeQuery Linea : 29] --> INFO :Ejecutando query
+[2020-11-09 20:52:54,206] createDB [executeQuery Linea : 39] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 31, in executeQuery
+    c.execute(query)
+sqlite3.OperationalError: no such table: REGISTROS
+
+[2020-11-09 21:03:50,244] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 21:04:19,685] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-09 21:04:19,685] createDB [conexion Linea : 17] --> INFO :Iniciando conexion
+[2020-11-09 21:04:19,686] createDB [executeQuery Linea : 30] --> INFO :Ejecutando query
+[2020-11-09 21:04:24,696] createDB [conexion Linea : 17] --> INFO :Iniciando conexion
+[2020-11-09 21:04:24,696] createDB [executeQuery Linea : 30] --> INFO :Ejecutando query
+[2020-11-09 21:04:29,698] createDB [conexion Linea : 17] --> INFO :Iniciando conexion
+[2020-11-09 21:04:29,698] createDB [executeQuery Linea : 30] --> INFO :Ejecutando query
+[2020-11-09 21:04:34,711] createDB [conexion Linea : 17] --> INFO :Iniciando conexion
+[2020-11-09 21:04:34,711] createDB [executeQuery Linea : 30] --> INFO :Ejecutando query
+[2020-11-09 21:05:43,289] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 21:05:57,215] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-09 21:05:57,216] createDB [conexion Linea : 18] --> INFO :Iniciando conexion
+[2020-11-09 21:05:57,216] createDB [executeQuery Linea : 31] --> INFO :Ejecutando query
+[2020-11-09 21:06:56,555] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 21:07:12,143] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-09 21:07:12,144] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:07:12,144] createDB [executeQuery Linea : 33] --> INFO :Ejecutando query
+[2020-11-09 21:14:50,597] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 21:15:06,426] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-09 21:15:06,427] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:15:06,428] createDB [conexion Linea : 26] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 23, in conexion
+    conn = sqlite3.connect(self.path,uri=True)
+sqlite3.OperationalError: unable to open database file
+
+[2020-11-09 21:15:06,428] createDB [executeQuery Linea : 33] --> INFO :Ejecutando query
+[2020-11-09 21:15:06,428] createDB [executeQuery Linea : 49] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 34, in executeQuery
+    c = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+
+[2020-11-09 21:15:06,428] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:15:06,428] createDB [conexion Linea : 26] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 23, in conexion
+    conn = sqlite3.connect(self.path,uri=True)
+sqlite3.OperationalError: unable to open database file
+
+[2020-11-09 21:15:06,428] createDB [executeQuery Linea : 33] --> INFO :Ejecutando query
+[2020-11-09 21:15:06,428] createDB [executeQuery Linea : 49] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 34, in executeQuery
+    c = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+
+[2020-11-09 21:15:06,428] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:15:06,429] createDB [conexion Linea : 26] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 23, in conexion
+    conn = sqlite3.connect(self.path,uri=True)
+sqlite3.OperationalError: unable to open database file
+
+[2020-11-09 21:15:06,429] createDB [executeQuery Linea : 33] --> INFO :Ejecutando query
+[2020-11-09 21:15:06,429] createDB [executeQuery Linea : 49] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 34, in executeQuery
+    c = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+
+[2020-11-09 21:15:06,429] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:15:06,429] createDB [conexion Linea : 26] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 23, in conexion
+    conn = sqlite3.connect(self.path,uri=True)
+sqlite3.OperationalError: unable to open database file
+
+[2020-11-09 21:15:06,429] createDB [executeQuery Linea : 33] --> INFO :Ejecutando query
+[2020-11-09 21:15:06,429] createDB [executeQuery Linea : 49] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\createDB.py", line 34, in executeQuery
+    c = conn.cursor()
+AttributeError: 'bool' object has no attribute 'cursor'
+
+[2020-11-09 21:21:07,961] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 21:21:22,271] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-09 21:21:22,271] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:21:22,272] createDB [conexion Linea : 28] --> WARNING :No esta la BD
+[2020-11-09 21:36:42,033] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 21:37:04,011] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:37:04,012] createDB [conexion Linea : 28] --> WARNING :No esta la BD
+[2020-11-09 21:44:01,559] analizador [ingresoNoFichadas Linea : 627] --> INFO :Comenzando inform de no fichadas
+[2020-11-09 21:44:17,373] __main__ [insercionBD Linea : 90] --> INFO :Insertando registros en la BD
+[2020-11-09 21:44:17,373] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:44:17,374] createDB [executeQuery Linea : 39] --> INFO :Ejecutando query
+[2020-11-09 21:44:17,374] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:44:17,374] createDB [executeQuery Linea : 39] --> INFO :Ejecutando query
+[2020-11-09 21:44:17,375] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:44:17,375] createDB [executeQuery Linea : 39] --> INFO :Ejecutando query
+[2020-11-09 21:44:17,375] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 21:44:17,375] createDB [executeQuery Linea : 39] --> INFO :Ejecutando query
+[2020-11-09 21:44:33,889] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 21:44:53,108] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 22:00:37,693] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 22:00:49,007] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 22:02:24,498] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 22:02:36,027] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 22:02:36,036] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-09 22:02:36,036] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-09 22:05:48,922] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 22:06:03,292] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 22:06:03,301] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-09 22:06:03,301] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-09 22:06:41,192] __main__ [fechasDeCalculo Linea : 25] --> INFO :Registrando fechas
+[2020-11-09 22:06:52,250] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-09 22:06:52,263] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-09 22:06:52,265] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-09 22:06:52,266] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-09 22:06:52,268] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-09 22:06:52,270] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-09 22:06:52,272] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-09 22:06:52,274] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-09 22:06:52,276] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-09 22:06:52,278] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-09 22:06:52,280] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-09 22:06:52,282] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-09 22:06:52,284] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-09 22:06:52,286] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-09 22:06:52,287] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-09 22:06:52,289] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-09 22:06:52,292] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-09 22:06:52,294] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-09 22:06:52,295] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-09 22:06:52,297] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-09 22:06:52,299] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-09 22:06:52,301] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-09 22:06:52,303] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-09 22:06:52,305] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-09 22:06:52,307] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-09 22:06:52,308] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-09 22:06:52,310] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-09 22:06:52,312] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-09 22:06:52,313] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-09 22:06:52,315] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-09 22:06:52,317] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-09 22:06:52,317] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-09 22:06:52,363] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-10 20:23:25,936] __main__ [fechasDeCalculo Linea : 26] --> INFO :Registrando fechas
+[2020-11-10 20:23:33,489] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-10 20:23:33,502] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-10 20:23:33,505] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-10 20:23:33,506] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:23:33,508] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:23:33,510] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:23:33,512] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-10 20:23:33,513] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:23:33,515] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:23:33,517] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:23:33,519] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-10 20:23:33,521] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-10 20:23:33,523] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:23:33,525] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:23:33,527] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:23:33,529] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-10 20:23:33,531] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:23:33,533] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:23:33,534] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:23:33,536] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-10 20:23:33,538] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-10 20:23:33,540] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:23:33,541] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:23:33,543] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-10 20:23:33,545] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-10 20:23:33,547] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-10 20:23:33,549] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:23:33,551] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-10 20:23:33,552] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-10 20:23:33,554] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:23:33,556] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-10 20:23:33,556] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-10 20:23:33,602] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-10 20:24:12,045] __main__ [fechasDeCalculo Linea : 26] --> INFO :Registrando fechas
+[2020-11-10 20:24:19,655] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-10 20:24:19,667] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-10 20:24:19,669] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-10 20:24:19,671] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:24:19,673] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:19,674] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:19,676] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-10 20:24:19,678] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:19,680] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:24:19,682] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:24:19,684] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-10 20:24:19,686] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-10 20:24:19,688] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:24:19,690] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:19,691] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:24:19,693] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-10 20:24:19,695] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:19,697] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:24:19,699] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:24:19,700] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-10 20:24:19,702] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-10 20:24:19,704] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:19,706] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:19,708] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-10 20:24:19,709] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-10 20:24:19,711] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-10 20:24:19,713] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:24:19,714] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-10 20:24:19,716] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-10 20:24:19,718] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:19,719] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-10 20:24:19,719] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-10 20:24:19,766] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-10 20:24:49,186] __main__ [fechasDeCalculo Linea : 26] --> INFO :Registrando fechas
+[2020-11-10 20:24:57,211] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-10 20:24:57,222] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-10 20:24:57,224] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-10 20:24:57,226] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:24:57,228] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:57,230] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:57,232] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-10 20:24:57,234] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:57,236] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:24:57,238] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:24:57,240] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-10 20:24:57,242] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-10 20:24:57,244] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:24:57,245] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:57,247] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:24:57,249] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-10 20:24:57,251] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:57,253] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:24:57,255] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:24:57,257] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-10 20:24:57,259] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-10 20:24:57,260] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:57,262] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:24:57,264] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-10 20:24:57,266] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-10 20:24:57,267] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-10 20:24:57,269] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:24:57,271] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-10 20:24:57,272] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-10 20:24:57,274] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:24:57,276] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-10 20:24:57,276] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-10 20:24:57,321] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-10 20:27:02,218] __main__ [fechasDeCalculo Linea : 26] --> INFO :Registrando fechas
+[2020-11-10 20:27:15,004] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-10 20:27:15,016] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-10 20:27:15,018] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-10 20:27:15,020] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:27:15,022] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:27:15,024] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:27:15,026] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-10 20:27:15,027] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:27:15,029] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:27:15,031] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:27:15,034] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-10 20:27:15,036] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-10 20:27:15,038] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:27:15,040] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:27:15,042] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:27:15,044] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-10 20:27:15,046] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:27:15,048] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:27:15,049] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:27:15,051] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-10 20:27:15,053] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-10 20:27:15,055] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:27:15,057] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:27:15,059] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-10 20:27:15,061] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-10 20:27:15,062] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-10 20:27:15,064] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:27:15,066] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-10 20:27:15,068] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-10 20:27:15,070] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:27:15,071] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-10 20:27:15,072] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-10 20:27:15,117] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-10 20:30:42,781] __main__ [fechasDeCalculo Linea : 26] --> INFO :Registrando fechas
+[2020-11-10 20:30:52,038] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-10 20:30:52,053] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-10 20:30:52,055] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-10 20:30:52,057] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:30:52,059] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:30:52,061] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:30:52,063] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-10 20:30:52,065] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:30:52,067] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:30:52,069] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:30:52,071] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-10 20:30:52,073] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-10 20:30:52,075] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:30:52,077] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:30:52,079] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:30:52,080] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-10 20:30:52,082] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:30:52,084] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:30:52,086] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:30:52,088] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-10 20:30:52,089] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-10 20:30:52,091] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:30:52,093] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:30:52,095] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-10 20:30:52,097] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-10 20:30:52,098] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-10 20:30:52,100] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:30:52,102] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-10 20:30:52,103] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-10 20:30:52,105] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:30:52,107] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-10 20:30:52,107] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-10 20:30:52,152] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-10 20:35:20,455] __main__ [fechasDeCalculo Linea : 26] --> INFO :Registrando fechas
+[2020-11-10 20:35:31,129] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-10 20:35:31,143] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-10 20:35:31,145] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-10 20:35:31,147] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:35:31,149] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:35:31,151] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:35:31,153] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-10 20:35:31,155] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:35:31,157] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:35:31,159] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:35:31,161] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-10 20:35:31,163] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-10 20:35:31,165] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:35:31,167] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:35:31,169] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:35:31,171] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-10 20:35:31,173] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:35:31,175] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:35:31,176] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:35:31,178] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-10 20:35:31,180] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-10 20:35:31,182] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:35:31,184] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:35:31,185] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-10 20:35:31,187] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-10 20:35:31,189] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-10 20:35:31,191] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:35:31,192] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-10 20:35:31,194] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-10 20:35:31,196] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:35:31,197] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-10 20:35:31,198] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-10 20:35:31,243] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-10 20:37:51,673] __main__ [fechasDeCalculo Linea : 26] --> INFO :Registrando fechas
+[2020-11-10 20:38:06,884] createDB [conexion Linea : 20] --> INFO :Iniciando conexion
+[2020-11-10 20:38:06,896] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.42
+[2020-11-10 20:38:06,898] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 7.92
+[2020-11-10 20:38:06,900] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:38:06,902] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:38:06,904] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:38:06,906] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.28
+[2020-11-10 20:38:06,908] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:38:06,910] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:38:06,912] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:38:06,914] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 6.75
+[2020-11-10 20:38:06,916] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.17
+[2020-11-10 20:38:06,918] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.53
+[2020-11-10 20:38:06,920] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:38:06,921] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:38:06,923] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.45
+[2020-11-10 20:38:06,925] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:38:06,927] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.22
+[2020-11-10 20:38:06,929] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.55
+[2020-11-10 20:38:06,931] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.18
+[2020-11-10 20:38:06,933] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.38
+[2020-11-10 20:38:06,935] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:38:06,936] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.27
+[2020-11-10 20:38:06,938] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.32
+[2020-11-10 20:38:06,941] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.52
+[2020-11-10 20:38:06,942] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.97
+[2020-11-10 20:38:06,944] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.23
+[2020-11-10 20:38:06,946] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.57
+[2020-11-10 20:38:06,948] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.88
+[2020-11-10 20:38:06,950] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.3
+[2020-11-10 20:38:06,951] analizador [horasTrabajadas Linea : 340] --> INFO :Contabilizando horas dias normales, se trabajo 8.8
+[2020-11-10 20:38:06,952] analizador [restaRetrasosTardanzas Linea : 417] --> INFO :Iniciando resta de minutos tardes
+[2020-11-10 20:38:06,997] analizador [horasExtrasTrabajadas Linea : 412] --> INFO :Contabilizando horas al 50 y 100

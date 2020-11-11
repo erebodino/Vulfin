@@ -1,10 +1,13 @@
 #PATHS
 
 #empleados_text = r'J:\Emma\Vulcano\RelojRRHH\Proyecto\prueba.txt'
+pathTXT ='Archivos de trabajo\TXTs'
 empleados_text = r'J:\Emma\14. Vulcano\RelojRRHH\Proyecto\TXTs\siragusaCOMPLETO.txt'
 
 pathExcelTemporal = 'Archivos de trabajo\A completar'
 nombreExcelTemporal = 'Excel desde {} hasta {}.xlsx'
+
+
 
 pathInformesNoFichadas = 'Archivos de trabajo\Informes\Informe No Fichadas'
 nombreInformeNoFichadasWord = 'Informe No fichaje del {} al {}'
