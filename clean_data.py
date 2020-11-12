@@ -598,7 +598,7 @@ class Motor:
                         fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
                         frameCorregido = seleccionInformes(fechaInicio, fechaFin,feriados = feriados,mediosDias= mediosDias)
                         if frameCorregido.empty:
-                            pass
+                            pass 
                         else:
                             informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
                                     feriados=feriados,medioDias = mediosDias)
