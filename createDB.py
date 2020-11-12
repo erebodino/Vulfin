@@ -14,6 +14,13 @@ class ManagerSQL:
     
     def __init__(self):
         self.path = os.path.join(os.getcwd(), 'RRHH_VULCANO.db')
+        if os.path.exists(self.path):
+            pass
+        else:
+            logger.warning("No esta la BD")
+            print('ERROR, la base de datos ha sido comprometida, se procede al cierre')
+            sleep(5)
+            sys.exit()
         
         
     def conexion(self):
@@ -43,7 +50,7 @@ class ManagerSQL:
             conn.close()
         except Exception as e:
             if sqlite3.IntegrityError == type(e):              
-                print('Legajo repetido, por favor cambiarlo')
+                print('Legajo repetido, por favor cambiarlo\n')
                 logger.warning("excepcion por legajo duplicado")
             elif sqlite3.OperationalError == type(e):
                 if e.args[0].startswith('no such table'):
@@ -53,3 +60,6 @@ class ManagerSQL:
                     sys.exit()
             else:
                 logger.error("excepcion desconocida: %s", traceback.format_exc())
+                
+if __name__ == '__main__':
+    pass

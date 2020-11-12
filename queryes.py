@@ -30,15 +30,17 @@ queryTabla = """ CREATE TABLE IF NOT EXISTS REGISTROS (
 
 queryConsultaEmpleados = """SELECT * FROM LEGAJOS """
 
-
-queryLegajo = """INSERT INTO legajos(legajo,apellido,nombre,area,tipoPago)
-VALUES ('{}','{}','{}','{}','{}');"""
-
-insertDos = """INSERT INTO legajos(legajo,apellido,nombre,area,tipoPago)
-VALUES ('5','Sanchez','Elvio Eduardo','Inyeccion','Jornal');"""
-
 insertRegistros = """INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4)
 VALUES ('{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}');"""
 
 selectAll = """SELECT * from REGISTROS where fecha >= '{}' AND fecha <= '{}' order by fecha ASC"""
 selectSome = """SELECT * from REGISTROS where (fecha >= '{}' AND fecha <= '{}') and (legajo in {}) order by fecha ASC"""
+
+insertEmpleado = """INSERT INTO legajos(LEG,APELLIDO,NOMBRE,AREA,TIPO_DE_PAGO)
+VALUES ('{}','{}','{}','{}','{}');"""
+
+deleteEmpleado = """DELETE FROM legajos
+WHERE LEG ={}"""
+
+if __name__ == '__main__':
+    pass

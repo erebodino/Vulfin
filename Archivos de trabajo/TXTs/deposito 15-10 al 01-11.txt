@@ -1,0 +1,269 @@
+VULCANOS.A                                            Reporte de Fichadas (Por Legajo)
+
+PERIODO:    16/10/2020  AL   01/11/2020                                       IMPRESO EL DÍA:  11/11/2020
+
+Tipo de equipo:   TODOS
+
+Empleado:         52 - SIRAGUSA JAVIER CARLOS S.                                  Tarjeta Nº          52
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:51    12:33   13:11   16:50
+Sábado     17/10/2020 08:22    12:01
+Lunes      19/10/2020 07:49            12:33           13:10   17:48
+Martes     20/10/2020 07:52    12:37   13:10   17:50           17:50
+Miércoles  21/10/2020 07:46    12:39   13:10   17:48
+Jueves     22/10/2020 07:51            13:11   17:48
+Viernes    23/10/2020 07:49            13:15   17:20
+Sábado     24/10/2020          08:09           12:00
+Lunes      26/10/2020 07:55    17:49
+Martes     27/10/2020 07:50    17:50
+Miércoles  28/10/2020 07:48    17:48
+Jueves     29/10/2020 07:41    17:00
+Viernes    30/10/2020 07:33    17:01
+Sábado     31/10/2020          08:02           12:02
+
+
+
+Empleado:        145 - ALVAREZ CARLOS MARIANO                                     Tarjeta Nº         145
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 08:10    12:42           16:48
+Sábado     17/10/2020          08:04           12:00
+Lunes      19/10/2020 12:43    12:43   13:08   17:04
+Martes     20/10/2020 07:57    13:24   13:48   18:15
+Miércoles  21/10/2020 07:56    13:23           17:49
+Jueves     22/10/2020 07:53    13:30           18:15
+Viernes    23/10/2020 07:54    16:53
+Sábado     24/10/2020 08:09    12:00
+Lunes      26/10/2020 07:57    12:45           12:45   13:15   18:15
+Martes     27/10/2020 07:55    12:53   13:22   18:15
+Miércoles  28/10/2020 07:53    13:09   13:38   18:01
+Jueves     29/10/2020 07:52            13:42   18:03
+Viernes    30/10/2020 07:59
+Sábado     31/10/2020 08:04            12:00
+
+
+
+Empleado:        226 - REY SAUL  ARGENTINO                                        Tarjeta Nº         226
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:44    16:49
+Sábado     17/10/2020 08:05    12:00
+Lunes      19/10/2020 07:51    12:43   13:08   17:48
+Martes     20/10/2020 07:47    12:36   13:09   18:15
+Miércoles  21/10/2020 07:44    12:39   13:09   17:48
+Jueves     22/10/2020 07:50    13:32   14:06   17:49
+Viernes    23/10/2020 07:45    14:13           16:53
+Sábado     24/10/2020 08:09    12:00
+Lunes      26/10/2020 07:43    13:22           18:16
+Martes     27/10/2020 07:41    13:27   13:56   18:16
+Miércoles  28/10/2020 07:43    18:01
+Jueves     29/10/2020 07:51    18:04
+Viernes    30/10/2020 07:44    13:32   14:13   17:02
+Sábado     31/10/2020 08:03    12:03
+
+
+
+Empleado:        343 - RIVERO PABLO                                               Tarjeta Nº         343
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:45    12:42   13:18   16:48
+Sábado     17/10/2020 08:05    12:00
+Lunes      19/10/2020 07:50    12:46   13:16   16:48
+
+
+
+Empleado:        398 - PALOMEQUE RODRIGO                                          Tarjeta Nº         398
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:53    12:33   13:11   16:48
+
+
+
+Empleado:        517 - asinari Santiago                                           Tarjeta Nº         517
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:51    13:24           16:48
+Lunes      19/10/2020 08:00    13:21           17:11
+Martes     20/10/2020 07:59    12:40   13:09   18:15
+Miércoles  21/10/2020 07:56    12:44           13:10   13:11   17:49
+Jueves     22/10/2020 07:57    12:43           18:15
+Viernes    23/10/2020 07:58
+Sábado     24/10/2020 08:31    11:55
+Lunes      26/10/2020 08:03
+Martes     27/10/2020 07:53    13:25   13:57   18:16
+Miércoles  28/10/2020 10:11
+Jueves     29/10/2020 07:59    12:43           17:59
+Viernes    30/10/2020 08:03    13:30           17:01
+
+
+
+Empleado:        576 - MALDONADO TOMAS ULISES ES                                  Tarjeta Nº         576
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  21/10/2020 07:48    16:49
+Jueves     22/10/2020 07:51            13:17           13:45   16:49
+Viernes    23/10/2020 07:49    12:42   13:14   16:49
+Lunes      26/10/2020 07:49    13:04   13:44   16:52
+Martes     27/10/2020 07:48    12:40   13:11   16:50
+Miércoles  28/10/2020 07:47    13:25   14:04   16:52
+Jueves     29/10/2020 07:51    13:02   13:37   17:50
+Viernes    30/10/2020 07:54            07:56   16:53
+Sábado     31/10/2020 08:03            12:01
+
+
+
+Empleado:        602 - LANDRIEL MAURO EMANUEL                                     Tarjeta Nº      10.027
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:28    12:44   13:17   16:49
+Sábado     17/10/2020 08:05    12:00
+Lunes      19/10/2020 07:38    12:45   13:16   16:49
+Martes     20/10/2020 07:41    12:38   13:09   16:49
+Miércoles  21/10/2020 07:32    16:49
+Jueves     22/10/2020 07:35    12:46   13:16   16:55
+Viernes    23/10/2020 07:34    12:47           13:14   13:14   16:51
+Sábado     24/10/2020 08:09    12:00
+Lunes      26/10/2020 07:23    12:37           12:37   13:07   17:48
+Martes     27/10/2020 07:38    12:41   13:11   17:51
+Miércoles  28/10/2020 07:36    12:43   13:16   17:49
+Jueves     29/10/2020 06:57    12:40   13:13   17:50
+Viernes    30/10/2020 07:31    12:43   13:15   16:54
+Sábado     31/10/2020 08:02    12:01
+
+
+
+Empleado:        639 - GIRAUDO LUCAS DARIO JS                                     Tarjeta Nº         639
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:27    12:32   13:11   16:48
+Lunes      19/10/2020 07:33    12:44   13:11   16:51
+Martes     20/10/2020 07:30    12:39   13:10   16:50
+Miércoles  21/10/2020 07:28    12:30   13:09   16:52
+Jueves     22/10/2020 07:32    12:35   13:11   16:50
+Viernes    23/10/2020 07:19    12:43   13:14   16:50
+Lunes      26/10/2020 07:21    12:34           12:34           13:03           16:52
+Martes     27/10/2020 07:23    12:32   13:05   16:49
+Miércoles  28/10/2020 07:21    12:43           13:15           16:51
+Jueves     29/10/2020 07:23    12:48   13:18   18:04
+Viernes    30/10/2020 07:31    12:45           13:18
+Sábado     31/10/2020 08:03            12:01
+
+
+
+Empleado:        642 - VEGA JONATHAN ISMAEL JS                                    Tarjeta Nº         642
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:44    13:30   14:00   16:48
+Sábado     17/10/2020 08:04    12:00
+Lunes      19/10/2020 07:45    12:44   13:11   16:50
+Martes     20/10/2020 07:38    12:42   13:09   18:15
+Miércoles  21/10/2020 07:48    12:39   13:09   17:48
+Jueves     22/10/2020 07:46    12:52   13:16           13:20   18:15
+Viernes    23/10/2020 07:43    14:21   14:51           15:42   15:42
+Sábado     24/10/2020 08:09    12:00
+Lunes      26/10/2020 07:45    12:44           12:44   13:09   16:51
+Martes     27/10/2020 07:45    13:30   13:57   18:15
+Miércoles  28/10/2020 07:50    13:45   14:20   16:53
+Jueves     29/10/2020 07:42    12:54   13:17
+Viernes    30/10/2020 07:45    13:30   14:07   16:59
+
+
+
+Empleado:        643 - GODOY ARROYO LAUTARO EZEQUIEL JS                           Tarjeta Nº         643
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020          12:44   13:18   16:48
+Sábado     17/10/2020 08:04    12:00
+Lunes      19/10/2020 07:46    13:22           13:53           16:56
+Martes     20/10/2020 13:22            13:53   18:15
+Miércoles  21/10/2020 07:36    13:22           13:54           16:48
+Jueves     22/10/2020 07:42    13:34   14:07   18:15
+Viernes    23/10/2020 07:44    16:54
+Sábado     24/10/2020 08:09    12:00
+Lunes      26/10/2020 07:46    13:03
+Martes     27/10/2020 07:58    12:45   13:16   18:16
+Miércoles  28/10/2020 07:45    12:56           13:28           18:01
+Jueves     29/10/2020 07:51    12:48           18:04
+Viernes    30/10/2020 07:54    16:59
+Sábado     31/10/2020 08:03            12:01
+
+
+
+Empleado:        693 - MORINA RODRIGO FABIAN RE                                   Tarjeta Nº         693
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 07:43    12:36   13:11   16:50
+Lunes      19/10/2020 07:44    12:46           16:56
+Martes     20/10/2020 07:58    12:39   13:10   16:55
+Miércoles  21/10/2020 07:57    12:36   13:10   16:51
+Jueves     22/10/2020 07:55    12:38   13:11   16:49
+Viernes    23/10/2020 07:50            12:34           13:15   16:52
+Lunes      26/10/2020 07:54    12:41           12:41           13:04           16:53
+Martes     27/10/2020 07:49    12:46   13:15   16:49
+Miércoles  28/10/2020 07:41    12:46   13:15   16:51
+Jueves     29/10/2020 07:55    12:52           18:05
+Viernes    30/10/2020 08:02    12:48   13:18   16:54
+Sábado     31/10/2020 08:03            12:01
+
+
+
+Empleado:        710 - VAZQUEZ IGNACIO OSCAR AS                                   Tarjeta Nº         710
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Martes     20/10/2020 09:18            09:18           09:18   12:46   13:09   16:54
+Miércoles  21/10/2020 07:48    12:35   13:10   16:52
+Jueves     22/10/2020 07:50    12:42   13:11   16:50
+Viernes    23/10/2020 07:53            12:32           13:14   16:50
+Lunes      26/10/2020 07:48    12:39           12:39           13:04           16:52
+Martes     27/10/2020 07:44    12:41   13:05   16:52
+Miércoles  28/10/2020 07:49    12:48   13:16   16:51
+Jueves     29/10/2020 07:49    12:51           18:04
+Viernes    30/10/2020 07:50            13:18   16:53
+Sábado     31/10/2020 08:03    12:02
+
+
+
+Total de empleados listados       13
+
+
+CLRESFIC.RPT-2.0                                   ClockCard 2000 de LARCON-SIA       PÁGINA N°:

@@ -250,7 +250,8 @@ class CalculadorHoras:
                             horas_trabajadas += (salidaSabado - horaIngreso).seconds  
                         else:
                             horas_trabajadas += (salidaSabado - frame.iloc[fila,idx]).seconds
-        logger.info('Contabilizando horas del sabado, se trabajo {}').format(horas_trabajadas)
+                    msg ='Contabilizando horas del sabado, se trabajo {}'.format(horas_trabajadas)
+                    logger.info(msg)
         return horas_trabajadas
     
     def horasTrabajadasMedioDia(self,frame,fila,fecha,dia):
@@ -281,7 +282,8 @@ class CalculadorHoras:
                             horas_trabajadas += (salidaMedioDia - horaIngreso).seconds                        
                         else:
                             horas_trabajadas += (salidaMedioDia - frame.iloc[fila,idx]).seconds
-        logger.info('Contabilizando horas en los Medio Dia, se trabajo {}').format(horas_trabajadas)
+                msg = 'Contabilizando horas en los Medio Dia, se trabajo {}'.format(horas_trabajadas)
+                logger.info(msg)
         return horas_trabajadas
         
     
@@ -318,16 +320,13 @@ class CalculadorHoras:
                         break
                     else:# Aca comienza a contar las horas trabajadas reales.
                         if dia == 'Sábado':
-                            print('Entrando al sabado')
                             horas_trabajadas = self.horasTrabajadasSabado(frame, fila, fecha, dia)
                         elif dia in mediosDias:
-                            print('Entrando al medioDia')
                             horas_trabajadas = self.horasTrabajadasMedioDia(frame, fila, fecha, dia)
                         else:               
                             if frame.iloc[fila,idx + 1] <= horaSalida:
                                 if frame.iloc[fila,idx] <= horaIngreso: 
                                     horas_trabajadas += (frame.iloc[fila,idx + 1] - horaIngreso).seconds 
-                                    print(fecha,'    ',horas_trabajadas )
                                 else:
                                     horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds
                             else:
@@ -384,19 +383,19 @@ class CalculadorHoras:
                 if frame.iloc[fila,x] ==  ceroHoy:
                     salidaOperario = frame.iloc[fila,x -2]
                     break
-            
+
             if (dia == 'Sábado' and salidaOperario > salidaSabado): #Checkea si es sabado pasadas las 13
                 minutosExtras100 += ((salidaOperario - salidaSabado).seconds)/3600
                 frame.iloc[fila,16] = minutosExtras100 #Asigna las horas extras al 100%
 
-            
-            elif dia in feriados:
+
+            elif fecha in feriados:
                 minutosExtras100 += frame.iloc[fila,14]
                 frame.iloc[fila,14] = 0
                 frame.iloc[fila,16] = minutosExtras100
             
-            elif dia in mediosDias and salidaOperario > salidaMedioDia:
-                minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600
+            elif fecha in mediosDias and salidaOperario > salidaMedioDia:
+                minutosExtras100 += round(((salidaOperario - salidaMedioDia).seconds)/3600,2)
                 frame.iloc[fila,16] = minutosExtras100
 
             
@@ -412,7 +411,7 @@ class CalculadorHoras:
         logger.info(msg)
         return frame
     
-    def restaRetrasosTardanzas(self,frame,medioDias=[]):
+    def restaRetrasosTardanzas(self,frame,mediosDias=[]):
         
         logger.info('Iniciando resta de minutos tardes')
         for x in range(len(frame)):
@@ -439,10 +438,10 @@ class CalculadorHoras:
                 if frame.iloc[x,4] > horaIngreso:
                     tardanza = round((((frame.iloc[x,4] - horaIngreso).seconds)/3600),2)               
                 
-                if fecha in medioDias:
+                if fecha in mediosDias:
                     if salida < horaSalidaMedioDia:
                         retiro = round((((horaSalidaMedioDia - salida).seconds)/3600),2)                        
-                elif fecha not in medioDias:
+                elif fecha not in mediosDias:
                     if salida < horaSalida and dia != 'Sábado':
                         retiro = round((((horaSalida - salida).seconds)/3600),2)
                 
@@ -464,6 +463,13 @@ class CalculadorHoras:
             
         return frame
 
+def repreguntar():
+    decision = pyip.inputYesNo(prompt='¿Los datos ingresados son correctos? (SI/NO)  ',yesVal='SI',noVal='NO')
+    print('\n')     
+    if decision == 'SI':
+        return True
+    else:
+        return False
     
 def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):    
         """
@@ -670,6 +676,7 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
                             if posicion == 4 and hora_ingreso > mitadMañana: # Verifica si solo hay 1 par de ingreso-egreso y si no se ficho INGRESO.
                                 print(('El dia {} el operario {:10s} no ficho INGRESO. Ingreso  a la hora: ').format(fecha,nombre))
                                 horaEntrada = str(pyip.inputDatetime('Ingrese el horario de Ingreso en formato HH:MM: ',formats=["%H:%M"]))
+                                print('\n') 
                                 horaEntrada = horaEntrada.split()[1] #Rompe la str ya que inputDatetime devuelve '1900-01-01 HH:MM:SS' y se queda
                                 # con la segunda parte HH:MM:SS
                                 horaEntrada = horaEntrada.split(':')[0]+':'+horaEntrada.split(':')[1] #Vuelve a romper y se queda con HH y MM
@@ -683,6 +690,7 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
                             elif posicion == 4 and hora_ingreso < mitadMañana:# Verifica si solo hay 1 par de ingreso-egreso y si no se ficho EGRESO.
                                 print(('El dia {} el operario {:10s} no ficho SALIDA. Salio  a la hora: ').format(fecha,nombre))
                                 horaSalida = str(pyip.inputDatetime('Ingrese el horario de SALIDA en formato HH:MM: ',formats=["%H:%M"]))
+                                print('\n') 
                                 horaSalida = horaSalida.split()[1]
                                 horaSalida = horaSalida.split(':')[0]+':'+horaSalida.split(':')[1]
                                 horaSalida = pd.to_datetime(('{} {}').format(fecha,str(horaSalida)))
@@ -695,7 +703,7 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
                         # A partir de aca, estas condiciones implican mas de 1 par de ingreso-egreso.
                         if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
                         # es mayor a 1 hora, en ese caso considera que no se ficho el INGRESO o EGRESO del ALMUERZO.
-                            print('='*30)
+                            print('='*80)
                             print(('El dia {} el operario {:10s} no ficho Salida o re-ingreso (Almuerzo). Re-ingrese las horas:\n').format(fecha,nombre))
                             print('Entradas y salidas del dia:\n')
                             cantidad = 0
@@ -713,33 +721,39 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
                                     if ingreso != cero:
                                         print(('{} {}').format(ingresoColor,str(ingreso))+'\n')                                    
                                     break
+                            desicion = False    
+                            while not desicion:
                             #En esta variable se almacenan TODOS los horarios NUEVAMENTE, mas el horario que faltaba.
-                            horarios = [str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"])) for x in range(cantidad +1)]
+                                horarios = [str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"])) for x in range(cantidad +1)]
+                                print('\n')                                
+                                horasLimpio = []
+                                
+                                for y in range(len(horarios)):
+                                    hora = horarios[y]
+                                    hora = hora.split()[1]
+                                    hora = hora.split(':')[0]+':'+hora.split(':')[1]
+                                    hora = pd.to_datetime(('{} {}').format(fecha,str(hora)))
+                                    horasLimpio.append(hora)
+                                
+                                for idx in range(0,len(horasLimpio),2):#Iterera sobre los nuevos horarios que van a quedar y los imprime
+                                    ingreso = horasLimpio[idx]
+                                    egreso = horasLimpio[idx +1]
+        
+                                    print(('{} {}').format(ingresoColor,str(ingreso))+'      '+('{} {}').format(egresoColor,str(egreso))+'\n')
+                                desicion = repreguntar()
                             
-                            
-                            horasLimpio = []
-                            
-                            for y in range(len(horarios)):
-                                hora = horarios[y]
-                                hora = hora.split()[1]
-                                hora = hora.split(':')[0]+':'+hora.split(':')[1]
-                                hora = pd.to_datetime(('{} {}').format(fecha,str(hora)))
-                                horasLimpio.append(hora)
-                            
-                            for idx in range(0,len(horasLimpio),2):#Iterera sobre los nuevos horarios que van a quedar y los imprime
+                            for idx in range(0,len(horasLimpio),2):
                                 ingreso = horasLimpio[idx]
                                 egreso = horasLimpio[idx +1]
-    
-                                print(('{} {}').format(ingresoColor,str(ingreso))+'      '+('{} {}').format(egresoColor,str(egreso))+'\n')
-                                    
                                 frame.iloc[frame[frame[campo] == 0].index[x],4 +idx] = ingreso
                                 frame.iloc[frame[frame[campo] == 0].index[x],4 +(idx +1)] = egreso
-                            print('='*30)
+                            print('='*80)
+                            print('\n') 
                             break
                         
                         elif ((hora_ingreso - hora_egreso_anterior).seconds)/3600 < 1.0:#Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
                         # es menor a 1 hora, en ese caso considera que no se ficho EGRESO del dia.
-                            print('='*30)
+                            print('='*80)
                             print(('El dia {} el operario {:10s} no ficho SALIDA. Ingrese la hora:\n').format(fecha,nombre))
                             cantidad = 0
                             for horario in range(4,12,1):
@@ -748,12 +762,14 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
                                     break
                                 else:
                                     cantidad +=1
-                            hora = str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"])) 
+                            hora = str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"]))
+                            print('\n') 
                             hora = hora.split()[1]
                             hora = hora.split(':')[0]+':'+hora.split(':')[1]
                             hora = pd.to_datetime(('{} {}').format(fecha,str(hora)))
                             frame.iloc[frame[frame[campo] == 0].index[x],4 +cantidad] = hora
-                            print('='*30)
+                            print('='*80)
+                            print('\n') 
                             break
         
            
@@ -763,3 +779,6 @@ def ingresoNoFichadas(frame,MedioDia=[],feriados=[]):
             logger.error("excepcion desconocida: %s", traceback.format_exc())
         finally:
             pass
+
+if __name__ == '__main__':
+    pass

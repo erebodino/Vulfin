@@ -1,6 +1,9 @@
 #PATHS
 
-#empleados_text = r'J:\Emma\Vulcano\RelojRRHH\Proyecto\prueba.txt'
+areas = ['ARMADO','INYECCION','MOTORES','DEPOSITO','COMERCIAL','MECANIZADO',
+         'ADMINISTRACION','METALURGICA','LOGISTICA','SOPLADO',
+         ]
+formaDePago = ['Mensual','Jornal']
 pathTXT ='Archivos de trabajo\TXTs'
 empleados_text = r'J:\Emma\14. Vulcano\RelojRRHH\Proyecto\TXTs\siragusaCOMPLETO.txt'
 
@@ -20,3 +23,7 @@ nombreInformeFaltasTardanzasPDF = 'Informe faltas, tardanzas y retiros del {} al
 
 
 pathExcelInforme = 'Archivos de trabajo\Informes\Excel'
+
+if __name__ == '__main__':
+    pass
+
