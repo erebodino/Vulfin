@@ -42,5 +42,10 @@ VALUES ('{}','{}','{}','{}','{}');"""
 deleteEmpleado = """DELETE FROM legajos
 WHERE LEG ={}"""
 
+actualizarEmpleado = """UPDATE legajos
+SET {} = '{}'
+WHERE LEG = '{}'
+"""
+
 if __name__ == '__main__':
     pass

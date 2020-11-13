@@ -1332,3 +1332,195 @@ ValueError: cannot convert float NaN to integer
 [2020-11-11 23:15:24,108] analizador [horasExtrasTrabajadas Linea : 411] --> INFO :Contabilizando horas al 50 y 100
 [2020-11-11 23:15:31,493] __main__ [informeFaltasTardanzas Linea : 508] --> INFO :Creacion del Word de manera correcta
 [2020-11-11 23:15:34,510] __main__ [informeFaltasTardanzas Linea : 516] --> INFO :Creacion del PDF de manera correcta
+[2020-11-13 10:32:53,258] __main__ [<module> Linea : 719] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 716, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 668, in mainLoop
+    actualizaBDLegajos(managerSQL, legajo, campo, valor, actualizarEmpleado)
+UnboundLocalError: local variable 'managerSQL' referenced before assignment
+
+[2020-11-13 10:34:43,120] __main__ [actualizaBDLegajos Linea : 122] --> INFO :Actulizando operario legajo 2500 en la BD
+[2020-11-13 10:34:43,120] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 10:34:43,121] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 10:35:12,395] __main__ [actualizaBDLegajos Linea : 122] --> INFO :Actulizando operario legajo 1300 en la BD
+[2020-11-13 10:35:12,396] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 10:35:12,396] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 10:36:18,891] __main__ [actualizaBDLegajos Linea : 122] --> INFO :Actulizando operario legajo 1300 en la BD
+[2020-11-13 10:36:18,892] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 10:36:18,892] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 10:38:14,098] __main__ [actualizaBDLegajos Linea : 122] --> INFO :Actulizando operario legajo 1300 en la BD
+[2020-11-13 10:38:14,099] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 10:38:14,100] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 10:39:37,397] __main__ [actualizaBDLegajos Linea : 122] --> INFO :Actulizando operario legajo 1200 en la BD
+[2020-11-13 10:39:37,398] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 10:39:37,398] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 10:40:04,848] __main__ [actualizaBDLegajos Linea : 122] --> INFO :Actulizando operario legajo 1200 en la BD
+[2020-11-13 10:40:04,849] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 10:40:04,849] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 10:40:45,334] __main__ [deleteBDLegajos Linea : 116] --> INFO :Borrando operario en la BD
+[2020-11-13 10:40:45,334] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 10:40:45,334] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 12:44:27,017] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 12:44:33,828] __main__ [<module> Linea : 721] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 718, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 603, in mainLoop
+    if frame.empty:
+AttributeError: 'bool' object has no attribute 'empty'
+
+[2020-11-13 12:45:20,735] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 12:57:17,431] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 12:57:23,425] __main__ [frameFichadas Linea : 156] --> WARNING :Esta mal el path que lleva al texto
+[2020-11-13 12:57:23,425] __main__ [<module> Linea : 737] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 734, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 617, in mainLoop
+    frame = frameFichadas()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 159, in frameFichadas
+    if len(listaTXT) == 0:
+TypeError: object of type 'int' has no len()
+
+[2020-11-13 12:58:02,557] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 12:58:09,336] __main__ [frameFichadas Linea : 156] --> WARNING :Esta mal el path que lleva al texto
+[2020-11-13 12:58:09,336] __main__ [<module> Linea : 738] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 735, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 618, in mainLoop
+    frame = frameFichadas()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\clean_data.py", line 160, in frameFichadas
+    if len(listaTXT) == 0:
+TypeError: object of type 'int' has no len()
+
+[2020-11-13 12:59:53,994] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 13:00:00,701] __main__ [frameFichadas Linea : 156] --> WARNING :Esta mal el path que lleva al texto
+[2020-11-13 14:06:09,811] __main__ [actualizacionRegistros Linea : 322] --> WARNING :Esta mal el path que lleva al texto de la actualizacion del Excel
+[2020-11-13 15:34:18,985] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 15:35:26,762] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 15:36:14,088] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 15:56:49,251] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 15:57:01,180] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:01,186] __main__ [limpiezaDeRegistros Linea : 280] --> INFO :Limpiando registros
+[2020-11-13 15:57:01,186] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:01,192] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.9
+[2020-11-13 15:57:01,193] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 15:57:01,195] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 15:57:01,196] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 15:57:01,197] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 15:57:01,198] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 15:57:01,199] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 15:57:01,200] analizador [informeNoFichadas Linea : 504] --> INFO :Comenzando escritura en el word
+[2020-11-13 15:57:33,333] analizador [ingresoNoFichadas Linea : 637] --> INFO :Comenzando inform de no fichadas
+[2020-11-13 15:57:57,414] __main__ [insercionBD Linea : 100] --> INFO :Insertando registros en la BD
+[2020-11-13 15:57:57,415] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:57,415] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 15:57:57,416] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:57,416] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 15:57:57,416] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:57,416] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 15:57:57,503] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:57,503] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 15:57:57,504] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:57,504] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 15:57:57,575] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:57:57,575] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 15:58:47,217] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 15:58:59,419] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:58:59,427] analizador [restaRetrasosTardanzas Linea : 420] --> INFO :Iniciando resta de minutos tardes
+[2020-11-13 15:58:59,427] analizador [horasExtrasTrabajadas Linea : 415] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-13 15:59:02,395] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 15:59:16,117] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 15:59:16,127] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 15:59:16,128] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 15:59:16,129] analizador [restaRetrasosTardanzas Linea : 420] --> INFO :Iniciando resta de minutos tardes
+[2020-11-13 15:59:16,130] analizador [horasExtrasTrabajadas Linea : 415] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-13 15:59:25,698] __main__ [informeFaltasTardanzas Linea : 615] --> INFO :Creacion del Word de manera correcta
+[2020-11-13 15:59:28,638] __main__ [informeFaltasTardanzas Linea : 623] --> INFO :Creacion del PDF de manera correcta
+[2020-11-13 16:01:20,956] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 16:01:29,308] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:01:29,314] __main__ [limpiezaDeRegistros Linea : 280] --> INFO :Limpiando registros
+[2020-11-13 16:01:29,314] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:01:29,319] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.9
+[2020-11-13 16:01:29,321] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 16:01:29,322] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:01:29,323] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:01:29,324] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 16:01:29,326] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 16:01:29,327] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 16:01:29,328] analizador [informeNoFichadas Linea : 504] --> INFO :Comenzando escritura en el word
+[2020-11-13 16:03:26,163] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 16:03:35,818] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:03:35,824] __main__ [limpiezaDeRegistros Linea : 280] --> INFO :Limpiando registros
+[2020-11-13 16:03:35,824] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:03:35,830] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.9
+[2020-11-13 16:03:35,831] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 16:03:35,833] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:03:35,834] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:03:35,835] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 16:03:35,836] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 16:03:35,837] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 16:03:35,838] analizador [informeNoFichadas Linea : 504] --> INFO :Comenzando escritura en el word
+[2020-11-13 16:05:35,778] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 16:05:45,714] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:05:45,719] __main__ [limpiezaDeRegistros Linea : 280] --> INFO :Limpiando registros
+[2020-11-13 16:05:45,719] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:05:45,725] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.9
+[2020-11-13 16:05:45,726] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 16:05:45,727] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:05:45,728] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:05:45,730] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 0.0
+[2020-11-13 16:05:45,731] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 16:05:45,732] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 16:05:45,733] analizador [informeNoFichadas Linea : 504] --> INFO :Comenzando escritura en el word
+[2020-11-13 16:05:57,078] analizador [ingresoNoFichadas Linea : 637] --> INFO :Comenzando inform de no fichadas
+[2020-11-13 16:06:26,396] __main__ [insercionBD Linea : 100] --> INFO :Insertando registros en la BD
+[2020-11-13 16:06:26,397] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:06:26,397] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 16:06:26,459] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:06:26,459] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 16:06:26,532] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:06:26,533] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 16:06:26,607] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:06:26,607] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 16:06:26,696] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:06:26,697] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 16:06:26,773] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:06:26,774] createDB [executeQuery Linea : 46] --> INFO :Ejecutando query
+[2020-11-13 16:06:33,202] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 16:06:48,403] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:06:48,414] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.9
+[2020-11-13 16:06:48,416] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 7.85
+[2020-11-13 16:06:48,417] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:06:48,418] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:06:48,420] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.25
+[2020-11-13 16:06:48,421] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 16:06:48,422] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 16:06:48,422] analizador [restaRetrasosTardanzas Linea : 420] --> INFO :Iniciando resta de minutos tardes
+[2020-11-13 16:06:48,432] analizador [horasExtrasTrabajadas Linea : 415] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-13 16:06:55,184] __main__ [informeFaltasTardanzas Linea : 615] --> INFO :Creacion del Word de manera correcta
+[2020-11-13 16:06:57,977] __main__ [informeFaltasTardanzas Linea : 623] --> INFO :Creacion del PDF de manera correcta
+[2020-11-13 16:10:30,263] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 16:10:36,767] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:10:36,782] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.9
+[2020-11-13 16:10:36,784] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 7.85
+[2020-11-13 16:10:36,785] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:10:36,786] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:10:36,788] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.25
+[2020-11-13 16:10:36,789] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 16:10:36,790] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 16:10:36,790] analizador [restaRetrasosTardanzas Linea : 420] --> INFO :Iniciando resta de minutos tardes
+[2020-11-13 16:10:36,800] analizador [horasExtrasTrabajadas Linea : 415] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-13 16:10:43,668] __main__ [informeFaltasTardanzas Linea : 615] --> INFO :Creacion del Word de manera correcta
+[2020-11-13 16:10:46,649] __main__ [informeFaltasTardanzas Linea : 623] --> INFO :Creacion del PDF de manera correcta
+[2020-11-13 16:19:27,088] __main__ [fechasDeCalculo Linea : 33] --> INFO :Registrando fechas
+[2020-11-13 16:19:37,169] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-13 16:19:37,180] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.9
+[2020-11-13 16:19:37,182] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 7.85
+[2020-11-13 16:19:37,183] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:19:37,185] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.93
+[2020-11-13 16:19:37,186] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 8.25
+[2020-11-13 16:19:37,188] analizador [horasTrabajadasSabado Linea : 254] --> INFO :Contabilizando horas del sabado, se trabajo 14460
+[2020-11-13 16:19:37,189] analizador [horasTrabajadas Linea : 341] --> INFO :Contabilizando horas dias normales, se trabajo 4.02
+[2020-11-13 16:19:37,189] analizador [restaRetrasosTardanzas Linea : 420] --> INFO :Iniciando resta de minutos tardes
+[2020-11-13 16:19:37,198] analizador [horasExtrasTrabajadas Linea : 415] --> INFO :Contabilizando horas al 50 y 100
+[2020-11-13 16:19:44,118] __main__ [informeFaltasTardanzas Linea : 615] --> INFO :Creacion del Word de manera correcta
+[2020-11-13 16:19:47,030] __main__ [informeFaltasTardanzas Linea : 623] --> INFO :Creacion del PDF de manera correcta

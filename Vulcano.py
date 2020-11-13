@@ -9,13 +9,15 @@ import win32com.client
 import docx
 import colorama
 colorama.init()
+
 from paths import empleados_text,pathExcelTemporal,nombreExcelTemporal,pathExcelInforme,pathTXT,areas,formaDePago
 from analizador import Analizador,CalculadorHoras,informeNoFichadas,ingresoNoFichadas
 from createDB import ManagerSQL
-from queryes import queryConsultaEmpleados,insertRegistros,selectAll,selectSome,insertEmpleado,deleteEmpleado
+from queryes import queryConsultaEmpleados,insertRegistros,selectAll,selectSome,insertEmpleado,deleteEmpleado,actualizarEmpleado
 from openpyxl import load_workbook
 from time import sleep
 from termcolor import colored
+
 
 logging.config.fileConfig('logger.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
@@ -83,8 +85,8 @@ def ingreso_egreso(line,frame,legajo,nombre):
                                   ignore_index=True) #agrega una fila mas al dataframe con los datos de ese dia
                                 
         return frame
-    except Exception as e:
-        logger.error('',exc_info=True)
+    except Exception:
+        logger.error("excepcion desconocida: %s", traceback.format_exc())
         return None
 
 def creacionFrameVacio():
@@ -114,9 +116,29 @@ def deleteBDLegajos(managerSQL,legajo,query):
     logger.info('Borrando operario en la BD')
     queryInsercion = query.format(legajo)
     managerSQL.executeQuery(managerSQL.conexion(),queryInsercion) 
+    
+def actualizaBDLegajos(managerSQL,legajo,campo,valor,query):
+    msg = 'Actulizando operario legajo {} en la BD, campo actualizado {}, valor nuevo {}'.format(legajo,campo,valor)
+    logger.info(msg)
+    queryInsercion = query.format(campo,valor,legajo)
+    print(queryInsercion)
+    managerSQL.executeQuery(managerSQL.conexion(),queryInsercion) 
         
 
 def frameFichadas():
+    """
+    Funcion que se encarga de tomar el TXT, e ir leyendo linea a linea, la secuencia es:
+        
+        1.- Crea un dataFrame vacio donde va a append las lineas.
+        2.- Teniendo en cuenta el pathTXT (variable), busca los archivos en esa carpeta 
+        3.- Lee linea a linea el archivo y los pasa a la funcion que los limpia(ingreso_egreso).
+
+    Returns
+    -------
+    frame : datFrame
+       dataFrame con todos los horarios ya limpios y sin duplicados.
+
+    """
     
     semaine = {'Lunes': 0,
                'Martes' : 1,
@@ -128,14 +150,18 @@ def frameFichadas():
               }
     
     frame = creacionFrameVacio()
-    MedioDia = None   
-    
-    listaTXT = os.listdir(pathTXT)
-    
+    MedioDia = None
+    try:
+        listaTXT = os.listdir(pathTXT)
+    except FileNotFoundError:
+        logger.warning('Esta mal el path que lleva al texto')
+        listaTXT = []
+        
     if len(listaTXT) == 0:        
-        return False
+        return frame
     else:
         archivo = pyip.inputMenu(listaTXT,prompt='Elija uno de los archivos:\n',lettered=True)
+    
     archivo = os.path.join(os.getcwd(),pathTXT,archivo)
     print('\n')
     try:
@@ -208,12 +234,23 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     y si esta dentro de los rotativos encara con una logica distinta.    
     En caso de ser normal y no fichar salida o ingreso queda el espacio vacio.    
     Por ultima genera un dataframe totalizando todo
-    
+
+    Parameters
+    ----------
+    frame : datFrame
+        dataFrame con todas las horas ya limpias.
+    fechaInicio : datetime.date
+        fecha de incio de la secuencia que se quiere limpiar.
+    fechaFin : datetime.date
+        fecha de finalizacion de la secuencia que se quiere limpiar.
+
     Returns
     -------
-    Dataframe
+    frameAnalisis : dataFrame
+        dataFrame con solamente los legajos de los operarios que no son rotativos.
 
     """
+
     
     manager = ManagerSQL()
     sql_conection = manager.conexion()
@@ -224,15 +261,9 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
     legajosSinInyeccion = [int(x) for x in legajosSinInyeccion]#los pasa de numpy.int64 a int
 
-    legajosFrame = frame['Empleado'].unique()
-
     legajos = frame['Empleado'].unique()
-    
-    fechaInicio = fechaInicio
-    fechaFin = fechaFin
-    
-    lista =[]
     frameAnalisis = creacionFrameVacio()
+    
     for legajo in legajos:
         newFrame = frame[frame['Empleado']==legajo]#legajo es un STR
         if int(legajo) in legajosSinInyeccion:
@@ -240,70 +271,80 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
             newFrame = newFrame.loc[mascara].copy()
         else:
             continue
-            
-        
         frameAnalisis = frameAnalisis.append(newFrame)
     
     return frameAnalisis
 
 def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
-    
-    manager = ManagerSQL()
-    sql_conection = manager.conexion()
-    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
-
-    
-    legajosSinInyeccion = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') &(consultaEmpleados['AREA'] != 'SOPLADO')] 
-    legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
-    legajosSinInyeccion = [int(x) for x in legajosSinInyeccion]#los pasa de numpy.int64 a int
-
-    legajosFrame = frame['Empleado'].unique()
-
-    frameAnalisis = creacionFrameVacio()
-    calculador = CalculadorHoras()
-    
-    for legajo in legajosFrame:
-        if int(legajo) in legajosSinInyeccion:
-            newFrame = frame[frame['Empleado']==legajo].copy()            
-            frameCalculado = calculador.horasTrabajadas(newFrame)        
-            frameAnalisis = frameAnalisis.append(frameCalculado)
+    try:    
+        logger.info('Limpiando registros')
+        manager = ManagerSQL()
+        sql_conection = manager.conexion()
+        consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
         
-    frameAnalisis = frameAnalisis.reset_index(drop=True) 
-    informeNoFichadas(frameAnalisis,fechaInicio,fechaFin,mediosDias=[],feriados=[])#Crea el informe de no fichadas
-    campo = 'H.Norm' #campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
-    len_noMarca = len(frameAnalisis[frameAnalisis[campo] == 0])
+        legajosSinInyeccion = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') &(consultaEmpleados['AREA'] != 'SOPLADO')] 
+        legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
+        legajosSinInyeccion = [int(x) for x in legajosSinInyeccion]#los pasa de numpy.int64 a int
     
-    if len_noMarca == 0:
-        print('TODOS los registros se encuentran completos, se procede a escribir la Base de datos.')
-        insercionBD(manager,frameAnalisis,insertRegistros)
-    else:
-        nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
-        nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
-        frameAnalisis.to_excel(nombre,index=False)
+        legajosFrame = frame['Empleado'].unique()
+    
+        frameAnalisis = creacionFrameVacio()
+        calculador = CalculadorHoras()
+        
+        for legajo in legajosFrame:
+            if int(legajo) in legajosSinInyeccion:
+                newFrame = frame[frame['Empleado']==legajo].copy()            
+                frameCalculado = calculador.horasTrabajadas(newFrame)        
+                frameAnalisis = frameAnalisis.append(frameCalculado)
+            
+        frameAnalisis = frameAnalisis.reset_index(drop=True) 
+        informeNoFichadas(frameAnalisis,fechaInicio,fechaFin,mediosDias=[],feriados=[])#Crea el informe de no fichadas
+        campo = 'H.Norm' #campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
+        len_noMarca = len(frameAnalisis[frameAnalisis[campo] == 0])
+        
+        if len_noMarca == 0:
+            print('TODOS los registros se encuentran completos, se procede a escribir la Base de datos.')
+            insercionBD(manager,frameAnalisis,insertRegistros)
+        else:
+            nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
+            nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
+            frameAnalisis.to_excel(nombre,index=False)
+    except:
+        logger.error("excepcion desconocida: %s", traceback.format_exc())
           
     
 def actualizacionRegistros():
     
-    listaExcels = os.listdir(pathExcelTemporal)
-    listaCodigosClean = [x for x in listaExcels if 'Excel' in x]
-    if len(listaCodigosClean) == 1:
-        archivo = listaCodigosClean[0]
-        msg = 'Se procede a utilizar el unico archivo en la carpeta\n{}'.format(str(listaCodigosClean[0]))
-        print(msg)
-    else: 
-        archivo = pyip.inputMenu(listaCodigosClean,prompt='Elija uno de los archivos:\n',lettered=True)
-    print('\n')
-    manager = ManagerSQL()
-    calculador = CalculadorHoras()
-    
-    # nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
-    nombre = os.path.join(os.getcwd(),pathExcelTemporal,archivo)
-    
-    frameAnalisis = pd.read_excel(nombre)
-    frameAnalisis['Fecha'] = pd.to_datetime(frameAnalisis['Fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01
-    
-    frameCorregido = ingresoNoFichadas(frameAnalisis)#Corrige los registros que estan en cero    
-    insercionBD(manager,frameCorregido,insertRegistros)#Escribe la BD    
+    try:
+        try:
+            listaExcels = os.listdir(pathExcelTemporal)
+        except FileNotFoundError:
+            logger.warning('Esta mal el path que lleva al texto de la actualizacion del Excel')
+            print('No existen archivos que actualizar')
+            return
+
+        
+        listaExcels = os.listdir(pathExcelTemporal)
+        listaCodigosClean = [x for x in listaExcels if 'Excel' in x]
+        if len(listaCodigosClean) == 1:
+            archivo = listaCodigosClean[0]
+            msg = 'Se procede a utilizar el unico archivo en la carpeta\n{}'.format(str(listaCodigosClean[0]))
+            print(msg)
+        else: 
+            archivo = pyip.inputMenu(listaCodigosClean,prompt='Elija uno de los archivos:\n',lettered=True)
+        print('\n')
+        
+        
+        # nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
+        nombre = os.path.join(os.getcwd(),pathExcelTemporal,archivo)    
+        frameAnalisis = pd.read_excel(nombre)
+        frameAnalisis['Fecha'] = pd.to_datetime(frameAnalisis['Fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01    
+        frameCorregido = ingresoNoFichadas(frameAnalisis)#Corrige los registros que estan en cero 
+        
+        manager = ManagerSQL()
+        insercionBD(manager,frameCorregido,insertRegistros)#Escribe la BD
+    except:
+        logger.error("excepcion desconocida: %s", traceback.format_exc())
 
 
 def validador(eleccion):
@@ -312,28 +353,71 @@ def validador(eleccion):
             raise Exception('\nExisten caracteres que no pueden estar incluidos en el nombre\n\n')
 
 def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados):
+    """
+    Funcion que se encarga de tomar el dataframe desde la BD que ya tiene calculadas las H.Norm. H.50 y H.100
+    y totaliza por cada empleado las horas trabajadas y a su vez cuenta los dias que trabajo. Los dias se calculan contanto en el dataframe.
+    
+
+    Parameters
+    ----------
+    frame : dataframe
+        dataFrame que posee todos los datos de los empleados juntos con las horas trabajadas.
+    fechaInicio : datetime.date
+        fechaInicio sobre la cual se esta analizando.
+    fechaFin : datetime.date
+        fechaFin sobre la cual se analiza.
+    feriados : list
+        Lista que tiene dentro los dias entre fechaInicio y fechaFin que son feriados.
+
+    Returns
+    -------
+    frameConcatenado : dataFrame
+        Devuelve un dataFrame con una fila por cada empleado en donde se encarga de totalizar todas las horas y los
+        dias trabajados.
+
+    """
     
     fechaInicio = pd.to_datetime(fechaInicio).date()
     fechaFin = pd.to_datetime(fechaFin).date()
     diasLaborales = list(pd.bdate_range(fechaInicio,fechaFin))
 
     
-    diasLaborales = len(list(pd.bdate_range(fechaInicio,fechaFin)))
-    diasLaborales = diasLaborales - len(feriados)
-    frame = frame.groupby(["Legajo","Nombre"])
-    frameLegajo = frame.sum()
+    diasLaborales = len(list(pd.bdate_range(fechaInicio,fechaFin)))#calcula los dias habiles entre 2 fechas
+    diasLaborales = diasLaborales - len(feriados) #Al total de dias habiles le resta los feriados
+    frame = frame.groupby(["Legajo","Nombre"])#agrupa el frame entre legajo y nombre para asi poder totalizar
+    frameLegajo = frame.sum() #Suma todas las columnas numericas [H.Norm,H50,H100]
     frameLegajo.reset_index(inplace=True)
     frameDiasLaborales = frame[['Dia']].count()
-    frameConcatenado = pd.merge(frameLegajo,frameDiasLaborales,on='Legajo')
+    frameConcatenado = pd.merge(frameLegajo,frameDiasLaborales,on='Legajo') #crea una nuevo Frame juntando dias como horas.
     frameConcatenado = frameConcatenado.rename(columns={'Dia':'Dias Trabajados'})
-    #frameConcatenado['Faltas'] = diasLaborales - frameConcatenado['Dias Trabajados']
     
     return frameConcatenado
     
     
     
     
-def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):    
+def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):  
+    """
+    Funcion que se encarga de realizar una query sobre la BD, traer los datos, ordenar los types
+    y luego realizar el calcluo de horas trabajadas: normales,extras50 y extras100.
+
+    Parameters
+    ----------
+    fechaInicio : datetime.date
+        fechaInicio sobre la cual se esta analizando.
+    fechaFin : datetime.date
+        fechaFin sobre la cual se analiza.
+    mediosDias : List, optional
+        DESCRIPTION. The default is [].lista con mediosDias entre las fechas de analisis
+    feriados : List, optional
+        DESCRIPTION. The default is [].lista con feriados entre las fechas de analisis.
+
+    Returns
+    -------
+    frameCorregido : dataFrame
+        dataFrame que ya posee todas las horas calculadas por cada operario.
+
+    """
     
     
     columnas = ['fecha','ingreso0','egreso0',
@@ -353,12 +437,13 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
     informes = ['Todos los legajos','Algunos legajos']
     respuesta = pyip.inputMenu(informes,prompt='Seleccione alguno de los informes disponibles: \n',
                                lettered=True)
+    #=====================CUIDADO SOLO ESTA FUNCIONANDO PARA LOS LEGAJOS BUENOS, NO PARA LOS OTROS===================
     print('\n')
     if respuesta == 'Todos los legajos':        
-        query = selectAll.format(fechaInicio,fechaFin)
+        query = selectAll.format(fechaInicio,fechaFin)# query select *
         frameCorregido = pd.read_sql(query,manager.conexion(),parse_dates=columnas)
-        frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date
-        frameCorregido.rename(columns = columnasReemplazo,inplace=True)
+        frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01    
+        frameCorregido.rename(columns = columnasReemplazo,inplace=True) #renombra las columnas
     
     elif respuesta == 'Algunos legajos':
         legajosTupla =[]
@@ -369,8 +454,8 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         legajosTupla = tuple(legajosTupla)
         query = selectSome.format(fechaInicio,fechaFin,legajosTupla)
         frameCorregido = pd.read_sql(query,manager.conexion(),parse_dates=columnas)
-        frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date
-        frameCorregido.rename(columns = columnasReemplazo,inplace=True)
+        frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date# same above
+        frameCorregido.rename(columns = columnasReemplazo,inplace=True)#same above
         
     frameCorregido.drop(['id'],axis=1,inplace=True)  
     frameCorregido = calculador.horasTrabajadas(frameCorregido)
@@ -389,7 +474,7 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         frameExtras.to_excel(nombre,sheet_name='Registros',index=False)
         
         book = load_workbook(nombre)
-        writer = pd.ExcelWriter(nombre, engine = 'openpyxl')
+        writer = pd.ExcelWriter(nombre, engine = 'openpyxl') #writer para escribir 2 hojas en el excel
         writer.book = book      
         
         frameTotalizado = hojaTotalizadora(frameExtras, fechaInicio, fechaFin,feriados)
@@ -401,6 +486,28 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
     return frameCorregido
 
 def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
+    """
+    Funcion que se encarga de crear el informe en pdf de los retrasos, faltas  tardanzas, para eso crea un dict
+    e itera sobre el dataframe para ir contando
+
+    Parameters
+    ----------
+    frame : dataFrame
+        dataFrame con las horas calculadas.
+    fechaInicio : datetime.date
+        fechaInicio sobre la cual se esta analizando.
+    fechaFin : datetime.date
+        fechaFin sobre la cual se analiza.
+    medioDias : TYPE, optional
+        DESCRIPTION. The default is [].
+    feriados : TYPE, optional
+        DESCRIPTION. The default is [].
+
+    Returns
+    -------
+    None.
+
+    """
     
     try:    
         fechaInicio = pd.to_datetime(fechaInicio).date()
@@ -521,15 +628,15 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
 
 def datosOperario(areas,formaDePago):
     
-    legajo = pyip.inputInt(prompt = 'Ingrese el LEGAJO del empleado',min=0)
+    legajo = pyip.inputInt(prompt = 'Ingrese el LEGAJO del empleado:\n',min=0)
     print('\n')
-    nombre = pyip.inputStr(prompt = 'Ingrese el NOMBRE del empleado').upper()
+    nombre = pyip.inputStr(prompt = 'Ingrese el NOMBRE del empleado:\n').upper()
     print('\n')
-    apellido = pyip.inputStr(prompt = 'Ingrese el APELLIDO del empleado').upper()
+    apellido = pyip.inputStr(prompt = 'Ingrese el APELLIDO del empleado:\n').upper()
     print('\n')
-    area = pyip.inputMenu(areas,prompt='Ingrese una de las AREAS posibles\n',lettered=True).upper()
+    area = pyip.inputMenu(areas,prompt='Ingrese una de las AREAS posibles:\n',lettered=True).upper()
     print('\n')
-    pago = pyip.inputMenu(formaDePago,prompt='Ingrese el tipo de pago\n',lettered=True)
+    pago = pyip.inputMenu(formaDePago,prompt='Ingrese el tipo de pago:\n',lettered=True)
     print('\n')
     
     return legajo,nombre,apellido,area,pago
@@ -542,6 +649,22 @@ def repreguntar():
     else:
         return False
 
+def actualizarValor(campo):
+    
+    if campo == 'AREA':
+        valor = pyip.inputMenu(areas,prompt='Ingrese una de las AREAS posibles:\n',lettered=True)
+    elif campo == 'TIPO_DE_PAGO':
+        valor = pyip.inputMenu(formaDePago,prompt='Ingrese el tipo de pago:\n',lettered=True)
+    elif campo == 'LEG':
+        valor = pyip.inputInt(prompt = 'Ingrese el LEGAJO del empleado:\n',min=0)
+    elif campo == 'NOMBRE':
+        valor = pyip.inputStr(prompt = 'Ingrese el NOMBRE del empleado:\n').upper()
+    elif campo == 'APELLIDO':
+        valor = pyip.inputStr(prompt = 'Ingrese el APELLIDO del empleado:\n').upper()
+        
+    return valor
+        
+    
     
 class Motor:
     def mainLoop(self):
@@ -567,10 +690,8 @@ class Motor:
             
             if respuesta == 'Ordenado de registros':
                 while continuarOrdenado:
-                    
                     ordenadoRespuesta = pyip.inputMenu(tareasOrdenado,prompt='\n¿Que desea hacer?\n',lettered=True)
-                    print('\n')
-                
+                    print('\n')                
                     if ordenadoRespuesta == 'Limpieza de registros':
                         fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
                         frame = frameFichadas()
@@ -579,7 +700,9 @@ class Motor:
                             print('No existen archivos que limpiar\n')
                         else:
                             legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
-                            limpiezaDeRegistros(legajos, fechaInicio, fechaFin)               
+                            limpiezaDeRegistros(legajos, fechaInicio, fechaFin) 
+                            print('Registros errones y duplicados eliminados, excel a completar creado.\n')
+                            
                     elif ordenadoRespuesta == 'Actualización de registros':
                         actualizacionRegistros()                
                     elif ordenadoRespuesta == 'Volver':
@@ -616,14 +739,14 @@ class Motor:
             
             elif respuesta == 'Gestion de Base de datos':
                 while continuarGestionBD:
+                    
                     baseDeDatosRespuesta = pyip.inputMenu(tareasBD,prompt='\n¿Que desea hacer?\n',lettered=True)
                     print('\n')
                     ['Insertar registro','Actualizar registro','Eliminar registro','Descargar','Volver','Salir']
                     if baseDeDatosRespuesta == 'Insertar registro':
+                        
                         decision = False
-
                         while not decision:
-
                             legajo,nombre,apellido,area,pago = datosOperario(areas, formaDePago)
                             print(legajo,nombre,apellido,area,pago)
                             decision = repreguntar()
@@ -633,14 +756,24 @@ class Motor:
                         continuarGestionBD = True                
                     
                     elif baseDeDatosRespuesta == 'Actualizar registro':
-                        print('SIN IMPLEMENTAR AUN')
-                        print('Volviendo al PRIMER MENU')
+                        
+                        campos = ['LEG','APELLIDO','NOMBRE','AREA','TIPO_DE_PAGO']
+                        decision = False
+                        while not decision:
+                            legajo = pyip.inputInt(prompt='Ingrese el LEGAJO del empleado a actualizar:\n',min=0)
+                            campo = pyip.inputMenu(campos,prompt='Elija que campo va a actualizar:\n',lettered=True)
+                            valor = actualizarValor(campo)
+                            decision = repreguntar()
+                        managerSQL = ManagerSQL()
+                        actualizaBDLegajos(managerSQL, legajo, campo, valor, actualizarEmpleado)
+                        print('\n')
                         continuarGestionBD = True
                     
                     elif baseDeDatosRespuesta == 'Eliminar registro':
+                        
                         decision = False
                         while not decision:
-                            legajo = pyip.inputInt(prompt='Ingrese el LEGAJO del empleado a eliminar',min=0)
+                            legajo = pyip.inputInt(prompt='Ingrese el LEGAJO del empleado a eliminar:\n',min=0)
                             decision = repreguntar()
                         print('\n')
                         managerSQL = ManagerSQL()
@@ -648,6 +781,7 @@ class Motor:
                         continuarGestionBD = True
                         
                     elif baseDeDatosRespuesta == 'Descargar':
+                        
                         manager = ManagerSQL()
                         sql_conection = manager.conexion()
                         consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
@@ -657,8 +791,7 @@ class Motor:
                         nombre = os.path.join(os.getcwd(),pathExcelInforme,archivo)
                         nombre = nombre+ '.xlsx'
                         consultaEmpleados = consultaEmpleados.sort_values(by=['LEG'])
-                        consultaEmpleados.to_excel(nombre,sheet_name='Registros',index=False)
-                        
+                        consultaEmpleados.to_excel(nombre,sheet_name='Registros',index=False)                        
                         continuarGestionBD = True
                     
                     elif baseDeDatosRespuesta == 'Volver':

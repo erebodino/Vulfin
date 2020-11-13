@@ -333,6 +333,8 @@ class CalculadorHoras:
                                 horas_trabajadas += (horaSalida - frame.iloc[fila,idx]).seconds
                 
                 horas_trabajadas = round(horas_trabajadas /3600,2)
+                
+                 
                 frame.iloc[fila,14] = horas_trabajadas
                 
                 msg = 'Contabilizando horas dias normales, se trabajo {}'.format(horas_trabajadas)
@@ -384,10 +386,12 @@ class CalculadorHoras:
                     salidaOperario = frame.iloc[fila,x -2]
                     break
 
-            if (dia == 'Sábado' and salidaOperario > salidaSabado): #Checkea si es sabado pasadas las 13
-                minutosExtras100 += ((salidaOperario - salidaSabado).seconds)/3600
-                frame.iloc[fila,16] = minutosExtras100 #Asigna las horas extras al 100%
-
+            if dia == 'Sábado':
+                minutosExtras50 += frame.iloc[fila,14]
+                frame.iloc[fila,14] = 0
+                if salidaOperario > salidaSabado: #Checkea si es sabado pasadas las 13
+                    minutosExtras100 += ((salidaOperario - salidaSabado).seconds)/3600
+                    frame.iloc[fila,16] = minutosExtras100 #Asigna las horas extras al 100%
 
             elif fecha in feriados:
                 minutosExtras100 += frame.iloc[fila,14]

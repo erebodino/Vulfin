@@ -5,116 +5,18 @@ PERIODO:    30/08/2020  AL   16/09/2020                                       IM
 Tipo de equipo:   TODOS
 
 Empleado:         52 - SIRAGUSA JAVIER CARLOS S.                                  Tarjeta Nº          52
-
 Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
-
-
-
 Lunes      31/08/2020 08:02    17:49
-Martes     01/09/2020 07:52    17:52
-Miércoles  02/09/2020 07:51    17:49
-Jueves     03/09/2020 07:58    17:51
-Viernes    04/09/2020          08:10           16:59
-Sábado     05/09/2020          08:13           12:00
-Lunes      07/09/2020 07:51    17:04
-Martes     08/09/2020 07:52    16:53
-Miércoles  09/09/2020 07:59    17:52
-Jueves     10/09/2020 07:49    17:06
-Viernes    11/09/2020 07:51    16:57
-Lunes      14/09/2020 08:02    17:48
-Martes     15/09/2020 07:58    17:50
-Miércoles  16/09/2020 07:56    17:48
-
-
-
 Empleado:        145 - ALVAREZ CARLOS MARIANO                                     Tarjeta Nº         145
-
 Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
-
-
-
 Lunes      31/08/2020 07:59    18:48
-Martes     01/09/2020 07:56    18:16
-Miércoles  02/09/2020 08:01    17:48
-Jueves     03/09/2020          17:48
-Viernes    04/09/2020 07:55    16:54
-Lunes      07/09/2020 07:57
-Martes     08/09/2020 07:58    17:48
-Miércoles  09/09/2020 07:59    17:49
-Jueves     10/09/2020 07:57    16:59
-Viernes    11/09/2020 08:02    17:36
-Lunes      14/09/2020 07:59    17:48
-Martes     15/09/2020 08:02    17:49
-Miércoles  16/09/2020 07:58    16:59
-
-
-
 Empleado:        253 - VALDEZ EDUARDO CEFERINO                                    Tarjeta Nº         253
-
 Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
-
-
-
 Lunes      31/08/2020 23:42            23:42
-Martes     01/09/2020          08:06           08:06           08:06   23:42            23:42
-Miércoles  02/09/2020          08:13           08:13   23:43           23:43
-Jueves     03/09/2020          08:03           08:03           08:03   23:49            23:49
-Viernes    04/09/2020          08:11           08:11   23:45           23:45
-Sábado     05/09/2020          08:11           08:11
-Martes     08/09/2020 23:43            23:43
-Miércoles  09/09/2020          08:06           08:06   23:40           23:40
-Jueves     10/09/2020          08:08           08:08   23:39           23:39
-Viernes    11/09/2020          08:06           08:06   23:41           23:41
-Sábado     12/09/2020          08:09           08:09
-Lunes      14/09/2020 19:54            19:54
-Martes     15/09/2020          08:06           08:07           08:07   19:48            19:48
-Miércoles  16/09/2020          08:06           08:06           08:06   19:47            19:47
-
-
-
 Empleado:        260 - MONTIVERO CLAUDIO GUSTAVO                                  Tarjeta Nº         260
-
 Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
-
-
-
 Lunes      31/08/2020 15:37
-Martes     01/09/2020          00:15   15:24
-Miércoles  02/09/2020          00:08   15:26
-Jueves     03/09/2020          00:05   15:48
-Viernes    04/09/2020          00:06           00:06   15:39
-Sábado     05/09/2020          00:05
-Martes     08/09/2020 07:46    16:22
-Miércoles  09/09/2020 07:50    16:10
-Jueves     10/09/2020 07:46    16:09
-Viernes    11/09/2020 07:48    16:00
-Lunes      14/09/2020 07:59    20:09
-Martes     15/09/2020 07:49    20:10
-Miércoles  16/09/2020 15:27
-
-
-
 Empleado:        261 - CASTILLO YONATHAN                                          Tarjeta Nº         261
-
 Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
-
-
-
 Lunes      31/08/2020 08:33    16:55
-Martes     01/09/2020 07:56    16:48
-Miércoles  02/09/2020 07:54    16:54
-Jueves     03/09/2020 07:54    16:55
-Viernes    04/09/2020 07:56    16:49
-Martes     08/09/2020 07:50    17:02
-Miércoles  09/09/2020 07:49    16:49
-Jueves     10/09/2020 07:51    16:50
-Viernes    11/09/2020 07:51
-Lunes      14/09/2020 07:56    16:58
-Martes     15/09/2020 07:57    17:00
-Miércoles  16/09/2020 07:57    16:52
-
-
-
-
-
 CLRESFIC.RPT-2.0                                   ClockCard 2000 de LARCON-SIA       PÁGINA N°:
