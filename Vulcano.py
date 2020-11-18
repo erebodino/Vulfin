@@ -17,6 +17,7 @@ from queryes import queryConsultaEmpleados,insertRegistros,selectAll,selectSome,
 from openpyxl import load_workbook
 from time import sleep
 from termcolor import colored
+from datetime import timedelta
 
 
 logging.config.fileConfig('logger.ini', disable_existing_loggers=False)
@@ -197,7 +198,7 @@ def frameFichadas():
 
     return frame
 
-def logicaRotativos(frame,inyeccion=False,fechaInicio=None,fechaFin=None):
+def logicaRotativos(frame,fechaInicio,fechaFin,area=False):
     """
     Esta funcion se encarga de limpiar los registros de los dataframes individuales de cada
     empleado rotativo, aqui dentro esta toda la logica de limpieza de esos registros.
@@ -218,12 +219,15 @@ def logicaRotativos(frame,inyeccion=False,fechaInicio=None,fechaFin=None):
         DataFrame ya corregido. Los lugares vacios corresponden a faltas en los fichajes.
 
     """
+    
+    fechaInicioAyer = fechaInicio - timedelta(days=1)
+    fechaFinAyer = fechaFin + timedelta(days=1)
 
     mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
     frameOriginal = frame
     frameEnAnalisis = frame.loc[mascara].copy()
     limpiador = Analizador(frameOriginal=frameOriginal,frameEnAnalisis=frameEnAnalisis)
-    newFrame = limpiador.limpiador(inyeccion=inyeccion)
+    newFrame = limpiador.limpiador(area=area)
     
         
     return newFrame 
@@ -257,22 +261,34 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
 
     
-    legajosSinInyeccion = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') &(consultaEmpleados['AREA'] != 'SOPLADO')] 
-    legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
-    legajosSinInyeccion = [int(x) for x in legajosSinInyeccion]#los pasa de numpy.int64 a int
+    legajosRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
+    legajosRotativos = legajosRotativos['LEG'].unique()
+    legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
 
     legajos = frame['Empleado'].unique()
     frameAnalisis = creacionFrameVacio()
     
+    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+    #frameQuerido.set_index(['LEG'],inplace=True)
+
+
+    
+    
     for legajo in legajos:
-        newFrame = frame[frame['Empleado']==legajo]#legajo es un STR
-        if int(legajo) in legajosSinInyeccion:
+        # area = consultaEmpleados.loc[consultaEmpleados['LEG']==legajo,'AREA']
+        newFrame = frame[frame['Empleado']==legajo]#legajo es un STRaa
+        area = frameQuerido.loc[int(legajo),'AREA']
+        print(area)
+        if int(legajo) in legajosRotativos:
             mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
             newFrame = newFrame.loc[mascara].copy()
         else:
-            continue
-        frameAnalisis = frameAnalisis.append(newFrame)
-    
+            newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+            frameAnalisis = frameAnalisis.append(newFrame)
+    global frameParaVer
+    frameParaVer = frameAnalisis
     return frameAnalisis
 
 def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
@@ -282,9 +298,11 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         sql_conection = manager.conexion()
         consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
         
-        legajosSinInyeccion = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') &(consultaEmpleados['AREA'] != 'SOPLADO')] 
-        legajosSinInyeccion = legajosSinInyeccion['LEG'].unique()
-        legajosSinInyeccion = [int(x) for x in legajosSinInyeccion]#los pasa de numpy.int64 a int
+        legajosRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
+        legajosRotativos = legajosRotativos['LEG'].unique()
+        legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
     
         legajosFrame = frame['Empleado'].unique()
     
@@ -292,9 +310,12 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         calculador = CalculadorHoras()
         
         for legajo in legajosFrame:
-            if int(legajo) in legajosSinInyeccion:
-                newFrame = frame[frame['Empleado']==legajo].copy()            
+            newFrame = frame[frame['Empleado']==legajo].copy() 
+            if int(legajo) in legajosRotativos:                           
                 frameCalculado = calculador.horasTrabajadas(newFrame)        
+                frameAnalisis = frameAnalisis.append(frameCalculado)
+            else:
+                frameCalculado = calculador.horasTrabajadasRotativos(newFrame)
                 frameAnalisis = frameAnalisis.append(frameCalculado)
             
         frameAnalisis = frameAnalisis.reset_index(drop=True) 
@@ -812,6 +833,7 @@ class Motor:
     
     
 if __name__ == '__main__':
+    frameParaVer = None
     try:
         motor = Motor()
         motor.mainLoop()

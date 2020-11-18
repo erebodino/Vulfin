@@ -1524,3 +1524,553 @@ TypeError: object of type 'int' has no len()
 [2020-11-13 16:19:37,198] analizador [horasExtrasTrabajadas Linea : 415] --> INFO :Contabilizando horas al 50 y 100
 [2020-11-13 16:19:44,118] __main__ [informeFaltasTardanzas Linea : 615] --> INFO :Creacion del Word de manera correcta
 [2020-11-13 16:19:47,030] __main__ [informeFaltasTardanzas Linea : 623] --> INFO :Creacion del PDF de manera correcta
+[2020-11-15 16:51:04,175] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 16:51:13,728] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 16:51:13,816] __main__ [<module> Linea : 836] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 833, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 717, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 276, in frameAnalisisIndividual
+    area = consultaEmpleados.loc[legajo,'AREA']
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1044, in _getitem_tuple
+    return self._getitem_lowerdim(tup)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 786, in _getitem_lowerdim
+    section = self._getitem_axis(key, axis=i)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1110, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1059, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 3491, in xs
+    loc = self.index.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\range.py", line 358, in get_loc
+    raise KeyError(key)
+KeyError: '52'
+
+[2020-11-15 16:57:04,324] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 16:57:11,712] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 16:57:11,718] __main__ [<module> Linea : 836] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 833, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 717, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 282, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 230, in logicaRotativos
+    newFrame = limpiador.limpiador(area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 53, in limpiador
+    if area in ['INYECCION','MECANIZADO']:
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 1330, in __nonzero__
+    f"The truth value of a {type(self).__name__} is ambiguous. "
+ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+
+[2020-11-15 16:57:51,961] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 16:57:58,960] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 16:57:58,970] __main__ [<module> Linea : 837] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 834, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 718, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 283, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 230, in logicaRotativos
+    newFrame = limpiador.limpiador(area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 53, in limpiador
+    if area in ['INYECCION','MECANIZADO']:
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 1330, in __nonzero__
+    f"The truth value of a {type(self).__name__} is ambiguous. "
+ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+
+[2020-11-15 16:59:49,752] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 16:59:56,933] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 16:59:56,939] __main__ [<module> Linea : 838] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'AREA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 835, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 719, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 278, in frameAnalisisIndividual
+    area = newFrame['AREA'].unique()
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: 'AREA'
+
+[2020-11-15 17:00:41,683] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:00:49,069] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:00:49,073] __main__ [<module> Linea : 838] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'AREA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 835, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 719, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 278, in frameAnalisisIndividual
+    area = newFrame['AREA'].unique()
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: 'AREA'
+
+[2020-11-15 17:02:02,961] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:02:11,603] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:02:11,610] __main__ [<module> Linea : 839] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'AREA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 836, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 720, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 279, in frameAnalisisIndividual
+    area = newFrame['AREA'].unique()
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: 'AREA'
+
+[2020-11-15 17:08:28,770] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:08:38,330] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:08:38,348] __main__ [<module> Linea : 842] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'AREA'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 839, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 723, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 282, in frameAnalisisIndividual
+    area = newFrame['AREA'].unique()
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: 'AREA'
+
+[2020-11-15 17:10:05,150] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:10:12,001] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:10:12,012] __main__ [<module> Linea : 842] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 839, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 723, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 282, in frameAnalisisIndividual
+    area = frameQuerido.loc[frameQuerido['LEG']==legajo,'AREA'].values
+AttributeError: 'numpy.ndarray' object has no attribute 'loc'
+
+[2020-11-15 17:11:39,321] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:11:46,370] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:11:46,374] __main__ [<module> Linea : 842] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 839, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 723, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 273, in frameAnalisisIndividual
+    frameQuerido =pd.dataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\__init__.py", line 258, in __getattr__
+    raise AttributeError(f"module 'pandas' has no attribute '{name}'")
+AttributeError: module 'pandas' has no attribute 'dataFrame'
+
+[2020-11-15 17:13:14,112] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:13:21,966] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:13:22,029] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 17:13:22,029] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:13:22,045] __main__ [limpiezaDeRegistros Linea : 334] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 318, in limpiezaDeRegistros
+    frameCalculado = calculador.horasTrabajadasRotativos(newFrame)
+AttributeError: 'CalculadorHoras' object has no attribute 'horasTrabajadasRotativos'
+
+[2020-11-15 17:19:47,936] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:19:54,810] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:19:54,826] __main__ [<module> Linea : 843] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 840, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 724, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 283, in frameAnalisisIndividual
+    area = frameQuerido.get_value(int(legajo),'AREA')
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 5139, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'get_value'
+
+[2020-11-15 17:22:09,247] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:22:18,216] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:22:18,232] __main__ [<module> Linea : 843] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'LEG'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 840, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 724, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 283, in frameAnalisisIndividual
+    area = frameQuerido.loc[frameQuerido['LEG']==legajo,'AREA'].values[1]
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: 'LEG'
+
+[2020-11-15 17:24:18,698] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:24:26,598] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:24:26,613] __main__ [<module> Linea : 843] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 840, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 724, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 283, in frameAnalisisIndividual
+    area = frameQuerido.loc[frameQuerido['LEG']==legajo,'AREA'].values[1]
+IndexError: index 1 is out of bounds for axis 0 with size 0
+
+[2020-11-15 17:31:36,912] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:31:44,257] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:31:44,273] __main__ [<module> Linea : 843] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 840, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 724, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 283, in frameAnalisisIndividual
+    area = frameQuerido.loc[legajo,'AREA']
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1044, in _getitem_tuple
+    return self._getitem_lowerdim(tup)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 786, in _getitem_lowerdim
+    section = self._getitem_axis(key, axis=i)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1110, in _getitem_axis
+    return self._get_label(key, axis=axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1059, in _get_label
+    return self.obj.xs(label, axis=axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 3491, in xs
+    loc = self.index.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\range.py", line 358, in get_loc
+    raise KeyError(key)
+KeyError: '52'
+
+[2020-11-15 17:34:10,321] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:34:17,712] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:34:17,805] __main__ [<module> Linea : 844] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 841, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 725, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 290, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 230, in logicaRotativos
+    newFrame = limpiador.limpiador(area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 92, in limpiador
+    self.frameEnAnalisis.iloc[renglon+ 1,posicion +1] = self.frameEnAnalisis.iloc[renglon+ 1,posicion +2]
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1443, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1352, in _validate_key
+    self._validate_integer(key, axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1437, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2020-11-15 17:40:55,376] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:41:02,901] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:41:02,963] __main__ [<module> Linea : 842] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 839, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 723, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 288, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 230, in logicaRotativos
+    newFrame = limpiador.limpiador(area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 86, in limpiador
+    self.frameEnAnalisis.iloc[renglon+ 1,posicion] - self.frameEnAnalisis.iloc[renglon,posicion] < timedelta(hours=14) :
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1443, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1352, in _validate_key
+    self._validate_integer(key, axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1437, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2020-11-15 17:43:54,173] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:44:00,970] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:44:01,048] __main__ [<module> Linea : 842] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 839, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 723, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 288, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 230, in logicaRotativos
+    newFrame = limpiador.limpiador(area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 89, in limpiador
+    hora = self.frameEnAnalisis.iloc[renglon +1,posicion]
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1443, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1352, in _validate_key
+    self._validate_integer(key, axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1437, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2020-11-15 17:46:14,302] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:46:21,141] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:46:21,188] __main__ [<module> Linea : 842] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 839, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 723, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 288, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 230, in logicaRotativos
+    newFrame = limpiador.limpiador(area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 91, in limpiador
+    self.frameEnAnalisis.iloc[renglon+ 1,posicion] = self.frameEnAnalisis.iloc[renglon+ 1,posicion +1]
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1443, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1352, in _validate_key
+    self._validate_integer(key, axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1437, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2020-11-15 17:48:14,109] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 17:48:21,833] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 17:48:21,880] __main__ [<module> Linea : 842] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 839, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 723, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 288, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 230, in logicaRotativos
+    newFrame = limpiador.limpiador(area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 91, in limpiador
+    self.frameEnAnalisis.iloc[renglon+ 1,posicion] = self.frameEnAnalisis.iloc[renglon+ 1,posicion +1]
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 873, in __getitem__
+    return self._getitem_tuple(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1443, in _getitem_tuple
+    self._has_valid_tuple(tup)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 702, in _has_valid_tuple
+    self._validate_key(k, i)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1352, in _validate_key
+    self._validate_integer(key, axis)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexing.py", line 1437, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds
+
+[2020-11-15 18:22:48,517] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 18:22:57,262] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:22:57,334] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 18:22:57,334] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:22:57,341] __main__ [limpiezaDeRegistros Linea : 334] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 318, in limpiezaDeRegistros
+    frameCalculado = calculador.horasTrabajadasRotativos(newFrame)
+AttributeError: 'CalculadorHoras' object has no attribute 'horasTrabajadasRotativos'
+
+[2020-11-15 18:26:54,003] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 18:27:01,568] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:27:01,640] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 18:27:01,640] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:27:01,649] __main__ [limpiezaDeRegistros Linea : 334] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 318, in limpiezaDeRegistros
+    frameCalculado = calculador.horasTrabajadasRotativos(newFrame)
+TypeError: horasTrabajadasRotativos() takes 1 positional argument but 2 were given
+
+[2020-11-15 18:31:05,307] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 18:31:14,004] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:31:14,075] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 18:31:14,075] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:31:14,087] analizador [informeNoFichadas Linea : 499] --> INFO :Comenzando escritura en el word
+[2020-11-15 18:31:14,088] analizador [informeNoFichadas Linea : 604] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'H.Norm'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 501, in informeNoFichadas
+    len_noMarca = len(frame[frame[campo] == 0]) #Devuelve la cantidad de filas a las que no se le calculo
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: 'H.Norm'
+
+[2020-11-15 18:31:14,088] __main__ [limpiezaDeRegistros Linea : 334] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2895, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'H.Norm'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 324, in limpiezaDeRegistros
+    len_noMarca = len(frameAnalisis[frameAnalisis[campo] == 0])
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\frame.py", line 2902, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\indexes\base.py", line 2897, in get_loc
+    raise KeyError(key) from err
+KeyError: 'H.Norm'
+
+[2020-11-15 18:33:26,724] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 18:33:38,241] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:33:38,313] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 18:33:38,313] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:33:38,328] analizador [informeNoFichadas Linea : 503] --> INFO :Comenzando escritura en el word
+[2020-11-15 18:56:54,969] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 18:57:04,032] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:57:04,115] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 18:57:04,115] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 18:57:04,131] analizador [informeNoFichadas Linea : 504] --> INFO :Comenzando escritura en el word
+[2020-11-15 18:57:07,916] __main__ [limpiezaDeRegistros Linea : 334] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 332, in limpiezaDeRegistros
+    frameAnalisis.to_excel(nombre,index=False)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 2032, in to_excel
+    engine=engine,
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\io\formats\excel.py", line 742, in write
+    writer.save()
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\io\excel\_openpyxl.py", line 43, in save
+    return self.book.save(self.path)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\openpyxl\workbook\workbook.py", line 392, in save
+    save_workbook(self, filename)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Anaconda\envs\RelojVul\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'J:\\Emma\\14. Vulcano\\RelojRRHH\\Proyecto\\Archivos de trabajo\\A completar\\Excel desde 2020-10-01 hasta 2020-10-15.xlsx'
+
+[2020-11-15 19:47:59,563] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 19:48:06,581] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:48:07,437] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 19:48:07,438] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:48:07,452] analizador [informeNoFichadas Linea : 505] --> INFO :Comenzando escritura en el word
+[2020-11-15 19:48:11,441] __main__ [limpiezaDeRegistros Linea : 334] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 332, in limpiezaDeRegistros
+    frameAnalisis.to_excel(nombre,index=False)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 2032, in to_excel
+    engine=engine,
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\io\formats\excel.py", line 742, in write
+    writer.save()
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\io\excel\_openpyxl.py", line 43, in save
+    return self.book.save(self.path)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\openpyxl\workbook\workbook.py", line 392, in save
+    save_workbook(self, filename)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Anaconda\envs\RelojVul\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'J:\\Emma\\14. Vulcano\\RelojRRHH\\Proyecto\\Archivos de trabajo\\A completar\\Excel desde 2020-10-01 hasta 2020-10-15.xlsx'
+
+[2020-11-15 19:49:33,144] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 19:49:41,856] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:49:42,388] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 19:49:42,388] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:49:42,406] analizador [informeNoFichadas Linea : 505] --> INFO :Comenzando escritura en el word
+[2020-11-15 19:49:46,092] __main__ [limpiezaDeRegistros Linea : 334] --> ERROR :excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 332, in limpiezaDeRegistros
+    frameAnalisis.to_excel(nombre,index=False)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\core\generic.py", line 2032, in to_excel
+    engine=engine,
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\io\formats\excel.py", line 742, in write
+    writer.save()
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\pandas\io\excel\_openpyxl.py", line 43, in save
+    return self.book.save(self.path)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\openpyxl\workbook\workbook.py", line 392, in save
+    save_workbook(self, filename)
+  File "E:\Anaconda\envs\RelojVul\lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+  File "E:\Anaconda\envs\RelojVul\lib\zipfile.py", line 1204, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: 'J:\\Emma\\14. Vulcano\\RelojRRHH\\Proyecto\\Archivos de trabajo\\A completar\\Excel desde 2020-10-01 hasta 2020-10-15.xlsx'
+
+[2020-11-15 19:50:10,875] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 19:50:18,517] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:50:19,085] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 19:50:19,086] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:50:19,094] analizador [informeNoFichadas Linea : 505] --> INFO :Comenzando escritura en el word
+[2020-11-15 19:52:37,759] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 19:52:45,379] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:52:45,977] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 19:52:45,977] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:52:45,992] analizador [informeNoFichadas Linea : 505] --> INFO :Comenzando escritura en el word
+[2020-11-15 19:56:41,966] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 19:56:50,219] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:56:51,213] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 19:56:51,214] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 19:56:51,229] analizador [informeNoFichadas Linea : 505] --> INFO :Comenzando escritura en el word
+[2020-11-15 20:33:55,087] __main__ [fechasDeCalculo Linea : 34] --> INFO :Registrando fechas
+[2020-11-15 20:34:07,009] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 20:34:08,692] __main__ [limpiezaDeRegistros Linea : 296] --> INFO :Limpiando registros
+[2020-11-15 20:34:08,693] createDB [conexion Linea : 27] --> INFO :Iniciando conexion
+[2020-11-15 20:34:08,701] analizador [informeNoFichadas Linea : 505] --> INFO :Comenzando escritura en el word
