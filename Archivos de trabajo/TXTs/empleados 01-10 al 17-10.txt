@@ -1,0 +1,5101 @@
+VULCANOS.A                                            Reporte de Fichadas (Por Legajo)
+
+PERIODO:    30/09/2020  AL   17/10/2020                                       IMPRESO EL DÍA:  20/11/2020
+
+Tipo de equipo:   TODOS
+
+Empleado:          6 - TOMACELLO PABLO                                            Tarjeta Nº           6
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:28    16:51
+Jueves     01/10/2020 06:31    16:50
+Viernes    02/10/2020 06:33    16:49
+Lunes      05/10/2020 06:30    16:54
+Martes     06/10/2020 06:34    16:49
+Miércoles  07/10/2020 06:32    16:54
+Jueves     08/10/2020 06:27    16:57
+Viernes    09/10/2020 06:35    16:48
+Martes     13/10/2020 06:27    16:50
+Miércoles  14/10/2020 06:31    16:51
+Jueves     15/10/2020 06:33    16:49
+Viernes    16/10/2020 06:32    16:52
+
+
+
+Empleado:          8 - REYNA ALFREDO ALBERTO                                      Tarjeta Nº           8
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:56    12:32   12:59   16:49
+Jueves     01/10/2020 08:05    12:31   13:05   16:51
+Viernes    02/10/2020 07:54    12:34   13:03   16:54
+Sábado     03/10/2020 08:07    13:03
+Lunes      05/10/2020 07:59    12:33   13:05   17:32
+Martes     06/10/2020 07:49    12:34   13:03   16:52
+Miércoles  07/10/2020 07:52    12:34   13:04   16:50
+Jueves     08/10/2020 07:54    12:31   13:04   16:52
+Viernes    09/10/2020 07:58    12:36   13:01   16:50
+Sábado     10/10/2020 08:13    13:04
+Lunes      12/10/2020 08:15            08:15   13:00
+Martes     13/10/2020 07:58    12:31   13:03   16:52
+Miércoles  14/10/2020 07:58    12:30   13:00   16:48           16:54
+Jueves     15/10/2020 07:54    12:30   12:59   16:48
+Viernes    16/10/2020 07:48    13:02   13:30   16:53
+Sábado     17/10/2020 07:56            12:02   12:02
+
+
+
+Empleado:          9 - MENDOZA JOSE IGNACIO                                       Tarjeta Nº           9
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:06   23:03
+Jueves     01/10/2020          08:13   22:44
+Viernes    02/10/2020          08:07   22:44
+Sábado     03/10/2020          08:02
+Lunes      05/10/2020 22:43
+Martes     06/10/2020          08:06   22:44
+Miércoles  07/10/2020          08:06   23:06
+Jueves     08/10/2020          08:08           08:08   22:58
+Viernes    09/10/2020          08:06           08:06   22:39
+Sábado     10/10/2020          08:04
+Martes     13/10/2020 23:15
+Miércoles  14/10/2020          08:02   22:52
+Jueves     15/10/2020          08:01   22:55
+Viernes    16/10/2020          08:00   23:08
+Sábado     17/10/2020          08:00           08:00
+
+
+
+Empleado:         13 - MORICONI GUSTAVO ADRIAN                                    Tarjeta Nº          13
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:23    13:16
+Jueves     01/10/2020 07:12    12:30   12:50   17:29
+Viernes    02/10/2020 07:04    12:31   12:51   16:48
+Lunes      05/10/2020 07:10    12:35   12:48   17:30
+Martes     06/10/2020 07:08    12:34   12:52   17:29
+Miércoles  07/10/2020 07:05    12:34   12:56   17:31
+Jueves     08/10/2020 07:05    12:35   12:47   17:31
+Viernes    09/10/2020 07:05    12:34   12:51   16:48
+Martes     13/10/2020 07:09    12:36   12:54   17:29
+Miércoles  14/10/2020 07:07    12:32   12:54   17:26
+Jueves     15/10/2020 07:00    12:32   12:51   17:26
+Viernes    16/10/2020 07:00    12:33   12:48   16:48
+
+
+
+Empleado:         20 - BRANDAN GABRIEL MARCELO                                    Tarjeta Nº          20
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:55    12:32   12:41   16:52
+Jueves     01/10/2020 07:24    12:32   12:59   17:48
+Viernes    02/10/2020 07:55    12:32   12:58   16:50
+Sábado     03/10/2020 07:50    13:03
+Lunes      05/10/2020 07:57    12:31   12:59   17:47
+Martes     06/10/2020 07:55    12:31   12:57   17:44
+Miércoles  07/10/2020 07:59    12:32   12:55   17:48
+Jueves     08/10/2020 07:58    12:31   12:57   17:49
+Viernes    09/10/2020 07:56    12:34   12:59   16:55
+Martes     13/10/2020 07:53    12:32   13:00   17:48
+Miércoles  14/10/2020 07:55    12:31   12:58   16:51
+Jueves     15/10/2020 07:00    12:30   12:55   17:48
+Viernes    16/10/2020 07:50    13:02   13:14   16:50
+
+
+
+Empleado:         22 - LOPEZ MERCEDES ALBERTO                                     Tarjeta Nº          22
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:21    12:30   12:53   16:50
+Jueves     01/10/2020 07:15    12:30   12:53   16:50
+Viernes    02/10/2020 07:16    12:31   12:59   16:49
+Lunes      05/10/2020 07:26    12:31   12:47   16:49
+Martes     06/10/2020 07:25    12:32   12:56   16:50
+Miércoles  07/10/2020 07:22    12:32   12:57   16:50
+Jueves     08/10/2020 07:22    12:33   12:49   16:49
+Viernes    09/10/2020 07:37    12:32   13:00   16:49
+Martes     13/10/2020 07:23    12:33   12:53   16:49
+Miércoles  14/10/2020 07:20    12:30   12:48   16:48
+Jueves     15/10/2020 07:21    12:30   12:47   16:48
+Viernes    16/10/2020 07:21    12:34   12:54   16:49
+
+
+
+Empleado:         27 - ZURTIA JORGE RAMON                                         Tarjeta Nº          27
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:42    16:03
+Jueves     01/10/2020 07:39    16:01
+Viernes    02/10/2020 07:38    16:04
+Lunes      05/10/2020 07:58
+
+
+
+Empleado:         30 - RIMONDOTTO ALFREDO JUAN JOSE                               Tarjeta Nº          30
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:09    16:49
+Jueves     01/10/2020 07:24    16:54
+Viernes    02/10/2020 07:26    16:48
+Sábado     03/10/2020 06:26    16:00
+Lunes      05/10/2020 07:32
+Martes     06/10/2020 07:35
+Miércoles  07/10/2020 07:34    16:48
+Jueves     08/10/2020 07:31    16:46
+Viernes    09/10/2020          16:49
+Sábado     10/10/2020 07:25    15:59
+Lunes      12/10/2020 07:34    15:57
+Martes     13/10/2020 07:33    16:52
+Miércoles  14/10/2020 07:34    16:44           18:00
+Jueves     15/10/2020 07:26    16:45
+Viernes    16/10/2020 07:46    16:49
+Sábado     17/10/2020 07:25    13:00
+
+
+
+Empleado:         36 - REYNA FERNANDO DARIO                                       Tarjeta Nº          36
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    18:24
+Jueves     01/10/2020 08:00    18:03
+Viernes    02/10/2020 07:55    17:03
+Sábado     03/10/2020          11:26
+Lunes      05/10/2020 07:55    18:09
+Martes     06/10/2020 07:57    17:37
+Miércoles  07/10/2020 13:42    19:18
+Jueves     08/10/2020          17:07
+Viernes    09/10/2020 06:59    17:01
+Sábado     10/10/2020 09:10    12:20
+Martes     13/10/2020 07:53    17:22
+Miércoles  14/10/2020 07:57    19:38
+Jueves     15/10/2020 07:53            07:56   18:23
+Viernes    16/10/2020 06:57    17:11
+Sábado     17/10/2020 11:10    13:18           13:22
+
+
+
+Empleado:         47 - VERA OSCAR ALBERTO                                         Tarjeta Nº          47
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:49            07:49   18:05           18:05
+Jueves     01/10/2020 07:51            07:51   20:02           20:02
+Viernes    02/10/2020 07:52    18:06           18:06
+Lunes      05/10/2020 07:58    20:17           20:17
+Martes     06/10/2020 07:52    18:03           18:03
+Miércoles  07/10/2020 07:49    18:06
+Jueves     08/10/2020 07:49    18:05
+Viernes    09/10/2020 07:47            07:47   18:09
+Martes     13/10/2020 07:51            07:51   19:02           19:02
+Miércoles  14/10/2020 07:49            07:49   18:03
+Jueves     15/10/2020 07:44            07:44   18:02
+Viernes    16/10/2020 07:46    18:59
+
+
+
+Empleado:         49 - BUSTOS DIEGO ALEJANDRO                                     Tarjeta Nº          49
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:02    12:32   13:02   16:50
+Jueves     01/10/2020 08:00    12:32   13:04   16:50
+Viernes    02/10/2020 07:57
+Jueves     15/10/2020 07:53            07:54   12:30   13:00   15:01
+Viernes    16/10/2020 07:54            13:30   16:49
+
+
+
+Empleado:         50 - SANCHEZ CRISTIAN ARIEL                                     Tarjeta Nº          50
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    16:56
+Jueves     01/10/2020 07:59    16:48
+Viernes    02/10/2020 07:59    16:56
+Lunes      05/10/2020 08:45    17:31
+Martes     06/10/2020 07:56    17:39
+Miércoles  07/10/2020 07:57    17:17
+Jueves     08/10/2020 07:59    17:20
+Viernes    09/10/2020 07:59    16:53
+Martes     13/10/2020 07:57    17:31
+Miércoles  14/10/2020 07:59    16:52
+Jueves     15/10/2020 07:57    16:55
+Viernes    16/10/2020 07:56    17:01
+
+
+
+Empleado:         52 - SIRAGUSA JAVIER CARLOS S.                                  Tarjeta Nº          52
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    17:08
+Jueves     01/10/2020 08:00    12:53   13:16           16:49
+Viernes    02/10/2020 07:50            12:37   12:38           13:09           16:50
+Lunes      05/10/2020 07:53    12:43   13:13   16:57
+Martes     06/10/2020 07:58            09:17           10:53           13:10   17:54
+Miércoles  07/10/2020 07:49    12:40           17:49
+Jueves     08/10/2020 07:48            13:14   17:04
+Viernes    09/10/2020 07:58    12:34   13:11   16:56
+Martes     13/10/2020 07:53    12:42   13:14   17:50
+Miércoles  14/10/2020 07:50    17:48
+Jueves     15/10/2020 07:55    17:48
+Viernes    16/10/2020 07:51    12:33   13:11   16:50
+Sábado     17/10/2020 08:22    12:01
+
+
+
+Empleado:         57 - JAIME EDUARDO MARCELO                                      Tarjeta Nº          57
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:53            12:53   16:51
+Jueves     01/10/2020 07:52    12:31   12:53   16:50
+Viernes    02/10/2020 07:45    12:52   12:52   16:50
+Lunes      05/10/2020 07:28    12:30           12:54
+Martes     06/10/2020 07:31    12:33   12:53   16:50
+Miércoles  07/10/2020 07:25            07:50           12:55   17:25
+Jueves     08/10/2020 07:10    12:32   12:57   17:30
+Viernes    09/10/2020 07:22            12:57   16:49
+Martes     13/10/2020 07:13    12:32   12:54   16:49
+Miércoles  14/10/2020 07:45    12:30   12:52   17:29
+Jueves     15/10/2020 07:14    16:49
+Viernes    16/10/2020 07:30    12:32   12:52   16:49
+
+
+
+Empleado:         66 - POLIZZI JORGE ARIEL                                        Tarjeta Nº          66
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:41    20:11
+Jueves     01/10/2020 07:53    20:03
+Viernes    02/10/2020 07:46    20:16
+Lunes      05/10/2020          20:25
+Martes     06/10/2020 07:56    20:17
+Miércoles  07/10/2020 07:54    20:20
+Jueves     08/10/2020 07:51    20:33
+Viernes    09/10/2020 07:51    20:31
+Martes     13/10/2020          20:12
+Miércoles  14/10/2020 07:52    20:28
+Jueves     15/10/2020 07:56    20:13
+Viernes    16/10/2020 07:54    20:11
+
+
+
+Empleado:         71 - MORICONI SERGIO ALEJANDRO                                  Tarjeta Nº          71
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 14:59            14:59   17:28
+Viernes    02/10/2020 06:32    12:35   12:51   16:48
+Lunes      05/10/2020 06:30    12:36   12:53   17:36
+Martes     06/10/2020 06:33    12:34   12:51   17:29
+Miércoles  07/10/2020 06:32    12:35   12:53   17:30
+Jueves     08/10/2020 06:27    12:36   12:55   17:31
+Viernes    09/10/2020 06:35    12:33   12:52   16:48
+Martes     13/10/2020 06:27    12:37   12:57   17:29
+Miércoles  14/10/2020 06:31    12:34   12:52   17:26
+Jueves     15/10/2020 06:33    12:36   12:51   17:26
+Viernes    16/10/2020 06:32    12:33   12:48   16:48
+
+
+
+Empleado:         74 - SEGOVIA MAURICIO ARIEL                                     Tarjeta Nº          74
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:51            07:43   12:31   12:44   16:49
+Jueves     01/10/2020 06:46    12:30   12:49   16:49
+Viernes    02/10/2020 06:49    12:30   12:50   16:49
+Lunes      05/10/2020 06:49    12:31   12:49   16:57
+Martes     06/10/2020 06:47    12:31   12:46   16:49
+Miércoles  07/10/2020 06:45    12:31   12:56   16:49
+Jueves     08/10/2020 06:54    12:30   12:50   16:48
+Viernes    09/10/2020 06:42    12:30   12:52   16:48
+Martes     13/10/2020 06:43    12:33   12:46   16:49
+Miércoles  14/10/2020 06:48    12:33   12:45   16:48
+Jueves     15/10/2020 06:43    12:30   12:48   16:48
+Viernes    16/10/2020 06:39    12:31   12:47   16:49
+
+
+
+Empleado:         81 - LEMO HECTOR FABIAN                                         Tarjeta Nº          81
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:10    12:32   12:53   16:55
+Jueves     01/10/2020 07:56    12:33   13:00   16:53
+Viernes    02/10/2020 07:45    12:31   13:00   16:50
+Lunes      05/10/2020 07:29    12:33   12:53   16:52
+Martes     06/10/2020 07:31    12:32   12:55   17:17
+Miércoles  07/10/2020 07:25    12:32   12:49   17:24
+Jueves     08/10/2020 07:40    12:34   12:53   17:30
+Viernes    09/10/2020 07:50    12:33   12:51   16:50
+Martes     13/10/2020 07:50    12:33   12:55   16:50
+Miércoles  14/10/2020 07:45    12:29   12:48   17:28
+Jueves     15/10/2020 07:14    12:29   12:56   17:29
+Viernes    16/10/2020 07:30    12:32   12:57   16:50
+
+
+
+Empleado:         84 - SALGUERO SERGIO FERNANDO                                   Tarjeta Nº          84
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:59    17:09
+Jueves     01/10/2020 08:00    17:16
+Viernes    02/10/2020 07:59    17:07
+Lunes      05/10/2020 07:57    16:59
+Martes     06/10/2020 08:01    17:13
+Miércoles  07/10/2020 08:00    17:51
+Jueves     08/10/2020 08:00    16:53
+Viernes    09/10/2020 07:57    10:22   12:02   16:55
+Martes     13/10/2020 08:01    17:07
+Miércoles  14/10/2020 08:01    15:02
+Jueves     15/10/2020 07:56    16:59
+Viernes    16/10/2020 07:57    17:00
+
+
+
+Empleado:         95 - BLANCO JUAN                                                Tarjeta Nº          95
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:10    12:34   12:47   17:53
+Jueves     01/10/2020 07:24    12:31   12:50   17:43
+Viernes    02/10/2020 07:27    12:35   12:37           12:55   16:54
+Lunes      05/10/2020 07:46    12:34   12:50   17:49
+Martes     06/10/2020 07:35    12:34   12:44   17:52
+Miércoles  07/10/2020 07:01    12:34   12:47   17:44
+Jueves     08/10/2020 07:01    12:32   12:51   18:03
+Viernes    09/10/2020 06:59    12:32   12:52   16:55
+Martes     13/10/2020 07:34    12:49   13:03   17:50
+Miércoles  14/10/2020 06:59    12:42   12:58   17:48
+Jueves     15/10/2020 06:51    12:43   12:44   17:45
+Viernes    16/10/2020 06:58    12:47   12:51   16:51
+
+
+
+Empleado:         97 - BRANDAN JORGE ALBERTO                                      Tarjeta Nº          97
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:40    16:17
+Jueves     01/10/2020 07:41    16:16
+Viernes    02/10/2020 07:45    16:25
+Lunes      05/10/2020          16:20
+Martes     06/10/2020 07:52    16:21
+Miércoles  07/10/2020 07:49    16:31
+Jueves     08/10/2020 07:57    16:09
+Viernes    09/10/2020 07:01    15:00
+Martes     13/10/2020          18:32
+Miércoles  14/10/2020 07:49    18:43
+Jueves     15/10/2020 07:47    18:12
+Viernes    16/10/2020 07:43    16:19
+
+
+
+Empleado:        101 - ANDREANI CLAUDIO AMERICO                                   Tarjeta Nº         101
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:56    12:28   12:57   16:57
+Jueves     01/10/2020 08:00    12:33   12:57   17:09
+Viernes    02/10/2020 07:52    12:30   12:54   16:49
+Lunes      05/10/2020 07:54    12:34           12:54   12:54   17:07
+Martes     06/10/2020 07:58    12:32   12:54   17:01
+Jueves     08/10/2020 07:57    12:34   12:56   17:00
+Viernes    09/10/2020 07:58    12:30   13:03   16:51
+Martes     13/10/2020 07:57    12:32   12:54   17:05
+Miércoles  14/10/2020 07:55            07:56   12:32   12:53   16:59
+Jueves     15/10/2020 07:49    12:28   12:48   16:55
+Viernes    16/10/2020 07:51    12:33   12:51   16:50
+
+
+
+Empleado:        105 - NUÑEZ CRISTIAN ALEJANDRO                                   Tarjeta Nº         105
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020          15:06           15:06           16:52
+Viernes    02/10/2020 07:43    12:33   12:42   16:51
+Lunes      05/10/2020 07:47    12:34   12:51   16:52
+Martes     06/10/2020 07:47    12:33   12:53   16:52
+Miércoles  07/10/2020 07:49    12:34   12:56   16:53
+Jueves     08/10/2020 07:42    12:34   12:50   16:50
+Viernes    09/10/2020 07:48    12:35   12:57   16:52
+Martes     13/10/2020 07:45    12:35   12:47   16:50
+Miércoles  14/10/2020 07:52    12:32   12:39   16:51
+Jueves     15/10/2020 07:42    12:32   12:47   16:50
+Viernes    16/10/2020 07:52    12:32   12:43   16:50
+
+
+
+Empleado:        106 - PALACIO VICTOR RICARDO                                     Tarjeta Nº         106
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:23    17:52
+Jueves     01/10/2020 07:20    12:31   12:47   17:46
+Viernes    02/10/2020 07:33    16:55
+Lunes      05/10/2020 07:27    17:45
+Martes     06/10/2020 07:28    17:43
+Miércoles  07/10/2020 07:27    17:46
+Jueves     08/10/2020 07:29            07:48   17:47
+Viernes    09/10/2020 07:29    16:55
+Martes     13/10/2020 07:30    16:50
+Miércoles  14/10/2020 07:27    16:51
+Jueves     15/10/2020 07:21    17:40
+Viernes    16/10/2020 07:23    16:56
+Sábado     17/10/2020 07:32            12:07
+
+
+
+Empleado:        111 - ABREGO JUAN MARCELO                                        Tarjeta Nº         111
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:28    12:34   12:51   17:30
+Jueves     01/10/2020 06:31    12:35   12:49   17:29
+Viernes    02/10/2020 06:32    12:35   12:54   16:49
+Lunes      05/10/2020 06:30    12:36   12:52   17:30
+Martes     06/10/2020 06:33    12:34   12:51   17:29
+Miércoles  07/10/2020 06:32    12:35   12:53   17:30
+Jueves     08/10/2020 06:27    12:36   12:57   17:31
+Viernes    09/10/2020 06:35    12:34   12:53   16:48
+Martes     13/10/2020 06:27    12:36   12:57   17:29
+Miércoles  14/10/2020 06:31    12:34   12:51   17:26
+Jueves     15/10/2020 06:33    12:36   12:51   17:25
+Viernes    16/10/2020 06:32    12:35   12:48   16:48
+
+
+
+Empleado:        113 - RIVERO FABIAN ALBERTO                                      Tarjeta Nº         113
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:11    12:30   12:51   16:48
+Jueves     01/10/2020 08:01    12:32   12:47   16:48
+Viernes    02/10/2020 07:45    12:30   12:53   16:48
+Lunes      05/10/2020 07:28    12:30   12:48   16:48
+Martes     06/10/2020 07:31    12:33   12:50   17:16
+Miércoles  07/10/2020 07:25    12:31   12:49   17:23
+Jueves     08/10/2020 07:10    12:30   12:50
+Viernes    09/10/2020 07:20    12:30   12:58   16:30
+Martes     13/10/2020 07:13    12:31   12:50   16:48
+Miércoles  14/10/2020 06:57    12:29   12:44   17:01
+Jueves     15/10/2020 07:05            07:14   12:34   12:46   16:48
+Viernes    16/10/2020 07:10    12:30   12:53   16:47
+
+
+
+Empleado:        124 - PASCUAL FACUNDO MARTIN                                     Tarjeta Nº         124
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:48    12:31   12:48   16:50
+Jueves     01/10/2020 07:53    12:49   12:49   16:54
+Viernes    02/10/2020 07:46    12:30   12:47   16:52
+Lunes      05/10/2020 07:42    12:32   12:50   17:42
+Martes     06/10/2020 07:47    12:30   12:47   16:53
+Miércoles  07/10/2020 07:53    10:13   12:19   12:30   12:48   17:40
+Jueves     08/10/2020 07:50    12:30   12:48   17:36
+Viernes    09/10/2020 07:55    12:30   12:58   16:50
+Martes     13/10/2020 07:48    12:31   12:45   16:48
+Miércoles  14/10/2020 07:51    12:30   12:44   16:48
+Jueves     15/10/2020 07:47    12:30   12:50   16:51
+Viernes    16/10/2020 07:44    12:29   12:55   16:50
+
+
+
+Empleado:        125 - PEREZ JOSE ALBERTO                                         Tarjeta Nº         125
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:32    12:31   12:55   16:48
+Jueves     01/10/2020 07:33    12:31   12:51   13:58
+Viernes    02/10/2020 07:47    12:30   12:50   16:50
+Martes     06/10/2020 07:29    12:37   12:57   16:48
+Miércoles  07/10/2020 07:27    12:30   12:56   16:48
+Jueves     08/10/2020 07:28    12:31   12:58   16:48
+Viernes    09/10/2020 07:28    12:33   12:59   16:49
+Martes     13/10/2020 07:31    12:31           16:48
+Miércoles  14/10/2020 07:29    12:30   12:56   16:48
+Jueves     15/10/2020 07:26    12:30   12:55   16:49
+Viernes    16/10/2020 07:26    12:29   12:56   16:48
+
+
+
+Empleado:        130 - RODRIGUEZ CARLOS ANIBAL                                    Tarjeta Nº         130
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:54    19:03
+Jueves     01/10/2020 06:45    19:02
+Viernes    02/10/2020 06:55    19:07
+Lunes      05/10/2020 19:00
+Martes     06/10/2020          07:07   19:50
+Miércoles  07/10/2020          07:07   18:56
+Jueves     08/10/2020          07:09   18:59
+Viernes    09/10/2020 18:58
+Martes     13/10/2020 19:57
+Miércoles  14/10/2020          08:12   19:58
+Jueves     15/10/2020          08:10   19:53
+Viernes    16/10/2020          08:10   19:51
+Sábado     17/10/2020          08:00           08:00
+
+
+
+Empleado:        137 - GUTIERREZ BERNAL LUCIA A                                   Tarjeta Nº         137
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:57    17:08
+Jueves     01/10/2020 07:59    16:50
+Viernes    02/10/2020 08:02
+Lunes      05/10/2020 08:45    17:25
+Martes     06/10/2020 07:57    17:37
+Miércoles  07/10/2020 07:57    17:19
+Jueves     08/10/2020 07:59    17:23           17:23
+Viernes    09/10/2020 07:59    16:54
+Martes     13/10/2020 07:57    17:39
+Miércoles  14/10/2020 08:00    16:51
+Jueves     15/10/2020 07:57    16:55
+Viernes    16/10/2020 07:56    16:54
+
+
+
+Empleado:        141 - GARCIA MARCELO ALEJANDRO                                   Tarjeta Nº         141
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:10    12:36   12:48   16:54
+Jueves     01/10/2020 07:14    12:32   12:54   16:55
+Viernes    02/10/2020 07:16    12:31   12:56   16:52
+Lunes      05/10/2020 07:05    12:38           12:53           16:57
+Martes     06/10/2020 07:22    12:31   12:52   16:54
+Miércoles  07/10/2020 07:14    12:33   12:54   16:53
+Jueves     08/10/2020 07:17    12:33   12:51   16:55
+Viernes    09/10/2020 07:11    12:42   12:53   16:53
+Martes     13/10/2020 07:19    12:02
+Miércoles  14/10/2020 07:12    12:38   12:52   16:51
+Jueves     15/10/2020 07:06    12:29   12:52   16:55
+Viernes    16/10/2020 07:10    12:37           16:52
+
+
+
+Empleado:        142 - ANDREANI DANIEL HUMBERTO                                   Tarjeta Nº         142
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:59    12:38   12:56   16:57
+Jueves     01/10/2020 08:05    12:37   12:56   16:52
+Lunes      05/10/2020 07:57    12:41   12:55   16:53
+Martes     06/10/2020 08:00    12:36   12:54   16:51
+Miércoles  07/10/2020 07:58    12:38   12:56   16:49
+Jueves     08/10/2020 07:53    12:46   12:58   16:50
+Viernes    09/10/2020 08:01    12:39   12:56   16:52
+Martes     13/10/2020 08:01    12:34   12:50   16:57
+Miércoles  14/10/2020 07:57    12:33   12:45   17:00
+Jueves     15/10/2020 07:52    12:34   12:52   16:51
+Viernes    16/10/2020 07:54    12:37   12:54   16:48
+
+
+
+Empleado:        143 - IBAÑEZ SEBASTIAN MATIAS                                    Tarjeta Nº         143
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:40    19:08
+Jueves     15/10/2020 07:30    18:00
+Viernes    16/10/2020 07:39    17:08
+
+
+
+Empleado:        145 - ALVAREZ CARLOS MARIANO                                     Tarjeta Nº         145
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:59    17:05           17:10
+Jueves     01/10/2020 08:24    12:43   13:12   17:21
+Viernes    02/10/2020 07:59    12:43   13:15   16:52
+Lunes      05/10/2020 07:59    13:15   13:50   18:17
+Martes     06/10/2020 07:58    13:19           18:15
+Miércoles  07/10/2020 08:02            13:19   13:19   13:51   17:48
+Jueves     08/10/2020 08:04    13:21   13:52   17:01
+Viernes    09/10/2020 08:01    14:37           15:01
+Martes     13/10/2020 08:02    12:46   13:13   18:22
+Miércoles  14/10/2020 08:02            13:08   18:12
+Jueves     15/10/2020 07:56    12:42   13:12   18:16
+Viernes    16/10/2020 08:10    12:42           16:48
+Sábado     17/10/2020          08:04           12:00
+
+
+
+Empleado:        147 - VAZQUEZ CRISTIAN FERNANDO                                  Tarjeta Nº         147
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58            07:58   20:08           20:08
+Jueves     01/10/2020 07:50    20:03           20:03
+Viernes    02/10/2020 07:47    20:04
+Sábado     03/10/2020          07:40           16:06           16:06
+Lunes      05/10/2020 19:45
+Martes     06/10/2020          08:07           08:07   19:46
+Miércoles  07/10/2020          08:12   19:53
+Jueves     08/10/2020          08:04   19:43
+Viernes    09/10/2020          08:03   19:46
+Sábado     10/10/2020          08:04
+Martes     13/10/2020 07:47    20:02
+Miércoles  14/10/2020 07:46    20:13           20:13
+Jueves     15/10/2020 07:46            07:46   20:04
+Viernes    16/10/2020 07:48    20:02
+Sábado     17/10/2020 07:44    16:01           16:01
+
+
+
+Empleado:        164 - NUÑEZ DAMIAN RICARDO                                       Tarjeta Nº         164
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:40    12:30   12:42   16:49
+Jueves     01/10/2020 07:42    12:33           12:45   12:45   16:50
+Viernes    02/10/2020 07:41    12:32   12:42   16:50
+Lunes      05/10/2020 07:45    12:33   12:44   16:50
+Martes     06/10/2020 07:44    12:33   12:44   16:51
+Miércoles  07/10/2020 07:47    12:33   12:45   16:49
+Jueves     08/10/2020 07:40    12:32   12:45   16:49
+Viernes    09/10/2020 07:46    12:34   12:42   15:02
+Martes     13/10/2020 07:43    12:35   12:46   16:50
+Miércoles  14/10/2020 07:49    12:31   12:42   16:50
+Jueves     15/10/2020 07:40    12:31   12:39   16:49
+Viernes    16/10/2020 07:50    12:30   12:41   16:50
+
+
+
+Empleado:        185 - TOMACELLO JOSE                                             Tarjeta Nº         185
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020          15:04           15:04           16:55
+Viernes    02/10/2020 06:40    12:33   12:46   16:53
+Lunes      05/10/2020 06:47    12:34   12:50   16:54
+Martes     06/10/2020 11:48    12:36   12:51   16:56
+Miércoles  07/10/2020 06:50    12:34   12:46   16:54
+Jueves     08/10/2020 06:37    12:35   12:50   16:52
+Viernes    09/10/2020 06:41    12:35   12:51   16:52
+Martes     13/10/2020 06:42    12:36   12:54   16:52
+Miércoles  14/10/2020 06:39    12:32   12:45   16:50
+Jueves     15/10/2020 06:37    12:32   12:45   16:50
+Viernes    16/10/2020 06:40    12:32   12:50   16:51
+
+
+
+Empleado:        200 - MERCADO HECTOR JOSE                                        Tarjeta Nº         200
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:55    12:32   12:59   16:57
+Jueves     01/10/2020 07:58    12:33   12:59   16:51
+Viernes    02/10/2020 07:56    12:30   12:58   16:55
+Lunes      05/10/2020 07:57    12:32   12:59   16:51
+Martes     06/10/2020 07:53    12:31   12:59
+Miércoles  07/10/2020 07:59    12:36   12:58   16:52
+Jueves     08/10/2020 07:57    12:32   12:58   16:58
+Viernes    09/10/2020 07:57    12:32   12:58   16:52
+Martes     13/10/2020 07:53    12:34   12:59   16:55
+Miércoles  14/10/2020 07:54    12:30   12:57   16:49
+Jueves     15/10/2020 07:52    12:30   12:57   16:50
+Viernes    16/10/2020 07:51    12:33   12:56   16:49
+
+
+
+Empleado:        202 - ANDREANI JOSUE LEON                                        Tarjeta Nº         202
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:16    15:01
+Jueves     01/10/2020 06:18    15:02
+Viernes    02/10/2020 06:17    15:04
+Lunes      05/10/2020 14:18    23:02
+Martes     06/10/2020 14:21    23:02
+Miércoles  07/10/2020 14:16    23:01
+Jueves     08/10/2020 14:19    23:01
+Viernes    09/10/2020 14:17    23:01
+Martes     13/10/2020 22:15
+Miércoles  14/10/2020          07:01   22:15
+Jueves     15/10/2020          06:59   22:15
+Viernes    16/10/2020          07:00   22:12
+Sábado     17/10/2020          07:00
+
+
+
+Empleado:        224 - ULLOA VICTOR ESTEBAN                                       Tarjeta Nº         224
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:08   19:43
+Jueves     01/10/2020          08:15   20:04
+Viernes    02/10/2020          08:11   19:50
+Sábado     03/10/2020          08:05
+Lunes      05/10/2020 07:59    20:12
+Martes     06/10/2020 07:56    20:11
+Miércoles  07/10/2020 07:52    20:05
+Jueves     08/10/2020 07:50    16:04
+Viernes    09/10/2020 07:45    20:08
+Sábado     10/10/2020 07:54    16:09
+Martes     13/10/2020 19:56
+Miércoles  14/10/2020          08:08           08:11   19:58
+Jueves     15/10/2020          08:18   20:03
+Viernes    16/10/2020          08:15           08:16   20:00
+Sábado     17/10/2020          08:07           08:08
+
+
+
+Empleado:        226 - REY SAUL  ARGENTINO                                        Tarjeta Nº         226
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:47    16:51
+Jueves     01/10/2020 07:50    13:18   13:45   17:21
+Viernes    02/10/2020 07:46    13:19   13:52   16:52
+Lunes      05/10/2020 07:42    12:42   13:12   18:17
+Martes     06/10/2020 07:46    12:38   13:07   18:16
+Miércoles  07/10/2020 07:51    12:39   13:13   17:48
+Jueves     08/10/2020 07:50    12:46   13:19   16:56
+Viernes    09/10/2020 07:53    13:58   14:24   16:52
+Martes     13/10/2020 07:47    13:20   13:45   18:22
+Miércoles  14/10/2020 07:50    13:14   13:49   18:14
+Jueves     15/10/2020 07:47    13:23           18:15
+Viernes    16/10/2020 07:44    16:49
+Sábado     17/10/2020 08:05    12:00
+
+
+
+Empleado:        233 - LANZENI MARCOS RUBEN                                       Tarjeta Nº         233
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    16:52
+Jueves     01/10/2020 08:01    16:50
+Viernes    02/10/2020 07:58    16:50
+Lunes      05/10/2020 08:02    16:51
+Martes     06/10/2020 08:00    16:51
+Miércoles  07/10/2020 08:00    16:58
+Jueves     08/10/2020 08:00    16:52
+Viernes    09/10/2020 08:00    16:51
+Martes     13/10/2020 07:59    16:52
+Miércoles  14/10/2020 07:59    16:49
+Jueves     15/10/2020 07:58    16:48
+Viernes    16/10/2020 07:56    12:30   12:52   16:51
+
+
+
+Empleado:        235 - LUCERO MIGUEL ARMANDO                                      Tarjeta Nº         235
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:06   23:35
+Jueves     01/10/2020          08:05   23:19
+Viernes    02/10/2020          08:07   23:19
+Sábado     03/10/2020          08:09
+Lunes      05/10/2020 07:57    16:07
+Martes     06/10/2020 07:28    16:07
+Miércoles  07/10/2020 07:39    16:09
+Jueves     08/10/2020 07:44    16:09
+Viernes    09/10/2020 07:37    16:07
+Martes     13/10/2020 15:41
+Miércoles  14/10/2020          00:08   15:26
+Jueves     15/10/2020          00:07           00:07   15:30           15:36
+Viernes    16/10/2020          00:06   15:31
+
+
+
+Empleado:        236 - ESPERON RAMIREZ RAUL ANDRES                                Tarjeta Nº         236
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    17:33
+Jueves     01/10/2020          17:31           17:33
+Viernes    02/10/2020 07:58    16:59
+Sábado     03/10/2020 07:02            11:47   11:47
+Lunes      05/10/2020 07:55    17:52
+Martes     06/10/2020 07:55    17:33           17:34
+Miércoles  07/10/2020 07:56            07:57   17:51
+Jueves     08/10/2020 08:00    17:37
+Viernes    09/10/2020 07:57    16:57           16:58
+Sábado     10/10/2020          11:50
+Martes     13/10/2020 07:55    17:32
+Miércoles  14/10/2020 07:56    17:36
+Jueves     15/10/2020 07:54    17:34
+Viernes    16/10/2020 07:55    16:54
+Sábado     17/10/2020          11:14
+
+
+
+Empleado:        241 - DE LA O PRADO GUATAVO FABIAN                               Tarjeta Nº         241
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:48    12:32   12:57           16:48   16:48
+Jueves     01/10/2020 07:48    12:16   12:55           16:48   16:48
+Viernes    02/10/2020 07:51    12:30   13:00   16:48
+Lunes      05/10/2020 07:51    12:32   13:00   16:48
+Martes     06/10/2020 07:48    12:30   12:56   16:48
+Miércoles  07/10/2020 07:51    12:33   12:54   16:29
+Jueves     08/10/2020 07:53    12:31   12:55   16:48
+Viernes    09/10/2020 07:48    12:30   12:58   16:48
+Martes     13/10/2020 07:53    12:34   12:53   16:48
+Miércoles  14/10/2020 07:52    12:30   12:53   16:48
+Jueves     15/10/2020 07:45    12:31   12:49   16:48
+Viernes    16/10/2020 07:44    12:31   12:52   15:22
+
+
+
+Empleado:        242 - ARRASCAETA LUIS MIGUEL                                     Tarjeta Nº         242
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    12:29   12:54   20:04
+Jueves     01/10/2020 07:54    12:31   13:02   20:08
+Viernes    02/10/2020 07:50    12:32   13:02   19:18
+Lunes      05/10/2020 08:02    12:31   12:59   13:42
+Martes     06/10/2020 07:54    12:31   12:58   16:48
+Miércoles  07/10/2020 07:38    12:30   12:56   18:18
+Jueves     08/10/2020 07:47    12:29   13:00   16:49
+Viernes    09/10/2020 07:46    12:31           16:49
+Martes     13/10/2020 07:44    12:32   12:59   20:03
+Miércoles  14/10/2020 07:47    12:29   12:57   20:01
+Jueves     15/10/2020 07:46    12:51   12:51   13:30
+
+
+
+Empleado:        246 - OSLER GUGGUANA  GONZALO                                    Tarjeta Nº         246
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:45    12:30   12:50   16:49           16:50
+Jueves     01/10/2020 07:40            12:30           12:49   16:48
+Viernes    02/10/2020 07:40    12:30           12:48   12:48   16:49
+Lunes      05/10/2020 07:40    12:30   12:43   16:49
+Martes     06/10/2020 07:38    12:30   12:48   16:50
+Miércoles  07/10/2020 07:40    12:30   12:47   16:50
+Jueves     08/10/2020 07:38    12:31   12:49   16:51
+Viernes    09/10/2020 07:39    12:29   12:59   16:50
+Martes     13/10/2020 07:41    12:30   12:45           12:53   16:48
+Miércoles  14/10/2020 07:56    12:30   12:47   16:48
+Jueves     15/10/2020 07:36    12:30   12:48   16:48
+Viernes    16/10/2020 07:36    12:29   12:56   16:48
+
+
+
+Empleado:        248 - JAIME CORTEZ WALTER MARCELO                                Tarjeta Nº         248
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:53    12:53   12:53   16:52
+Jueves     01/10/2020 07:52    12:57   12:57   16:50
+Viernes    02/10/2020 07:45    12:32   12:53   16:51
+Lunes      05/10/2020 07:29    12:30           12:53           16:53
+Martes     06/10/2020 07:31    12:33   12:57   16:51
+Miércoles  07/10/2020 07:25    12:33   12:59   17:25
+Martes     13/10/2020 07:13    12:35   12:56   16:49
+Miércoles  14/10/2020 07:45    12:30   12:52   17:29
+Jueves     15/10/2020 07:14    12:32   12:52   16:49
+Viernes    16/10/2020 07:30    12:51   12:51   16:48
+
+
+
+Empleado:        253 - VALDEZ EDUARDO CEFERINO                                    Tarjeta Nº         253
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05           08:05   19:49           19:49
+Jueves     01/10/2020          08:12           08:12   19:50           19:50
+Viernes    02/10/2020          08:08           08:08   19:47           19:47            19:47
+Sábado     03/10/2020          08:04           08:04
+Lunes      05/10/2020 07:55    20:07           20:07
+Martes     06/10/2020 07:45            07:46   20:11           20:11
+Miércoles  07/10/2020 07:45            07:45   20:13           20:13
+Jueves     08/10/2020 07:45            07:45   20:06           20:07
+Viernes    09/10/2020 07:53            07:53   16:08           16:08
+Sábado     10/10/2020 07:46            07:46   16:09           16:09
+Martes     13/10/2020 19:42            19:42
+Miércoles  14/10/2020          08:10           08:10           08:10   19:48            19:48
+Jueves     15/10/2020          08:15           08:15           08:15   19:44            19:44
+Viernes    16/10/2020          08:04           08:04   19:39           19:39
+Sábado     17/10/2020          08:03           08:03
+
+
+
+Empleado:        260 - MONTIVERO CLAUDIO GUSTAVO                                  Tarjeta Nº         260
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:03   07:49   16:05
+Jueves     01/10/2020 15:52
+Viernes    02/10/2020          00:03   07:41   16:07
+Lunes      05/10/2020 07:49    17:21
+Martes     06/10/2020 07:55    16:44
+Miércoles  07/10/2020 07:45    16:49
+Jueves     08/10/2020 07:50    16:52
+Viernes    09/10/2020 07:49    16:07
+Martes     13/10/2020 15:46
+Miércoles  14/10/2020          00:09   15:47
+Jueves     15/10/2020          00:01   15:49
+Viernes    16/10/2020          00:03   15:45
+Sábado     17/10/2020          00:03
+
+
+
+Empleado:        261 - CASTILLO YONATHAN                                          Tarjeta Nº         261
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    12:47   12:48   17:17
+Jueves     01/10/2020 08:00    12:31           12:47   12:47   17:15
+Viernes    02/10/2020 08:00    12:51   12:51   16:54
+Lunes      05/10/2020 07:57    12:30   12:45   16:56
+Martes     06/10/2020 07:54    12:31   12:47   17:31
+Miércoles  07/10/2020 07:54    12:49           16:49
+Jueves     08/10/2020 07:56    12:55   12:56   17:27
+Viernes    09/10/2020 07:50    12:58   12:59   16:50           16:51
+Martes     13/10/2020 07:53    12:31   12:48   16:48
+Miércoles  14/10/2020 07:55    12:30   12:44   16:49
+Jueves     15/10/2020 07:53    12:37   12:57   16:51
+Viernes    16/10/2020 07:50    12:55   12:55   16:53
+
+
+
+Empleado:        263 - SANCHEZ MAURICIO                                           Tarjeta Nº         263
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:54    12:32   12:48   17:11
+Jueves     01/10/2020 07:59    13:00
+Viernes    02/10/2020 07:55    12:32   12:48   16:50
+Lunes      05/10/2020 07:59    12:30   12:47   19:48
+Martes     06/10/2020 08:00    12:31   12:42   16:49
+Miércoles  07/10/2020 07:53    12:31   12:50   16:48
+Jueves     08/10/2020 07:57    12:31   12:48   16:49
+Viernes    09/10/2020 08:01    12:31   12:48   16:51
+Martes     13/10/2020 07:58    12:32   12:51   16:48
+Miércoles  14/10/2020 08:00    12:30   12:46   16:48
+Jueves     15/10/2020 07:55    12:31   12:43   16:48
+Viernes    16/10/2020 08:22    12:30           12:30   12:56   16:52
+Sábado     17/10/2020 07:53    14:00
+
+
+
+Empleado:        267 - OLMOS GISELLE                                              Tarjeta Nº         267
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:50    16:52
+Jueves     01/10/2020 07:46    16:50
+Viernes    02/10/2020 07:46    16:51
+Lunes      05/10/2020 07:46
+Martes     06/10/2020 07:47    16:52
+Miércoles  07/10/2020 07:47    16:50
+Jueves     08/10/2020 07:54    16:51
+Viernes    09/10/2020 07:49    16:51
+Martes     13/10/2020 07:50
+Miércoles  14/10/2020 07:50    16:50
+Jueves     15/10/2020 07:49    16:50
+Viernes    16/10/2020 07:48    16:48
+
+
+
+Empleado:        268 - VARELA FABRICIO                                            Tarjeta Nº         268
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:02    17:08
+Jueves     01/10/2020 08:00    17:11
+Viernes    02/10/2020 08:01
+Lunes      05/10/2020 08:00    16:48
+Martes     06/10/2020 07:58    17:29
+Miércoles  07/10/2020 07:59    16:54
+Jueves     08/10/2020 08:00    17:02
+Viernes    09/10/2020 07:59    16:54
+Martes     13/10/2020 07:58
+Miércoles  14/10/2020 08:05    17:03
+Jueves     15/10/2020 07:44    16:55
+Viernes    16/10/2020          16:57
+
+
+
+Empleado:        290 - ANDREANI PEDRO RAUL                                        Tarjeta Nº         290
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:50    12:33   12:53   16:54
+Jueves     01/10/2020 07:53    12:33   13:00   16:51
+Viernes    02/10/2020 07:58    12:33   13:00   16:50
+Lunes      05/10/2020 07:44    12:32   12:49   16:51
+Martes     06/10/2020 07:53    12:33   13:00   16:50
+Miércoles  07/10/2020 07:48    12:30   13:02   16:52
+Jueves     08/10/2020 07:48    12:34   12:53   12:53   12:53   16:49
+Viernes    09/10/2020 07:56    12:33   12:51   16:50
+Martes     13/10/2020 07:48    12:31   12:55   17:32
+Miércoles  14/10/2020 07:53    12:29   12:48   17:28
+Jueves     15/10/2020 07:48    12:28   12:48   17:29
+Viernes    16/10/2020 07:44    12:30   12:44   16:50
+
+
+
+Empleado:        301 - DIAZ ALDO MARTIN                                           Tarjeta Nº         301
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:42    12:35   12:55   18:48
+Jueves     01/10/2020 07:40    12:31   12:56   17:48
+Viernes    02/10/2020 07:40    12:31   12:57   16:53
+Sábado     03/10/2020 07:52    13:00
+Lunes      05/10/2020 07:54    12:32   12:55   18:48
+Martes     06/10/2020 07:41    12:31   12:55   18:48
+Miércoles  07/10/2020 07:45    12:31   12:55   16:58
+Jueves     08/10/2020 07:48    12:32   12:54   18:48
+Viernes    09/10/2020 07:45    12:31   12:57   17:00
+Martes     13/10/2020 07:46    12:31   12:57   18:57
+Miércoles  14/10/2020 07:49    12:30   12:53   18:49
+Jueves     15/10/2020 07:37    12:30   12:51   18:48
+Viernes    16/10/2020 07:32    12:30   12:55   16:58
+Sábado     17/10/2020 07:46    16:02
+
+
+
+Empleado:        318 - SANCHEZ CRISTIAN JUAN JAVIER                               Tarjeta Nº         318
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:43    16:08
+Jueves     01/10/2020 07:48    17:08
+Lunes      05/10/2020 15:46
+Martes     06/10/2020          00:06   07:44   18:04
+Miércoles  07/10/2020 07:47    18:05
+Jueves     08/10/2020 07:51    18:11
+Viernes    09/10/2020 07:46    18:07
+Martes     13/10/2020 23:50
+Miércoles  14/10/2020          08:05   23:37
+Jueves     15/10/2020          08:17   23:40
+Viernes    16/10/2020          08:08   23:41           23:53
+Sábado     17/10/2020          08:01
+
+
+
+Empleado:        335 - ROJAS RODRIGO                                              Tarjeta Nº         335
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:04
+Lunes      05/10/2020 07:58    20:05
+Martes     06/10/2020 07:51    16:15
+
+
+
+Empleado:        336 - LOPEZ DANIEL                                               Tarjeta Nº         336
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:22    12:33   12:50   16:59
+Jueves     01/10/2020 07:19            12:47   17:38
+Viernes    02/10/2020 07:30            12:51   16:48
+Lunes      05/10/2020 07:29    12:40   12:53   17:42
+Martes     06/10/2020 07:28    12:31   12:47   17:32
+Miércoles  07/10/2020 07:30    12:31   12:47   16:52
+Jueves     08/10/2020 07:23            12:47   17:41
+Viernes    09/10/2020 07:29    12:30   12:57   16:48
+Martes     13/10/2020 07:31    12:31   12:48   16:48
+Miércoles  14/10/2020 07:28            12:42   16:48
+
+
+
+Empleado:        343 - RIVERO PABLO                                               Tarjeta Nº         343
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    16:48
+Jueves     01/10/2020 07:50    12:40   13:12   16:51
+Viernes    02/10/2020 07:51    12:42   13:18   16:49
+Lunes      05/10/2020 07:54    13:16   13:50   16:53
+Martes     06/10/2020 07:49    13:21   13:54   16:49
+Miércoles  07/10/2020 07:51    13:20   13:53   16:50
+Jueves     08/10/2020 07:54    13:21   13:57   16:48
+Viernes    09/10/2020 07:50    13:58   14:19   16:48
+Martes     13/10/2020 07:52    09:45   11:56   12:45   13:20   16:51
+Miércoles  14/10/2020 07:52    12:43   13:18   16:49
+Jueves     15/10/2020 07:51    12:44   13:18   16:48
+Viernes    16/10/2020 07:45    12:42   13:18   16:48
+Sábado     17/10/2020 08:05    12:00
+
+
+
+Empleado:        352 - BAZAN MOYA EUGENIO                                         Tarjeta Nº         352
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 14:18    23:03
+Jueves     01/10/2020 14:34    23:02
+Viernes    02/10/2020 14:58            14:58   23:02
+Lunes      05/10/2020 22:56
+Martes     06/10/2020          07:03   22:37           22:37
+Miércoles  07/10/2020          07:01   22:46
+Jueves     08/10/2020          07:04   22:36
+Viernes    09/10/2020          07:03   22:51
+Sábado     10/10/2020          07:03
+Martes     13/10/2020          15:03
+Miércoles  14/10/2020 06:53    15:02
+Jueves     15/10/2020 06:53    15:00
+Viernes    16/10/2020 06:39    15:03
+
+
+
+Empleado:        355 - GUTIERREZ DAVID                                            Tarjeta Nº         355
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:09   07:54   16:05
+Jueves     01/10/2020 15:52
+Viernes    02/10/2020          00:10   15:57
+Sábado     03/10/2020          00:03           07:49   07:49   13:03
+Lunes      05/10/2020 15:42
+Martes     06/10/2020          00:00   07:45
+Miércoles  07/10/2020 15:47
+Jueves     08/10/2020 00:02            07:57   16:05
+Viernes    09/10/2020 07:47    11:25   12:42   17:05
+Sábado     10/10/2020          07:51   07:51   13:07
+Martes     13/10/2020 15:45
+Miércoles  14/10/2020          00:08   15:44
+Jueves     15/10/2020          00:00   15:41
+Viernes    16/10/2020          00:03   15:48
+Sábado     17/10/2020          00:04   07:44   13:00
+
+
+
+Empleado:        359 - PEREGO WALTER                                              Tarjeta Nº         359
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 14:41    23:03
+Jueves     01/10/2020 14:48    23:06
+Viernes    02/10/2020 14:44    23:03
+Lunes      05/10/2020 22:43
+Martes     06/10/2020          07:03   22:44
+Miércoles  07/10/2020          07:01   22:41
+Jueves     08/10/2020          07:04   22:49
+Viernes    09/10/2020          07:03   22:40
+Sábado     10/10/2020          07:03
+Martes     13/10/2020          15:03
+Miércoles  14/10/2020 06:46    15:02
+Jueves     15/10/2020 06:47    15:00
+Viernes    16/10/2020 06:39    15:00
+
+
+
+Empleado:        371 - SANCHEZ SABRINA                                            Tarjeta Nº         371
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:04    16:49
+Jueves     01/10/2020 07:55    16:52
+Viernes    02/10/2020 08:07    16:57
+Lunes      05/10/2020          07:07           16:50
+Martes     06/10/2020          07:09           16:55
+Miércoles  07/10/2020          07:05           16:51
+Jueves     08/10/2020 07:06    16:59
+Viernes    09/10/2020          07:02           16:55
+Martes     13/10/2020 07:04    16:55
+Miércoles  14/10/2020          07:04           16:51
+Jueves     15/10/2020          06:58           16:55
+Viernes    16/10/2020 07:01    16:54
+
+
+
+Empleado:        375 - carla gonzalez archivo 2019                                Tarjeta Nº         375
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    17:08
+Jueves     01/10/2020 07:52    17:18
+Viernes    02/10/2020 07:52    16:52
+Lunes      05/10/2020 07:50    16:56
+Martes     06/10/2020 07:49            09:39
+Viernes    16/10/2020 07:44    16:59
+
+
+
+Empleado:        376 - TALABERA LEANDRO                                           Tarjeta Nº         376
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 18:40
+Martes     06/10/2020          07:03   18:33
+Miércoles  07/10/2020          07:02   18:32
+Jueves     08/10/2020          07:03   18:34
+Viernes    09/10/2020          07:03   18:34
+Sábado     10/10/2020          07:08
+Martes     13/10/2020 19:36
+Miércoles  14/10/2020          08:04   19:41           19:41
+Jueves     15/10/2020          08:01   19:52
+Viernes    16/10/2020          08:03   19:42
+Sábado     17/10/2020          08:00
+
+
+
+Empleado:        377 - CEBALLOS MATIAS MIGUEL                                     Tarjeta Nº         377
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    12:31   12:49   16:58
+Jueves     01/10/2020 07:59    12:32   12:53   16:48
+Viernes    02/10/2020 07:50    12:33   13:01   16:48
+Lunes      05/10/2020 07:56    12:31   12:50   16:49
+Martes     06/10/2020 07:51    12:32   12:49   16:49
+Miércoles  07/10/2020 07:54    12:31   12:48   16:48
+Jueves     08/10/2020 07:48    12:31   12:50   16:48
+Viernes    09/10/2020 07:55    12:30   12:58   16:48
+Martes     13/10/2020 07:55    12:32   12:48   16:49
+Miércoles  14/10/2020 07:58    12:30   12:49   16:48
+Jueves     15/10/2020 07:54    12:32   12:53   16:48
+Viernes    16/10/2020 07:55    12:30   12:50   16:48
+
+
+
+Empleado:        392 - SANTA CRUZ EMANUEL                                         Tarjeta Nº         392
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:41    17:51
+Jueves     01/10/2020 06:41    17:52
+Viernes    02/10/2020 06:39    16:55
+Lunes      05/10/2020 06:30    17:26
+Martes     06/10/2020 07:50    17:52
+Miércoles  07/10/2020 07:54    17:42
+Jueves     08/10/2020 06:27    17:52
+Viernes    09/10/2020 06:51    16:52
+Martes     13/10/2020 06:34    17:39
+Miércoles  14/10/2020 06:36    17:15
+Jueves     15/10/2020 06:33    17:48
+Viernes    16/10/2020 06:54    16:48
+
+
+
+Empleado:        394 - VILLADA ARIAS ARIEL                                        Tarjeta Nº         394
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    12:31           12:57   12:57   16:53
+Jueves     01/10/2020 07:53    12:48   12:48   16:49
+Viernes    02/10/2020 07:44    12:47   12:48   16:48
+Lunes      05/10/2020 07:45    12:45   12:45   16:49
+Martes     06/10/2020 07:46    12:48   12:48   16:48
+Miércoles  07/10/2020 07:46    12:47   12:47   16:49
+Jueves     08/10/2020 07:48    12:48   12:49   16:53
+Viernes    09/10/2020 07:47    12:29   12:59   16:48
+Sábado     10/10/2020 07:52    12:59
+Martes     13/10/2020 07:41    12:31   12:45   16:48
+Miércoles  14/10/2020 07:44    12:30   12:46   16:48
+Jueves     15/10/2020 07:33    12:30   12:48   16:48
+Viernes    16/10/2020 07:26    12:29   12:55   16:48
+
+
+
+Empleado:        395 - PLANS                                                      Tarjeta Nº         395
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:50    16:03
+Jueves     01/10/2020 07:49    16:01
+Viernes    02/10/2020 07:49            07:49   16:04
+Lunes      05/10/2020 07:55    17:02
+Martes     06/10/2020 07:48    16:05
+Miércoles  07/10/2020 07:40    16:09
+Jueves     08/10/2020 07:41    16:34
+Viernes    09/10/2020 07:43    16:05
+Martes     13/10/2020 07:49    16:07
+Miércoles  14/10/2020 07:42    17:05
+Jueves     15/10/2020 07:47    16:03
+Viernes    16/10/2020 07:37    16:03
+
+
+
+Empleado:        397 - BARRAZA ISMAEL                                             Tarjeta Nº         397
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:43    16:03
+Jueves     01/10/2020 07:50    16:04
+Viernes    02/10/2020 07:45    16:06
+Lunes      05/10/2020 07:43    16:07
+Martes     06/10/2020 07:44    16:04
+Miércoles  07/10/2020 07:42    16:05
+Jueves     08/10/2020 07:48    16:05
+Viernes    09/10/2020 07:51    16:12
+Martes     13/10/2020 07:43    16:04
+Miércoles  14/10/2020 07:46    16:01
+Jueves     15/10/2020 07:48    16:02           16:02
+Viernes    16/10/2020 07:45    15:59
+
+
+
+Empleado:        398 - PALOMEQUE RODRIGO                                          Tarjeta Nº         398
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:49    16:48
+Jueves     01/10/2020 07:52    12:45   13:17           16:48
+Viernes    02/10/2020 07:50    12:42   13:14   16:51
+Lunes      05/10/2020 07:52    12:42   13:13   16:53
+Martes     06/10/2020 07:50    12:38   13:10   16:50
+Miércoles  07/10/2020 07:50    12:39   13:14   16:50
+Jueves     08/10/2020 07:50    12:47   13:15   16:57
+Viernes    09/10/2020 07:48    12:37   13:11   16:52
+Martes     13/10/2020 08:08    12:41   13:14   16:51
+Miércoles  14/10/2020 12:05    16:50
+Jueves     15/10/2020 07:52            12:37           13:11   16:48
+Viernes    16/10/2020 07:53    12:33   13:11   16:48
+
+
+
+Empleado:        403 - OLIVERO RODRIGO ANDRES                                     Tarjeta Nº         403
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:17    12:51   12:51   17:12
+Jueves     01/10/2020 06:41    12:48   12:48   17:07
+Viernes    02/10/2020 06:48    12:41   12:59   16:48
+Lunes      05/10/2020 06:45    12:31   13:00   17:04
+Martes     06/10/2020 06:49    12:30           17:18
+Miércoles  07/10/2020 06:46            12:30   12:30   12:51   17:07
+Jueves     08/10/2020 06:40    12:34   12:49   17:29
+Viernes    09/10/2020 06:44    16:48
+Martes     13/10/2020 06:45    12:31   12:52   16:48
+Miércoles  14/10/2020 07:02    17:25
+Jueves     15/10/2020 06:46    12:28           16:47
+Viernes    16/10/2020 07:16    12:53   12:53   16:47
+
+
+
+Empleado:        407 - ROMERO ALFARO BRAIAN                                       Tarjeta Nº         407
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:57    12:53   13:03   17:19
+Jueves     01/10/2020 08:01    12:41   12:59   17:41
+Viernes    02/10/2020 08:01    12:48   12:59   16:51
+Sábado     03/10/2020 08:03    13:03
+Lunes      05/10/2020 07:56    12:32   12:51   17:32
+Martes     06/10/2020 07:59    12:50   13:01   17:35
+Miércoles  07/10/2020 07:59    12:35   12:59   17:28
+Jueves     08/10/2020 08:00    12:51   13:02   17:49
+Viernes    09/10/2020 07:58    12:37   12:55   16:58
+Sábado     10/10/2020 07:59    13:05
+Martes     13/10/2020 08:00    12:50   13:03   16:51
+Miércoles  14/10/2020 07:57    12:31   12:49   17:07
+Jueves     15/10/2020 07:58    12:31   12:46   16:55
+Viernes    16/10/2020 07:53    12:49   12:58   17:06
+Sábado     17/10/2020 08:00    13:17
+
+
+
+Empleado:        416 - LEDESMA SANDRA                                             Tarjeta Nº         416
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    17:00
+Jueves     01/10/2020 08:00    16:52
+Viernes    02/10/2020 07:59    16:53
+Lunes      05/10/2020 08:00    16:50
+Martes     06/10/2020 08:00    16:52
+Miércoles  07/10/2020 08:00    16:53
+Jueves     08/10/2020 08:02    16:53
+Viernes    09/10/2020 08:01    16:53
+Martes     13/10/2020 08:00    16:53
+Miércoles  14/10/2020 08:00    16:53
+Jueves     15/10/2020 07:58    16:50
+Viernes    16/10/2020 07:58    16:55
+
+
+
+Empleado:        420 - CEREZO GIULIANO                                            Tarjeta Nº         420
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:54    15:37
+Jueves     01/10/2020 07:56    16:14
+Viernes    02/10/2020 07:53    16:13
+Sábado     03/10/2020 07:52    16:01
+Lunes      05/10/2020 07:53    16:10
+Martes     06/10/2020 07:48    16:14
+Miércoles  07/10/2020 07:53    16:16
+Jueves     08/10/2020 07:59    16:15
+Viernes    09/10/2020 07:54    16:10
+Sábado     10/10/2020 07:48    16:01
+Martes     13/10/2020 15:58
+Miércoles  14/10/2020          00:16   15:52
+Jueves     15/10/2020          00:09   15:49
+Viernes    16/10/2020          00:16   15:34
+Sábado     17/10/2020          00:18
+
+
+
+Empleado:        422 - DUARTE EUGENIO A                                           Tarjeta Nº         422
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    18:22
+Jueves     01/10/2020 07:52    19:02
+Viernes    02/10/2020 07:47    19:01
+Lunes      05/10/2020 07:54    18:20
+Martes     06/10/2020 07:49    18:13
+Miércoles  07/10/2020 07:51    16:51
+Jueves     08/10/2020 07:49    16:52
+Viernes    09/10/2020 07:50    16:53
+Martes     13/10/2020 07:57    18:32
+Miércoles  14/10/2020 07:52    18:43
+Jueves     15/10/2020 07:47    18:12
+Viernes    16/10/2020 07:47    16:49
+
+
+
+Empleado:        423 - DIAZ GONZALEZ MARCOS E                                     Tarjeta Nº         423
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:05   15:57
+Jueves     01/10/2020          00:05   15:57
+Viernes    02/10/2020          00:02   15:59
+Sábado     03/10/2020          00:06
+Lunes      05/10/2020 16:00
+Martes     06/10/2020          00:04   15:55
+Miércoles  07/10/2020          00:02   15:56
+Jueves     08/10/2020          00:02   15:49
+Viernes    09/10/2020          00:02   15:56
+Sábado     10/10/2020          00:04
+Martes     13/10/2020 15:55
+Miércoles  14/10/2020          00:04   15:52
+Jueves     15/10/2020          00:00   15:46
+Viernes    16/10/2020          00:00   15:47
+Sábado     17/10/2020          00:00
+
+
+
+Empleado:        424 - CALDO CRISTIAN ANDRES                                      Tarjeta Nº         424
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:42    13:01   13:31   16:48
+Jueves     01/10/2020 07:45    13:00   13:31   16:49
+Viernes    02/10/2020 07:45    13:00   13:32   16:48
+Lunes      05/10/2020 07:51    13:02   13:32   16:50
+Martes     06/10/2020 07:48    13:01   13:34   16:49
+Miércoles  07/10/2020 07:53    13:00   13:32   16:49
+Jueves     08/10/2020 07:52    13:03   13:31   16:49
+Viernes    09/10/2020 07:47    13:03   13:32   16:50
+Martes     13/10/2020 07:58    13:02   13:31   16:49
+Miércoles  14/10/2020 07:45    13:00   13:32   16:48
+Jueves     15/10/2020 07:37    13:01   13:30   16:49
+
+
+
+Empleado:        426 - BIO IVAN FERNANDO                                          Tarjeta Nº         426
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:11    13:00   13:00   16:54
+Jueves     01/10/2020 07:57    13:01   13:01   17:17
+Viernes    02/10/2020 07:49    12:44           16:55
+Lunes      05/10/2020 07:33    12:53   13:06           16:41   16:53
+Martes     06/10/2020 07:29    12:42           16:56
+Miércoles  07/10/2020 07:57    12:32           16:52
+Jueves     08/10/2020          12:33   13:02   17:00
+Viernes    09/10/2020 07:05    16:56
+Miércoles  14/10/2020 07:49    17:00
+Jueves     15/10/2020 07:39    17:11
+Viernes    16/10/2020 07:45    16:54
+
+
+
+Empleado:        429 - BARRAZA JAVIER ISMAEL                                      Tarjeta Nº         429
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:44    12:30   12:50   16:53
+Jueves     01/10/2020 07:50    12:31   12:48   16:48
+Viernes    02/10/2020 07:45    12:30   12:48   16:48
+Lunes      05/10/2020 07:43    12:31   12:43   16:48
+Martes     06/10/2020 07:44    12:30   12:48   16:48
+Miércoles  07/10/2020 07:42    12:30   12:47   16:48
+Jueves     08/10/2020 07:48    12:30   12:47   16:48
+Viernes    09/10/2020 07:51    12:30   12:59   16:48
+Martes     13/10/2020 07:43    12:30   12:45   16:48
+Miércoles  14/10/2020 07:45    12:30   12:42   16:48
+Jueves     15/10/2020 07:48    12:30   12:47   16:48
+Viernes    16/10/2020 07:44    12:30   12:57   16:48
+
+
+
+Empleado:        432 - RASJIDO DAVID EMANUEL                                      Tarjeta Nº         432
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05   19:36
+Jueves     01/10/2020          08:04   19:37
+Viernes    02/10/2020          08:05   19:51
+Sábado     03/10/2020          04:19
+Lunes      05/10/2020 07:55    20:07
+Martes     06/10/2020 07:46    20:06           20:06
+Miércoles  07/10/2020 07:50    20:04
+Jueves     08/10/2020 07:56    20:05
+Viernes    09/10/2020 07:55    20:04
+Martes     13/10/2020 19:42
+Miércoles  14/10/2020          08:05   19:43
+Jueves     15/10/2020          08:04   19:40
+Viernes    16/10/2020          08:01   19:44
+Sábado     17/10/2020          08:02
+
+
+
+Empleado:        434 - PONCE LEONARDO GABRIEL                                     Tarjeta Nº         434
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:03   23:52
+Jueves     01/10/2020          08:03   19:54
+Viernes    02/10/2020          08:03   19:55
+Sábado     03/10/2020          08:04
+Lunes      05/10/2020 07:56    16:04
+Martes     06/10/2020 07:50    20:05
+Miércoles  07/10/2020 07:52    20:03
+Jueves     08/10/2020 07:51    16:04
+
+
+
+Empleado:        437 - BRITOS PAULO ARIEL                                         Tarjeta Nº         437
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:12           00:12   15:58           15:58
+Jueves     01/10/2020          00:26   15:57
+Viernes    02/10/2020          00:09           00:09   15:59
+Sábado     03/10/2020          00:14           00:14
+Lunes      05/10/2020 15:55            15:55
+Martes     06/10/2020          00:16           00:16   16:00           16:00
+Miércoles  07/10/2020          00:15           00:15   16:01           16:01
+Jueves     08/10/2020          00:15           00:15   15:57           15:57
+Viernes    09/10/2020          00:10           00:10   15:55           15:55
+Sábado     10/10/2020          00:08           00:08
+Martes     13/10/2020 23:59            23:59
+Miércoles  14/10/2020          08:10           08:10
+Jueves     15/10/2020 00:01            00:01   08:10           08:10   23:55            23:55
+Viernes    16/10/2020          08:16           08:16   23:57           23:57
+Sábado     17/10/2020          08:08           08:08
+
+
+
+Empleado:        438 - RIVERO LUIS ALBERTO                                        Tarjeta Nº         438
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:32    20:04
+Jueves     01/10/2020 07:26    20:02
+Viernes    02/10/2020 07:33    20:12
+Lunes      05/10/2020 19:36
+Martes     06/10/2020          08:06   19:22
+Miércoles  07/10/2020          08:07   19:41
+Jueves     08/10/2020          08:06   19:39
+Viernes    09/10/2020          08:06   19:42
+Sábado     10/10/2020          08:05
+Martes     13/10/2020 07:53    20:05
+Miércoles  14/10/2020 07:24    20:06
+Jueves     15/10/2020 07:48    20:04
+Viernes    16/10/2020 07:22    20:04
+
+
+
+Empleado:        446 - MALDONADO MATIAS JAVIER                                    Tarjeta Nº         446
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:44    12:33   12:58   17:19
+Jueves     01/10/2020 07:57    12:31   12:55   17:24
+Viernes    02/10/2020 07:52    12:49   12:49           12:49   16:49
+Lunes      05/10/2020 07:49    12:34   12:54   16:50
+Martes     06/10/2020 07:53    12:30   12:53   17:25
+Miércoles  07/10/2020 07:52    12:33   12:56   17:27
+Jueves     08/10/2020 07:58    12:30   12:48   17:25
+Viernes    09/10/2020 07:21    12:33   12:50   16:49
+Martes     13/10/2020 07:59    12:34   12:54   17:24
+Miércoles  14/10/2020 07:57    12:31   12:54   17:21
+Jueves     15/10/2020 07:44    12:31   12:52   17:21
+Viernes    16/10/2020 07:48    12:30   12:51   16:48
+
+
+
+Empleado:        447 - VILLALBA CARLOS GABRIEL                                    Tarjeta Nº         447
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:08   15:55
+Jueves     01/10/2020 00:02    00:02   15:55
+Viernes    02/10/2020          00:06   15:55
+Sábado     03/10/2020          00:04           00:06   07:56   16:03
+Lunes      05/10/2020 07:57    20:07
+Martes     06/10/2020 07:51    20:06
+Miércoles  07/10/2020 07:57    20:11
+Jueves     08/10/2020 07:57    20:06
+Viernes    09/10/2020 07:52            20:02   20:02
+Sábado     10/10/2020 07:48    16:04
+Martes     13/10/2020 07:50    20:06
+Miércoles  14/10/2020 07:53    20:02
+Jueves     15/10/2020 07:53    20:00
+Viernes    16/10/2020 07:52    20:01
+Sábado     17/10/2020 07:52    16:00
+
+
+
+Empleado:        448 - OLIVA DIEGO DE DIOS                                        Tarjeta Nº         448
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:48    16:02
+Jueves     01/10/2020 07:48    16:01
+Viernes    02/10/2020 07:54    16:02
+Lunes      05/10/2020 19:47
+Martes     06/10/2020          04:00   23:47
+Miércoles  07/10/2020          08:02   19:47
+Jueves     08/10/2020          08:03   19:38
+Viernes    09/10/2020          08:02   19:42
+Sábado     10/10/2020          08:03
+Martes     13/10/2020 07:50    16:03
+Miércoles  14/10/2020 07:59    16:00
+Jueves     15/10/2020 07:41    16:01
+Viernes    16/10/2020 07:43    16:00
+Sábado     17/10/2020 07:41    12:59           13:00
+
+
+
+Empleado:        458 - MASCHERONI RENZO                                           Tarjeta Nº         458
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05   19:59
+Jueves     01/10/2020          08:03   19:58
+Viernes    02/10/2020          08:07   19:53
+Sábado     03/10/2020          04:00
+Lunes      05/10/2020 07:53    20:02
+Martes     06/10/2020 07:49            07:50   18:25
+Miércoles  07/10/2020 07:54    18:05
+Jueves     08/10/2020 07:54    18:03
+Viernes    09/10/2020 07:49    17:00
+Martes     13/10/2020 17:53
+Miércoles  14/10/2020          04:03   16:41           16:41
+Jueves     15/10/2020          04:00   16:45
+Viernes    16/10/2020          04:00   17:55
+Sábado     17/10/2020          04:01
+
+
+
+Empleado:        470 - IBAÑEZ ALEXANDER                                           Tarjeta Nº         470
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    12:36   12:45   17:02
+Jueves     01/10/2020 08:04            12:49           12:49   17:48
+Viernes    02/10/2020 08:03    12:48   12:48   16:50
+Sábado     03/10/2020 08:02    13:03
+Lunes      05/10/2020 07:55    12:36   13:00   17:46
+Martes     06/10/2020 07:58    12:34           16:52
+Miércoles  07/10/2020 07:57    12:32           16:53
+Jueves     08/10/2020 08:04    12:33   12:54   16:54
+Viernes    09/10/2020 08:02    12:58   12:58   16:51
+Lunes      12/10/2020 07:50    13:07
+Martes     13/10/2020 07:52            12:47   12:48   12:48   16:52
+Miércoles  14/10/2020 07:50    12:42   12:42
+Jueves     15/10/2020 07:59    12:52   12:52   17:43
+Viernes    16/10/2020 07:50    12:50   12:50
+
+
+
+Empleado:        472 - SUAREZ FRANCO                                              Tarjeta Nº         472
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 15:54
+Jueves     01/10/2020          00:03   08:00   16:01
+Viernes    02/10/2020 08:00    16:07
+Lunes      05/10/2020 15:30
+Martes     06/10/2020          00:00   15:55
+Miércoles  07/10/2020          00:07   15:43
+Jueves     08/10/2020          00:03   15:50
+Viernes    09/10/2020          00:05   07:54   16:03
+Martes     13/10/2020 07:57    16:12
+Miércoles  14/10/2020 07:54    16:10
+Jueves     15/10/2020 07:52    18:11
+Viernes    16/10/2020 08:19    16:17
+
+
+
+Empleado:        475 - SANCHEZ BRAIAN                                             Tarjeta Nº         475
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:10   15:55
+Jueves     01/10/2020          00:05   15:54
+Viernes    02/10/2020          00:07   15:54
+Sábado     03/10/2020          00:06
+Lunes      05/10/2020 23:45
+Martes     06/10/2020          08:04   23:46
+Miércoles  07/10/2020          08:03   23:44
+Jueves     08/10/2020          08:03   23:51
+Viernes    09/10/2020          08:01   23:43
+Sábado     10/10/2020          08:02
+Martes     13/10/2020 07:47    16:03
+Miércoles  14/10/2020 07:41            07:58   16:00
+Jueves     15/10/2020 07:41    16:00
+Viernes    16/10/2020 07:41            07:56   16:05
+
+
+
+Empleado:        476 - YBARRA RICARDO                                             Tarjeta Nº         476
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:44    12:30   12:51   16:48
+Jueves     01/10/2020 07:40    12:30   12:58   16:49
+Viernes    02/10/2020 07:51    12:30   12:57   16:49
+Lunes      05/10/2020 07:45    12:30   12:58   16:49
+Martes     06/10/2020 07:45    12:31   12:58   16:48
+Miércoles  07/10/2020 07:46    12:30   12:55   16:49
+Jueves     08/10/2020 07:39    12:30   12:55   16:53
+Viernes    09/10/2020 07:41    12:33   12:59   16:48
+Martes     13/10/2020 07:43    12:30   12:58   16:49
+Miércoles  14/10/2020 07:45    12:31   12:56   16:49
+Jueves     15/10/2020 07:42    12:31   12:54   16:48
+Viernes    16/10/2020 07:34    12:30   12:55   16:50
+
+
+
+Empleado:        477 - VILLALBA BRAIAN                                            Tarjeta Nº         477
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05   19:49           19:49
+Jueves     01/10/2020          07:03
+Viernes    02/10/2020 23:54
+Sábado     03/10/2020          08:04
+Lunes      05/10/2020 07:59    16:04
+Martes     06/10/2020 07:58    14:02
+Miércoles  07/10/2020 07:58    16:06
+Jueves     08/10/2020 08:00    16:05
+Viernes    09/10/2020 07:57    16:04
+Martes     13/10/2020 20:06
+Miércoles  14/10/2020          08:05           08:05   19:51
+Jueves     15/10/2020          08:00   19:51
+Viernes    16/10/2020          08:00   19:53
+Sábado     17/10/2020          04:01
+
+
+
+Empleado:        479 - CANTO MIGUEL                                               Tarjeta Nº         479
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:31    20:09
+Jueves     01/10/2020 07:25    20:03
+Viernes    02/10/2020 07:33    20:12
+Lunes      05/10/2020 19:39
+Martes     06/10/2020          08:04   20:19
+Miércoles  07/10/2020 19:41
+Jueves     08/10/2020          08:05   19:39
+Viernes    09/10/2020          08:08   19:43
+Sábado     10/10/2020          08:04
+Martes     13/10/2020 07:46    20:05
+Miércoles  14/10/2020 07:24    20:06
+Jueves     15/10/2020 07:48    20:04
+Viernes    16/10/2020 07:22    20:06
+
+
+
+Empleado:        483 - MARTINEZ FAVIO                                             Tarjeta Nº         483
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:54    19:03
+Jueves     01/10/2020 06:45    19:03
+Viernes    02/10/2020 06:53    19:05
+Lunes      05/10/2020 07:54    19:03
+Martes     06/10/2020 06:44    19:01
+Miércoles  07/10/2020 06:44    19:02
+Jueves     08/10/2020 06:50            06:53   19:02
+Viernes    09/10/2020 06:46            06:47   19:03
+Martes     13/10/2020 07:51    16:04
+Miércoles  14/10/2020 07:52    16:07
+Jueves     15/10/2020 07:51    20:01
+Viernes    16/10/2020 07:49    20:01
+
+
+
+Empleado:        485 - FERREYRA KEVIN                                             Tarjeta Nº         485
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:09    12:38   12:55   16:53
+Jueves     01/10/2020 07:24    12:40           17:43
+Viernes    02/10/2020 07:26    12:31   12:57   16:50
+Sábado     03/10/2020 07:53    13:00
+Lunes      05/10/2020 07:51    12:45   13:02   16:51
+Martes     06/10/2020 07:35    12:31   13:01   17:39
+Miércoles  07/10/2020 08:28    12:34   13:01   17:53
+Jueves     08/10/2020 07:56    12:43   12:51   16:50
+Viernes    09/10/2020 07:20    12:33   12:53   16:49
+Sábado     10/10/2020 07:45    08:05
+Martes     13/10/2020 07:35    12:34   12:52   16:50
+Miércoles  14/10/2020 07:04    12:32   12:49   16:48
+Jueves     15/10/2020 06:53    12:46   13:01   16:48
+
+
+
+Empleado:        490 - ZURITA LAUTARO                                             Tarjeta Nº         490
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          07:01   22:44
+Jueves     01/10/2020          07:00   22:47
+Viernes    02/10/2020          07:02   22:47
+Sábado     03/10/2020          07:01
+Lunes      05/10/2020 06:56    15:01
+
+
+
+Empleado:        492 - GONZALEZ BRAIAN                                            Tarjeta Nº         492
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:06   23:48
+Jueves     01/10/2020          08:05   23:49
+Viernes    02/10/2020          08:07   23:52
+Sábado     03/10/2020          08:05
+Lunes      05/10/2020 07:55    16:07
+Martes     06/10/2020 07:54    08:41
+
+
+
+Empleado:        496 - PICONE                                                     Tarjeta Nº         496
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:43    16:51
+Jueves     01/10/2020 07:43    16:51
+Viernes    02/10/2020 07:45
+Lunes      05/10/2020 07:44    16:53
+Martes     06/10/2020 07:46    16:53
+Miércoles  07/10/2020 07:43    16:52
+Jueves     08/10/2020 07:43    12:01
+Viernes    09/10/2020 07:40    16:52
+Martes     13/10/2020 07:46    16:52
+Miércoles  14/10/2020 07:42    16:48
+Jueves     15/10/2020 07:33    16:49
+Viernes    16/10/2020 07:30    16:50
+
+
+
+Empleado:        500 - ALTAMIRANDO                                                Tarjeta Nº         500
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:02    12:31   13:02   16:52
+Jueves     01/10/2020 08:00    12:30   12:53   16:58
+Viernes    02/10/2020 07:56    12:32   13:02   16:51
+Sábado     03/10/2020 08:06    13:03
+Lunes      05/10/2020 07:59    12:31   12:45   16:50
+Martes     06/10/2020 08:02    12:31   12:42   16:53
+Miércoles  07/10/2020 07:53    12:31   12:52   16:53
+Jueves     08/10/2020 08:00    12:36   12:58   16:54
+Viernes    09/10/2020 08:02    12:31   13:01   16:51           16:56
+Sábado     10/10/2020 08:11    13:00
+Lunes      12/10/2020 08:01    13:01
+Martes     13/10/2020 07:57    12:32   12:49   16:52
+Miércoles  14/10/2020 08:00    12:28   13:01   16:52
+Jueves     15/10/2020 08:06    12:32   12:55   16:52
+Viernes    16/10/2020 07:59    13:00   13:31   16:51
+Sábado     17/10/2020 08:19    13:00
+
+
+
+Empleado:        503 - AMAYA DARIO                                                Tarjeta Nº         503
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:09    12:31   13:01   16:50
+Jueves     01/10/2020 07:24    12:35   13:01   16:51
+Viernes    02/10/2020 07:26    12:33   12:58   16:50
+Lunes      05/10/2020 08:00    16:51
+Martes     06/10/2020 07:35    12:30   12:50   16:49
+Miércoles  07/10/2020 07:06    12:32   12:52   16:49
+Jueves     08/10/2020 07:06    12:29   12:58   16:50
+Viernes    09/10/2020 07:10    12:32   12:52   16:50
+Martes     13/10/2020 07:33    12:31   12:47   16:52
+Miércoles  14/10/2020 07:58    12:29   13:00   16:48
+Jueves     15/10/2020 07:59    16:48
+Viernes    16/10/2020 07:48    13:00   13:29   16:48
+
+
+
+Empleado:        506 - GALINDEZ OSCAR                                             Tarjeta Nº         506
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          07:09   07:09   12:31   12:57   17:45
+Jueves     01/10/2020 07:24    12:32   12:59   17:44
+Viernes    02/10/2020 07:26    12:39   13:00   16:51
+Sábado     03/10/2020 07:59    15:44
+Lunes      05/10/2020 08:00    12:33   13:00   16:51
+Martes     06/10/2020 07:35    12:33   12:47   16:53
+Miércoles  07/10/2020 07:06    12:31   12:53   17:39
+Jueves     08/10/2020 07:06    12:37   12:58   16:50
+Viernes    09/10/2020 07:06    12:37   13:01   16:51
+Sábado     10/10/2020 08:06    12:58
+Lunes      12/10/2020 08:15    13:00
+Martes     13/10/2020 07:33    12:32   12:57   16:53
+
+
+
+Empleado:        508 - martisendra                                                Tarjeta Nº         508
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    12:32   12:47   16:56
+Jueves     01/10/2020 07:56    12:31   12:49   16:57
+Viernes    02/10/2020 08:03    12:32   12:53   16:51
+Lunes      05/10/2020 07:50    12:34   12:44   16:52
+Martes     06/10/2020 07:58    12:34   12:44   16:49
+Miércoles  07/10/2020 07:55    12:31   12:44   16:52
+Jueves     08/10/2020 07:58    12:35   12:36   16:49
+Viernes    09/10/2020 08:04    12:47   12:48   16:50
+Martes     13/10/2020 07:54    12:32   12:41   16:51
+Miércoles  14/10/2020 07:59    12:31   12:42   17:49
+Jueves     15/10/2020 07:15    12:30   12:44   16:48
+Viernes    16/10/2020 07:54    12:30   12:43   16:49
+
+
+
+Empleado:        509 - navarro martin                                             Tarjeta Nº         509
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:32            07:32   12:33   12:58   17:47
+Jueves     01/10/2020 07:38            08:00   12:33   13:00   17:45
+Viernes    02/10/2020 07:36    12:33   12:59   16:52
+Sábado     03/10/2020 07:49            07:57   13:03
+Lunes      05/10/2020 07:39    12:32   12:56   17:53
+Martes     06/10/2020 07:39            07:39   12:30   12:57   17:46
+Viernes    09/10/2020 07:35    12:31   13:02   16:53
+Sábado     10/10/2020 07:50            08:20   13:00
+Lunes      12/10/2020 07:50            07:51   13:02
+Martes     13/10/2020 07:43    12:31   12:58
+Miércoles  14/10/2020 07:43    12:30   12:58   17:50
+Jueves     15/10/2020 08:12    12:31   12:58   17:47
+Viernes    16/10/2020 07:41    16:52
+Sábado     17/10/2020 07:49    13:01
+
+
+
+Empleado:        510 - garay navarro                                              Tarjeta Nº         510
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05   20:01
+Jueves     01/10/2020          08:04   23:47
+Viernes    02/10/2020          08:05   19:57
+Sábado     03/10/2020          08:05
+Lunes      05/10/2020 07:58    20:07
+Martes     06/10/2020 07:52    11:01   11:50   20:07
+Miércoles  07/10/2020 07:55    16:10
+Jueves     08/10/2020 08:00    20:07           20:07
+Viernes    09/10/2020 07:49    20:04
+Martes     13/10/2020 07:57    20:06
+Miércoles  14/10/2020 07:56    20:05
+Jueves     15/10/2020 07:59    20:02
+Viernes    16/10/2020 07:56    19:03
+
+
+
+Empleado:        511 - jaime ricardo                                              Tarjeta Nº         511
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:10    12:36   12:53   16:50
+Jueves     01/10/2020 07:24    12:31   12:50   16:53
+Viernes    02/10/2020 07:26    12:31   12:54   16:50
+Lunes      05/10/2020 07:50    12:31   13:03   16:52
+Martes     06/10/2020 07:36    12:32   12:47   16:48
+Miércoles  07/10/2020 07:06    12:31   12:50   16:49
+Jueves     08/10/2020 07:02            12:36   12:36   12:52   16:52
+Viernes    09/10/2020 07:03    12:54   12:54   16:52
+Martes     13/10/2020 07:34    12:31   12:47   16:50
+Miércoles  14/10/2020 07:04    12:28           12:30   12:44   16:49
+Jueves     15/10/2020 07:00    12:30   12:43   16:48
+Viernes    16/10/2020 07:03    12:32   12:53   16:48
+
+
+
+Empleado:        512 - arias victor                                               Tarjeta Nº         512
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:48    12:33   12:53   17:01
+Jueves     01/10/2020 07:53    12:31   13:02   16:50
+Viernes    02/10/2020 07:51    12:31   12:54   16:49
+Sábado     03/10/2020 07:50    13:03
+Lunes      05/10/2020 07:54    12:33   12:51   16:49
+Martes     06/10/2020 07:48    12:31   12:49   16:48
+Miércoles  07/10/2020 07:51    12:30   12:51   16:49
+Jueves     08/10/2020 07:47    11:35
+
+
+
+Empleado:        517 - asinari Santiago                                           Tarjeta Nº         517
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:03    16:48
+Jueves     01/10/2020 08:00    13:20   13:46   16:52
+Viernes    02/10/2020 07:53    13:19           16:51
+Lunes      05/10/2020 08:03            13:12   17:54
+Martes     06/10/2020 07:58    12:42           18:15
+Miércoles  07/10/2020 08:06    12:53   13:13   17:48
+Jueves     08/10/2020 08:01    12:34   13:14   17:02
+Viernes    09/10/2020          14:30           15:01           16:48
+Martes     13/10/2020 07:59    13:19           18:20
+Miércoles  14/10/2020 08:03    13:12   13:43   18:14
+Jueves     15/10/2020 07:51    13:23   13:50   18:15
+Viernes    16/10/2020 07:51    13:24           16:48
+
+
+
+Empleado:        519 - LUNA                                                       Tarjeta Nº         519
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:53    12:31   12:57   16:52
+Jueves     01/10/2020 08:00    12:30           12:55           16:50
+Viernes    02/10/2020 07:57    12:35   12:56   16:53
+Lunes      05/10/2020 07:58    12:35           12:56           16:53
+Martes     06/10/2020 07:52    12:33           13:01           16:52
+Miércoles  07/10/2020 07:56    12:33   12:56   16:50
+Jueves     08/10/2020 07:54    12:31           12:59           17:52
+Viernes    09/10/2020 07:56    12:33   12:58   16:55
+Martes     13/10/2020 07:56    12:37           12:57   18:45
+Miércoles  14/10/2020 07:57    12:33           12:54           19:04           19:05
+Jueves     15/10/2020 07:57    12:34   12:56   19:10
+Viernes    16/10/2020 07:54            07:55   12:32   12:49   16:53
+Sábado     17/10/2020 07:56    12:55
+
+
+
+Empleado:        521 - PERALTA RENE                                               Tarjeta Nº         521
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:37    12:33   12:51   16:53
+Jueves     01/10/2020 07:31    12:31   12:46   16:49
+Viernes    02/10/2020 07:29    12:31   12:52   16:50
+Lunes      05/10/2020 07:41    12:30   12:51   16:50
+Martes     06/10/2020 07:41    12:30   12:59   16:56
+Miércoles  07/10/2020          07:33   07:33   12:30   12:50   16:53
+Jueves     08/10/2020 07:37    12:32   12:54   16:50
+Viernes    09/10/2020 07:38    12:30   12:55   16:53
+Martes     13/10/2020 07:30    12:30   12:45   16:49
+Miércoles  14/10/2020 07:37    12:31   12:40   16:49
+Jueves     15/10/2020 07:27    12:30   12:45   16:49
+Viernes    16/10/2020 07:29    12:29   12:49   16:49
+
+
+
+Empleado:        522 - PAREDES JOSE DANIEL                                        Tarjeta Nº         522
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          07:03   18:47
+Jueves     01/10/2020          07:05   18:48
+Viernes    02/10/2020          07:04   18:59
+Sábado     03/10/2020          07:05
+Lunes      05/10/2020 07:54    19:05
+Martes     06/10/2020 06:44    19:03
+Miércoles  07/10/2020 06:47    19:04
+Jueves     08/10/2020 06:44    19:05
+Viernes    09/10/2020 06:50    19:04
+Martes     13/10/2020 07:51    20:03
+Miércoles  14/10/2020 07:52    20:02
+Jueves     15/10/2020 07:51    20:01
+Viernes    16/10/2020 07:50    20:02
+
+
+
+Empleado:        525 - RUIZ PABLO ARIEL                                           Tarjeta Nº         525
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:06   15:51
+Jueves     01/10/2020          00:06   15:54
+Viernes    02/10/2020          00:08   15:55
+Sábado     03/10/2020          00:07
+Lunes      05/10/2020 23:57
+Martes     06/10/2020          08:10   23:57
+Miércoles  07/10/2020          08:11   23:57
+Jueves     08/10/2020          08:06   23:59
+Viernes    09/10/2020          08:05   23:54
+Sábado     10/10/2020          08:07
+Martes     13/10/2020 07:51    16:12
+Miércoles  14/10/2020 07:50    16:05
+Jueves     15/10/2020 07:50    16:04
+Viernes    16/10/2020 07:48    16:05
+
+
+
+Empleado:        526 - FAJARDO HECTOR GUSTAVO                                     Tarjeta Nº         526
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 19:48
+Jueves     01/10/2020          08:02   19:53
+Viernes    02/10/2020          08:08   19:48
+Sábado     03/10/2020          08:07
+Jueves     08/10/2020 19:53
+Viernes    09/10/2020          08:04   19:39
+Sábado     10/10/2020          08:06
+Martes     13/10/2020 19:56
+Miércoles  14/10/2020          08:12   19:51
+Jueves     15/10/2020          08:01   20:02
+Viernes    16/10/2020          08:07   19:36
+Sábado     17/10/2020          08:06
+
+
+
+Empleado:        527 - FIGUEROA LEANDRO JEREMIAS                                  Tarjeta Nº         527
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    12:33   13:02   16:52
+Jueves     01/10/2020 07:59    12:37   13:02   16:54
+Viernes    02/10/2020 07:50    12:34   13:02   16:51
+Sábado     03/10/2020 07:51    13:01
+Lunes      05/10/2020 07:57    12:32   13:02   16:53
+Martes     06/10/2020 07:51    12:32   13:02   16:54
+Miércoles  07/10/2020 07:49    12:32   12:53   16:54
+Jueves     08/10/2020 07:56    12:32   12:59   16:54
+Viernes    09/10/2020 07:52    12:31   13:05   16:55
+Martes     13/10/2020 07:52    12:33   12:58   16:52
+Miércoles  14/10/2020 07:54            13:01   16:52
+Jueves     15/10/2020 07:52            12:59   16:52
+Viernes    16/10/2020 07:40    12:31   12:59   16:49
+
+
+
+Empleado:        528 - KLOBUCHAR CARLOS ADRIAN                                    Tarjeta Nº         528
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    16:58
+Jueves     01/10/2020 07:57    17:00
+Viernes    02/10/2020 07:54    16:56
+Lunes      05/10/2020 07:52    16:53
+Martes     06/10/2020 07:55    17:21
+Miércoles  07/10/2020 07:49    17:11
+Jueves     08/10/2020 07:54    16:55
+Viernes    09/10/2020 07:52    16:52
+
+
+
+Empleado:        531 - ZAMBRANO DARIO                                             Tarjeta Nº         531
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:06    12:31   12:57   17:18
+Jueves     01/10/2020 07:02    12:30   12:47   17:25
+Viernes    02/10/2020 07:14    12:32   12:53   16:51
+Lunes      05/10/2020 07:16    12:30   12:43   17:13
+Martes     06/10/2020 07:02    12:30   12:47   17:20
+Miércoles  07/10/2020 07:00    12:50   12:50   17:10
+Jueves     08/10/2020 07:07    12:30   12:49   16:48
+Viernes    09/10/2020 07:11    12:30   12:50   16:48
+Martes     13/10/2020 06:56    12:30   12:48   16:48
+Miércoles  14/10/2020 06:57    12:47   12:47   17:01
+Jueves     15/10/2020 07:04    12:28   12:42   16:48
+Viernes    16/10/2020 07:10    12:30   12:52   16:51
+
+
+
+Empleado:        536 - QUINTEROS JUAN                                             Tarjeta Nº         536
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          07:01   22:03
+Jueves     01/10/2020          07:01   21:27
+Viernes    02/10/2020          07:02   21:28
+Sábado     03/10/2020          07:01
+Lunes      05/10/2020 06:52    15:01
+Martes     06/10/2020 06:53    15:09
+Miércoles  07/10/2020 06:41    15:00
+Jueves     08/10/2020 06:42    15:02
+Viernes    09/10/2020 06:47    15:02
+Martes     13/10/2020 14:47    23:02
+Miércoles  14/10/2020 14:28    23:00
+Jueves     15/10/2020 14:44            14:44           14:44   23:01
+Viernes    16/10/2020 14:45    23:00
+
+
+
+Empleado:        543 - biancotti oyola eduardo                                    Tarjeta Nº         543
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:54    16:03
+Jueves     01/10/2020 07:58    16:06
+Viernes    02/10/2020 07:45    16:18
+Lunes      05/10/2020 07:56    16:07
+Martes     06/10/2020 07:46    16:05
+Miércoles  07/10/2020 07:52    16:20
+Jueves     08/10/2020 07:55    16:06
+Viernes    09/10/2020 07:57    16:08
+Martes     13/10/2020 07:57    16:06
+Miércoles  14/10/2020 07:56    16:05
+
+
+
+Empleado:        545 - sanchez rodriguez                                          Tarjeta Nº         545
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:32    20:07
+Jueves     01/10/2020 07:15    20:06
+Viernes    02/10/2020 07:45    20:05
+Lunes      05/10/2020 19:39
+Martes     06/10/2020          08:04   19:50
+Miércoles  07/10/2020          08:05   19:52
+Jueves     08/10/2020          08:06   19:40
+Viernes    09/10/2020          08:06   19:42
+Sábado     10/10/2020          08:06
+Martes     13/10/2020 07:48    20:08
+Miércoles  14/10/2020 07:45    20:02
+Jueves     15/10/2020 07:29            07:29   20:06
+Viernes    16/10/2020 07:46    16:13
+
+
+
+Empleado:        547 - PUGA FRANCO                                                Tarjeta Nº         547
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:07   15:55
+Jueves     01/10/2020          00:06   15:55
+Viernes    02/10/2020          00:06   15:54
+Sábado     03/10/2020          00:07
+Lunes      05/10/2020 23:45
+Martes     06/10/2020          08:08
+
+
+
+Empleado:        548 - PERALTA SERGIO                                             Tarjeta Nº         548
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Martes     06/10/2020 17:44
+Miércoles  07/10/2020          04:03   17:48
+Jueves     08/10/2020          04:04   17:44
+Viernes    09/10/2020          04:02   17:45
+Sábado     10/10/2020          04:02
+Martes     13/10/2020 07:44    16:06
+Miércoles  14/10/2020 05:45    18:00
+Jueves     15/10/2020 07:41    18:00
+Viernes    16/10/2020 07:42    18:02
+Sábado     17/10/2020 07:42    13:00
+
+
+
+Empleado:        550 - MOLINA MARCOS                                              Tarjeta Nº         550
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:36    20:04
+Jueves     01/10/2020 07:40    20:03
+Viernes    02/10/2020 07:37    20:04
+Sábado     03/10/2020 07:44    16:01
+Lunes      05/10/2020 19:37
+Martes     06/10/2020          08:06   19:33
+Miércoles  07/10/2020          08:08   19:32
+Jueves     08/10/2020          08:05   19:40
+Viernes    09/10/2020          08:04           08:06   19:29
+Sábado     10/10/2020          08:06
+Martes     13/10/2020 07:49    20:06
+Miércoles  14/10/2020 07:39    20:02
+Jueves     15/10/2020 07:36    20:01
+Viernes    16/10/2020 07:35    20:00
+Sábado     17/10/2020 07:33    16:00
+
+
+
+Empleado:        551 - AGUIRRE EDUARDO                                            Tarjeta Nº         551
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:16    20:03
+Jueves     01/10/2020 07:27    20:04
+Viernes    02/10/2020 07:21    20:04
+Lunes      05/10/2020 19:17    21:42
+Martes     13/10/2020 07:47    16:03
+Miércoles  14/10/2020 07:20    16:00
+Jueves     15/10/2020 07:12    16:01
+Viernes    16/10/2020 07:15    16:02
+
+
+
+Empleado:        552 - MANSILLA MAXIMILIANO                                       Tarjeta Nº         552
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:10   19:52
+Jueves     01/10/2020          08:08   19:47
+Viernes    02/10/2020          08:07   19:38
+Sábado     03/10/2020          08:03
+Lunes      05/10/2020 07:53    20:06
+Martes     06/10/2020 07:43    20:07
+Miércoles  07/10/2020 07:47    20:06
+Jueves     08/10/2020 07:39    20:04
+Viernes    09/10/2020 07:41    16:07
+Martes     13/10/2020 19:46
+Miércoles  14/10/2020          08:09   19:43
+Jueves     15/10/2020          08:12           19:27   19:44
+Viernes    16/10/2020          08:03   19:41
+Sábado     17/10/2020          08:02
+
+
+
+Empleado:        553 - AGUILAR ALAN                                               Tarjeta Nº         553
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05   19:44
+Jueves     01/10/2020          08:06   19:54
+Viernes    02/10/2020          08:08   19:52
+Sábado     03/10/2020          08:03
+Lunes      05/10/2020 07:51    20:18
+Martes     06/10/2020 07:45    20:12
+Miércoles  07/10/2020 07:47    20:18
+Jueves     08/10/2020 07:48    20:05
+Viernes    09/10/2020 07:47    18:15
+Martes     13/10/2020 19:44
+Miércoles  14/10/2020          08:13   19:43
+Jueves     15/10/2020          08:04   19:47
+Viernes    16/10/2020          08:06   19:48
+Sábado     17/10/2020          08:04
+
+
+
+Empleado:        554 - NUÑEZ VERONICA                                             Tarjeta Nº         554
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    12:30   12:57   16:50
+Jueves     01/10/2020 07:53    12:32   12:52   16:51
+Viernes    02/10/2020 07:51    12:31   13:00   16:49
+Lunes      05/10/2020 07:53    12:31   13:00   16:49
+Martes     06/10/2020 07:53    12:32   13:01   16:51
+Miércoles  07/10/2020 07:53    12:32   13:01   16:50
+Jueves     08/10/2020 07:47    12:31   12:57   16:50
+Viernes    09/10/2020 07:37    12:31   12:59   16:49
+Martes     13/10/2020 07:52    12:32   12:58   16:49
+Miércoles  14/10/2020 07:52    12:31   12:56   16:49
+Jueves     15/10/2020 07:51    12:30   12:56   16:48
+Viernes    16/10/2020 07:48    12:32   12:56   16:49
+
+
+
+Empleado:        555 - SANCHEZ MARIA FERNANDA                                     Tarjeta Nº         555
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:39    18:06
+Jueves     01/10/2020 07:52    18:15
+Viernes    02/10/2020 07:42    17:31
+Lunes      05/10/2020 07:42    17:25
+Martes     06/10/2020 07:38    18:32
+Miércoles  07/10/2020 07:51    17:28
+Jueves     08/10/2020 07:46    17:57           17:58
+Viernes    09/10/2020 07:47    16:59
+Martes     13/10/2020 07:39    17:21
+Miércoles  14/10/2020 07:46    17:36
+Jueves     15/10/2020 07:47    17:24
+Viernes    16/10/2020 07:41    17:27
+
+
+
+Empleado:        556 - ROSEMEBERG JOSE GABRIEL                                    Tarjeta Nº         556
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:44    16:04
+Jueves     01/10/2020 07:45    16:02
+Viernes    02/10/2020 07:48    16:07
+Lunes      05/10/2020 15:57
+Martes     06/10/2020          00:04   15:58
+Miércoles  07/10/2020          00:02   15:57
+Jueves     08/10/2020          00:02   15:50
+Viernes    09/10/2020          00:05   15:55
+Sábado     10/10/2020          00:03
+Martes     13/10/2020 07:54    16:03
+Miércoles  14/10/2020 07:53    16:00
+Jueves     15/10/2020 07:55    16:00
+Viernes    16/10/2020 07:55    16:01
+
+
+
+Empleado:        557 - CAMINO LUIS ALBERTO                                        Tarjeta Nº         557
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 23:47
+Martes     06/10/2020          08:19   23:51
+Miércoles  07/10/2020          08:09   23:57
+Jueves     08/10/2020          08:13   23:53
+Viernes    09/10/2020          08:22   23:48
+Sábado     10/10/2020          08:10
+Martes     13/10/2020 07:54    16:25
+Miércoles  14/10/2020 07:53    16:20
+Jueves     15/10/2020 07:50    16:17
+Viernes    16/10/2020 07:48    16:15
+Sábado     17/10/2020 07:44    16:00
+
+
+
+Empleado:        560 - COMASCHI CLAUDIO                                           Tarjeta Nº         560
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:03    16:50
+Jueves     01/10/2020 08:00    16:50
+Viernes    02/10/2020 07:59    16:50
+Lunes      05/10/2020          07:02           17:05
+Martes     06/10/2020          07:00           16:49
+Miércoles  07/10/2020 07:05            16:49   16:49
+Jueves     08/10/2020 07:02    15:02
+Viernes    09/10/2020          07:02           16:55
+Martes     13/10/2020 07:00    16:52
+Miércoles  14/10/2020 07:04    16:49
+Jueves     15/10/2020 06:58    16:54
+Viernes    16/10/2020          06:57   06:57   16:49
+
+
+
+Empleado:        562 - SALGUERO SAMUEL                                            Tarjeta Nº         562
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 06:45    15:01
+Jueves     01/10/2020 07:07    15:02
+Viernes    02/10/2020 06:40    15:04
+Lunes      05/10/2020 14:45    23:01
+Martes     06/10/2020 14:47    23:03
+Miércoles  07/10/2020 14:46    23:01
+Jueves     08/10/2020 14:45    23:00
+Viernes    09/10/2020 14:51    23:01
+Martes     13/10/2020 22:42
+Miércoles  14/10/2020          07:01   22:35
+Jueves     15/10/2020          07:00   22:35
+Viernes    16/10/2020          07:00   22:31
+Sábado     17/10/2020          07:00
+
+
+
+Empleado:        563 - MENDOZA LUIS                                               Tarjeta Nº         563
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:03   23:47
+Jueves     01/10/2020          08:07   23:50
+Viernes    02/10/2020          08:07   23:48
+Sábado     03/10/2020          08:09
+Lunes      05/10/2020 07:56    16:07
+Martes     06/10/2020 07:54    16:07
+Miércoles  07/10/2020 07:54    20:08
+Jueves     08/10/2020 07:56    16:06
+Viernes    09/10/2020 07:53    16:09
+Martes     13/10/2020 15:48
+Miércoles  14/10/2020          00:05   15:41
+Jueves     15/10/2020 15:48
+Viernes    16/10/2020          00:04   15:49
+Sábado     17/10/2020          00:02
+
+
+
+Empleado:        565 - MARTINO RODRIGO AMTEO                                      Tarjeta Nº         565
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    16:05
+Jueves     01/10/2020 07:49    16:07
+Viernes    02/10/2020 07:49    16:03
+
+
+
+Empleado:        567 - ROBLES SOLANO DANTE DANIEL                                 Tarjeta Nº         567
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:03   19:44
+Jueves     01/10/2020          06:05   19:28
+Viernes    02/10/2020          08:06   19:30
+Sábado     03/10/2020          08:05
+Lunes      05/10/2020 07:55    20:05
+Martes     06/10/2020 07:51    20:08
+Miércoles  07/10/2020 07:39    20:05
+Jueves     08/10/2020 07:43    19:06
+Viernes    09/10/2020 07:45    16:07
+
+
+
+Empleado:        573 - STABILE MARCELO ALEJANDRO ES                               Tarjeta Nº         573
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:11   19:51
+Jueves     01/10/2020          08:22   19:52
+Viernes    02/10/2020          08:08   19:53
+Sábado     03/10/2020          08:17
+Lunes      05/10/2020 07:55    20:13
+Martes     06/10/2020 07:48    20:12
+Miércoles  07/10/2020 07:56    20:12
+Jueves     08/10/2020 07:53    20:16
+Viernes    09/10/2020 07:53    20:16
+Martes     13/10/2020 19:55
+Miércoles  14/10/2020          08:08   19:46
+Jueves     15/10/2020          08:05   19:56
+Viernes    16/10/2020          08:03   19:51
+Sábado     17/10/2020          08:12
+
+
+
+Empleado:        576 - MALDONADO TOMAS ULISES ES                                  Tarjeta Nº         576
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:55    17:07
+Jueves     01/10/2020 07:59    12:44   13:16           16:49
+Viernes    02/10/2020 07:51    12:42   13:15   16:51
+
+
+
+Empleado:        577 - OVIEDO ALFREDO MIGUEL FR                                   Tarjeta Nº         577
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:22    12:59   13:29   16:48
+Jueves     01/10/2020 07:20    12:59   13:31   16:49
+Viernes    02/10/2020 07:24    12:59   13:31   16:48
+Lunes      05/10/2020 07:41    13:01   13:32   16:50
+Martes     06/10/2020 07:43    13:00   13:32   16:49
+Miércoles  07/10/2020 07:34    12:59           13:31   13:31   16:49
+Jueves     08/10/2020 07:21    13:00   13:32   16:49
+Viernes    09/10/2020 07:37    13:00   13:32   16:48
+Martes     13/10/2020 07:38    12:59   13:31   16:48
+Miércoles  14/10/2020 07:27    12:58   13:31   16:48
+Jueves     15/10/2020 07:37    12:57   13:31   16:48
+Viernes    16/10/2020 07:14    12:59   13:27   16:48
+
+
+
+Empleado:        579 - ALONSO RAMIRO ES                                           Tarjeta Nº         579
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    16:05
+Jueves     01/10/2020 07:59    16:07
+Viernes    02/10/2020 07:48    16:04
+Lunes      05/10/2020 15:46
+Martes     06/10/2020          00:08           00:08   15:50
+Miércoles  07/10/2020          00:06   15:49
+Jueves     08/10/2020          00:04   15:46
+Viernes    09/10/2020          00:05   15:51
+Sábado     10/10/2020          00:08
+Martes     13/10/2020 19:47
+Miércoles  14/10/2020          08:05   19:46
+Jueves     15/10/2020          08:02   19:47
+Viernes    16/10/2020          08:02   19:43
+Sábado     17/10/2020          08:02
+
+
+
+Empleado:        580 - ORELLANA FRANCO MIGUEL GO                                  Tarjeta Nº         580
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:59    16:50
+Jueves     01/10/2020 07:58    10:30   14:05           16:49
+Viernes    02/10/2020 08:00    16:49
+Lunes      05/10/2020 07:55    15:35   16:37   16:48
+Martes     06/10/2020 07:57    16:49
+Miércoles  07/10/2020 07:57    17:02
+Jueves     08/10/2020 07:57    16:50
+Viernes    09/10/2020 07:58    16:50
+Martes     13/10/2020 07:57    16:50
+Miércoles  14/10/2020 07:59    16:49
+Jueves     15/10/2020 07:54    16:48
+
+
+
+Empleado:        581 - ROJAS SEBASTIAN ARIEL ES                                   Tarjeta Nº         581
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 23:42
+Jueves     01/10/2020          08:09   23:47
+Viernes    02/10/2020          08:05   23:43
+Sábado     03/10/2020          08:07
+Lunes      05/10/2020 07:54    16:06
+Martes     06/10/2020 07:45    16:16
+Miércoles  07/10/2020 07:53    16:08
+Jueves     08/10/2020 07:51    10:40
+
+
+
+Empleado:        582 - ESCUDERO YAMILA MICAELA                                    Tarjeta Nº         582
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    16:50
+Jueves     01/10/2020 07:58    16:50
+Viernes    02/10/2020 08:00    16:52
+Lunes      05/10/2020 07:55    16:49
+Martes     06/10/2020 07:56    16:51
+Miércoles  07/10/2020 07:56    16:55
+Jueves     08/10/2020 07:57    16:52
+Viernes    09/10/2020 07:57    16:50
+Martes     13/10/2020 07:57    16:51
+Miércoles  14/10/2020 07:59    16:49
+Jueves     15/10/2020 07:54    16:51
+Viernes    16/10/2020 07:55    16:49
+
+
+
+Empleado:        588 - CEBALLOS SEBASTIAN ALEXIS                                  Tarjeta Nº         588
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:45    12:31   12:53   16:50
+Jueves     01/10/2020 07:49    12:32   12:57   16:51
+Viernes    02/10/2020 07:51    12:31   12:52   16:52
+Lunes      05/10/2020 07:44    16:03
+Martes     06/10/2020 07:48    12:32   12:57   16:50
+Miércoles  07/10/2020 07:47    12:31   13:00   16:51
+Jueves     08/10/2020 07:46    12:31   12:58   16:49
+Viernes    09/10/2020 07:51    12:32           16:49
+Martes     13/10/2020 07:48    16:00
+Miércoles  14/10/2020 07:49    12:33   12:52   16:48
+Jueves     15/10/2020 07:42    12:29   12:52   16:48
+Viernes    16/10/2020 07:45    12:29   12:59   16:49
+
+
+
+Empleado:        589 - NATALIA VEGA                                               Tarjeta Nº         589
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:03    16:56
+Jueves     01/10/2020 08:02    17:03
+Viernes    02/10/2020 08:00            16:35
+Lunes      05/10/2020 07:59    17:00
+Martes     06/10/2020 08:01    16:59
+Miércoles  07/10/2020 08:03    17:05
+Jueves     08/10/2020 07:59    17:02
+Viernes    09/10/2020          08:02           16:59
+Martes     13/10/2020 07:42    16:59
+Miércoles  14/10/2020 07:42    16:59
+Jueves     15/10/2020 07:42    17:00
+Viernes    16/10/2020 07:52    17:00
+
+
+
+Empleado:        590 - CASTRO NADIR EZEQUIEL                                      Tarjeta Nº         590
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:47    17:15
+Jueves     01/10/2020 07:14    17:47
+Viernes    02/10/2020 06:59    16:55
+Lunes      05/10/2020 07:26    18:05
+Martes     06/10/2020 07:51    17:53
+Miércoles  07/10/2020 07:54    17:03
+Jueves     08/10/2020 07:11    17:52           17:52
+Viernes    09/10/2020 07:15    18:08
+
+
+
+Empleado:        593 - MERLO FRANCIS DAVID                                        Tarjeta Nº      10.001
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:44    12:31   12:58   16:51
+Jueves     01/10/2020 07:42    12:31   12:49   16:55
+Viernes    02/10/2020 07:44    12:33   12:58   16:49
+Lunes      05/10/2020 07:42    12:31   12:59   16:50
+Martes     06/10/2020 07:43    12:31   12:49   16:49
+Miércoles  07/10/2020 07:45    12:33   12:53   16:49
+Jueves     08/10/2020 07:40    16:51
+Viernes    09/10/2020 07:43    12:37   13:03   16:50
+Martes     13/10/2020 07:47    12:31   12:57   16:52
+Miércoles  14/10/2020 07:59    12:30   12:47   16:50
+Jueves     15/10/2020 07:41    12:32   12:53   16:48
+Viernes    16/10/2020 07:41    12:30   12:50   16:49
+
+
+
+Empleado:        594 - CORTEZ NAHUEL ENRIQUE                                      Tarjeta Nº         594
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:05   07:47   20:05
+Jueves     01/10/2020 07:50    20:09
+Viernes    02/10/2020 07:45    20:06
+Lunes      05/10/2020          19:56   19:56           19:56
+Martes     06/10/2020          08:13   19:59   21:26
+
+
+
+Empleado:        595 - MERCADAL JUAN GABRIEL CONSULT INYECC                       Tarjeta Nº         595
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:47    20:13
+Jueves     01/10/2020 07:52    20:07
+Viernes    02/10/2020 07:54    20:08
+Lunes      05/10/2020 19:32
+Martes     06/10/2020          00:05
+
+
+
+Empleado:        596 - MASSEY ISAAC EMANUEL CONSULT INYECC                        Tarjeta Nº      10.005
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05           08:06   19:52           19:52
+Jueves     01/10/2020          08:04           08:04   19:54           19:54            19:54
+Viernes    02/10/2020          08:02           08:02   19:50           19:50
+Sábado     03/10/2020          08:04           08:06
+Lunes      05/10/2020 07:56    20:05
+Martes     06/10/2020 07:56            07:58   20:05
+Miércoles  07/10/2020 08:00            08:00   20:06
+Jueves     08/10/2020 07:56    20:03           20:03
+Viernes    09/10/2020 07:54    20:02           20:02           20:02
+Martes     13/10/2020 19:47            19:47
+Miércoles  14/10/2020          08:09   19:52           19:52
+Jueves     15/10/2020          08:03           08:03   19:50
+Viernes    16/10/2020          08:01           08:01   19:47           19:47
+Sábado     17/10/2020          08:01
+
+
+
+Empleado:        597 - CARNERO MARCOS COSNULT ES                                  Tarjeta Nº      10.010
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:59    20:08
+Jueves     01/10/2020 07:59    20:06
+Viernes    02/10/2020 08:00    20:05
+Sábado     03/10/2020 07:58    16:01
+Lunes      05/10/2020 07:59    20:06
+Martes     06/10/2020 07:59    20:06
+Miércoles  07/10/2020 07:58    20:03
+Jueves     08/10/2020 08:01    18:06
+Viernes    09/10/2020 08:00    20:05
+Sábado     10/10/2020 08:00    16:04
+Martes     13/10/2020 07:57    20:02
+Miércoles  14/10/2020 07:58    20:00
+Jueves     15/10/2020 07:55    20:01
+Viernes    16/10/2020 07:56    20:00
+
+
+
+Empleado:        600 - INOCENTI JESICA PAOLA                                      Tarjeta Nº      10.022
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 10:12    17:50
+Jueves     01/10/2020 07:57    17:18
+Viernes    02/10/2020 07:57    16:58
+Lunes      05/10/2020 07:54    16:55
+Martes     06/10/2020 07:54    16:55
+Miércoles  07/10/2020 08:02    17:22
+Jueves     08/10/2020 07:49    16:54
+Viernes    09/10/2020 07:55    16:54
+Martes     13/10/2020 07:58    17:06
+Miércoles  14/10/2020 07:55    16:50
+Jueves     15/10/2020 07:56    16:53
+Viernes    16/10/2020 07:56    16:55
+
+
+
+Empleado:        602 - LANDRIEL MAURO EMANUEL                                     Tarjeta Nº      10.027
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:43    16:52
+Jueves     01/10/2020 07:36    12:41   13:13   17:01
+Viernes    02/10/2020 07:45    12:44   13:14   16:51
+Lunes      05/10/2020 07:42            13:14   16:53
+Martes     06/10/2020 07:43    12:40   13:10   16:56
+Miércoles  07/10/2020 07:42    12:48           13:22   13:22   16:52
+Jueves     08/10/2020 07:34    12:49   13:19   16:52
+Viernes    09/10/2020 07:41    12:41   13:19   16:55
+Martes     13/10/2020 07:42    12:45   13:19   16:56
+Miércoles  14/10/2020 07:37    12:39   13:09   16:50
+Jueves     15/10/2020 07:34    16:51
+Viernes    16/10/2020 07:28    12:44   13:17   16:49
+Sábado     17/10/2020 08:05    12:00
+
+
+
+Empleado:        603 - GODOY ARIEL DR                                             Tarjeta Nº         603
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 23:48
+Jueves     01/10/2020 23:48
+Viernes    02/10/2020          08:06   15:45
+Sábado     03/10/2020          00:03
+Lunes      05/10/2020 23:50
+Martes     06/10/2020          08:08   23:49
+Miércoles  07/10/2020          08:08   23:49
+Jueves     08/10/2020          08:08   23:51
+Viernes    09/10/2020          08:10   19:49
+Sábado     10/10/2020          07:05
+Martes     13/10/2020 07:58    08:04   23:44
+Miércoles  14/10/2020          08:11   23:37
+Jueves     15/10/2020          08:04   23:44
+Viernes    16/10/2020          08:06   23:44
+Sábado     17/10/2020          08:02
+
+
+
+Empleado:        604 - GODOY PELAITAY JAVIER MUNDO ES                             Tarjeta Nº      10.048
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          04:11   23:40
+Jueves     01/10/2020          08:04
+Martes     13/10/2020 15:34
+Miércoles  14/10/2020          00:05   15:30
+Jueves     15/10/2020          00:07   15:33
+Viernes    16/10/2020          00:02   15:28
+Sábado     17/10/2020          00:02
+
+
+
+Empleado:        605 - GOMEZ MARIA BELEN GO                                       Tarjeta Nº         605
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:55    16:51
+Jueves     01/10/2020 07:53    16:54
+Viernes    02/10/2020 07:55    16:57
+Lunes      05/10/2020 07:57    16:50
+Martes     06/10/2020 07:51    16:52
+Miércoles  07/10/2020 07:49    16:54
+Jueves     08/10/2020 07:52    16:53
+Viernes    09/10/2020 07:54    16:53
+Martes     13/10/2020 07:58    16:53
+Miércoles  14/10/2020 07:55    16:50
+Jueves     15/10/2020 07:49    16:51
+Viernes    16/10/2020 07:56    16:59
+
+
+
+Empleado:        609 - LUIS MUÑOZ MUNDO ES                                        Tarjeta Nº      10.049
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:47    16:04
+Jueves     01/10/2020 07:52    16:18
+Viernes    02/10/2020 07:55    16:11           16:11
+Lunes      05/10/2020 15:42
+Martes     06/10/2020          00:09   15:49   18:21
+Martes     13/10/2020 23:45
+Miércoles  14/10/2020          08:12           08:12
+
+
+
+Empleado:        611 - SPIROLAZZI MAXIMILIANO                                     Tarjeta Nº         611
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    16:51
+Jueves     01/10/2020 09:54    16:54
+Viernes    02/10/2020          16:57
+Lunes      05/10/2020 08:00    16:48
+Martes     06/10/2020 08:05    16:53
+Miércoles  07/10/2020 08:00    16:53
+Jueves     08/10/2020 08:04    16:51
+Viernes    09/10/2020 08:03    16:51
+Martes     13/10/2020 07:59    16:52
+Miércoles  14/10/2020 08:03    16:48
+Jueves     15/10/2020 07:56    16:50
+
+
+
+Empleado:        612 - AGUNDEZ EMILIANO SO                                        Tarjeta Nº         612
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    16:52
+Jueves     01/10/2020 07:53    16:58
+Lunes      05/10/2020 07:51    16:55
+Martes     06/10/2020 07:58    16:52
+Miércoles  07/10/2020 08:05    16:51
+Jueves     08/10/2020 08:06    16:57
+Viernes    09/10/2020 07:55    16:59
+Martes     13/10/2020 10:11    17:00
+Miércoles  14/10/2020 07:45    18:25
+Jueves     15/10/2020 07:44    16:55
+Viernes    16/10/2020 07:47    16:57
+
+
+
+Empleado:        613 - CLAVERO CRISTIAN ADRIAN MUNDO ES                           Tarjeta Nº      10.034
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:42    16:10
+Jueves     01/10/2020 07:40    16:10
+Viernes    02/10/2020 07:43    16:10
+Sábado     03/10/2020 07:44    16:02
+Lunes      05/10/2020 15:47
+Martes     06/10/2020          00:08   15:48
+Miércoles  07/10/2020          00:08   15:51
+Jueves     08/10/2020          00:10   15:51
+Viernes    09/10/2020          00:06   15:47           15:47
+Sábado     10/10/2020          00:09           00:09   07:50   16:05
+Martes     13/10/2020 23:57
+Miércoles  14/10/2020          08:12   23:44
+Jueves     15/10/2020          08:07   23:48
+Viernes    16/10/2020          08:06   23:47           23:48
+Sábado     17/10/2020          08:08
+
+
+
+Empleado:        614 - ECHENIQUE GUILLERMO ANGEL MUNDO ES                         Tarjeta Nº      10.036
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:00    16:08
+Jueves     01/10/2020 07:55    16:06
+Viernes    02/10/2020 07:47    16:10
+Sábado     03/10/2020 07:56    16:03
+Lunes      05/10/2020 15:45
+Martes     06/10/2020          00:08   15:41
+Miércoles  07/10/2020          00:10   15:46
+Jueves     08/10/2020          00:16   15:43
+Viernes    09/10/2020          00:11   15:50
+Sábado     10/10/2020          00:27
+Martes     13/10/2020 23:35
+Miércoles  14/10/2020          08:08   23:39
+Jueves     15/10/2020          08:05   23:37
+Viernes    16/10/2020          08:04   23:40           23:40
+Sábado     17/10/2020          08:04
+
+
+
+Empleado:        615 - LIPARI ESTEBAN DANIEL VP                                   Tarjeta Nº         615
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:45    12:32   12:51   16:58
+Jueves     01/10/2020 07:45    12:33   12:48   16:52
+Viernes    02/10/2020 07:54    12:32   12:49   16:52
+Lunes      05/10/2020 07:54    12:31   12:51   16:51
+Martes     06/10/2020 07:46    12:32   12:58   16:54
+Miércoles  07/10/2020 07:49    12:31   12:48   16:52
+Jueves     08/10/2020 07:56    12:31   12:54   16:53
+Viernes    09/10/2020 07:53    12:31   12:58   16:54
+Martes     13/10/2020 07:46    12:30   12:49   16:50
+Miércoles  14/10/2020 07:43    12:31   12:46   16:50
+Jueves     15/10/2020 07:49    12:33   12:49   16:50
+Viernes    16/10/2020 07:40    12:32   12:50   16:51
+
+
+
+Empleado:        616 - TOMATTIS ALDO GABRIEL DR                                   Tarjeta Nº         616
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:01    12:32   13:02   16:53
+Jueves     01/10/2020 08:02    12:33   13:02   16:51
+Viernes    02/10/2020 07:55    12:33   13:03   16:49
+Lunes      05/10/2020 08:03    12:33   13:02   16:52
+Martes     06/10/2020 07:59    12:32   13:02   16:52
+Miércoles  07/10/2020 07:59    12:32   13:02   16:51
+Jueves     08/10/2020 08:02    12:33   13:02   16:52
+Viernes    09/10/2020 08:01    12:32   13:04   16:51
+Martes     13/10/2020 08:03    12:32   13:02   16:53
+Miércoles  14/10/2020 07:59    12:31   13:00   16:49
+Jueves     15/10/2020 07:57    12:31   13:00   16:49
+Viernes    16/10/2020 07:58            13:00   16:48
+
+
+
+Empleado:        618 - GUEVARA RICARDO EMMANUEL DR                                Tarjeta Nº         618
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:57    12:35   12:56   16:50
+Jueves     01/10/2020 07:59    12:37   12:59   16:51
+Viernes    02/10/2020 07:55    12:31   12:58   16:49
+Sábado     03/10/2020 08:00    13:03
+Lunes      05/10/2020 07:53    12:36   13:02   16:51
+Martes     06/10/2020 07:59    12:36   13:03   16:50
+Miércoles  07/10/2020 07:57    12:36   13:00   16:50
+Jueves     08/10/2020 07:47    12:37   12:57   16:50
+Viernes    09/10/2020 08:02    12:32   12:57   16:52
+Sábado     10/10/2020 07:56    08:05
+Lunes      12/10/2020 08:05    13:01
+Martes     13/10/2020 07:56    12:36   12:57   16:50
+Miércoles  14/10/2020 07:51    12:33   12:57   16:49
+Jueves     15/10/2020 07:58    12:34   12:57   16:49
+Viernes    16/10/2020 07:52    13:00   13:31   16:50
+Sábado     17/10/2020 07:57    13:15
+
+
+
+Empleado:        619 - BELEN GONZALEZ GO                                          Tarjeta Nº         619
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:41    18:03
+Jueves     01/10/2020 07:46    18:15
+Viernes    02/10/2020 07:50    17:30
+Lunes      05/10/2020 07:47    17:23
+Martes     06/10/2020 07:48    18:32
+Miércoles  07/10/2020          07:05           17:26
+Jueves     08/10/2020 07:25    17:57
+Viernes    09/10/2020 07:41    16:56
+Martes     13/10/2020 07:35    17:05
+Miércoles  14/10/2020 07:04    17:05
+Jueves     15/10/2020 07:57    17:05
+Viernes    16/10/2020 07:15    17:27
+
+
+
+Empleado:        620 - TORREZ SANDRO DR                                           Tarjeta Nº         620
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:48    12:32   12:59   16:51
+Jueves     01/10/2020          12:32   13:00
+Viernes    02/10/2020 07:48    12:32   13:00   16:50
+Sábado     03/10/2020 07:49    13:01
+Lunes      05/10/2020 07:48    12:32   12:58   16:51
+Martes     06/10/2020 07:45    12:31   12:59   16:51
+Miércoles  07/10/2020 07:46    12:31   12:59   16:50
+Jueves     08/10/2020 07:47    12:30   12:56   16:51
+Viernes    09/10/2020 07:48    12:31   13:01   16:52
+Sábado     10/10/2020 07:51    13:01
+Lunes      12/10/2020 07:51    13:01
+Martes     13/10/2020 07:46    12:32   12:58   16:51
+Miércoles  14/10/2020 07:45    12:30   12:53   16:49
+Jueves     15/10/2020 07:42    12:30   12:56   16:49
+Viernes    16/10/2020 07:41    13:00   13:29   16:48
+Sábado     17/10/2020 07:48    13:00
+
+
+
+Empleado:        622 - STORACCIO NICOLAS RE                                       Tarjeta Nº         622
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:25
+Jueves     01/10/2020 07:12    17:33
+Viernes    02/10/2020 07:15
+Lunes      05/10/2020 07:01    16:53
+Martes     06/10/2020 07:42    17:04
+Miércoles  07/10/2020 07:41    17:09
+Jueves     08/10/2020 07:00    16:59
+Viernes    09/10/2020 07:47
+Martes     13/10/2020 06:48    17:04
+Miércoles  14/10/2020 07:30    16:50
+Jueves     15/10/2020 07:46    16:54
+Viernes    16/10/2020 07:39    16:48
+
+
+
+Empleado:        623 - CORTIJOS MARIANO ANDRES                                    Tarjeta Nº         623
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:50    16:04
+Jueves     01/10/2020 07:52    16:03
+Viernes    02/10/2020 07:50    16:06
+Lunes      05/10/2020          19:51
+Martes     06/10/2020          08:13   19:49
+Miércoles  07/10/2020          08:05   19:57           19:57
+Jueves     08/10/2020          08:10   19:53           19:53
+Viernes    09/10/2020          08:02   19:53
+Sábado     10/10/2020          08:11           08:11
+Martes     13/10/2020 07:50    20:04
+Miércoles  14/10/2020 07:51    20:01
+Jueves     15/10/2020 07:50    20:00
+Viernes    16/10/2020 07:47    20:00
+
+
+
+Empleado:        624 - VERGARA CARLOS JAVIER                                      Tarjeta Nº         624
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          07:04           07:04           16:50
+Jueves     01/10/2020          08:01   10:02           10:02           11:42   16:50
+Viernes    02/10/2020 07:45    16:48           16:48
+Lunes      05/10/2020 07:56    16:49
+Martes     06/10/2020 07:44    16:50
+Miércoles  07/10/2020          07:31           16:50           16:50
+Jueves     08/10/2020          07:33           16:48
+Viernes    09/10/2020 07:40    16:50
+Martes     13/10/2020 07:48    16:49
+Miércoles  14/10/2020 07:40    16:48
+Jueves     15/10/2020 07:40    16:48
+Viernes    16/10/2020 07:25    16:48
+
+
+
+Empleado:        625 - VARELA ROQUE ABEL                                          Tarjeta Nº         625
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:10           08:10   19:49           19:49
+Jueves     01/10/2020          08:10           08:10           08:10   19:49            19:49
+Viernes    02/10/2020          08:10           08:10   19:43           19:43
+Sábado     03/10/2020          08:18           08:19
+Lunes      05/10/2020 07:59            07:59           20:04           20:04
+Martes     06/10/2020 07:54            07:54   20:10           20:10
+Miércoles  07/10/2020 07:51            07:52   20:07           20:07
+Jueves     08/10/2020 07:47            07:47   20:07           20:07
+Viernes    09/10/2020 07:48            07:48           07:48   20:15           20:15            20:15
+Sábado     10/10/2020 07:47            07:47   16:05           16:05
+Martes     13/10/2020 19:46            19:46           19:46
+Miércoles  14/10/2020          08:04           08:04           08:04   19:49            19:49
+Jueves     15/10/2020          08:00           08:00   19:42           19:42            19:42
+Viernes    16/10/2020          08:02           08:02   19:45           19:45            19:45
+Sábado     17/10/2020          08:01           08:01           08:01
+
+
+
+Empleado:        626 - PAGANINI GUSTAVO MARCELO                                   Tarjeta Nº         626
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:44    12:34   12:56   16:49
+Jueves     01/10/2020 07:42    12:32   12:55   16:56
+Viernes    02/10/2020 07:45    12:48   12:59   16:49
+Lunes      05/10/2020 07:42    12:30   12:56
+Martes     06/10/2020 07:43    12:33   12:56   16:50
+Miércoles  07/10/2020 07:45    12:31   12:55   16:50
+Jueves     08/10/2020 07:40    12:30   12:53   16:50
+Viernes    09/10/2020 07:44            12:55   16:54
+Martes     13/10/2020 07:47    12:33   12:57   16:49
+Miércoles  14/10/2020 07:43    12:31   12:55   16:48
+Jueves     15/10/2020 07:41            13:00   16:52
+Viernes    16/10/2020 07:41            07:41   12:30   12:55   16:51
+
+
+
+Empleado:        629 - CORDOBA DIEGO RE                                           Tarjeta Nº         629
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:53    12:33   12:58   16:53
+Jueves     01/10/2020 07:52    12:32   13:00   16:51
+Viernes    02/10/2020 07:29    12:33   12:59   16:51
+Lunes      05/10/2020 08:02    12:33   13:00   17:22
+Martes     06/10/2020 07:57    12:35   12:59   17:23
+Miércoles  07/10/2020 08:00    12:32   13:01   17:21
+Jueves     08/10/2020 07:59    12:32   12:57   16:57
+Viernes    09/10/2020 08:00    12:30   12:57   16:51
+Martes     13/10/2020 07:59    12:34   12:59   16:51
+Miércoles  14/10/2020 08:00    12:32   12:56   17:16
+Jueves     15/10/2020 07:57    12:29   12:56   17:20
+Viernes    16/10/2020 06:58    12:30   12:55   16:50
+
+
+
+Empleado:        630 - CUCCI LUIS RE                                              Tarjeta Nº         630
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    12:33   12:57   16:52
+Jueves     01/10/2020 07:45    12:32   12:53   16:51
+Viernes    02/10/2020 07:43    12:31   12:56   16:50
+Lunes      05/10/2020 07:41    12:34   12:55   16:54
+Martes     06/10/2020 07:40    12:35   12:59   16:51
+Miércoles  07/10/2020 07:42    12:31   12:58   16:51
+Jueves     08/10/2020 07:44    12:31   12:54   16:51
+Viernes    09/10/2020 07:40    12:32   12:57   16:49
+Martes     13/10/2020 07:44    12:34   12:58   17:32
+Miércoles  14/10/2020 07:43    12:30   12:56   17:29
+Jueves     15/10/2020 07:42    12:30   12:56   17:29
+Viernes    16/10/2020 07:32    12:36   12:56   16:49
+
+
+
+Empleado:        631 - LOPEZ RODRIGO DANIEL                                       Tarjeta Nº         631
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    12:32   13:01   16:56
+
+
+
+Empleado:        632 - PACINI CRISTIAN EUGENIO DR                                 Tarjeta Nº         632
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:53    12:32   13:01   16:51
+Viernes    02/10/2020 07:53            13:00   16:52
+Lunes      05/10/2020 07:55    12:31   13:02   16:51
+Martes     06/10/2020 07:57    12:33   13:02   16:52
+Miércoles  07/10/2020 07:56    12:33   13:00   16:50
+Jueves     08/10/2020 07:58    12:31   13:00   16:50
+Viernes    09/10/2020 07:58            13:01   16:52
+Sábado     10/10/2020 07:56    13:01
+Martes     13/10/2020 07:58    12:32   13:00   16:51
+Miércoles  14/10/2020 07:58    12:30   13:00   16:50
+Jueves     15/10/2020 07:53    12:30   12:58   16:50
+Viernes    16/10/2020 07:55    13:01   13:30   16:49
+
+
+
+Empleado:        633 - GONZALEZ NAHUEL VP                                         Tarjeta Nº         633
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    12:34   12:57   17:01
+Jueves     01/10/2020 07:52    12:31   13:00   16:50
+Viernes    02/10/2020 07:56    16:53
+Lunes      05/10/2020 07:54    12:31   12:59   16:52
+Martes     06/10/2020 07:54    12:33   13:02   16:48
+Miércoles  07/10/2020 07:53    12:36   12:59   16:56
+Jueves     08/10/2020 07:58    16:59
+Viernes    09/10/2020 07:57    12:30   13:00   16:52
+Martes     13/10/2020 07:54    12:33   12:58   16:50
+Miércoles  14/10/2020 07:51    12:31   12:59   16:50
+Jueves     15/10/2020 07:46    12:30   12:53   16:48
+Viernes    16/10/2020 07:48    12:32   13:01   16:49
+
+
+
+Empleado:        634 - LOPEZ EDUARDO EMANUEL                                      Tarjeta Nº         634
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    12:32   12:58   16:50
+Jueves     01/10/2020 07:59    12:32   12:59   16:49
+Viernes    02/10/2020 07:56    12:32   12:59   16:49
+Lunes      05/10/2020 07:57    12:31   12:59   16:50
+Martes     06/10/2020 07:56            12:59   16:50
+Miércoles  07/10/2020 07:56    12:32   12:59   16:50
+Jueves     08/10/2020 07:58    12:32   12:59   16:50
+Viernes    09/10/2020 07:56    12:31   12:59   16:50
+
+
+
+Empleado:        635 - ALVAREZ AGOSTINA  GM                                       Tarjeta Nº         635
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:54    16:50
+Jueves     01/10/2020 07:49    16:50
+Viernes    02/10/2020 07:52            16:49
+Lunes      05/10/2020          07:02           16:53
+Martes     06/10/2020          07:00           16:50
+Miércoles  07/10/2020          06:56           16:50
+Jueves     08/10/2020          06:59           16:50
+Viernes    09/10/2020          07:07           16:52
+Martes     13/10/2020          07:00           16:51
+Miércoles  14/10/2020 07:04    16:51
+Jueves     15/10/2020          06:58           16:48
+Viernes    16/10/2020 06:59    16:48
+
+
+
+Empleado:        636 - CREADO RICARDO IGNACIO ES                                  Tarjeta Nº         636
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:07   15:49
+Jueves     01/10/2020          00:07   15:51
+Viernes    02/10/2020          00:05   15:51
+Sábado     03/10/2020          00:06
+Lunes      05/10/2020 07:54            07:54   16:15
+Martes     06/10/2020 07:46    16:07
+Miércoles  07/10/2020 07:49    16:04
+Jueves     08/10/2020 07:47    16:04
+Viernes    09/10/2020 07:52    16:06
+Martes     13/10/2020 15:48
+Miércoles  14/10/2020          00:04   15:52
+Jueves     15/10/2020          00:05   15:54
+Viernes    16/10/2020          00:02   15:52
+Sábado     17/10/2020          00:02
+
+
+
+Empleado:        637 - MACHADO MATIAS RE                                          Tarjeta Nº         637
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:56            20:02
+Jueves     01/10/2020 08:00    20:03
+Viernes    02/10/2020 07:56            20:02
+Lunes      05/10/2020 15:45
+Martes     06/10/2020          00:03   15:54
+Miércoles  07/10/2020          00:04   15:49
+Jueves     08/10/2020          00:03           00:04   15:56
+Viernes    09/10/2020          00:02           00:02   15:53
+Sábado     10/10/2020          00:03
+Martes     13/10/2020 23:51
+Miércoles  14/10/2020          08:04           08:04   23:51
+Jueves     15/10/2020          08:00   23:53
+Viernes    16/10/2020          08:00           08:00   23:49           23:49
+Sábado     17/10/2020          01:28
+
+
+
+Empleado:        639 - GIRAUDO LUCAS DARIO JS                                     Tarjeta Nº         639
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:39    16:56
+Jueves     01/10/2020 07:36    12:45   13:16           16:49
+Viernes    02/10/2020 07:39    12:38           13:10   13:10   16:51
+Lunes      05/10/2020 07:41    12:44   13:13   16:56
+Martes     06/10/2020 07:32    12:35   13:08   16:49
+Miércoles  07/10/2020 07:36            12:38           13:11   16:51
+Jueves     08/10/2020 07:31    12:36   13:12   16:52
+Viernes    09/10/2020 07:31    12:34           13:10   13:10           13:11   16:51
+Martes     13/10/2020 07:30    12:33   13:13   16:54
+Miércoles  14/10/2020 07:30    12:37   13:09   16:50
+Jueves     15/10/2020 07:34    12:38           13:10           16:48
+Viernes    16/10/2020 07:27    12:32   13:11   16:48
+
+
+
+Empleado:        640 - ESPERON CUELLAR MARIANO RE                                 Tarjeta Nº         640
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:59    12:31   13:00   16:53           16:55
+Jueves     01/10/2020 08:02    12:34   13:00   16:52
+Viernes    02/10/2020 07:58    12:30   13:01   16:52
+Lunes      05/10/2020 07:55    12:31   12:59   16:51
+Martes     06/10/2020 07:55    12:32   12:58   16:50
+Miércoles  07/10/2020 07:56    12:34   12:59   16:57
+Jueves     08/10/2020 08:00    12:33   12:58   16:53
+Viernes    09/10/2020 07:57    12:34   13:00   16:54
+Martes     13/10/2020 07:56    12:32   12:57   16:49
+Miércoles  14/10/2020 07:56            12:27           12:56   16:48
+Jueves     15/10/2020 07:54    12:28   12:57   17:28
+Viernes    16/10/2020 07:55    12:29   12:58   16:52
+
+
+
+Empleado:        641 - QUINTEROS MAXIMILIANO ES                                   Tarjeta Nº         641
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    16:12
+Jueves     01/10/2020 07:55    16:12
+Viernes    02/10/2020 07:55    16:09
+Sábado     03/10/2020 07:45    16:03
+Lunes      05/10/2020 15:43
+Martes     06/10/2020          00:08   15:54
+Miércoles  07/10/2020          00:11   15:49
+Jueves     08/10/2020          00:12   15:44
+Viernes    09/10/2020          00:12   15:54
+Sábado     10/10/2020          00:08   07:55   16:06
+Martes     13/10/2020 07:50    20:06
+Miércoles  14/10/2020 07:45    20:06
+Jueves     15/10/2020 07:49    20:02
+Viernes    16/10/2020 07:46    20:05
+Sábado     17/10/2020 07:47    16:01
+
+
+
+Empleado:        642 - VEGA JONATHAN ISMAEL JS                                    Tarjeta Nº         642
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    16:53
+Jueves     01/10/2020 07:42    13:22   13:51   17:21
+Viernes    02/10/2020 07:53    13:20           13:48   13:48   16:52
+Lunes      05/10/2020 07:43    12:45   13:16   18:17
+Martes     06/10/2020 07:45    12:42   13:10   18:15
+Miércoles  07/10/2020 08:05    12:48   13:13   17:48
+Jueves     08/10/2020 07:48    12:47   13:17   16:56
+Viernes    09/10/2020 07:47    13:18   13:44   16:50
+Martes     13/10/2020 07:46    13:25   13:52   16:53
+Miércoles  14/10/2020 07:43    13:18   13:43   18:12
+Jueves     15/10/2020 07:39    18:15
+Viernes    16/10/2020 07:44    13:30   14:00   16:48
+Sábado     17/10/2020 08:04    12:00
+
+
+
+Empleado:        643 - GODOY ARROYO LAUTARO EZEQUIEL JS                           Tarjeta Nº         643
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    16:51
+Jueves     01/10/2020 07:47    12:41   13:12   17:21
+Viernes    02/10/2020 07:46    12:48   13:16   16:50
+Lunes      05/10/2020 07:48            13:20           13:51   18:17
+Martes     06/10/2020 07:40            13:17   13:49           18:16
+Miércoles  07/10/2020 07:42            13:24           13:53   17:48
+Jueves     08/10/2020 07:47    13:23   13:57   16:57
+Viernes    09/10/2020 07:46    13:18   13:49   16:51
+Martes     13/10/2020 07:49    12:39   13:11   18:23
+Miércoles  14/10/2020 07:42    12:39   13:08   18:13
+Jueves     15/10/2020 07:54    12:47           18:16
+Viernes    16/10/2020          12:44   13:18   16:48
+Sábado     17/10/2020 08:04    12:00
+
+
+
+Empleado:        644 - ORTIZ SANTIAGO FACUNDO RE                                  Tarjeta Nº         644
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    02/10/2020 07:46    12:33   12:56   16:50
+Lunes      05/10/2020 07:25    12:34   12:55   17:40
+Martes     06/10/2020 07:28    12:34   13:00   17:19
+Miércoles  07/10/2020 07:22    12:32   13:01   16:50
+Jueves     08/10/2020 07:51    12:31   12:54   16:51
+Viernes    09/10/2020 07:52    12:32   12:59   16:52
+Martes     13/10/2020 07:52    12:33   12:59   16:51
+Miércoles  14/10/2020 07:49    12:30   12:56   16:50
+Jueves     15/10/2020 07:49    12:30   12:56   16:49
+Viernes    16/10/2020 07:46    12:31   12:56           16:23
+
+
+
+Empleado:        645 - TORRES GUILLERMO FABIAN ES                                 Tarjeta Nº         645
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 00:04    00:05   15:41
+Jueves     01/10/2020          00:24           00:24   15:57
+Viernes    02/10/2020          00:12   15:49
+Sábado     03/10/2020          00:08   07:52   16:04
+Lunes      05/10/2020 23:40
+Martes     06/10/2020          08:04   23:48
+Miércoles  07/10/2020          08:06   23:51
+Jueves     08/10/2020          08:07   23:51
+Viernes    09/10/2020          08:24   23:50           23:50
+Sábado     10/10/2020          08:10           08:10
+Martes     13/10/2020 07:47    16:07
+Miércoles  14/10/2020 07:42            07:42   16:10
+Jueves     15/10/2020 07:47            07:47   16:03
+Viernes    16/10/2020 07:46    16:01
+Sábado     17/10/2020 07:46    16:00
+
+
+
+Empleado:        646 - ZABALA CARLOS JAVIER ES                                    Tarjeta Nº         646
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:35    20:07
+Jueves     01/10/2020 07:31    20:05           20:05
+Viernes    02/10/2020 07:46    20:06
+Lunes      05/10/2020 19:57
+Martes     06/10/2020          08:14   20:01           20:01
+Miércoles  07/10/2020          08:08   19:59
+Jueves     08/10/2020          08:09   19:41
+Viernes    09/10/2020          08:04   19:59
+Sábado     10/10/2020          08:06
+Martes     13/10/2020 07:48    20:07
+Miércoles  14/10/2020 07:51    20:13
+Jueves     15/10/2020 07:42    20:05
+Viernes    16/10/2020 07:46    20:08
+Sábado     17/10/2020 07:30    16:01
+
+
+
+Empleado:        647 - CACERES DAVID EDUARDO ES                                   Tarjeta Nº         647
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:42            07:42   20:04
+Jueves     01/10/2020 07:40    20:04
+Viernes    02/10/2020 07:43    20:04           20:04
+Sábado     03/10/2020 07:44    16:03
+Lunes      05/10/2020 19:39
+Martes     06/10/2020          08:06   19:39
+Miércoles  07/10/2020          08:05   19:38           19:38
+Jueves     08/10/2020          08:03   19:41           19:41
+Viernes    09/10/2020          08:03   19:41
+Sábado     10/10/2020          08:03
+Martes     13/10/2020 07:48            07:48   20:03
+Miércoles  14/10/2020 07:45            07:45   20:01
+Jueves     15/10/2020 07:28    20:00           20:00
+Viernes    16/10/2020 07:40    20:03
+Sábado     17/10/2020 07:41    16:01
+
+
+
+Empleado:        648 - DOMINGUEZ MIGUEL ANGEL                                     Tarjeta Nº         648
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:03   19:57
+Jueves     01/10/2020          08:03   19:51
+Viernes    02/10/2020          08:05   19:47
+Sábado     03/10/2020          08:05
+Lunes      05/10/2020 07:57            20:02   20:06
+Martes     06/10/2020 07:52    20:11
+Miércoles  07/10/2020 07:54    20:03
+Jueves     08/10/2020 07:53    20:04
+Viernes    09/10/2020 07:53    20:04
+Martes     13/10/2020 19:47
+Miércoles  14/10/2020          08:04   19:46
+Jueves     15/10/2020          08:09   19:44
+Viernes    16/10/2020          08:05   19:41
+Sábado     17/10/2020          08:02
+
+
+
+Empleado:        649 - ZULIAN MARCOS LEANDRO SO                                   Tarjeta Nº         649
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:53    16:52
+Jueves     01/10/2020 07:53    16:58
+Viernes    02/10/2020 07:53    16:56
+Lunes      05/10/2020 07:50    16:54
+Martes     06/10/2020 07:49    16:52
+Miércoles  07/10/2020 07:47    16:54
+Jueves     08/10/2020 07:52    16:57
+Viernes    09/10/2020 07:49    12:57
+Martes     13/10/2020 07:53    16:58
+Miércoles  14/10/2020 07:49    16:57
+Jueves     15/10/2020 07:49    16:55
+Viernes    16/10/2020 07:45    16:57
+
+
+
+Empleado:        650 - ARREDONDO EMMANUEL DR                                      Tarjeta Nº         650
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:55    12:34   13:01   16:55
+Jueves     01/10/2020 07:53            07:54   12:36   13:03   16:57
+Viernes    02/10/2020 07:56    12:36   13:04   16:52
+Sábado     03/10/2020 07:55    13:04
+Lunes      05/10/2020 07:57    12:33   13:03   16:51
+Martes     06/10/2020 07:56    12:36   13:03   16:53
+Miércoles  07/10/2020 07:56    12:34   13:03   16:53
+Jueves     08/10/2020 07:52    12:32   13:00   16:51
+Viernes    09/10/2020 07:54    12:35   13:03   16:56
+Sábado     10/10/2020 07:54    13:02
+Lunes      12/10/2020 07:55    13:01
+Martes     13/10/2020 07:56    12:36   13:05   16:56
+Miércoles  14/10/2020 07:54    12:32   13:00   16:54
+Jueves     15/10/2020 07:52    12:31   12:59   16:54
+Viernes    16/10/2020 07:52    13:00   13:29   16:52
+Sábado     17/10/2020 07:51    13:00
+
+
+
+Empleado:        651 - AMUCHASTEGUI LUIS DARIO VP                                 Tarjeta Nº         651
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:54    12:30   13:01   16:56
+Jueves     01/10/2020 07:57    12:34   13:02   16:48
+Viernes    02/10/2020 07:49    12:30   13:01   16:48
+Lunes      05/10/2020 07:55    12:30   13:01   16:48
+Martes     06/10/2020 07:53    12:30   13:00   16:48
+Miércoles  07/10/2020 07:54    12:30   13:00   16:48
+Jueves     08/10/2020 07:53    12:30   13:01   16:49
+Viernes    09/10/2020 07:54    12:30   13:00   16:49
+Martes     13/10/2020 07:55    12:30   13:00   16:50
+Miércoles  14/10/2020 07:57    12:30   13:00   16:48
+Jueves     15/10/2020 07:52    12:30   13:00   16:48
+Viernes    16/10/2020 07:53    12:30   13:00   16:48
+
+
+
+Empleado:        652 - MAZZALAY GERMAN ANDRES ES                                  Tarjeta Nº         652
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:05   23:46
+Jueves     01/10/2020          08:03   23:44
+Viernes    02/10/2020          08:02           08:02   23:42
+Sábado     03/10/2020          08:05
+Lunes      05/10/2020 07:53    16:14
+Martes     06/10/2020 07:45
+Miércoles  07/10/2020 07:48    16:09
+Jueves     08/10/2020 07:43    16:09
+Viernes    09/10/2020 07:46    16:09
+Sábado     10/10/2020 07:46    16:06
+Martes     13/10/2020 15:40
+Miércoles  14/10/2020          00:08   15:41
+Jueves     15/10/2020          00:05   15:38
+Viernes    16/10/2020          00:03   15:43
+Sábado     17/10/2020          00:06
+
+
+
+Empleado:        653 - CASTRO GUSTAVO RAUL ES                                     Tarjeta Nº         653
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:08   23:40
+Jueves     01/10/2020          08:01   23:33
+Viernes    02/10/2020          08:11   23:34
+Sábado     03/10/2020          08:13
+Lunes      05/10/2020 07:57    16:10
+Martes     06/10/2020 07:41    16:12
+Miércoles  07/10/2020 07:54    16:12
+Jueves     08/10/2020 07:54            07:55
+Viernes    09/10/2020 07:56    16:12
+Martes     13/10/2020 23:19
+Miércoles  14/10/2020          08:14   23:31
+Jueves     15/10/2020          08:10   23:36
+Viernes    16/10/2020          08:08   23:49
+Sábado     17/10/2020          08:06
+
+
+
+Empleado:        654 - CHOCOBAR SEBASTIAN ES                                      Tarjeta Nº         654
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:11   23:44
+Jueves     01/10/2020          08:03   23:43
+Viernes    02/10/2020          08:03   23:42
+Sábado     03/10/2020          08:08
+Lunes      05/10/2020 07:55    16:07
+Martes     06/10/2020 07:41    16:13
+Miércoles  07/10/2020 07:45    16:08
+Jueves     08/10/2020 07:42    16:12
+Viernes    09/10/2020 07:46    16:06
+Sábado     10/10/2020 07:46    16:08
+Martes     13/10/2020 15:40
+Miércoles  14/10/2020          00:07   15:40
+Jueves     15/10/2020          00:10   15:36
+Viernes    16/10/2020          00:07   15:48           15:48
+Sábado     17/10/2020          00:05
+
+
+
+Empleado:        655 - BAIGORRIA                                                  Tarjeta Nº         655
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:06
+Miércoles  14/10/2020 23:32
+Jueves     15/10/2020          08:04
+Viernes    16/10/2020 23:21
+Sábado     17/10/2020          08:03
+
+
+
+Empleado:        656 - TEJERINA BRIAN ES                                          Tarjeta Nº         656
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:23
+Jueves     01/10/2020          08:20   19:51
+Viernes    02/10/2020 20:00
+Sábado     03/10/2020          08:15
+Lunes      05/10/2020          20:09
+Martes     06/10/2020 08:00    20:12
+Miércoles  07/10/2020 07:53    20:10
+Jueves     08/10/2020 07:54    20:14
+Viernes    09/10/2020 07:54
+Sábado     10/10/2020          08:06           16:09           16:09
+Martes     13/10/2020 23:51
+Miércoles  14/10/2020          08:11   23:52
+Jueves     15/10/2020          08:02   23:55
+Viernes    16/10/2020          08:06   23:55
+Sábado     17/10/2020          08:07
+
+
+
+Empleado:        657 - ALI MARCOS EXEQUIEL DR                                     Tarjeta Nº         657
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:49            12:30   12:30   12:56   16:48
+Jueves     01/10/2020 07:57    12:31   12:53   16:51
+Viernes    02/10/2020 07:54    12:31   12:58   16:49
+Sábado     03/10/2020 07:49    13:01
+Lunes      05/10/2020 07:56    12:31   12:56   16:50
+Martes     06/10/2020 07:55    12:32   12:57   16:49
+Miércoles  07/10/2020 07:52    12:31   12:53   16:49
+Jueves     08/10/2020 07:53    12:30   12:56   16:49
+Viernes    09/10/2020 07:54    12:31   12:56   16:50
+Lunes      12/10/2020 07:50            07:51   13:00
+Martes     13/10/2020 07:38    12:30   12:56   16:49
+Miércoles  14/10/2020 07:50    12:30   12:53   16:50
+Jueves     15/10/2020 07:50    12:31   12:55   16:49
+Viernes    16/10/2020 07:49    12:30   12:55   16:49
+Sábado     17/10/2020 07:48    13:01
+
+
+
+Empleado:        658 - SUAREZ EZEQUIEL ALFONSO ES                                 Tarjeta Nº         658
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:44            07:44   16:04
+Jueves     01/10/2020 07:39            07:39   16:03
+Viernes    02/10/2020 07:40            07:40   16:03
+Lunes      05/10/2020 07:59    16:06
+Martes     06/10/2020 07:54    16:07
+Martes     13/10/2020 07:48    16:04
+Miércoles  14/10/2020 07:46    16:00           16:00
+Jueves     15/10/2020 07:48    16:03
+Viernes    16/10/2020 07:54            07:54   16:03
+
+
+
+Empleado:        659 - CONTRERAS LUCAS EMILIANO                                   Tarjeta Nº         659
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52            07:52   12:32           12:32   12:57            12:57   16:54
+Jueves     01/10/2020 07:53            07:53   12:31           12:32   12:57            12:57   16:57
+Viernes    02/10/2020 07:55    12:31   12:59           12:59   16:53
+Lunes      05/10/2020          12:32   12:56           12:56   16:52           16:53
+Martes     06/10/2020 12:30            12:31   12:31           12:31   12:54   16:53
+Miércoles  07/10/2020          12:31           12:31   12:55   16:50
+Jueves     08/10/2020 07:53    12:31           12:31   12:59           12:59            15:43
+Viernes    09/10/2020 07:54    12:34   12:58   16:54
+Sábado     10/10/2020 07:56    13:01
+Lunes      12/10/2020 07:56    13:02
+Martes     13/10/2020 07:56    12:31           16:54
+Miércoles  14/10/2020 07:54    12:32   12:57   16:50
+Jueves     15/10/2020 07:52
+
+
+
+Empleado:        660 - MATORRAS HECTOR EMMANUEL ES                                Tarjeta Nº         660
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:54    12:32   12:59   16:56
+Jueves     01/10/2020 07:57    12:31   13:00   16:50
+Viernes    02/10/2020 07:55    12:30   12:58   16:55
+Lunes      05/10/2020 07:56    12:31   12:59   16:49
+Martes     06/10/2020          12:31   12:59   16:52
+Miércoles  07/10/2020 07:57    12:31   12:58   16:52
+Jueves     08/10/2020 07:56    12:31   12:58   16:51
+Viernes    09/10/2020 07:56    12:31   12:58   16:52
+Martes     13/10/2020 07:53    12:31   12:59   16:52
+Miércoles  14/10/2020 07:54    12:30   12:57   16:48
+Jueves     15/10/2020 07:52    12:30   12:57   16:50
+Viernes    16/10/2020 07:51    12:30   12:56   16:49
+Sábado     17/10/2020 07:52    16:01
+
+
+
+Empleado:        661 - PEDRAZA RUBEN DARIO ES                                     Tarjeta Nº         661
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:32    20:03
+Jueves     01/10/2020 07:34    20:02
+Viernes    02/10/2020 07:33    20:04
+Sábado     03/10/2020          07:42           16:04
+Lunes      05/10/2020 19:39
+Martes     06/10/2020          08:06   19:35
+Miércoles  07/10/2020          08:02   19:38           19:38
+Jueves     08/10/2020          08:01           19:36   19:37
+Viernes    09/10/2020          08:01   19:43
+Sábado     10/10/2020          08:02
+Martes     13/10/2020 07:49    20:02
+Miércoles  14/10/2020 07:36            07:36   20:00
+Jueves     15/10/2020 07:29    20:00
+Viernes    16/10/2020 07:40    20:01
+Sábado     17/10/2020 07:40            07:40   16:00
+
+
+
+Empleado:        662 - BRITOSFRANCO EZEQUIEL DR                                   Tarjeta Nº         662
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:55    12:31   12:57   16:51
+Jueves     01/10/2020 08:01    12:32   12:50   16:54
+Viernes    02/10/2020 07:57    12:33   13:00   16:49
+Lunes      05/10/2020 07:52    12:31   13:02   16:50
+Martes     06/10/2020 07:49    12:31   12:54   16:48
+Miércoles  07/10/2020 07:56    12:38   13:01   16:49
+Jueves     08/10/2020 07:56    12:30   13:01   16:49
+Viernes    09/10/2020 09:57    12:32   13:04   16:49
+Sábado     10/10/2020 07:53    12:59
+Lunes      12/10/2020 07:55    13:01
+Martes     13/10/2020 07:58    12:31   12:47   16:50
+Miércoles  14/10/2020 07:56    12:31   12:57   16:48
+Jueves     15/10/2020 08:04    12:40   12:58   16:48
+Sábado     17/10/2020 07:54    13:00
+
+
+
+Empleado:        663 - MELONE LUCAS MATIAS DR                                     Tarjeta Nº         663
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    12:33   12:57   16:49
+Jueves     01/10/2020 07:55    12:31   13:00   16:50
+Viernes    02/10/2020 07:54    12:34   13:01   16:50
+Sábado     03/10/2020 07:55    13:02
+Lunes      05/10/2020 07:55    12:30   12:56   16:50
+Martes     06/10/2020 07:51    12:30   12:56   16:49
+Miércoles  07/10/2020 07:54    12:30   12:56   16:49
+Jueves     08/10/2020 07:58    12:31   12:57   16:49
+Viernes    09/10/2020 07:59    12:31   12:56   16:51
+Lunes      12/10/2020 07:53    13:00
+Martes     13/10/2020 07:49    12:30   12:56   16:49
+Miércoles  14/10/2020 07:55    12:31   12:54   16:51
+Jueves     15/10/2020 07:50    12:30   12:56   16:50
+Viernes    16/10/2020 07:47    12:30   12:54   16:48
+Sábado     17/10/2020 07:49    13:01
+
+
+
+Empleado:        664 - SAIRES FRANCO MANUEL AS                                    Tarjeta Nº         664
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:46    16:51
+Jueves     01/10/2020 07:42    12:44   13:12   17:21
+Viernes    02/10/2020 07:45    12:40   13:15   16:51
+Lunes      05/10/2020 07:42    13:16   13:56   18:17
+Martes     06/10/2020 07:41    13:20   13:55   18:16
+Miércoles  07/10/2020 07:37    13:22   13:51   17:49
+Jueves     08/10/2020 07:43    13:22   13:52   16:52
+Viernes    09/10/2020 07:42    14:35           14:37   15:02   16:53
+Martes     13/10/2020 07:46    12:40   13:13   18:23
+Miércoles  14/10/2020 07:45    12:42   13:17   18:14
+Jueves     15/10/2020 07:45    13:24   13:56   18:15
+Viernes    16/10/2020 07:42    12:41   13:24   16:49
+Sábado     17/10/2020 08:05    12:01
+
+
+
+Empleado:        665 - GOMEZ CARLOS MANUEL ES                                     Tarjeta Nº         665
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:15   15:53
+Jueves     01/10/2020          00:04   15:55
+Viernes    02/10/2020          00:04   15:54
+Sábado     03/10/2020          00:08   07:55   16:06
+Lunes      05/10/2020 23:52
+Martes     06/10/2020          08:05   23:51
+Miércoles  07/10/2020          08:06   23:52
+Jueves     08/10/2020          08:04   23:52
+Viernes    09/10/2020          08:05   23:55
+Sábado     10/10/2020          08:05
+Martes     13/10/2020 07:54    16:20
+Miércoles  14/10/2020 07:56    16:13
+Jueves     15/10/2020 07:53    16:03
+Viernes    16/10/2020 07:55    16:07
+Sábado     17/10/2020 07:52    16:02
+
+
+
+Empleado:        666 - PALACIO NESTOR FABIAN ES                                   Tarjeta Nº         666
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          00:14   15:48
+Jueves     01/10/2020          00:06   15:51
+Viernes    02/10/2020          00:09   15:44
+Sábado     03/10/2020          00:05
+Lunes      05/10/2020 23:52
+Martes     06/10/2020          08:07   23:46
+Miércoles  07/10/2020          08:06   23:51
+Jueves     08/10/2020          08:02   23:48
+Viernes    09/10/2020          08:07   23:49
+Sábado     10/10/2020          08:03
+Martes     13/10/2020 07:47    16:04
+Miércoles  14/10/2020 07:49    16:02
+Jueves     15/10/2020 07:43    16:03
+Viernes    16/10/2020 07:46    16:06
+
+
+
+Empleado:        667 - MANSILLA JUAN MANUEL RE                                    Tarjeta Nº         667
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:40    12:33   12:53   16:54
+Jueves     01/10/2020 07:37    12:33   12:59   16:53
+Viernes    02/10/2020 07:47    12:31   13:01   16:52
+Lunes      05/10/2020 07:44    12:32   12:59   16:51
+Martes     06/10/2020 07:50    12:32   13:00   16:52
+Miércoles  07/10/2020 07:48    12:30   13:01   16:53
+Jueves     08/10/2020 07:58    12:32   12:53           13:00   16:51
+Viernes    09/10/2020 07:53    12:32   13:00   16:50
+
+
+
+Empleado:        668 - BASUALDO ERIC FERNANDO RE                                  Tarjeta Nº         668
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:37    12:31   12:47   16:56
+Jueves     01/10/2020 07:39    12:32   12:51   16:54
+Viernes    02/10/2020 07:43    12:42   12:52   16:54
+Lunes      05/10/2020 07:42    12:32   12:41   16:54
+Martes     06/10/2020 07:37    12:30   12:49   16:57
+Miércoles  07/10/2020 07:43    12:33   12:51   16:51
+Jueves     08/10/2020 07:38    12:31   12:44   16:58
+Viernes    09/10/2020 07:42    12:32   12:51   16:53
+Martes     13/10/2020 07:37    12:33   12:55   16:55
+Miércoles  14/10/2020 07:28    12:31   12:50   16:51
+Jueves     15/10/2020 07:21    12:30   12:51   16:53
+Viernes    16/10/2020 07:19    12:36   12:52   16:53
+
+
+
+Empleado:        669 - FLORES GUSTAVO BRAIAN RE                                   Tarjeta Nº         669
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:47    12:34   12:59   16:52
+Jueves     01/10/2020 07:48    12:34   13:00   16:53
+Viernes    02/10/2020 07:46    12:32   13:00   16:51
+Lunes      05/10/2020 07:52    12:32   13:00   16:52
+Martes     06/10/2020 07:49    12:35   12:59   16:54
+Miércoles  07/10/2020 07:53    12:34   12:55   16:54
+Jueves     08/10/2020 07:52    12:35   12:59   16:51
+Viernes    09/10/2020 07:59    12:32   13:01   16:50
+Martes     13/10/2020 07:56    12:34   13:01   16:50
+Miércoles  14/10/2020 07:56    12:30   12:54   16:48
+Jueves     15/10/2020 07:55    12:29   12:58   16:47
+Viernes    16/10/2020 07:57    12:31   12:58   16:47
+
+
+
+Empleado:        670 - MUÑOZ ERICK JOEL RE                                        Tarjeta Nº         670
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:47    12:34   12:57   16:52
+Jueves     01/10/2020 07:48    12:33   12:59   16:52
+Viernes    02/10/2020 07:46    12:32   13:00   16:51
+Lunes      05/10/2020 07:52    12:33   12:59   16:51
+Martes     06/10/2020 07:59    16:07
+Miércoles  07/10/2020 06:51    15:00
+Jueves     08/10/2020 06:49            15:01   15:02
+Viernes    09/10/2020 06:43            06:43   15:02
+Martes     13/10/2020 14:51    23:02
+Miércoles  14/10/2020 14:39    23:00
+Jueves     15/10/2020 14:44    23:01
+Viernes    16/10/2020 14:45    23:00
+
+
+
+Empleado:        671 - AGÜERO JAVER EZEQUIEL FRE                                  Tarjeta Nº         671
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    12:30   12:58   16:49
+Jueves     01/10/2020 07:57    12:32   13:00   16:49
+Viernes    02/10/2020 07:49    12:31   13:00   16:49
+Lunes      05/10/2020 07:51    12:30   12:59   16:52
+Martes     06/10/2020 07:51    12:32   13:00   16:50
+Miércoles  07/10/2020 07:49    12:31   13:00   16:50
+Jueves     08/10/2020 07:57    12:32   13:00   16:49
+Viernes    09/10/2020 07:43    12:31   13:00   16:50
+Martes     13/10/2020 07:48    12:31   12:59   16:49
+Miércoles  14/10/2020 07:53    12:30   12:57   16:48
+Jueves     15/10/2020 07:49    12:30   12:57   16:48
+Viernes    16/10/2020 07:52    12:31   12:58   16:49
+
+
+
+Empleado:        672 - FRIZZO LUCAS MATIAS RE                                     Tarjeta Nº         672
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:51    12:32   12:58   16:54
+Jueves     01/10/2020 07:56    12:34   12:59   16:53
+Viernes    02/10/2020 07:57    12:32   13:01   16:50
+Lunes      05/10/2020 07:56    12:33   13:00   16:52
+Martes     06/10/2020 07:56    12:33   13:00   16:51
+Miércoles  07/10/2020 07:56    12:33   13:00   16:52
+Jueves     08/10/2020 07:57    12:34   13:00   16:51
+Viernes    09/10/2020 07:58    12:31   12:59   16:51
+Martes     13/10/2020 07:56    12:33   12:59   16:50
+Miércoles  14/10/2020 07:57    12:30   12:57   16:50
+Jueves     15/10/2020 07:53    12:30   12:57   16:49
+Viernes    16/10/2020 07:54    12:31   12:50   16:49
+
+
+
+Empleado:        673 - MIÑO JORGE VALENTIN ES                                     Tarjeta Nº         673
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:07           08:07
+Jueves     01/10/2020 23:55
+Viernes    02/10/2020          08:02           08:02   23:57           23:57
+Sábado     03/10/2020          08:01
+Lunes      05/10/2020 07:58            07:58
+Martes     06/10/2020 07:55            07:55   16:05           16:05
+Miércoles  07/10/2020 07:55            07:55   16:04
+Jueves     08/10/2020 07:56            07:56
+Viernes    09/10/2020 07:54            07:54
+Martes     13/10/2020 15:58
+Miércoles  14/10/2020          00:04           00:04           00:04   15:54            15:54
+Jueves     15/10/2020          00:02           00:02   15:53
+Viernes    16/10/2020          00:00           00:00           00:00   15:54
+Sábado     17/10/2020          00:02
+
+
+
+Empleado:        674 - RIOS WALTER NICOLAS RE                                     Tarjeta Nº         674
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:49    12:33   12:58   16:53
+Jueves     01/10/2020 07:56    12:34   13:00   16:54
+Viernes    02/10/2020 07:56    12:34   13:01   16:51
+Lunes      05/10/2020 07:56    16:03
+Martes     06/10/2020 07:55    12:34   13:01   16:51
+Miércoles  07/10/2020 07:55    12:34   13:00   16:53
+Jueves     08/10/2020 07:57    12:37   13:01   16:51
+Viernes    09/10/2020 07:57    12:34   13:00   16:51
+Martes     13/10/2020 07:48    16:02
+Miércoles  14/10/2020 07:49    12:31   12:58   16:49
+Jueves     15/10/2020 07:49    12:34   12:58   16:51
+Viernes    16/10/2020 07:54    12:34   12:58   16:49
+
+
+
+Empleado:        675 - RODRIGUEZ DIAZ MARIANO EMANUEL RE                          Tarjeta Nº         675
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:58    16:50
+Jueves     01/10/2020 08:02    12:33   12:59   16:51
+Viernes    02/10/2020 07:58    12:31   13:03   16:50
+Lunes      05/10/2020 07:57    12:33   13:00   16:51
+Martes     06/10/2020 07:59    12:35   13:03   16:52
+Miércoles  07/10/2020 07:57            12:30           13:01   16:53
+Jueves     08/10/2020 07:59    12:33   13:00   16:50
+Viernes    09/10/2020 08:02    12:35   13:01   16:51
+Martes     13/10/2020 08:00    12:31   13:03   16:50
+Miércoles  14/10/2020 07:57    12:30   12:59   16:48
+Jueves     15/10/2020 08:02    12:28   12:58   16:50
+
+
+
+Empleado:        676 - CATANI DIEGO EDUARDO ES                                    Tarjeta Nº         676
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 23:26
+Jueves     01/10/2020          08:02   23:25
+Viernes    02/10/2020          08:06   23:21
+Sábado     03/10/2020          08:04           08:04
+Lunes      05/10/2020 19:26
+Martes     06/10/2020 08:02            19:33
+Miércoles  07/10/2020          08:04           19:21
+Jueves     08/10/2020 08:01            08:01   08:01           19:33           19:34    19:39
+Viernes    09/10/2020          08:03           08:03   19:42
+Sábado     10/10/2020          08:03
+Martes     13/10/2020 07:49    20:04
+Miércoles  14/10/2020 07:48            07:48   20:02
+Jueves     15/10/2020 07:43    20:04
+Viernes    16/10/2020 07:39    20:02
+Sábado     17/10/2020 07:38    16:02
+
+
+
+Empleado:        677 - PACHECO GONZALO NICOLAS DR                                 Tarjeta Nº         677
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 08:00    12:32   13:01   16:51
+Jueves     01/10/2020 08:02    12:32   12:59   16:54
+Viernes    02/10/2020 07:57    12:32   12:58   16:51
+Lunes      05/10/2020 08:01    12:33   12:52   16:52
+Martes     06/10/2020 07:58    12:31   12:50   16:51
+Miércoles  07/10/2020 07:58    12:32   12:53   16:50
+Jueves     08/10/2020 08:02    12:33   12:55   16:51
+Martes     13/10/2020 08:19    12:31   12:52   16:53
+Miércoles  14/10/2020 07:59    12:28   12:48   16:49
+Jueves     15/10/2020 07:51            12:51   16:50
+Viernes    16/10/2020 07:58    12:50           16:48
+Sábado     17/10/2020 07:50    13:00
+
+
+
+Empleado:        678 - ALLENDE MATEO RE                                           Tarjeta Nº         678
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 09:34            09:34           09:34   12:34   13:00   16:50
+Lunes      05/10/2020          16:40           16:41   16:41   16:52
+Martes     06/10/2020 07:57    12:42   13:02   16:50
+Miércoles  07/10/2020 08:00    12:33   12:58   16:51
+Jueves     08/10/2020 08:00    16:53
+Viernes    09/10/2020 08:00    16:48
+Martes     13/10/2020 07:59    16:53
+Miércoles  14/10/2020 08:00    16:49
+Jueves     15/10/2020 07:55    16:48
+Viernes    16/10/2020 07:56    16:50
+
+
+
+Empleado:        679 - ANRRIGUEZ LUCAS MATIAS ES                                  Tarjeta Nº         679
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 09:28    16:02
+Jueves     01/10/2020 07:49    16:02
+Viernes    02/10/2020 07:48    16:02
+Sábado     03/10/2020 07:49    16:03
+Lunes      05/10/2020 15:50
+Martes     06/10/2020          00:01   15:51
+Miércoles  07/10/2020          00:02   15:45
+Jueves     08/10/2020          00:02   15:43
+Viernes    09/10/2020          00:02   15:38
+Sábado     10/10/2020          00:02   07:48   16:01
+Martes     13/10/2020 23:38
+Miércoles  14/10/2020          08:02   23:37
+Jueves     15/10/2020          08:00   23:42
+Viernes    16/10/2020          08:00   23:38
+Sábado     17/10/2020          08:00
+
+
+
+Empleado:        680 - GOMEZ DAVID ALEJANDRO ES                                   Tarjeta Nº         680
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 09:29    16:03
+Jueves     01/10/2020 15:49            15:49           15:50
+Viernes    02/10/2020          00:02   15:56           15:56
+Sábado     03/10/2020          00:08
+Lunes      05/10/2020 23:21
+Martes     06/10/2020          08:05   23:22
+Miércoles  07/10/2020          08:05   23:44
+Jueves     08/10/2020          08:05           23:44   23:45
+Viernes    09/10/2020          08:03   23:39
+Sábado     10/10/2020          08:06
+Martes     13/10/2020 07:53    16:06
+Miércoles  14/10/2020 07:49            07:49   16:00
+Jueves     15/10/2020 07:47    16:03
+Viernes    16/10/2020 07:54
+
+
+
+Empleado:        681 - OLGUIN DIEGO SEBASTIAN ES                                  Tarjeta Nº         681
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 09:26            09:26   16:04
+Jueves     01/10/2020 15:51
+Viernes    02/10/2020          00:08           00:09   15:45
+Sábado     03/10/2020          00:09
+Lunes      05/10/2020 23:56
+Martes     06/10/2020          08:08   23:47
+Miércoles  07/10/2020          08:06   23:53
+Jueves     08/10/2020          08:06   23:47
+Viernes    09/10/2020          08:05   23:48
+Sábado     10/10/2020          08:06
+Martes     13/10/2020 07:48    16:09
+Miércoles  14/10/2020 07:56    16:03
+Jueves     15/10/2020 07:46    16:06
+Viernes    16/10/2020 07:48    16:08
+Sábado     17/10/2020 07:50    16:01
+
+
+
+Empleado:        682 - SUAREZ JUAN LEONARDO DR                                    Tarjeta Nº         682
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 09:28            09:28           09:28   12:32   13:05   16:51
+Viernes    02/10/2020 07:30    12:35   12:59   16:51
+Sábado     03/10/2020 07:47    13:03
+Lunes      05/10/2020 07:39    12:31   12:57   16:51
+Martes     06/10/2020 07:35    12:31   13:03   16:51
+Miércoles  07/10/2020 07:39    12:33   13:01   16:50
+Jueves     08/10/2020 07:31    12:31   13:02   16:50
+Viernes    09/10/2020 07:41    12:32   13:02   16:53
+Martes     13/10/2020 07:33
+Jueves     15/10/2020 07:23    12:31   12:56   16:51
+Viernes    16/10/2020 07:31    13:00   13:30   16:49
+Sábado     17/10/2020 07:25    13:00
+
+
+
+Empleado:        683 - HEREDIA GUSTAVO DR                                         Tarjeta Nº         683
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 09:23            09:23           09:24   12:32   12:55   16:51
+Viernes    02/10/2020 07:56    12:33   12:59   16:51
+Sábado     03/10/2020 07:49    13:02
+Lunes      05/10/2020 08:03    12:30   12:56   16:49
+Martes     06/10/2020 08:00    12:30   12:57   16:49
+Miércoles  07/10/2020 07:59            12:54   16:51
+Jueves     08/10/2020 08:02    12:32   12:52   16:49
+Viernes    09/10/2020 08:01    12:31   12:57   16:52
+Sábado     10/10/2020 07:50    13:00
+Lunes      12/10/2020 07:50    13:01
+Martes     13/10/2020 08:03    12:30   12:56   16:51
+Miércoles  14/10/2020 07:59    12:30   12:53   16:49
+Jueves     15/10/2020 07:58    12:31   12:56   16:50
+Viernes    16/10/2020 07:59    12:31   12:54   16:48
+Sábado     17/10/2020 07:49    13:00
+
+
+
+Empleado:        684 - CHACOMA NICOLAS FRANCISCO ES                               Tarjeta Nº         684
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     01/10/2020 09:31            09:31   16:05
+Viernes    02/10/2020 07:44            07:44   16:08           16:08
+Lunes      05/10/2020          15:24   15:25           15:25
+Martes     06/10/2020          00:04           00:04   15:46
+Miércoles  07/10/2020          00:03           00:03   15:45
+Jueves     08/10/2020          00:04           00:04   15:42
+Viernes    09/10/2020          00:02   15:38           15:38
+Sábado     10/10/2020          00:03
+Martes     13/10/2020 23:38
+Miércoles  14/10/2020          08:02   23:37
+Jueves     15/10/2020          08:00   23:42
+Viernes    16/10/2020          08:00   23:38
+Sábado     17/10/2020          08:01
+
+
+
+Empleado:        685 - FLORES TITA HECTOR DAMIAN RE                               Tarjeta Nº         685
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 09:34            09:34           09:34   12:31   12:59   16:50
+Martes     06/10/2020 07:48    12:31   13:01   16:50
+Miércoles  07/10/2020 07:55    12:32   13:00   16:51
+Jueves     08/10/2020 07:56    12:30   13:00   16:49
+Viernes    09/10/2020 07:58    12:31   13:00   16:49
+Martes     13/10/2020 07:55    12:33   12:58   16:48
+Miércoles  14/10/2020 07:57    12:30   12:57   16:48
+Jueves     15/10/2020 07:56    12:29   12:52   16:51
+Viernes    16/10/2020 07:54    16:50
+
+
+
+Empleado:        686 - ACUÑA CRISTIAN DANIEL ES                                   Tarjeta Nº         686
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 09:25            09:25           09:25   12:31   13:02   16:52
+Martes     06/10/2020 07:45    12:31   13:03   16:51
+Miércoles  07/10/2020 07:45    12:31   13:00   16:51
+Jueves     08/10/2020 07:53    12:31   13:00   16:51
+Viernes    09/10/2020 07:51    12:31   13:01   16:51
+Sábado     10/10/2020 07:44    13:00
+Martes     13/10/2020 07:52    12:32   13:00   16:51
+Miércoles  14/10/2020 07:54    12:30   13:00   16:48
+Jueves     15/10/2020 07:48    12:30   12:58   16:48
+Viernes    16/10/2020 07:44    13:00   13:30   16:48
+
+
+
+Empleado:        687 - PLENANCIO GERMAN ALEJANDRO RE                              Tarjeta Nº         687
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 09:31            09:31           09:32   12:34   12:59   16:50
+Martes     06/10/2020 07:34    12:32   13:00   16:52
+Miércoles  07/10/2020 07:36    12:31   13:00   16:53
+Jueves     08/10/2020 07:37    12:33   13:00   16:50
+Viernes    09/10/2020 07:42    12:31   13:00   16:52
+Martes     13/10/2020 07:34    12:33   12:59   16:51
+Miércoles  14/10/2020 07:39    12:31   12:57   16:50
+Jueves     15/10/2020 07:37    12:30   12:57   16:50
+Viernes    16/10/2020 07:31    12:31   12:58   16:49
+
+
+
+Empleado:        688 - ZAMBRANO ALEJANDRO RAMON DR                                Tarjeta Nº         688
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 09:27            09:27           09:27   12:33   13:01   16:50
+Martes     06/10/2020 07:55    12:32   13:01   16:51
+Miércoles  07/10/2020 07:51    12:33   13:00   16:51
+Jueves     08/10/2020 07:54    12:33   13:01   16:51
+Viernes    09/10/2020 07:57    12:37   13:04   16:52
+Martes     13/10/2020 07:53    12:32   12:57   16:52
+Miércoles  14/10/2020 07:52    12:32   12:53   16:50
+Jueves     15/10/2020 07:51    12:30   12:56   16:51
+Viernes    16/10/2020 07:51    13:01   13:29   16:49
+Sábado     17/10/2020 07:48    12:56
+
+
+
+Empleado:        689 - ABUGAUCH AGUSTIN YAMIL RE                                  Tarjeta Nº         689
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 09:32            09:33           09:33   12:31   12:59   16:51
+Martes     06/10/2020 07:51    12:33   13:01   16:50
+Miércoles  07/10/2020 07:55    12:33   13:00   16:51
+Jueves     08/10/2020 07:57    12:33   13:00   16:51
+Viernes    09/10/2020 07:57    12:32   13:00   16:49
+Martes     13/10/2020 07:48    12:32   12:59   16:48
+Miércoles  14/10/2020 07:49    12:32   12:57   16:48
+Jueves     15/10/2020 07:48    12:32   13:00   16:48
+Viernes    16/10/2020 07:54    12:35   12:57   16:48
+
+
+
+Empleado:        690 - CATTANEO NICOLAS GO                                        Tarjeta Nº         690
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 10:13            10:13           10:13   13:02
+Martes     06/10/2020 07:57    13:05
+Miércoles  07/10/2020 07:52            13:18
+Jueves     08/10/2020 07:52            13:20
+Viernes    09/10/2020 07:47    13:16
+Martes     13/10/2020 07:51    13:30
+Miércoles  14/10/2020 08:07    12:59
+Jueves     15/10/2020 07:48            13:16
+Viernes    16/10/2020 07:48    13:17
+
+
+
+Empleado:        691 - GERONIMO NAHUEL GO                                         Tarjeta Nº         691
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020 10:14            10:14           10:14   13:02
+Martes     06/10/2020 07:57    13:05
+Miércoles  07/10/2020 07:52            13:18
+Jueves     08/10/2020 07:52            13:20
+Viernes    09/10/2020 07:47    13:04
+Martes     13/10/2020 07:51    13:30
+Miércoles  14/10/2020 08:07    12:59
+Jueves     15/10/2020 07:47            13:16
+Viernes    16/10/2020 07:48    13:17
+
+
+
+Empleado:        692 - MACAZAGA AMAT ALEJO GO                                     Tarjeta Nº         692
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      05/10/2020          13:05           13:06   13:06
+Martes     06/10/2020 08:01    12:59
+Miércoles  07/10/2020 08:06    13:07
+Jueves     08/10/2020 08:03    13:01
+Viernes    09/10/2020 07:58    13:15
+Martes     13/10/2020 08:00    13:14
+Miércoles  14/10/2020 08:06    13:15
+Jueves     15/10/2020 07:53    13:08
+Viernes    16/10/2020 07:57    13:16
+
+
+
+Empleado:        693 - MORINA RODRIGO FABIAN RE                                   Tarjeta Nº         693
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  07/10/2020 08:46            08:46           08:47           09:01            09:01   12:41
+Jueves     08/10/2020 08:06    12:35   13:08   16:53
+Viernes    09/10/2020 08:03    12:35   13:09   16:54
+Martes     13/10/2020 08:04    12:33   13:05   16:56
+Miércoles  14/10/2020 07:54    12:33   13:08   16:51
+Jueves     15/10/2020 07:57    12:40   13:11   16:49
+Viernes    16/10/2020 07:43    12:36   13:11   16:50
+
+
+
+Empleado:        694 - AMAYA GERARDO ES                                           Tarjeta Nº         694
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  07/10/2020 08:57    16:09
+Jueves     08/10/2020 07:54    16:05
+Viernes    09/10/2020 07:48    16:12
+Sábado     10/10/2020 07:50    16:04
+Martes     13/10/2020 15:49
+Miércoles  14/10/2020 15:44
+Jueves     15/10/2020          00:04   15:41
+Viernes    16/10/2020          00:07   15:49
+Sábado     17/10/2020          00:07
+
+
+
+Empleado:        695 - HEREÑU OSCAR ALFREDO GO                                    Tarjeta Nº         695
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  07/10/2020 08:45            08:46           08:46   17:41
+Jueves     08/10/2020 08:10    17:07
+Viernes    09/10/2020          08:03           16:54
+Martes     13/10/2020 07:59    16:52
+Miércoles  14/10/2020 07:55
+Jueves     15/10/2020 07:49    16:57
+Viernes    16/10/2020 07:54    16:55
+
+
+
+Empleado:        696 - DALLOSTA RIVADERO NICOLAS RE                               Tarjeta Nº         696
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Jueves     08/10/2020 09:06            09:06           09:06   12:33   12:59   16:50
+Viernes    09/10/2020 08:00    12:31   12:57   16:50
+Martes     13/10/2020 07:47    12:32   12:59   16:50
+Miércoles  14/10/2020 07:49    12:29   12:56   16:49
+Jueves     15/10/2020 07:48    12:29   12:58   16:51
+Viernes    16/10/2020 07:52    12:30   12:58   16:48
+
+
+
+Empleado:        697 - SILVESTRI MAXIMILIANO JORGE ES                             Tarjeta Nº         697
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Martes     13/10/2020 09:15            09:15   16:24           16:24           16:24
+Miércoles  14/10/2020 23:21            23:22
+Jueves     15/10/2020          08:07           08:08   23:29
+Viernes    16/10/2020          08:00   23:28
+Sábado     17/10/2020          08:08           08:08           08:08           08:08            08:08
+
+
+
+Empleado:        698 - LUDUEÑA ARIEL JORGE ES                                     Tarjeta Nº         698
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Martes     13/10/2020 09:16    16:05           16:05           16:05           16:05
+Miércoles  14/10/2020 07:51            07:51   15:59
+Jueves     15/10/2020 07:49    16:04           16:04           16:04
+Viernes    16/10/2020 07:48            07:49   16:03           16:03
+
+
+
+Empleado:        699 - VIJARRA VICTOR DAVID ES                                    Tarjeta Nº         699
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Martes     13/10/2020 09:13            09:13   16:04
+Miércoles  14/10/2020 08:00            08:00   16:01
+Jueves     15/10/2020 07:49    16:01           16:01
+Viernes    16/10/2020 07:54            07:54   16:05
+Sábado     17/10/2020 07:55    16:00
+
+
+
+Empleado:        700 - PEREYRA NICOLAS ALEXIS ES                                  Tarjeta Nº         700
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Martes     13/10/2020 09:18            09:18   16:09
+Miércoles  14/10/2020 15:42
+Jueves     15/10/2020          00:06   15:39
+Viernes    16/10/2020          00:02   15:38
+Sábado     17/10/2020          00:05   07:38   16:02
+
+
+
+Empleado:        703 - JAIME EMANUEL ES                                           Tarjeta Nº         703
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 09:21    16:01
+Sábado     17/10/2020 07:47    16:01
+
+
+
+Empleado:        704 - ATAIDE HUGO MATIAS RE                                      Tarjeta Nº         704
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 09:25            09:25           09:26   12:32   12:58   16:50
+
+
+
+Empleado:        705 - BALMACEDA FRANCO NICOLAS DR                                Tarjeta Nº         705
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 09:15            09:15           09:15   13:00   13:29   16:48
+
+
+
+Empleado:        706 - PERALTA MARIO ALBERTO RE                                   Tarjeta Nº         706
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    16/10/2020 09:24            09:24           09:24   12:33   12:58   16:51
+
+
+
+Empleado:      2.021 - ANDREA OPTIMO LIMPIEZA                                     Tarjeta Nº       2.021
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:52    16:50
+Jueves     01/10/2020 07:51            16:48
+Viernes    02/10/2020 07:54    16:52
+Lunes      05/10/2020 07:50    16:49
+Martes     06/10/2020 07:59    16:52
+Miércoles  07/10/2020 07:54    16:50
+Jueves     08/10/2020 07:52    16:50
+Viernes    09/10/2020 08:03    16:50
+Martes     13/10/2020 07:51    16:50
+Miércoles  14/10/2020 07:51    16:47
+Jueves     15/10/2020 07:49    16:46
+Viernes    16/10/2020 07:50    16:49
+
+
+
+Empleado:      2.024 - WILIAMS OPTIMO LIMPIEZA                                    Tarjeta Nº       2.024
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:53    16:49
+Jueves     01/10/2020 07:55            16:48
+Viernes    02/10/2020 08:01    16:50
+Lunes      05/10/2020 07:50    16:49
+Martes     06/10/2020 07:57    16:49
+Miércoles  07/10/2020 07:54    16:50
+Jueves     08/10/2020 07:56    16:50
+Viernes    09/10/2020 07:57    16:50
+Martes     13/10/2020 07:57    16:50
+Miércoles  14/10/2020 07:57    16:48
+Jueves     15/10/2020 07:50    16:48
+Viernes    16/10/2020 07:49    16:48
+
+
+
+Total de empleados listados      247
+
+
+CLRESFIC.RPT-2.0                                   ClockCard 2000 de LARCON-SIA       PÁGINA N°:

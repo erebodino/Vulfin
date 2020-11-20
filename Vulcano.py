@@ -223,11 +223,17 @@ def logicaRotativos(frame,fechaInicio,fechaFin,area=False):
     fechaInicioAyer = fechaInicio - timedelta(days=1)
     fechaFinAyer = fechaFin + timedelta(days=1)
 
-    mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
-    frameOriginal = frame
+    mascara = (frame['Fecha'] >= fechaInicioAyer) & (frame['Fecha'] <= fechaFinAyer) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
     frameEnAnalisis = frame.loc[mascara].copy()
-    limpiador = Analizador(frameOriginal=frameOriginal,frameEnAnalisis=frameEnAnalisis)
-    newFrame = limpiador.limpiador(area=area)
+    limpiador = Analizador(frameEnAnalisis=frameEnAnalisis,fechaInicio = fechaInicio,fechaFin = fechaFin)
+    estado = limpiador.sanityCheck()
+    
+    if estado:
+        newFrame = limpiador.limpiador(area=area)
+        mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
+        newFrame = newFrame.loc[mascaraNewFrame]
+    else:
+        newFrame = None
     
         
     return newFrame 
@@ -261,17 +267,17 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
 
     
-    legajosRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
                                                 &(consultaEmpleados['AREA'] != 'SOPLADO') 
                                                 & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
-    legajosRotativos = legajosRotativos['LEG'].unique()
-    legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
+    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
+    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
 
     legajos = frame['Empleado'].unique()
     frameAnalisis = creacionFrameVacio()
     
     frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
-    #frameQuerido.set_index(['LEG'],inplace=True)
+    frameQuerido.set_index(['LEG'],inplace=True)
 
 
     
@@ -279,14 +285,24 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     for legajo in legajos:
         # area = consultaEmpleados.loc[consultaEmpleados['LEG']==legajo,'AREA']
         newFrame = frame[frame['Empleado']==legajo]#legajo es un STRaa
-        area = frameQuerido.loc[int(legajo),'AREA']
-        print(area)
-        if int(legajo) in legajosRotativos:
+        try:
+            area = frameQuerido.loc[int(legajo),'AREA']
+        except:
+            msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+            logger.warning(msg)
+            print(msg,'\n','Se procede a ovbiar dicho empleado y se prosigue con el resto.')
+            continue
+        print(legajo)
+        if int(legajo) in legajosNoRotativos:
             mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
             newFrame = newFrame.loc[mascara].copy()
+            frameAnalisis = frameAnalisis.append(newFrame)
         else:
             newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
-            frameAnalisis = frameAnalisis.append(newFrame)
+            if type(newFrame) == None: #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame
+                continue
+            else:
+                frameAnalisis = frameAnalisis.append(newFrame)
     global frameParaVer
     frameParaVer = frameAnalisis
     return frameAnalisis
