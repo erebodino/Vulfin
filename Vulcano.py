@@ -59,16 +59,18 @@ def ingreso_egreso(line,frame,legajo,nombre):
         ingresos_egresos = []
         for x in range(2,12,1):#Esta parte se encarga de dar formato al horario, siempre con dia y horas.
             try:
-                ingresos_egresos.append(pd.to_datetime(('{} {}').format(fecha,line.split()[x])))            
+                a = pd.to_datetime(('{} {}').format(fecha,line.split()[x]))
+                ingresos_egresos.append(a)            
             except:
-                ingresos_egresos.append(pd.to_datetime(('{} 00:00').format(fecha)))
+                a = pd.to_datetime(('{} 00:00').format(fecha))
+                ingresos_egresos.append(a)
     
 
         lista_final = []
         lista_final.append(ingresos_egresos[0])
             
-        for indice in range(len(ingresos_egresos) -1):#Elimina registros duplicados,usa como limite unos 5 minutos.            
-            if ingresos_egresos[indice + 1] - ingresos_egresos[indice] > pd.Timedelta(minutes=5):
+        for indice in range(len(ingresos_egresos) -1):#Elimina registros duplicados,usa como limite unos 7 minutos.            
+            if ingresos_egresos[indice + 1] - ingresos_egresos[indice] > pd.Timedelta(minutes=7):
                lista_final.append(ingresos_egresos[indice + 1])
            
         for u in range((10-len(lista_final))):
@@ -166,6 +168,21 @@ def frameFichadas():
     archivo = os.path.join(os.getcwd(),pathTXT,archivo)
     print('\n')
     try:
+         with open(archivo,encoding="utf-8") as file:
+                    for line in file.readlines():
+                        if line.startswith('Empleado'):
+                            legajo = line.split()[1].replace('.',"")
+                            nombre = ''
+                            for x in range(3,7):
+                                if line.split()[x] == 'Tarjeta':
+                                    break
+                                else:
+                                    nombre += line.split()[x]+' '
+                            nombre = nombre.upper()
+                        for jour in semaine.keys():        
+                            if line.startswith(jour):
+                                frame = ingreso_egreso(line,frame,legajo,nombre)
+    except:
         with open(archivo) as file:
             for line in file.readlines():
                         if line.startswith('Empleado'):
@@ -180,25 +197,11 @@ def frameFichadas():
                         for jour in semaine.keys():        
                             if line.startswith(jour):
                                 frame = ingreso_egreso(line,frame,legajo,nombre)
-    except:
-        with open(archivo,encoding="utf-8") as file:
-                    for line in file.readlines():
-                        if line.startswith('Empleado'):
-                            legajo = line.split()[1].replace('.',"")
-                            nombre = ''
-                            for x in range(3,7):
-                                if line.split()[x] == 'Tarjeta':
-                                    break
-                                else:
-                                    nombre += line.split()[x]+' '
-                            nombre = nombre.upper()
-                        for jour in semaine.keys():        
-                            if line.startswith(jour):
-                                frame = ingreso_egreso(line,frame,legajo,nombre)
+   
 
     return frame
 
-def logicaRotativos(frame,fechaInicio,fechaFin,area=False):
+def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
     """
     Esta funcion se encarga de limpiar los registros de los dataframes individuales de cada
     empleado rotativo, aqui dentro esta toda la logica de limpieza de esos registros.
@@ -227,13 +230,27 @@ def logicaRotativos(frame,fechaInicio,fechaFin,area=False):
     frameEnAnalisis = frame.loc[mascara].copy()
     limpiador = Analizador(frameEnAnalisis=frameEnAnalisis,fechaInicio = fechaInicio,fechaFin = fechaFin)
     estado = limpiador.sanityCheck()
-    
+      
     if estado:
         newFrame = limpiador.limpiador(area=area)
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
         newFrame = newFrame.loc[mascaraNewFrame]
     else:
         newFrame = None
+    
+    if type(newFrame) == type(None): #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame                
+        try:
+            msg = 'El siguiente legajo ({}) No paso en sanitycheck,pero se tratara de limpiar los registros'.format(legajo)
+            print(msg,'\n')
+            logger.warning(msg)
+            newFrame = limpiador.limpiador(area=area)
+            mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
+            newFrame = newFrame.loc[mascaraNewFrame]            
+        except Exception as e:
+            msg = 'El siguiente legajo ({}) fallo en el intento de limpiar los registros'.format(legajo)
+            logger.error(msg)
+            logger.error(e)
+            newFrame = None
     
         
     return newFrame 
@@ -275,6 +292,7 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
 
     legajos = frame['Empleado'].unique()
     frameAnalisis = creacionFrameVacio()
+    frameRechazados = creacionFrameVacio()
     
     frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
     frameQuerido.set_index(['LEG'],inplace=True)
@@ -290,21 +308,25 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
         except:
             msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
             logger.warning(msg)
-            print(msg,'\n','Se procede a ovbiar dicho empleado y se prosigue con el resto.')
+            print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.')
             continue
-        print(legajo)
         if int(legajo) in legajosNoRotativos:
             mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
             newFrame = newFrame.loc[mascara].copy()
             frameAnalisis = frameAnalisis.append(newFrame)
         else:
-            newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,area=area)
-            if type(newFrame) == None: #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame
+            newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,legajo=legajo,area=area)
+            if type(newFrame) == type(None): #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame                
+                msg = 'El siguiente legajo ({}) No paso en sanitycheck'.format(legajo)
+                print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.')
+                frameRechazados = frameRechazados.append(frame[frame['Empleado']==legajo])
+                logger.warning(msg)
                 continue
             else:
                 frameAnalisis = frameAnalisis.append(newFrame)
     global frameParaVer
-    frameParaVer = frameAnalisis
+    frameParaVer = frameRechazados
+    frameRechazados.to_excel(r'J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Rechazados.xlsx')
     return frameAnalisis
 
 def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
@@ -321,17 +343,28 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
     
         legajosFrame = frame['Empleado'].unique()
-    
+        
+        frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+        frameQuerido.set_index(['LEG'],inplace=True)
+        
+        
         frameAnalisis = creacionFrameVacio()
         calculador = CalculadorHoras()
         
         for legajo in legajosFrame:
+            try:
+                area = frameQuerido.loc[int(legajo),'AREA']
+            except:
+                msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+                logger.warning(msg)
+                print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.')
+                continue
             newFrame = frame[frame['Empleado']==legajo].copy() 
             if int(legajo) in legajosRotativos:                           
                 frameCalculado = calculador.horasTrabajadas(newFrame)        
                 frameAnalisis = frameAnalisis.append(frameCalculado)
             else:
-                frameCalculado = calculador.horasTrabajadasRotativos(newFrame)
+                frameCalculado = calculador.horasTrabajadasRotativos(newFrame,area)
                 frameAnalisis = frameAnalisis.append(frameCalculado)
             
         frameAnalisis = frameAnalisis.reset_index(drop=True) 
