@@ -18,7 +18,9 @@ from openpyxl import load_workbook
 from time import sleep
 from termcolor import colored
 from datetime import timedelta
-
+import datetime
+import openpyxl
+from openpyxl.styles import PatternFill
 
 logging.config.fileConfig('logger.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
@@ -254,6 +256,25 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
     
         
     return newFrame 
+def coloreadorExcel(pathExcel):
+    
+    wb = openpyxl.load_workbook(pathExcel)
+    ws = wb.active
+    my_red = openpyxl.styles.colors.Color(rgb='00FF0000')
+    my_fill = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_red)
+    
+    for indice,rows in enumerate(ws.iter_rows(min_row=2, min_col=15,max_col=15)):
+        for cell in rows:
+            if cell.value == 0:
+                valor = indice + 2
+
+                for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=17):
+                    for cell in idx:
+                        cell.fill = my_fill
+
+
+    wb.save(pathExcel)
+    wb.close()
 
 def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     """
@@ -379,9 +400,54 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
             nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
             nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
             frameAnalisis.to_excel(nombre,index=False)
+            coloreadorExcel(nombre)
     except:
         logger.error("excepcion desconocida: %s", traceback.format_exc())
-          
+        
+def analizadorFramesCorregidos(frame):
+    
+    manager = ManagerSQL()
+    sql_conection = manager.conexion()
+    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
+        
+    legajosRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
+    legajosRotativos = legajosRotativos['LEG'].unique()
+    legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
+
+    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+    frameQuerido.set_index(['LEG'],inplace=True)
+
+    calculador = CalculadorHoras()  
+    
+    
+    legajos = frame['Empleado'].unique()
+    frameConErrores = creacionFrameVacio()
+    campo = 'H.Norm'#campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
+    for legajo in legajos:
+        try:
+            area = frameQuerido.loc[int(legajo),'AREA']
+        except:
+            msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+            logger.warning(msg)
+            continue
+        newFrame = frame[frame['Empleado']==legajo].copy() 
+        if int(legajo) in legajosRotativos:                           
+            newFrame = calculador.horasTrabajadas(newFrame)        
+        else:
+            newFrame = calculador.horasTrabajadasRotativos(newFrame,area)
+        
+        len_noMarca = len(newFrame[newFrame[campo] == 0])
+        if len_noMarca == 0:           
+            insercionBD(manager,newFrame,insertRegistros)#Escribe la BD
+        else:
+            frameConErrores = frameConErrores.append(newFrame)
+    return frameConErrores
+            
+            
+    
+    
     
 def actualizacionRegistros():
     
@@ -409,10 +475,17 @@ def actualizacionRegistros():
         nombre = os.path.join(os.getcwd(),pathExcelTemporal,archivo)    
         frameAnalisis = pd.read_excel(nombre)
         frameAnalisis['Fecha'] = pd.to_datetime(frameAnalisis['Fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01    
-        frameCorregido = ingresoNoFichadas(frameAnalisis)#Corrige los registros que estan en cero 
+
+        frameConErrores = analizadorFramesCorregidos(frameAnalisis)     
+
+        if frameConErrores.empty:
+            print('Todos los registros corregidos, se actualizo la base de datos.')
+            os.remove(nombre)
+        else:
+            print('Aun persisten registros con errores, revisarlos y corregirlos para poder proceder.')
+            frameConErrores.to_excel(nombre,index=False)
+            coloreadorExcel(nombre)
         
-        manager = ManagerSQL()
-        insercionBD(manager,frameCorregido,insertRegistros)#Escribe la BD
     except:
         logger.error("excepcion desconocida: %s", traceback.format_exc())
 
@@ -504,6 +577,7 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
                          'ingreso4':'Ingreso_4','egreso4':'Egreso_4'}
     calculador = CalculadorHoras() 
     manager = ManagerSQL()
+    sql_conection = manager.conexion()
     informes = ['Todos los legajos','Algunos legajos']
     respuesta = pyip.inputMenu(informes,prompt='Seleccione alguno de los informes disponibles: \n',
                                lettered=True)
@@ -528,26 +602,59 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         frameCorregido.rename(columns = columnasReemplazo,inplace=True)#same above
         
     frameCorregido.drop(['id'],axis=1,inplace=True)  
-    frameCorregido = calculador.horasTrabajadas(frameCorregido)
-    frameCorregido = calculador.restaRetrasosTardanzas(frameCorregido,mediosDias = mediosDias)
-    frameExtras = calculador.horasExtrasTrabajadas(frameCorregido,feriados=feriados,mediosDias = mediosDias)
     
-    if frameCorregido.empty:
+    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)        
+    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
+    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
+    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
+    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+    frameQuerido.set_index(['LEG'],inplace=True)
+    
+    legajos = frameCorregido['Legajo'].unique()
+    frameFinalCorregido = creacionFrameVacio()
+    frameFinalExtras = creacionFrameVacio()
+    for legajo in legajos:
+        try:
+            area = frameQuerido.loc[int(legajo),'AREA']
+        except:
+            msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+            logger.warning(msg)
+            continue
+        newFrame = frameCorregido[frameCorregido['Legajo']==legajo].copy() 
+        if int(legajo) in legajosNoRotativos:                           
+            newFrame = calculador.horasTrabajadas(newFrame)
+            newFrame = calculador.restaRetrasosTardanzas(newFrame,mediosDias = mediosDias)
+            frameFinalCorregido = frameFinalCorregido.append(newFrame)
+            
+            frameExtras = calculador.horasExtrasTrabajadas(newFrame,feriados=feriados,mediosDias = mediosDias)
+            frameFinalExtras = frameFinalExtras.append(frameExtras)
+        else:
+            newFrame = calculador.horasTrabajadasRotativos(newFrame,area,mediosDias = mediosDias)
+            frameFinalCorregido = frameFinalCorregido.append(newFrame)
+            
+            frameExtras = calculador.horasExtrasTrabajadasRotativos(newFrame,area,feriados=feriados,mediosDias = mediosDias)
+            frameFinalExtras = frameFinalExtras.append(frameExtras)
+  
+    if frameFinalCorregido.empty:
         print('No hay registros sobre los cuales trabajar\n')
     else:
+        frameFinalCorregido.drop(['Empleado'],axis=1,inplace=True)
+        frameFinalExtras.drop(['Empleado'],axis=1,inplace=True)
         archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al EXCEL: \n',
                                 customValidationFunc=validador)
         print('\n')
         nombre = os.path.join(os.getcwd(),pathExcelInforme,archivo)
         nombre = nombre+ '.xlsx'
-        frameExtras = frameExtras.sort_values(by=['Legajo','Fecha'])
-        frameExtras.to_excel(nombre,sheet_name='Registros',index=False)
+        frameFinalExtras = frameFinalExtras.sort_values(by=['Legajo','Fecha'])
+        frameFinalExtras.to_excel(nombre,sheet_name='Registros',index=False)
         
         book = load_workbook(nombre)
         writer = pd.ExcelWriter(nombre, engine = 'openpyxl') #writer para escribir 2 hojas en el excel
         writer.book = book      
         
-        frameTotalizado = hojaTotalizadora(frameExtras, fechaInicio, fechaFin,feriados)
+        frameTotalizado = hojaTotalizadora(frameFinalExtras, fechaInicio, fechaFin,feriados)
         frameTotalizado.to_excel(writer, sheet_name = 'Totalizado',index=False)
         writer.save()
         writer.close()     
@@ -579,6 +686,17 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
 
     """
     
+    manager = ManagerSQL()
+    sql_conection = manager.conexion()
+    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection) 
+    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+    frameQuerido.set_index(['LEG'],inplace=True)
+    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
+    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
+    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
+    
     try:    
         fechaInicio = pd.to_datetime(fechaInicio).date()
         fechaFin = pd.to_datetime(fechaFin).date()
@@ -595,16 +713,27 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                 for feria in feriados:
                     diasLaborales.remove(feria)
         empleados = {}
+        
         for legajo in legajosFrame:
             empleados[str(legajo)]={}
             empleados[str(legajo)]['Tardanzas'] = {}
             empleados[str(legajo)]['Retiros'] = {}
             empleados[str(legajo)]['Nombre'] = ''
+            empleados[str(legajo)]['Faltas'] = ''
 
-        for legajo in legajosFrame:    
+        for legajo in legajosFrame: 
+            try:
+                area = frameQuerido.loc[int(legajo),'AREA']
+            except:
+                msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+                logger.warning(msg)
+                continue
+            
             faltas = []
             newFrame = frame[frame['Legajo']==int(legajo)].copy()
             diasTrabajados = list(newFrame['Fecha'])
+            diasFrame = list(newFrame['Ingreso_0'])
+            diasTrabajados = list(set(diasTrabajados + diasFrame))
             #print('FeriadosTipo: ',type(feriados[0]),feriados[0],'  ',len(feriados))
             #print('DiasTipo: ',type(diasLaborales[0]),diasLaborales[0],'  ',len(diasLaborales))
             
@@ -613,40 +742,210 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                     faltas.append(dia)
             empleados[str(legajo)]['Faltas'] = faltas
             
-            for x in range(len(newFrame)):
-                legajo = newFrame.iloc[x,0]
-                nombre = newFrame.iloc[x,1]
-                dia = newFrame.iloc[x,2]
-                fecha = newFrame.iloc[x,3]
-                horaIngreso = pd.to_datetime(('{} 08:00').format(fecha))
-                horaSalida = pd.to_datetime(('{} 16:48').format(fecha))
-                horaSalidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
-                cero = pd.to_datetime(('{} 00:00').format(fecha))
-                tardanza = 0
-                retiro= 0
+            toleranciaHoraria = 1
+            
+            if int(legajo) in legajosNoRotativos:                         
+           
+                for x in range(len(newFrame)):
+                    legajo = newFrame.iloc[x,0]
+                    nombre = newFrame.iloc[x,1]
+                    dia = newFrame.iloc[x,2]
+                    fecha = newFrame.iloc[x,3]
+                    horaIngreso = pd.to_datetime(('{} 08:00').format(fecha))
+                    horaSalida = pd.to_datetime(('{} 16:48').format(fecha))
+                    horaSalidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
+                    cero = pd.to_datetime(('{} 00:00').format(fecha))
+                    tardanza = 0
+                    retiro= 0
+                    
+                    for idx in range(5,13,2):
+                        if newFrame.iloc[x,idx] == cero:
+                            salida = newFrame.iloc[x,idx -2]
+                            break
+                    
+                    if newFrame.iloc[x,4] > horaIngreso:
+                        tardanza = round((((newFrame.iloc[x,4] - horaIngreso).seconds)/60),2)               
+                    
+                    if fecha in medioDias:
+                        if salida < horaSalidaMedioDia:
+                            print(salida,'   ',horaSalidaMedioDia)
+                            retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
+                    elif fecha not in medioDias:
+                        if salida < horaSalida and dia != 'Sábado':
+                            retiro = round((((horaSalida - salida).seconds)/60),2)  
+    
+                    if tardanza != 0:                    
+                        empleados[str(legajo)]['Tardanzas'][str(fecha)] = (dia,tardanza)
+                    if retiro != 0:
+                        empleados[str(legajo)]['Retiros'][str(fecha)] = (dia,retiro)
+                    
+                    empleados[str(legajo)]['Nombre']= nombre
                 
-                for idx in range(5,13,2):
-                    if newFrame.iloc[x,idx] == cero:
-                        salida = newFrame.iloc[x,idx -2]
-                        break
-                
-                if newFrame.iloc[x,4] > horaIngreso:
-                    tardanza = round((((newFrame.iloc[x,4] - horaIngreso).seconds)/60),2)               
-                
-                if fecha in medioDias:
-                    if salida < horaSalidaMedioDia:
-                        print(salida,'   ',horaSalidaMedioDia)
-                        retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
-                elif fecha not in medioDias:
-                    if salida < horaSalida and dia != 'Sábado':
-                        retiro = round((((horaSalida - salida).seconds)/60),2)  
-
-                if tardanza != 0:                    
-                    empleados[str(legajo)]['Tardanzas'][str(fecha)] = (dia,tardanza)
-                if retiro != 0:
-                    empleados[str(legajo)]['Retiros'][str(fecha)] = (dia,retiro)
-                
-                empleados[str(legajo)]['Nombre']= nombre
+            else:
+                if area in ['INYECCION','MECANIZADO']:
+                    for x in range(len(newFrame)):
+                        legajo = newFrame.iloc[x,0]
+                        nombre = newFrame.iloc[x,1]
+                        dia = newFrame.iloc[x,2]
+                        fecha = newFrame.iloc[x,3]
+                        ayer = fecha - datetime.timedelta(days=1)
+                        mañana = fecha + datetime.timedelta(days=1)
+                        
+                        primerIngreso = '08:00'
+                        segundoIngreso = '16:00'
+                        tercerIngreso = '00:00'
+                        
+                        primerSalida = '16:00'
+                        segundaSalida = '00:00'
+                        tercerSalida = '08:00'
+                        
+                        horaSalidaSabado = '13:00'
+                        medioDia = '12:30'
+                        
+                        turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                            
+                            
+                        turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)) + datetime.timedelta(minutes=toleranciaHoraria))                 
+                            
+                            
+                        cero = pd.to_datetime(('{} 00:00').format(fecha))
+                        medioDia = pd.to_datetime(('{} 12:30').format(fecha))
+                        salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
+                        
+                        tardanza = 0
+                        retiro= 0
+                        
+                        ingresoOperario = newFrame.iloc[x,4]
+                        for idx in range(5,13,2):
+                            if newFrame.iloc[x,idx] == cero:
+                                salida = newFrame.iloc[x,idx -2]
+                                break
+                            
+                        if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                            tardanza = round((((ingresoOperario - turnoMañanaPrimerIngreso).seconds)/60),2)
+                            
+                        if  turnoTardeIngreso < ingresoOperario < turnoTardeIngreso + timedelta(hours=3) :
+                            tardanza = round((((ingresoOperario - turnoTardeIngreso).seconds)/60),2)
+                            
+                        if  turnoNocheIngreso < ingresoOperario < turnoNocheIngreso + timedelta(hours=3) :
+                            tardanza = round((((ingresoOperario - turnoNocheIngreso).seconds)/60),2)
+                            
+                            
+                            
+                            
+                            
+                        if fecha in medioDias:
+                            if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                                if salida < horaSalidaMedioDia:
+                                    retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
+                            
+                        if fecha not in medioDias:
+                            if  turnoMañanaPrimerSalida - timedelta(hours=3)  < salida < turnoMañanaPrimerSalida:
+                                if salida < turnoMañanaPrimerSalida and dia != 'Sábado':
+                                    retiro = round((((turnoMañanaPrimerSalida - salida).seconds)/60),2)
+                                        
+                            if  turnoTardeSalida - timedelta(hours=3)  < salida < turnoTardeSalida:
+                                if salida < turnoTardeSalida:
+                                    retiro = round(((( turnoTardeSalida - salida).seconds)/60),2)
+                                        
+                            if  turnoNocheSalida - timedelta(hours=3)  < salida < turnoNocheSalida:
+                                if salida < turnoNocheSalida:
+                                    retiro = round(((( turnoNocheSalida - salida).seconds)/60),2)
+                                        
+                                    
+            
+                        if tardanza != 0:                    
+                            empleados[str(legajo)]['Tardanzas'][str(fecha)] = (dia,tardanza)
+                        if retiro != 0:
+                            empleados[str(legajo)]['Retiros'][str(fecha)] = (dia,retiro)
+                            
+                        empleados[str(legajo)]['Nombre']= nombre
+                else:
+                    for x in range(len(newFrame)):
+                        legajo = newFrame.iloc[x,0]
+                        nombre = newFrame.iloc[x,1]
+                        dia = newFrame.iloc[x,2]
+                        fecha = newFrame.iloc[x,3]
+                        ayer = fecha - datetime.timedelta(days=1)
+                        mañana = fecha + datetime.timedelta(days=1)
+                        
+                        primerIngreso = '07:00'
+                        segundoIngreso = '15:00'
+                        tercerIngreso = '23:00'
+                        
+                        primerSalida = '15:00'
+                        segundaSalida = '23:00'
+                        tercerSalida = '07:00'
+                        
+                        horaSalidaSabado = '13:00'
+                        medioDia = '12:30'
+                        
+                        turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                            
+                            
+                        turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)) + datetime.timedelta(minutes=toleranciaHoraria))                 
+                            
+                            
+                        cero = pd.to_datetime(('{} 00:00').format(fecha))
+                        medioDia = pd.to_datetime(('{} 12:30').format(fecha))
+                        salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
+                        
+                        tardanza = 0
+                        retiro= 0
+                        
+                        ingresoOperario = newFrame.iloc[x,4]
+                        for idx in range(5,13,2):
+                            if newFrame.iloc[x,idx] == cero:
+                                salida = newFrame.iloc[x,idx -2]
+                                break
+                            
+                        if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                            tardanza = round((((ingresoOperario - turnoMañanaPrimerIngreso).seconds)/60),2)
+                            
+                        if  turnoTardeIngreso < ingresoOperario < turnoTardeIngreso + timedelta(hours=3) :
+                            tardanza = round((((ingresoOperario - turnoTardeIngreso).seconds)/60),2)
+                            
+                        if  turnoNocheIngreso < ingresoOperario < turnoNocheIngreso + timedelta(hours=3) :
+                            tardanza = round((((ingresoOperario - turnoNocheIngreso).seconds)/60),2)
+                            
+                            
+                            
+                            
+                            
+                        if fecha in medioDias:
+                            if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                                if salida < horaSalidaMedioDia:
+                                    retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
+                            
+                        if fecha not in medioDias:
+                            if  turnoMañanaPrimerSalida - timedelta(hours=3)  < salida < turnoMañanaPrimerSalida:
+                                if salida < turnoMañanaPrimerSalida and dia != 'Sábado':
+                                    retiro = round((((turnoMañanaPrimerSalida - salida).seconds)/60),2)
+                                        
+                            if  turnoTardeSalida - timedelta(hours=3)  < salida < turnoTardeSalida:
+                                if salida < turnoTardeSalida:
+                                    retiro = round(((( turnoTardeSalida - salida).seconds)/60),2)
+                                        
+                            if  turnoNocheSalida - timedelta(hours=3)  < salida < turnoNocheSalida:
+                                if salida < turnoNocheSalida:
+                                    retiro = round(((( turnoNocheSalida - salida).seconds)/60),2)
+                                        
+                                    
+            
+                        if tardanza != 0:                    
+                            empleados[str(legajo)]['Tardanzas'][str(fecha)] = (dia,tardanza)
+                        if retiro != 0:
+                            empleados[str(legajo)]['Retiros'][str(fecha)] = (dia,retiro)
+                            
+                        empleados[str(legajo)]['Nombre']= nombre
         
         doc = docx.Document()
         doc.add_heading(('Faltas, tardanzas y retiros entre {} y {}').format(fechaInicio,fechaFin), 0)
