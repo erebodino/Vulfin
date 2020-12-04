@@ -66,7 +66,6 @@ class Analizador:
         diasOperario = list(self.frameEnAnalisis['Fecha'])
 
         diasLaborales = list(pd.bdate_range(self.fechaInicio,(self.fechaFin + timedelta(days=1))))
-
         for fecha in diasLaborales:
             lista_final = []
             if fecha not in diasOperario:
@@ -81,6 +80,8 @@ class Analizador:
                                                                     'Ingreso_3':lista_final[6],'Egreso_3':lista_final[7],
                                                                     'Ingreso_4':lista_final[8],'Egreso_4':lista_final[9]},
                                                                    ignore_index=True)
+        
+        self.frameEnAnalisis['Fecha'] = pd.to_datetime(self.frameEnAnalisis['Fecha']).dt.date                                                          
         return self.frameEnAnalisis
         
     def limpiador(self,area):
@@ -474,7 +475,7 @@ class CalculadorHoras:
                         if frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] != pd.to_datetime(('{} 00:00').format(fecha)):
                             horas_trabajadas = 0
                             break
-                        elif frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] == pd.to_datetime(('{} 00:00').format(fecha)): 
+                        elif frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] == pd.to_datetime(('{} 00:00').format(fecha)):
                             break
                         else:# Aca comienza a contar las horas trabajadas reales.
                             
@@ -504,9 +505,8 @@ class CalculadorHoras:
                                         horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='00:00',egreso='08:00')
                                         break
                     
+               
                     horas_trabajadas = round(horas_trabajadas /3600,2)
-                    
-                     
                     frame.iloc[fila,14] = horas_trabajadas
             else:
                 
@@ -656,6 +656,9 @@ class CalculadorHoras:
                 salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
                 salidaMedioDia = pd.to_datetime(('{} {}').format(fecha,horaSalidaMedioDia))
                 ceroHoy = pd.to_datetime(('{} 00:00').format(fecha))#Media noche del dia en analisis
+            
+                if frame.iloc[fila,4] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,5] == pd.to_datetime(('{} 00:00').format(fecha)): 
+                        continue   
             
             
                 ingresoOperario = frame.iloc[fila,4]
@@ -906,6 +909,8 @@ class CalculadorHoras:
                 salidaMedioDia = pd.to_datetime(('{} {}').format(fecha,horaSalidaMedioDia))
                 ceroHoy = pd.to_datetime(('{} 00:00').format(fecha))#Media noche del dia en analisis
                 
+                if frame.iloc[fila,4] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,5] == pd.to_datetime(('{} 00:00').format(fecha)): 
+                    continue 
                 
                 
                 #----------------------------------------------------
@@ -1365,24 +1370,12 @@ class CalculadorHoras:
                                     horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds 
                                 else:
                                     horas_trabajadas += (horaSalida - frame.iloc[fila,idx]).seconds
-                            
-                            
-                            
-                            # if frame.iloc[fila,idx + 1] <= horaSalida and frame.iloc[fila,idx + 1] > horaIngreso:
-                            #     if frame.iloc[fila,idx] <= horaIngreso: 
-                            #         horas_trabajadas += (frame.iloc[fila,idx + 1] - horaIngreso).seconds 
-                            #     else:
-                            #         horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds
-                            # else:
-                            #     if frame.iloc[fila,idx] < horaIngreso and frame.iloc[fila,idx+ 1] < horaIngreso :
-                            #         continue
-                            #     else:
-                            #         horas_trabajadas += (horaSalida - frame.iloc[fila,idx]).seconds
-                
+
                 horas_trabajadas = round(horas_trabajadas /3600,2)
+                frame.iloc[fila,14] = horas_trabajadas
 
                  
-                frame.iloc[fila,14] = horas_trabajadas
+                
                 
                 # msg = 'Contabilizando horas dias normales, se trabajo {}'.format(horas_trabajadas)
                 # logger.info(msg)

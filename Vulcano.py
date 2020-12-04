@@ -101,6 +101,26 @@ def creacionFrameVacio():
     frame = pd.DataFrame(columns=columnas)
     return frame
 
+def empleadosFrame():
+    
+    manager = ManagerSQL()
+    sql_conection = manager.conexion()
+    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
+
+    
+    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
+                                                & (consultaEmpleados['AREA'] != 'ALUMINIO')] 
+    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
+    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
+
+    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+    frameQuerido.set_index(['LEG'],inplace=True)
+    
+    return legajosNoRotativos,frameQuerido
+    
+
 def insercionBD(managerSQL,frame,query):
     logger.info('Insertando registros en la BD')
     for index, row in frame.iterrows():
@@ -268,20 +288,35 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
    
     return newFrame 
 def coloreadorExcel(pathExcel):
-    
-    wb = openpyxl.load_workbook(pathExcel)
+    try:
+        wb = openpyxl.load_workbook(pathExcel)
+    except PermissionError:
+        print('El archivo {} esta abierto, tiene 30 segundos para cerrarlo.').format(pathExcel)
+        sleep(30)
+        wb = openpyxl.load_workbook(pathExcel)
     ws = wb.active
     my_red = openpyxl.styles.colors.Color(rgb='00FF0000')
     my_fill = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_red)
+    my_green = openpyxl.styles.colors.Color(rgb="0000FF00")
+    my_fillGreen = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_green)
     
-    for indice,rows in enumerate(ws.iter_rows(min_row=2, min_col=15,max_col=15)):
-        for cell in rows:
-            if cell.value == 0:
-                valor = indice + 2
+    for indice,rows in enumerate(ws.iter_rows(min_row=2, min_col=15,max_col=15)): #itera sobre la columna H.Norm
+        for celda in rows:#Por cada celda en la fila
+            if celda.value == 0:
+                valor = indice + 2 # valor de la fila desde el princio del archivo, +2 (+1 por las columnas, y +1 porque excel arranca a contar desde 1 y no 0)
+                fecha = ws.cell(row=valor, column=4).value
+                columnaCuatro = ws.cell(row=valor, column=5).value
+                columnaCinco = ws.cell(row=valor, column=6).value
+                cero = pd.to_datetime(('{} {}').format(fecha,'00:00'))
 
-                for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=17):
-                    for cell in idx:
-                        cell.fill = my_fill
+                if columnaCuatro == cero and columnaCinco == cero:
+                    for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=17):
+                        for celda in idx:
+                            celda.fill = my_fillGreen
+                else:
+                    for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=17):
+                        for celda in idx:
+                            celda.fill = my_fill
 
 
     wb.save(pathExcel)
@@ -309,32 +344,16 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
         dataFrame con solamente los legajos de los operarios que no son rotativos.
 
     """
-
+    legajosNoRotativos,frameQuerido = empleadosFrame()
     
-    manager = ManagerSQL()
-    sql_conection = manager.conexion()
-    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
-
-    
-    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
-                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
-                                                & (consultaEmpleados['AREA'] != 'ALUMINIO')] 
-    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
-    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
+   
 
     legajos = frame['Empleado'].unique()
     frameAnalisis = creacionFrameVacio()
     frameRechazados = creacionFrameVacio()
-    
-    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
-    frameQuerido.set_index(['LEG'],inplace=True)
 
-
-    
-    
     for legajo in legajos:
-        # area = consultaEmpleados.loc[consultaEmpleados['LEG']==legajo,'AREA']
+
         newFrame = frame[frame['Empleado']==legajo]#legajo es un STRaa
         try:
             area = frameQuerido.loc[int(legajo),'AREA']
@@ -343,22 +362,24 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
             logger.warning(msg)
             print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
             continue
-        if int(legajo) in legajosNoRotativos:
-            
-            mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
-            newFrame = newFrame.loc[mascara].copy()
-            frameAnalisis = frameAnalisis.append(newFrame)
-        else:
-
-            newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,legajo=legajo,area=area)
-            if type(newFrame) == type(None): #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame                
-                msg = 'El siguiente legajo ({}) No paso en sanitycheck'.format(legajo)
-                print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
-                frameRechazados = frameRechazados.append(frame[frame['Empleado']==legajo])
-                logger.warning(msg)
-                continue
-            else:
+        try: 
+            if int(legajo) in legajosNoRotativos:                
+                mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
+                newFrame = newFrame.loc[mascara].copy()
+                limpiador = Analizador(frameEnAnalisis=newFrame,fechaInicio = fechaInicio,fechaFin = fechaFin)
+                newFrame = limpiador.castMascara()
+                newFrame = newFrame.loc[mascara].copy()
                 frameAnalisis = frameAnalisis.append(newFrame)
+            else:
+                newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,legajo=legajo,area=area)
+                frameAnalisis = frameAnalisis.append(newFrame)
+        except Exception as e:
+             msg = 'El siguiente legajo ({}) No paso en sanitycheck, ni pudo ser casteado'.format(legajo)
+             print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
+             frameRechazados = frameRechazados.append(frame[frame['Empleado']==legajo])
+             logger.warning(msg)
+             logger.error(e)
+
 
 
     nombreRechazados = 'Rechazados {} al {}.xlsx'.format(fechaInicio,fechaFin)
@@ -370,22 +391,10 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
     try:    
         logger.info('Limpiando registros')
         manager = ManagerSQL()
-        sql_conection = manager.conexion()
-        consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
-        
-        legajosRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
-                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
-        legajosRotativos = legajosRotativos['LEG'].unique()
-        legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
+        legajosNoRotativos,frameQuerido = empleadosFrame()
     
         legajosFrame = frame['Empleado'].unique()
-        
-        frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
-        frameQuerido.set_index(['LEG'],inplace=True)
-        
-        
+
         frameAnalisis = creacionFrameVacio()
         calculador = CalculadorHoras()
         
@@ -398,7 +407,7 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
                 print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
                 continue
             newFrame = frame[frame['Empleado']==legajo].copy() 
-            if int(legajo) in legajosRotativos:                           
+            if int(legajo) in legajosNoRotativos:                           
                 frameCalculado = calculador.horasTrabajadas(newFrame)        
                 frameAnalisis = frameAnalisis.append(frameCalculado)
             else:
@@ -416,29 +425,26 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         else:
             nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
             nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
-            frameAnalisis.to_excel(nombre,index=False)
-            coloreadorExcel(nombre)
+            try:
+                frameAnalisis.to_excel(nombre,index=False)
+                coloreadorExcel(nombre)
+            except PermissionError:
+                msg = '--El archivo {} esta abierto, tiene 30 segundos para cerrarlo.'.format(nombre)
+                print(msg)
+                sleep(30)
+                frameAnalisis.to_excel(nombre,index=False)
+                coloreadorExcel(nombre)
+                
     except:
         logger.error("excepcion desconocida: %s", traceback.format_exc())
         
 def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
     
     manager = ManagerSQL()
-    sql_conection = manager.conexion()
-    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
-        
-    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
-                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
-    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
-    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
-
-    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
-    frameQuerido.set_index(['LEG'],inplace=True)
-
-    calculador = CalculadorHoras()  
     
+    legajosNoRotativos,frameQuerido = empleadosFrame()
+    
+    calculador = CalculadorHoras() 
     
     legajos = frame['Empleado'].unique()
     frameConErrores = creacionFrameVacio()
@@ -460,6 +466,18 @@ def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
         
 
         len_noMarca = len(newFrame[newFrame[campo] == 0])
+        
+        Ingreso_0 = newFrame['Ingreso_0']
+        Egreso_0 = newFrame['Egreso_0']
+        horaIngresoCero = list(Ingreso_0.dt.hour)
+        horaEgresoCero = list(Egreso_0.dt.hour)
+
+        cuenta = 0
+        for x in range(len(horaIngresoCero)):
+            if horaIngresoCero[x] == 0 and horaEgresoCero[x] == 0:
+                cuenta +=1
+
+        len_noMarca = len_noMarca - cuenta
         if len_noMarca == 0: 
             mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
             newFrame = newFrame.loc[mascara].copy()
@@ -626,15 +644,7 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         
     frameCorregido.drop(['id'],axis=1,inplace=True)  
     
-    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)        
-    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
-                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
-    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
-    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
-    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
-    frameQuerido.set_index(['LEG'],inplace=True)
+    legajosNoRotativos,frameQuerido = empleadosFrame()
     
     legajos = frameCorregido['Legajo'].unique()
     frameFinalCorregido = creacionFrameVacio()
@@ -710,17 +720,7 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
 
     """
     
-    manager = ManagerSQL()
-    sql_conection = manager.conexion()
-    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection) 
-    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
-    frameQuerido.set_index(['LEG'],inplace=True)
-    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
-                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
-    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
-    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
+    legajosNoRotativos,frameQuerido = empleadosFrame()
     
     try:    
         fechaInicio = pd.to_datetime(fechaInicio).date()
@@ -757,13 +757,18 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
             faltas = []
             newFrame = frame[frame['Legajo']==int(legajo)].copy()
             diasTrabajados = list(newFrame['Fecha'])
-            diasFrame = list(newFrame['Ingreso_0'])
-            diasTrabajados = list(set(diasTrabajados + diasFrame))
+            # diasFrame = list(newFrame['Ingreso_0'])
+            # diasTrabajados = list(set(diasTrabajados + diasFrame))
 
             
-            for dia in diasLaborales:
-                if dia not in diasTrabajados:
-                    faltas.append(dia)
+            Ingreso_0 = newFrame['Ingreso_0']
+            Egreso_0 = newFrame['Egreso_0']
+            horaIngresoCero = list(Ingreso_0.dt.hour)
+            horaEgresoCero = list(Egreso_0.dt.hour)
+    
+            for x in range(len(horaIngresoCero)):
+                if horaIngresoCero[x] == 0 and horaEgresoCero[x] == 0 and diasTrabajados[x] not in feriados:
+                    faltas.append(diasTrabajados[x])
             empleados[str(legajo)]['Faltas'] = faltas
             
             toleranciaHoraria = 1
