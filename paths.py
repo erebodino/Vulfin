@@ -24,6 +24,10 @@ nombreInformeFaltasTardanzasPDF = 'Informe faltas, tardanzas y retiros del {} al
 
 pathExcelInforme = 'Archivos de trabajo\Informes\Excel'
 
+
+rotativosInyeccion = ['INYECCION','MECANIZADO','ALUMINIO']
+rotativosSoplado = ['SOPLADO']
+
 if __name__ == '__main__':
     pass
 

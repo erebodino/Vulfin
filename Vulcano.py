@@ -10,7 +10,7 @@ import docx
 import colorama
 colorama.init()
 
-from paths import empleados_text,pathExcelTemporal,nombreExcelTemporal,pathExcelInforme,pathTXT,areas,formaDePago
+from paths import empleados_text,pathExcelTemporal,nombreExcelTemporal,pathExcelInforme,pathTXT,areas,formaDePago,rotativosInyeccion,rotativosSoplado
 from analizador import Analizador,CalculadorHoras,informeNoFichadas,ingresoNoFichadas
 from createDB import ManagerSQL
 from queryes import queryConsultaEmpleados,insertRegistros,selectAll,selectSome,insertEmpleado,deleteEmpleado,actualizarEmpleado
@@ -230,13 +230,22 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
 
     mascara = (frame['Fecha'] >= fechaInicioAyer) & (frame['Fecha'] <= fechaFinAyer) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
     frameEnAnalisis = frame.loc[mascara].copy()
+
     limpiador = Analizador(frameEnAnalisis=frameEnAnalisis,fechaInicio = fechaInicio,fechaFin = fechaFin)
     estado = limpiador.sanityCheck()
       
     if estado:
         newFrame = limpiador.limpiador(area=area)
+
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
-        newFrame = newFrame.loc[mascaraNewFrame]
+        newFrame = newFrame.loc[mascaraNewFrame].copy()
+
+        try:
+            newFrame = limpiador.borradoRegistroIndividual(newFrame)
+        except Exception as e:
+            msg = 'El siguiente legajo ({}) fallo en el borrado del dia para mañana'.format(legajo)
+            logger.error(msg)
+            logger.error(e)
     else:
         newFrame = None
     
@@ -247,14 +256,15 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
             logger.warning(msg)
             newFrame = limpiador.limpiador(area=area)
             mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
-            newFrame = newFrame.loc[mascaraNewFrame]            
+            newFrame = newFrame.loc[mascaraNewFrame]
+            newFrame = limpiador.borradoRegistroIndividual(newFrame)            
         except Exception as e:
             msg = 'El siguiente legajo ({}) fallo en el intento de limpiar los registros'.format(legajo)
             logger.error(msg)
             logger.error(e)
             newFrame = None
     
-        
+   
     return newFrame 
 def coloreadorExcel(pathExcel):
     
@@ -307,7 +317,8 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     
     legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
                                                 &(consultaEmpleados['AREA'] != 'SOPLADO') 
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
+                                                & (consultaEmpleados['AREA'] != 'ALUMINIO')] 
     legajosNoRotativos = legajosNoRotativos['LEG'].unique()
     legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
 
@@ -329,25 +340,29 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
         except:
             msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
             logger.warning(msg)
-            print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.')
+            print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
             continue
         if int(legajo) in legajosNoRotativos:
+            
             mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
             newFrame = newFrame.loc[mascara].copy()
             frameAnalisis = frameAnalisis.append(newFrame)
         else:
+
             newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,legajo=legajo,area=area)
             if type(newFrame) == type(None): #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame                
                 msg = 'El siguiente legajo ({}) No paso en sanitycheck'.format(legajo)
-                print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.')
+                print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
                 frameRechazados = frameRechazados.append(frame[frame['Empleado']==legajo])
                 logger.warning(msg)
                 continue
             else:
                 frameAnalisis = frameAnalisis.append(newFrame)
-    global frameParaVer
-    frameParaVer = frameRechazados
-    frameRechazados.to_excel(r'J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Rechazados.xlsx')
+
+
+    nombreRechazados = 'Rechazados {} al {}.xlsx'.format(fechaInicio,fechaFin)
+    pathRechazados = os.path.join(os.getcwd(),pathExcelTemporal,'Rechazados',nombreRechazados)
+    frameRechazados.to_excel(pathRechazados,index=False)
     return frameAnalisis
 
 def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
@@ -359,6 +374,7 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         
         legajosRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
                                                 &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
                                                 & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
         legajosRotativos = legajosRotativos['LEG'].unique()
         legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
@@ -378,7 +394,7 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
             except:
                 msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
                 logger.warning(msg)
-                print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.')
+                print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
                 continue
             newFrame = frame[frame['Empleado']==legajo].copy() 
             if int(legajo) in legajosRotativos:                           
@@ -404,17 +420,18 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
     except:
         logger.error("excepcion desconocida: %s", traceback.format_exc())
         
-def analizadorFramesCorregidos(frame):
+def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
     
     manager = ManagerSQL()
     sql_conection = manager.conexion()
     consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
         
-    legajosRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
                                                 &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
                                                 & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
-    legajosRotativos = legajosRotativos['LEG'].unique()
-    legajosRotativos = [int(x) for x in legajosRotativos]#los pasa de numpy.int64 a int
+    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
+    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
 
     frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
     frameQuerido.set_index(['LEG'],inplace=True)
@@ -432,14 +449,19 @@ def analizadorFramesCorregidos(frame):
             msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
             logger.warning(msg)
             continue
+
         newFrame = frame[frame['Empleado']==legajo].copy() 
-        if int(legajo) in legajosRotativos:                           
+
+        if int(legajo) in legajosNoRotativos:                           
             newFrame = calculador.horasTrabajadas(newFrame)        
         else:
             newFrame = calculador.horasTrabajadasRotativos(newFrame,area)
         
+
         len_noMarca = len(newFrame[newFrame[campo] == 0])
-        if len_noMarca == 0:           
+        if len_noMarca == 0: 
+            mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
+            newFrame = newFrame.loc[mascara].copy()
             insercionBD(manager,newFrame,insertRegistros)#Escribe la BD
         else:
             frameConErrores = frameConErrores.append(newFrame)
@@ -449,7 +471,7 @@ def analizadorFramesCorregidos(frame):
     
     
     
-def actualizacionRegistros():
+def actualizacionRegistros(fechaInicio,fechaFin):
     
     try:
         try:
@@ -476,7 +498,7 @@ def actualizacionRegistros():
         frameAnalisis = pd.read_excel(nombre)
         frameAnalisis['Fecha'] = pd.to_datetime(frameAnalisis['Fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01    
 
-        frameConErrores = analizadorFramesCorregidos(frameAnalisis)     
+        frameConErrores = analizadorFramesCorregidos(frameAnalisis,fechaInicio,fechaFin)     
 
         if frameConErrores.empty:
             print('Todos los registros corregidos, se actualizo la base de datos.')
@@ -606,6 +628,7 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
     consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)        
     legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
                                                 &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
                                                 & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
     legajosNoRotativos = legajosNoRotativos['LEG'].unique()
     legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
@@ -624,7 +647,7 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
             continue
         newFrame = frameCorregido[frameCorregido['Legajo']==legajo].copy() 
         if int(legajo) in legajosNoRotativos:                           
-            newFrame = calculador.horasTrabajadas(newFrame)
+            newFrame = calculador.horasTrabajadas(newFrame,mediosDias = mediosDias)
             newFrame = calculador.restaRetrasosTardanzas(newFrame,mediosDias = mediosDias)
             frameFinalCorregido = frameFinalCorregido.append(newFrame)
             
@@ -693,6 +716,7 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
     frameQuerido.set_index(['LEG'],inplace=True)
     legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
                                                 &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
                                                 & (consultaEmpleados['AREA'] != 'MECANIZADO')] 
     legajosNoRotativos = legajosNoRotativos['LEG'].unique()
     legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
@@ -734,8 +758,7 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
             diasTrabajados = list(newFrame['Fecha'])
             diasFrame = list(newFrame['Ingreso_0'])
             diasTrabajados = list(set(diasTrabajados + diasFrame))
-            #print('FeriadosTipo: ',type(feriados[0]),feriados[0],'  ',len(feriados))
-            #print('DiasTipo: ',type(diasLaborales[0]),diasLaborales[0],'  ',len(diasLaborales))
+
             
             for dia in diasLaborales:
                 if dia not in diasTrabajados:
@@ -782,7 +805,7 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                     empleados[str(legajo)]['Nombre']= nombre
                 
             else:
-                if area in ['INYECCION','MECANIZADO']:
+                if area in rotativosInyeccion:
                     for x in range(len(newFrame)):
                         legajo = newFrame.iloc[x,0]
                         nombre = newFrame.iloc[x,1]
@@ -801,15 +824,15 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                         
                         horaSalidaSabado = '13:00'
                         medioDia = '12:30'
-                        
-                        turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+
+                        turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso)))
+                        turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso)))
+                        turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso)))
                             
                             
-                        turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)) + datetime.timedelta(minutes=toleranciaHoraria))                 
+                        turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida)))
+                        turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida)))
+                        turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)))  
                             
                             
                         cero = pd.to_datetime(('{} 00:00').format(fecha))
@@ -884,14 +907,14 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                         horaSalidaSabado = '13:00'
                         medioDia = '12:30'
                         
-                        turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                        turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso)))
+                        turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso)))
+                        turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso)))
                             
                             
-                        turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
-                        turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)) + datetime.timedelta(minutes=toleranciaHoraria))                 
+                        turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida)))
+                        turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida)))
+                        turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)))             
                             
                             
                         cero = pd.to_datetime(('{} 00:00').format(fecha))
@@ -950,6 +973,14 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
         doc = docx.Document()
         doc.add_heading(('Faltas, tardanzas y retiros entre {} y {}').format(fechaInicio,fechaFin), 0)
         for key in empleados.keys():
+            
+            elBoleano = False
+            for llave in empleados[key].keys():
+                if llave != 'Nombre':
+                    elBoleano |= bool(empleados[key][llave])
+            if elBoleano == False:
+                continue
+                    
             
             doc.add_heading(('Informe sobre {}:').format(empleados[key]['Nombre']),level=1)
             
@@ -1070,10 +1101,12 @@ class Motor:
                         else:
                             legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
                             limpiezaDeRegistros(legajos, fechaInicio, fechaFin) 
-                            print('Registros errones y duplicados eliminados, excel a completar creado.\n')
+                            print('\nRegistros errones y duplicados eliminados, excel a completar creado.\n')
                             
                     elif ordenadoRespuesta == 'Actualización de registros':
-                        actualizacionRegistros()                
+                        fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                        actualizacionRegistros(fechaInicio,fechaFin)
+                        
                     elif ordenadoRespuesta == 'Volver':
                         print('Volviendo al PRIMER MENU')
                         continuarOrdenado = False                    

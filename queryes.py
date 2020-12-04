@@ -47,5 +47,12 @@ SET {} = '{}'
 WHERE LEG = '{}'
 """
 
+# UPDATE REGISTROS
+# SET 'ingreso0' = '2020-10-01 06:32:00'
+# WHERE legajo = '6' and fecha = '2020-10-01'
+
+# select * from REGISTROS
+# WHERE legajo = '6' and fecha = '2020-10-01'
+
 if __name__ == '__main__':
     pass

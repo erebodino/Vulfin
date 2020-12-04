@@ -8,7 +8,9 @@ from termcolor import colored
 from paths import(nombreInformeNoFichadasWord,nombreInformeNoFichadasPDF,pathInformesNoFichadas,
 pathInformesFaltasTardanzas,
 nombreInformeFaltasTardanzasWord,
-nombreInformeFaltasTardanzasPDF)
+nombreInformeFaltasTardanzasPDF,
+rotativosInyeccion,
+rotativosSoplado)
 from datetime import timedelta
 
 import logging.config
@@ -56,6 +58,9 @@ class Analizador:
             DESCRIPTION.
 
         """
+        legajo = self.frameEnAnalisis.iloc[0,0]
+
+        
         import pandas as pd
         import datetime
         self.frameEnAnalisis = self.frameEnAnalisis.reset_index(drop=True)
@@ -65,9 +70,9 @@ class Analizador:
         inicioIndex = fechas[fechas == self.fechaInicio].index[0]
         finIndex = fechas[fechas == self.fechaFin].index[0]
 
-        
+       
         for renglon in range(inicioIndex,finIndex+ 1):
-            if area in ['INYECCION','MECANIZADO']:
+            if area in rotativosInyeccion:
                 dia = self.frameEnAnalisis.iloc[renglon,2]
                 fecha = self.frameEnAnalisis.iloc[renglon,3]
                 ayer = fecha - datetime.timedelta(days=1)
@@ -173,7 +178,7 @@ class Analizador:
                             
                     
                    
-            elif area in ['SOPLADO']:               
+            elif area in rotativosSoplado:               
                     legajo =  self.frameEnAnalisis.iloc[renglon,0]
                     dia = self.frameEnAnalisis.iloc[renglon,2]
                     fecha = self.frameEnAnalisis.iloc[renglon,3]
@@ -266,8 +271,6 @@ class Analizador:
                                             break
                                 
                                 else:
-                                    if str(legajo) == '536':
-                                        print('1',fecha)
                                     if (turnoMañanaIngreso - timedelta(hours=1) < self.frameEnAnalisis.iloc[renglon,posicion] < turnoTardeIngreso - timedelta(hours=3)) and \
                                         (self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso + timedelta(hours=3)) or \
                                          self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):  
@@ -281,7 +284,7 @@ class Analizador:
                                                 self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
                                             
                                             break
-          
+        
         self.frameEnAnalisis = self.borradoCeros()
         return self.frameEnAnalisis
     
@@ -308,13 +311,28 @@ class Analizador:
         frame.reset_index(inplace=True)
         frame = frame[columnas]
         return frame
+    
+    def borradoRegistroIndividual(self,frame):
+        fecha = frame.iloc[-1,3]
+        nombre = frame.iloc[-1,1]
+        
+        horaAnalizada = frame.iloc[-1,6]
+        horaAnalizadaAnterior = frame.iloc[-1,5]
+        horaAnalizadaSiguiente = frame.iloc[-1,7]
+        
+
+        
+        if horaAnalizada > pd.to_datetime(('{} 19:30').format(fecha)) and horaAnalizadaAnterior < pd.to_datetime(('{} 10:00').format(fecha)) and \
+            horaAnalizadaSiguiente == pd.to_datetime(('{} 00:00').format(fecha)):
+            frame.iloc[-1,6] = pd.to_datetime(('{} 00:00').format(fecha))
+        return frame
 
 class CalculadorHoras:
     
     def horasTurnoRotativo(self,frame,fila,fecha,dia,area,ingreso='00:00',egreso='08:00'):
   
         horas_trabajadas = 0
-        if area in ['INYECCION','MECANIZADO']:
+        if area in rotativosInyeccion:
             horaIngreso = pd.to_datetime(('{} {}').format(fecha,ingreso))
             if egreso != '00:00':
                 horaEgreso = pd.to_datetime(('{} {}').format(fecha,egreso))
@@ -331,6 +349,7 @@ class CalculadorHoras:
                 horaIngreso = horaIngreso - timedelta(days=1) 
                 
         legajo = frame.iloc[fila,0]
+
         
         for idx in range(4,14,2):
                 if frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] != pd.to_datetime(('{} 00:00').format(fecha)):
@@ -341,27 +360,35 @@ class CalculadorHoras:
                 else:# Aca comienza a contar las horas trabajadas reales.
                
                     if horaIngreso - timedelta(hours=5) <= frame.iloc[fila,idx] <= horaIngreso + timedelta(hours=1): #Primer Turno
+
                         if frame.iloc[fila,idx] <= horaIngreso:
-                            if frame.iloc[fila,idx +1] >= horaEgreso:                                
+                            if frame.iloc[fila,idx +1] >= horaEgreso:
+
                                 horas_trabajadas += (horaEgreso - horaIngreso).seconds
+
                             else:
+
                                 horas_trabajadas += (frame.iloc[fila,idx +1] - horaIngreso).seconds
                         else:                                                               
-                            if frame.iloc[fila,idx +1] >= horaEgreso:                                
+                            if frame.iloc[fila,idx +1] >= horaEgreso:
+                               
                                 horas_trabajadas += (horaEgreso - frame.iloc[fila,idx]).seconds
                             else:
+  
                                 horas_trabajadas += (frame.iloc[fila,idx +1] - frame.iloc[fila,idx]).seconds
                                 
                     else:
-                        if frame.iloc[fila,idx +1] >= horaEgreso:                            
+
+                        if frame.iloc[fila,idx +1] >= horaEgreso:
+                           
                             horas_trabajadas += ( horaEgreso - frame.iloc[fila,idx]).seconds
-                        else:                            
+                        else:
+                            
                             horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds
                             
                 # msg = 'Contabilizando horas en los Medio Dia, se trabajo {}'.format(horas_trabajadas)
                 # logger.info(msg)
-        if str(legajo) == '57':
-            print('-'*30)
+
         return horas_trabajadas
     
     def horasTrabajadasRotativos(self,frame,area,mediosDias=[]):
@@ -372,7 +399,7 @@ class CalculadorHoras:
         
 
         for fila in range(len(frame)):
-            if area in ['INYECCION','MECANIZADO']:       
+            if area in rotativosInyeccion:       
                     horas_trabajadas = 0
                     fecha = frame.iloc[fila,3]
                     dia = frame.iloc[fila,2]
@@ -422,22 +449,22 @@ class CalculadorHoras:
                                 pass
                                 #horas_trabajadas = self.horasTrabajadasMedioDia(frame, fila, fecha, dia)
                             else:  
-                                
+
                                 #ACA ESTA VIENDO QUE TIPO DE HORARIO ARRANCA Y DIRECCIONA AL TIPO DE CALCULADOR DE HORAS.
                                 if frame.iloc[fila,idx] > turnoMañanaPrimerIngreso - timedelta(hours=4) and \
                                     frame.iloc[fila,idx] < turnoMañanaPrimerIngreso + timedelta(hours=4): #Primer Turno
-                                        
+
                                         horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='08:00',egreso='16:00')
                                         break
                                 elif frame.iloc[fila,idx] > turnoTardeIngreso - timedelta(hours=4) and \
                                     frame.iloc[fila,idx] < turnoTardeIngreso + timedelta(hours=4): #Segundo Turno
-                                        
+
                                         horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='16:00',egreso='00:00')
                                         break
                                 
                                 elif frame.iloc[fila,idx] > turnoNocheIngreso - timedelta(hours=4,minutes=30) and \
                                     frame.iloc[fila,idx] < turnoNocheIngreso + timedelta(hours=4,minutes=30): #Segundo Turno
-                                        
+
                                         horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='00:00',egreso='08:00')
                                         break
                     
@@ -550,7 +577,7 @@ class CalculadorHoras:
         horaSalidaSabado = '13:00'
         horaSalidaMedioDia = '12:30'
         for fila in range(len(frame)):
-            if area in ['INYECCION','MECANIZADO']:
+            if area in rotativosInyeccion:
                 
                 horas_trabajadas = 0
                 minutosExtras100 = 0
@@ -620,13 +647,15 @@ class CalculadorHoras:
                     
                     if salidaOperario > salidaSabado: #Checkea si es sabado pasadas las 13
                         minutosExtras100 += ((salidaOperario - salidaSabado).seconds)/3600
-                        frame.iloc[fila,16] = minutosExtras100 #Asigna las horas extras al 100%
+                        frame.iloc[fila,16] = round(minutosExtras100,2) #Asigna las horas extras al 100%
                         
                         
                 
                 elif fechaSalidaOperarios in feriados or fechaIngreso in feriados:
                     
-                    if fechaIngreso in feriados and fechaSalidaOperarios not in feriados:                    
+                    if fechaIngreso in feriados and fechaSalidaOperarios not in feriados: 
+                        
+                        
                         if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
                             if ingresoOperario < turnoNocheIngreso:                                                     
                                 minutosExtras100 += ((cero - ingresoOperario).seconds)/3600
@@ -634,6 +663,21 @@ class CalculadorHoras:
                                 
                             if salidaOperario > turnoNocheSalida:
                                 minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600 
+                        
+                        
+                        if  turnoTardeIngreso- timedelta(hours=4) < ingresoOperario < turnoTardeIngreso + timedelta(hours=2):  
+                            if salidaOperario > turnoTardeSalida:
+                                minutosExtras100 += ((turnoTardeSalida - ingresoOperario).seconds)/3600
+                                frame.iloc[fila,16] = round(minutosExtras100,2)
+                                frame.iloc[fila,14] = 0
+                                
+                            else:
+                                minutosExtras100 += ((salidaOperario - ingresoOperario).seconds)/3600
+                                frame.iloc[fila,16] = round(minutosExtras100,2)
+                                frame.iloc[fila,14] = 0
+                                
+                                
+                                
                         
                     elif fechaSalidaOperarios in feriados and fechaIngreso  not in feriados:
                         if salidaOperario > cero:
@@ -644,7 +688,6 @@ class CalculadorHoras:
                             minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600 
                     
                     elif fechaSalidaOperarios in feriados and fechaIngreso  in feriados:
-                        print(ingresoOperario,'    ',salidaOperario)
                         minutosExtras100 += ((salidaOperario - ingresoOperario).seconds)/3600
                         frame.iloc[fila,14] = 0
                         frame.iloc[fila,16] = round(minutosExtras100,2)
@@ -652,59 +695,135 @@ class CalculadorHoras:
                         
                 
                 elif fechaSalidaOperarios in mediosDias or fechaIngreso in mediosDias:
-                    if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
-                        if ingresoOperario < turnoNocheIngreso:                                                      
-                            minutosExtras100 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
-                            frame.iloc[fila,16] = round(minutosExtras100,2)
-                        elif salidaOperario > turnoNocheSalida:
-                            if salidaOperario > horaSalidaMedioDia:
-                                minutosExtras100 += ((salidaOperario - horaSalidaMedioDia).seconds)/3600
-                            else:
-                                minutosExtras100 += ((salidaOperario - turnoNocheSalida).seconds)/3600
-                    else:                                
+                    
+                    if fechaIngreso in mediosDias and fechaSalidaOperarios not in mediosDias:
+                        
+                        
+                        if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
+                            if ingresoOperario < turnoNocheIngreso:                                                     
+                                minutosExtras100 += ((cero - ingresoOperario).seconds)/3600
+                                frame.iloc[fila,16] = round(minutosExtras100,2)
+                                
+                            if salidaOperario > turnoNocheSalida:
+                                minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600 
+                                
+                             
+                        
+                    elif fechaSalidaOperarios in mediosDias and fechaIngreso  not in mediosDias:
                         if salidaOperario > salidaMedioDia:
-                            minutosExtras100 += round(((salidaOperario - salidaMedioDia).seconds)/3600,2)
-                            frame.iloc[fila,16] = minutosExtras100
+                            minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600
+                            frame.iloc[fila,16] = round(minutosExtras100,2)
+                        
+                        if ingresoOperario < turnoNocheIngreso:
+                            minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
+                        
+                        if turnoNocheSalida < salidaOperario < salidaMedioDia:
+                            minutosExtras50 += (( salidaOperario - turnoNocheSalida).seconds)/3600
+                    
+                    
+                    elif fechaSalidaOperarios in mediosDias and fechaIngreso  in mediosDias:
+                        
+                         if salidaOperario > salidaMedioDia and ingresoOperario > salidaMedioDia: 
+                                minutosExtras100 += ((salidaOperario - ingresoOperario).seconds)/3600
+                                frame.iloc[fila,16] = round(minutosExtras100,2)
+                                frame.iloc[fila,14] = 0
+                         else:
+                            if turnoMañanaPrimerIngreso- timedelta(hours=2) < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours = 1):
+                                if ingresoOperario < turnoMañanaPrimerIngreso:                                                     
+                                    minutosExtras50 += ((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600
+                                    
+                                    if salidaOperario > salidaMedioDia:
+                                        minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600 
+                                        frame.iloc[fila,16] = round(minutosExtras100,2)
+                                        frame.iloc[fila,14] = round(((salidaMedioDia - turnoMañanaPrimerIngreso).seconds)/3600,2)
+                                    else:
+                                        frame.iloc[fila,14] = round(((salidaOperario - turnoMañanaPrimerIngreso).seconds)/3600,2)
+                                
+                                else:
+                                    if salidaOperario > salidaMedioDia:
+                                        minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600 
+                                        frame.iloc[fila,14] = round(((salidaMedioDia - ingresoOperario).seconds)/3600,2)
+                                    else:
+                                        frame.iloc[fila,14] = round(((salidaOperario - ingresoOperario).seconds)/3600,2)
+                                        
+                            if turnoNocheIngreso- timedelta(hours=2) < ingresoOperario < turnoNocheIngreso + timedelta(hours = 1):
+                                if ingresoOperario < turnoNocheIngreso:                                                     
+                                   pass
+                                
+                                else:
+                                    if salidaOperario > turnoNocheSalida:
+                                        minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600 
+                                        frame.iloc[fila,14] = round(((turnoNocheSalida - ingresoOperario).seconds)/3600,2)
+                                    else:
+                                        frame.iloc[fila,14] = round(((salidaOperario - ingresoOperario).seconds)/3600,2)
+                                    
+                                
+                                    
+                        
+                        # if salidaOperario > salidaMedioDia: 
+                        #     if ingresoOperario > salidaMedioDia:
+                        #         minutosExtras100 += ((salidaOperario - ingresoOperario).seconds)/3600
+                        #         frame.iloc[fila,16] = round(minutosExtras100,2)
+                        #         frame.iloc[fila,14] = 0
+                        #     else:
+                        #         if turnoMañanaPrimerIngreso- timedelta(hours=2) < ingresoOperario < turnoMañanaPrimerIngreso:
+                        #             minutosExtras50 += ((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600
+                    
+                    
+                    
+                    # if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
+                    #     if ingresoOperario < turnoNocheIngreso:                                                      
+                    #         minutosExtras100 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
+                    #         frame.iloc[fila,16] = round(minutosExtras100,2)
+                    #     elif salidaOperario > turnoNocheSalida:
+                    #         if salidaOperario > horaSalidaMedioDia:
+                    #             minutosExtras100 += ((salidaOperario - horaSalidaMedioDia).seconds)/3600
+                    #         # else:
+                    #         #     minutosExtras100 += ((salidaOperario - turnoNocheSalida).seconds)/3600
+                    # else:                                
+                    #     if salidaOperario > salidaMedioDia:
+                    #         minutosExtras100 += round(((salidaOperario - salidaMedioDia).seconds)/3600,2)
+                    #         frame.iloc[fila,16] = minutosExtras100
                             
-                        if turnoMañanaPrimerIngreso - timedelta(hours=4) < ingresoOperario < turnoMañanaPrimerIngreso:                            
-                            minutosExtras50 += round(((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600,2)
-                            frame.iloc[fila,14] = round(((salidaMedioDia - turnoMañanaPrimerIngreso ).seconds)/3600,2)
-                        else:
-                            frame.iloc[fila,14] = round(((salidaMedioDia - ingresoOperario ).seconds)/3600,2)
+                    #     if turnoMañanaPrimerIngreso - timedelta(hours=4) < ingresoOperario < turnoMañanaPrimerIngreso:                            
+                    #         minutosExtras50 += round(((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600,2)
+                    #         frame.iloc[fila,14] = round(((salidaMedioDia - turnoMañanaPrimerIngreso ).seconds)/3600,2)
+                    #     else:
+                    #         frame.iloc[fila,14] = round(((salidaMedioDia - ingresoOperario ).seconds)/3600,2)
                             
     
                 
                 else:
-                    print('Ingreso: ',ingresoOperario,'    ','Salida: ',salidaOperario)
+
                     #Ingreso-Egreso 3er Turno-----------------
                     if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
-                        print('\tPrimer Condicion')
+
                         if ingresoOperario < turnoNocheIngreso:
-                            print('\tPrimer Condicion UNO')                                                      
+                                                     
                             minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
-                        if salidaOperario > turnoNocheSalida:
-                            print('\tPrimer Condicion DOS')
-                            minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
+                    if turnoNocheSalida - timedelta(hours=2) < salidaOperario < turnoNocheSalida + timedelta(hours=4):
+
+                            if salidaOperario > turnoNocheSalida:
+                                minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
                     
                     #Ingreso-Egreso 1er Turno-----------------
                     if turnoMañanaPrimerIngreso - timedelta(hours=4) < ingresoOperario < turnoMañanaPrimerIngreso: 
-                        print('\tSegunda Condicion 1')                                                    
+                                                   
                         minutosExtras50 += ((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600
-                    if turnoMañanaPrimerSalida - timedelta(hours=2) < salidaOperario < turnoMañanaPrimerSalida  + timedelta(hours=3):
+                    if turnoMañanaPrimerSalida - timedelta(hours=2) < salidaOperario < turnoMañanaPrimerSalida  + timedelta(hours=4):
                             if salidaOperario > turnoMañanaPrimerSalida:
-                                print('\tSegunda Condicion 2 SOPLADO')  
+ 
                                 minutosExtras50 += ((salidaOperario - turnoMañanaPrimerSalida).seconds)/3600
                             
                    
                     #Ingreso-Egreso 2do Turno
                     if turnoTardeIngreso - timedelta(hours=4) < ingresoOperario < turnoTardeIngreso: 
-                        print('\tercer Condicion 1')                                                     
+                                                     
                         minutosExtras50 += ((turnoTardeIngreso - ingresoOperario).seconds)/3600
-                    if turnoTardeSalida - timedelta(hours=2) < salidaOperario < turnoTardeSalida  + timedelta(hours=3):
+                    if turnoTardeSalida - timedelta(hours=2) < salidaOperario < turnoTardeSalida  + timedelta(hours=4):
                         if salidaOperario > turnoTardeSalida:
                              minutosExtras50 += ((salidaOperario - turnoTardeSalida).seconds)/3600
-                print('--->',fecha,minutosExtras50)
-                print('-'*30)
+
                 frame.iloc[fila,15] = round(minutosExtras50,2) #Asigna las horas extras al 50%
         
             else: 
@@ -779,7 +898,7 @@ class CalculadorHoras:
                         
                     if salidaOperario > salidaSabado: #Checkea si es sabado pasadas las 13
                        minutosExtras100 += ((salidaOperario - salidaSabado).seconds)/3600
-                       frame.iloc[fila,16] = minutosExtras100 #Asigna las horas extras al 100%
+                       frame.iloc[fila,16] = round(minutosExtras100,2) #Asigna las horas extras al 100%
                        
                        
         
@@ -846,35 +965,35 @@ class CalculadorHoras:
         
                     
                 else:
-                        print('Ingreso: ',ingresoOperario,'    ','Salida: ',salidaOperario)
+
                         #Ingreso-Egreso 3er Turno-----------------
                         if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
-                            print('\tPrimer Condicion SOPLADO')
+
                             if ingresoOperario < turnoNocheIngreso:
-                                print('\tPrimer Condicion UNO SOPLADO')                                                      
+                                                      
                                 minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
                             if salidaOperario > turnoNocheSalida:
-                                print('\tPrimer Condicion DOS SOPLADO')
+
                                 minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
-                        print(turnoMañanaPrimerSalida - timedelta(hours=2),'  ',turnoMañanaPrimerSalida)
+
                         #Ingreso-Egreso 1er Turno-----------------
                         if turnoMañanaPrimerIngreso - timedelta(hours=4) < ingresoOperario < turnoMañanaPrimerIngreso: 
-                            print('\tSegunda Condicion 1 SOPLADO')                                                    
+                                               
                             minutosExtras50 += ((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600
                         if turnoMañanaPrimerSalida - timedelta(hours=2) < salidaOperario < turnoMañanaPrimerSalida + timedelta(hours=3):
                             if salidaOperario > turnoMañanaPrimerSalida:
-                                print('\tSegunda Condicion 2 SOPLADO')  
+
                                 minutosExtras50 += ((salidaOperario - turnoMañanaPrimerSalida).seconds)/3600
                                 
                         #Ingreso-Egreso 2do Turno
                         if turnoTardeIngreso - timedelta(hours=4) < ingresoOperario < turnoTardeIngreso: 
-                            print('\tercer Condicion 1 SOPLADO')                                                     
+                                                   
                             minutosExtras50 += ((turnoTardeIngreso - ingresoOperario).seconds)/3600
                         if turnoTardeSalida - timedelta(hours=2) < salidaOperario < turnoTardeSalida + timedelta(hours=3):
                             if salidaOperario > turnoTardeSalida:
-                                print('\tercer Condicion 2 SOPLADO') 
+
                                 minutosExtras50 += ((salidaOperario - turnoTardeSalida).seconds)/3600
-                print('-'*30)                
+              
                 frame.iloc[fila,15] = round(minutosExtras50,2) #Asigna las horas extras al 50%
             
         # msg = 'Contabilizando horas al 50 y 100'
@@ -885,7 +1004,7 @@ class CalculadorHoras:
   
         horas_trabajadas = 0
 
-        if area in ['INYECCION','MECANIZADO']: 
+        if area in rotativosInyeccion: 
             ingreso = '08:00'
             egreso = '08:00'
             horaSalidaSabado = '13:00'
@@ -977,6 +1096,109 @@ class CalculadorHoras:
                         # logger.info(msg)
         return horas_trabajadas
     
+    # def horasTrabajadasMedioDiaRotativos(self,frame,fila,area,fecha,dia,toleranciaHoraria=1):
+        
+    #     horas_trabajadas = 0
+
+    #     ingreso = '08:00'
+    #     salida = '16:48'
+    #     horaSalidaSabado = '13:00'
+    #     horaSalidaMedioDia = '12:30'
+    #     for fila in range(len(frame)):
+    #         if area in ['INYECCION','MECANIZADO']:
+                
+    #             horas_trabajadas = 0
+    #             minutosExtras100 = 0
+    #             minutosExtras50 = 0 
+                
+    #             fecha = frame.iloc[fila,3]
+    #             dia = frame.iloc[fila,2]
+    #             ayer = fecha - datetime.timedelta(days=1)
+    #             mañana = fecha + datetime.timedelta(days=1)
+                
+    #             primerIngreso = '08:00'
+    #             segundoIngreso = '16:00'
+    #             tercerIngreso = '00:00'
+                
+    #             primerSalida = '16:00'
+    #             segundaSalida = '00:00'
+    #             tercerSalida = '08:00'
+                
+    #             horaSalidaSabado = '13:00'
+    #             medioDia = '12:30'
+                    
+                    
+                        
+    #             turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+    #             turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+    #             turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso))- datetime.timedelta(minutes=toleranciaHoraria))
+                
+                
+    #             turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
+    #             turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida))+ datetime.timedelta(minutes=toleranciaHoraria))
+    #             turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)) + datetime.timedelta(minutes=toleranciaHoraria))                 
+                
+                
+    #             cero = pd.to_datetime(('{} 00:00').format(fecha))
+    #             medioDia = pd.to_datetime(('{} 12:00').format(fecha))
+    #             salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
+                
+            
+                       
+    #             salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
+    #             salidaMedioDia = pd.to_datetime(('{} {}').format(fecha,horaSalidaMedioDia))
+    #             ceroHoy = pd.to_datetime(('{} 00:00').format(fecha))#Media noche del dia en analisis
+            
+            
+    #             ingresoOperario = frame.iloc[fila,4]
+    #             salidaOperario = 0
+    #             fechaIngreso = ingresoOperario.date()
+            
+    #             for x in range(5,15,2):
+    #                 if frame.iloc[fila,x] ==  ceroHoy:
+    #                     salidaOperario = frame.iloc[fila,x -2]
+    #                     break
+    #             fechaSalidaOperarios = salidaOperario.date()
+                
+
+                    
+    #             if fechaIngreso in dia and fechaSalidaOperarios not in dia: 
+                        
+          
+    #                     if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso + timedelta(hours=1):
+    #                         if ingresoOperario < turnoNocheIngreso: 
+    #                                 if salidaOperario > turnoNocheSalida:
+    #                                     horas_trabajadas = ((cero - turnoNocheSalida).seconds)/3600
+    #                                     minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600 
+    #                                 else:
+    #                                     horas_trabajadas = ((cero - salidaOperario).seconds)/3600  
+
+   
+    #             elif fechaSalidaOperarios in dia and fechaIngreso  not in dia:
+    #                     if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso + timedelta(hours=1):
+    #                         if ingresoOperario < turnoNocheIngreso: 
+    #                                 if salidaOperario > salidaMedioDia:
+    #                                     horas_trabajadas = ((cero - turnoNocheSalida).seconds)/3600 
+    #                                 else:
+    #                                     horas_trabajadas = ((cero - salidaOperario).seconds)/3600            
+                        
+    #                     if ingresoOperario < turnoNocheIngreso:
+    #                         minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600 
+                    
+                    
+    #                 elif fechaSalidaOperarios in mediosDias and fechaIngreso  in mediosDias:
+    #                     if salidaOperario > salidaMedioDia: 
+    #                         if ingresoOperario > salidaMedioDia:
+    #                             minutosExtras100 += ((salidaOperario - ingresoOperario).seconds)/3600
+    #                             frame.iloc[fila,16] = round(minutosExtras100,2)
+    #                             frame.iloc[fila,14] = 0
+    #                         else:
+    #                             if turnoMañanaPrimerIngreso- timedelta(hours=2) < ingresoOperario < turnoMañanaPrimerIngreso:
+    #                                 minutosExtras50 += ((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600
+                
+                
+    #     return horas_trabajadas
+   
     def horasTrabajadasSabado(self,frame,fila,fecha,dia):
         
         ingreso = '08:00'
@@ -995,24 +1217,24 @@ class CalculadorHoras:
                    break
                 else:# Aca comienza a contar las horas trabajadas reales.
                     if frame.iloc[fila,idx + 1] <= salidaSabado:
-                        print('Pasando 1')
+
                         if frame.iloc[fila,idx] <= horaIngreso:
-                            print('Pasando 1 A')
+
                             horas_trabajadas += (frame.iloc[fila,idx + 1] - horaIngreso).seconds                        
                         else:
-                            print('Pasando 1 B')
+
                             horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds
                     else:
-                        print('Pasando 2')
+
                         if frame.iloc[fila,idx] <= horaIngreso:
-                            print('Pasando 2 A')
+
                             horas_trabajadas += (salidaSabado - horaIngreso).seconds  
                         else:
-                            print('Pasando 2 B')
+
                             horas_trabajadas += (salidaSabado - frame.iloc[fila,idx]).seconds
                     # msg ='Contabilizando horas del sabado, se trabajo {}'.format(horas_trabajadas)
                     # logger.info(msg)
-        print('Horas--: ',horas_trabajadas)
+
         return horas_trabajadas
     
     def horasTrabajadasMedioDia(self,frame,fila,fecha,dia):
@@ -1034,14 +1256,20 @@ class CalculadorHoras:
                 else:# Aca comienza a contar las horas trabajadas reales.
                
                     if frame.iloc[fila,idx + 1] <= salidaMedioDia:
+
                         if frame.iloc[fila,idx] <= horaIngreso: 
+
                             horas_trabajadas += (frame.iloc[fila,idx + 1] - horaIngreso).seconds                        
                         else:
+
                             horas_trabajadas += (frame.iloc[fila,idx + 1] - frame.iloc[fila,idx]).seconds
                     else:
+
                         if frame.iloc[fila,idx] <= horaIngreso: 
+
                             horas_trabajadas += (salidaMedioDia - horaIngreso).seconds                        
                         else:
+
                             horas_trabajadas += (salidaMedioDia - frame.iloc[fila,idx]).seconds
                 # msg = 'Contabilizando horas en los Medio Dia, se trabajo {}'.format(horas_trabajadas)
                 # logger.info(msg)
@@ -1080,13 +1308,14 @@ class CalculadorHoras:
                     elif frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] == pd.to_datetime(('{} 00:00').format(fecha)): 
                         break
                     else:# Aca comienza a contar las horas trabajadas reales.
+
                         if dia == 'Sábado':
                             horas_trabajadas = self.horasTrabajadasSabado(frame, fila, fecha, dia)
                         elif dia in mediosDias:
                             horas_trabajadas = self.horasTrabajadasMedioDia(frame, fila, fecha, dia)
                         else:  
                             
-                            if  horaIngreso - timedelta(hours = 3) < frame.iloc[fila,idx] < horaIngreso:
+                            if  horaIngreso - timedelta(hours = 3) < frame.iloc[fila,idx] <= horaIngreso:
                                 if frame.iloc[fila,idx +1] <= horaSalida:
                                     if frame.iloc[fila,idx +1] > horaIngreso:
                                         horas_trabajadas += (frame.iloc[fila,idx + 1] - horaIngreso).seconds 
@@ -1115,8 +1344,7 @@ class CalculadorHoras:
                             #         horas_trabajadas += (horaSalida - frame.iloc[fila,idx]).seconds
                 
                 horas_trabajadas = round(horas_trabajadas /3600,2)
-                if str(dia) == 'Sábado':
-                    print('Horas en la principal: ',horas_trabajadas)
+
                  
                 frame.iloc[fila,14] = horas_trabajadas
                 
@@ -1174,23 +1402,30 @@ class CalculadorHoras:
                 if frame.iloc[fila,4] <= horaIngreso:
                     minutosExtras50 += ((horaIngreso - frame.iloc[fila,4]).seconds)/3600
                 
-                print('--->',minutosExtras50)
+
                 minutosExtras50 += frame.iloc[fila,14]
-                print('---> 2',minutosExtras50)
+
                 frame.iloc[fila,14] = 0
                 
                 if salidaOperario > salidaSabado: #Checkea si es sabado pasadas las 13
                     minutosExtras100 += ((salidaOperario - salidaSabado).seconds)/3600
-                    frame.iloc[fila,16] = minutosExtras100 #Asigna las horas extras al 100%
+                    frame.iloc[fila,16] = round(minutosExtras100,2) #Asigna las horas extras al 100%
 
             elif fecha in feriados:
-                minutosExtras100 += round(((salidaOperario - ingresoOperario).seconds)/3600,2)
+                for posicion in range(4,12,2):
+                    if frame.iloc[fila,posicion+ 1] == ceroHoy and frame.iloc[fila,posicion] == ceroHoy:
+                        break
+                    else:                        
+                        minutosExtras100 += round(((frame.iloc[fila,posicion+ 1] - frame.iloc[fila,posicion]).seconds)/3600,2)
                 frame.iloc[fila,14] = 0
-                frame.iloc[fila,16] = minutosExtras100
+                frame.iloc[fila,16] = round(minutosExtras100,2)
             
-            elif fecha in mediosDias and salidaOperario > salidaMedioDia:
-                minutosExtras100 += round(((salidaOperario - salidaMedioDia).seconds)/3600,2)
-                frame.iloc[fila,16] = minutosExtras100
+            elif fecha in mediosDias:
+                if salidaOperario > salidaMedioDia:
+                    minutosExtras100 += round(((salidaOperario - salidaMedioDia).seconds)/3600,2)
+                    frame.iloc[fila,16] = round(minutosExtras100,2)
+                if ingresoOperario < horaIngreso:
+                    minutosExtras50 += ((horaIngreso - ingresoOperario).seconds)/3600
 
             
             else:
@@ -1248,10 +1483,10 @@ class CalculadorHoras:
                     horas_trabajadas = 8 
                 
                 if dia != 'Sábado':
-                    if horas_trabajadas >= 8 and tardanza > 0:
-                        horas_trabajadas = horas_trabajadas- tardanza #Si entro tarde resta esos minutos
-                    elif horas_trabajadas < 8 and tardanza > 0:
-                        horas_trabajadas = horas_trabajadas + (8 - horas_trabajadas) - tardanza
+                    if horas_trabajadas >= 8 and (tardanza > 0 or retiro >0):
+                        horas_trabajadas = horas_trabajadas- tardanza - retiro #Si entro tarde resta esos minutos
+                    # elif horas_trabajadas < 8 and tardanza > 0:
+                    #     horas_trabajadas = horas_trabajadas + (8 - horas_trabajadas) - tardanza
                 
                                
                 frame.iloc[x,14] = horas_trabajadas
