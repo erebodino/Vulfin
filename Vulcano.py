@@ -236,33 +236,34 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
       
     if estado:
         newFrame = limpiador.limpiador(area=area)
-
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
         newFrame = newFrame.loc[mascaraNewFrame].copy()
 
-        try:
-            newFrame = limpiador.borradoRegistroIndividual(newFrame)
-        except Exception as e:
-            msg = 'El siguiente legajo ({}) fallo en el borrado del dia para mañana'.format(legajo)
-            logger.error(msg)
-            logger.error(e)
     else:
-        newFrame = None
-    
-    if type(newFrame) == type(None): #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame                
-        try:
-            msg = 'El siguiente legajo ({}) No paso en sanitycheck,pero se tratara de limpiar los registros'.format(legajo)
-            print(msg,'\n')
-            logger.warning(msg)
-            newFrame = limpiador.limpiador(area=area)
-            mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
-            newFrame = newFrame.loc[mascaraNewFrame]
-            newFrame = limpiador.borradoRegistroIndividual(newFrame)            
-        except Exception as e:
-            msg = 'El siguiente legajo ({}) fallo en el intento de limpiar los registros'.format(legajo)
-            logger.error(msg)
-            logger.error(e)
-            newFrame = None
+        msg = 'El siguiente legajo ({}) No paso las validaciones,se autocompletan los registros como 00:00'.format(legajo)
+        print(msg,'\n')
+        msg2 ='El siguiente legajo ({}) No paso las validaciones, se las castea en cero.'.format(legajo)
+        logger.info(msg2)
+        newFrame = limpiador.castMascara()
+        newFrame = limpiador.limpiador(area=area)
+        newFrame = limpiador.castMascara()
+        mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
+        newFrame = newFrame.loc[mascaraNewFrame].copy()
+
+    # if type(newFrame) == type(None): #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame                
+    #     try:
+    #         msg = 'El siguiente legajo ({}) No paso en sanitycheck,pero se tratara de limpiar los registros'.format(legajo)
+    #         print(msg,'\n')
+    #         logger.warning(msg)
+    #         newFrame = limpiador.limpiador(area=area)
+    #         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
+    #         newFrame = newFrame.loc[mascaraNewFrame]
+    #         newFrame = limpiador.borradoRegistroIndividual(newFrame)            
+    #     except Exception as e:
+    #         msg = 'El siguiente legajo ({}) fallo en el intento de limpiar los registros'.format(legajo)
+    #         logger.error(msg)
+    #         logger.error(e)
+    #         newFrame = None
     
    
     return newFrame 

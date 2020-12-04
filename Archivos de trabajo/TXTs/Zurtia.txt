@@ -1,0 +1,11 @@
+
+Empleado:         27 - ZURTIA JORGE RAMON                                         Tarjeta Nº          27
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:42    16:03
+Jueves     01/10/2020 07:39    16:01
+Viernes    02/10/2020 07:38    16:04
+Lunes      05/10/2020 07:58

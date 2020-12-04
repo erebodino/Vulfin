@@ -46,6 +46,42 @@ class Analizador:
         estado = diaAnterior in self.frameEnAnalisis['Fecha'].values and diaPosterior in self.frameEnAnalisis['Fecha'].values
         estado &=  self.fechaInicio in self.frameEnAnalisis['Fecha'].values and self.fechaFin in self.frameEnAnalisis['Fecha'].values
         return estado
+    
+    def creacionDiasCeros(self,legajo,nombre):
+        pass
+    
+    def castMascara(self):
+        
+        semaine = {'Monday': 'Lunes',
+               'Tuesday' : 'Martes',
+               'Wednesday': 'Miércoles',
+               'Thursday':'Jueves',
+               'Friday':'Viernes',
+               'Saturday':'Sabado',
+               'Sunday':'Domingo',
+              }
+        
+        legajo = self.frameEnAnalisis.iloc[0,0]
+        nombre = self.frameEnAnalisis.iloc[0,1]
+        diasOperario = list(self.frameEnAnalisis['Fecha'])
+
+        diasLaborales = list(pd.bdate_range(self.fechaInicio,(self.fechaFin + timedelta(days=1))))
+
+        for fecha in diasLaborales:
+            lista_final = []
+            if fecha not in diasOperario:
+                for u in range(10):
+                    lista_final.append(pd.to_datetime(('{} 00:00').format(fecha)))
+
+                self.frameEnAnalisis = self.frameEnAnalisis.append({'Empleado':legajo,'Nombre':nombre,
+                                                                    'Dia':semaine[fecha.day_name()],'Fecha':fecha,
+                                                                    'Ingreso_0':lista_final[0],'Egreso_0':lista_final[1],
+                                                                    'Ingreso_1':lista_final[2],'Egreso_1':lista_final[3],
+                                                                    'Ingreso_2':lista_final[4],'Egreso_2':lista_final[5],
+                                                                    'Ingreso_3':lista_final[6],'Egreso_3':lista_final[7],
+                                                                    'Ingreso_4':lista_final[8],'Egreso_4':lista_final[9]},
+                                                                   ignore_index=True)
+        return self.frameEnAnalisis
         
     def limpiador(self,area):
         """

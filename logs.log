@@ -29546,3 +29546,178 @@ INFO :[2020-12-02 21:13:58,743] createDB [conexion Linea : 27] --> Iniciando con
 INFO :[2020-12-02 21:14:35,857] __main__ [insercionBDLegajos Linea : 116] --> Insertando nuevo operario en la BD
 INFO :[2020-12-02 21:14:35,857] createDB [conexion Linea : 27] --> Iniciando conexion
 INFO :[2020-12-02 21:14:35,857] createDB [executeQuery Linea : 46] --> Ejecutando query
+INFO :[2020-12-04 09:39:04,192] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:39:11,911] createDB [conexion Linea : 27] --> Iniciando conexion
+ERROR :[2020-12-04 09:39:11,989] __main__ [<module> Linea : 1227] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 1224, in <module>
+    motor.mainLoop()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 1106, in mainLoop
+    legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 356, in frameAnalisisIndividual
+    newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,legajo=legajo,area=area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 251, in logicaRotativos
+    newFrame = limpiador.castMascara()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 74, in castMascara
+    'Ingreso_0':lista_final[0],'Egreso_0':lista_final[1],
+IndexError: list index out of range
+
+INFO :[2020-12-04 09:40:23,908] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:40:30,719] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:40:30,767] __main__ [logicaRotativos Linea : 260] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:40:30,840] __main__ [limpiezaDeRegistros Linea : 374] --> Limpiando registros
+INFO :[2020-12-04 09:40:30,840] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:40:30,853] analizador [informeNoFichadas Linea : 1561] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:42:41,009] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:42:47,092] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:42:47,295] __main__ [logicaRotativos Linea : 260] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:42:47,326] __main__ [limpiezaDeRegistros Linea : 374] --> Limpiando registros
+INFO :[2020-12-04 09:42:47,326] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:42:47,342] analizador [informeNoFichadas Linea : 1564] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:44:29,086] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:44:35,326] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:44:35,404] __main__ [logicaRotativos Linea : 260] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:44:35,436] __main__ [limpiezaDeRegistros Linea : 374] --> Limpiando registros
+INFO :[2020-12-04 09:44:35,436] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:44:35,451] analizador [informeNoFichadas Linea : 1564] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:45:32,951] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:45:38,482] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:45:38,654] __main__ [logicaRotativos Linea : 260] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:45:38,701] __main__ [limpiezaDeRegistros Linea : 374] --> Limpiando registros
+INFO :[2020-12-04 09:45:38,701] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:45:38,717] analizador [informeNoFichadas Linea : 1565] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:47:08,701] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:47:17,514] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:47:17,732] __main__ [logicaRotativos Linea : 260] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:47:17,779] __main__ [limpiezaDeRegistros Linea : 374] --> Limpiando registros
+INFO :[2020-12-04 09:47:17,779] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:47:17,795] analizador [informeNoFichadas Linea : 1565] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:52:26,165] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:52:34,513] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:52:34,560] __main__ [logicaRotativos Linea : 260] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:52:34,592] __main__ [limpiezaDeRegistros Linea : 374] --> Limpiando registros
+INFO :[2020-12-04 09:52:34,592] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:52:34,607] analizador [informeNoFichadas Linea : 1565] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:53:30,143] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:53:36,375] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:53:36,438] __main__ [logicaRotativos Linea : 261] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:53:36,469] __main__ [limpiezaDeRegistros Linea : 375] --> Limpiando registros
+INFO :[2020-12-04 09:53:36,469] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:53:36,484] analizador [informeNoFichadas Linea : 1565] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:54:17,072] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:54:22,716] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:54:22,779] __main__ [logicaRotativos Linea : 262] --> El siguiente legajo (27) No paso en sanitycheck,pero se tratara de limpiar los registros
+INFO :[2020-12-04 09:54:22,810] __main__ [limpiezaDeRegistros Linea : 376] --> Limpiando registros
+INFO :[2020-12-04 09:54:22,825] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:54:22,825] analizador [informeNoFichadas Linea : 1565] --> Comenzando escritura en el word
+INFO :[2020-12-04 09:55:49,419] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:55:55,201] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:55:55,294] __main__ [limpiezaDeRegistros Linea : 376] --> Limpiando registros
+INFO :[2020-12-04 09:55:55,294] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:55:55,326] analizador [informeNoFichadas Linea : 1566] --> Comenzando escritura en el word
+ERROR :[2020-12-04 09:55:55,341] analizador [informeNoFichadas Linea : 1671] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 1644, in informeNoFichadas
+    if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+UnboundLocalError: local variable 'hora_egreso_anterior' referenced before assignment
+
+INFO :[2020-12-04 09:57:22,577] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 09:57:40,741] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 09:57:41,640] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (375) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:43,475] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (616) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:43,581] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (631) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:43,794] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (646) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,095] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (658) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,105] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (659) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,298] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (671) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,351] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (675) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,448] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (680) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,499] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (682) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,545] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (689) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,691] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (699) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,702] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (700) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,717] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (704) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,737] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (2021) no se encuentra en la BD
+WARNING :[2020-12-04 09:57:44,747] __main__ [frameAnalisisIndividual Linea : 345] --> El siguiente legajo (2024) no se encuentra en la BD
+INFO :[2020-12-04 09:57:44,766] __main__ [limpiezaDeRegistros Linea : 373] --> Limpiando registros
+INFO :[2020-12-04 09:57:44,766] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 09:57:49,461] analizador [informeNoFichadas Linea : 1566] --> Comenzando escritura en el word
+ERROR :[2020-12-04 09:57:49,479] analizador [informeNoFichadas Linea : 1671] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 1644, in informeNoFichadas
+    if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+UnboundLocalError: local variable 'hora_egreso_anterior' referenced before assignment
+
+INFO :[2020-12-04 10:02:06,826] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 10:02:23,600] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2020-12-04 10:02:24,533] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (375) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:26,643] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (616) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:26,728] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (631) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:26,868] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (646) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,148] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (658) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,153] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (659) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,313] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (671) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,353] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (675) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,433] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (680) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,473] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (682) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,563] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (689) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,783] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (699) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,793] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (700) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,803] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (704) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,813] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (2021) no se encuentra en la BD
+WARNING :[2020-12-04 10:02:27,823] __main__ [frameAnalisisIndividual Linea : 346] --> El siguiente legajo (2024) no se encuentra en la BD
+INFO :[2020-12-04 10:02:27,843] __main__ [limpiezaDeRegistros Linea : 374] --> Limpiando registros
+INFO :[2020-12-04 10:02:27,843] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 10:02:32,463] analizador [informeNoFichadas Linea : 1566] --> Comenzando escritura en el word
+ERROR :[2020-12-04 10:02:32,482] analizador [informeNoFichadas Linea : 1671] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 1644, in informeNoFichadas
+    if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+UnboundLocalError: local variable 'hora_egreso_anterior' referenced before assignment
+
+INFO :[2020-12-04 10:16:19,940] __main__ [fechasDeCalculo Linea : 36] --> Registrando fechas
+INFO :[2020-12-04 10:16:35,670] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 10:16:35,728] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:36,004] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:36,258] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:36,449] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+WARNING :[2020-12-04 10:16:36,719] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (375) no se encuentra en la BD
+INFO :[2020-12-04 10:16:36,740] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:36,903] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:37,037] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:37,486] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:37,816] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:37,908] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:38,036] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:38,216] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:38,326] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:38,466] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:38,636] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:38,756] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:38,876] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:39,086] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+WARNING :[2020-12-04 10:16:39,258] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (616) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:39,336] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (631) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:39,481] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (646) no se encuentra en la BD
+INFO :[2020-12-04 10:16:39,656] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+WARNING :[2020-12-04 10:16:39,766] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (658) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:39,786] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (659) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:39,946] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (671) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:39,996] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (675) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:40,076] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (680) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:40,116] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (682) no se encuentra en la BD
+INFO :[2020-12-04 10:16:40,136] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:40,176] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+WARNING :[2020-12-04 10:16:40,226] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (689) no se encuentra en la BD
+INFO :[2020-12-04 10:16:40,256] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:40,316] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+INFO :[2020-12-04 10:16:40,396] __main__ [logicaRotativos Linea : 246] --> El siguiente legajo ({}) No paso las validaciones, se las castea en cero.
+WARNING :[2020-12-04 10:16:40,476] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (699) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:40,486] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (700) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:40,496] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (704) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:40,516] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (2021) no se encuentra en la BD
+WARNING :[2020-12-04 10:16:40,526] __main__ [frameAnalisisIndividual Linea : 343] --> El siguiente legajo (2024) no se encuentra en la BD
+INFO :[2020-12-04 10:16:40,546] __main__ [limpiezaDeRegistros Linea : 371] --> Limpiando registros
+INFO :[2020-12-04 10:16:40,546] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2020-12-04 10:16:45,170] analizador [informeNoFichadas Linea : 1566] --> Comenzando escritura en el word
+ERROR :[2020-12-04 10:16:45,190] analizador [informeNoFichadas Linea : 1671] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 1644, in informeNoFichadas
+    if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+UnboundLocalError: local variable 'hora_egreso_anterior' referenced before assignment
+
