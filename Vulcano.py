@@ -21,6 +21,7 @@ from datetime import timedelta
 import datetime
 import openpyxl
 from openpyxl.styles import PatternFill
+from openpyxl.worksheet.datavalidation import DataValidation
 
 logging.config.fileConfig('logger.ini', disable_existing_loggers=False)
 logger = logging.getLogger(__name__)
@@ -29,8 +30,22 @@ logger = logging.getLogger(__name__)
 from paths import(nombreInformeNoFichadasWord,nombreInformeNoFichadasPDF,pathInformesNoFichadas,
 pathInformesFaltasTardanzas,
 nombreInformeFaltasTardanzasWord,
-nombreInformeFaltasTardanzasPDF)
+nombreInformeFaltasTardanzasPDF,
+valoresListaDesplegable)
 
+def agregadoListaDesplegable(pathToExcel,valores=[]):
+    
+    dv = DataValidation(type="list", formula1=valores,allow_blank=True)
+    dv.error ='El motivo ingreso no esta permitido'
+    dv.errorTitle = 'Motivo incorrecto'
+    dv.prompt = 'Seleccione uno de los motivos siguientes'
+    dv.promptTitle = 'Motivos'
+    
+    wb = openpyxl.load_workbook(pathToExcel)
+    ws = wb.active
+    ws.add_data_validation(dv)
+    dv.add('O1:O1048576')
+    wb.save(pathToExcel)
 
 def fechasDeCalculo():
     logger.info("Registrando fechas")
@@ -81,7 +96,7 @@ def ingreso_egreso(line,frame,legajo,nombre):
             # turno = pyip.inputCustom(customValidationFunc=validador,prompt='Ingrese el turno del operario:\n1. Mañana\n2. Tarde\n3. Noche',
             #             postValidateApplyFunc=postValidacion)
             # turno = input('Seleccione un turno:\n1.Mañana\n2.Noche\n')
-        frame = frame.append({'Empleado':legajo,'Nombre':nombre,'Dia':line.split()[0],'Fecha':fecha,
+        frame = frame.append({'Legajo':legajo,'Nombre':nombre,'Dia':line.split()[0],'Fecha':fecha,
                                   'Ingreso_0':lista_final[0],'Egreso_0':lista_final[1],
                                   'Ingreso_1':lista_final[2],'Egreso_1':lista_final[3],
                                   'Ingreso_2':lista_final[4],'Egreso_2':lista_final[5],
@@ -95,9 +110,9 @@ def ingreso_egreso(line,frame,legajo,nombre):
         return None
 
 def creacionFrameVacio():
-    columnas = ['Empleado','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1',
+    columnas = ['Legajo','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1',
                         'Ingreso_2','Egreso_2','Ingreso_3','Egreso_3','Ingreso_4','Egreso_4',
-                        ]
+                        'Motivo','Observación']
     frame = pd.DataFrame(columns=columnas)
     return frame
 
@@ -122,14 +137,17 @@ def empleadosFrame():
     
 
 def insercionBD(managerSQL,frame,query):
+    print(' 3 Columnas: \n',frame.columns)
     logger.info('Insertando registros en la BD')
     for index, row in frame.iterrows():
-        queryInsercion = query.format(row['Empleado'],row['Nombre'], row['Dia'],str(row['Fecha']),
+        queryInsercion = query.format(row['Legajo'],row['Nombre'], row['Dia'],str(row['Fecha']),
           str(row['Ingreso_0']),str(row['Egreso_0']),
           str(row['Ingreso_1']),str(row['Egreso_1']),
           str(row['Ingreso_2']),str(row['Egreso_2']),
           str(row['Ingreso_3']),str(row['Egreso_3']),
-          str(row['Ingreso_4']),str(row['Egreso_4']))
+          str(row['Ingreso_4']),str(row['Egreso_4']),
+          str(row['Motivo']),str(row['Observación']))
+        print('Query: ',queryInsercion)
         managerSQL.executeQuery(managerSQL.conexion(),queryInsercion) 
 
 def insercionBDLegajos(managerSQL,legajo,nombre,apellido,area,pago,query):
@@ -300,7 +318,7 @@ def coloreadorExcel(pathExcel):
     my_green = openpyxl.styles.colors.Color(rgb="0000FF00")
     my_fillGreen = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_green)
     
-    for indice,rows in enumerate(ws.iter_rows(min_row=2, min_col=15,max_col=15)): #itera sobre la columna H.Norm
+    for indice,rows in enumerate(ws.iter_rows(min_row=2, min_col=17,max_col=17)): #itera sobre la columna H.Norm
         for celda in rows:#Por cada celda en la fila
             if celda.value == 0:
                 valor = indice + 2 # valor de la fila desde el princio del archivo, +2 (+1 por las columnas, y +1 porque excel arranca a contar desde 1 y no 0)
@@ -310,11 +328,11 @@ def coloreadorExcel(pathExcel):
                 cero = pd.to_datetime(('{} {}').format(fecha,'00:00'))
 
                 if columnaCuatro == cero and columnaCinco == cero:
-                    for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=17):
+                    for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=19):
                         for celda in idx:
                             celda.fill = my_fillGreen
                 else:
-                    for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=17):
+                    for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=19):
                         for celda in idx:
                             celda.fill = my_fill
 
@@ -348,13 +366,13 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
     
    
 
-    legajos = frame['Empleado'].unique()
+    legajos = frame['Legajo'].unique()
     frameAnalisis = creacionFrameVacio()
     frameRechazados = creacionFrameVacio()
 
     for legajo in legajos:
 
-        newFrame = frame[frame['Empleado']==legajo]#legajo es un STRaa
+        newFrame = frame[frame['Legajo']==legajo]#legajo es un STRaa
         try:
             area = frameQuerido.loc[int(legajo),'AREA']
         except:
@@ -367,7 +385,9 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
                 mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
                 newFrame = newFrame.loc[mascara].copy()
                 limpiador = Analizador(frameEnAnalisis=newFrame,fechaInicio = fechaInicio,fechaFin = fechaFin)
+                print(' 1 Columnas: ',newFrame.columns)
                 newFrame = limpiador.castMascara()
+                print(' 2 Columnas: ',newFrame.columns)
                 newFrame = newFrame.loc[mascara].copy()
                 frameAnalisis = frameAnalisis.append(newFrame)
             else:
@@ -376,7 +396,7 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
         except Exception as e:
              msg = 'El siguiente legajo ({}) No paso en sanitycheck, ni pudo ser casteado'.format(legajo)
              print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
-             frameRechazados = frameRechazados.append(frame[frame['Empleado']==legajo])
+             frameRechazados = frameRechazados.append(frame[frame['Legajo']==legajo])
              logger.warning(msg)
              logger.error(e)
 
@@ -393,7 +413,7 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         manager = ManagerSQL()
         legajosNoRotativos,frameQuerido = empleadosFrame()
     
-        legajosFrame = frame['Empleado'].unique()
+        legajosFrame = frame['Legajo'].unique()
 
         frameAnalisis = creacionFrameVacio()
         calculador = CalculadorHoras()
@@ -406,7 +426,7 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
                 logger.warning(msg)
                 print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
                 continue
-            newFrame = frame[frame['Empleado']==legajo].copy() 
+            newFrame = frame[frame['Legajo']==legajo].copy() 
             if int(legajo) in legajosNoRotativos:                           
                 frameCalculado = calculador.horasTrabajadas(newFrame)        
                 frameAnalisis = frameAnalisis.append(frameCalculado)
@@ -425,15 +445,19 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
         else:
             nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
             nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
+            frameAnalisis['Motivo'] = ''
+            frameAnalisis['Observación'] = ''
             try:
                 frameAnalisis.to_excel(nombre,index=False)
                 coloreadorExcel(nombre)
+                agregadoListaDesplegable(nombre,valores=valoresListaDesplegable)
             except PermissionError:
                 msg = '--El archivo {} esta abierto, tiene 30 segundos para cerrarlo.'.format(nombre)
                 print(msg)
                 sleep(30)
                 frameAnalisis.to_excel(nombre,index=False)
                 coloreadorExcel(nombre)
+                agregadoListaDesplegable(nombre,valores=valoresListaDesplegable)
                 
     except:
         logger.error("excepcion desconocida: %s", traceback.format_exc())
@@ -446,8 +470,9 @@ def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
     
     calculador = CalculadorHoras() 
     
-    legajos = frame['Empleado'].unique()
+    legajos = frame['Legajo'].unique()
     frameConErrores = creacionFrameVacio()
+    print(' 1 Columnas: \n',frame.columns)
     campo = 'H.Norm'#campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
     for legajo in legajos:
         try:
@@ -457,8 +482,8 @@ def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
             logger.warning(msg)
             continue
 
-        newFrame = frame[frame['Empleado']==legajo].copy() 
-
+        newFrame = frame[frame['Legajo']==legajo].copy() 
+        print(' 2 Columnas: \n',frame.columns)
         if int(legajo) in legajosNoRotativos:                           
             newFrame = calculador.horasTrabajadas(newFrame)        
         else:
@@ -467,14 +492,18 @@ def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
 
         len_noMarca = len(newFrame[newFrame[campo] == 0])
         
-        Ingreso_0 = newFrame['Ingreso_0']
-        Egreso_0 = newFrame['Egreso_0']
-        horaIngresoCero = list(Ingreso_0.dt.hour)
-        horaEgresoCero = list(Egreso_0.dt.hour)
+        Ingreso_0 = list(newFrame['Ingreso_0'])
+        Egreso_0 = list(newFrame['Egreso_0'])
+        fecha = list(newFrame['Fecha'])
+        print('FECHAS---->',fecha)
+        #horaIngresoCero = list(Ingreso_0.dt.hour)
+        #horaEgresoCero = list(Egreso_0.dt.hour)
 
         cuenta = 0
-        for x in range(len(horaIngresoCero)):
-            if horaIngresoCero[x] == 0 and horaEgresoCero[x] == 0:
+        for x in range(len(Ingreso_0)):
+            print('FECHA HOY <<<<<<: ',fecha[x],'  ',x)
+            ceroHoy = pd.to_datetime(('{} 00:00').format(fecha[x]))
+            if Ingreso_0[x] == ceroHoy and Egreso_0[x] == ceroHoy:
                 cuenta +=1
 
         len_noMarca = len_noMarca - cuenta
@@ -526,6 +555,7 @@ def actualizacionRegistros(fechaInicio,fechaFin):
             print('Aun persisten registros con errores, revisarlos y corregirlos para poder proceder.')
             frameConErrores.to_excel(nombre,index=False)
             coloreadorExcel(nombre)
+            agregadoListaDesplegable(nombre, valores = valoresListaDesplegable)
         
     except:
         logger.error("excepcion desconocida: %s", traceback.format_exc())
@@ -615,7 +645,8 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
                          'ingreso1':'Ingreso_1','egreso1':'Egreso_1',
                          'ingreso2':'Ingreso_2','egreso2':'Egreso_2',
                          'ingreso3':'Ingreso_3','egreso3':'Egreso_3',
-                         'ingreso4':'Ingreso_4','egreso4':'Egreso_4'}
+                         'ingreso4':'Ingreso_4','egreso4':'Egreso_4',
+                         'Motivo':'Motivo','Observación':'Observación'}
     calculador = CalculadorHoras() 
     manager = ManagerSQL()
     sql_conection = manager.conexion()
@@ -641,7 +672,8 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         frameCorregido = pd.read_sql(query,manager.conexion(),parse_dates=columnas)
         frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date# same above
         frameCorregido.rename(columns = columnasReemplazo,inplace=True)#same above
-        
+    
+    print(frameCorregido['Motivo'].values)    
     frameCorregido.drop(['id'],axis=1,inplace=True)  
     
     legajosNoRotativos,frameQuerido = empleadosFrame()
@@ -657,31 +689,38 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
             logger.warning(msg)
             continue
         newFrame = frameCorregido[frameCorregido['Legajo']==legajo].copy() 
+
         if int(legajo) in legajosNoRotativos:                           
             newFrame = calculador.horasTrabajadas(newFrame,mediosDias = mediosDias)
+            print('1 - HORAS TRAB: ',newFrame['H. 50'])
             newFrame = calculador.restaRetrasosTardanzas(newFrame,mediosDias = mediosDias)
+            print('2 - HORAS TRAB: ',newFrame['H. 50'])
             frameFinalCorregido = frameFinalCorregido.append(newFrame)
-            
+
             frameExtras = calculador.horasExtrasTrabajadas(newFrame,feriados=feriados,mediosDias = mediosDias)
+            print('3 - HORAS TRAB: ',newFrame['H. 50'])
             frameFinalExtras = frameFinalExtras.append(frameExtras)
+
         else:
             newFrame = calculador.horasTrabajadasRotativos(newFrame,area,mediosDias = mediosDias)
-            frameFinalCorregido = frameFinalCorregido.append(newFrame)
-            
+            frameFinalCorregido = frameFinalCorregido.append(newFrame)            
             frameExtras = calculador.horasExtrasTrabajadasRotativos(newFrame,area,feriados=feriados,mediosDias = mediosDias)
             frameFinalExtras = frameFinalExtras.append(frameExtras)
   
     if frameFinalCorregido.empty:
         print('No hay registros sobre los cuales trabajar\n')
     else:
-        frameFinalCorregido.drop(['Empleado'],axis=1,inplace=True)
-        frameFinalExtras.drop(['Empleado'],axis=1,inplace=True)
+
+        # frameFinalCorregido.drop(['Legajo'],axis=1,inplace=True)
+        # frameFinalExtras.drop(['Legajo'],axis=1,inplace=True)
         archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al EXCEL: \n',
                                 customValidationFunc=validador)
         print('\n')
         nombre = os.path.join(os.getcwd(),pathExcelInforme,archivo)
         nombre = nombre+ '.xlsx'
         frameFinalExtras = frameFinalExtras.sort_values(by=['Legajo','Fecha'])
+        
+        
         frameFinalExtras.to_excel(nombre,sheet_name='Registros',index=False)
         
         book = load_workbook(nombre)

@@ -28,6 +28,8 @@ pathExcelInforme = 'Archivos de trabajo\Informes\Excel'
 rotativosInyeccion = ['INYECCION','MECANIZADO','ALUMINIO']
 rotativosSoplado = ['SOPLADO']
 
+valoresListaDesplegable = '"Enfermedad,Personal,Otro"'
+
 if __name__ == '__main__':
     pass
 

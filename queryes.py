@@ -30,8 +30,8 @@ queryTabla = """ CREATE TABLE IF NOT EXISTS REGISTROS (
 
 queryConsultaEmpleados = """SELECT * FROM LEGAJOS """
 
-insertRegistros = """INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4)
-VALUES ('{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}');"""
+insertRegistros = """INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}','{}');"""
 
 selectAll = """SELECT * from REGISTROS where fecha >= '{}' AND fecha <= '{}' order by fecha ASC"""
 selectSome = """SELECT * from REGISTROS where (fecha >= '{}' AND fecha <= '{}') and (legajo in {}) order by fecha ASC"""
