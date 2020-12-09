@@ -8,12 +8,14 @@ import numpy as np
 import win32com.client
 import docx
 import colorama
-colorama.init()
+
 
 from paths import empleados_text,pathExcelTemporal,nombreExcelTemporal,pathExcelInforme,pathTXT,areas,formaDePago,rotativosInyeccion,rotativosSoplado
 from analizador import Analizador,CalculadorHoras,informeNoFichadas,ingresoNoFichadas
 from createDB import ManagerSQL
-from queryes import queryConsultaEmpleados,insertRegistros,selectAll,selectSome,insertEmpleado,deleteEmpleado,actualizarEmpleado
+from queryes import (queryConsultaEmpleados,insertRegistros,selectAll,
+                     selectSome,insertEmpleado,deleteEmpleado,
+                     actualizarEmpleado,selectDeleteRegistro,updateRegistro)
 from openpyxl import load_workbook
 from time import sleep
 from termcolor import colored
@@ -32,6 +34,75 @@ pathInformesFaltasTardanzas,
 nombreInformeFaltasTardanzasWord,
 nombreInformeFaltasTardanzasPDF,
 valoresListaDesplegable)
+
+colorama.init()
+
+def updateRegistroQuery(managerSQL,campo,fechaHora,legajo,fecha):
+    
+    queryInsercion = updateRegistro.format(campo,fechaHora,legajo,fecha)
+    managerSQL.executeQuery(managerSQL.conexion(),queryInsercion)
+    
+
+def actualizaLinea(linea,cantidad):
+    parametrosLista = ['ingreso0','egreso0',
+                'ingreso1','egreso1',
+                'ingreso2','egreso2',
+                'ingreso3','egreso3',
+                'ingreso4','egreso4']
+    parametro = []
+    for x in range(cantidad):
+        parametro.append(parametrosLista[x])
+        
+    campo = pyip.inputMenu(parametro,prompt='¿Que campo desea actualizar ?\n',lettered=True)
+    fecha = pyip.inputDate('Ingrese la fecha a actualizar DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+    hora = str(pyip.inputDatetime('Ingrese horario en formato HH:MM: ',formats=["%H:%M"]))                               
+
+    hora = hora.split()[1]
+    hora = hora.split(':')[0]+':'+hora.split(':')[1]
+    fechaHora = pd.to_datetime(('{} {}').format(fecha,str(hora)))
+    return campo,fechaHora    
+    
+
+def coloreadorRegistroModificar(linea,fecha):
+    ingresoColor = colored('Ingreso: ','green',attrs=['bold','dark','underline']) #Se les asigna color y subrayado a las palabras ingreso-egreso
+    egresoColor = colored('Egreso: ','red',attrs=['bold','dark','underline'])
+    
+    cero = pd.to_datetime(('{} 00:00').format(fecha))
+    cantidad = 0
+    for horario in range(4,12,2):#Itera sobre los registros con error y los imprime
+                                
+        ingreso = linea.iloc[0,horario]
+        egreso = linea.iloc[0,horario +1]
+                                   
+        if egreso != cero:
+            cantidad +=2
+            print(('    {} {}').format(ingresoColor,str(ingreso))+'      '+('{} {}').format(egresoColor,str(egreso))+'\n') 
+        else:                                
+            break
+    return cantidad
+
+def edicionRegistros(manager,query,fecha,legajo): 
+    
+    columnas = ['fecha','ingreso0','egreso0',
+                'ingreso1','egreso1',
+                'ingreso2','egreso2',
+                'ingreso3','egreso3',
+                'ingreso4','egreso4']
+    columnasReemplazo = {'legajo':'Legajo','nombre':'Nombre',
+                         'dia':'Dia','fecha':'Fecha',
+                         'ingreso0':'Ingreso_0','egreso0':'Egreso_0',
+                         'ingreso1':'Ingreso_1','egreso1':'Egreso_1',
+                         'ingreso2':'Ingreso_2','egreso2':'Egreso_2',
+                         'ingreso3':'Ingreso_3','egreso3':'Egreso_3',
+                         'ingreso4':'Ingreso_4','egreso4':'Egreso_4',
+                         'Motivo':'Motivo','Observación':'Observación'}
+    
+    query = selectDeleteRegistro.format(fecha,legajo)# query select *
+    lineaCorregir = pd.read_sql(query,manager.conexion(),parse_dates=columnas)
+    lineaCorregir['fecha'] = pd.to_datetime(lineaCorregir['fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01    
+    lineaCorregir.rename(columns = columnasReemplazo,inplace=True)
+    lineaCorregir.drop(['id'],axis=1,inplace=True)
+    return lineaCorregir
 
 def agregadoListaDesplegable(pathToExcel,valores=[]):
     
@@ -282,9 +353,9 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
         print(msg,'\n')
         msg2 ='El siguiente legajo ({}) No paso las validaciones, se las castea en cero.'.format(legajo)
         logger.info(msg2)
-        newFrame = limpiador.castMascara()
+        newFrame = limpiador.castMascara(area=area)
         newFrame = limpiador.limpiador(area=area)
-        newFrame = limpiador.castMascara()
+        newFrame = limpiador.castMascara(area=area)
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
         newFrame = newFrame.loc[mascaraNewFrame].copy()
 
@@ -384,10 +455,10 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
             if int(legajo) in legajosNoRotativos:                
                 mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
                 newFrame = newFrame.loc[mascara].copy()
+                print('---->: ',newFrame)
                 limpiador = Analizador(frameEnAnalisis=newFrame,fechaInicio = fechaInicio,fechaFin = fechaFin)
-                print(' 1 Columnas: ',newFrame.columns)
-                newFrame = limpiador.castMascara()
-                print(' 2 Columnas: ',newFrame.columns)
+                newFrame = limpiador.castMascara(area)
+                print('---->: ',newFrame)
                 newFrame = newFrame.loc[mascara].copy()
                 frameAnalisis = frameAnalisis.append(newFrame)
             else:
@@ -653,7 +724,8 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
     informes = ['Todos los legajos','Algunos legajos']
     respuesta = pyip.inputMenu(informes,prompt='Seleccione alguno de los informes disponibles: \n',
                                lettered=True)
-    #=====================CUIDADO SOLO ESTA FUNCIONANDO PARA LOS LEGAJOS BUENOS, NO PARA LOS OTROS===================
+    
+    
     print('\n')
     if respuesta == 'Todos los legajos':        
         query = selectAll.format(fechaInicio,fechaFin)# query select *
@@ -672,8 +744,7 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         frameCorregido = pd.read_sql(query,manager.conexion(),parse_dates=columnas)
         frameCorregido['fecha'] = pd.to_datetime(frameCorregido['fecha']).dt.date# same above
         frameCorregido.rename(columns = columnasReemplazo,inplace=True)#same above
-    
-    print(frameCorregido['Motivo'].values)    
+       
     frameCorregido.drop(['id'],axis=1,inplace=True)  
     
     legajosNoRotativos,frameQuerido = empleadosFrame()
@@ -692,13 +763,13 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
 
         if int(legajo) in legajosNoRotativos:                           
             newFrame = calculador.horasTrabajadas(newFrame,mediosDias = mediosDias)
-            print('1 - HORAS TRAB: ',newFrame['H. 50'])
+
             newFrame = calculador.restaRetrasosTardanzas(newFrame,mediosDias = mediosDias)
-            print('2 - HORAS TRAB: ',newFrame['H. 50'])
+
             frameFinalCorregido = frameFinalCorregido.append(newFrame)
 
             frameExtras = calculador.horasExtrasTrabajadas(newFrame,feriados=feriados,mediosDias = mediosDias)
-            print('3 - HORAS TRAB: ',newFrame['H. 50'])
+
             frameFinalExtras = frameFinalExtras.append(frameExtras)
 
         else:
@@ -1121,7 +1192,7 @@ class Motor:
         tareas = ['Ordenado de registros','Creación de informes','Gestion de Base de datos','Salir']
         tareasOrdenado = ['Limpieza de registros','Actualización de registros','Volver','Salir']
         tareasInformes = ['Ingreso de fechas','Volver','Salir']
-        tareasBD = ['Insertar registro','Actualizar registro','Eliminar registro','Descargar','Volver','Salir']
+        tareasBD = ['Insertar empleado','Actualizar empleado','Eliminar empleado','Modificar Registro','Descargar','Volver','Salir']
         
         continuar = True
         
@@ -1138,7 +1209,11 @@ class Motor:
                     ordenadoRespuesta = pyip.inputMenu(tareasOrdenado,prompt='\n¿Que desea hacer?\n',lettered=True)
                     print('\n')                
                     if ordenadoRespuesta == 'Limpieza de registros':
-                        fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                        
+                        decision = False
+                        while not decision:
+                            fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                            decision = repreguntar()
                         frame = frameFichadas()
                         
                         if frame.empty:
@@ -1149,12 +1224,17 @@ class Motor:
                             print('\nRegistros errones y duplicados eliminados, excel a completar creado.\n')
                             
                     elif ordenadoRespuesta == 'Actualización de registros':
-                        fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                        
+                        decision = False
+                        while not decision:
+                            fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                            decision = repreguntar()
                         actualizacionRegistros(fechaInicio,fechaFin)
                         
                     elif ordenadoRespuesta == 'Volver':
                         print('Volviendo al PRIMER MENU')
-                        continuarOrdenado = False                    
+                        continuarOrdenado = False 
+                        
                     elif ordenadoRespuesta == 'Salir':
                         continuarOrdenado = False
                         continuar = False
@@ -1165,10 +1245,13 @@ class Motor:
                     informesRespuesta = pyip.inputMenu(tareasInformes,prompt='\n¿Que desea hacer?\n',lettered=True)
                     print('\n')
                     if informesRespuesta == 'Ingreso de fechas':
-                        fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                        decision = False
+                        while not decision:
+                            fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
+                            decision = repreguntar()
                         frameCorregido = seleccionInformes(fechaInicio, fechaFin,feriados = feriados,mediosDias= mediosDias)
                         if frameCorregido.empty:
-                            pass 
+                            pass #Internamente ya hay un msj
                         else:
                             informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
                                     feriados=feriados,medioDias = mediosDias)
@@ -1189,8 +1272,8 @@ class Motor:
                     
                     baseDeDatosRespuesta = pyip.inputMenu(tareasBD,prompt='\n¿Que desea hacer?\n',lettered=True)
                     print('\n')
-                    ['Insertar registro','Actualizar registro','Eliminar registro','Descargar','Volver','Salir']
-                    if baseDeDatosRespuesta == 'Insertar registro':
+                    ['Insertar empleado','Actualizar empleado','Eliminar empleado','Modificar registro','Descargar','Volver','Salir']
+                    if baseDeDatosRespuesta == 'Insertar empleado':
                         
                         decision = False
                         while not decision:
@@ -1202,7 +1285,7 @@ class Motor:
                         insercionBDLegajos(managerSQL, legajo, nombre, apellido, area, pago, insertEmpleado)
                         continuarGestionBD = True                
                     
-                    elif baseDeDatosRespuesta == 'Actualizar registro':
+                    elif baseDeDatosRespuesta == 'Actualizar empleado':
                         
                         campos = ['LEG','APELLIDO','NOMBRE','AREA','TIPO_DE_PAGO']
                         decision = False
@@ -1216,7 +1299,7 @@ class Motor:
                         print('\n')
                         continuarGestionBD = True
                     
-                    elif baseDeDatosRespuesta == 'Eliminar registro':
+                    elif baseDeDatosRespuesta == 'Eliminar empleado':
                         
                         decision = False
                         while not decision:
@@ -1226,6 +1309,30 @@ class Motor:
                         managerSQL = ManagerSQL()
                         deleteBDLegajos(managerSQL, legajo, deleteEmpleado)     
                         continuarGestionBD = True
+                        
+                    elif baseDeDatosRespuesta == 'Modificar Registro':
+                        
+                        decision = False
+                        while not decision:
+                            legajo = pyip.inputInt(prompt='Ingrese el LEGAJO:\n',min=0)
+                            fecha = pyip.inputDate('Ingrese la fecha a actualizar DD/MM/AAAA: ',formats=["%d/%m/%Y"])
+                            decision = repreguntar()
+                        print('\n')
+                        managerSQL = ManagerSQL()
+                        registro = edicionRegistros(managerSQL,selectDeleteRegistro, fecha, legajo)
+                        if registro.empty:
+                            print('\n No existen registros para esa fecha y legajo\n')
+                        else:
+                            cantidad = coloreadorRegistroModificar(registro, fecha)
+                            campo,fechaHora = actualizaLinea(registro, cantidad)
+                            updateRegistroQuery(managerSQL, campo, fechaHora, legajo, fecha)
+                            registro = edicionRegistros(managerSQL,selectDeleteRegistro, fecha, legajo)
+                            print('Nuevo registro: \n')
+                            cantidad = coloreadorRegistroModificar(registro, fecha)                           
+
+
+                        continuarGestionBD = True
+                    
                         
                     elif baseDeDatosRespuesta == 'Descargar':
                         

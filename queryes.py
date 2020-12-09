@@ -47,9 +47,11 @@ SET {} = '{}'
 WHERE LEG = '{}'
 """
 
-# UPDATE REGISTROS
-# SET 'ingreso0' = '2020-10-01 06:32:00'
-# WHERE legajo = '6' and fecha = '2020-10-01'
+selectDeleteRegistro = """SELECT * FROM Registros WHERE fecha ='{}' AND legajo = '{}'"""
+
+updateRegistro = """UPDATE REGISTROS
+SET '{}' = '{}'
+WHERE legajo = '{}' and fecha = '{}'"""
 
 # select * from REGISTROS
 # WHERE legajo = '6' and fecha = '2020-10-01'
