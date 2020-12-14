@@ -11,7 +11,9 @@ nombreInformeFaltasTardanzasWord,
 nombreInformeFaltasTardanzasPDF,
 rotativosInyeccion,
 rotativosSoplado)
+from queryes import queryConsultaEmpleados
 from datetime import timedelta
+from createDB import ManagerSQL
 
 import logging.config
 import traceback
@@ -159,10 +161,14 @@ class Analizador:
                                     
                                     if (turnoNocheIngreso - timedelta(hours=5)) <= self.frameEnAnalisis.iloc[renglon,posicion] <= (turnoNocheIngreso + timedelta(hours=5)) :
                                         if self.frameEnAnalisis.iloc[renglon +1,posicion] >= turnoMañanaIngresoTomorrow:
+                                            print('---->Condicion A',self.frameEnAnalisis.iloc[renglon,0])
                                             self.frameEnAnalisis.iloc[renglon+ 1,posicion+ 2] = self.frameEnAnalisis.iloc[renglon+ 1,posicion+ 1]
                                             self.frameEnAnalisis.iloc[renglon+ 1,posicion+ 1] = self.frameEnAnalisis.iloc[renglon+ 1,posicion]
                                             self.frameEnAnalisis.iloc[renglon+ 1,posicion] = self.frameEnAnalisis.iloc[renglon,posicion]
                                             self.frameEnAnalisis.iloc[renglon,posicion] = cero
+                                            
+                                            if str(self.fechaFin) == str(fecha):
+                                                self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
                                             
                                                 
                                             break
@@ -170,10 +176,14 @@ class Analizador:
                                     elif (turnoTardeIngreso - timedelta(hours=2)) <= self.frameEnAnalisis.iloc[renglon,posicion] <= (turnoTardeIngreso + timedelta(hours=2)):
                                        
                                         if  (turnoTardeEgreso - timedelta(hours=2)) <= self.frameEnAnalisis.iloc[renglon+ 1,posicion] <= (turnoTardeEgreso + timedelta(hours=2)):
+                                            print('---->Condicion B',self.frameEnAnalisis.iloc[renglon,0])
                                             self.frameEnAnalisis.iloc[renglon,posicion +1] = self.frameEnAnalisis.iloc[renglon+ 1,posicion]
                                             self.frameEnAnalisis.iloc[renglon+ 1,posicion] = self.frameEnAnalisis.iloc[renglon+ 1,posicion + 1]
                                             self.frameEnAnalisis.iloc[renglon+ 1,posicion +1] = self.frameEnAnalisis.iloc[renglon+ 1,posicion + 2]
                                             self.frameEnAnalisis.iloc[renglon+ 1,posicion + 2] = ceroMañana
+                                            
+                                            if str(self.fechaFin) == str(fecha):
+                                                self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
                                             
                                         else:
                                             break
@@ -189,29 +199,51 @@ class Analizador:
                                 if self.frameEnAnalisis.iloc[renglon,posicion] > turnoMañanaIngreso and \
                                     (self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso + timedelta(hours=3)) or \
                                      self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):  
-                                        
+                                        print('---->Condicion 1',self.frameEnAnalisis.iloc[renglon,0])
                                         self.frameEnAnalisis.iloc[renglon,posicion+ 2] = self.frameEnAnalisis.iloc[renglon,posicion+ 1]
                                         self.frameEnAnalisis.iloc[renglon,posicion+ 1] = self.frameEnAnalisis.iloc[renglon,posicion]
-                                        self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion +1]
-                                        self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
+                                        print(self.frameEnAnalisis.iloc[renglon- 1,posicion +1],self.frameEnAnalisis.iloc[renglon- 1,posicion])
+                                        print(ceroAyer)
+                                        if self.frameEnAnalisis.iloc[renglon- 1,posicion +1] == ceroAyer:
+
+                                            if self.frameEnAnalisis.iloc[renglon- 1,posicion] > (turnoTardeIngresoAyer + timedelta(hours=3)):
+                                                self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion]
+                                                self.frameEnAnalisis.iloc[renglon- 1,posicion]= cero
+                                                print(self.frameEnAnalisis.iloc[renglon,posicion])
+                                                print(self.frameEnAnalisis.iloc[renglon- 1,posicion])
+                                        else:
+                                            self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion+ 1]
+                                            self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
+                                        
+                                        if str(self.fechaFin) == str(fecha):
+                                            self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero    
                                         break
                                 else:
                     
                                     if turnoNocheIngreso - timedelta(days=1) < self.frameEnAnalisis.iloc[renglon,posicion] < turnoMañanaIngreso - timedelta(hours=3) and \
                                     (self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso - timedelta(hours=2)) or \
                                       self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):  
+                                        print('---->Condicion 2',self.frameEnAnalisis.iloc[renglon,0])
+                                        # self.frameEnAnalisis.iloc[renglon,posicion+ 2] = self.frameEnAnalisis.iloc[renglon,posicion+ 1]
+                                        # self.frameEnAnalisis.iloc[renglon,posicion+ 1] = self.frameEnAnalisis.iloc[renglon,posicion]
+                                        # self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion +1]
+                                        # self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
                                         
-                                        self.frameEnAnalisis.iloc[renglon,posicion+ 2] = self.frameEnAnalisis.iloc[renglon,posicion+ 1]
-                                        self.frameEnAnalisis.iloc[renglon,posicion+ 1] = self.frameEnAnalisis.iloc[renglon,posicion]
-                                        self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion +1]
-                                        self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
-                                        print('BRITOS ANDA PASANDO')
+                                        self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon,posicion +1]
+                                        # self.frameEnAnalisis.iloc[renglon,posicion+ 2] = self.frameEnAnalisis.iloc[renglon,posicion+ 1]
+                                        self.frameEnAnalisis.iloc[renglon,posicion+ 1] = self.frameEnAnalisis.iloc[renglon +1,posicion]
+                                        
+                                        # self.frameEnAnalisis.iloc[renglon- 1,posicion]= cero
+                                        
+                                        if str(self.fechaFin) == str(fecha):
+                                            self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero    
+                                        
                             
                             else:
                                 if self.frameEnAnalisis.iloc[renglon,posicion] > turnoMañanaIngreso and \
                                     (self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso + timedelta(hours=3)) or \
                                      self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):  
-                                        
+                                        print('---->Condicion 3',self.frameEnAnalisis.iloc[renglon,0])
                                         self.frameEnAnalisis.iloc[renglon,posicion+ 2] =  self.frameEnAnalisis.iloc[renglon,posicion+ 1]
                                         self.frameEnAnalisis.iloc[renglon,posicion +1] = self.frameEnAnalisis.iloc[renglon,posicion]
                                         self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion+ 2]
@@ -226,7 +258,7 @@ class Analizador:
                                     (self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso - timedelta(hours=2)) or \
                                       self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):  
                                         
-                                        
+                                        print('---->Condicion 4',self.frameEnAnalisis.iloc[renglon,0])
                                         self.frameEnAnalisis.iloc[renglon,posicion+ 2] = self.frameEnAnalisis.iloc[renglon,posicion+ 1]
                                         self.frameEnAnalisis.iloc[renglon,posicion+ 1] = self.frameEnAnalisis.iloc[renglon,posicion]
                                         self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion +2]
@@ -234,9 +266,10 @@ class Analizador:
                                         
                                         if str(self.fechaFin) == str(fecha):
                                             self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
-                                        print('BRITOS ANDA PASANDO 2')
+           
                                         break
-                                        
+                    
+                 
                                 
 
                                         
@@ -332,8 +365,23 @@ class Analizador:
                                             
                                             self.frameEnAnalisis.iloc[renglon,posicion+ 2] = self.frameEnAnalisis.iloc[renglon,posicion+ 1]
                                             self.frameEnAnalisis.iloc[renglon,posicion+ 1] = self.frameEnAnalisis.iloc[renglon,posicion]
-                                            self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion +1]
-                                            self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
+                                            if self.frameEnAnalisis.iloc[renglon- 1,posicion +1] == ceroAyer:
+
+                                                if self.frameEnAnalisis.iloc[renglon- 1,posicion] > (turnoTardeIngresoAyer + timedelta(hours=3)):
+                                                    self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion]
+                                                    self.frameEnAnalisis.iloc[renglon- 1,posicion]= cero
+                                                    print(self.frameEnAnalisis.iloc[renglon,posicion],'AAAA')
+                                                    print(self.frameEnAnalisis.iloc[renglon- 1,posicion])
+                                                else:
+                                                    self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion+ 1]
+                                                    self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
+                                        
+                                            if str(self.fechaFin) == str(fecha):
+                                                self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero    
+                                            
+                                            
+                                            # self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion +1]
+                                            # self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
                                             break
                                 
                                 else:
@@ -349,7 +397,8 @@ class Analizador:
                                             if str(self.fechaFin) == str(fecha):
                                                 self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
                                             
-                                            break
+                                            break                  
+                                        
         
         self.frameEnAnalisis = self.borradoCeros()
         return self.frameEnAnalisis
@@ -697,7 +746,7 @@ class CalculadorHoras:
                 for x in range(5,15,2):
                     if frame.iloc[fila,x] ==  ceroHoy:
                         salidaOperario = frame.iloc[fila,x -2]
-                        print('-------->',salidaOperario, frame.iloc[fila,0])
+                        
                         break
                 fechaSalidaOperarios = salidaOperario.date()
                 # print(feriados,'     ',fechaIngreso,'   ',fechaSalidaOperarios, fechaIngreso in feriados )
@@ -1349,8 +1398,7 @@ class CalculadorHoras:
     
     def horasTrabajadas(self,frame,mediosDias=[]):
         import pandas as pd
-        print('\nINGRESO frame: ',frame['Motivo'].values)
-        print('\nCOLUMNAS frame: ',frame.columns)
+        
         orden = ['Legajo', 'Nombre', 'Dia', 'Fecha', 'Ingreso_0', 'Egreso_0',
        'Ingreso_1', 'Egreso_1', 'Ingreso_2', 'Egreso_2', 'Ingreso_3',
        'Egreso_3', 'Ingreso_4', 'Egreso_4','Motivo', 'Observación',
@@ -1362,7 +1410,7 @@ class CalculadorHoras:
             frame['H. 50'] = 0
             frame['H. 100'] = 0
             frame = frame[orden]
-        print('\nCOLUMNAS frame: ',frame.columns)
+        
         ingreso = '08:00'
         salida = '16:48'
         horaSalidaSabado = '13:00'
@@ -1417,7 +1465,7 @@ class CalculadorHoras:
                 
                 # msg = 'Contabilizando horas dias normales, se trabajo {}'.format(horas_trabajadas)
                 # logger.info(msg)
-        print('\nEGRESO frame: ',frame['Motivo'].values) 
+        
         return frame
     
 
@@ -1515,7 +1563,7 @@ class CalculadorHoras:
     def restaRetrasosTardanzas(self,frame,mediosDias=[]):
         
         logger.info('Iniciando resta de minutos tardes')
-        print('\n\nRecepcion frame: ',frame['Motivo'].values)
+        
         for x in range(len(frame)):
                 legajo = frame.iloc[x,0]
                 nombre = frame.iloc[x,1]
@@ -1563,7 +1611,7 @@ class CalculadorHoras:
                 
                                
                 frame.iloc[x,16] = horas_trabajadas
-        print('Salida frame: ',frame['Motivo'].values)    
+          
         return frame
 
 def repreguntar():
@@ -1573,6 +1621,25 @@ def repreguntar():
         return True
     else:
         return False
+
+def empleadosFrame():
+    
+    manager = ManagerSQL()
+    sql_conection = manager.conexion()
+    consultaEmpleados = pd.read_sql(queryConsultaEmpleados,sql_conection)
+
+    
+    legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
+                                                &(consultaEmpleados['AREA'] != 'SOPLADO') 
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
+                                                & (consultaEmpleados['AREA'] != 'ALUMINIO')] 
+    legajosNoRotativos = legajosNoRotativos['LEG'].unique()
+    legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
+
+    frameQuerido =pd.DataFrame(consultaEmpleados.loc[:,['LEG','AREA']].drop_duplicates().values,columns=['LEG','AREA'])
+    frameQuerido.set_index(['LEG'],inplace=True)
+    
+    return legajosNoRotativos,frameQuerido
     
 def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):    
         """
@@ -1602,92 +1669,177 @@ def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         try:
             logger.info('Comenzando escritura en el word')
             campo = 'H.Norm' #campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
-            len_noMarca = len(frame[frame[campo] == 0]) #Devuelve la cantidad de filas a las que no se le calculo
+            
             #horas trabajasdas debido a un error en los registros (faltan datos)
             doc = docx.Document()
             doc.add_heading(('Olvidos de fichaje entre {} y {}').format(fechaInicio,fechaFin), 0)
-            c = doc.add_paragraph('Personal que no ha fichado: \n')
             msgWord = '\n\tEl dia {} ({}) el empleado {:10s} no ficho {}, {} a las {}.'
             ingreso = 'ingreso'
             reIngreso = 're-ingreso'
             salida = 'salida'
             almuerzo = salida+' o '+reIngreso
             
-            for x in range(len_noMarca):
-                legajo = frame.iloc[frame[frame[campo] == 0].index[x],0]
-                nombre = frame.iloc[frame[frame[campo] == 0].index[x],1]
-                dia = frame.iloc[frame[frame[campo] == 0].index[x],2]
-                fecha = frame.iloc[frame[frame[campo] == 0].index[x],3]            
-                #----------------- limites horarios -------------------
-                cero = pd.to_datetime(('{} 00:00').format(fecha))
-                salidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
-                mitadMañana = pd.to_datetime(('{} 10:30').format(fecha))
-                treceHoras = pd.to_datetime(('{} 13:00').format(fecha))
+            legajosNoRotativos,frameQuerido = empleadosFrame()
+            
+            legajosNoMarca = frame[frame[campo] == 0]
+            
+            legajosSinMarca = legajosNoMarca['Legajo'].unique()
+
+            
+            for legajo in legajosSinMarca:
+                newFrame = frame[frame['Legajo']==legajo].copy()
+                nombre = newFrame.iloc[0,1]
+                newFrame = newFrame.reset_index(drop=True)
+
+                indexNoMarca = list(newFrame[newFrame[campo] == 0].index) # Devuelve el indice de las filas donde no hay errores
+                indicesSinMarca = list(newFrame[newFrame[campo] == 0].index)
                 
-                
-                if dia in mediosDias: #Checkea que sea medio dia. Analisis diferente para dias completos y medios dias. 
-                    for posicion in range(4,14,2): #Itera sobre los ingresos/egresos
-                        hora_ingreso = frame.iloc[frame[frame[campo] == 0].index[x],posicion]
-                        hora_egreso = frame.iloc[frame[frame[campo] == 0].index[x],(posicion +1)]
-                        
-                        hora_ingresoHoras = '{:02d}:{:02d}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
-                        hora_salidaHoras = '{:02d}:{:02d}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
-                    
-                        if (hora_ingreso and hora_egreso) != cero: #Si el par esta completo, sigue.
-                            continue
-                        
-                        elif hora_ingreso != cero and hora_egreso == cero:
-                            if posicion == 4 and hora_ingreso > mitadMañana:# condicion para ver si no ficho INGRESO (solo 1 par ingreso-egreso)
-                                c.add_run((msgWord).format(dia,fecha,nombre,ingreso,salida,hora_ingresoHoras))
-                                break
-                            elif posicion == 4 and hora_ingreso < mitadMañana:# condicion para ver si no ficho EGRESO (solo 1 par ingreso-egreso)
-                                c.add_run((msgWord).format(dia,fecha,nombre,salida,ingreso,hora_ingresoHoras))
-                                break                           
-                                
-                            elif hora_ingreso < salidaMedioDia:# condicion para ver si no ficho INGRESO (MAS de 1 par de ingresos-egresos)
-                                c.add_run((msgWord).format(dia,fecha,nombre,salida,reIngreso,hora_ingresoHoras))
-                                break
-                                
-                            elif hora_ingreso > salidaMedioDia:# condicion para ver si no ficho EGRESO (MAS de 1 par de ingresos-egresos)
-                                c.add_run((msgWord).format(dia,fecha,nombre,reIngreso,salida,hora_ingresoHoras))
-                                break
+                for indice in range(len(indicesSinMarca)):
+                    fecha = newFrame.iloc[indicesSinMarca[indice],3]
+                    cero = pd.to_datetime(('{} 00:00').format(fecha))                  
+                    if newFrame.iloc[indicesSinMarca[indice],4] == cero and newFrame.iloc[indicesSinMarca[indice],5] == cero:
+                        indexNoMarca.remove(indicesSinMarca[indice])
+
+                if len(indexNoMarca) == 0:
+                    continue
                 else:
-                    for posicion in range(4,14,2):#analisis de las columnas en pares de 2 (ingreso,egreso)
-                        hora_ingreso = frame.iloc[frame[frame[campo] == 0].index[x],posicion]#(ingreso)
-                        hora_egreso = frame.iloc[frame[frame[campo] == 0].index[x],(posicion +1)]#(egreso)
+                    doc.add_heading(('Informe sobre {}:').format(nombre),level=1)
+                    c = doc.add_paragraph()
+                
+                try:
+                    area = frameQuerido.loc[int(legajo),'AREA']
+                except:
+                    msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+                    logger.warning(msg)
+                    print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
+                    continue
+                
+                if int(legajo) in legajosNoRotativos:
+                    for x in range(len(indexNoMarca)):
+                        legajo = newFrame.iloc[indexNoMarca[x],0]
+                        nombre = newFrame.iloc[indexNoMarca[x],1]
+                        dia = newFrame.iloc[indexNoMarca[x],2]
+                        fecha = newFrame.iloc[indexNoMarca[x],3]
+                        #----------------- limites horarios -------------------
+                        cero = pd.to_datetime(('{} 00:00').format(fecha))
+                        salidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
+                        mitadMañana = pd.to_datetime(('{} 10:30').format(fecha))
+                        treceHoras = pd.to_datetime(('{} 13:00').format(fecha))
                         
-                        hora_ingresoHoras = '{:02d}:{:02d}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
-                        hora_salidaHoras = '{:02d}:{:02d}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
                         
-    
-                        if posicion > 4:#Si hay mas de 1 pas de ingreso-egreso, carga el egreso inmediato anterior
-                            hora_egreso_anterior = frame.iloc[frame[frame[campo] == 0].index[x],(posicion -1)]                        
-    
-                        
-                        if (hora_ingreso and hora_egreso) != cero: #si el par esta completo sigue
-                            continue
-                        
-    
-                        if hora_ingreso != cero and hora_egreso == cero: #condicion de par INCOMPLETO, con solo 1 par de ingreso-egreso                    
-                            if posicion == 4 and hora_ingreso > mitadMañana: #condicion para ver si no ficho INGRESO 
-                                c.add_run((msgWord).format(dia,fecha,nombre,ingreso,salida,hora_ingresoHoras))
-                                break
+                        if dia in mediosDias: #Checkea que sea medio dia. Analisis diferente para dias completos y medios dias. 
+                            for posicion in range(4,14,2): #Itera sobre los ingresos/egresos
+                                #hora_ingreso = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],posicion]
+                                #hora_egreso = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],(posicion +1)]
+                                
+                                hora_ingreso = newFrame.iloc[indexNoMarca[x],posicion]
+                                hora_egreso = newFrame.iloc[indexNoMarca[x],(posicion +1)]
+                                
+                                if hora_egreso == cero and hora_ingreso == cero:
+                                    break
+                                
+                                hora_ingresoHoras = '{:02d}:{:02d}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
+                                hora_salidaHoras = '{:02d}:{:02d}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
                             
-                            elif posicion == 4 and hora_ingreso < mitadMañana:#condicion para ver si no ficho EGRESO
-                                c.add_run((msgWord).format(dia,fecha,nombre,salida,ingreso,hora_ingresoHoras))
-                                break
+                                if (hora_ingreso and hora_egreso) != cero: #Si el par esta completo, sigue.
+                                    continue
+                                
+                                elif hora_ingreso != cero and hora_egreso == cero:
+                                    if posicion == 4 and hora_ingreso > mitadMañana:# condicion para ver si no ficho INGRESO (solo 1 par ingreso-egreso)
+                                        c.add_run((msgWord).format(dia,fecha,nombre,ingreso,salida,hora_ingresoHoras))
+                                        break
+                                    elif posicion == 4 and hora_ingreso < mitadMañana:# condicion para ver si no ficho EGRESO (solo 1 par ingreso-egreso)
+                                        c.add_run((msgWord).format(dia,fecha,nombre,salida,ingreso,hora_ingresoHoras))
+                                        break                           
+                                        
+                                    elif hora_ingreso < salidaMedioDia:# condicion para ver si no ficho INGRESO (MAS de 1 par de ingresos-egresos)
+                                        c.add_run((msgWord).format(dia,fecha,nombre,salida,reIngreso,hora_ingresoHoras))
+                                        break
+                                        
+                                    elif hora_ingreso > salidaMedioDia:# condicion para ver si no ficho EGRESO (MAS de 1 par de ingresos-egresos)
+                                        c.add_run((msgWord).format(dia,fecha,nombre,reIngreso,salida,hora_ingresoHoras))
+                                        break
+                        else:
+                            for posicion in range(4,14,2):#analisis de las columnas en pares de 2 (ingreso,egreso)
+                                #hora_ingreso = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],posicion]#(ingreso)
+                                #hora_egreso = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],(posicion +1)]#(egreso)
+                                
+                                hora_ingreso = newFrame.iloc[indexNoMarca[x],posicion]
+                                hora_egreso = newFrame.iloc[indexNoMarca[x],(posicion +1)]
+                                
+                                if hora_egreso == cero and hora_ingreso == cero:
+                                    break
+                                
+                                hora_ingresoHoras = '{:02d}:{:02d}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
+                                hora_salidaHoras = '{:02d}:{:02d}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
+                                
+            
+                                if posicion > 4:#Si hay mas de 1 pas de ingreso-egreso, carga el egreso inmediato anterior
+                                    hora_egreso_anterior = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],(posicion -1)]                        
+            
+                                
+                                if (hora_ingreso and hora_egreso) != cero: #si el par esta completo sigue
+                                    continue
+                                
+            
+                                if hora_ingreso != cero and hora_egreso == cero: #condicion de par INCOMPLETO, con solo 1 par de ingreso-egreso                    
+                                    if posicion == 4 and hora_ingreso > mitadMañana: #condicion para ver si no ficho INGRESO 
+                                        c.add_run((msgWord).format(dia,fecha,nombre,ingreso,salida,hora_ingresoHoras))
+                                        break
+                                    
+                                    elif posicion == 4 and hora_ingreso < mitadMañana:#condicion para ver si no ficho EGRESO
+                                        c.add_run((msgWord).format(dia,fecha,nombre,salida,ingreso,hora_ingresoHoras))
+                                        break
+                                
+                                # A partir de aca, estas condiciones implican mas de 1 par de ingreso-egreso.
+                                if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+                                # es mayor a 1 hora, en ese caso considera que no se ficho el INGRESO o EGRESO del ALMUERZO.
+                                    c.add_run((msgWord).format(dia,fecha,nombre,almuerzo,salida,hora_ingresoHoras))
+                                    break
+                                
+                                elif ((hora_ingreso - hora_egreso_anterior).seconds)/3600 < 1.0:#Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
+                                # es menor a 1 hora, en ese caso considera que no se ficho EGRESO del dia.
+                                    c.add_run((msgWord).format(dia,fecha,nombre,salida,salida,hora_ingresoHoras))
+                                    break
+                else:
+                    for x in range(len(indexNoMarca)):
+                        legajo = newFrame.iloc[indexNoMarca[x],0]
+                        nombre = newFrame.iloc[indexNoMarca[x],1]
+                        dia = newFrame.iloc[indexNoMarca[x],2]
+                        fecha = newFrame.iloc[indexNoMarca[x],3]
+                        #----------------- limites horarios -------------------
+                        cero = pd.to_datetime(('{} 00:00').format(fecha))
+                        salidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
+                        mitadMañana = pd.to_datetime(('{} 10:30').format(fecha))
+                        treceHoras = pd.to_datetime(('{} 13:00').format(fecha))
                         
-                        # A partir de aca, estas condiciones implican mas de 1 par de ingreso-egreso.
-                        if ((hora_ingreso - hora_egreso_anterior).seconds)/3600 > 1.0: #Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
-                        # es mayor a 1 hora, en ese caso considera que no se ficho el INGRESO o EGRESO del ALMUERZO.
-                            c.add_run((msgWord).format(dia,fecha,nombre,almuerzo,salida,hora_ingresoHoras))
-                            break
-                        
-                        elif ((hora_ingreso - hora_egreso_anterior).seconds)/3600 < 1.0:#Verifica si la diferencia entre el ultimo ingreso y la ultima salida registrada
-                        # es menor a 1 hora, en ese caso considera que no se ficho EGRESO del dia.
-                            c.add_run((msgWord).format(dia,fecha,nombre,salida,salida,hora_ingresoHoras))
-                            break
-                            
+                        for posicion in range(4,14,2):#analisis de las columnas en pares de 2 (ingreso,egreso)
+                                    #hora_ingreso = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],posicion]#(ingreso)
+                                    #hora_egreso = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],(posicion +1)]#(egreso)
+                                
+                                hora_ingreso = newFrame.iloc[indexNoMarca[x],posicion]
+                                hora_egreso = newFrame.iloc[indexNoMarca[x],(posicion +1)]
+                                
+                                if hora_egreso == cero and hora_ingreso == cero:
+                                    break
+                                
+                                hora_ingresoHoras = '{:02d}:{:02d}'.format(hora_ingreso.hour,hora_ingreso.minute)#String con hora de ingreso
+                                hora_salidaHoras = '{:02d}:{:02d}'.format(hora_egreso.hour,hora_egreso.minute)#String con hora de salida
+                                
+            
+                                # if posicion > 4:#Si hay mas de 1 pas de ingreso-egreso, carga el egreso inmediato anterior
+                                #     hora_egreso_anterior = newFrame.iloc[newFrame[newFrame[campo] == 0].index[x],(posicion -1)]                        
+            
+                                
+                                if (hora_ingreso and hora_egreso) != cero: #si el par esta completo sigue
+                                    continue
+                                
+            
+                                if hora_ingreso != cero and hora_egreso == cero: #condicion de par INCOMPLETO, con solo 1 par de ingreso-egreso                    
+                                    msgWordRotativos = '\n\tEl dia {} ({}) el empleado {:10s} no ficho Ingreso o Egreso.'
+                                    c.add_run((msgWordRotativos).format(dia,fecha,nombre))
+                                    break
+                    
                             
             
     

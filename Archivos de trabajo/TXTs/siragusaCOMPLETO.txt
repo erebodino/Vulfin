@@ -1,8 +1,3 @@
-VULCANOS.A                                            Reporte de Fichadas (Por Legajo)
-
-PERIODO:    30/09/2020  AL   16/10/2020                                       IMPRESO EL DÍA:  19/10/2020
-
-Tipo de equipo:   TODOS
 
 Empleado:         52 - SIRAGUSA JAVIER CARLOS S.                                  Tarjeta Nº          52
 
@@ -12,16 +7,17 @@ Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   En
 
 Miércoles  30/09/2020 07:51    17:08
 Jueves     01/10/2020 08:00    12:53   13:16           16:49
-Viernes    02/10/2020 07:50            12:37   12:38           13:09           16:50
-Sábado     03/10/2020 07:50    13:20   
-Lunes      05/10/2020 07:53    12:43   13:13   16:57
-Martes     06/10/2020 07:58    09:17   10:53   12:30   13:10   17:54
-Miércoles  07/10/2020 07:49    12:40   13:15   17:49
-Jueves     08/10/2020 07:48    12:45   13:14   17:04
-Viernes    09/10/2020 07:58    13:11   16:56
-Martes     13/10/2020 07:53    12:42   13:14   17:50
-Miércoles  14/10/2020 07:50    17:48
-Jueves     15/10/2020 07:55    17:48
-Viernes    16/10/2020 07:51    12:33   13:11   16:50
+
+
+Empleado:         30 - RIMONDOTTO ALFREDO JUAN JOSE                               Tarjeta Nº          30
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:09    16:49
+Jueves     01/10/2020 07:24    16:54
+Viernes    02/10/2020 07:26    16:48
+
 
 

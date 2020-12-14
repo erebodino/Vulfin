@@ -208,7 +208,6 @@ def empleadosFrame():
     
 
 def insercionBD(managerSQL,frame,query):
-    print(' 3 Columnas: \n',frame.columns)
     logger.info('Insertando registros en la BD')
     for index, row in frame.iterrows():
         queryInsercion = query.format(row['Legajo'],row['Nombre'], row['Dia'],str(row['Fecha']),
@@ -339,7 +338,6 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
 
     mascara = (frame['Fecha'] >= fechaInicioAyer) & (frame['Fecha'] <= fechaFinAyer) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
     frameEnAnalisis = frame.loc[mascara].copy()
-
     limpiador = Analizador(frameEnAnalisis=frameEnAnalisis,fechaInicio = fechaInicio,fechaFin = fechaFin)
     estado = limpiador.sanityCheck()
       
@@ -452,17 +450,20 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
             print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
             continue
         try: 
-            if int(legajo) in legajosNoRotativos:                
-                mascara = (frame['Fecha'] >= fechaInicio) & (frame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
+            if int(legajo) in legajosNoRotativos:
+                               
+                mascara = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
                 newFrame = newFrame.loc[mascara].copy()
-                print('---->: ',newFrame)
                 limpiador = Analizador(frameEnAnalisis=newFrame,fechaInicio = fechaInicio,fechaFin = fechaFin)
                 newFrame = limpiador.castMascara(area)
-                print('---->: ',newFrame)
+                mascara = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
                 newFrame = newFrame.loc[mascara].copy()
+                newFrame = newFrame.sort_values(by=['Legajo','Fecha'])
                 frameAnalisis = frameAnalisis.append(newFrame)
+
             else:
                 newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,legajo=legajo,area=area)
+                newFrame = newFrame.sort_values(by=['Legajo','Fecha'])
                 frameAnalisis = frameAnalisis.append(newFrame)
         except Exception as e:
              msg = 'El siguiente legajo ({}) No paso en sanitycheck, ni pudo ser casteado'.format(legajo)
@@ -474,8 +475,9 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
 
 
     nombreRechazados = 'Rechazados {} al {}.xlsx'.format(fechaInicio,fechaFin)
-    pathRechazados = os.path.join(os.getcwd(),pathExcelTemporal,'Rechazados',nombreRechazados)
-    frameRechazados.to_excel(pathRechazados,index=False)
+    if not frameRechazados.empty:
+        pathRechazados = os.path.join(os.getcwd(),pathExcelTemporal,'Rechazados',nombreRechazados)
+        frameRechazados.to_excel(pathRechazados,index=False)
     return frameAnalisis
 
 def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
@@ -488,7 +490,6 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
 
         frameAnalisis = creacionFrameVacio()
         calculador = CalculadorHoras()
-        
         for legajo in legajosFrame:
             try:
                 area = frameQuerido.loc[int(legajo),'AREA']
@@ -504,7 +505,8 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
             else:
                 frameCalculado = calculador.horasTrabajadasRotativos(newFrame,area)
                 frameAnalisis = frameAnalisis.append(frameCalculado)
-            
+
+                
         frameAnalisis = frameAnalisis.reset_index(drop=True) 
         informeNoFichadas(frameAnalisis,fechaInicio,fechaFin,mediosDias=[],feriados=[])#Crea el informe de no fichadas
         campo = 'H.Norm' #campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
@@ -543,7 +545,6 @@ def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
     
     legajos = frame['Legajo'].unique()
     frameConErrores = creacionFrameVacio()
-    print(' 1 Columnas: \n',frame.columns)
     campo = 'H.Norm'#campo sobre el cual se filtra para ver las filas que tienen errores en los registros. Es siempre el mismo
     for legajo in legajos:
         try:
@@ -554,7 +555,6 @@ def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
             continue
 
         newFrame = frame[frame['Legajo']==legajo].copy() 
-        print(' 2 Columnas: \n',frame.columns)
         if int(legajo) in legajosNoRotativos:                           
             newFrame = calculador.horasTrabajadas(newFrame)        
         else:
@@ -566,13 +566,11 @@ def analizadorFramesCorregidos(frame,fechaInicio,fechaFin):
         Ingreso_0 = list(newFrame['Ingreso_0'])
         Egreso_0 = list(newFrame['Egreso_0'])
         fecha = list(newFrame['Fecha'])
-        print('FECHAS---->',fecha)
         #horaIngresoCero = list(Ingreso_0.dt.hour)
         #horaEgresoCero = list(Egreso_0.dt.hour)
 
         cuenta = 0
         for x in range(len(Ingreso_0)):
-            print('FECHA HOY <<<<<<: ',fecha[x],'  ',x)
             ceroHoy = pd.to_datetime(('{} 00:00').format(fecha[x]))
             if Ingreso_0[x] == ceroHoy and Egreso_0[x] == ceroHoy:
                 cuenta +=1
@@ -838,7 +836,7 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
         diasLaborales = list(pd.bdate_range(fechaInicio,fechaFin))
         diasLaborales = [x.date() for x in diasLaborales]
 
-        faltasWord = '\tFalta registrada el dia {}.\n'
+        faltasWord = '\tFalta registrada el dia {}. Motivo: {}. Observación: {}. \n'
         tardanzasWord = '\tTardanza de {} minutos registrada el dia {} ({}).\n'
         retirosWord = '\tRetiro anticipado de {} minutos registrado el dia {} ({}).\n'
         
@@ -854,7 +852,7 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
             empleados[str(legajo)]['Tardanzas'] = {}
             empleados[str(legajo)]['Retiros'] = {}
             empleados[str(legajo)]['Nombre'] = ''
-            empleados[str(legajo)]['Faltas'] = ''
+            empleados[str(legajo)]['Faltas'] = {}
 
         for legajo in legajosFrame: 
             try:
@@ -867,19 +865,26 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
             faltas = []
             newFrame = frame[frame['Legajo']==int(legajo)].copy()
             diasTrabajados = list(newFrame['Fecha'])
-            # diasFrame = list(newFrame['Ingreso_0'])
-            # diasTrabajados = list(set(diasTrabajados + diasFrame))
-
             
-            Ingreso_0 = newFrame['Ingreso_0']
-            Egreso_0 = newFrame['Egreso_0']
-            horaIngresoCero = list(Ingreso_0.dt.hour)
-            horaEgresoCero = list(Egreso_0.dt.hour)
+
+            for fila in range(len(newFrame)):
+                fecha = newFrame.iloc[fila,3]
+                if newFrame.iloc[fila,4] == pd.to_datetime(('{} 00:00').format(fecha)) and newFrame.iloc[fila,5] == pd.to_datetime(('{} 00:00').format(fecha)):
+                    empleados[str(legajo)]['Faltas'][str(fecha)] = {}
+                    empleados[str(legajo)]['Faltas'][str(fecha)]['Motivo'] = newFrame.iloc[fila,14]
+                    empleados[str(legajo)]['Faltas'][str(fecha)]['Observacion'] = newFrame.iloc[fila,15]
+            # diasFrame = list(newFrame['Ingreso_0'])
+            # diasTrabajados = list(set(diasTrabajados + diasFrame))         
+       
+            # Ingreso_0 = newFrame['Ingreso_0']
+            # Egreso_0 = newFrame['Egreso_0']
+            # horaIngresoCero = list(Ingreso_0.dt.hour)
+            # horaEgresoCero = list(Egreso_0.dt.hour)
     
-            for x in range(len(horaIngresoCero)):
-                if horaIngresoCero[x] == 0 and horaEgresoCero[x] == 0 and diasTrabajados[x] not in feriados:
-                    faltas.append(diasTrabajados[x])
-            empleados[str(legajo)]['Faltas'] = faltas
+            # for x in range(len(horaIngresoCero)):
+            #     if horaIngresoCero[x] == 0 and horaEgresoCero[x] == 0 and diasTrabajados[x] not in feriados:
+            #         faltas.append(diasTrabajados[x])
+            # empleados[str(legajo)]['Faltas'] = faltas
             
             toleranciaHoraria = 1
             
@@ -907,7 +912,6 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                     
                     if fecha in medioDias:
                         if salida < horaSalidaMedioDia:
-                            print(salida,'   ',horaSalidaMedioDia)
                             retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
                     elif fecha not in medioDias:
                         if salida < horaSalida and dia != 'Sábado':
@@ -1103,8 +1107,15 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
             
             doc.add_heading(('Faltas:'),level=2)
             primerParrafo = doc.add_paragraph()
-            for falta in empleados[key]['Faltas']:#es una lista el resultado 
-                primerParrafo.add_run((faltasWord).format(falta))
+            # for falta in empleados[key]['Faltas']:#es una lista el resultado 
+            #     primerParrafo.add_run((faltasWord).format(falta))
+            
+            for falta in empleados[key]['Faltas'].keys():#es una lista el resultado
+                motivo = empleados[key]['Faltas'][falta]['Motivo']
+                observacion = empleados[key]['Faltas'][falta]['Observacion']
+                if observacion == 'nan':
+                    observacion = 'Sin información'
+                primerParrafo.add_run((faltasWord).format(falta,motivo,observacion))
                 
             
             doc.add_heading(('Tardanzas:'),level=2)
@@ -1138,8 +1149,9 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
         wordObj.Quit()
         logger.info('Creacion del PDF de manera correcta')
         os.remove(pathToWord)
-    except AttributeError:
-        print('Existio un problema en la creacion del word/pdf.')
+    except:
+        print('\nExistio un problema en la creacion del word/pdf.\nProbablemente el archivo en word/pdf con ese nombre esta abierto.')
+        print('\nCierrelo y vuelva a ingresar los datos.')
         logger.error("excepcion desconocida: %s", traceback.format_exc())
 
 def datosOperario(areas,formaDePago):
@@ -1278,7 +1290,6 @@ class Motor:
                         decision = False
                         while not decision:
                             legajo,nombre,apellido,area,pago = datosOperario(areas, formaDePago)
-                            print(legajo,nombre,apellido,area,pago)
                             decision = repreguntar()
 
                         managerSQL = ManagerSQL()
