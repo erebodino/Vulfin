@@ -335,7 +335,6 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
     
     fechaInicioAyer = fechaInicio - timedelta(days=1)
     fechaFinAyer = fechaFin + timedelta(days=1)
-
     mascara = (frame['Fecha'] >= fechaInicioAyer) & (frame['Fecha'] <= fechaFinAyer) #mascara para filtrar el frame en funcion de la fecha de inicio y fin
     frameEnAnalisis = frame.loc[mascara].copy()
     limpiador = Analizador(frameEnAnalisis=frameEnAnalisis,fechaInicio = fechaInicio,fechaFin = fechaFin)
@@ -343,6 +342,7 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
       
     if estado:
         newFrame = limpiador.limpiador(area=area)
+        newFrame = limpiador.castMascara(area=area)        
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
         newFrame = newFrame.loc[mascaraNewFrame].copy()
 
@@ -356,6 +356,7 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
         newFrame = limpiador.castMascara(area=area)
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
         newFrame = newFrame.loc[mascaraNewFrame].copy()
+
 
     # if type(newFrame) == type(None): #En caso de que el frame no pase el sanityCheck devuelve un None y no un frame                
     #     try:
@@ -659,7 +660,7 @@ def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados):
         dias trabajados.
 
     """
-    
+    frameDeTrabajo = frame.copy()
     fechaInicio = pd.to_datetime(fechaInicio).date()
     fechaFin = pd.to_datetime(fechaFin).date()
     diasLaborales = list(pd.bdate_range(fechaInicio,fechaFin))
@@ -670,7 +671,14 @@ def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados):
     frame = frame.groupby(["Legajo","Nombre"])#agrupa el frame entre legajo y nombre para asi poder totalizar
     frameLegajo = frame.sum() #Suma todas las columnas numericas [H.Norm,H50,H100]
     frameLegajo.reset_index(inplace=True)
-    frameDiasLaborales = frame[['Dia']].count()
+    
+    frameBoleano = frameDeTrabajo[(frameDeTrabajo['H.Norm'] > 0) | (frameDeTrabajo['H. 50'] > 0) | (frameDeTrabajo['H. 100'] > 0)]
+    frameBoleano = frameBoleano.groupby(["Legajo","Nombre"])
+
+    frameDiasLaborales = frameBoleano[['Dia']].count()
+    # print('CUENTAAAA',cuenta)
+
+    
     frameConcatenado = pd.merge(frameLegajo,frameDiasLaborales,on='Legajo') #crea una nuevo Frame juntando dias como horas.
     frameConcatenado = frameConcatenado.rename(columns={'Dia':'Dias Trabajados'})
     
