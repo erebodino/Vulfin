@@ -234,7 +234,7 @@ def actualizaBDLegajos(managerSQL,legajo,campo,valor,query):
     msg = 'Actulizando operario legajo {} en la BD, campo actualizado {}, valor nuevo {}'.format(legajo,campo,valor)
     logger.info(msg)
     queryInsercion = query.format(campo,valor,legajo)
-    print(queryInsercion)
+    logger.info(queryInsercion)
     managerSQL.executeQuery(managerSQL.conexion(),queryInsercion) 
         
 
@@ -636,7 +636,83 @@ def validador(eleccion):
         if letter in ["\\","/",":","*","?","<",">","|"]:
             raise Exception('\nExisten caracteres que no pueden estar incluidos en el nombre\n\n')
 
-def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados):
+def calculosExtrasRotativos(frame):
+    
+    legajosNoRotativos,frameQuerido = empleadosFrame()
+    
+
+    legajos = frame['Legajo'].unique()
+    
+    empleados = {}
+    for legajo in legajos:
+            empleados[str(legajo)]={}
+            empleados[str(legajo)]['Noches'] = 0
+            empleados[str(legajo)]['Tardes'] = 0
+
+    for legajo in legajos:
+        try:
+            area = frameQuerido.loc[int(legajo),'AREA']
+        except:
+            msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+            logger.warning(msg)
+            continue
+        newFrame = frame[frame['Legajo']==legajo]#legajo es un STRaa
+        if int(legajo) in legajosNoRotativos:
+             continue
+        else:
+            for fila in range(len(newFrame)):
+                ingresoOperario = newFrame.iloc[fila,4]
+                fecha = newFrame.iloc[fila,3]
+                ayer = fecha - timedelta(days=1)
+                cero = (pd.to_datetime(('{} 00:00').format(fecha)))
+                
+                if area in rotativosInyeccion:
+                    primerIngreso = '08:00'
+                    segundoIngreso = '16:00'
+                    tercerIngreso = '00:00'
+                    
+                    turnoMañanaIngresoInyeccion = (pd.to_datetime(('{} {}').format(fecha,primerIngreso)))
+                    turnoTardeIngresoInyeccion = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso)))
+                    turnoNocheIngresoInyeccion = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso)))
+                    
+                    if ingresoOperario == cero and newFrame.iloc[fila,5] == cero:
+                        continue
+                    
+                    if  turnoMañanaIngresoInyeccion < ingresoOperario < turnoMañanaIngresoInyeccion + timedelta(hours=3) :
+                        continue
+                            
+                    if  turnoTardeIngresoInyeccion - timedelta(hours=3) < ingresoOperario < turnoTardeIngresoInyeccion + timedelta(hours=2) :
+                        empleados[str(legajo)]['Tardes'] += 1
+                            
+                    if  turnoNocheIngresoInyeccion - timedelta(hours=5) < ingresoOperario < turnoNocheIngresoInyeccion + timedelta(hours=3) :
+                        empleados[str(legajo)]['Noches'] += 1
+                    
+                    
+                else:
+                     primerIngresoSoplado = '07:00'
+                     segundoIngresoSoplado = '15:00'
+                     tercerIngresoSoplado = '23:00'
+                        
+                     turnoMañanaIngresoSoplado = (pd.to_datetime(('{} {}').format(fecha,primerIngresoSoplado)))
+                     turnoTardeIngresoSoplado = (pd.to_datetime(('{} {}').format(fecha,segundoIngresoSoplado)))
+                     turnoNocheIngresoSoplado = (pd.to_datetime(('{} {}').format(ayer,tercerIngresoSoplado)))
+
+                     if ingresoOperario == cero and newFrame.iloc[fila,5] == cero:
+                        continue
+                     
+                     if  turnoMañanaIngresoSoplado < ingresoOperario < turnoMañanaIngresoSoplado + timedelta(hours=3) :
+                        continue
+                            
+                     if  turnoTardeIngresoSoplado - timedelta(hours=3) < ingresoOperario < turnoTardeIngresoSoplado + timedelta(hours=2) :
+                        empleados[str(legajo)]['Tardes'] += 1
+                            
+                     if  turnoNocheIngresoSoplado- timedelta(hours=5) < ingresoOperario < turnoNocheIngresoSoplado + timedelta(hours=3) :
+                        empleados[str(legajo)]['Noches'] += 1
+                    
+
+    return empleados
+
+def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados,empleados,empleadosExtras):
     """
     Funcion que se encarga de tomar el dataframe desde la BD que ya tiene calculadas las H.Norm. H.50 y H.100
     y totaliza por cada empleado las horas trabajadas y a su vez cuenta los dias que trabajo. Los dias se calculan contanto en el dataframe.
@@ -674,13 +750,31 @@ def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados):
     
     frameBoleano = frameDeTrabajo[(frameDeTrabajo['H.Norm'] > 0) | (frameDeTrabajo['H. 50'] > 0) | (frameDeTrabajo['H. 100'] > 0)]
     frameBoleano = frameBoleano.groupby(["Legajo","Nombre"])
+    
+    columnas = ['Legajo','Nombre','Hs. Noche','Hs. Tarde','Mins. Tardanzas']
+    frameAdicional = pd.DataFrame(columns=columnas)
+
 
     frameDiasLaborales = frameBoleano[['Dia']].count()
-    # print('CUENTAAAA',cuenta)
 
-    
+
+    for key in empleados.keys():
+        minutos = 0
+
+        for llave,valor in empleados[str(key)]['Tardanzas'].items():
+            minutos += valor[1]
+        frameAdicional = frameAdicional.append({'Legajo':int(key),'Nombre': empleados[str(key)]['Nombre'],'Hs. Noche':empleadosExtras[key]['Noches'],
+                                                'Hs. Tarde':empleadosExtras[key]['Tardes'],
+                                                'Mins. Tardanzas':minutos},
+                                               ignore_index=True)
+        
+        
+    # print('CUENTAAAA',cuenta)
+    frameAdicional.reset_index(drop=True, inplace=True)
     frameConcatenado = pd.merge(frameLegajo,frameDiasLaborales,on='Legajo') #crea una nuevo Frame juntando dias como horas.
-    frameConcatenado = frameConcatenado.rename(columns={'Dia':'Dias Trabajados'})
+    frameConcatenado = pd.merge(frameConcatenado,frameAdicional,on='Legajo')
+    frameConcatenado = frameConcatenado.rename(columns={'Dia':'Dias Trabajados','Nombre_x':'Nombre'})
+    frameConcatenado = frameConcatenado.drop('Nombre_y',axis=1)
     
     return frameConcatenado
     
@@ -786,8 +880,13 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
   
     if frameFinalCorregido.empty:
         print('No hay registros sobre los cuales trabajar\n')
+        return frameFinalCorregido
     else:
+        return frameFinalExtras
 
+
+def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriados,empleados,empleadosExtras):
+    
         # frameFinalCorregido.drop(['Legajo'],axis=1,inplace=True)
         # frameFinalExtras.drop(['Legajo'],axis=1,inplace=True)
         archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al EXCEL: \n',
@@ -804,13 +903,12 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
         writer = pd.ExcelWriter(nombre, engine = 'openpyxl') #writer para escribir 2 hojas en el excel
         writer.book = book      
         
-        frameTotalizado = hojaTotalizadora(frameFinalExtras, fechaInicio, fechaFin,feriados)
+        frameTotalizado = hojaTotalizadora(frameFinalExtras, fechaInicio, fechaFin,feriados,empleados,empleadosExtras)
         frameTotalizado.to_excel(writer, sheet_name = 'Totalizado',index=False)
         writer.save()
         writer.close()     
+
     
-    
-    return frameCorregido
 
 def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
     """
@@ -837,17 +935,14 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
     """
     
     legajosNoRotativos,frameQuerido = empleadosFrame()
+    frame = frame.sort_values(by=['Legajo','Fecha'])
     
     try:    
         fechaInicio = pd.to_datetime(fechaInicio).date()
         fechaFin = pd.to_datetime(fechaFin).date()
         diasLaborales = list(pd.bdate_range(fechaInicio,fechaFin))
         diasLaborales = [x.date() for x in diasLaborales]
-
-        faltasWord = '\tFalta registrada el dia {}. Motivo: {}. Observación: {}. \n'
-        tardanzasWord = '\tTardanza de {} minutos registrada el dia {} ({}).\n'
-        retirosWord = '\tRetiro anticipado de {} minutos registrado el dia {} ({}).\n'
-        
+ 
         legajosFrame = frame['Legajo'].unique()
 
         if len(feriados) >= 1 :
@@ -1098,6 +1193,23 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                             
                         empleados[str(legajo)]['Nombre']= nombre
         
+        return empleados       
+
+    except:
+        print('\nExistio un problema en la creacion del word/pdf.\nProbablemente el archivo en word/pdf con ese nombre esta abierto.')
+        print('\nCierrelo y vuelva a ingresar los datos.')
+        logger.error("excepcion desconocida: %s", traceback.format_exc())
+
+def escritorInformeFaltasTardanzas(empleados,fechaInicio,fechaFin):
+    
+    fechaInicio = pd.to_datetime(fechaInicio).date()
+    fechaFin = pd.to_datetime(fechaFin).date()
+
+    faltasWord = '\tFalta registrada el dia {}. Motivo: {}. Observación: {}. \n'
+    tardanzasWord = '\tTardanza de {} minutos registrada el dia {} ({}).\n'
+    retirosWord = '\tRetiro anticipado de {} minutos registrado el dia {} ({}).\n'
+    
+    try:
         doc = docx.Document()
         doc.add_heading(('Faltas, tardanzas y retiros entre {} y {}').format(fechaInicio,fechaFin), 0)
         for key in empleados.keys():
@@ -1110,7 +1222,7 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                 continue
                     
             
-            doc.add_heading(('Informe sobre {}:').format(empleados[key]['Nombre']),level=1)
+            doc.add_heading(('Informe sobre {} ({}):').format(empleados[key]['Nombre'],key),level=1)
             
             
             doc.add_heading(('Faltas:'),level=2)
@@ -1123,6 +1235,8 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                 observacion = empleados[key]['Faltas'][falta]['Observacion']
                 if observacion == 'nan':
                     observacion = 'Sin información'
+                if motivo == 'nan':
+                    motivo = 'Sin especificar'
                 primerParrafo.add_run((faltasWord).format(falta,motivo,observacion))
                 
             
@@ -1161,6 +1275,8 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
         print('\nExistio un problema en la creacion del word/pdf.\nProbablemente el archivo en word/pdf con ese nombre esta abierto.')
         print('\nCierrelo y vuelva a ingresar los datos.')
         logger.error("excepcion desconocida: %s", traceback.format_exc())
+    
+
 
 def datosOperario(areas,formaDePago):
     
@@ -1273,8 +1389,15 @@ class Motor:
                         if frameCorregido.empty:
                             pass #Internamente ya hay un msj
                         else:
-                            informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
+                            empleados = informeFaltasTardanzas(frameCorregido,fechaInicio,fechaFin,
                                     feriados=feriados,medioDias = mediosDias)
+                            
+                            empleadosExtras = calculosExtrasRotativos(frameCorregido)
+                            
+                            calculosAdicionalesTotalizados(frameCorregido, fechaInicio, fechaFin, feriados, empleados,empleadosExtras)
+                            
+                            escritorInformeFaltasTardanzas(empleados, fechaInicio, fechaFin)
+                            
                         continuarCreacion = True                
                     
                     elif informesRespuesta == 'Volver':

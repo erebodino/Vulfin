@@ -763,7 +763,7 @@ class CalculadorHoras:
                 # print(feriados,'     ',fechaIngreso,'   ',fechaSalidaOperarios, fechaIngreso in feriados )
                 # print('--->',fechaSalidaOperarios in feriados or fechaIngreso in feriados or fecha in feriados)
                 if dia == 'Sábado':
-                    print('Ingreso: ',ingresoOperario,'  ',turnoMañanaPrimerIngreso - timedelta(hours=5))
+                    
                     if ingresoOperario < turnoMañanaPrimerIngreso - timedelta(hours=5):
                         if ingresoOperario < turnoNocheIngreso:                                                      
                             minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
@@ -835,20 +835,31 @@ class CalculadorHoras:
                                 # frame.iloc[fila,18] = round(minutosExtras100,2)
                                 
                             if salidaOperario > turnoNocheSalida:
-                                minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600 
+                                minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
+                                
+                        if  turnoTardeIngreso- timedelta(hours=2) < ingresoOperario < turnoTardeIngreso:
+                            if ingresoOperario < turnoTardeIngreso:                                                     
+                                minutosExtras100 += ((salidaOperario - ingresoOperario).seconds)/3600
+                                frame.iloc[fila,18] = round(minutosExtras100,2)
+                                frame.iloc[fila,16] = 0
+                                
+                            # if salidaOperario > turnoNocheSalida:
+                            #     minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
                                 
                              
                         
                     elif fechaSalidaOperarios in mediosDias and fechaIngreso  not in mediosDias:
-                        if salidaOperario > salidaMedioDia:
-                            minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600
-                            frame.iloc[fila,18] = round(minutosExtras100,2)
+                        pass
                         
-                        if ingresoOperario < turnoNocheIngreso:
-                            minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
+                        # if salidaOperario > salidaMedioDia:
+                        #     minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600
+                        #     frame.iloc[fila,18] = round(minutosExtras100,2)
                         
-                        if turnoNocheSalida < salidaOperario < salidaMedioDia:
-                            minutosExtras50 += (( salidaOperario - turnoNocheSalida).seconds)/3600
+                        # if ingresoOperario < turnoNocheIngreso:
+                        #     minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
+                        
+                        # if turnoNocheSalida < salidaOperario < salidaMedioDia:
+                        #     minutosExtras50 += (( salidaOperario - turnoNocheSalida).seconds)/3600
                     
                     
                     elif fechaSalidaOperarios in mediosDias and fechaIngreso  in mediosDias:
@@ -1086,7 +1097,7 @@ class CalculadorHoras:
                             
                             if salidaOperario > salidaMedioDia:
                                 minutosExtras100 += round(((salidaOperario - salidaMedioDia).seconds)/3600,2)
-                                frame.iloc[fila,16] = minutosExtras100
+                                frame.iloc[fila,18] = minutosExtras100
                        
                         if salidaMedioDia < ingresoOperario < turnoTardeIngreso:
                             
