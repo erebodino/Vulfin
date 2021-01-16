@@ -217,7 +217,7 @@ def insercionBD(managerSQL,frame,query):
           str(row['Ingreso_3']),str(row['Egreso_3']),
           str(row['Ingreso_4']),str(row['Egreso_4']),
           str(row['Motivo']),str(row['Observación']))
-        print('Query: ',queryInsercion)
+        #print('Query: ',queryInsercion)
         managerSQL.executeQuery(managerSQL.conexion(),queryInsercion) 
 
 def insercionBDLegajos(managerSQL,legajo,nombre,apellido,area,pago,query):
@@ -339,8 +339,11 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
     frameEnAnalisis = frame.loc[mascara].copy()
     limpiador = Analizador(frameEnAnalisis=frameEnAnalisis,fechaInicio = fechaInicio,fechaFin = fechaFin)
     estado = limpiador.sanityCheck()
+    
       
     if estado:
+        newFrame = limpiador.castMascara(area=area) 
+        print(newFrame['Fecha'])
         newFrame = limpiador.limpiador(area=area)
         newFrame = limpiador.castMascara(area=area)        
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
@@ -352,6 +355,7 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
         msg2 ='El siguiente legajo ({}) No paso las validaciones, se las castea en cero.'.format(legajo)
         logger.info(msg2)
         newFrame = limpiador.castMascara(area=area)
+        print(newFrame['Fecha'])
         newFrame = limpiador.limpiador(area=area)
         newFrame = limpiador.castMascara(area=area)
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
@@ -461,11 +465,11 @@ def frameAnalisisIndividual(frame,fechaInicio,fechaFin):
                 newFrame = newFrame.loc[mascara].copy()
                 newFrame = newFrame.sort_values(by=['Legajo','Fecha'])
                 frameAnalisis = frameAnalisis.append(newFrame)
-
             else:
                 newFrame = logicaRotativos(newFrame,fechaInicio,fechaFin,legajo=legajo,area=area)
                 newFrame = newFrame.sort_values(by=['Legajo','Fecha'])
                 frameAnalisis = frameAnalisis.append(newFrame)
+                
         except Exception as e:
              msg = 'El siguiente legajo ({}) No paso en sanitycheck, ni pudo ser casteado'.format(legajo)
              print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
@@ -769,7 +773,6 @@ def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados,empleados,empleadosExtr
                                                ignore_index=True)
         
         
-    # print('CUENTAAAA',cuenta)
     frameAdicional.reset_index(drop=True, inplace=True)
     frameConcatenado = pd.merge(frameLegajo,frameDiasLaborales,on='Legajo') #crea una nuevo Frame juntando dias como horas.
     frameConcatenado = pd.merge(frameConcatenado,frameAdicional,on='Legajo')
@@ -779,7 +782,112 @@ def hojaTotalizadora(frame,fechaInicio,fechaFin,feriados,empleados,empleadosExtr
     return frameConcatenado
     
     
+def agregadoColumnas(frame):
+    #frame['H.Norm'] = 0
+    #frame['H. 50'] = 0
+    #frame['H. 100'] = 0
+    frame['Tardanzas'] = 0
+    frame['Retiros'] = 0
+    return frame
+
+def retTarRotativos(frame,legajo,medioDias):
+    legajosNoRotativos,frameQuerido = empleadosFrame()
+    frame = frame.sort_values(by=['Legajo','Fecha'])
     
+
+    try:
+        area = frameQuerido.loc[int(legajo),'AREA']
+    except:
+        msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+        logger.warning(msg)
+        
+    toleranciaHoraria = 1
+
+    if area in rotativosInyeccion:
+                    for x in range(len(frame)):
+                        legajo = frame.iloc[x,0]
+                        nombre = frame.iloc[x,1]
+                        dia = frame.iloc[x,2]
+                        fecha = frame.iloc[x,3]
+                        ayer = fecha - datetime.timedelta(days=1)
+                        mañana = fecha + datetime.timedelta(days=1)
+                        
+                        primerIngreso = '08:00'
+                        segundoIngreso = '16:00'
+                        tercerIngreso = '00:00'
+                        
+                        primerSalida = '16:00'
+                        segundaSalida = '00:00'
+                        tercerSalida = '08:00'
+                        
+                        horaSalidaSabado = '13:00'
+                        medioDia = '12:30'
+                        
+                        horaSalidaMedioDia = pd.to_datetime(('{} 12:30').format(fecha))
+
+                        turnoMañanaPrimerIngreso = (pd.to_datetime(('{} {}').format(fecha,primerIngreso)))
+                        turnoTardeIngreso = (pd.to_datetime(('{} {}').format(fecha,segundoIngreso)))
+                        turnoNocheIngreso = (pd.to_datetime(('{} {}').format(fecha,tercerIngreso)))
+                            
+                            
+                        turnoMañanaPrimerSalida = (pd.to_datetime(('{} {}').format(fecha,primerSalida)))
+                        turnoTardeSalida = (pd.to_datetime(('{} {}').format(mañana,segundaSalida)))
+                        turnoNocheSalida = (pd.to_datetime(('{} {}').format(fecha,tercerSalida)))  
+                            
+                            
+                        cero = pd.to_datetime(('{} 00:00').format(fecha))
+                        medioDia = pd.to_datetime(('{} 12:30').format(fecha))
+                        salidaSabado = pd.to_datetime(('{} {}').format(fecha,horaSalidaSabado))
+                        
+                        tardanza = 0
+                        retiro= 0
+                        
+                        ingresoOperario = frame.iloc[x,4]
+                        for idx in range(5,13,2):
+                            if frame.iloc[x,idx] == cero:
+                                salida = frame.iloc[x,idx -2]
+                                break
+                           
+                        if frame.iloc[x,2] != 'Sábado':
+                            if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoMañanaPrimerIngreso).seconds)/60),2)
+                                
+                            if  turnoTardeIngreso < ingresoOperario < turnoTardeIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoTardeIngreso).seconds)/60),2)
+                                
+                            if  turnoNocheIngreso < ingresoOperario < turnoNocheIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoNocheIngreso).seconds)/60),2)
+                            
+                            
+                            
+                            
+                            
+                        if fecha in medioDias:
+                            if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                                if salida < horaSalidaMedioDia:
+                                    retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
+                            
+                        if fecha not in medioDias:
+                            if  turnoMañanaPrimerSalida - timedelta(hours=3)  < salida < turnoMañanaPrimerSalida:
+                                if salida < turnoMañanaPrimerSalida and dia != 'Sábado':
+                                    retiro = round((((turnoMañanaPrimerSalida - salida).seconds)/60),2)
+                                        
+                            if  turnoTardeSalida - timedelta(hours=3)  < salida < turnoTardeSalida:
+                                if salida < turnoTardeSalida:
+                                    retiro = round(((( turnoTardeSalida - salida).seconds)/60),2)
+                                        
+                            if  turnoNocheSalida - timedelta(hours=3)  < salida < turnoNocheSalida:
+                                if salida < turnoNocheSalida:
+                                    retiro = round(((( turnoNocheSalida - salida).seconds)/60),2)
+                                        
+                                    
+            
+                        if tardanza != 0:                    
+                            frame.iloc[x,19] = tardanza
+                        if retiro != 0:
+                            frame.iloc[x,20] = retiro
+
+    return frame
     
 def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):  
     """
@@ -851,7 +959,9 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
     
     legajos = frameCorregido['Legajo'].unique()
     frameFinalCorregido = creacionFrameVacio()
+    frameFinalCorregido = agregadoColumnas(frameFinalCorregido)
     frameFinalExtras = creacionFrameVacio()
+    frameFinalExtras = agregadoColumnas(frameFinalExtras)
     for legajo in legajos:
         try:
             area = frameQuerido.loc[int(legajo),'AREA']
@@ -859,11 +969,12 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
             msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
             logger.warning(msg)
             continue
-        newFrame = frameCorregido[frameCorregido['Legajo']==legajo].copy() 
+        newFrame = frameCorregido[frameCorregido['Legajo']==legajo].copy()
+
 
         if int(legajo) in legajosNoRotativos:                           
             newFrame = calculador.horasTrabajadas(newFrame,mediosDias = mediosDias)
-
+            newFrame = agregadoColumnas(newFrame)
             newFrame = calculador.restaRetrasosTardanzas(newFrame,mediosDias = mediosDias)
 
             frameFinalCorregido = frameFinalCorregido.append(newFrame)
@@ -874,10 +985,12 @@ def seleccionInformes(fechaInicio,fechaFin,mediosDias=[],feriados=[]):
 
         else:
             newFrame = calculador.horasTrabajadasRotativos(newFrame,area,mediosDias = mediosDias)
+            newFrame = agregadoColumnas(newFrame)
+            newFrame = retTarRotativos(newFrame, legajo, medioDias = mediosDias)
             frameFinalCorregido = frameFinalCorregido.append(newFrame)            
             frameExtras = calculador.horasExtrasTrabajadasRotativos(newFrame,area,feriados=feriados,mediosDias = mediosDias)
             frameFinalExtras = frameFinalExtras.append(frameExtras)
-  
+    print('COLUS:',frameFinalExtras.columns)
     if frameFinalCorregido.empty:
         print('No hay registros sobre los cuales trabajar\n')
         return frameFinalCorregido
@@ -891,6 +1004,11 @@ def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriado
         # frameFinalExtras.drop(['Legajo'],axis=1,inplace=True)
         archivo = pyip.inputCustom(prompt='Ingrese el nombre que desea ponerle al EXCEL: \n',
                                 customValidationFunc=validador)
+        orden = ['Legajo', 'Nombre', 'Dia', 'Fecha', 'Ingreso_0', 'Egreso_0',
+       'Ingreso_1', 'Egreso_1', 'Ingreso_2', 'Egreso_2', 'Ingreso_3',
+       'Egreso_3', 'Ingreso_4', 'Egreso_4','Motivo', 'Observación',
+       'H.Norm','H. 50', 'H. 100','Tardanzas','Retiros']
+        frameFinalExtras = frameFinalExtras[orden]
         print('\n')
         nombre = os.path.join(os.getcwd(),pathExcelInforme,archivo)
         nombre = nombre+ '.xlsx'
@@ -944,10 +1062,14 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
         diasLaborales = [x.date() for x in diasLaborales]
  
         legajosFrame = frame['Legajo'].unique()
-
         if len(feriados) >= 1 :
-                for feria in feriados:
+            for feria in feriados:
+                try:
                     diasLaborales.remove(feria)
+                except:
+                    continue
+            
+            
         empleados = {}
         
         for legajo in legajosFrame:
@@ -956,10 +1078,12 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
             empleados[str(legajo)]['Retiros'] = {}
             empleados[str(legajo)]['Nombre'] = ''
             empleados[str(legajo)]['Faltas'] = {}
+            empleados[str(legajo)]['Area'] = ''
 
         for legajo in legajosFrame: 
             try:
                 area = frameQuerido.loc[int(legajo),'AREA']
+                empleados[str(legajo)]['Area'] = area
             except:
                 msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
                 logger.warning(msg)
@@ -1009,8 +1133,8 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                         if newFrame.iloc[x,idx] == cero:
                             salida = newFrame.iloc[x,idx -2]
                             break
-                    
-                    if newFrame.iloc[x,4] > horaIngreso:
+
+                    if newFrame.iloc[x,4] > horaIngreso and newFrame.iloc[x,2] != 'Sábado':
                         tardanza = round((((newFrame.iloc[x,4] - horaIngreso).seconds)/60),2)               
                     
                     if fecha in medioDias:
@@ -1070,15 +1194,16 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                             if newFrame.iloc[x,idx] == cero:
                                 salida = newFrame.iloc[x,idx -2]
                                 break
-                            
-                        if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
-                            tardanza = round((((ingresoOperario - turnoMañanaPrimerIngreso).seconds)/60),2)
-                            
-                        if  turnoTardeIngreso < ingresoOperario < turnoTardeIngreso + timedelta(hours=3) :
-                            tardanza = round((((ingresoOperario - turnoTardeIngreso).seconds)/60),2)
-                            
-                        if  turnoNocheIngreso < ingresoOperario < turnoNocheIngreso + timedelta(hours=3) :
-                            tardanza = round((((ingresoOperario - turnoNocheIngreso).seconds)/60),2)
+                           
+                        if newFrame.iloc[x,2] != 'Sábado':
+                            if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoMañanaPrimerIngreso).seconds)/60),2)
+                                
+                            if  turnoTardeIngreso < ingresoOperario < turnoTardeIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoTardeIngreso).seconds)/60),2)
+                                
+                            if  turnoNocheIngreso < ingresoOperario < turnoNocheIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoNocheIngreso).seconds)/60),2)
                             
                             
                             
@@ -1153,14 +1278,15 @@ def informeFaltasTardanzas(frame,fechaInicio,fechaFin,medioDias=[],feriados=[]):
                                 salida = newFrame.iloc[x,idx -2]
                                 break
                             
-                        if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
-                            tardanza = round((((ingresoOperario - turnoMañanaPrimerIngreso).seconds)/60),2)
-                            
-                        if  turnoTardeIngreso < ingresoOperario < turnoTardeIngreso + timedelta(hours=3) :
-                            tardanza = round((((ingresoOperario - turnoTardeIngreso).seconds)/60),2)
-                            
-                        if  turnoNocheIngreso < ingresoOperario < turnoNocheIngreso + timedelta(hours=3) :
-                            tardanza = round((((ingresoOperario - turnoNocheIngreso).seconds)/60),2)
+                        if newFrame.iloc[x,2] != 'Sábado':
+                            if  turnoMañanaPrimerIngreso < ingresoOperario < turnoMañanaPrimerIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoMañanaPrimerIngreso).seconds)/60),2)
+                                
+                            if  turnoTardeIngreso < ingresoOperario < turnoTardeIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoTardeIngreso).seconds)/60),2)
+                                
+                            if  turnoNocheIngreso < ingresoOperario < turnoNocheIngreso + timedelta(hours=3) :
+                                tardanza = round((((ingresoOperario - turnoNocheIngreso).seconds)/60),2)
                             
                             
                             
@@ -1222,7 +1348,7 @@ def escritorInformeFaltasTardanzas(empleados,fechaInicio,fechaFin):
                 continue
                     
             
-            doc.add_heading(('Informe sobre {} ({}):').format(empleados[key]['Nombre'],key),level=1)
+            doc.add_heading(('Informe sobre {} ({}) ({}):').format(empleados[key]['Nombre'],key,empleados[key]['Area']),level=1)
             
             
             doc.add_heading(('Faltas:'),level=2)
@@ -1328,7 +1454,7 @@ class Motor:
         tareas = ['Ordenado de registros','Creación de informes','Gestion de Base de datos','Salir']
         tareasOrdenado = ['Limpieza de registros','Actualización de registros','Volver','Salir']
         tareasInformes = ['Ingreso de fechas','Volver','Salir']
-        tareasBD = ['Insertar empleado','Actualizar empleado','Eliminar empleado','Modificar Registro','Descargar','Volver','Salir']
+        tareasBD = ['Agregar empleado','Actualizar empleado','Eliminar empleado','Modificar Registro','Descargar','Volver','Salir']
         
         continuar = True
         
@@ -1357,7 +1483,7 @@ class Motor:
                         else:
                             legajos = frameAnalisisIndividual(frame,fechaInicio,fechaFin)
                             limpiezaDeRegistros(legajos, fechaInicio, fechaFin) 
-                            print('\nRegistros errones y duplicados eliminados, excel a completar creado.\n')
+                            print('\nRegistros erroneos y duplicados eliminados, excel a completar creado.\n')
                             
                     elif ordenadoRespuesta == 'Actualización de registros':
                         
@@ -1386,6 +1512,7 @@ class Motor:
                             fechaInicio,fechaFin,feriados,mediosDias = fechasDeCalculo()
                             decision = repreguntar()
                         frameCorregido = seleccionInformes(fechaInicio, fechaFin,feriados = feriados,mediosDias= mediosDias)
+                        print('COLUMNAS:    ',frameCorregido.columns)
                         if frameCorregido.empty:
                             pass #Internamente ya hay un msj
                         else:
@@ -1415,8 +1542,8 @@ class Motor:
                     
                     baseDeDatosRespuesta = pyip.inputMenu(tareasBD,prompt='\n¿Que desea hacer?\n',lettered=True)
                     print('\n')
-                    ['Insertar empleado','Actualizar empleado','Eliminar empleado','Modificar registro','Descargar','Volver','Salir']
-                    if baseDeDatosRespuesta == 'Insertar empleado':
+                    ['Agregar empleado','Actualizar empleado','Eliminar empleado','Modificar registro','Descargar','Volver','Salir']
+                    if baseDeDatosRespuesta == 'Agregar empleado':
                         
                         decision = False
                         while not decision:

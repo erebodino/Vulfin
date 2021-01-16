@@ -68,6 +68,7 @@ class Analizador:
         diasOperario = list(self.frameEnAnalisis['Fecha'])
         if area in rotativosInyeccion or area in rotativosSoplado:
             diasLaborales = list(pd.bdate_range(self.fechaInicio,(self.fechaFin + timedelta(days=1))))
+            diasLaborales = list(pd.date_range(self.fechaInicio,self.fechaFin + timedelta(days=1),freq='d'))
             diasOperarioIngreso = list(self.frameEnAnalisis['Ingreso_0'].dt.date)
             diasEgresoOperario = list(self.frameEnAnalisis['Egreso_0'].dt.date)
             diasOperario = list(set(diasOperarioIngreso + diasEgresoOperario))
@@ -92,7 +93,8 @@ class Analizador:
                                                                    ignore_index=True)
 
         
-        self.frameEnAnalisis['Fecha'] = pd.to_datetime(self.frameEnAnalisis['Fecha']).dt.date                                                          
+        self.frameEnAnalisis['Fecha'] = pd.to_datetime(self.frameEnAnalisis['Fecha']).dt.date 
+        self.frameEnAnalisis = self.frameEnAnalisis.sort_values(by=['Fecha'])                                                  
         return self.frameEnAnalisis
         
     def limpiador(self,area):
@@ -162,10 +164,10 @@ class Analizador:
                         break
                     
                     if self.frameEnAnalisis.iloc[renglon,posicion+ 1] == cero and dia != 'Sábado':
-
+                            print('---------------> UNO',fecha)
                             if posicion <6:
                                 if self.frameEnAnalisis.iloc[renglon +1,3] == fecha +timedelta(days=1):# Verifica que el proximo dia en donde se va a sacar el datos sea un dia siguiente.-
-                                    
+                                    print('\t---------------> UNO',fecha)
                                     if (turnoNocheIngreso - timedelta(hours=5)) <= self.frameEnAnalisis.iloc[renglon,posicion] <= (turnoNocheIngreso + timedelta(hours=5)) :
                                         if self.frameEnAnalisis.iloc[renglon +1,posicion] >= turnoMañanaIngresoTomorrow:                                    
                                             self.frameEnAnalisis.iloc[renglon+ 1,posicion+ 2] = self.frameEnAnalisis.iloc[renglon+ 1,posicion+ 1]
@@ -175,10 +177,9 @@ class Analizador:
                                             
                                             if str(self.fechaFin) == str(fecha):
                                                 self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
-                                            
-                                                
+                                            print('Corrigiendo UNO: ',fecha,self.frameEnAnalisis.iloc[renglon,0])
                                             break
-                                    
+               
                                     elif (turnoTardeIngreso - timedelta(hours=2)) <= self.frameEnAnalisis.iloc[renglon,posicion] <= (turnoTardeIngreso + timedelta(hours=2)):
                                        
                                         if  (turnoTardeEgreso - timedelta(hours=2)) <= self.frameEnAnalisis.iloc[renglon+ 1,posicion] <= (turnoTardeEgreso + timedelta(hours=2)):
@@ -190,9 +191,22 @@ class Analizador:
                                             
                                             if str(self.fechaFin) == str(fecha):
                                                 self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
-                                            
+                                            print('Corrigiendo DOS: ',fecha,self.frameEnAnalisis.iloc[renglon,0])
                                         else:
                                             break
+                                    
+                                    elif self.frameEnAnalisis.iloc[renglon- 1,posicion +2] != ceroAyer and \
+                                        self.frameEnAnalisis.iloc[renglon,3] - self.frameEnAnalisis.iloc[renglon -1,3] < timedelta(days=1,hours=1):
+                                       print('SOLUCIONADOOOO')
+                                       self.frameEnAnalisis.iloc[renglon,posicion+ 2] =  self.frameEnAnalisis.iloc[renglon,posicion+ 1]
+                                       self.frameEnAnalisis.iloc[renglon,posicion +1] = self.frameEnAnalisis.iloc[renglon,posicion]
+                                       self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion+ 2]
+                                       self.frameEnAnalisis.iloc[renglon- 1,posicion+ 2] = ceroAyer
+               
+                                       if str(self.fechaFin) == str(fecha):
+                                           self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
+                                            
+                                    
                                         
                                     else:
                                         break
@@ -201,7 +215,9 @@ class Analizador:
         
                     else: 
                         if posicion <6:
+                            print('---------------> DOR',fecha)
                             if self.frameEnAnalisis.iloc[renglon- 1,posicion +2] == ceroAyer:
+                                
                                 if self.frameEnAnalisis.iloc[renglon,posicion] > turnoMañanaIngreso and \
                                     (self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso + timedelta(hours=3)) or \
                                      self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):  
@@ -221,6 +237,7 @@ class Analizador:
                                         
                                         if str(self.fechaFin) == str(fecha):
                                             self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero    
+                                        print('Corrigiendo TRES: ',fecha,self.frameEnAnalisis.iloc[renglon,0])
                                         break
                                 else:
                     
@@ -241,9 +258,27 @@ class Analizador:
                                         
                                         if str(self.fechaFin) == str(fecha):
                                             self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero    
-                                        
+                                        print('Corrigiendo CUATRO: ',fecha,self.frameEnAnalisis.iloc[renglon,0])
                             
                             else:
+                                
+                                #Parte Nuevaaaaa
+                                if self.frameEnAnalisis.iloc[renglon,posicion] >= turnoMañanaIngreso and \
+                                   self.frameEnAnalisis.iloc[renglon,posicion] < turnoMañanaIngreso + timedelta(hours=1) and \
+                                   self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso + timedelta(hours=3)):
+                                   
+                                       self.frameEnAnalisis.iloc[renglon,posicion+ 2] =  self.frameEnAnalisis.iloc[renglon,posicion+ 1]
+                                       self.frameEnAnalisis.iloc[renglon,posicion +1] = self.frameEnAnalisis.iloc[renglon,posicion]
+                                       self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion+ 2]
+                                       self.frameEnAnalisis.iloc[renglon- 1,posicion+ 2] = ceroAyer
+               
+                                       if str(self.fechaFin) == str(fecha):
+                                           self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
+                                       print('------------Corrigiendo EL CORRECCTO------: ',fecha,self.frameEnAnalisis.iloc[renglon,0])
+                                       break
+                                       
+                                
+                                
                                 if self.frameEnAnalisis.iloc[renglon,posicion] > turnoMañanaIngreso and \
                                     (self.frameEnAnalisis.iloc[renglon,posicion +1] > (turnoTardeIngreso + timedelta(hours=3)) or \
                                      self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):  
@@ -252,10 +287,10 @@ class Analizador:
                                         self.frameEnAnalisis.iloc[renglon,posicion +1] = self.frameEnAnalisis.iloc[renglon,posicion]
                                         self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion+ 2]
                                         self.frameEnAnalisis.iloc[renglon- 1,posicion+ 2] = ceroAyer
-                                        
+               
                                         if str(self.fechaFin) == str(fecha):
                                             self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
-                                        
+                                        print('Corrigiendo CINCO: ',fecha,self.frameEnAnalisis.iloc[renglon,0])
                                         break
                                 
                                 if turnoNocheIngreso - timedelta(days=1) < self.frameEnAnalisis.iloc[renglon,posicion] < turnoMañanaIngreso - timedelta(hours=3)  and \
@@ -270,7 +305,7 @@ class Analizador:
                                         
                                         if str(self.fechaFin) == str(fecha):
                                             self.frameEnAnalisis.iloc[renglon,posicion+ 2] = cero
-           
+                                        print('Corrigiendo SEIS: ',fecha,self.frameEnAnalisis.iloc[renglon,0])
                                         break
                     
                  
@@ -393,6 +428,20 @@ class Analizador:
                                             # self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon- 1,posicion +1]
                                             # self.frameEnAnalisis.iloc[renglon- 1,posicion +2]= cero
                                             break
+                                        
+                                    # print(cero - timedelta(hours=1),self.frameEnAnalisis.iloc[renglon,posicion],cero + timedelta(hours=3))
+                                    # print((turnoTardeIngreso - timedelta(hours=2)),turnoTardeIngreso + timedelta(hours=3),' ',self.frameEnAnalisis.iloc[renglon,posicion + 1])
+                                #      self.frameEnAnalisis.iloc[renglon,posicion +1] == cero))
+                                    if  (cero - timedelta(hours=2) < self.frameEnAnalisis.iloc[renglon,posicion] < cero + timedelta(hours=3)) and \
+                                        (turnoTardeIngreso - timedelta(hours=2) < self.frameEnAnalisis.iloc[renglon,posicion +1] < turnoTardeIngreso + timedelta(hours=2) or \
+                                          self.frameEnAnalisis.iloc[renglon,posicion +1] == cero):
+                                            
+                                            
+                                            self.frameEnAnalisis.iloc[renglon,posicion] = self.frameEnAnalisis.iloc[renglon,posicion+ 1]
+                                            self.frameEnAnalisis.iloc[renglon,posicion+ 1] = self.frameEnAnalisis.iloc[renglon +1,posicion]
+                     
+                                            break
+                                    
                                 
                                 else:
                                    
@@ -538,6 +587,7 @@ class CalculadorHoras:
                     
                     primerSalida = '16:00'
                     segundaSalida = '00:00'
+
                     tercerSalida = '08:00'
                     
                     horaSalidaSabado = '13:00'
@@ -588,8 +638,10 @@ class CalculadorHoras:
                                         horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='16:00',egreso='00:00')
                                         break
                                 
-                                elif frame.iloc[fila,idx] > turnoNocheIngreso - timedelta(hours=4,minutes=30) and \
-                                    frame.iloc[fila,idx] < turnoNocheIngreso + timedelta(hours=4,minutes=30): #Segundo Turno
+                                # elif frame.iloc[fila,idx] > turnoNocheIngreso - timedelta(hours=4,minutes=30) and \
+                                #     frame.iloc[fila,idx] < turnoNocheIngreso + timedelta(hours=4,minutes=30): #Tercer Turno
+                                elif frame.iloc[fila,idx] > turnoNocheIngreso - timedelta(hours=5) and \
+                                    frame.iloc[fila,idx] < turnoNocheIngreso + timedelta(hours=5): #Tercer Turno
 
                                         horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='00:00',egreso='08:00')
                                         break
@@ -849,17 +901,20 @@ class CalculadorHoras:
                              
                         
                     elif fechaSalidaOperarios in mediosDias and fechaIngreso  not in mediosDias:
-                        pass
                         
-                        # if salidaOperario > salidaMedioDia:
-                        #     minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600
-                        #     frame.iloc[fila,18] = round(minutosExtras100,2)
-                        
-                        # if ingresoOperario < turnoNocheIngreso:
-                        #     minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
-                        
-                        # if turnoNocheSalida < salidaOperario < salidaMedioDia:
-                        #     minutosExtras50 += (( salidaOperario - turnoNocheSalida).seconds)/3600
+                        if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
+                            if ingresoOperario < turnoNocheIngreso:                                                     
+                                minutosExtras50 += ((cero - ingresoOperario).seconds)/3600
+                                # frame.iloc[fila,18] = round(minutosExtras100,2)
+                                
+                            if salidaOperario > turnoNocheSalida:
+                                minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
+                                
+                        if  turnoTardeIngreso- timedelta(hours=2) < ingresoOperario < turnoTardeIngreso:
+                            if ingresoOperario < turnoTardeIngreso:                                                     
+                                minutosExtras100 += ((salidaOperario - ingresoOperario).seconds)/3600
+                                frame.iloc[fila,18] = round(minutosExtras100,2)
+                                frame.iloc[fila,16] = 0
                     
                     
                     elif fechaSalidaOperarios in mediosDias and fechaIngreso  in mediosDias:
@@ -948,10 +1003,10 @@ class CalculadorHoras:
                                 minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
                     
                     #Ingreso-Egreso 1er Turno-----------------
-                    if turnoMañanaPrimerIngreso - timedelta(hours=4) < ingresoOperario < turnoMañanaPrimerIngreso: 
-                                                   
+                    if turnoMañanaPrimerIngreso - timedelta(hours=4) < ingresoOperario < turnoMañanaPrimerIngreso:                                                    
                         minutosExtras50 += ((turnoMañanaPrimerIngreso - ingresoOperario).seconds)/3600
-                    if turnoMañanaPrimerSalida - timedelta(hours=2) < salidaOperario < turnoMañanaPrimerSalida  + timedelta(hours=4):
+                    
+                    if turnoMañanaPrimerSalida - timedelta(hours=2) < salidaOperario < turnoMañanaPrimerSalida  + timedelta(hours=4,minutes=30):
                             if salidaOperario > turnoMañanaPrimerSalida:
  
                                 minutosExtras50 += ((salidaOperario - turnoMañanaPrimerSalida).seconds)/3600
@@ -964,7 +1019,9 @@ class CalculadorHoras:
                     if turnoTardeSalida - timedelta(hours=2) < salidaOperario < turnoTardeSalida  + timedelta(hours=4):
                         if salidaOperario > turnoTardeSalida:
                              minutosExtras50 += ((salidaOperario - turnoTardeSalida).seconds)/3600
-
+                
+                if minutosExtras50 > 4 and dia != 'Sábado':
+                    minutosExtras50 = 4
                 frame.iloc[fila,17] = round(minutosExtras50,2) #Asigna las horas extras al 50%
         
             else: 
@@ -1045,7 +1102,7 @@ class CalculadorHoras:
                        
                        
         
-                elif fechaSalidaOperarios in feriados or fechaIngreso in feriados:
+                if fechaSalidaOperarios in feriados or fechaIngreso in feriados:
                     
                     if fechaIngreso in feriados and fechaSalidaOperarios not in feriados:                    
                         if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
@@ -1075,17 +1132,18 @@ class CalculadorHoras:
                         
                         
                     
-                elif fechaSalidaOperarios in mediosDias or fechaIngreso in mediosDias:
-                    
+                if fechaSalidaOperarios in mediosDias or fechaIngreso in mediosDias:
                     if  turnoNocheIngreso- timedelta(hours=5) < ingresoOperario < turnoNocheIngreso:
                         if ingresoOperario < turnoNocheIngreso:                                                      
                             minutosExtras50 += ((turnoNocheIngreso - ingresoOperario).seconds)/3600
+                            
                             # frame.iloc[fila,18] = round(minutosExtras100,2)
-                        elif salidaOperario > turnoNocheSalida:
-                            if salidaOperario > horaSalidaMedioDia:
-                                minutosExtras100 += ((salidaOperario - horaSalidaMedioDia).seconds)/3600
+                    if salidaOperario > turnoNocheSalida:
+                            if salidaOperario > salidaMedioDia:
+                                minutosExtras100 += ((salidaOperario - salidaMedioDia).seconds)/3600
                             else:
                                 minutosExtras50 += ((salidaOperario - turnoNocheSalida).seconds)/3600
+                               
                     else:
                         
                         if turnoMañanaPrimerIngreso - timedelta(hours=4) < ingresoOperario < turnoMañanaPrimerIngreso:
@@ -1136,7 +1194,9 @@ class CalculadorHoras:
                             if salidaOperario > turnoTardeSalida:
 
                                 minutosExtras50 += ((salidaOperario - turnoTardeSalida).seconds)/3600
-              
+                
+                if minutosExtras50 > 4 and dia != 'Sábado':
+                    minutosExtras50 = 4
                 frame.iloc[fila,17] = round(minutosExtras50,2) #Asigna las horas extras al 50%
             
         # msg = 'Contabilizando horas al 50 y 100'
@@ -1636,29 +1696,32 @@ class CalculadorHoras:
                         break
                 
                 if frame.iloc[x,4] > horaIngreso:
-                    tardanza = round((((frame.iloc[x,4] - horaIngreso).seconds)/3600),2)               
+                    tardanza = round((((frame.iloc[x,4] - horaIngreso).seconds)/60),2)               
                 
                 if fecha in mediosDias:
                     if salida < horaSalidaMedioDia:
-                        retiro = round((((horaSalidaMedioDia - salida).seconds)/3600),2)                        
+                        retiro = round((((horaSalidaMedioDia - salida).seconds)/60),2)                        
                 elif fecha not in mediosDias:
                     if salida < horaSalida and dia != 'Sábado':
-                        retiro = round((((horaSalida - salida).seconds)/3600),2)
+                        retiro = round((((horaSalida - salida).seconds)/60),2)
                 
                 horas_trabajadas = frame.iloc[x,16]
-                if sinAlmuerzo and dia != 'Sábado':
-                    if salida > limiteSalida:
-                        horas_trabajadas -= 0.5
+                # if sinAlmuerzo and dia != 'Sábado':
+                #     if salida > limiteSalida:
+                #         horas_trabajadas -= 0.5
                 
                 if horas_trabajadas > 8:
-                    horas_trabajadas = 8 
+                    horas_trabajadas = 8.8
                 
-                if dia != 'Sábado':
-                    if horas_trabajadas >= 8 and (tardanza > 0 or retiro >0):
-                        horas_trabajadas = horas_trabajadas- tardanza - retiro #Si entro tarde resta esos minutos
+                # if dia != 'Sábado':
+                #     if horas_trabajadas >= 8 and (tardanza > 0 or retiro >0):
+                #         horas_trabajadas = horas_trabajadas- tardanza - retiro #Si entro tarde resta esos minutos
                     # elif horas_trabajadas < 8 and tardanza > 0:
                     #     horas_trabajadas = horas_trabajadas + (8 - horas_trabajadas) - tardanza
-                
+                if tardanza != 0:
+                    frame.iloc[x,19] = tardanza
+                if retiro != 0:
+                    frame.iloc[x,20] = retiro
                                
                 frame.iloc[x,16] = horas_trabajadas
           
@@ -1737,6 +1800,13 @@ def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):
 
             
             for legajo in legajosSinMarca:
+                try:
+                    area = frameQuerido.loc[int(legajo),'AREA']
+                except:
+                    msg = 'El siguiente legajo ({}) no se encuentra en la BD'.format(legajo)
+                    logger.warning(msg)
+                    print(msg,'\n','Se procede a obviar dicho empleado y se prosigue con el resto.\n')
+                    continue
                 newFrame = frame[frame['Legajo']==legajo].copy()
                 nombre = newFrame.iloc[0,1]
                 newFrame = newFrame.reset_index(drop=True)
@@ -1753,7 +1823,7 @@ def informeNoFichadas(frame,fechaInicio,fechaFin,mediosDias=[],feriados=[]):
                 if len(indexNoMarca) == 0:
                     continue
                 else:
-                    doc.add_heading(('Informe sobre {}:').format(nombre),level=1)
+                    doc.add_heading(('Informe sobre {} ({}) ({}):').format(nombre,legajo,area),level=1)
                     c = doc.add_paragraph()
                 
                 try:

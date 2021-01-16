@@ -1,0 +1,15 @@
+
+Empleado:        438 - RIVERO LUIS ALBERTO                                        Tarjeta Nº         438
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      21/12/2020 19:44
+Martes     22/12/2020          08:03   19:47
+Miércoles  23/12/2020          08:14   19:41
+Jueves     24/12/2020          08:05
+Lunes      28/12/2020 07:34    20:05
+Martes     29/12/2020 07:42    20:03
+Miércoles  30/12/2020 07:45    20:04
+
