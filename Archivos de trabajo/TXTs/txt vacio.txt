@@ -1,0 +1,15 @@
+
+Empleado:        536 - QUINTEROS JUAN                                             Tarjeta Nº         536
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  20/01/2021          00:01   15:39
+Jueves     21/01/2021          00:01   15:40
+Viernes    22/01/2021          00:00   15:44
+Sábado     23/01/2021 00:00            15:45
+Domingo    24/01/2021          00:03
+Lunes      25/01/2021 07:55    16:48
+
+

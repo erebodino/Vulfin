@@ -1,0 +1,3126 @@
+VULCANOS.A                                            Reporte de Fichadas (Por Legajo)
+
+PERIODO:    15/01/2021  AL   19/01/2021                                       IMPRESO EL DÍA:  20/01/2021
+
+Tipo de equipo:   TODOS
+
+Empleado:          6 - TOMACELLO PABLO                                            Tarjeta Nº           6
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Martes     19/01/2021 06:38    16:52
+
+
+
+Empleado:          8 - REYNA ALFREDO ALBERTO                                      Tarjeta Nº           8
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:11    13:01   13:33   16:51
+Lunes      18/01/2021 08:03    12:32   12:59   16:55
+Martes     19/01/2021 07:58    12:31   13:03   16:50
+
+
+
+Empleado:          9 - MENDOZA JOSE IGNACIO                                       Tarjeta Nº           9
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:00   19:20
+Sábado     16/01/2021          08:00           08:00
+Lunes      18/01/2021 19:06            19:06
+Martes     19/01/2021          08:02   19:22
+
+
+
+Empleado:         13 - MORICONI GUSTAVO ADRIAN                                    Tarjeta Nº          13
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:09            12:57   16:48
+Lunes      18/01/2021 07:15    12:34   12:54   17:27
+Martes     19/01/2021 07:05    12:36   12:57   17:27
+
+
+
+Empleado:         20 - BRANDAN GABRIEL MARCELO                                    Tarjeta Nº          20
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    13:02   13:33   16:51
+Lunes      18/01/2021 07:53    12:30   12:59   17:43
+Martes     19/01/2021 10:57    12:30   12:56   16:54
+
+
+
+Empleado:         22 - LOPEZ MERCEDES ALBERTO                                     Tarjeta Nº          22
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:20    12:32   12:50   16:49
+Lunes      18/01/2021 07:23    12:30   12:49   16:48
+Martes     19/01/2021 07:16    12:31   12:50   16:48
+
+
+
+Empleado:         30 - RIMONDOTTO ALFREDO JUAN JOSE                               Tarjeta Nº          30
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:37    16:51
+Sábado     16/01/2021 07:17    12:58
+Lunes      18/01/2021 07:42    16:46
+Martes     19/01/2021 07:31            16:47   16:47
+
+
+
+Empleado:         36 - REYNA FERNANDO DARIO                                       Tarjeta Nº          36
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55
+Sábado     16/01/2021 09:24    12:18
+
+
+
+Empleado:         47 - VERA OSCAR ALBERTO                                         Tarjeta Nº          47
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    20:02           20:02
+Lunes      18/01/2021 07:49            07:49   20:01           20:01
+Martes     19/01/2021 07:51            07:51   20:01           20:01
+
+
+
+Empleado:         49 - BUSTOS DIEGO ALEJANDRO                                     Tarjeta Nº          49
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:00    13:02   13:33   16:49           16:50
+Lunes      18/01/2021 07:59    12:30   13:02   16:51           16:52
+Martes     19/01/2021 07:59    12:31   13:02   16:48
+
+
+
+Empleado:         50 - SANCHEZ CRISTIAN ARIEL                                     Tarjeta Nº          50
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:57    16:59
+Lunes      18/01/2021 07:52    17:15
+Martes     19/01/2021 07:57    16:59
+
+
+
+Empleado:         52 - SIRAGUSA JAVIER CARLOS S.                                  Tarjeta Nº          52
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    17:11
+Lunes      18/01/2021 08:00    17:21
+Martes     19/01/2021 08:02    16:56
+
+
+
+Empleado:         57 - JAIME EDUARDO MARCELO                                      Tarjeta Nº          57
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48            12:56   16:49
+Lunes      18/01/2021 07:30    12:32   12:45   17:27
+Martes     19/01/2021 08:00    17:29
+
+
+
+Empleado:         66 - POLIZZI JORGE ARIEL                                        Tarjeta Nº          66
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:03   07:44   20:07
+Lunes      18/01/2021 07:46    17:00
+Martes     19/01/2021 07:55    20:04
+
+
+
+Empleado:         71 - MORICONI SERGIO ALEJANDRO                                  Tarjeta Nº          71
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 06:21    12:32   12:49   16:48
+Lunes      18/01/2021 06:20    12:37   12:53   17:15
+Martes     19/01/2021 06:23    12:38   12:53   17:18
+
+
+
+Empleado:         81 - LEMO HECTOR FABIAN                                         Tarjeta Nº          81
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:34    12:31   13:02   16:50
+Lunes      18/01/2021 07:57    12:32   12:57   16:50
+Martes     19/01/2021 07:47    12:33   12:54   16:52
+
+
+
+Empleado:         84 - SALGUERO SERGIO FERNANDO                                   Tarjeta Nº          84
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 09:06    17:37
+Lunes      18/01/2021 07:59    17:25
+Martes     19/01/2021 08:00    17:12
+
+
+
+Empleado:         95 - BLANCO JUAN                                                Tarjeta Nº          95
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 06:56    12:31   12:45   16:50
+Lunes      18/01/2021 07:57    12:43   13:00   17:47
+Martes     19/01/2021 07:33    12:48   13:01   17:59
+
+
+
+Empleado:         97 - BRANDAN JORGE ALBERTO                                      Tarjeta Nº          97
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    16:46
+Lunes      18/01/2021 07:54    16:13
+Martes     19/01/2021 07:58    16:00
+
+
+
+Empleado:        101 - ANDREANI CLAUDIO AMERICO                                   Tarjeta Nº         101
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    12:29   12:59   16:48
+Lunes      18/01/2021 07:54    12:28   12:59   16:49
+Martes     19/01/2021 07:57    12:30           16:48
+
+
+
+Empleado:        105 - NUÑEZ CRISTIAN ALEJANDRO                                   Tarjeta Nº         105
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:42    12:33   12:51   16:56
+Lunes      18/01/2021 07:46    12:34   12:51   16:51
+Martes     19/01/2021 07:47    12:32   12:52   16:51
+
+
+
+Empleado:        106 - PALACIO VICTOR RICARDO                                     Tarjeta Nº         106
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:28    16:54
+Lunes      18/01/2021 07:35    16:54
+Martes     19/01/2021 07:28    16:55
+
+
+
+Empleado:        111 - ABREGO JUAN MARCELO                                        Tarjeta Nº         111
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 06:19    12:32   12:55   16:50
+Lunes      18/01/2021 06:21    12:37   12:53   17:15
+Martes     19/01/2021 06:23    12:38   12:52   17:18
+
+
+
+Empleado:        113 - RIVERO FABIAN ALBERTO                                      Tarjeta Nº         113
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:09    12:36   12:50   16:48
+Lunes      18/01/2021 07:23    12:34   12:49   16:48
+Martes     19/01/2021 07:18    12:34   12:46   16:48
+
+
+
+Empleado:        124 - PASCUAL FACUNDO MARTIN                                     Tarjeta Nº         124
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    12:43   12:43   16:49
+
+
+
+Empleado:        137 - GUTIERREZ BERNAL LUCIA A                                   Tarjeta Nº         137
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:56    17:15
+Lunes      18/01/2021 07:51    17:19
+Martes     19/01/2021 07:57    17:03
+
+
+
+Empleado:        141 - GARCIA MARCELO ALEJANDRO                                   Tarjeta Nº         141
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:10            13:00   13:01   13:01   16:53
+Lunes      18/01/2021 07:16    12:33   12:57   16:51
+Martes     19/01/2021 07:09    12:37   13:00   16:52
+
+
+
+Empleado:        142 - ANDREANI DANIEL HUMBERTO                                   Tarjeta Nº         142
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    12:58   12:58   16:51
+Lunes      18/01/2021 07:57    12:33   12:55   16:50
+Martes     19/01/2021 07:58    12:36   12:52   16:52
+
+
+
+Empleado:        143 - IBAÑEZ SEBASTIAN MATIAS                                    Tarjeta Nº         143
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:09   19:46
+Sábado     16/01/2021          08:03           08:03   13:52   20:01
+Lunes      18/01/2021 07:41    20:01
+Martes     19/01/2021 07:47    20:02
+
+
+
+Empleado:        145 - ALVAREZ CARLOS MARIANO                                     Tarjeta Nº         145
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:57    17:00
+Lunes      18/01/2021 07:57    12:45   13:18   16:48
+Martes     19/01/2021          12:53           16:55
+
+
+
+Empleado:        164 - NUÑEZ DAMIAN RICARDO                                       Tarjeta Nº         164
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:42    12:32   12:43   16:56
+Lunes      18/01/2021 07:46    12:33   12:43   16:51
+Martes     19/01/2021 07:47    12:30   12:44   16:50
+
+
+
+Empleado:        185 - TOMACELLO JOSE                                             Tarjeta Nº         185
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:08    12:32   12:43   16:50
+Lunes      18/01/2021 07:15    12:32   12:47   17:17
+Martes     19/01/2021 06:39    12:33   12:44   17:16
+
+
+
+Empleado:        200 - MERCADO HECTOR JOSE                                        Tarjeta Nº         200
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    12:38   12:58   16:52
+Lunes      18/01/2021 07:56    12:39   12:58   16:49
+Martes     19/01/2021 07:50    12:34   12:55   16:49
+
+
+
+Empleado:        202 - ANDREANI JOSUE LEON                                        Tarjeta Nº         202
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:02   15:24
+Sábado     16/01/2021          00:09   15:56   20:58
+Lunes      18/01/2021 23:28
+Martes     19/01/2021          08:03   23:25
+
+
+
+Empleado:        224 - ULLOA VICTOR ESTEBAN                                       Tarjeta Nº         224
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    16:49   18:02   20:06
+Sábado     16/01/2021 07:48    14:05   19:50
+Domingo    17/01/2021          00:01
+Lunes      18/01/2021 19:43
+Martes     19/01/2021          08:05
+
+
+
+Empleado:        226 - REY SAUL  ARGENTINO                                        Tarjeta Nº         226
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    17:01
+Lunes      18/01/2021 07:57    16:51
+Martes     19/01/2021 08:03    16:50
+
+
+
+Empleado:        233 - LANZENI MARCOS RUBEN                                       Tarjeta Nº         233
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    16:51
+Lunes      18/01/2021 07:54    16:52
+Martes     19/01/2021 07:54    16:52
+
+
+
+Empleado:        235 - LUCERO MIGUEL ARMANDO                                      Tarjeta Nº         235
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:06   19:31           19:36           19:36
+Sábado     16/01/2021          08:08
+Lunes      18/01/2021 07:42            07:43   20:05
+Martes     19/01/2021 07:21    20:06
+
+
+
+Empleado:        236 - ESPERON RAMIREZ RAUL ANDRES                                Tarjeta Nº         236
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:09    17:14
+Lunes      18/01/2021 07:15    17:28
+Martes     19/01/2021 07:40    17:29
+
+
+
+Empleado:        241 - DE LA O PRADO GUATAVO FABIAN                               Tarjeta Nº         241
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:45    12:30   12:38   16:49
+Lunes      18/01/2021 07:48    12:31   12:48   16:49
+Martes     19/01/2021 07:49    12:31   12:52   16:48
+
+
+
+Empleado:        242 - ARRASCAETA LUIS MIGUEL                                     Tarjeta Nº         242
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:47    16:52
+Lunes      18/01/2021 07:48    16:48   17:57   20:02
+Martes     19/01/2021 07:51    16:49   18:00   20:01
+
+
+
+Empleado:        246 - OSLER GUGGUANA  GONZALO                                    Tarjeta Nº         246
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:43    12:55   12:55   16:50
+Lunes      18/01/2021 07:41    12:30   12:52   16:50
+Martes     19/01/2021 07:34    12:53   12:53   16:49
+
+
+
+Empleado:        248 - JAIME CORTEZ WALTER MARCELO                                Tarjeta Nº         248
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    12:30   12:56   16:48
+Sábado     16/01/2021 15:46
+Domingo    17/01/2021          00:00
+Lunes      18/01/2021 07:30    12:31   12:48   17:28
+Martes     19/01/2021 07:59    12:32   12:53   17:28
+
+
+
+Empleado:        253 - VALDEZ EDUARDO CEFERINO                                    Tarjeta Nº         253
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:45            07:45   20:08           20:08
+Lunes      18/01/2021 23:45            23:46           23:46
+Martes     19/01/2021          08:05           08:05   23:40           23:41
+
+
+
+Empleado:        260 - MONTIVERO CLAUDIO GUSTAVO                                  Tarjeta Nº         260
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:42    16:02
+Lunes      18/01/2021 07:44    17:01
+Martes     19/01/2021 07:44    16:49
+
+
+
+Empleado:        261 - CASTILLO YONATHAN                                          Tarjeta Nº         261
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:46   12:46   16:51
+Lunes      18/01/2021 07:51    12:49   12:49   16:52
+Martes     19/01/2021 07:53    12:45   12:45   16:51
+
+
+
+Empleado:        263 - SANCHEZ MAURICIO                                           Tarjeta Nº         263
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    12:30   12:58   16:51
+Sábado     16/01/2021 07:53    14:05
+Lunes      18/01/2021 07:47    16:01           16:03
+Martes     19/01/2021 07:55    12:30   12:44   17:32
+
+
+
+Empleado:        267 - OLMOS GISELLE                                              Tarjeta Nº         267
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    16:50
+Lunes      18/01/2021 07:48    16:52
+Martes     19/01/2021 07:46    16:49
+
+
+
+Empleado:        268 - VARELA FABRICIO                                            Tarjeta Nº         268
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55
+
+
+
+Empleado:        290 - ANDREANI PEDRO RAUL                                        Tarjeta Nº         290
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:56    12:30   12:59   16:51
+Lunes      18/01/2021 07:47    12:37   12:53   16:49
+Martes     19/01/2021 07:45    12:33   12:46   16:48
+
+
+
+Empleado:        295 - PEREYRA CRISTIAN  ALBERTO                                  Tarjeta Nº         295
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:38    16:51
+Lunes      18/01/2021 07:46    16:52
+Martes     19/01/2021          07:33   07:33   16:50
+
+
+
+Empleado:        306 - PAPURELLO NELSON DAMIAN                                    Tarjeta Nº         306
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      18/01/2021 07:34    12:31   12:58   16:50
+
+
+
+Empleado:        318 - SANCHEZ CRISTIAN JUAN JAVIER                               Tarjeta Nº         318
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04           08:06   19:50
+Sábado     16/01/2021          08:00
+Lunes      18/01/2021 07:51    20:00
+Martes     19/01/2021 07:54    20:02
+
+
+
+Empleado:        335 - ROJAS RODRIGO                                              Tarjeta Nº         335
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:56    20:01
+Lunes      18/01/2021 19:55
+Martes     19/01/2021          08:01   19:54
+
+
+
+Empleado:        336 - LOPEZ DANIEL                                               Tarjeta Nº         336
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:28            12:44   16:50
+Lunes      18/01/2021 07:34            12:51   16:51
+Martes     19/01/2021 07:27            12:52   16:48
+
+
+
+Empleado:        343 - RIVERO PABLO                                               Tarjeta Nº         343
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    16:48
+Lunes      18/01/2021 07:48    16:50
+Martes     19/01/2021 07:46    16:49
+
+
+
+Empleado:        352 - BAZAN MOYA EUGENIO                                         Tarjeta Nº         352
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:05   23:44
+Sábado     16/01/2021          08:00
+Lunes      18/01/2021 07:44    16:04
+Martes     19/01/2021 07:51    16:00
+
+
+
+Empleado:        355 - GUTIERREZ DAVID                                            Tarjeta Nº         355
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:05   19:50           20:29
+Sábado     16/01/2021          08:00
+Lunes      18/01/2021 20:12
+Martes     19/01/2021          08:05   19:51
+
+
+
+Empleado:        359 - PEREGO WALTER                                              Tarjeta Nº         359
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04   23:53
+Sábado     16/01/2021          08:00
+Lunes      18/01/2021 07:57    16:01
+Martes     19/01/2021 07:48    16:00
+
+
+
+Empleado:        371 - SANCHEZ SABRINA                                            Tarjeta Nº         371
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:04    16:49
+Martes     19/01/2021 07:57    16:49
+
+
+
+Empleado:        375 - carla gonzalez archivo 2019                                Tarjeta Nº         375
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      18/01/2021 07:59    16:52
+Martes     19/01/2021 07:50    16:48
+
+
+
+Empleado:        376 - TALABERA LEANDRO                                           Tarjeta Nº         376
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:00   19:47           19:47
+Sábado     16/01/2021          08:00
+Lunes      18/01/2021 07:42    20:00
+Martes     19/01/2021 07:38    20:01
+
+
+
+Empleado:        377 - CEBALLOS MATIAS MIGUEL                                     Tarjeta Nº         377
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:53    12:30   12:53   16:49
+Lunes      18/01/2021 07:55    12:32   12:58   16:48
+Martes     19/01/2021 07:54    12:30   13:00   16:48
+
+
+
+Empleado:        392 - SANTA CRUZ EMANUEL                                         Tarjeta Nº         392
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:06    12:32   12:59   16:51
+Lunes      18/01/2021 06:46    16:51
+Martes     19/01/2021 06:51    12:31   12:57   17:24
+
+
+
+Empleado:        393 - VERAZAY ESTEBAN                                            Tarjeta Nº         393
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:01   19:25
+Sábado     16/01/2021          08:00   15:27           15:31
+Domingo    17/01/2021          00:00
+Lunes      18/01/2021 07:41    20:01
+Martes     19/01/2021 07:26            07:57   20:02
+
+
+
+Empleado:        394 - VILLADA ARIAS ARIEL                                        Tarjeta Nº         394
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    12:47   12:47   16:49
+Lunes      18/01/2021 07:48    12:51   12:51   16:49
+Martes     19/01/2021 07:53    12:30   12:56   16:48
+
+
+
+Empleado:        395 - PLANS                                                      Tarjeta Nº         395
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:42    16:02
+Lunes      18/01/2021 07:42    16:25
+Martes     19/01/2021 07:45    16:10
+
+
+
+Empleado:        397 - BARRAZA ISMAEL                                             Tarjeta Nº         397
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:53    20:01
+Lunes      18/01/2021 07:51    20:00
+Martes     19/01/2021 07:53    20:00
+
+
+
+Empleado:        398 - PALOMEQUE RODRIGO                                          Tarjeta Nº         398
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:53    16:50
+Lunes      18/01/2021 07:48    16:56
+Martes     19/01/2021 07:53    16:50
+
+
+
+Empleado:        403 - OLIVERO RODRIGO ANDRES                                     Tarjeta Nº         403
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    16:48
+Lunes      18/01/2021 07:52    12:35   12:48   16:48
+Martes     19/01/2021 07:45    12:46   12:46   16:48
+
+
+
+Empleado:        407 - ROMERO ALFARO BRAIAN                                       Tarjeta Nº         407
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    13:04   13:26   16:50
+Sábado     16/01/2021 09:01    12:58
+Lunes      18/01/2021 07:52    12:32   13:01   17:19
+Martes     19/01/2021 07:51    12:32   12:50   16:53
+
+
+
+Empleado:        416 - LEDESMA SANDRA                                             Tarjeta Nº         416
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:00
+Lunes      18/01/2021 07:55    16:51
+Martes     19/01/2021 07:58    16:50
+
+
+
+Empleado:        420 - CEREZO GIULIANO                                            Tarjeta Nº         420
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:08   23:53
+Sábado     16/01/2021          08:08
+Lunes      18/01/2021 15:55
+Martes     19/01/2021          00:08   07:53   16:17
+
+
+
+Empleado:        422 - DUARTE EUGENIO A                                           Tarjeta Nº         422
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:44    12:32   13:01   16:51
+Lunes      18/01/2021 07:54    16:51
+Martes     19/01/2021 06:23    12:31   12:57   17:24
+
+
+
+Empleado:        423 - DIAZ GONZALEZ MARCOS E                                     Tarjeta Nº         423
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04   19:50
+Sábado     16/01/2021          04:00
+Lunes      18/01/2021 19:47
+Martes     19/01/2021          08:01   19:47
+
+
+
+Empleado:        424 - CALDO CRISTIAN ANDRES                                      Tarjeta Nº         424
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:53    13:00   13:31   16:48
+Lunes      18/01/2021 07:45    12:36           16:48
+Martes     19/01/2021 07:52            13:08   16:49
+
+
+
+Empleado:        426 - BIO IVAN FERNANDO                                          Tarjeta Nº         426
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:32    17:14
+Lunes      18/01/2021 07:19            07:32   17:12
+Martes     19/01/2021 07:27    17:28
+
+
+
+Empleado:        429 - BARRAZA JAVIER ISMAEL                                      Tarjeta Nº         429
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    12:30   12:46   16:49
+Lunes      18/01/2021 07:51    12:30   12:51   16:48
+Martes     19/01/2021 07:54    12:30   12:42   16:48
+
+
+
+Empleado:        432 - RASJIDO DAVID EMANUEL                                      Tarjeta Nº         432
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:41    20:05
+Lunes      18/01/2021 19:47
+Martes     19/01/2021          08:03   19:47
+
+
+
+Empleado:        434 - PONCE LEONARDO GABRIEL                                     Tarjeta Nº         434
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    20:00
+Lunes      18/01/2021 23:58
+Martes     19/01/2021          08:04   19:48           19:57
+
+
+
+Empleado:        437 - BRITOS PAULO ARIEL                                         Tarjeta Nº         437
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:56            07:56   16:16           16:16
+Sábado     16/01/2021 07:54            07:54   16:03           16:03
+Lunes      18/01/2021 08:01            08:01   16:15           16:15
+Martes     19/01/2021 15:43            15:43
+
+
+
+Empleado:        438 - RIVERO LUIS ALBERTO                                        Tarjeta Nº         438
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:01           08:02   19:36
+Sábado     16/01/2021          08:00           08:00
+Lunes      18/01/2021 07:41    20:05
+Martes     19/01/2021 07:38    20:03
+
+
+
+Empleado:        443 - SANCHEZ ROMINA                                             Tarjeta Nº         443
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:45
+Lunes      18/01/2021 07:47    15:49
+Martes     19/01/2021 07:40    15:48
+
+
+
+Empleado:        446 - MALDONADO MATIAS JAVIER                                    Tarjeta Nº         446
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:57   12:57   16:49
+Lunes      18/01/2021 07:58    12:33   12:56   17:27
+Martes     19/01/2021 07:56    12:36   12:57   17:27
+
+
+
+Empleado:        447 - VILLALBA CARLOS GABRIEL                                    Tarjeta Nº         447
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:01   15:52
+Sábado     16/01/2021          00:01   15:45
+Domingo    17/01/2021          00:00
+Lunes      18/01/2021 07:50            16:00   16:01
+Martes     19/01/2021 07:51    16:03
+
+
+
+Empleado:        448 - OLIVA DIEGO DE DIOS                                        Tarjeta Nº         448
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:03   19:50
+Sábado     16/01/2021          05:03
+Lunes      18/01/2021 07:54    20:02
+Martes     19/01/2021 07:52
+
+
+
+Empleado:        458 - MASCHERONI RENZO                                           Tarjeta Nº         458
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    17:00
+Lunes      18/01/2021 19:59
+Martes     19/01/2021          08:02   19:44
+
+
+
+Empleado:        470 - IBAÑEZ ALEXANDER                                           Tarjeta Nº         470
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:06    12:50   12:50   16:50
+Lunes      18/01/2021 07:46    16:48
+Martes     19/01/2021 08:02    17:39
+
+
+
+Empleado:        472 - SUAREZ FRANCO                                              Tarjeta Nº         472
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    16:00
+Lunes      18/01/2021 07:50    16:09
+Martes     19/01/2021 07:52    16:06
+
+
+
+Empleado:        475 - SANCHEZ BRAIAN                                             Tarjeta Nº         475
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:02   15:51           15:56
+Sábado     16/01/2021          00:01
+Lunes      18/01/2021 15:48            15:50
+Martes     19/01/2021          00:02           00:03   15:52
+
+
+
+Empleado:        476 - YBARRA RICARDO                                             Tarjeta Nº         476
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:39    12:34   12:59   16:50
+Lunes      18/01/2021 07:42    12:30   12:51   16:50
+Martes     19/01/2021 07:42            07:48   12:30   12:57   16:51
+
+
+
+Empleado:        477 - VILLALBA BRAIAN                                            Tarjeta Nº         477
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Sábado     16/01/2021 07:48    16:09           16:09
+Lunes      18/01/2021 23:55
+Martes     19/01/2021          08:02           08:02   23:51           23:51
+
+
+
+Empleado:        479 - CANTO MIGUEL                                               Tarjeta Nº         479
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:28    20:04
+Lunes      18/01/2021 19:39
+Martes     19/01/2021          08:04   19:20
+
+
+
+Empleado:        483 - MARTINEZ FAVIO                                             Tarjeta Nº         483
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    20:00
+
+
+
+Empleado:        485 - FERREYRA KEVIN                                             Tarjeta Nº         485
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:05    12:30           16:48
+Lunes      18/01/2021 07:46    12:33           16:48
+Martes     19/01/2021 07:41    12:34           12:50           16:49
+
+
+
+Empleado:        490 - ZURITA LAUTARO                                             Tarjeta Nº         490
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    16:04
+Lunes      18/01/2021 07:54    12:37   12:59   16:50
+Martes     19/01/2021 08:00    12:32   12:58   16:49
+
+
+
+Empleado:        492 - GONZALEZ BRAIAN                                            Tarjeta Nº         492
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    20:05
+Lunes      18/01/2021 19:47
+Martes     19/01/2021          08:04   19:50
+
+
+
+Empleado:        496 - PICONE                                                     Tarjeta Nº         496
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:37    12:31           16:49
+Lunes      18/01/2021 07:45    12:30   12:53   16:49
+Martes     19/01/2021 07:32    12:30           16:49
+
+
+
+Empleado:        500 - ALTAMIRANDO                                                Tarjeta Nº         500
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:53    12:59   13:21   16:51
+Lunes      18/01/2021 07:56    12:30   13:01   16:51
+Martes     19/01/2021 07:57    12:30   12:46   17:43
+
+
+
+Empleado:        503 - AMAYA DARIO                                                Tarjeta Nº         503
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:01    13:22   13:44   16:48
+Lunes      18/01/2021 08:02    12:30           16:48
+Martes     19/01/2021 08:00    12:30   12:46   16:49
+
+
+
+Empleado:        506 - GALINDEZ OSCAR                                             Tarjeta Nº         506
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:10    12:32           16:49
+Lunes      18/01/2021 07:56    12:31   12:59   16:48
+Martes     19/01/2021 07:33    12:31   13:02   17:47
+
+
+
+Empleado:        508 - martisendra                                                Tarjeta Nº         508
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:56    12:30   12:44   16:49
+Lunes      18/01/2021 07:59    12:30   12:40   17:03
+Martes     19/01/2021 07:56    12:30   12:46   17:33
+
+
+
+Empleado:        509 - navarro martin                                             Tarjeta Nº         509
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:47    16:49
+Lunes      18/01/2021 07:52    17:43
+Martes     19/01/2021 07:51    17:58
+
+
+
+Empleado:        510 - garay navarro                                              Tarjeta Nº         510
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04   23:51
+Sábado     16/01/2021          08:03
+Lunes      18/01/2021 07:46    16:04           16:04
+Martes     19/01/2021 07:47            07:47   16:20
+
+
+
+Empleado:        511 - jaime ricardo                                              Tarjeta Nº         511
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:04    16:49
+Lunes      18/01/2021 07:46    12:30   12:44   16:48
+Martes     19/01/2021 07:34    12:30   12:45   16:49
+
+
+
+Empleado:        512 - arias victor                                               Tarjeta Nº         512
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:05    13:00   13:26   16:48
+Lunes      18/01/2021 07:46    16:48
+Martes     19/01/2021 07:40    12:31   13:01   16:51
+
+
+
+Empleado:        517 - asinari Santiago                                           Tarjeta Nº         517
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:58    11:42
+Lunes      18/01/2021 07:56    14:08           16:48
+Martes     19/01/2021 07:52    13:41   14:15   16:48
+
+
+
+Empleado:        519 - LUNA                                                       Tarjeta Nº         519
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:32           12:58           16:50           16:53
+Lunes      18/01/2021 07:58    12:30           12:56           16:50
+Martes     19/01/2021 07:57    12:32           12:55           16:50
+
+
+
+Empleado:        521 - PERALTA RENE                                               Tarjeta Nº         521
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:30    12:30           12:30   13:10   16:52
+Lunes      18/01/2021 07:36    12:30   12:59   16:51
+Martes     19/01/2021 07:32    12:30   12:52   16:50
+
+
+
+Empleado:        522 - PAREDES JOSE DANIEL                                        Tarjeta Nº         522
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49            07:49   20:00
+Sábado     16/01/2021 15:49            15:49
+Domingo    17/01/2021          00:00
+Lunes      18/01/2021 07:48            07:48   20:00
+Martes     19/01/2021 07:50            07:50   20:01
+
+
+
+Empleado:        525 - RUIZ PABLO ARIEL                                           Tarjeta Nº         525
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:02   15:47
+Sábado     16/01/2021          00:03
+Lunes      18/01/2021 23:53
+Martes     19/01/2021          08:05           08:05   23:54
+
+
+
+Empleado:        526 - FAJARDO HECTOR GUSTAVO                                     Tarjeta Nº         526
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:01   19:55
+Sábado     16/01/2021          08:02   16:03
+Domingo    17/01/2021          00:00
+Lunes      18/01/2021 19:54
+Martes     19/01/2021          08:04   19:57
+
+
+
+Empleado:        527 - FIGUEROA LEANDRO JEREMIAS                                  Tarjeta Nº         527
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:44    13:24   13:53   16:51
+Lunes      18/01/2021 07:52    12:31   13:00   17:10
+Martes     19/01/2021 07:56            13:01   16:50
+
+
+
+Empleado:        528 - KLOBUCHAR CARLOS ADRIAN                                    Tarjeta Nº         528
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:44    12:34   12:38   16:51
+Lunes      18/01/2021 07:30    12:31   12:50   16:48
+Martes     19/01/2021 07:35    12:30   12:54   17:25
+
+
+
+Empleado:        531 - ZAMBRANO DARIO                                             Tarjeta Nº         531
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:19    12:36   12:49   16:48
+Lunes      18/01/2021 07:19    12:34   12:48   16:48
+Martes     19/01/2021 07:17            07:23   12:35   12:45   16:48
+
+
+
+Empleado:        536 - QUINTEROS JUAN                                             Tarjeta Nº         536
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          16:04
+Sábado     16/01/2021 07:52    16:00
+Martes     19/01/2021          00:01   15:56
+
+
+
+Empleado:        543 - biancotti oyola eduardo                                    Tarjeta Nº         543
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:44    16:14
+Lunes      18/01/2021 07:54    16:03           16:07
+Martes     19/01/2021 07:54            16:01   16:01           16:01
+
+
+
+Empleado:        545 - sanchez rodriguez                                          Tarjeta Nº         545
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04   19:44
+Sábado     16/01/2021          08:04
+Lunes      18/01/2021 19:39
+Martes     19/01/2021          08:02   19:35
+
+
+
+Empleado:        547 - PUGA FRANCO                                                Tarjeta Nº         547
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:03   15:52
+Sábado     16/01/2021          00:02
+Lunes      18/01/2021 15:48
+Martes     19/01/2021          00:03   15:52
+
+
+
+Empleado:        548 - PERALTA SERGIO                                             Tarjeta Nº         548
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:05   21:48
+Sábado     16/01/2021          08:00
+Lunes      18/01/2021 07:46    18:04
+Martes     19/01/2021 07:44    20:12
+
+
+
+Empleado:        550 - MOLINA MARCOS                                              Tarjeta Nº         550
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:06   19:37
+Sábado     16/01/2021          08:04   15:41
+Domingo    17/01/2021          00:01
+Lunes      18/01/2021 07:42    20:05
+Martes     19/01/2021 07:24    20:04
+
+
+
+Empleado:        551 - AGUIRRE EDUARDO                                            Tarjeta Nº         551
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04   19:17
+Sábado     16/01/2021          08:03
+Lunes      18/01/2021 08:01    20:00
+Martes     19/01/2021 07:20    20:02
+
+
+
+Empleado:        552 - MANSILLA MAXIMILIANO                                       Tarjeta Nº         552
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:03   19:46
+Sábado     16/01/2021          08:04   15:41
+Domingo    17/01/2021          00:00
+Lunes      18/01/2021 19:47
+Martes     19/01/2021          08:09   19:40
+
+
+
+Empleado:        554 - NUÑEZ VERONICA                                             Tarjeta Nº         554
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    12:30   12:50   16:48
+Lunes      18/01/2021 07:49    12:31   12:55   16:48
+Martes     19/01/2021 07:49    12:33   12:59   16:50
+
+
+
+Empleado:        555 - SANCHEZ MARIA FERNANDA                                     Tarjeta Nº         555
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:45    17:54
+Lunes      18/01/2021 07:47    17:03
+Martes     19/01/2021 07:39    17:45
+
+
+
+Empleado:        556 - ROSEMEBERG JOSE GABRIEL                                    Tarjeta Nº         556
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    16:02
+Lunes      18/01/2021 07:52    16:02
+Martes     19/01/2021 07:54    16:09
+
+
+
+Empleado:        557 - CAMINO LUIS ALBERTO                                        Tarjeta Nº         557
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:11   15:49
+Sábado     16/01/2021          00:06
+Lunes      18/01/2021 23:52
+Martes     19/01/2021          08:05   23:53
+
+
+
+Empleado:        560 - COMASCHI CLAUDIO                                           Tarjeta Nº         560
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:58    16:52
+Lunes      18/01/2021 07:59    16:50
+Martes     19/01/2021 07:57    16:49
+
+
+
+Empleado:        562 - SALGUERO SAMUEL                                            Tarjeta Nº         562
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:07   15:43
+Sábado     16/01/2021          00:12
+Martes     19/01/2021          08:02   23:42
+
+
+
+Empleado:        563 - MENDOZA LUIS                                               Tarjeta Nº         563
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:07   23:47
+Sábado     16/01/2021          01:12
+Lunes      18/01/2021 16:00
+Martes     19/01/2021          00:04   15:56
+
+
+
+Empleado:        565 - MARTINO RODRIGO AMTEO                                      Tarjeta Nº         565
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    20:00
+Lunes      18/01/2021 19:55
+Martes     19/01/2021          08:01   19:47
+
+
+
+Empleado:        567 - ROBLES SOLANO DANTE DANIEL                                 Tarjeta Nº         567
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    16:04
+Lunes      18/01/2021 15:57
+Martes     19/01/2021          00:03   16:00
+
+
+
+Empleado:        573 - STABILE MARCELO ALEJANDRO ES                               Tarjeta Nº         573
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:06   19:55
+Sábado     16/01/2021          08:08   15:58
+Domingo    17/01/2021          00:01
+Lunes      18/01/2021 07:53    20:10
+Martes     19/01/2021 07:54    20:15
+
+
+
+Empleado:        576 - MALDONADO TOMAS ULISES ES                                  Tarjeta Nº         576
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:46    16:51
+Lunes      18/01/2021 07:51    12:45   13:21   16:51
+Martes     19/01/2021 07:50    16:50
+
+
+
+Empleado:        579 - ALONSO RAMIRO ES                                           Tarjeta Nº         579
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    16:06
+Lunes      18/01/2021 23:52            23:52
+Martes     19/01/2021          08:03           08:03   23:52
+
+
+
+Empleado:        580 - ORELLANA FRANCO MIGUEL GO                                  Tarjeta Nº         580
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:03    17:19
+
+
+
+Empleado:        581 - ROJAS SEBASTIAN ARIEL ES                                   Tarjeta Nº         581
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:58    20:03
+Lunes      18/01/2021 19:56
+Martes     19/01/2021          08:04   19:55
+
+
+
+Empleado:        582 - ESCUDERO YAMILA MICAELA                                    Tarjeta Nº         582
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:03
+Lunes      18/01/2021 07:53    16:48
+Martes     19/01/2021 07:53    16:48
+
+
+
+Empleado:        588 - CEBALLOS SEBASTIAN ALEXIS                                  Tarjeta Nº         588
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:10    12:32   12:56   16:49
+Lunes      18/01/2021 07:31    16:06
+Martes     19/01/2021 07:40    16:06
+
+
+
+Empleado:        589 - NATALIA VEGA                                               Tarjeta Nº         589
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:03    17:01
+Lunes      18/01/2021 07:53    17:02
+Martes     19/01/2021 07:58    16:59
+
+
+
+Empleado:        590 - CASTRO NADIR EZEQUIEL                                      Tarjeta Nº         590
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:09    12:33   13:01   16:49
+Sábado     16/01/2021 15:47
+Domingo    17/01/2021          00:00           00:00
+Lunes      18/01/2021 08:01    17:31
+Martes     19/01/2021 07:43    17:22
+
+
+
+Empleado:        593 - MERLO FRANCIS DAVID                                        Tarjeta Nº      10.001
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    12:31   12:46   16:48
+Lunes      18/01/2021 07:55    12:30   12:40   16:48
+Martes     19/01/2021 07:48    12:36   12:49   16:49
+
+
+
+Empleado:        594 - CORTEZ NAHUEL ENRIQUE                                      Tarjeta Nº         594
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:03   19:44
+Sábado     16/01/2021          08:00
+Lunes      18/01/2021 19:47            19:47
+Martes     19/01/2021          08:03   19:55
+
+
+
+Empleado:        595 - MERCADAL JUAN GABRIEL CONSULT INYECC                       Tarjeta Nº         595
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:03    20:04
+Lunes      18/01/2021 19:54
+Martes     19/01/2021          08:05   19:54
+
+
+
+Empleado:        596 - MASSEY ISAAC EMANUEL CONSULT INYECC                        Tarjeta Nº      10.005
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54            07:54           07:54   20:06           20:06            20:06
+Lunes      18/01/2021 07:50            07:50   16:03           16:03           16:03            16:04
+Martes     19/01/2021 07:55            07:56           07:56   20:03           20:03            20:03
+
+
+
+Empleado:        597 - CARNERO MARCOS COSNULT ES                                  Tarjeta Nº      10.010
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          20:02           20:03
+Lunes      18/01/2021 07:54    20:01
+Martes     19/01/2021 07:53    20:01
+
+
+
+Empleado:        600 - INOCENTI JESICA PAOLA                                      Tarjeta Nº      10.022
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:59    16:51
+Lunes      18/01/2021 07:55    17:04
+Martes     19/01/2021 07:56    16:59
+
+
+
+Empleado:        602 - LANDRIEL MAURO EMANUEL                                     Tarjeta Nº      10.027
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:46    16:49
+Lunes      18/01/2021 07:47    16:50
+Martes     19/01/2021 07:33    14:18   14:49   16:50
+
+
+
+Empleado:        603 - GODOY ARIEL DR                                             Tarjeta Nº         603
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:34    16:01
+Lunes      18/01/2021 07:45    20:03
+Martes     19/01/2021 07:43    20:02
+
+
+
+Empleado:        604 - GODOY PELAITAY JAVIER MUNDO ES                             Tarjeta Nº      10.048
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:03   23:43
+Sábado     16/01/2021          08:03
+Lunes      18/01/2021 07:44            07:44   16:04
+Martes     19/01/2021 07:33    16:12
+
+
+
+Empleado:        605 - GOMEZ MARIA BELEN GO                                       Tarjeta Nº         605
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:46    17:15
+Lunes      18/01/2021 07:47    17:05
+Martes     19/01/2021          07:33   07:33   16:52
+
+
+
+Empleado:        609 - LUIS MUÑOZ MUNDO ES                                        Tarjeta Nº      10.049
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:35    16:12
+Sábado     16/01/2021 07:42    16:11
+Lunes      18/01/2021 15:48
+Martes     19/01/2021          00:04   15:52           15:52
+
+
+
+Empleado:        612 - AGUNDEZ EMILIANO SO                                        Tarjeta Nº         612
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      18/01/2021 07:52    16:47
+Martes     19/01/2021 07:50    16:54
+
+
+
+Empleado:        613 - CLAVERO CRISTIAN ADRIAN MUNDO ES                           Tarjeta Nº      10.034
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:40    16:06           16:06
+Sábado     16/01/2021 07:43    16:05           16:08
+Lunes      18/01/2021 15:41
+Martes     19/01/2021          00:04           00:04   15:46
+
+
+
+Empleado:        614 - ECHENIQUE GUILLERMO ANGEL MUNDO ES                         Tarjeta Nº      10.036
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:32    16:06
+Sábado     16/01/2021 15:52
+Domingo    17/01/2021          00:01
+Lunes      18/01/2021 15:53
+Martes     19/01/2021          00:05   15:56
+
+
+
+Empleado:        615 - LIPARI ESTEBAN DANIEL VP                                   Tarjeta Nº         615
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:59    12:31   12:49   16:51
+Lunes      18/01/2021 07:52    12:31   12:51   16:50
+Martes     19/01/2021 07:52    12:30   12:55   16:51
+
+
+
+Empleado:        618 - GUEVARA RICARDO EMMANUEL DR                                Tarjeta Nº         618
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:58            16:21           16:21   16:52
+Lunes      18/01/2021 07:51    12:38   13:02   16:52
+Martes     19/01/2021 07:49    12:36   13:00   16:52
+
+
+
+Empleado:        620 - TORREZ SANDRO DR                                           Tarjeta Nº         620
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:45    13:00   13:31   16:49
+Lunes      18/01/2021 07:48    12:35   12:56   16:48
+Martes     19/01/2021 07:46    12:31   12:47   16:49
+
+
+
+Empleado:        622 - STORACCIO NICOLAS RE                                       Tarjeta Nº         622
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:39    12:35           16:49
+Lunes      18/01/2021 07:40    12:32   12:53   16:49
+Martes     19/01/2021 10:22    17:00
+
+
+
+Empleado:        623 - CORTIJOS MARIANO ANDRES                                    Tarjeta Nº         623
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:43    16:04
+Sábado     16/01/2021 07:47    16:03
+Lunes      18/01/2021 15:46
+Martes     19/01/2021          00:01   15:43
+
+
+
+Empleado:        624 - VERGARA CARLOS JAVIER                                      Tarjeta Nº         624
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:35    16:48
+Lunes      18/01/2021 07:53    16:48           16:48
+Martes     19/01/2021 07:37    16:49
+
+
+
+Empleado:        625 - VARELA ROQUE ABEL                                          Tarjeta Nº         625
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:02           08:02           08:02           08:03            08:03
+Sábado     16/01/2021          08:08           08:08           08:08   15:49            15:49
+Domingo    17/01/2021          00:01           00:01
+Lunes      18/01/2021 07:52            07:52   16:07           16:07
+Martes     19/01/2021 07:56            07:56           07:56   20:00           20:00            20:00
+
+
+
+Empleado:        626 - PAGANINI GUSTAVO MARCELO                                   Tarjeta Nº         626
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    13:03   13:27   16:51
+Lunes      18/01/2021 07:46    12:32   12:48   16:48
+Martes     19/01/2021 07:48    12:32   12:49   16:52
+
+
+
+Empleado:        629 - CORDOBA DIEGO RE                                           Tarjeta Nº         629
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:45    12:30   12:58   16:51
+Lunes      18/01/2021 07:40    12:58   12:58   16:52
+Martes     19/01/2021 07:47    12:34   12:57   16:51
+
+
+
+Empleado:        630 - CUCCI LUIS RE                                              Tarjeta Nº         630
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    12:30   12:49   16:50
+Lunes      18/01/2021 07:39    12:30   12:48   16:49
+Martes     19/01/2021 07:39    12:31   12:51   16:49
+
+
+
+Empleado:        632 - PACINI CRISTIAN EUGENIO DR                                 Tarjeta Nº         632
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:59    16:49
+Lunes      18/01/2021 07:57    12:31   12:59   16:50
+Martes     19/01/2021 07:58    12:31   13:01   16:49
+
+
+
+Empleado:        633 - GONZALEZ NAHUEL VP                                         Tarjeta Nº         633
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:57    12:30   12:54
+Lunes      18/01/2021 07:56    12:52   12:52   16:51
+Martes     19/01/2021 07:59    13:00   13:00   16:50
+
+
+
+Empleado:        634 - LOPEZ EDUARDO EMANUEL                                      Tarjeta Nº         634
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    12:31   12:59   16:51
+Lunes      18/01/2021 07:56    12:31   12:59   16:50
+Martes     19/01/2021 07:57    12:31   12:59   16:50
+
+
+
+Empleado:        635 - ALVAREZ AGOSTINA  GM                                       Tarjeta Nº         635
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    16:48
+Lunes      18/01/2021 07:49    16:49
+Martes     19/01/2021 07:53    16:50
+
+
+
+Empleado:        636 - CREADO RICARDO IGNACIO ES                                  Tarjeta Nº         636
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:00   15:46
+Sábado     16/01/2021          00:03
+Lunes      18/01/2021 07:53    16:04
+Martes     19/01/2021 07:48    16:10
+
+
+
+Empleado:        637 - MACHADO MATIAS RE                                          Tarjeta Nº         637
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:01   23:50
+Sábado     16/01/2021          08:01
+Lunes      18/01/2021 23:41
+Martes     19/01/2021          08:03   23:45           23:45
+
+
+
+Empleado:        639 - GIRAUDO LUCAS DARIO JS                                     Tarjeta Nº         639
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    16:55
+Lunes      18/01/2021 07:48    16:49
+Martes     19/01/2021 07:46    16:49
+
+
+
+Empleado:        640 - ESPERON CUELLAR MARIANO RE                                 Tarjeta Nº         640
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:02    12:32   12:57   16:51
+Lunes      18/01/2021 07:50    12:31   13:00   17:23
+Martes     19/01/2021 07:58    12:34   12:57   17:27
+
+
+
+Empleado:        641 - QUINTEROS MAXIMILIANO ES                                   Tarjeta Nº         641
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:46            07:46   16:08
+Lunes      18/01/2021 07:49    20:01
+Martes     19/01/2021 07:53    16:16
+
+
+
+Empleado:        642 - VEGA JONATHAN ISMAEL JS                                    Tarjeta Nº         642
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:59    12:37   13:00   16:48
+Lunes      18/01/2021 07:58    12:32   12:53   16:48
+Martes     19/01/2021 08:02    12:32   12:48   16:49
+
+
+
+Empleado:        643 - GODOY ARROYO LAUTARO EZEQUIEL JS                           Tarjeta Nº         643
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:59    16:50
+Lunes      18/01/2021 07:55    12:51   13:23   16:49
+Martes     19/01/2021 08:02    16:48
+
+
+
+Empleado:        644 - ORTIZ SANTIAGO FACUNDO RE                                  Tarjeta Nº         644
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50            07:50   16:48
+Lunes      18/01/2021 07:51    16:48
+Martes     19/01/2021 07:51            07:51   16:49           16:49
+
+
+
+Empleado:        645 - TORRES GUILLERMO FABIAN ES                                 Tarjeta Nº         645
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:05   15:56
+Sábado     16/01/2021          00:02
+Lunes      18/01/2021 23:38
+Martes     19/01/2021          08:02   23:37
+
+
+
+Empleado:        647 - CACERES DAVID EDUARDO ES                                   Tarjeta Nº         647
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:40    20:03
+Sábado     16/01/2021 07:42    16:05
+Lunes      18/01/2021 19:33            19:33
+Martes     19/01/2021          08:02   19:38
+
+
+
+Empleado:        648 - DOMINGUEZ MIGUEL ANGEL                                     Tarjeta Nº         648
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:09   19:51
+Sábado     16/01/2021          08:05
+Lunes      18/01/2021 07:53    16:12
+Martes     19/01/2021 07:56    20:07
+
+
+
+Empleado:        649 - ZULIAN MARCOS LEANDRO SO                                   Tarjeta Nº         649
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:46    16:53
+Lunes      18/01/2021 07:47    16:53
+Martes     19/01/2021 07:48    16:53
+
+
+
+Empleado:        650 - ARREDONDO EMMANUEL DR                                      Tarjeta Nº         650
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    13:03   13:32   16:52
+Lunes      18/01/2021 07:52    12:31   12:59   16:52
+Martes     19/01/2021 07:51    12:31   13:00   16:52
+
+
+
+Empleado:        652 - MAZZALAY GERMAN ANDRES ES                                  Tarjeta Nº         652
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:05   23:40
+Sábado     16/01/2021          08:04
+Lunes      18/01/2021 07:43    16:08
+Martes     19/01/2021 07:46
+
+
+
+Empleado:        653 - CASTRO GUSTAVO RAUL ES                                     Tarjeta Nº         653
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:10   23:29
+Sábado     16/01/2021          08:09
+Lunes      18/01/2021 07:42    16:11
+Martes     19/01/2021 07:31    16:13
+
+
+
+Empleado:        654 - CHOCOBAR SEBASTIAN ES                                      Tarjeta Nº         654
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:05   23:29
+Sábado     16/01/2021          08:06
+Lunes      18/01/2021 07:42    20:07
+Martes     19/01/2021 07:31    20:03
+
+
+
+Empleado:        655 - BAIGORRIA                                                  Tarjeta Nº         655
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:06   23:07
+Sábado     16/01/2021          08:04
+Lunes      18/01/2021 19:28
+Martes     19/01/2021          08:06   19:22
+
+
+
+Empleado:        657 - ALI MARCOS EXEQUIEL DR                                     Tarjeta Nº         657
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    13:23   13:47   16:48
+Lunes      18/01/2021 07:53    12:31   12:45   16:49
+Martes     19/01/2021 07:47    12:32   12:51   16:48
+
+
+
+Empleado:        660 - MATORRAS HECTOR EMMANUEL ES                                Tarjeta Nº         660
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    12:35           12:57           16:50
+Lunes      18/01/2021 07:55    12:31   12:56   16:49
+Martes     19/01/2021 07:49    12:30   12:55   16:51
+
+
+
+Empleado:        661 - PEDRAZA RUBEN DARIO ES                                     Tarjeta Nº         661
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:36    20:01
+Sábado     16/01/2021 07:29    16:01
+Lunes      18/01/2021 07:43    20:01
+Martes     19/01/2021 07:19    20:03
+
+
+
+Empleado:        662 - BRITOSFRANCO EZEQUIEL DR                                   Tarjeta Nº         662
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:56    13:23   13:48   16:50
+Lunes      18/01/2021 07:52    12:41   12:57   16:51
+Martes     19/01/2021 07:54    12:34   13:02   16:49
+
+
+
+Empleado:        663 - MELONE LUCAS MATIAS DR                                     Tarjeta Nº         663
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    13:24   13:47   16:48
+Lunes      18/01/2021 07:52    12:31   12:56   16:49
+Martes     19/01/2021 07:55    12:30   12:59   16:49
+
+
+
+Empleado:        664 - SAIRES FRANCO MANUEL AS                                    Tarjeta Nº         664
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:46    16:59
+Lunes      18/01/2021 07:48    12:50   13:24   16:49
+Martes     19/01/2021 07:47    12:50   13:19
+
+
+
+Empleado:        666 - PALACIO NESTOR FABIAN ES                                   Tarjeta Nº         666
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04   19:44
+Sábado     16/01/2021          08:04
+Lunes      18/01/2021 07:47    20:00
+Martes     19/01/2021 07:47    20:04
+
+
+
+Empleado:        668 - BASUALDO ERIC FERNANDO RE                                  Tarjeta Nº         668
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:09    12:30   12:50   16:52
+Sábado     16/01/2021 07:55-   16:01-
+Lunes      18/01/2021 07:58    12:30           12:48   12:49   17:28
+Martes     19/01/2021 07:09    12:33   12:46   17:01
+
+
+
+Empleado:        669 - FLORES GUSTAVO BRAIAN RE                                   Tarjeta Nº         669
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    12:30   12:57   16:49
+Lunes      18/01/2021 07:59    12:31   12:49   16:50
+Martes     19/01/2021 08:00    12:32   12:51   16:50
+
+
+
+Empleado:        670 - MUÑOZ ERICK JOEL RE                                        Tarjeta Nº         670
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:37    16:03
+Sábado     16/01/2021 08:12    16:01
+Lunes      18/01/2021 15:39
+Martes     19/01/2021          00:01   15:30
+
+
+
+Empleado:        672 - FRIZZO LUCAS MATIAS RE                                     Tarjeta Nº         672
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:30   12:57   16:48
+Lunes      18/01/2021 07:51    12:31   12:58   16:49
+Martes     19/01/2021 07:58    12:30   12:56   16:49
+
+
+
+Empleado:        673 - MIÑO JORGE VALENTIN ES                                     Tarjeta Nº         673
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:04           08:04   23:55
+Sábado     16/01/2021          08:03           08:03
+Lunes      18/01/2021 07:54            07:54   16:03
+Martes     19/01/2021 07:52            07:52   16:04
+
+
+
+Empleado:        674 - RIOS WALTER NICOLAS RE                                     Tarjeta Nº         674
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      18/01/2021 07:49    16:00
+Martes     19/01/2021 07:49    16:01
+
+
+
+Empleado:        676 - CATANI DIEGO EDUARDO ES                                    Tarjeta Nº         676
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:05   19:29
+Sábado     16/01/2021          08:08
+Lunes      18/01/2021 19:32
+Martes     19/01/2021          08:03   19:34
+
+
+
+Empleado:        677 - PACHECO GONZALO NICOLAS DR                                 Tarjeta Nº         677
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:06    12:30           13:01   13:03           16:20            16:20   16:51
+Lunes      18/01/2021 07:57    12:30   12:58   16:51
+Martes     19/01/2021 08:27    12:31   13:00   16:50
+
+
+
+Empleado:        678 - ALLENDE MATEO RE                                           Tarjeta Nº         678
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:58    14:25
+
+
+
+Empleado:        679 - ANRRIGUEZ LUCAS MATIAS ES                                  Tarjeta Nº         679
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:35    16:00
+Sábado     16/01/2021 07:40    16:00
+Lunes      18/01/2021 15:41
+Martes     19/01/2021          00:01   15:31
+
+
+
+Empleado:        681 - OLGUIN DIEGO SEBASTIAN ES                                  Tarjeta Nº         681
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:03   15:52
+Sábado     16/01/2021          00:03
+Lunes      18/01/2021 23:55
+Martes     19/01/2021          08:03   23:52
+
+
+
+Empleado:        683 - HEREDIA GUSTAVO DR                                         Tarjeta Nº         683
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:45    20:04
+Lunes      18/01/2021 19:52
+Martes     19/01/2021          08:08   19:57
+
+
+
+Empleado:        684 - CHACOMA NICOLAS FRANCISCO ES                               Tarjeta Nº         684
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      18/01/2021 15:53
+Martes     19/01/2021          00:01   15:42
+
+
+
+Empleado:        685 - FLORES TITA HECTOR DAMIAN RE                               Tarjeta Nº         685
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    12:31   12:57   16:49
+Lunes      18/01/2021 07:51    12:31   12:53   16:49
+Martes     19/01/2021 07:58    12:30   12:54   16:49
+
+
+
+Empleado:        686 - ACUÑA CRISTIAN DANIEL ES                                   Tarjeta Nº         686
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:47    12:30   12:57   16:49
+Lunes      18/01/2021 07:45    12:30   12:49   16:49
+Martes     19/01/2021 07:44    12:30   12:46   16:48
+
+
+
+Empleado:        687 - PLENANCIO GERMAN ALEJANDRO RE                              Tarjeta Nº         687
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:35    12:30   12:45   16:52
+Lunes      18/01/2021 07:16    12:33   12:58   16:51
+Martes     19/01/2021 07:13    12:32   13:00   16:52
+
+
+
+Empleado:        688 - ZAMBRANO ALEJANDRO RAMON DR                                Tarjeta Nº         688
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    13:01   13:33   16:48
+Lunes      18/01/2021 07:52            12:59   16:49
+Martes     19/01/2021 07:56    12:30   12:54   16:48
+
+
+
+Empleado:        690 - CATTANEO NICOLAS GO                                        Tarjeta Nº         690
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:58    16:57
+Lunes      18/01/2021 07:51    16:52
+Martes     19/01/2021 07:57    16:52
+
+
+
+Empleado:        691 - GERONIMO NAHUEL GO                                         Tarjeta Nº         691
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:58    13:30-
+Lunes      18/01/2021 08:14    13:03
+Martes     19/01/2021 07:57    13:08
+
+
+
+Empleado:        692 - MACAZAGA AMAT ALEJO GO                                     Tarjeta Nº         692
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    16:51
+Lunes      18/01/2021 07:59    16:53
+Martes     19/01/2021 08:01    16:53
+
+
+
+Empleado:        693 - MORINA RODRIGO FABIAN RE                                   Tarjeta Nº         693
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    16:57
+Lunes      18/01/2021 07:48    12:37   13:19   16:50
+Martes     19/01/2021 07:51    16:52
+
+
+
+Empleado:        695 - HEREÑU OSCAR ALFREDO GO                                    Tarjeta Nº         695
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    16:58
+Lunes      18/01/2021 07:51    16:53
+Martes     19/01/2021 07:54    16:53
+
+
+
+Empleado:        696 - DALLOSTA RIVADERO NICOLAS RE                               Tarjeta Nº         696
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    12:31   12:59   16:49
+Lunes      18/01/2021 07:54    12:31   12:49   16:50
+Martes     19/01/2021 07:59    12:31   12:53   16:50
+
+
+
+Empleado:        697 - SILVESTRI MAXIMILIANO JORGE ES                             Tarjeta Nº         697
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          07:26   07:26   16:04
+Lunes      18/01/2021 15:29
+Martes     19/01/2021          00:05   15:31
+
+
+
+Empleado:        698 - LUDUEÑA ARIEL JORGE ES                                     Tarjeta Nº         698
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:02   15:46
+Sábado     16/01/2021          00:01
+Lunes      18/01/2021 23:38
+Martes     19/01/2021          08:02   23:45
+
+
+
+Empleado:        703 - JAIME EMANUEL ES                                           Tarjeta Nº         703
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    16:00
+Lunes      18/01/2021 19:42
+Martes     19/01/2021          08:00   19:38
+
+
+
+Empleado:        705 - BALMACEDA FRANCO NICOLAS DR                                Tarjeta Nº         705
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:31   13:03   16:49
+Lunes      18/01/2021 07:52    12:32           16:49
+Martes     19/01/2021 07:51    12:31           17:54
+
+
+
+Empleado:        706 - PERALTA MARIO ALBERTO RE                                   Tarjeta Nº         706
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:31   12:42   16:50
+Lunes      18/01/2021 07:58    12:32   12:58   16:50
+Martes     19/01/2021 07:58    12:34   12:49   16:50
+
+
+
+Empleado:        707 - BASUALDO ALEJO RE                                          Tarjeta Nº         707
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:48    12:31   12:57   16:49
+Lunes      18/01/2021 07:49    12:30   12:56   16:49
+Martes     19/01/2021 07:34    12:30   12:48   16:49
+
+
+
+Empleado:        708 - PIÑAS YOHANA GO                                            Tarjeta Nº         708
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:56    16:50
+Lunes      18/01/2021 07:56    16:50
+Martes     19/01/2021 07:54    13:52
+
+
+
+Empleado:        709 - VARELA HORACIO EMMANUEL GO                                 Tarjeta Nº         709
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    17:54
+Lunes      18/01/2021 07:56    17:03
+Martes     19/01/2021 07:59    17:45
+
+
+
+Empleado:        710 - VAZQUEZ IGNACIO OSCAR AS                                   Tarjeta Nº         710
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    16:56
+Lunes      18/01/2021 07:49    16:51
+Martes     19/01/2021 07:47    16:49
+
+
+
+Empleado:        711 - MRÑA MARIANO ALEJANDRO ES                                  Tarjeta Nº         711
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    12:33   12:50   16:52
+Lunes      18/01/2021 07:55    12:32   12:48   16:50
+Martes     19/01/2021 07:53    12:31   12:51   16:50
+
+
+
+Empleado:        713 - PAZ SAUL MATEO ES                                          Tarjeta Nº         713
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:41   12:54   16:53
+Martes     19/01/2021 08:00    12:33   12:49   16:53
+
+
+
+Empleado:        714 - MENDIZABAL JULIO GABRIEL RE                                Tarjeta Nº         714
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    12:30   12:58   16:48
+Lunes      18/01/2021 07:54    12:31   12:58   16:48
+Martes     19/01/2021 07:59    12:32   12:57   16:49
+
+
+
+Empleado:        715 - RAMIREZ EXEQUIEL MAXIMILIANO RE                            Tarjeta Nº         715
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:08   15:55
+Sábado     16/01/2021          00:13
+Lunes      18/01/2021 07:58    12:33   13:00   16:54
+Martes     19/01/2021 07:59    12:34   13:00   16:53
+
+
+
+Empleado:        716 - TOBARES JORGE ARIEL RE                                     Tarjeta Nº         716
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    12:32   12:57   16:49
+Lunes      18/01/2021 07:50    12:30   12:57   16:49
+Martes     19/01/2021 07:49    12:32   12:58   16:49
+
+
+
+Empleado:        718 - CALAPIÑA RODRIGO RODOLFO ES                                Tarjeta Nº         718
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    20:01
+Lunes      18/01/2021 15:33
+Martes     19/01/2021          00:04   15:47
+
+
+
+Empleado:        720 - SUAREZ LUCAS NAHUEL RE                                     Tarjeta Nº         720
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    13:23   13:44   16:49
+Lunes      18/01/2021 07:56    12:41   12:49   16:48
+Martes     19/01/2021 07:51    12:34   12:51   16:49
+
+
+
+Empleado:        721 - VILLALON MATIAS EZEQUIEL AS                                Tarjeta Nº         721
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    16:56
+Lunes      18/01/2021 07:48    16:49
+Martes     19/01/2021 07:46    13:44           14:14   14:14   16:49
+
+
+
+Empleado:        722 - SILVA FRANCO SEBASTIAN DR                                  Tarjeta Nº         722
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:06    12:30   13:01   16:16           16:16   16:16   16:50
+Lunes      18/01/2021 08:10    12:30   12:56   16:49
+Martes     19/01/2021 07:58    12:30   13:00   16:49
+
+
+
+Empleado:        723 - LOSADA NICOLAS AS                                          Tarjeta Nº         723
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50            16:22           16:22   16:50
+Lunes      18/01/2021 07:41    16:51
+Martes     19/01/2021 07:54    12:39   13:00   16:50
+
+
+
+Empleado:        724 - DEL HOYO GARCIA GUSTAVO EZEQUIEL DR                        Tarjeta Nº         724
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    13:23   13:46   16:48
+
+
+
+Empleado:        725 - MONTOYA CRISTIAN LAUTARO RE                                Tarjeta Nº         725
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:55    12:31   12:50   16:51
+Lunes      18/01/2021 07:51    12:30   12:54   16:49
+Martes     19/01/2021 08:00    12:31   12:58   16:48
+
+
+
+Empleado:        726 - ROMANO JOSUA DAVID GO                                      Tarjeta Nº         726
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:52    16:48
+Lunes      18/01/2021 07:50    16:50
+Martes     19/01/2021 07:55    16:48
+
+
+
+Empleado:        727 - CUELLO JONATHAN WALTER AS                                  Tarjeta Nº         727
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:21    16:57
+Lunes      18/01/2021 07:48    16:49
+Martes     19/01/2021 07:58    16:50
+
+
+
+Empleado:        728 - MOYANO FERNANDO ROGELIO ALFREDO ES                         Tarjeta Nº         728
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:05   15:53
+Sábado     16/01/2021          00:01   07:57   16:05
+Lunes      18/01/2021 23:51            23:51
+Martes     19/01/2021          08:05   23:45
+
+
+
+Empleado:        730 - RUIZ DIAZ ESTEBAN PEDRO ES                                 Tarjeta Nº         730
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:03   23:49
+Sábado     16/01/2021          08:03
+Lunes      18/01/2021 07:42    16:02
+Martes     19/01/2021          16:10
+
+
+
+Empleado:        731 - COFFA MARIO ES                                             Tarjeta Nº         731
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50            07:50   16:01
+Sábado     16/01/2021 07:55    16:01
+Lunes      18/01/2021 15:51
+Martes     19/01/2021          00:01   15:54
+
+
+
+Empleado:        732 - MALDONADO NICOLAS JUAN CARLOS OO/ AS                       Tarjeta Nº         732
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:47    16:51
+Lunes      18/01/2021 07:52    12:56   13:30   16:52
+Martes     19/01/2021 07:52    12:52   13:22   16:52
+
+
+
+Empleado:        733 - BARBOZA FERNANDO DAMIAN JP                                 Tarjeta Nº         733
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:03   23:48
+Sábado     16/01/2021          08:04
+Lunes      18/01/2021 07:45    16:04
+Martes     19/01/2021 07:45    16:05
+
+
+
+Empleado:        734 - OVIEDO ALEJO NICOLAS FR                                    Tarjeta Nº         734
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          00:00   15:52
+Sábado     16/01/2021          00:00
+Lunes      18/01/2021 23:56
+Martes     19/01/2021          08:04   23:54
+
+
+
+Empleado:        735 - MALDONADO MARCOS ALFREDO / VP                              Tarjeta Nº         735
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:40    12:31   12:49   16:51
+Lunes      18/01/2021 07:33    12:33   12:43   16:49
+Martes     19/01/2021 07:51    12:30   12:51   16:50
+
+
+
+Empleado:        736 - ESPINDOLA MARCOS LEONEL JP                                 Tarjeta Nº         736
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021          08:05   23:56
+Sábado     16/01/2021          08:03
+Lunes      18/01/2021 07:57    16:04
+Martes     19/01/2021 08:00    16:16
+
+
+
+Empleado:        737 - CORVALAN ROGER DR                                          Tarjeta Nº         737
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 15:43
+Lunes      18/01/2021 07:44    20:02
+Martes     19/01/2021 07:52    20:03
+
+
+
+Empleado:        738 - VENTURA RONAL VP                                           Tarjeta Nº         738
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:39    12:59   12:59   16:51
+Lunes      18/01/2021 07:36    12:30   12:59   16:48
+Martes     19/01/2021 07:50    12:53   12:53   16:48
+
+
+
+Empleado:        739 - MIGUEZ RODRIGO AR                                          Tarjeta Nº         739
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:49    15:50
+Lunes      18/01/2021 07:50    12:31   12:59   16:48
+Martes     19/01/2021 07:51    12:30   13:00   16:50
+
+
+
+Empleado:        740 - ESCOBAR RENZO ALEJANDRO AR                                 Tarjeta Nº         740
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 08:00    12:30   12:56   16:49
+Lunes      18/01/2021 07:55    12:31   12:49   16:49
+Martes     19/01/2021 07:59    12:33   12:57   16:49
+
+
+
+Empleado:        741 - ANDRADA GASTON AS                                          Tarjeta Nº         741
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:54    16:51
+Lunes      18/01/2021 07:56    16:49
+Martes     19/01/2021 08:00    16:49
+
+
+
+Empleado:        742 - AGUIRRE OVIEDO LUCIA GO                                    Tarjeta Nº         742
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      18/01/2021          12:44           12:44   12:44   17:03
+Martes     19/01/2021 07:58    16:53
+
+
+
+Empleado:      2.021 - ANDREA OPTIMO LIMPIEZA                                     Tarjeta Nº       2.021
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:50    16:57
+Lunes      18/01/2021 07:54    17:02
+Martes     19/01/2021 07:58    16:48
+
+
+
+Empleado:      2.024 - WILIAMS OPTIMO LIMPIEZA                                    Tarjeta Nº       2.024
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    15/01/2021 07:51    16:49
+Lunes      18/01/2021 07:52    16:48
+Martes     19/01/2021 07:53    16:48
+
+
+
+Total de empleados listados      255
+
+
+CLRESFIC.RPT-2.0                                   ClockCard 2000 de LARCON-SIA       PÁGINA N°:
