@@ -1,8 +1,6 @@
 import pandas as pd
 
-a = r'J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Archivos de trabajo\A completar\Excel 397 - copia (3) - copia.xlsx'
-
-class CorrectorExcel():
+class CorrectorExcel:
     
     def __init__(self,abs_path_excel : str):
         self.frame = pd.read_excel(abs_path_excel)
@@ -24,7 +22,7 @@ class CorrectorExcel():
                     self.frame.iloc[x,y] = cero
         
         return self.frame
-    
+
     
     
     
@@ -33,5 +31,4 @@ if __name__ == '__main__':
     corrector = CorrectorExcel(abs_path_excel=a)
     frame = corrector.frame_return()
     frameCorregido = corrector.corrector_marcada()
-        
-        
+
