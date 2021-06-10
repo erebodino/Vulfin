@@ -11983,3 +11983,22 @@ WARNING :[2021-04-22 19:33:52,060] Vulcano [cambioPorMotivos Linea : 1304] --> C
 WARNING :[2021-04-22 19:33:52,061] Vulcano [cambioPorMotivos Linea : 1304] --> Correcion de motivo no valida en fecha (2021-01-24)  legajo: (739)
 INFO :[2021-04-22 19:33:57,832] Vulcano [escritorInformeFaltasTardanzas Linea : 1741] --> Creacion del Word de manera correcta
 INFO :[2021-04-22 19:34:03,328] Vulcano [escritorInformeFaltasTardanzas Linea : 1749] --> Creacion del PDF de manera correcta
+INFO :[2021-06-09 20:53:04,826] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-09 20:53:12,826] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-06-09 20:53:13,026] analizador [limpiador Linea : 241] --> Acomodando legajo 9, dia de analisis: 2020-10-01,Condicion CUATRO
+INFO :[2021-06-09 20:53:13,026] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-02,Condicion SEIS
+INFO :[2021-06-09 20:53:13,026] analizador [limpiador Linea : 301] --> Acomodando legajo 9, dia de analisis: 2020-10-03,Condicion SIETE
+INFO :[2021-06-09 20:53:13,036] analizador [limpiador Linea : 265] -->  legajo 9, dia de analisis: 2020-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-06-09 20:53:13,036] analizador [limpiador Linea : 179] --> Acomodando legajo 9, dia de analisis: 2020-10-05,Condicion UNO
+INFO :[2021-06-09 20:53:13,036] analizador [limpiador Linea : 265] -->  legajo 9, dia de analisis: 2020-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-06-09 20:53:13,036] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-07,Condicion SEIS
+INFO :[2021-06-09 20:53:13,046] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-08,Condicion SEIS
+INFO :[2021-06-09 20:53:13,046] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-09,Condicion SEIS
+INFO :[2021-06-09 20:53:13,052] analizador [limpiador Linea : 301] --> Acomodando legajo 9, dia de analisis: 2020-10-10,Condicion SIETE
+INFO :[2021-06-09 20:53:13,056] analizador [limpiador Linea : 179] --> Acomodando legajo 9, dia de analisis: 2020-10-13,Condicion UNO
+INFO :[2021-06-09 20:53:13,056] analizador [limpiador Linea : 265] -->  legajo 9, dia de analisis: 2020-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-06-09 20:53:13,061] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-15,Condicion SEIS
+INFO :[2021-06-09 20:53:13,076] Vulcano [limpiezaDeRegistros Linea : 681] --> Limpiando registros
+INFO :[2021-06-09 20:53:13,076] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-06-09 20:53:13,161] analizador [informeNoFichadas Linea : 1813] --> Comenzando escritura en el word
+INFO :[2021-06-09 20:53:13,191] createDB [conexion Linea : 27] --> Iniciando conexion

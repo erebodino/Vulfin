@@ -17,6 +17,7 @@ from createDB import ManagerSQL
 from queryes import (queryConsultaEmpleados,insertRegistros,selectAll,
                      selectSome,insertEmpleado,deleteEmpleado,
                      actualizarEmpleado,selectDeleteRegistro,updateRegistro)
+from Corrector import CorrectorExcel
 from openpyxl import load_workbook
 from time import sleep
 from termcolor import colored
@@ -842,9 +843,11 @@ def actualizacionRegistros(fechaInicio,fechaFin):
         
         
         # nombre = nombreExcelTemporal.format(str(fechaInicio).replace('/','-'),str(fechaFin).replace('/','-'))
-        nombre = os.path.join(os.getcwd(),pathExcelTemporal,archivo)    
-        frameAnalisis = pd.read_excel(nombre)
-        frameAnalisis['Fecha'] = pd.to_datetime(frameAnalisis['Fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01    
+        nombre = os.path.join(os.getcwd(),pathExcelTemporal,archivo)  
+        corrector = CorrectorExcel(abs_path_excel=nombre)
+        frameAnalisis = corrector.corrector_marcada()
+        # frameAnalisis = pd.read_excel(nombre)
+        # frameAnalisis['Fecha'] = pd.to_datetime(frameAnalisis['Fecha']).dt.date #transforma 2020-10-01 00:00:00 a 2020-10-01    
 
         frameConErrores = analizadorFramesCorregidos(frameAnalisis,fechaInicio,fechaFin)     
 

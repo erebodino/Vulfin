@@ -1,15 +1,75 @@
+VULCANOS.A                                            Reporte de Fichadas (Por Legajo)
 
-Empleado:        536 - QUINTEROS JUAN                                             Tarjeta Nº         536
+PERIODO:    30/09/2020  AL   17/10/2020                                       IMPRESO EL DÍA:  20/11/2020
+
+Tipo de equipo:   TODOS
+
+Empleado:          6 - TOMACELLO PABLO                                            Tarjeta Nº           6
 
 Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
 
 
 
-Miércoles  20/01/2021          00:01   15:39
-Jueves     21/01/2021          00:01   15:40
-Viernes    22/01/2021          00:00   15:44
-Sábado     23/01/2021 00:00            15:45
-Domingo    24/01/2021          00:03
-Lunes      25/01/2021 07:55    16:48
+Miércoles  30/09/2020 06:28    16:51
+Jueves     01/10/2020 06:31    16:50
+Viernes    02/10/2020 06:33    16:49
+Domingo    04/10/2020 06:33    16:49
+Lunes      05/10/2020 06:30    16:54
+Martes     06/10/2020 06:34    16:49
+Miércoles  07/10/2020 06:32    16:54
+Jueves     08/10/2020 06:27    16:57
+Viernes    09/10/2020 06:35    16:48
+Martes     13/10/2020 06:27    16:50
+Miércoles  14/10/2020 06:31    16:51
+Jueves     15/10/2020 06:33    16:49
+Viernes    16/10/2020 06:32    16:52
 
 
+
+Empleado:          8 - REYNA ALFREDO ALBERTO                                      Tarjeta Nº           8
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020 07:56    12:32   12:59   16:49
+Jueves     01/10/2020 08:05    12:31   13:05   16:51
+Viernes    02/10/2020 07:54    12:34   13:03   16:54
+Sábado     03/10/2020 08:07    13:03
+Lunes      05/10/2020 07:59    12:33   13:05   17:32
+Martes     06/10/2020 07:49    12:34   13:03   16:52
+Miércoles  07/10/2020 07:52    12:34   13:04   16:50
+Jueves     08/10/2020 07:54    12:31   13:04   16:52
+Viernes    09/10/2020 07:58    12:36   13:01   16:50
+Sábado     10/10/2020 08:13    13:04
+Lunes      12/10/2020 08:15            08:15   13:00
+Martes     13/10/2020 07:58    12:31   13:03   16:52
+Miércoles  14/10/2020 07:58    12:30   13:00   16:48           16:54
+Jueves     15/10/2020 07:54    12:30   12:59   16:48
+Viernes    16/10/2020 07:48    13:02   13:30   16:53
+Sábado     17/10/2020 07:56            12:02   12:02
+
+
+
+Empleado:          9 - MENDOZA JOSE IGNACIO                                       Tarjeta Nº           9
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Miércoles  30/09/2020          08:06   23:03
+Jueves     01/10/2020          08:13   22:44
+Viernes    02/10/2020          08:07   22:44
+Sábado     03/10/2020          08:02
+Domingo    04/10/2020          08:06   16:44
+Lunes      05/10/2020 22:43
+Martes     06/10/2020          08:06   22:44
+Miércoles  07/10/2020          08:06   23:06
+Jueves     08/10/2020          08:08           08:08   22:58
+Viernes    09/10/2020          08:06           08:06   22:39
+Sábado     10/10/2020          08:04
+Martes     13/10/2020 23:15
+Miércoles  14/10/2020          08:02   22:52
+Jueves     15/10/2020          08:01   22:55
+Viernes    16/10/2020          08:00   23:08
+Sábado     17/10/2020          08:00           08:00
