@@ -12002,3 +12002,50 @@ INFO :[2021-06-09 20:53:13,076] Vulcano [limpiezaDeRegistros Linea : 681] --> Li
 INFO :[2021-06-09 20:53:13,076] createDB [conexion Linea : 27] --> Iniciando conexion
 INFO :[2021-06-09 20:53:13,161] analizador [informeNoFichadas Linea : 1813] --> Comenzando escritura en el word
 INFO :[2021-06-09 20:53:13,191] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-06-29 19:46:25,426] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-29 19:47:13,945] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-29 19:47:27,460] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-06-29 19:47:27,617] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (9) No paso las validaciones, se las castea en cero.
+INFO :[2021-06-29 19:47:27,663] analizador [limpiador Linea : 241] --> Acomodando legajo 9, dia de analisis: 2020-10-02,Condicion CUATRO
+INFO :[2021-06-29 19:47:27,666] analizador [limpiador Linea : 301] --> Acomodando legajo 9, dia de analisis: 2020-10-03,Condicion SIETE
+INFO :[2021-06-29 19:47:27,670] analizador [limpiador Linea : 179] --> Acomodando legajo 9, dia de analisis: 2020-10-05,Condicion UNO
+INFO :[2021-06-29 19:47:27,672] analizador [limpiador Linea : 265] -->  legajo 9, dia de analisis: 2020-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-06-29 19:47:27,675] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-07,Condicion SEIS
+INFO :[2021-06-29 19:47:27,678] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-08,Condicion SEIS
+INFO :[2021-06-29 19:47:27,681] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-09,Condicion SEIS
+INFO :[2021-06-29 19:47:27,683] analizador [limpiador Linea : 301] --> Acomodando legajo 9, dia de analisis: 2020-10-10,Condicion SIETE
+INFO :[2021-06-29 19:47:27,689] analizador [limpiador Linea : 179] --> Acomodando legajo 9, dia de analisis: 2020-10-13,Condicion UNO
+INFO :[2021-06-29 19:47:27,691] analizador [limpiador Linea : 265] -->  legajo 9, dia de analisis: 2020-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-06-29 19:47:27,694] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2020-10-15,Condicion SEIS
+INFO :[2021-06-29 19:47:27,751] Vulcano [limpiezaDeRegistros Linea : 681] --> Limpiando registros
+INFO :[2021-06-29 19:47:27,751] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-06-29 19:47:27,788] analizador [informeNoFichadas Linea : 1813] --> Comenzando escritura en el word
+INFO :[2021-06-29 19:47:27,908] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-06-29 19:48:08,126] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-29 19:48:18,412] createDB [conexion Linea : 27] --> Iniciando conexion
+ERROR :[2021-06-29 19:48:18,459] Vulcano [actualizacionRegistros Linea : 865] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 852, in actualizacionRegistros
+    frameConErrores = analizadorFramesCorregidos(frameAnalisis,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 779, in analizadorFramesCorregidos
+    newFrame = calculador.horasTrabajadasRotativos(newFrame,area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 652, in horasTrabajadasRotativos
+    horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='00:00',egreso='08:00')
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 545, in horasTurnoRotativo
+    if horaIngreso - timedelta(hours=5) <= frame.iloc[fila,idx] <= horaIngreso + timedelta(hours=1): #Primer Turno
+TypeError: '<=' not supported between instances of 'Timestamp' and 'float'
+
+INFO :[2021-06-29 19:52:28,175] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-29 19:52:38,592] createDB [conexion Linea : 27] --> Iniciando conexion
+ERROR :[2021-06-29 19:52:38,631] Vulcano [actualizacionRegistros Linea : 866] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 853, in actualizacionRegistros
+    frameConErrores = analizadorFramesCorregidos(frameAnalisis,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 779, in analizadorFramesCorregidos
+    newFrame = calculador.horasTrabajadasRotativos(newFrame,area)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 652, in horasTrabajadasRotativos
+    horas_trabajadas += self.horasTurnoRotativo(frame, fila, fecha, dia,area = area, ingreso='00:00',egreso='08:00')
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 545, in horasTurnoRotativo
+    if horaIngreso - timedelta(hours=5) <= frame.iloc[fila,idx] <= horaIngreso + timedelta(hours=1): #Primer Turno
+TypeError: '<=' not supported between instances of 'Timestamp' and 'float'
+
+INFO :[2021-06-29 19:53:59,820] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-29 19:54:06,597] createDB [conexion Linea : 27] --> Iniciando conexion

@@ -14,7 +14,8 @@ class CorrectorExcel:
         
     def corrector_marcada(self) -> pd.DataFrame:
         patron = self.frame.iloc[0,4]
-        for x in range (0,self.frame.shape[0] - 1):
+        for x in range (0,self.frame.shape[0]):
+
             cero = pd.to_datetime(('{} 00:00').format(self.frame.iloc[x,3]))
             for y in range (4,14):
                 celda = self.frame.iloc[x,y]
