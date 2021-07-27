@@ -12049,3 +12049,430 @@ TypeError: '<=' not supported between instances of 'Timestamp' and 'float'
 
 INFO :[2021-06-29 19:53:59,820] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
 INFO :[2021-06-29 19:54:06,597] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-06-29 20:08:13,359] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-29 20:08:23,512] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-06-29 20:08:30,815] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:39:23,235] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 18:39:46,334] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2021-07-27 18:39:46,459] Vulcano [frameAnalisisIndividual Linea : 627] --> El siguiente legajo (1) no se encuentra en la BD
+INFO :[2021-07-27 18:39:46,477] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (9) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,481] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:46,485] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:46,487] analizador [limpiador Linea : 284] --> Acomodando legajo 9, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:46,524] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (30) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,564] analizador [limpiador Linea : 265] -->  legajo 30, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,566] analizador [limpiador Linea : 265] -->  legajo 30, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,598] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (50) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,607] analizador [limpiador Linea : 265] -->  legajo 50, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,609] analizador [limpiador Linea : 265] -->  legajo 50, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,641] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (66) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,650] analizador [limpiador Linea : 194] --> Acomodando legajo 66, dia de analisis: 2021-01-20,Condicion DOS
+INFO :[2021-07-27 18:39:46,652] analizador [limpiador Linea : 265] -->  legajo 66, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,654] analizador [limpiador Linea : 265] -->  legajo 66, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,720] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (143) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,725] analizador [limpiador Linea : 265] -->  legajo 143, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,727] analizador [limpiador Linea : 265] -->  legajo 143, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,761] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (202) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,766] analizador [limpiador Linea : 284] --> Acomodando legajo 202, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:46,769] analizador [limpiador Linea : 284] --> Acomodando legajo 202, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:46,771] analizador [limpiador Linea : 284] --> Acomodando legajo 202, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:46,791] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (224) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,796] analizador [limpiador Linea : 284] --> Acomodando legajo 224, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:46,799] analizador [limpiador Linea : 284] --> Acomodando legajo 224, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:46,801] analizador [limpiador Linea : 284] --> Acomodando legajo 224, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:46,829] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (235) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,835] analizador [limpiador Linea : 265] -->  legajo 235, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,837] analizador [limpiador Linea : 265] -->  legajo 235, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,865] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (241) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,900] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (242) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,912] analizador [limpiador Linea : 265] -->  legajo 242, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,944] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (253) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,949] analizador [limpiador Linea : 284] --> Acomodando legajo 253, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:46,951] analizador [limpiador Linea : 284] --> Acomodando legajo 253, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:46,954] analizador [limpiador Linea : 284] --> Acomodando legajo 253, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:46,974] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (260) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:46,984] analizador [limpiador Linea : 265] -->  legajo 260, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:46,986] analizador [limpiador Linea : 265] -->  legajo 260, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,014] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (263) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,052] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (318) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,065] analizador [limpiador Linea : 265] -->  legajo 318, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,067] analizador [limpiador Linea : 265] -->  legajo 318, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,093] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (335) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,097] analizador [limpiador Linea : 284] --> Acomodando legajo 335, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:47,100] analizador [limpiador Linea : 284] --> Acomodando legajo 335, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,103] analizador [limpiador Linea : 284] --> Acomodando legajo 335, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,129] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (352) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,134] analizador [limpiador Linea : 265] -->  legajo 352, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,136] analizador [limpiador Linea : 265] -->  legajo 352, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,156] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (355) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,161] analizador [limpiador Linea : 317] --> Acomodando legajo 355, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:47,163] analizador [limpiador Linea : 284] --> Acomodando legajo 355, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,166] analizador [limpiador Linea : 284] --> Acomodando legajo 355, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,184] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (359) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,189] analizador [limpiador Linea : 265] -->  legajo 359, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,191] analizador [limpiador Linea : 265] -->  legajo 359, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+WARNING :[2021-07-27 18:39:47,214] Vulcano [frameAnalisisIndividual Linea : 627] --> El siguiente legajo (375) no se encuentra en la BD
+INFO :[2021-07-27 18:39:47,216] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (376) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,227] analizador [limpiador Linea : 265] -->  legajo 376, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,229] analizador [limpiador Linea : 265] -->  legajo 376, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,261] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (393) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,304] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (397) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,314] analizador [limpiador Linea : 265] -->  legajo 397, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,317] analizador [limpiador Linea : 265] -->  legajo 397, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,355] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (420) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,366] analizador [limpiador Linea : 265] -->  legajo 420, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,368] analizador [limpiador Linea : 265] -->  legajo 420, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,395] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (423) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,401] analizador [limpiador Linea : 241] --> Acomodando legajo 423, dia de analisis: 2021-01-21,Condicion CUATRO
+INFO :[2021-07-27 18:39:47,404] analizador [limpiador Linea : 284] --> Acomodando legajo 423, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,424] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (424) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,460] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (432) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,465] analizador [limpiador Linea : 284] --> Acomodando legajo 432, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:47,467] analizador [limpiador Linea : 284] --> Acomodando legajo 432, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,470] analizador [limpiador Linea : 179] --> Acomodando legajo 432, dia de analisis: 2021-01-22,Condicion UNO
+INFO :[2021-07-27 18:39:47,490] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (434) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,495] analizador [limpiador Linea : 284] --> Acomodando legajo 434, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:47,498] analizador [limpiador Linea : 284] --> Acomodando legajo 434, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,501] analizador [limpiador Linea : 284] --> Acomodando legajo 434, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,523] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (437) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,527] analizador [limpiador Linea : 317] --> Acomodando legajo 437, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:47,530] analizador [limpiador Linea : 317] --> Acomodando legajo 437, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:47,532] analizador [limpiador Linea : 317] --> Acomodando legajo 437, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:47,555] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (438) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,566] analizador [limpiador Linea : 265] -->  legajo 438, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,568] analizador [limpiador Linea : 265] -->  legajo 438, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,601] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (447) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,606] analizador [limpiador Linea : 265] -->  legajo 447, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,608] analizador [limpiador Linea : 265] -->  legajo 447, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,628] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (448) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,638] analizador [limpiador Linea : 265] -->  legajo 448, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,640] analizador [limpiador Linea : 265] -->  legajo 448, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,665] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (458) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,669] analizador [limpiador Linea : 284] --> Acomodando legajo 458, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:47,672] analizador [limpiador Linea : 284] --> Acomodando legajo 458, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,675] analizador [limpiador Linea : 284] --> Acomodando legajo 458, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,698] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (472) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,708] analizador [limpiador Linea : 265] -->  legajo 472, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,710] analizador [limpiador Linea : 265] -->  legajo 472, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,734] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (475) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,740] analizador [limpiador Linea : 317] --> Acomodando legajo 475, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:47,743] analizador [limpiador Linea : 317] --> Acomodando legajo 475, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:47,746] analizador [limpiador Linea : 317] --> Acomodando legajo 475, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:47,770] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (477) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,774] analizador [limpiador Linea : 284] --> Acomodando legajo 477, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:47,777] analizador [limpiador Linea : 284] --> Acomodando legajo 477, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,780] analizador [limpiador Linea : 284] --> Acomodando legajo 477, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,799] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (479) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,806] analizador [limpiador Linea : 241] --> Acomodando legajo 479, dia de analisis: 2021-01-21,Condicion CUATRO
+INFO :[2021-07-27 18:39:47,808] analizador [limpiador Linea : 284] --> Acomodando legajo 479, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,841] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (492) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,845] analizador [limpiador Linea : 284] --> Acomodando legajo 492, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:47,848] analizador [limpiador Linea : 284] --> Acomodando legajo 492, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,851] analizador [limpiador Linea : 284] --> Acomodando legajo 492, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:47,891] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (510) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,902] analizador [limpiador Linea : 265] -->  legajo 510, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,904] analizador [limpiador Linea : 265] -->  legajo 510, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,946] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (522) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,957] analizador [limpiador Linea : 265] -->  legajo 522, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,959] analizador [limpiador Linea : 265] -->  legajo 522, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:47,983] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (525) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:47,987] analizador [limpiador Linea : 284] --> Acomodando legajo 525, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:47,991] analizador [limpiador Linea : 284] --> Acomodando legajo 525, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:47,993] analizador [limpiador Linea : 284] --> Acomodando legajo 525, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,014] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (526) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,018] analizador [limpiador Linea : 284] --> Acomodando legajo 526, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,021] analizador [limpiador Linea : 284] --> Acomodando legajo 526, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,023] analizador [limpiador Linea : 284] --> Acomodando legajo 526, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,053] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (536) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,060] analizador [limpiador Linea : 261] --> Acomodando legajo 536, dia de analisis: 2021-01-21,Condicion CINCO
+INFO :[2021-07-27 18:39:48,063] analizador [limpiador Linea : 261] --> Acomodando legajo 536, dia de analisis: 2021-01-22,Condicion CINCO
+INFO :[2021-07-27 18:39:48,082] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (543) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,092] analizador [limpiador Linea : 194] --> Acomodando legajo 543, dia de analisis: 2021-01-20,Condicion DOS
+INFO :[2021-07-27 18:39:48,094] analizador [limpiador Linea : 265] -->  legajo 543, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,096] analizador [limpiador Linea : 265] -->  legajo 543, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,120] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (545) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,124] analizador [limpiador Linea : 284] --> Acomodando legajo 545, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,127] analizador [limpiador Linea : 284] --> Acomodando legajo 545, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,129] analizador [limpiador Linea : 284] --> Acomodando legajo 545, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,149] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (547) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,153] analizador [limpiador Linea : 317] --> Acomodando legajo 547, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:48,156] analizador [limpiador Linea : 317] --> Acomodando legajo 547, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:48,158] analizador [limpiador Linea : 317] --> Acomodando legajo 547, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:48,177] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (548) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,188] analizador [limpiador Linea : 265] -->  legajo 548, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,189] analizador [limpiador Linea : 265] -->  legajo 548, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,214] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (550) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,219] analizador [limpiador Linea : 265] -->  legajo 550, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,221] analizador [limpiador Linea : 265] -->  legajo 550, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,240] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (551) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,251] analizador [limpiador Linea : 265] -->  legajo 551, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,253] analizador [limpiador Linea : 265] -->  legajo 551, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,277] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (552) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,281] analizador [limpiador Linea : 284] --> Acomodando legajo 552, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,284] analizador [limpiador Linea : 284] --> Acomodando legajo 552, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,286] analizador [limpiador Linea : 284] --> Acomodando legajo 552, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,313] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (556) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,324] analizador [limpiador Linea : 194] --> Acomodando legajo 556, dia de analisis: 2021-01-21,Condicion DOS
+INFO :[2021-07-27 18:39:48,326] analizador [limpiador Linea : 265] -->  legajo 556, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,350] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (557) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,355] analizador [limpiador Linea : 179] --> Acomodando legajo 557, dia de analisis: 2021-01-20,Condicion UNO
+INFO :[2021-07-27 18:39:48,356] analizador [limpiador Linea : 265] -->  legajo 557, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,359] analizador [limpiador Linea : 284] --> Acomodando legajo 557, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,383] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (562) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,387] analizador [limpiador Linea : 284] --> Acomodando legajo 562, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,390] analizador [limpiador Linea : 284] --> Acomodando legajo 562, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,392] analizador [limpiador Linea : 284] --> Acomodando legajo 562, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,412] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (563) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,416] analizador [limpiador Linea : 317] --> Acomodando legajo 563, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:48,419] analizador [limpiador Linea : 317] --> Acomodando legajo 563, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:48,422] analizador [limpiador Linea : 317] --> Acomodando legajo 563, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:48,441] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (565) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,445] analizador [limpiador Linea : 284] --> Acomodando legajo 565, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,448] analizador [limpiador Linea : 284] --> Acomodando legajo 565, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,450] analizador [limpiador Linea : 284] --> Acomodando legajo 565, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,469] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (567) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,474] analizador [limpiador Linea : 317] --> Acomodando legajo 567, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:48,477] analizador [limpiador Linea : 317] --> Acomodando legajo 567, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:48,479] analizador [limpiador Linea : 317] --> Acomodando legajo 567, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:48,499] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (573) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,503] analizador [limpiador Linea : 284] --> Acomodando legajo 573, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,506] analizador [limpiador Linea : 265] -->  legajo 573, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,530] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (579) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,541] analizador [limpiador Linea : 284] --> Acomodando legajo 579, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,544] analizador [limpiador Linea : 284] --> Acomodando legajo 579, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,567] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (581) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,572] analizador [limpiador Linea : 284] --> Acomodando legajo 581, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,575] analizador [limpiador Linea : 284] --> Acomodando legajo 581, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,577] analizador [limpiador Linea : 284] --> Acomodando legajo 581, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,615] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (594) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,620] analizador [limpiador Linea : 284] --> Acomodando legajo 594, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,622] analizador [limpiador Linea : 284] --> Acomodando legajo 594, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,644] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (595) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,648] analizador [limpiador Linea : 284] --> Acomodando legajo 595, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:48,651] analizador [limpiador Linea : 284] --> Acomodando legajo 595, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:48,654] analizador [limpiador Linea : 284] --> Acomodando legajo 595, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:48,673] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (596) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,683] analizador [limpiador Linea : 265] -->  legajo 596, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,685] analizador [limpiador Linea : 265] -->  legajo 596, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,709] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (597) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,720] analizador [limpiador Linea : 265] -->  legajo 597, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,723] analizador [limpiador Linea : 241] --> Acomodando legajo 597, dia de analisis: 2021-01-22,Condicion CUATRO
+INFO :[2021-07-27 18:39:48,755] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (603) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,764] analizador [limpiador Linea : 210] --> Acomodando legajo 603, dia de analisis: 2021-01-20,Condicion TRES
+INFO :[2021-07-27 18:39:48,766] analizador [limpiador Linea : 265] -->  legajo 603, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,768] analizador [limpiador Linea : 265] -->  legajo 603, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,788] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (604) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,798] analizador [limpiador Linea : 265] -->  legajo 604, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,801] analizador [limpiador Linea : 265] -->  legajo 604, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,833] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (609) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,837] analizador [limpiador Linea : 317] --> Acomodando legajo 609, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:48,842] analizador [limpiador Linea : 194] --> Acomodando legajo 609, dia de analisis: 2021-01-22,Condicion DOS
+INFO :[2021-07-27 18:39:48,865] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (613) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,869] analizador [limpiador Linea : 317] --> Acomodando legajo 613, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:48,872] analizador [limpiador Linea : 317] --> Acomodando legajo 613, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:48,875] analizador [limpiador Linea : 317] --> Acomodando legajo 613, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:48,894] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (614) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,898] analizador [limpiador Linea : 317] --> Acomodando legajo 614, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:48,901] analizador [limpiador Linea : 317] --> Acomodando legajo 614, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:48,904] analizador [limpiador Linea : 317] --> Acomodando legajo 614, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:48,938] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (623) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,943] analizador [limpiador Linea : 317] --> Acomodando legajo 623, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:48,945] analizador [limpiador Linea : 317] --> Acomodando legajo 623, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:48,948] analizador [limpiador Linea : 317] --> Acomodando legajo 623, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:48,972] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (625) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:48,977] analizador [limpiador Linea : 265] -->  legajo 625, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:48,979] analizador [limpiador Linea : 265] -->  legajo 625, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,023] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (636) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,029] analizador [limpiador Linea : 265] -->  legajo 636, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,031] analizador [limpiador Linea : 265] -->  legajo 636, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,051] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (637) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,065] analizador [limpiador Linea : 284] --> Acomodando legajo 637, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,067] analizador [limpiador Linea : 210] --> Acomodando legajo 637, dia de analisis: 2021-01-21,Condicion TRES
+INFO :[2021-07-27 18:39:49,099] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (641) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,104] analizador [limpiador Linea : 265] -->  legajo 641, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,106] analizador [limpiador Linea : 265] -->  legajo 641, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,137] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (645) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,141] analizador [limpiador Linea : 284] --> Acomodando legajo 645, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,144] analizador [limpiador Linea : 284] --> Acomodando legajo 645, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,146] analizador [limpiador Linea : 284] --> Acomodando legajo 645, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,165] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (647) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,170] analizador [limpiador Linea : 284] --> Acomodando legajo 647, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,173] analizador [limpiador Linea : 284] --> Acomodando legajo 647, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,175] analizador [limpiador Linea : 284] --> Acomodando legajo 647, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,195] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (648) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,205] analizador [limpiador Linea : 265] -->  legajo 648, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,207] analizador [limpiador Linea : 265] -->  legajo 648, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,239] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (652) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,249] analizador [limpiador Linea : 210] --> Acomodando legajo 652, dia de analisis: 2021-01-20,Condicion TRES
+INFO :[2021-07-27 18:39:49,250] analizador [limpiador Linea : 265] -->  legajo 652, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,252] analizador [limpiador Linea : 265] -->  legajo 652, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,272] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (653) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,283] analizador [limpiador Linea : 265] -->  legajo 653, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,285] analizador [limpiador Linea : 265] -->  legajo 653, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,309] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (654) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,319] analizador [limpiador Linea : 265] -->  legajo 654, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,321] analizador [limpiador Linea : 265] -->  legajo 654, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,345] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (655) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,350] analizador [limpiador Linea : 284] --> Acomodando legajo 655, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,353] analizador [limpiador Linea : 284] --> Acomodando legajo 655, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,355] analizador [limpiador Linea : 284] --> Acomodando legajo 655, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,378] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (660) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,413] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (661) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,419] analizador [limpiador Linea : 265] -->  legajo 661, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,451] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (666) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,461] analizador [limpiador Linea : 265] -->  legajo 666, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,463] analizador [limpiador Linea : 265] -->  legajo 666, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,494] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (670) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,500] analizador [limpiador Linea : 261] --> Acomodando legajo 670, dia de analisis: 2021-01-21,Condicion CINCO
+INFO :[2021-07-27 18:39:49,502] analizador [limpiador Linea : 261] --> Acomodando legajo 670, dia de analisis: 2021-01-22,Condicion CINCO
+INFO :[2021-07-27 18:39:49,526] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (673) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,536] analizador [limpiador Linea : 265] -->  legajo 673, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,538] analizador [limpiador Linea : 265] -->  legajo 673, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:49,567] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (676) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,572] analizador [limpiador Linea : 284] --> Acomodando legajo 676, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,575] analizador [limpiador Linea : 284] --> Acomodando legajo 676, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,578] analizador [limpiador Linea : 284] --> Acomodando legajo 676, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,601] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (679) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,605] analizador [limpiador Linea : 317] --> Acomodando legajo 679, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:49,608] analizador [limpiador Linea : 317] --> Acomodando legajo 679, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:49,611] analizador [limpiador Linea : 317] --> Acomodando legajo 679, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:49,630] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (681) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,635] analizador [limpiador Linea : 284] --> Acomodando legajo 681, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,638] analizador [limpiador Linea : 284] --> Acomodando legajo 681, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,640] analizador [limpiador Linea : 284] --> Acomodando legajo 681, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,660] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (683) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,664] analizador [limpiador Linea : 284] --> Acomodando legajo 683, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,667] analizador [limpiador Linea : 284] --> Acomodando legajo 683, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,670] analizador [limpiador Linea : 284] --> Acomodando legajo 683, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,689] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (684) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,707] analizador [limpiador Linea : 210] --> Acomodando legajo 684, dia de analisis: 2021-01-20,Condicion TRES
+INFO :[2021-07-27 18:39:49,773] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (697) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,778] analizador [limpiador Linea : 317] --> Acomodando legajo 697, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:49,781] analizador [limpiador Linea : 317] --> Acomodando legajo 697, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:49,784] analizador [limpiador Linea : 317] --> Acomodando legajo 697, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:49,804] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (698) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,809] analizador [limpiador Linea : 284] --> Acomodando legajo 698, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,812] analizador [limpiador Linea : 284] --> Acomodando legajo 698, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,814] analizador [limpiador Linea : 284] --> Acomodando legajo 698, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,833] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (703) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,838] analizador [limpiador Linea : 284] --> Acomodando legajo 703, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,841] analizador [limpiador Linea : 284] --> Acomodando legajo 703, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,843] analizador [limpiador Linea : 284] --> Acomodando legajo 703, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,905] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (718) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,910] analizador [limpiador Linea : 317] --> Acomodando legajo 718, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:49,913] analizador [limpiador Linea : 317] --> Acomodando legajo 718, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:49,915] analizador [limpiador Linea : 317] --> Acomodando legajo 718, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:49,964] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (728) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:49,969] analizador [limpiador Linea : 284] --> Acomodando legajo 728, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:49,971] analizador [limpiador Linea : 284] --> Acomodando legajo 728, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:49,974] analizador [limpiador Linea : 284] --> Acomodando legajo 728, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:49,993] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (730) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:50,003] analizador [limpiador Linea : 265] -->  legajo 730, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:50,005] analizador [limpiador Linea : 265] -->  legajo 730, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:50,046] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (731) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:50,054] analizador [limpiador Linea : 317] --> Acomodando legajo 731, dia de analisis: 2021-01-20,Condicion OCHO
+INFO :[2021-07-27 18:39:50,058] analizador [limpiador Linea : 317] --> Acomodando legajo 731, dia de analisis: 2021-01-21,Condicion OCHO
+INFO :[2021-07-27 18:39:50,061] analizador [limpiador Linea : 317] --> Acomodando legajo 731, dia de analisis: 2021-01-22,Condicion OCHO
+INFO :[2021-07-27 18:39:50,091] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (733) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:50,103] analizador [limpiador Linea : 265] -->  legajo 733, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:50,105] analizador [limpiador Linea : 265] -->  legajo 733, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:50,131] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (734) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:50,137] analizador [limpiador Linea : 284] --> Acomodando legajo 734, dia de analisis: 2021-01-20,Condicion SEIS
+INFO :[2021-07-27 18:39:50,140] analizador [limpiador Linea : 284] --> Acomodando legajo 734, dia de analisis: 2021-01-21,Condicion SEIS
+INFO :[2021-07-27 18:39:50,143] analizador [limpiador Linea : 284] --> Acomodando legajo 734, dia de analisis: 2021-01-22,Condicion SEIS
+INFO :[2021-07-27 18:39:50,173] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (736) No paso las validaciones, se las castea en cero.
+INFO :[2021-07-27 18:39:50,179] analizador [limpiador Linea : 265] -->  legajo 736, dia de analisis: 2021-01-21,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:50,181] analizador [limpiador Linea : 265] -->  legajo 736, dia de analisis: 2021-01-22,SIN PASAR POR NINGUN LADO
+INFO :[2021-07-27 18:39:50,213] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (739) No paso las validaciones, se las castea en cero.
+WARNING :[2021-07-27 18:39:50,249] Vulcano [frameAnalisisIndividual Linea : 627] --> El siguiente legajo (740) no se encuentra en la BD
+WARNING :[2021-07-27 18:39:50,250] Vulcano [frameAnalisisIndividual Linea : 627] --> El siguiente legajo (741) no se encuentra en la BD
+WARNING :[2021-07-27 18:39:50,251] Vulcano [frameAnalisisIndividual Linea : 627] --> El siguiente legajo (742) no se encuentra en la BD
+WARNING :[2021-07-27 18:39:50,252] Vulcano [frameAnalisisIndividual Linea : 627] --> El siguiente legajo (2021) no se encuentra en la BD
+WARNING :[2021-07-27 18:39:50,254] Vulcano [frameAnalisisIndividual Linea : 627] --> El siguiente legajo (2024) no se encuentra en la BD
+INFO :[2021-07-27 18:39:50,254] Vulcano [limpiezaDeRegistros Linea : 681] --> Limpiando registros
+INFO :[2021-07-27 18:39:50,255] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:39:52,024] analizador [informeNoFichadas Linea : 1813] --> Comenzando escritura en el word
+INFO :[2021-07-27 18:39:52,143] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:42:40,948] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 18:42:54,878] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:42:54,898] Vulcano [insercionBD Linea : 375] --> Insertando registros en la BD
+INFO :[2021-07-27 18:42:54,898] Vulcano [insercionBD Linea : 384] --> INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('6','TOMACELLO PABLO ','Miércoles','2021-01-20','2021-01-20 06:43:00','2021-01-20 16:49:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','nan','nan');
+INFO :[2021-07-27 18:42:54,898] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:42:54,903] createDB [executeQuery Linea : 46] --> Ejecutando query
+INFO :[2021-07-27 18:42:54,918] Vulcano [insercionBD Linea : 384] --> INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('6','TOMACELLO PABLO ','Jueves','2021-01-21','2021-01-21 06:37:00','2021-01-21 16:50:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','nan','nan');
+INFO :[2021-07-27 18:42:54,918] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:42:54,918] createDB [executeQuery Linea : 46] --> Ejecutando query
+INFO :[2021-07-27 18:42:54,928] Vulcano [insercionBD Linea : 384] --> INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('6','TOMACELLO PABLO ','Viernes','2021-01-22','2021-01-22 06:34:00','2021-01-22 16:52:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','nan','nan');
+INFO :[2021-07-27 18:42:54,928] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:42:54,928] createDB [executeQuery Linea : 46] --> Ejecutando query
+INFO :[2021-07-27 18:45:29,661] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 18:45:44,325] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:48:22,560] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+ERROR :[2021-07-27 18:48:33,709] Vulcano [actualizacionRegistros Linea : 865] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 848, in actualizacionRegistros
+    frameAnalisis = corrector.corrector_marcada()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Corrector.py", line 23, in corrector_marcada
+    print(len(celda))
+TypeError: object of type 'float' has no len()
+
+INFO :[2021-07-27 18:49:28,535] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 18:49:37,683] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:56:25,277] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 18:56:34,645] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 18:57:45,606] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 18:57:58,004] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 19:00:46,967] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+ERROR :[2021-07-27 19:00:56,132] Vulcano [actualizacionRegistros Linea : 865] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 848, in actualizacionRegistros
+    frameAnalisis = corrector.corrector_marcada()
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Corrector.py", line 25, in corrector_marcada
+    print(isinstance(celda,datetime.time))
+TypeError: isinstance() arg 2 must be a type or tuple of types
+
+INFO :[2021-07-27 19:02:30,375] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 19:02:38,876] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 19:09:44,940] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 19:09:52,865] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 19:11:29,136] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 19:11:37,931] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 19:20:38,631] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 19:20:48,208] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 19:45:40,530] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 19:45:48,706] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 20:02:46,368] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 20:02:57,061] createDB [conexion Linea : 27] --> Iniciando conexion
+ERROR :[2021-07-27 20:02:57,073] Vulcano [actualizacionRegistros Linea : 865] --> excepcion desconocida: Traceback (most recent call last):
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 852, in actualizacionRegistros
+    frameConErrores = analizadorFramesCorregidos(frameAnalisis,fechaInicio,fechaFin)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\Vulcano.py", line 777, in analizadorFramesCorregidos
+    newFrame = calculador.horasTrabajadas(newFrame)
+  File "J:\Emma\14. Vulcano\RelojRRHH\Proyecto\analizador.py", line 1566, in horasTrabajadas
+    if frame.iloc[fila,idx + 1] == pd.to_datetime(('{} 00:00').format(fecha)) and frame.iloc[fila,idx] != pd.to_datetime(('{} 00:00').format(fecha)):
+  File "pandas\_libs\tslibs\timestamps.pyx", line 281, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__
+  File "pandas\_libs\tslibs\timestamps.pyx", line 298, in pandas._libs.tslibs.timestamps._Timestamp._assert_tzawareness_compat
+TypeError: Cannot compare tz-naive and tz-aware timestamps
+
+INFO :[2021-07-27 20:04:16,947] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 20:04:24,709] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 20:05:19,171] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-07-27 20:05:27,960] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 20:05:27,977] Vulcano [insercionBD Linea : 375] --> Insertando registros en la BD
+INFO :[2021-07-27 20:05:27,978] Vulcano [insercionBD Linea : 384] --> INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('6','TOMACELLO PABLO ','Martes','2021-01-19','2021-01-19 06:43:00','2021-01-19 12:30:00','2021-01-19 13:50:00','2021-01-19 16:50:00','2021-01-19 00:00:00','2021-01-19 00:00:00','2021-01-19 00:00:00','2021-01-19 00:00:00','2021-01-19 00:00:00','2021-01-19 00:00:00','nan','nan');
+INFO :[2021-07-27 20:05:27,978] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 20:05:27,978] createDB [executeQuery Linea : 46] --> Ejecutando query
+INFO :[2021-07-27 20:05:27,978] Vulcano [insercionBD Linea : 384] --> INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('6','TOMACELLO PABLO ','Miércoles','2021-01-20','2021-01-20 06:43:00','2021-01-20 16:48:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','2021-01-20 00:00:00','nan','nan');
+INFO :[2021-07-27 20:05:27,978] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 20:05:27,979] createDB [executeQuery Linea : 46] --> Ejecutando query
+INFO :[2021-07-27 20:05:27,979] Vulcano [insercionBD Linea : 384] --> INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('6','TOMACELLO PABLO ','Jueves','2021-01-21','2021-01-21 06:37:00','2021-01-21 16:50:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','2021-01-21 00:00:00','nan','nan');
+INFO :[2021-07-27 20:05:27,979] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 20:05:27,979] createDB [executeQuery Linea : 46] --> Ejecutando query
+INFO :[2021-07-27 20:05:27,980] Vulcano [insercionBD Linea : 384] --> INSERT INTO REGISTROS(legajo,nombre,dia,fecha,ingreso0,egreso0,ingreso1,egreso1,ingreso2,egreso2,ingreso3,egreso3,ingreso4,egreso4,Motivo,Observación)
+VALUES ('6','TOMACELLO PABLO ','Viernes','2021-01-22','2021-01-22 06:34:00','2021-01-22 16:52:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','2021-01-22 00:00:00','nan','nan');
+INFO :[2021-07-27 20:05:27,980] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-07-27 20:05:27,980] createDB [executeQuery Linea : 46] --> Ejecutando query
