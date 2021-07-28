@@ -53,6 +53,8 @@ updateRegistro = """UPDATE REGISTROS
 SET '{}' = '{}'
 WHERE legajo = '{}' and fecha = '{}'"""
 
+selectArea = 'select LEG, AREA from legajos'
+
 # select * from REGISTROS
 # WHERE legajo = '6' and fecha = '2020-10-01'
 

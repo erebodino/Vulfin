@@ -16,7 +16,7 @@ from analizador import Analizador,CalculadorHoras,informeNoFichadas,ingresoNoFic
 from createDB import ManagerSQL
 from queryes import (queryConsultaEmpleados,insertRegistros,selectAll,
                      selectSome,insertEmpleado,deleteEmpleado,
-                     actualizarEmpleado,selectDeleteRegistro,updateRegistro)
+                     actualizarEmpleado,selectDeleteRegistro,updateRegistro,selectArea)
 from Corrector import CorrectorExcel
 from openpyxl import load_workbook
 from time import sleep
@@ -717,6 +717,14 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
             nombre = os.path.join(os.getcwd(),pathExcelTemporal,nombre)
             frameAnalisis['Motivo'] = ''
             frameAnalisis['Observación'] = ''
+            query = selectArea
+            frameConAreas = pd.read_sql(query,manager.conexion())
+            frameConAreas =  frameConAreas.rename(columns={'LEG':'Legajo'})
+            frameConAreas['Legajo'] = frameConAreas['Legajo'].astype(str)
+            frameAnalisis['Legajo'] = frameAnalisis['Legajo'].astype(str)
+            frameAnalisis = frameAnalisis.merge(frameConAreas,on='Legajo',how='left')
+
+
             try:
                 frameAnalisis.to_excel(nombre,index=False)
                 coloreadorExcel(nombre)
