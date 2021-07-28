@@ -718,11 +718,11 @@ def limpiezaDeRegistros(frame,fechaInicio,fechaFin):
             frameAnalisis['Motivo'] = ''
             frameAnalisis['Observación'] = ''
             query = selectArea
-            frameConAreas = pd.read_sql(query,manager.conexion())
+            frameConAreas = pd.read_sql(query,manager.conexion()) # genere el frame con legajo,area
             frameConAreas =  frameConAreas.rename(columns={'LEG':'Legajo'})
-            frameConAreas['Legajo'] = frameConAreas['Legajo'].astype(str)
+            frameConAreas['Legajo'] = frameConAreas['Legajo'].astype(str) # pasa ambos a str para poder mergear
             frameAnalisis['Legajo'] = frameAnalisis['Legajo'].astype(str)
-            frameAnalisis = frameAnalisis.merge(frameConAreas,on='Legajo',how='left')
+            frameAnalisis = frameAnalisis.merge(frameConAreas,on='Legajo',how='left') #agregado de la columna extra al frame para ver el area.
 
 
             try:

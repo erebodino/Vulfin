@@ -20,25 +20,15 @@ class CorrectorExcel:
             cero = pd.to_datetime(('{} 00:00').format(self.frame.iloc[x,3]))
             for y in range (4,14):
                 celda = self.frame.iloc[x,y]
-                if 'datetime.time' in str(type(celda)).split()[1]:
-                    # print('celda: ',celda)
-                    # print('datetime.time' in str(type(celda)).split()[1])
-                    # print(type(celda) is datetime.time)
-                    # print(str(celda))
-                    # print('Indice: ',y,'   ---->',type(celda),'  ',)
-                    # print('-'*20)
+                if 'datetime.time' in str(type(celda)).split()[1]: # Chequea si en el type de la celda la misma es una hora (12:30)
                     hora_corregida = pd.to_datetime(('{} {}').format(self.frame.iloc[x,3],str(celda)))
                     self.frame.iloc[x,y] = hora_corregida
                 
-                elif 'datetime.datetime' in str(type(celda)).split()[1]:
+                elif 'datetime.datetime' in str(type(celda)).split()[1]: #Cheque si el type de la celda es el formato dd/mm/yyyy hh:mm:ss, si es asi rearma la fecha.
                     hora_corregida = pd.to_datetime(('{} {}').format(self.frame.iloc[x,3],str(celda).split()[1]))
                     self.frame.iloc[x,y] = hora_corregida
 
-                elif type(celda) != type(patron):
-                    print(celda)
-                    print(type(celda))
-                    print('Fila:',x,'  Columna:',y,'   ---->',type(celda),'  ',)
-                    print('-'*30)
+                elif type(celda) != type(patron): #En el resto de los casos los pasa a 00:00
                     self.frame.iloc[x,y] = cero
 
         
