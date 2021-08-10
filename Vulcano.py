@@ -1358,15 +1358,29 @@ def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriado
         frameFinalExtras[key] = 0
             
     frameFinalExtras = cambioPorMotivos(frameFinalExtras,motivos=motivos)
-        
-        
+    query = selectArea
+    manager = ManagerSQL()
+    frameConAreas = pd.read_sql(query,manager.conexion())    
+    frameConAreas =  frameConAreas.rename(columns={'LEG':'Legajo'})
+    frameConAreas['Legajo'] = frameConAreas['Legajo'].astype(str) # pasa ambos a str para poder mergear
+    
+    frameFinalExtras['Legajo'] = frameFinalExtras['Legajo'].astype(str)
+    frameFinalExtras = frameFinalExtras.merge(frameConAreas,on='Legajo',how='left') #agregado de la columna extra al frame para ver el area.
     frameFinalExtras.to_excel(nombre,sheet_name='Registros',index=False)
         
     book = load_workbook(nombre)
     writer = pd.ExcelWriter(nombre, engine = 'openpyxl') #writer para escribir 2 hojas en el excel
     writer.book = book      
-        
+    writer.save()
+    writer.close()
+    
+    frameFinalExtras['Legajo'] = frameFinalExtras['Legajo'].astype(int)
     frameTotalizado = hojaTotalizadora(frameFinalExtras, fechaInicio, fechaFin,feriados,empleados,empleadosExtras)
+
+    
+    frameTotalizado['Legajo'] = frameTotalizado['Legajo'].astype(str)
+    frameTotalizado = frameTotalizado.merge(frameConAreas,on='Legajo',how='left') #agregado de la columna extra al frame para ver el area.
+
     frameTotalizado.to_excel(writer, sheet_name = 'Totalizado',index=False)
     writer.save()
     writer.close()     
