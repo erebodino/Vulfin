@@ -561,7 +561,9 @@ def coloreadorExcel(pathExcel):
     
     ws = wb.active
     my_red = openpyxl.styles.colors.Color(rgb='00FF0000')
+    my_grey = openpyxl.styles.colors.Color(rgb='808080')
     my_fill = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_red)
+    my_fillGrey = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_grey)
     my_green = openpyxl.styles.colors.Color(rgb="0000FF00")
     my_fillGreen = openpyxl.styles.fills.PatternFill(patternType='solid', fgColor=my_green)
     
@@ -580,8 +582,9 @@ def coloreadorExcel(pathExcel):
                             celda.fill = my_fillGreen
                 else:
                     for idx in ws.iter_cols(min_row=valor,max_row = valor, min_col=1,max_col=19):
-                        for celda in idx:
-                            celda.fill = my_fill
+                        for celda in idx:                            
+                            #celda.fill = my_fill
+                            celda.fill = my_fillGrey
 
 
     wb.save(pathExcel)
