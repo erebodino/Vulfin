@@ -1374,7 +1374,7 @@ def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriado
     writer.save()
     writer.close()
     
-    frameFinalExtras['Legajo'] = frameFinalExtras['Legajo'].astype(int)
+    frameFinalExtras['Legajo'] = frameFinalExtras['Legajo'].astype(int) #Vuelvo a ponerlos como int ya que la funcion debajo siempre los trabajo como enteros.
     frameTotalizado = hojaTotalizadora(frameFinalExtras, fechaInicio, fechaFin,feriados,empleados,empleadosExtras)
 
     
