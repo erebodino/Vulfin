@@ -118,10 +118,11 @@ class Analizador:
         finIndex = fechas[fechas == self.fechaFin]
         inicioIndex = fechas[fechas == self.fechaInicio].index[0]
         finIndex = fechas[fechas == self.fechaFin].index[0]
-
        
         for renglon in range(inicioIndex,finIndex+ 1):
             if area in rotativosInyeccion:
+
+                print(self.frameEnAnalisis.iloc[renglon,1])
                 #print('\nLIMPIADOR   \n: ',self.frameEnAnalisis.iloc[1,4],self.frameEnAnalisis.iloc[1,5]) 
                 dia = self.frameEnAnalisis.iloc[renglon,2]
                 fecha = self.frameEnAnalisis.iloc[renglon,3]

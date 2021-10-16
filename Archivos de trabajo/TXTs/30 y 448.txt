@@ -1,0 +1,41 @@
+
+
+Empleado:         30 - RIMONDOTTO ALFREDO JUAN JOSE                               Tarjeta Nº          30
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    01/10/2021 07:11    17:49
+Sábado     02/10/2021 06:35    14:56
+Domingo    03/10/2021          10:59
+Lunes      04/10/2021          17:46
+Martes     05/10/2021          06:36           17:46
+Miércoles  06/10/2021 06:24    17:47
+Jueves     07/10/2021 06:58    17:46
+Viernes    08/10/2021 07:27    17:25
+Sábado     09/10/2021 06:34    13:18
+Lunes      11/10/2021 07:17    17:03
+Martes     12/10/2021 06:29    17:44
+Miércoles  13/10/2021 06:32    17:48
+
+
+
+
+
+Empleado:        448 - OLIVA DIEGO DE DIOS                                        Tarjeta Nº         448
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Viernes    01/10/2021 07:49    16:05
+Lunes      04/10/2021 23:49
+Martes     05/10/2021          08:01   23:48
+Miércoles  06/10/2021          08:02   23:48
+Jueves     07/10/2021          08:01   23:44
+Viernes    08/10/2021          08:06
+Martes     12/10/2021 07:51    16:03
+Miércoles  13/10/2021 07:42    16:01
+Jueves     14/10/2021 07:45    16:01
+

@@ -23257,3 +23257,1422 @@ WARNING :[2021-09-21 20:22:27,544] Vulcano [cambioPorMotivos Linea : 1318] --> C
 INFO :[2021-09-21 20:22:27,544] createDB [conexion Linea : 27] --> Iniciando conexion
 INFO :[2021-09-21 20:22:34,150] Vulcano [escritorInformeFaltasTardanzas Linea : 1769] --> Creacion del Word de manera correcta
 INFO :[2021-09-21 20:22:38,081] Vulcano [escritorInformeFaltasTardanzas Linea : 1777] --> Creacion del PDF de manera correcta
+INFO :[2021-10-16 18:03:48,539] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-10-16 18:04:30,882] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2021-10-16 18:04:31,147] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (1) no se encuentra en la BD
+INFO :[2021-10-16 18:04:31,461] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (30) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:31,758] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (66) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:31,837] analizador [limpiador Linea : 266] -->  legajo 66, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:31,839] analizador [limpiador Linea : 266] -->  legajo 66, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,158] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (97) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:32,207] analizador [limpiador Linea : 266] -->  legajo 97, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,209] analizador [limpiador Linea : 266] -->  legajo 97, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,211] analizador [limpiador Linea : 266] -->  legajo 97, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,213] analizador [limpiador Linea : 266] -->  legajo 97, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,222] analizador [limpiador Linea : 266] -->  legajo 97, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,224] analizador [limpiador Linea : 266] -->  legajo 97, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,652] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (147) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:32,694] analizador [limpiador Linea : 266] -->  legajo 147, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,697] analizador [limpiador Linea : 266] -->  legajo 147, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,698] analizador [limpiador Linea : 266] -->  legajo 147, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,701] analizador [limpiador Linea : 266] -->  legajo 147, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,703] analizador [limpiador Linea : 266] -->  legajo 147, dia de analisis: 2021-10-10,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,705] analizador [limpiador Linea : 266] -->  legajo 147, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,709] analizador [limpiador Linea : 262] --> Acomodando legajo 147, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:04:32,712] analizador [limpiador Linea : 262] --> Acomodando legajo 147, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:04:32,829] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (202) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:32,865] analizador [limpiador Linea : 318] --> Acomodando legajo 202, dia de analisis: 2021-10-01,Condicion OCHO
+INFO :[2021-10-16 18:04:32,871] analizador [limpiador Linea : 180] --> Acomodando legajo 202, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:04:32,873] analizador [limpiador Linea : 266] -->  legajo 202, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,876] analizador [limpiador Linea : 285] --> Acomodando legajo 202, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:04:32,878] analizador [limpiador Linea : 285] --> Acomodando legajo 202, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:32,881] analizador [limpiador Linea : 211] --> Acomodando legajo 202, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:32,888] analizador [limpiador Linea : 266] -->  legajo 202, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,889] analizador [limpiador Linea : 266] -->  legajo 202, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,891] analizador [limpiador Linea : 266] -->  legajo 202, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:32,950] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (224) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:32,997] analizador [limpiador Linea : 242] --> Acomodando legajo 224, dia de analisis: 2021-10-05,Condicion CUATRO
+INFO :[2021-10-16 18:04:32,999] analizador [limpiador Linea : 285] --> Acomodando legajo 224, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:04:33,002] analizador [limpiador Linea : 285] --> Acomodando legajo 224, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:33,005] analizador [limpiador Linea : 285] --> Acomodando legajo 224, dia de analisis: 2021-10-08,Condicion SEIS
+INFO :[2021-10-16 18:04:33,008] analizador [limpiador Linea : 266] -->  legajo 224, dia de analisis: 2021-10-10,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:33,012] analizador [limpiador Linea : 266] -->  legajo 224, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:33,017] analizador [limpiador Linea : 266] -->  legajo 224, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:33,188] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (235) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:33,255] analizador [limpiador Linea : 195] --> Acomodando legajo 235, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:33,262] analizador [limpiador Linea : 266] -->  legajo 235, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:33,265] analizador [limpiador Linea : 266] -->  legajo 235, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:33,267] analizador [limpiador Linea : 266] -->  legajo 235, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:33,368] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (241) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:33,426] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (242) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:33,746] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (318) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:33,832] analizador [limpiador Linea : 266] -->  legajo 318, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:33,930] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (335) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:33,998] analizador [limpiador Linea : 195] --> Acomodando legajo 335, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:34,011] analizador [limpiador Linea : 180] --> Acomodando legajo 335, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:04:34,013] analizador [limpiador Linea : 266] -->  legajo 335, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,016] analizador [limpiador Linea : 211] --> Acomodando legajo 335, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:34,194] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (352) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:34,228] analizador [limpiador Linea : 318] --> Acomodando legajo 352, dia de analisis: 2021-10-01,Condicion OCHO
+INFO :[2021-10-16 18:04:34,231] analizador [limpiador Linea : 318] --> Acomodando legajo 352, dia de analisis: 2021-10-02,Condicion OCHO
+INFO :[2021-10-16 18:04:34,236] analizador [limpiador Linea : 180] --> Acomodando legajo 352, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:04:34,238] analizador [limpiador Linea : 266] -->  legajo 352, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,240] analizador [limpiador Linea : 266] -->  legajo 352, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,243] analizador [limpiador Linea : 285] --> Acomodando legajo 352, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:34,246] analizador [limpiador Linea : 211] --> Acomodando legajo 352, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:34,253] analizador [limpiador Linea : 266] -->  legajo 352, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,255] analizador [limpiador Linea : 266] -->  legajo 352, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,257] analizador [limpiador Linea : 266] -->  legajo 352, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,353] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (359) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:34,399] analizador [limpiador Linea : 195] --> Acomodando legajo 359, dia de analisis: 2021-10-04,Condicion DOS
+INFO :[2021-10-16 18:04:34,401] analizador [limpiador Linea : 195] --> Acomodando legajo 359, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:34,405] analizador [limpiador Linea : 195] --> Acomodando legajo 359, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:04:34,408] analizador [limpiador Linea : 195] --> Acomodando legajo 359, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:34,416] analizador [limpiador Linea : 180] --> Acomodando legajo 359, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:34,418] analizador [limpiador Linea : 266] -->  legajo 359, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,421] analizador [limpiador Linea : 211] --> Acomodando legajo 359, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:04:34,522] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (376) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:34,603] analizador [limpiador Linea : 180] --> Acomodando legajo 376, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:04:34,604] analizador [limpiador Linea : 266] -->  legajo 376, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,608] analizador [limpiador Linea : 211] --> Acomodando legajo 376, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:34,728] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (393) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:34,785] analizador [limpiador Linea : 195] --> Acomodando legajo 393, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:34,789] analizador [limpiador Linea : 266] -->  legajo 393, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,797] analizador [limpiador Linea : 266] -->  legajo 393, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:34,800] analizador [limpiador Linea : 262] --> Acomodando legajo 393, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:04:34,802] analizador [limpiador Linea : 262] --> Acomodando legajo 393, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:04:35,113] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (424) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:35,195] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (432) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:35,290] analizador [limpiador Linea : 266] -->  legajo 432, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,292] analizador [limpiador Linea : 266] -->  legajo 432, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,294] analizador [limpiador Linea : 266] -->  legajo 432, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,388] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (434) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:35,458] analizador [limpiador Linea : 195] --> Acomodando legajo 434, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:35,470] analizador [limpiador Linea : 262] --> Acomodando legajo 434, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:04:35,472] analizador [limpiador Linea : 262] --> Acomodando legajo 434, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:04:35,474] analizador [limpiador Linea : 266] -->  legajo 434, dia de analisis: 2021-10-15,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,553] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (437) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:35,626] analizador [limpiador Linea : 195] --> Acomodando legajo 437, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:35,634] analizador [limpiador Linea : 266] -->  legajo 437, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,636] analizador [limpiador Linea : 266] -->  legajo 437, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,638] analizador [limpiador Linea : 266] -->  legajo 437, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,715] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (438) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:35,805] analizador [limpiador Linea : 266] -->  legajo 438, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:35,997] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (458) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:36,040] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (467) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:36,133] analizador [limpiador Linea : 266] -->  legajo 467, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,281] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (475) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:36,388] analizador [limpiador Linea : 266] -->  legajo 475, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,391] analizador [limpiador Linea : 266] -->  legajo 475, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,504] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (479) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:36,566] analizador [limpiador Linea : 195] --> Acomodando legajo 479, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:36,569] analizador [limpiador Linea : 195] --> Acomodando legajo 479, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:04:36,579] analizador [limpiador Linea : 266] -->  legajo 479, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,582] analizador [limpiador Linea : 266] -->  legajo 479, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,585] analizador [limpiador Linea : 266] -->  legajo 479, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,838] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (510) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:36,892] analizador [limpiador Linea : 266] -->  legajo 510, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,901] analizador [limpiador Linea : 266] -->  legajo 510, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,904] analizador [limpiador Linea : 266] -->  legajo 510, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:36,906] analizador [limpiador Linea : 266] -->  legajo 510, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,061] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (522) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:37,127] analizador [limpiador Linea : 180] --> Acomodando legajo 522, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:04:37,128] analizador [limpiador Linea : 266] -->  legajo 522, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,140] analizador [limpiador Linea : 262] --> Acomodando legajo 522, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:04:37,221] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (525) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:37,302] analizador [limpiador Linea : 266] -->  legajo 525, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,304] analizador [limpiador Linea : 266] -->  legajo 525, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,306] analizador [limpiador Linea : 266] -->  legajo 525, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,392] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (526) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:37,451] analizador [limpiador Linea : 242] --> Acomodando legajo 526, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:37,455] analizador [limpiador Linea : 266] -->  legajo 526, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,457] analizador [limpiador Linea : 180] --> Acomodando legajo 526, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:37,459] analizador [limpiador Linea : 266] -->  legajo 526, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,462] analizador [limpiador Linea : 285] --> Acomodando legajo 526, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:37,465] analizador [limpiador Linea : 211] --> Acomodando legajo 526, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:37,603] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (536) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:37,656] analizador [limpiador Linea : 285] --> Acomodando legajo 536, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:04:37,663] analizador [limpiador Linea : 266] -->  legajo 536, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,666] analizador [limpiador Linea : 266] -->  legajo 536, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,668] analizador [limpiador Linea : 266] -->  legajo 536, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,678] analizador [limpiador Linea : 195] --> Acomodando legajo 536, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:37,681] analizador [limpiador Linea : 195] --> Acomodando legajo 536, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:37,684] analizador [limpiador Linea : 195] --> Acomodando legajo 536, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:37,737] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (543) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:37,794] analizador [limpiador Linea : 195] --> Acomodando legajo 543, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:04:37,797] analizador [limpiador Linea : 195] --> Acomodando legajo 543, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:37,805] analizador [limpiador Linea : 266] -->  legajo 543, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,807] analizador [limpiador Linea : 266] -->  legajo 543, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,809] analizador [limpiador Linea : 266] -->  legajo 543, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,879] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (545) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:37,929] analizador [limpiador Linea : 180] --> Acomodando legajo 545, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:04:37,931] analizador [limpiador Linea : 266] -->  legajo 545, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,935] analizador [limpiador Linea : 285] --> Acomodando legajo 545, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:04:37,938] analizador [limpiador Linea : 285] --> Acomodando legajo 545, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:37,940] analizador [limpiador Linea : 211] --> Acomodando legajo 545, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:37,947] analizador [limpiador Linea : 180] --> Acomodando legajo 545, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:37,949] analizador [limpiador Linea : 266] -->  legajo 545, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:37,953] analizador [limpiador Linea : 285] --> Acomodando legajo 545, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:38,015] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (547) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:38,128] analizador [limpiador Linea : 262] --> Acomodando legajo 547, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:04:38,131] analizador [limpiador Linea : 262] --> Acomodando legajo 547, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:04:38,259] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (550) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:38,301] analizador [limpiador Linea : 180] --> Acomodando legajo 550, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:04:38,303] analizador [limpiador Linea : 266] -->  legajo 550, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,306] analizador [limpiador Linea : 242] --> Acomodando legajo 550, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:04:38,311] analizador [limpiador Linea : 262] --> Acomodando legajo 550, dia de analisis: 2021-10-09,Condicion CINCO
+INFO :[2021-10-16 18:04:38,312] analizador [limpiador Linea : 266] -->  legajo 550, dia de analisis: 2021-10-10,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,316] analizador [limpiador Linea : 211] --> Acomodando legajo 550, dia de analisis: 2021-10-11,Condicion TRES
+INFO :[2021-10-16 18:04:38,318] analizador [limpiador Linea : 266] -->  legajo 550, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,320] analizador [limpiador Linea : 266] -->  legajo 550, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,322] analizador [limpiador Linea : 266] -->  legajo 550, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,378] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (551) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:38,438] analizador [limpiador Linea : 266] -->  legajo 551, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,446] analizador [limpiador Linea : 266] -->  legajo 551, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,448] analizador [limpiador Linea : 266] -->  legajo 551, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,450] analizador [limpiador Linea : 266] -->  legajo 551, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,522] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (552) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:38,558] analizador [limpiador Linea : 285] --> Acomodando legajo 552, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:04:38,560] analizador [limpiador Linea : 302] --> Acomodando legajo 552, dia de analisis: 2021-10-02,Condicion SIETE
+INFO :[2021-10-16 18:04:38,564] analizador [limpiador Linea : 180] --> Acomodando legajo 552, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:04:38,566] analizador [limpiador Linea : 266] -->  legajo 552, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,570] analizador [limpiador Linea : 211] --> Acomodando legajo 552, dia de analisis: 2021-10-06,Condicion TRES
+INFO :[2021-10-16 18:04:38,572] analizador [limpiador Linea : 266] -->  legajo 552, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,576] analizador [limpiador Linea : 211] --> Acomodando legajo 552, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:38,583] analizador [limpiador Linea : 180] --> Acomodando legajo 552, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:38,585] analizador [limpiador Linea : 266] -->  legajo 552, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,642] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (553) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:38,701] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (556) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:38,754] analizador [limpiador Linea : 195] --> Acomodando legajo 556, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:38,757] analizador [limpiador Linea : 242] --> Acomodando legajo 556, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:04:38,759] analizador [limpiador Linea : 195] --> Acomodando legajo 556, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:38,769] analizador [limpiador Linea : 180] --> Acomodando legajo 556, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:38,770] analizador [limpiador Linea : 266] -->  legajo 556, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,773] analizador [limpiador Linea : 285] --> Acomodando legajo 556, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:38,776] analizador [limpiador Linea : 211] --> Acomodando legajo 556, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:38,875] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (562) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:38,912] analizador [limpiador Linea : 266] -->  legajo 562, dia de analisis: 2021-10-02,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,916] analizador [limpiador Linea : 195] --> Acomodando legajo 562, dia de analisis: 2021-10-04,Condicion DOS
+INFO :[2021-10-16 18:04:38,921] analizador [limpiador Linea : 262] --> Acomodando legajo 562, dia de analisis: 2021-10-06,Condicion CINCO
+INFO :[2021-10-16 18:04:38,923] analizador [limpiador Linea : 262] --> Acomodando legajo 562, dia de analisis: 2021-10-07,Condicion CINCO
+INFO :[2021-10-16 18:04:38,932] analizador [limpiador Linea : 180] --> Acomodando legajo 562, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:38,933] analizador [limpiador Linea : 266] -->  legajo 562, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:38,937] analizador [limpiador Linea : 211] --> Acomodando legajo 562, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:04:38,993] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (563) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:39,075] analizador [limpiador Linea : 180] --> Acomodando legajo 563, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:39,077] analizador [limpiador Linea : 266] -->  legajo 563, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,080] analizador [limpiador Linea : 285] --> Acomodando legajo 563, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:39,082] analizador [limpiador Linea : 211] --> Acomodando legajo 563, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:39,166] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (564) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:39,241] analizador [limpiador Linea : 242] --> Acomodando legajo 564, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:04:39,248] analizador [limpiador Linea : 266] -->  legajo 564, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,250] analizador [limpiador Linea : 266] -->  legajo 564, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,252] analizador [limpiador Linea : 266] -->  legajo 564, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,332] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (565) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:39,402] analizador [limpiador Linea : 195] --> Acomodando legajo 565, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:39,413] analizador [limpiador Linea : 266] -->  legajo 565, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,415] analizador [limpiador Linea : 266] -->  legajo 565, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,417] analizador [limpiador Linea : 266] -->  legajo 565, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,488] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (567) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:39,558] analizador [limpiador Linea : 195] --> Acomodando legajo 567, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:39,560] analizador [limpiador Linea : 195] --> Acomodando legajo 567, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:39,563] analizador [limpiador Linea : 195] --> Acomodando legajo 567, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:39,669] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (579) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:39,758] analizador [limpiador Linea : 242] --> Acomodando legajo 579, dia de analisis: 2021-10-13,Condicion CUATRO
+INFO :[2021-10-16 18:04:39,885] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (581) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:39,951] analizador [limpiador Linea : 195] --> Acomodando legajo 581, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:39,963] analizador [limpiador Linea : 180] --> Acomodando legajo 581, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:39,964] analizador [limpiador Linea : 266] -->  legajo 581, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:39,967] analizador [limpiador Linea : 285] --> Acomodando legajo 581, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:39,970] analizador [limpiador Linea : 211] --> Acomodando legajo 581, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:40,117] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (594) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:40,167] analizador [limpiador Linea : 180] --> Acomodando legajo 594, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:04:40,169] analizador [limpiador Linea : 266] -->  legajo 594, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,174] analizador [limpiador Linea : 262] --> Acomodando legajo 594, dia de analisis: 2021-10-10,Condicion CINCO
+INFO :[2021-10-16 18:04:40,178] analizador [limpiador Linea : 180] --> Acomodando legajo 594, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:40,180] analizador [limpiador Linea : 266] -->  legajo 594, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,183] analizador [limpiador Linea : 285] --> Acomodando legajo 594, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:40,186] analizador [limpiador Linea : 211] --> Acomodando legajo 594, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:40,248] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (595) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:40,310] analizador [limpiador Linea : 266] -->  legajo 595, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,321] analizador [limpiador Linea : 195] --> Acomodando legajo 595, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:40,324] analizador [limpiador Linea : 195] --> Acomodando legajo 595, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:40,326] analizador [limpiador Linea : 195] --> Acomodando legajo 595, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:40,405] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (596) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:40,458] analizador [limpiador Linea : 180] --> Acomodando legajo 596, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:04:40,459] analizador [limpiador Linea : 266] -->  legajo 596, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,462] analizador [limpiador Linea : 285] --> Acomodando legajo 596, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:40,465] analizador [limpiador Linea : 211] --> Acomodando legajo 596, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:40,471] analizador [limpiador Linea : 266] -->  legajo 596, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,473] analizador [limpiador Linea : 266] -->  legajo 596, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,476] analizador [limpiador Linea : 266] -->  legajo 596, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,548] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (597) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:40,620] analizador [limpiador Linea : 266] -->  legajo 597, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,628] analizador [limpiador Linea : 211] --> Acomodando legajo 597, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:40,710] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (598) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:40,794] analizador [limpiador Linea : 266] -->  legajo 598, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,797] analizador [limpiador Linea : 266] -->  legajo 598, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,799] analizador [limpiador Linea : 266] -->  legajo 598, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:40,995] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (604) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:41,053] analizador [limpiador Linea : 195] --> Acomodando legajo 604, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:41,056] analizador [limpiador Linea : 195] --> Acomodando legajo 604, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:04:41,066] analizador [limpiador Linea : 180] --> Acomodando legajo 604, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:41,067] analizador [limpiador Linea : 266] -->  legajo 604, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,070] analizador [limpiador Linea : 285] --> Acomodando legajo 604, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:41,073] analizador [limpiador Linea : 211] --> Acomodando legajo 604, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:41,218] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (609) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:41,281] analizador [limpiador Linea : 266] -->  legajo 609, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,290] analizador [limpiador Linea : 266] -->  legajo 609, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,296] analizador [limpiador Linea : 242] --> Acomodando legajo 609, dia de analisis: 2021-10-14,Condicion CUATRO
+INFO :[2021-10-16 18:04:41,430] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (613) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:41,494] analizador [limpiador Linea : 180] --> Acomodando legajo 613, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:04:41,496] analizador [limpiador Linea : 266] -->  legajo 613, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,504] analizador [limpiador Linea : 266] -->  legajo 613, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,506] analizador [limpiador Linea : 266] -->  legajo 613, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,509] analizador [limpiador Linea : 266] -->  legajo 613, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,586] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (614) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:41,648] analizador [limpiador Linea : 242] --> Acomodando legajo 614, dia de analisis: 2021-10-08,Condicion CUATRO
+INFO :[2021-10-16 18:04:41,651] analizador [limpiador Linea : 285] --> Acomodando legajo 614, dia de analisis: 2021-10-09,Condicion SEIS
+INFO :[2021-10-16 18:04:41,654] analizador [limpiador Linea : 211] --> Acomodando legajo 614, dia de analisis: 2021-10-10,Condicion TRES
+INFO :[2021-10-16 18:04:41,657] analizador [limpiador Linea : 266] -->  legajo 614, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,660] analizador [limpiador Linea : 266] -->  legajo 614, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,662] analizador [limpiador Linea : 266] -->  legajo 614, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:41,806] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (623) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:41,871] analizador [limpiador Linea : 195] --> Acomodando legajo 623, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:04:41,881] analizador [limpiador Linea : 195] --> Acomodando legajo 623, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:41,883] analizador [limpiador Linea : 195] --> Acomodando legajo 623, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:41,886] analizador [limpiador Linea : 195] --> Acomodando legajo 623, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:42,120] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (636) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:42,184] analizador [limpiador Linea : 195] --> Acomodando legajo 636, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:42,195] analizador [limpiador Linea : 195] --> Acomodando legajo 636, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:42,197] analizador [limpiador Linea : 195] --> Acomodando legajo 636, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:42,200] analizador [limpiador Linea : 195] --> Acomodando legajo 636, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:42,323] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (641) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:42,375] analizador [limpiador Linea : 266] -->  legajo 641, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:42,378] analizador [limpiador Linea : 195] --> Acomodando legajo 641, dia de analisis: 2021-10-08,Condicion DOS
+INFO :[2021-10-16 18:04:42,384] analizador [limpiador Linea : 195] --> Acomodando legajo 641, dia de analisis: 2021-10-11,Condicion DOS
+INFO :[2021-10-16 18:04:42,387] analizador [limpiador Linea : 195] --> Acomodando legajo 641, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:42,389] analizador [limpiador Linea : 195] --> Acomodando legajo 641, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:42,392] analizador [limpiador Linea : 195] --> Acomodando legajo 641, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:42,517] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (645) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:42,595] analizador [limpiador Linea : 195] --> Acomodando legajo 645, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:42,598] analizador [limpiador Linea : 195] --> Acomodando legajo 645, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:42,601] analizador [limpiador Linea : 195] --> Acomodando legajo 645, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:42,683] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (647) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:42,729] analizador [limpiador Linea : 180] --> Acomodando legajo 647, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:04:42,731] analizador [limpiador Linea : 266] -->  legajo 647, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:42,735] analizador [limpiador Linea : 285] --> Acomodando legajo 647, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:42,738] analizador [limpiador Linea : 285] --> Acomodando legajo 647, dia de analisis: 2021-10-08,Condicion SEIS
+INFO :[2021-10-16 18:04:42,744] analizador [limpiador Linea : 266] -->  legajo 647, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:42,746] analizador [limpiador Linea : 266] -->  legajo 647, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:42,748] analizador [limpiador Linea : 266] -->  legajo 647, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:42,811] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (648) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:42,871] analizador [limpiador Linea : 195] --> Acomodando legajo 648, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:42,878] analizador [limpiador Linea : 242] --> Acomodando legajo 648, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:42,880] analizador [limpiador Linea : 262] --> Acomodando legajo 648, dia de analisis: 2021-10-10,Condicion CINCO
+INFO :[2021-10-16 18:04:42,884] analizador [limpiador Linea : 242] --> Acomodando legajo 648, dia de analisis: 2021-10-12,Condicion CUATRO
+INFO :[2021-10-16 18:04:42,887] analizador [limpiador Linea : 285] --> Acomodando legajo 648, dia de analisis: 2021-10-13,Condicion SEIS
+INFO :[2021-10-16 18:04:42,889] analizador [limpiador Linea : 211] --> Acomodando legajo 648, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:04:42,972] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (653) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:43,038] analizador [limpiador Linea : 195] --> Acomodando legajo 653, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:43,050] analizador [limpiador Linea : 180] --> Acomodando legajo 653, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:43,051] analizador [limpiador Linea : 266] -->  legajo 653, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,054] analizador [limpiador Linea : 285] --> Acomodando legajo 653, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:43,057] analizador [limpiador Linea : 211] --> Acomodando legajo 653, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:43,129] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (655) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:43,172] analizador [limpiador Linea : 180] --> Acomodando legajo 655, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:04:43,174] analizador [limpiador Linea : 266] -->  legajo 655, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,177] analizador [limpiador Linea : 180] --> Acomodando legajo 655, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:04:43,178] analizador [limpiador Linea : 266] -->  legajo 655, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,182] analizador [limpiador Linea : 242] --> Acomodando legajo 655, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:43,188] analizador [limpiador Linea : 180] --> Acomodando legajo 655, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:43,190] analizador [limpiador Linea : 266] -->  legajo 655, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,193] analizador [limpiador Linea : 285] --> Acomodando legajo 655, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:43,196] analizador [limpiador Linea : 211] --> Acomodando legajo 655, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:43,362] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (661) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:43,424] analizador [limpiador Linea : 266] -->  legajo 661, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,435] analizador [limpiador Linea : 180] --> Acomodando legajo 661, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:43,437] analizador [limpiador Linea : 266] -->  legajo 661, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,440] analizador [limpiador Linea : 285] --> Acomodando legajo 661, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:43,443] analizador [limpiador Linea : 211] --> Acomodando legajo 661, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:43,578] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (666) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:43,666] analizador [limpiador Linea : 195] --> Acomodando legajo 666, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:43,679] analizador [limpiador Linea : 195] --> Acomodando legajo 666, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:43,682] analizador [limpiador Linea : 195] --> Acomodando legajo 666, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:43,685] analizador [limpiador Linea : 195] --> Acomodando legajo 666, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:43,785] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (670) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:43,829] analizador [limpiador Linea : 285] --> Acomodando legajo 670, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:04:43,834] analizador [limpiador Linea : 266] -->  legajo 670, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,836] analizador [limpiador Linea : 266] -->  legajo 670, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,839] analizador [limpiador Linea : 266] -->  legajo 670, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,841] analizador [limpiador Linea : 266] -->  legajo 670, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:43,851] analizador [limpiador Linea : 195] --> Acomodando legajo 670, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:43,854] analizador [limpiador Linea : 195] --> Acomodando legajo 670, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:43,857] analizador [limpiador Linea : 195] --> Acomodando legajo 670, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:43,984] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (679) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:44,041] analizador [limpiador Linea : 266] -->  legajo 679, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:44,043] analizador [limpiador Linea : 266] -->  legajo 679, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:44,052] analizador [limpiador Linea : 195] --> Acomodando legajo 679, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:44,055] analizador [limpiador Linea : 195] --> Acomodando legajo 679, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:44,058] analizador [limpiador Linea : 195] --> Acomodando legajo 679, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:44,127] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (681) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:44,193] analizador [limpiador Linea : 195] --> Acomodando legajo 681, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:44,204] analizador [limpiador Linea : 195] --> Acomodando legajo 681, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:44,207] analizador [limpiador Linea : 195] --> Acomodando legajo 681, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:44,209] analizador [limpiador Linea : 195] --> Acomodando legajo 681, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:44,529] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (697) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:44,578] analizador [limpiador Linea : 180] --> Acomodando legajo 697, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:04:44,580] analizador [limpiador Linea : 266] -->  legajo 697, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:44,583] analizador [limpiador Linea : 285] --> Acomodando legajo 697, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:44,586] analizador [limpiador Linea : 211] --> Acomodando legajo 697, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:44,592] analizador [limpiador Linea : 266] -->  legajo 697, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:44,594] analizador [limpiador Linea : 266] -->  legajo 697, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:44,596] analizador [limpiador Linea : 266] -->  legajo 697, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:44,664] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (705) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:44,991] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (736) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:45,060] analizador [limpiador Linea : 195] --> Acomodando legajo 736, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:04:45,071] analizador [limpiador Linea : 180] --> Acomodando legajo 736, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:04:45,072] analizador [limpiador Linea : 266] -->  legajo 736, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,076] analizador [limpiador Linea : 211] --> Acomodando legajo 736, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:45,206] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (739) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:45,255] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (740) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:45,335] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (744) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:45,415] analizador [limpiador Linea : 180] --> Acomodando legajo 744, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:45,417] analizador [limpiador Linea : 266] -->  legajo 744, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,420] analizador [limpiador Linea : 285] --> Acomodando legajo 744, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:45,423] analizador [limpiador Linea : 211] --> Acomodando legajo 744, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:45,501] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (745) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:45,576] analizador [limpiador Linea : 242] --> Acomodando legajo 745, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:04:45,584] analizador [limpiador Linea : 266] -->  legajo 745, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,586] analizador [limpiador Linea : 266] -->  legajo 745, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,588] analizador [limpiador Linea : 266] -->  legajo 745, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,707] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (748) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:45,764] analizador [limpiador Linea : 266] -->  legajo 748, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,766] analizador [limpiador Linea : 266] -->  legajo 748, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,775] analizador [limpiador Linea : 195] --> Acomodando legajo 748, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:45,778] analizador [limpiador Linea : 195] --> Acomodando legajo 748, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:45,781] analizador [limpiador Linea : 195] --> Acomodando legajo 748, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:45,850] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (749) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:45,906] analizador [limpiador Linea : 180] --> Acomodando legajo 749, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:04:45,908] analizador [limpiador Linea : 266] -->  legajo 749, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,912] analizador [limpiador Linea : 211] --> Acomodando legajo 749, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:45,918] analizador [limpiador Linea : 266] -->  legajo 749, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,920] analizador [limpiador Linea : 266] -->  legajo 749, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:45,922] analizador [limpiador Linea : 266] -->  legajo 749, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,029] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (751) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:46,109] analizador [limpiador Linea : 266] -->  legajo 751, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,111] analizador [limpiador Linea : 266] -->  legajo 751, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,113] analizador [limpiador Linea : 266] -->  legajo 751, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,191] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (752) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:46,248] analizador [limpiador Linea : 195] --> Acomodando legajo 752, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:46,250] analizador [limpiador Linea : 242] --> Acomodando legajo 752, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:04:46,253] analizador [limpiador Linea : 195] --> Acomodando legajo 752, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:46,262] analizador [limpiador Linea : 180] --> Acomodando legajo 752, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:46,263] analizador [limpiador Linea : 266] -->  legajo 752, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,267] analizador [limpiador Linea : 285] --> Acomodando legajo 752, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:46,270] analizador [limpiador Linea : 211] --> Acomodando legajo 752, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:46,336] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (754) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:46,374] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (755) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:46,448] analizador [limpiador Linea : 180] --> Acomodando legajo 755, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:46,450] analizador [limpiador Linea : 266] -->  legajo 755, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,453] analizador [limpiador Linea : 285] --> Acomodando legajo 755, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:46,455] analizador [limpiador Linea : 211] --> Acomodando legajo 755, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:46,532] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (757) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:46,597] analizador [limpiador Linea : 195] --> Acomodando legajo 757, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:46,600] analizador [limpiador Linea : 242] --> Acomodando legajo 757, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:04:46,610] analizador [limpiador Linea : 180] --> Acomodando legajo 757, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:46,612] analizador [limpiador Linea : 266] -->  legajo 757, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,616] analizador [limpiador Linea : 180] --> Acomodando legajo 757, dia de analisis: 2021-10-14,Condicion UNO
+INFO :[2021-10-16 18:04:46,617] analizador [limpiador Linea : 266] -->  legajo 757, dia de analisis: 2021-10-15,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,691] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (758) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:46,758] analizador [limpiador Linea : 180] --> Acomodando legajo 758, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:04:46,760] analizador [limpiador Linea : 266] -->  legajo 758, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,769] analizador [limpiador Linea : 266] -->  legajo 758, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,772] analizador [limpiador Linea : 266] -->  legajo 758, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,775] analizador [limpiador Linea : 266] -->  legajo 758, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,907] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (760) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:46,976] analizador [limpiador Linea : 266] -->  legajo 760, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,988] analizador [limpiador Linea : 180] --> Acomodando legajo 760, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:46,989] analizador [limpiador Linea : 266] -->  legajo 760, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:46,992] analizador [limpiador Linea : 285] --> Acomodando legajo 760, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:46,996] analizador [limpiador Linea : 211] --> Acomodando legajo 760, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:47,067] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (761) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:47,126] analizador [limpiador Linea : 195] --> Acomodando legajo 761, dia de analisis: 2021-10-08,Condicion DOS
+INFO :[2021-10-16 18:04:47,132] analizador [limpiador Linea : 266] -->  legajo 761, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:47,139] analizador [limpiador Linea : 211] --> Acomodando legajo 761, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:47,205] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (763) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:47,295] analizador [limpiador Linea : 195] --> Acomodando legajo 763, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:47,308] analizador [limpiador Linea : 180] --> Acomodando legajo 763, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:47,309] analizador [limpiador Linea : 266] -->  legajo 763, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:47,313] analizador [limpiador Linea : 285] --> Acomodando legajo 763, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:47,316] analizador [limpiador Linea : 211] --> Acomodando legajo 763, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:47,390] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (764) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:47,451] analizador [limpiador Linea : 266] -->  legajo 764, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:47,453] analizador [limpiador Linea : 266] -->  legajo 764, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:47,463] analizador [limpiador Linea : 262] --> Acomodando legajo 764, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:04:47,466] analizador [limpiador Linea : 262] --> Acomodando legajo 764, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:04:47,545] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (765) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:47,599] analizador [limpiador Linea : 266] -->  legajo 765, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:47,606] analizador [limpiador Linea : 242] --> Acomodando legajo 765, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:47,608] analizador [limpiador Linea : 262] --> Acomodando legajo 765, dia de analisis: 2021-10-10,Condicion CINCO
+INFO :[2021-10-16 18:04:47,612] analizador [limpiador Linea : 180] --> Acomodando legajo 765, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:47,614] analizador [limpiador Linea : 266] -->  legajo 765, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:47,617] analizador [limpiador Linea : 285] --> Acomodando legajo 765, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:47,622] analizador [limpiador Linea : 211] --> Acomodando legajo 765, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:47,816] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (776) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:47,873] analizador [limpiador Linea : 195] --> Acomodando legajo 776, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:47,877] analizador [limpiador Linea : 195] --> Acomodando legajo 776, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:47,886] analizador [limpiador Linea : 180] --> Acomodando legajo 776, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:47,888] analizador [limpiador Linea : 266] -->  legajo 776, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:47,891] analizador [limpiador Linea : 211] --> Acomodando legajo 776, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:04:47,957] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (777) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:48,040] analizador [limpiador Linea : 180] --> Acomodando legajo 777, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:48,042] analizador [limpiador Linea : 266] -->  legajo 777, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,045] analizador [limpiador Linea : 285] --> Acomodando legajo 777, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:48,048] analizador [limpiador Linea : 211] --> Acomodando legajo 777, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:48,128] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (778) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:48,202] analizador [limpiador Linea : 242] --> Acomodando legajo 778, dia de analisis: 2021-10-12,Condicion CUATRO
+INFO :[2021-10-16 18:04:48,205] analizador [limpiador Linea : 180] --> Acomodando legajo 778, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:04:48,206] analizador [limpiador Linea : 266] -->  legajo 778, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,210] analizador [limpiador Linea : 211] --> Acomodando legajo 778, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:48,284] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (779) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:48,370] analizador [limpiador Linea : 180] --> Acomodando legajo 779, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:48,371] analizador [limpiador Linea : 266] -->  legajo 779, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,374] analizador [limpiador Linea : 285] --> Acomodando legajo 779, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:48,377] analizador [limpiador Linea : 211] --> Acomodando legajo 779, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:48,458] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (780) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:48,520] analizador [limpiador Linea : 180] --> Acomodando legajo 780, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:04:48,522] analizador [limpiador Linea : 266] -->  legajo 780, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,530] analizador [limpiador Linea : 180] --> Acomodando legajo 780, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:48,532] analizador [limpiador Linea : 266] -->  legajo 780, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,539] analizador [limpiador Linea : 285] --> Acomodando legajo 780, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:48,543] analizador [limpiador Linea : 211] --> Acomodando legajo 780, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:48,627] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (781) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:48,696] analizador [limpiador Linea : 195] --> Acomodando legajo 781, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:48,707] analizador [limpiador Linea : 180] --> Acomodando legajo 781, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:48,709] analizador [limpiador Linea : 266] -->  legajo 781, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,712] analizador [limpiador Linea : 285] --> Acomodando legajo 781, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:48,715] analizador [limpiador Linea : 211] --> Acomodando legajo 781, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:48,789] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (782) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:48,854] analizador [limpiador Linea : 195] --> Acomodando legajo 782, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:48,865] analizador [limpiador Linea : 266] -->  legajo 782, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,867] analizador [limpiador Linea : 266] -->  legajo 782, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,869] analizador [limpiador Linea : 266] -->  legajo 782, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:48,944] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (783) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:49,005] analizador [limpiador Linea : 266] -->  legajo 783, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,007] analizador [limpiador Linea : 266] -->  legajo 783, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,017] analizador [limpiador Linea : 195] --> Acomodando legajo 783, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:49,020] analizador [limpiador Linea : 195] --> Acomodando legajo 783, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:49,022] analizador [limpiador Linea : 195] --> Acomodando legajo 783, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:49,116] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (785) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:49,176] analizador [limpiador Linea : 195] --> Acomodando legajo 785, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:49,180] analizador [limpiador Linea : 195] --> Acomodando legajo 785, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:49,189] analizador [limpiador Linea : 195] --> Acomodando legajo 785, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:49,192] analizador [limpiador Linea : 195] --> Acomodando legajo 785, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:49,195] analizador [limpiador Linea : 195] --> Acomodando legajo 785, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:49,290] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (787) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:49,332] analizador [limpiador Linea : 180] --> Acomodando legajo 787, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:04:49,334] analizador [limpiador Linea : 266] -->  legajo 787, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,337] analizador [limpiador Linea : 242] --> Acomodando legajo 787, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:04:49,341] analizador [limpiador Linea : 211] --> Acomodando legajo 787, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:49,344] analizador [limpiador Linea : 242] --> Acomodando legajo 787, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:49,348] analizador [limpiador Linea : 266] -->  legajo 787, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,351] analizador [limpiador Linea : 266] -->  legajo 787, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,353] analizador [limpiador Linea : 266] -->  legajo 787, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,414] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (788) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:49,479] analizador [limpiador Linea : 195] --> Acomodando legajo 788, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:04:49,487] analizador [limpiador Linea : 266] -->  legajo 788, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,489] analizador [limpiador Linea : 266] -->  legajo 788, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,491] analizador [limpiador Linea : 266] -->  legajo 788, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,566] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (789) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:49,634] analizador [limpiador Linea : 195] --> Acomodando legajo 789, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:49,648] analizador [limpiador Linea : 180] --> Acomodando legajo 789, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:49,650] analizador [limpiador Linea : 266] -->  legajo 789, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,653] analizador [limpiador Linea : 285] --> Acomodando legajo 789, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:49,656] analizador [limpiador Linea : 211] --> Acomodando legajo 789, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:49,763] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (790) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:49,826] analizador [limpiador Linea : 180] --> Acomodando legajo 790, dia de analisis: 2021-10-08,Condicion UNO
+INFO :[2021-10-16 18:04:49,828] analizador [limpiador Linea : 266] -->  legajo 790, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,831] analizador [limpiador Linea : 180] --> Acomodando legajo 790, dia de analisis: 2021-10-10,Condicion UNO
+INFO :[2021-10-16 18:04:49,833] analizador [limpiador Linea : 266] -->  legajo 790, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,836] analizador [limpiador Linea : 318] --> Acomodando legajo 790, dia de analisis: 2021-10-12,Condicion OCHO
+INFO :[2021-10-16 18:04:49,839] analizador [limpiador Linea : 285] --> Acomodando legajo 790, dia de analisis: 2021-10-13,Condicion SEIS
+INFO :[2021-10-16 18:04:49,843] analizador [limpiador Linea : 285] --> Acomodando legajo 790, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:49,847] analizador [limpiador Linea : 211] --> Acomodando legajo 790, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:49,911] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (791) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:49,960] analizador [limpiador Linea : 195] --> Acomodando legajo 791, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:04:49,963] analizador [limpiador Linea : 195] --> Acomodando legajo 791, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:04:49,972] analizador [limpiador Linea : 180] --> Acomodando legajo 791, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:49,974] analizador [limpiador Linea : 266] -->  legajo 791, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:49,977] analizador [limpiador Linea : 285] --> Acomodando legajo 791, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:49,980] analizador [limpiador Linea : 211] --> Acomodando legajo 791, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:50,084] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (793) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:50,132] analizador [limpiador Linea : 180] --> Acomodando legajo 793, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:04:50,134] analizador [limpiador Linea : 266] -->  legajo 793, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,137] analizador [limpiador Linea : 285] --> Acomodando legajo 793, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:04:50,140] analizador [limpiador Linea : 211] --> Acomodando legajo 793, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:04:50,146] analizador [limpiador Linea : 180] --> Acomodando legajo 793, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:04:50,148] analizador [limpiador Linea : 266] -->  legajo 793, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,151] analizador [limpiador Linea : 285] --> Acomodando legajo 793, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:50,154] analizador [limpiador Linea : 211] --> Acomodando legajo 793, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:50,217] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (794) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:50,271] analizador [limpiador Linea : 266] -->  legajo 794, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,274] analizador [limpiador Linea : 266] -->  legajo 794, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,279] analizador [limpiador Linea : 242] --> Acomodando legajo 794, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:50,285] analizador [limpiador Linea : 195] --> Acomodando legajo 794, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:04:50,288] analizador [limpiador Linea : 195] --> Acomodando legajo 794, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:04:50,291] analizador [limpiador Linea : 195] --> Acomodando legajo 794, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:04:50,679] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (812) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:50,745] analizador [limpiador Linea : 242] --> Acomodando legajo 812, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:04:50,753] analizador [limpiador Linea : 266] -->  legajo 812, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,755] analizador [limpiador Linea : 266] -->  legajo 812, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,757] analizador [limpiador Linea : 266] -->  legajo 812, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,760] analizador [limpiador Linea : 266] -->  legajo 812, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,874] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (815) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:50,934] analizador [limpiador Linea : 180] --> Acomodando legajo 815, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:04:50,936] analizador [limpiador Linea : 266] -->  legajo 815, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,943] analizador [limpiador Linea : 266] -->  legajo 815, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,946] analizador [limpiador Linea : 266] -->  legajo 815, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:50,948] analizador [limpiador Linea : 266] -->  legajo 815, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:51,652] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (841) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:51,706] analizador [limpiador Linea : 242] --> Acomodando legajo 841, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:51,711] analizador [limpiador Linea : 266] -->  legajo 841, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:51,713] analizador [limpiador Linea : 266] -->  legajo 841, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:51,716] analizador [limpiador Linea : 266] -->  legajo 841, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+WARNING :[2021-10-16 18:04:51,832] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (844) no se encuentra en la BD
+INFO :[2021-10-16 18:04:52,156] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (874) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:52,243] analizador [limpiador Linea : 266] -->  legajo 874, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:52,245] analizador [limpiador Linea : 266] -->  legajo 874, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:52,332] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (875) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:52,417] analizador [limpiador Linea : 262] --> Acomodando legajo 875, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:04:52,420] analizador [limpiador Linea : 262] --> Acomodando legajo 875, dia de analisis: 2021-10-14,Condicion CINCO
+WARNING :[2021-10-16 18:04:52,513] Vulcano [frameAnalisisIndividual Linea : 653] --> El siguiente legajo (876) No paso en sanitycheck, ni pudo ser casteado
+ERROR :[2021-10-16 18:04:52,513] Vulcano [frameAnalisisIndividual Linea : 654] --> The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+INFO :[2021-10-16 18:04:52,568] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (880) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:52,634] analizador [limpiador Linea : 242] --> Acomodando legajo 880, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:04:52,638] analizador [limpiador Linea : 266] -->  legajo 880, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:52,640] analizador [limpiador Linea : 266] -->  legajo 880, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:52,643] analizador [limpiador Linea : 266] -->  legajo 880, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:52,720] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (882) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:52,773] analizador [limpiador Linea : 180] --> Acomodando legajo 882, dia de analisis: 2021-10-08,Condicion UNO
+INFO :[2021-10-16 18:04:52,775] analizador [limpiador Linea : 266] -->  legajo 882, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:52,778] analizador [limpiador Linea : 211] --> Acomodando legajo 882, dia de analisis: 2021-10-10,Condicion TRES
+INFO :[2021-10-16 18:04:52,780] analizador [limpiador Linea : 180] --> Acomodando legajo 882, dia de analisis: 2021-10-11,Condicion UNO
+INFO :[2021-10-16 18:04:52,782] analizador [limpiador Linea : 266] -->  legajo 882, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:04:52,785] analizador [limpiador Linea : 285] --> Acomodando legajo 882, dia de analisis: 2021-10-13,Condicion SEIS
+INFO :[2021-10-16 18:04:52,788] analizador [limpiador Linea : 285] --> Acomodando legajo 882, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:04:52,791] analizador [limpiador Linea : 211] --> Acomodando legajo 882, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:04:52,909] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (884) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:52,984] analizador [limpiador Linea : 211] --> Acomodando legajo 884, dia de analisis: 2021-10-01,Condicion TRES
+INFO :[2021-10-16 18:04:53,093] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (885) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:53,170] analizador [limpiador Linea : 211] --> Acomodando legajo 885, dia de analisis: 2021-10-01,Condicion TRES
+INFO :[2021-10-16 18:04:53,279] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (886) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:53,355] analizador [limpiador Linea : 211] --> Acomodando legajo 886, dia de analisis: 2021-10-01,Condicion TRES
+INFO :[2021-10-16 18:04:53,515] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (888) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:04:53,594] analizador [limpiador Linea : 211] --> Acomodando legajo 888, dia de analisis: 2021-10-01,Condicion TRES
+INFO :[2021-10-16 18:04:53,804] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (891) No paso las validaciones, se las castea en cero.
+WARNING :[2021-10-16 18:04:54,146] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10030) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,147] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10190) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,148] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10218) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,150] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10221) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,151] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10222) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,152] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10224) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,153] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10226) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,154] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (10229) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,154] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (100047) no se encuentra en la BD
+WARNING :[2021-10-16 18:04:54,156] Vulcano [frameAnalisisIndividual Linea : 630] --> El siguiente legajo (100052) no se encuentra en la BD
+INFO :[2021-10-16 18:04:54,219] Vulcano [limpiezaDeRegistros Linea : 684] --> Limpiando registros
+INFO :[2021-10-16 18:04:54,220] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:05:01,213] analizador [informeNoFichadas Linea : 1814] --> Comenzando escritura en el word
+INFO :[2021-10-16 18:05:01,402] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:05:07,881] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:17:53,462] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-10-16 18:18:01,875] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:18:01,886] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (30) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:18:01,958] Vulcano [limpiezaDeRegistros Linea : 684] --> Limpiando registros
+INFO :[2021-10-16 18:18:01,958] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:18:02,015] analizador [informeNoFichadas Linea : 1814] --> Comenzando escritura en el word
+INFO :[2021-10-16 18:18:02,029] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:18:04,961] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:24:40,142] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-10-16 18:24:49,704] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:24:49,715] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (30) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:24:49,792] Vulcano [limpiezaDeRegistros Linea : 684] --> Limpiando registros
+INFO :[2021-10-16 18:24:49,792] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:24:49,847] analizador [informeNoFichadas Linea : 1816] --> Comenzando escritura en el word
+INFO :[2021-10-16 18:24:49,861] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:24:52,515] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:28:38,386] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-10-16 18:28:46,317] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:28:46,341] Vulcano [logicaRotativos Linea : 531] --> El siguiente legajo (448) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:28:46,388] analizador [limpiador Linea : 182] --> Acomodando legajo 448, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:28:46,390] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:28:46,394] analizador [limpiador Linea : 287] --> Acomodando legajo 448, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:28:46,398] analizador [limpiador Linea : 287] --> Acomodando legajo 448, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:28:46,401] analizador [limpiador Linea : 213] --> Acomodando legajo 448, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:28:46,411] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:28:46,413] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:28:46,416] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:28:46,457] Vulcano [limpiezaDeRegistros Linea : 684] --> Limpiando registros
+INFO :[2021-10-16 18:28:46,457] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:28:46,510] analizador [informeNoFichadas Linea : 1816] --> Comenzando escritura en el word
+INFO :[2021-10-16 18:28:46,526] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:28:48,992] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:33:54,959] Vulcano [fechasDeCalculo Linea : 230] --> Registrando fechas
+INFO :[2021-10-16 18:34:16,865] createDB [conexion Linea : 27] --> Iniciando conexion
+WARNING :[2021-10-16 18:34:16,874] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (1) no se encuentra en la BD
+INFO :[2021-10-16 18:34:17,136] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (47) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:17,223] analizador [limpiador Linea : 268] -->  legajo 47, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,226] analizador [limpiador Linea : 268] -->  legajo 47, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,228] analizador [limpiador Linea : 268] -->  legajo 47, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,426] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (66) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:17,511] analizador [limpiador Linea : 268] -->  legajo 66, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,514] analizador [limpiador Linea : 268] -->  legajo 66, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,785] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (97) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:17,836] analizador [limpiador Linea : 268] -->  legajo 97, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,840] analizador [limpiador Linea : 268] -->  legajo 97, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,843] analizador [limpiador Linea : 268] -->  legajo 97, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,847] analizador [limpiador Linea : 268] -->  legajo 97, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,862] analizador [limpiador Linea : 268] -->  legajo 97, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:17,866] analizador [limpiador Linea : 268] -->  legajo 97, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,079] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (130) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:18,137] analizador [limpiador Linea : 182] --> Acomodando legajo 130, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:18,140] analizador [limpiador Linea : 268] -->  legajo 130, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,144] analizador [limpiador Linea : 287] --> Acomodando legajo 130, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:18,148] analizador [limpiador Linea : 213] --> Acomodando legajo 130, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:18,170] analizador [limpiador Linea : 182] --> Acomodando legajo 130, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:34:18,173] analizador [limpiador Linea : 268] -->  legajo 130, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,179] analizador [limpiador Linea : 213] --> Acomodando legajo 130, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:18,343] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (147) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:18,393] analizador [limpiador Linea : 268] -->  legajo 147, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,396] analizador [limpiador Linea : 268] -->  legajo 147, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,399] analizador [limpiador Linea : 268] -->  legajo 147, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,401] analizador [limpiador Linea : 268] -->  legajo 147, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,404] analizador [limpiador Linea : 268] -->  legajo 147, dia de analisis: 2021-10-10,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,407] analizador [limpiador Linea : 268] -->  legajo 147, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,413] analizador [limpiador Linea : 264] --> Acomodando legajo 147, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:34:18,416] analizador [limpiador Linea : 264] --> Acomodando legajo 147, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:18,513] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (202) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:18,547] analizador [limpiador Linea : 320] --> Acomodando legajo 202, dia de analisis: 2021-10-01,Condicion OCHO
+INFO :[2021-10-16 18:34:18,555] analizador [limpiador Linea : 182] --> Acomodando legajo 202, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:34:18,557] analizador [limpiador Linea : 268] -->  legajo 202, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,561] analizador [limpiador Linea : 287] --> Acomodando legajo 202, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:34:18,564] analizador [limpiador Linea : 287] --> Acomodando legajo 202, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:18,567] analizador [limpiador Linea : 213] --> Acomodando legajo 202, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:18,576] analizador [limpiador Linea : 268] -->  legajo 202, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,579] analizador [limpiador Linea : 268] -->  legajo 202, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,581] analizador [limpiador Linea : 268] -->  legajo 202, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,621] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (224) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:18,672] analizador [limpiador Linea : 244] --> Acomodando legajo 224, dia de analisis: 2021-10-05,Condicion CUATRO
+INFO :[2021-10-16 18:34:18,676] analizador [limpiador Linea : 287] --> Acomodando legajo 224, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:34:18,679] analizador [limpiador Linea : 287] --> Acomodando legajo 224, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:18,683] analizador [limpiador Linea : 287] --> Acomodando legajo 224, dia de analisis: 2021-10-08,Condicion SEIS
+INFO :[2021-10-16 18:34:18,688] analizador [limpiador Linea : 268] -->  legajo 224, dia de analisis: 2021-10-10,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,693] analizador [limpiador Linea : 268] -->  legajo 224, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,697] analizador [limpiador Linea : 268] -->  legajo 224, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,836] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (235) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:18,904] analizador [limpiador Linea : 197] --> Acomodando legajo 235, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:18,915] analizador [limpiador Linea : 268] -->  legajo 235, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,917] analizador [limpiador Linea : 268] -->  legajo 235, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:18,920] analizador [limpiador Linea : 268] -->  legajo 235, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,068] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (260) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:19,113] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,115] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,118] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,120] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,123] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,132] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,135] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,137] analizador [limpiador Linea : 268] -->  legajo 260, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,348] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (318) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:19,443] analizador [limpiador Linea : 268] -->  legajo 318, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,521] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (335) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:19,593] analizador [limpiador Linea : 197] --> Acomodando legajo 335, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:19,612] analizador [limpiador Linea : 182] --> Acomodando legajo 335, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:34:19,615] analizador [limpiador Linea : 268] -->  legajo 335, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,618] analizador [limpiador Linea : 213] --> Acomodando legajo 335, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:19,769] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (352) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:19,804] analizador [limpiador Linea : 320] --> Acomodando legajo 352, dia de analisis: 2021-10-01,Condicion OCHO
+INFO :[2021-10-16 18:34:19,808] analizador [limpiador Linea : 320] --> Acomodando legajo 352, dia de analisis: 2021-10-02,Condicion OCHO
+INFO :[2021-10-16 18:34:19,813] analizador [limpiador Linea : 182] --> Acomodando legajo 352, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:34:19,816] analizador [limpiador Linea : 268] -->  legajo 352, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,819] analizador [limpiador Linea : 268] -->  legajo 352, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,823] analizador [limpiador Linea : 287] --> Acomodando legajo 352, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:19,826] analizador [limpiador Linea : 213] --> Acomodando legajo 352, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:19,835] analizador [limpiador Linea : 268] -->  legajo 352, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,838] analizador [limpiador Linea : 268] -->  legajo 352, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,840] analizador [limpiador Linea : 268] -->  legajo 352, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:19,876] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (355) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:19,910] analizador [limpiador Linea : 320] --> Acomodando legajo 355, dia de analisis: 2021-10-01,Condicion OCHO
+INFO :[2021-10-16 18:34:19,914] analizador [limpiador Linea : 320] --> Acomodando legajo 355, dia de analisis: 2021-10-02,Condicion OCHO
+INFO :[2021-10-16 18:34:19,921] analizador [limpiador Linea : 264] --> Acomodando legajo 355, dia de analisis: 2021-10-05,Condicion CINCO
+INFO :[2021-10-16 18:34:19,924] analizador [limpiador Linea : 264] --> Acomodando legajo 355, dia de analisis: 2021-10-06,Condicion CINCO
+INFO :[2021-10-16 18:34:19,927] analizador [limpiador Linea : 264] --> Acomodando legajo 355, dia de analisis: 2021-10-07,Condicion CINCO
+INFO :[2021-10-16 18:34:19,942] analizador [limpiador Linea : 264] --> Acomodando legajo 355, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:34:19,945] analizador [limpiador Linea : 264] --> Acomodando legajo 355, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:19,976] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (359) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:20,025] analizador [limpiador Linea : 197] --> Acomodando legajo 359, dia de analisis: 2021-10-04,Condicion DOS
+INFO :[2021-10-16 18:34:20,028] analizador [limpiador Linea : 197] --> Acomodando legajo 359, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:20,032] analizador [limpiador Linea : 197] --> Acomodando legajo 359, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:20,035] analizador [limpiador Linea : 197] --> Acomodando legajo 359, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:20,047] analizador [limpiador Linea : 182] --> Acomodando legajo 359, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:20,050] analizador [limpiador Linea : 268] -->  legajo 359, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:20,054] analizador [limpiador Linea : 213] --> Acomodando legajo 359, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:20,135] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (376) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:20,226] analizador [limpiador Linea : 182] --> Acomodando legajo 376, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:34:20,229] analizador [limpiador Linea : 268] -->  legajo 376, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:20,233] analizador [limpiador Linea : 213] --> Acomodando legajo 376, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:20,335] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (393) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:20,397] analizador [limpiador Linea : 197] --> Acomodando legajo 393, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:20,401] analizador [limpiador Linea : 268] -->  legajo 393, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:20,413] analizador [limpiador Linea : 268] -->  legajo 393, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:20,416] analizador [limpiador Linea : 264] --> Acomodando legajo 393, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:34:20,419] analizador [limpiador Linea : 264] --> Acomodando legajo 393, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:20,642] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (423) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:20,736] analizador [limpiador Linea : 268] -->  legajo 423, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:20,856] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (432) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:20,945] analizador [limpiador Linea : 268] -->  legajo 432, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:20,948] analizador [limpiador Linea : 268] -->  legajo 432, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:20,951] analizador [limpiador Linea : 268] -->  legajo 432, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,023] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (434) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:21,096] analizador [limpiador Linea : 197] --> Acomodando legajo 434, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:21,114] analizador [limpiador Linea : 264] --> Acomodando legajo 434, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:34:21,118] analizador [limpiador Linea : 264] --> Acomodando legajo 434, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:21,121] analizador [limpiador Linea : 268] -->  legajo 434, dia de analisis: 2021-10-15,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,184] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (437) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:21,259] analizador [limpiador Linea : 197] --> Acomodando legajo 437, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:21,270] analizador [limpiador Linea : 268] -->  legajo 437, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,273] analizador [limpiador Linea : 268] -->  legajo 437, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,276] analizador [limpiador Linea : 268] -->  legajo 437, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,334] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (438) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:21,431] analizador [limpiador Linea : 268] -->  legajo 438, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,565] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (448) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:21,612] analizador [limpiador Linea : 182] --> Acomodando legajo 448, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:34:21,615] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,619] analizador [limpiador Linea : 287] --> Acomodando legajo 448, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:34:21,623] analizador [limpiador Linea : 287] --> Acomodando legajo 448, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:21,626] analizador [limpiador Linea : 213] --> Acomodando legajo 448, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:21,636] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,639] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,641] analizador [limpiador Linea : 268] -->  legajo 448, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,697] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (467) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:21,797] analizador [limpiador Linea : 268] -->  legajo 467, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:21,927] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (472) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:22,021] analizador [limpiador Linea : 268] -->  legajo 472, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,025] analizador [limpiador Linea : 268] -->  legajo 472, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,028] analizador [limpiador Linea : 268] -->  legajo 472, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,031] analizador [limpiador Linea : 268] -->  legajo 472, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,033] analizador [limpiador Linea : 268] -->  legajo 472, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,044] analizador [limpiador Linea : 268] -->  legajo 472, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,046] analizador [limpiador Linea : 268] -->  legajo 472, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,096] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (475) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:22,197] analizador [limpiador Linea : 268] -->  legajo 475, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,200] analizador [limpiador Linea : 268] -->  legajo 475, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,269] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (479) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:22,326] analizador [limpiador Linea : 197] --> Acomodando legajo 479, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:22,329] analizador [limpiador Linea : 197] --> Acomodando legajo 479, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:22,345] analizador [limpiador Linea : 268] -->  legajo 479, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,348] analizador [limpiador Linea : 268] -->  legajo 479, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,351] analizador [limpiador Linea : 268] -->  legajo 479, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,402] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (483) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:22,474] analizador [limpiador Linea : 197] --> Acomodando legajo 483, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:22,492] analizador [limpiador Linea : 197] --> Acomodando legajo 483, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:22,496] analizador [limpiador Linea : 197] --> Acomodando legajo 483, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:22,499] analizador [limpiador Linea : 197] --> Acomodando legajo 483, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:22,709] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (510) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:22,772] analizador [limpiador Linea : 268] -->  legajo 510, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,786] analizador [limpiador Linea : 268] -->  legajo 510, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,789] analizador [limpiador Linea : 268] -->  legajo 510, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,792] analizador [limpiador Linea : 268] -->  legajo 510, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:22,925] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (522) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:22,999] analizador [limpiador Linea : 182] --> Acomodando legajo 522, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:34:23,001] analizador [limpiador Linea : 268] -->  legajo 522, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,018] analizador [limpiador Linea : 264] --> Acomodando legajo 522, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:23,082] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (525) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:23,173] analizador [limpiador Linea : 268] -->  legajo 525, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,176] analizador [limpiador Linea : 268] -->  legajo 525, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,179] analizador [limpiador Linea : 268] -->  legajo 525, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,247] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (526) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:23,311] analizador [limpiador Linea : 244] --> Acomodando legajo 526, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:23,316] analizador [limpiador Linea : 268] -->  legajo 526, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,319] analizador [limpiador Linea : 182] --> Acomodando legajo 526, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:23,321] analizador [limpiador Linea : 268] -->  legajo 526, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,325] analizador [limpiador Linea : 287] --> Acomodando legajo 526, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:23,329] analizador [limpiador Linea : 213] --> Acomodando legajo 526, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:23,425] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (536) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:23,466] analizador [limpiador Linea : 287] --> Acomodando legajo 536, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:34:23,476] analizador [limpiador Linea : 268] -->  legajo 536, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,479] analizador [limpiador Linea : 268] -->  legajo 536, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,482] analizador [limpiador Linea : 268] -->  legajo 536, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,495] analizador [limpiador Linea : 197] --> Acomodando legajo 536, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:23,499] analizador [limpiador Linea : 197] --> Acomodando legajo 536, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:23,502] analizador [limpiador Linea : 197] --> Acomodando legajo 536, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:23,539] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (543) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:23,596] analizador [limpiador Linea : 197] --> Acomodando legajo 543, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:23,600] analizador [limpiador Linea : 197] --> Acomodando legajo 543, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:23,611] analizador [limpiador Linea : 268] -->  legajo 543, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,614] analizador [limpiador Linea : 268] -->  legajo 543, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,616] analizador [limpiador Linea : 268] -->  legajo 543, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,665] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (545) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:23,713] analizador [limpiador Linea : 182] --> Acomodando legajo 545, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:34:23,715] analizador [limpiador Linea : 268] -->  legajo 545, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,719] analizador [limpiador Linea : 287] --> Acomodando legajo 545, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:34:23,722] analizador [limpiador Linea : 287] --> Acomodando legajo 545, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:23,726] analizador [limpiador Linea : 213] --> Acomodando legajo 545, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:23,736] analizador [limpiador Linea : 182] --> Acomodando legajo 545, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:23,738] analizador [limpiador Linea : 268] -->  legajo 545, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:23,742] analizador [limpiador Linea : 287] --> Acomodando legajo 545, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:23,786] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (547) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:23,883] analizador [limpiador Linea : 264] --> Acomodando legajo 547, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:34:23,886] analizador [limpiador Linea : 264] --> Acomodando legajo 547, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:23,957] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (548) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:23,991] analizador [limpiador Linea : 287] --> Acomodando legajo 548, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:34:23,995] analizador [limpiador Linea : 304] --> Acomodando legajo 548, dia de analisis: 2021-10-02,Condicion SIETE
+INFO :[2021-10-16 18:34:24,000] analizador [limpiador Linea : 268] -->  legajo 548, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,002] analizador [limpiador Linea : 268] -->  legajo 548, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,004] analizador [limpiador Linea : 268] -->  legajo 548, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,007] analizador [limpiador Linea : 268] -->  legajo 548, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,010] analizador [limpiador Linea : 268] -->  legajo 548, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,020] analizador [limpiador Linea : 182] --> Acomodando legajo 548, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:24,022] analizador [limpiador Linea : 268] -->  legajo 548, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,026] analizador [limpiador Linea : 213] --> Acomodando legajo 548, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:24,060] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (550) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:24,101] analizador [limpiador Linea : 182] --> Acomodando legajo 550, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:24,103] analizador [limpiador Linea : 268] -->  legajo 550, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,107] analizador [limpiador Linea : 244] --> Acomodando legajo 550, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:34:24,112] analizador [limpiador Linea : 264] --> Acomodando legajo 550, dia de analisis: 2021-10-09,Condicion CINCO
+INFO :[2021-10-16 18:34:24,115] analizador [limpiador Linea : 268] -->  legajo 550, dia de analisis: 2021-10-10,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,119] analizador [limpiador Linea : 213] --> Acomodando legajo 550, dia de analisis: 2021-10-11,Condicion TRES
+INFO :[2021-10-16 18:34:24,121] analizador [limpiador Linea : 268] -->  legajo 550, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,124] analizador [limpiador Linea : 268] -->  legajo 550, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,128] analizador [limpiador Linea : 268] -->  legajo 550, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,170] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (551) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:24,233] analizador [limpiador Linea : 268] -->  legajo 551, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,245] analizador [limpiador Linea : 268] -->  legajo 551, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,247] analizador [limpiador Linea : 268] -->  legajo 551, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,250] analizador [limpiador Linea : 268] -->  legajo 551, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,304] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (552) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:24,340] analizador [limpiador Linea : 287] --> Acomodando legajo 552, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:34:24,344] analizador [limpiador Linea : 304] --> Acomodando legajo 552, dia de analisis: 2021-10-02,Condicion SIETE
+INFO :[2021-10-16 18:34:24,350] analizador [limpiador Linea : 182] --> Acomodando legajo 552, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:34:24,352] analizador [limpiador Linea : 268] -->  legajo 552, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,356] analizador [limpiador Linea : 213] --> Acomodando legajo 552, dia de analisis: 2021-10-06,Condicion TRES
+INFO :[2021-10-16 18:34:24,358] analizador [limpiador Linea : 268] -->  legajo 552, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,362] analizador [limpiador Linea : 213] --> Acomodando legajo 552, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:24,372] analizador [limpiador Linea : 182] --> Acomodando legajo 552, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:24,375] analizador [limpiador Linea : 268] -->  legajo 552, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,438] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (556) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:24,493] analizador [limpiador Linea : 197] --> Acomodando legajo 556, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:24,496] analizador [limpiador Linea : 244] --> Acomodando legajo 556, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:34:24,500] analizador [limpiador Linea : 197] --> Acomodando legajo 556, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:24,512] analizador [limpiador Linea : 182] --> Acomodando legajo 556, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:24,514] analizador [limpiador Linea : 268] -->  legajo 556, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,518] analizador [limpiador Linea : 287] --> Acomodando legajo 556, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:24,521] analizador [limpiador Linea : 213] --> Acomodando legajo 556, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:24,600] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (562) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:24,639] analizador [limpiador Linea : 268] -->  legajo 562, dia de analisis: 2021-10-02,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,645] analizador [limpiador Linea : 197] --> Acomodando legajo 562, dia de analisis: 2021-10-04,Condicion DOS
+INFO :[2021-10-16 18:34:24,650] analizador [limpiador Linea : 264] --> Acomodando legajo 562, dia de analisis: 2021-10-06,Condicion CINCO
+INFO :[2021-10-16 18:34:24,653] analizador [limpiador Linea : 264] --> Acomodando legajo 562, dia de analisis: 2021-10-07,Condicion CINCO
+INFO :[2021-10-16 18:34:24,666] analizador [limpiador Linea : 182] --> Acomodando legajo 562, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:24,669] analizador [limpiador Linea : 268] -->  legajo 562, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,672] analizador [limpiador Linea : 213] --> Acomodando legajo 562, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:24,711] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (563) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:24,801] analizador [limpiador Linea : 182] --> Acomodando legajo 563, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:24,804] analizador [limpiador Linea : 268] -->  legajo 563, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,807] analizador [limpiador Linea : 287] --> Acomodando legajo 563, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:24,811] analizador [limpiador Linea : 213] --> Acomodando legajo 563, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:24,878] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (564) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:24,948] analizador [limpiador Linea : 244] --> Acomodando legajo 564, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:34:24,959] analizador [limpiador Linea : 268] -->  legajo 564, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,962] analizador [limpiador Linea : 268] -->  legajo 564, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:24,964] analizador [limpiador Linea : 268] -->  legajo 564, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,028] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (565) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:25,094] analizador [limpiador Linea : 197] --> Acomodando legajo 565, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:25,111] analizador [limpiador Linea : 268] -->  legajo 565, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,114] analizador [limpiador Linea : 268] -->  legajo 565, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,117] analizador [limpiador Linea : 268] -->  legajo 565, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,170] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (567) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:25,248] analizador [limpiador Linea : 197] --> Acomodando legajo 567, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:25,251] analizador [limpiador Linea : 197] --> Acomodando legajo 567, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:25,255] analizador [limpiador Linea : 197] --> Acomodando legajo 567, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:25,350] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (579) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:25,465] analizador [limpiador Linea : 244] --> Acomodando legajo 579, dia de analisis: 2021-10-13,Condicion CUATRO
+INFO :[2021-10-16 18:34:25,578] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (581) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:25,644] analizador [limpiador Linea : 197] --> Acomodando legajo 581, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:25,661] analizador [limpiador Linea : 182] --> Acomodando legajo 581, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:25,663] analizador [limpiador Linea : 268] -->  legajo 581, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,667] analizador [limpiador Linea : 287] --> Acomodando legajo 581, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:25,671] analizador [limpiador Linea : 213] --> Acomodando legajo 581, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:25,793] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (594) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:25,845] analizador [limpiador Linea : 182] --> Acomodando legajo 594, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:34:25,847] analizador [limpiador Linea : 268] -->  legajo 594, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,854] analizador [limpiador Linea : 264] --> Acomodando legajo 594, dia de analisis: 2021-10-10,Condicion CINCO
+INFO :[2021-10-16 18:34:25,860] analizador [limpiador Linea : 182] --> Acomodando legajo 594, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:25,862] analizador [limpiador Linea : 268] -->  legajo 594, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,866] analizador [limpiador Linea : 287] --> Acomodando legajo 594, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:25,870] analizador [limpiador Linea : 213] --> Acomodando legajo 594, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:25,911] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (595) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:25,974] analizador [limpiador Linea : 268] -->  legajo 595, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:25,989] analizador [limpiador Linea : 197] --> Acomodando legajo 595, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:25,993] analizador [limpiador Linea : 197] --> Acomodando legajo 595, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:25,996] analizador [limpiador Linea : 197] --> Acomodando legajo 595, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:26,052] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (596) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:26,123] analizador [limpiador Linea : 182] --> Acomodando legajo 596, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:26,125] analizador [limpiador Linea : 268] -->  legajo 596, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,129] analizador [limpiador Linea : 287] --> Acomodando legajo 596, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:26,132] analizador [limpiador Linea : 213] --> Acomodando legajo 596, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:26,142] analizador [limpiador Linea : 268] -->  legajo 596, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,144] analizador [limpiador Linea : 268] -->  legajo 596, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,147] analizador [limpiador Linea : 268] -->  legajo 596, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,200] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (597) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:26,282] analizador [limpiador Linea : 268] -->  legajo 597, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,292] analizador [limpiador Linea : 213] --> Acomodando legajo 597, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:26,353] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (598) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:26,447] analizador [limpiador Linea : 268] -->  legajo 598, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,450] analizador [limpiador Linea : 268] -->  legajo 598, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,453] analizador [limpiador Linea : 268] -->  legajo 598, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,598] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (603) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:26,644] analizador [limpiador Linea : 264] --> Acomodando legajo 603, dia de analisis: 2021-10-02,Condicion CINCO
+INFO :[2021-10-16 18:34:26,650] analizador [limpiador Linea : 197] --> Acomodando legajo 603, dia de analisis: 2021-10-04,Condicion DOS
+INFO :[2021-10-16 18:34:26,655] analizador [limpiador Linea : 197] --> Acomodando legajo 603, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:26,658] analizador [limpiador Linea : 197] --> Acomodando legajo 603, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:26,662] analizador [limpiador Linea : 197] --> Acomodando legajo 603, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:26,665] analizador [limpiador Linea : 268] -->  legajo 603, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,675] analizador [limpiador Linea : 268] -->  legajo 603, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,720] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (604) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:26,783] analizador [limpiador Linea : 197] --> Acomodando legajo 604, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:26,788] analizador [limpiador Linea : 197] --> Acomodando legajo 604, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:26,802] analizador [limpiador Linea : 182] --> Acomodando legajo 604, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:26,804] analizador [limpiador Linea : 268] -->  legajo 604, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:26,808] analizador [limpiador Linea : 287] --> Acomodando legajo 604, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:26,812] analizador [limpiador Linea : 213] --> Acomodando legajo 604, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:26,931] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (609) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:26,995] analizador [limpiador Linea : 268] -->  legajo 609, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,006] analizador [limpiador Linea : 268] -->  legajo 609, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,014] analizador [limpiador Linea : 244] --> Acomodando legajo 609, dia de analisis: 2021-10-14,Condicion CUATRO
+INFO :[2021-10-16 18:34:27,114] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (613) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:27,179] analizador [limpiador Linea : 182] --> Acomodando legajo 613, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:34:27,181] analizador [limpiador Linea : 268] -->  legajo 613, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,193] analizador [limpiador Linea : 268] -->  legajo 613, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,195] analizador [limpiador Linea : 268] -->  legajo 613, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,198] analizador [limpiador Linea : 268] -->  legajo 613, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,256] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (614) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:27,320] analizador [limpiador Linea : 244] --> Acomodando legajo 614, dia de analisis: 2021-10-08,Condicion CUATRO
+INFO :[2021-10-16 18:34:27,323] analizador [limpiador Linea : 287] --> Acomodando legajo 614, dia de analisis: 2021-10-09,Condicion SEIS
+INFO :[2021-10-16 18:34:27,327] analizador [limpiador Linea : 213] --> Acomodando legajo 614, dia de analisis: 2021-10-10,Condicion TRES
+INFO :[2021-10-16 18:34:27,332] analizador [limpiador Linea : 268] -->  legajo 614, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,335] analizador [limpiador Linea : 268] -->  legajo 614, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,339] analizador [limpiador Linea : 268] -->  legajo 614, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:27,456] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (623) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:27,525] analizador [limpiador Linea : 197] --> Acomodando legajo 623, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:27,540] analizador [limpiador Linea : 197] --> Acomodando legajo 623, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:27,544] analizador [limpiador Linea : 197] --> Acomodando legajo 623, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:27,548] analizador [limpiador Linea : 197] --> Acomodando legajo 623, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:27,776] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (636) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:27,849] analizador [limpiador Linea : 197] --> Acomodando legajo 636, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:27,869] analizador [limpiador Linea : 197] --> Acomodando legajo 636, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:27,874] analizador [limpiador Linea : 197] --> Acomodando legajo 636, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:27,878] analizador [limpiador Linea : 197] --> Acomodando legajo 636, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:27,986] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (641) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:28,041] analizador [limpiador Linea : 268] -->  legajo 641, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,045] analizador [limpiador Linea : 197] --> Acomodando legajo 641, dia de analisis: 2021-10-08,Condicion DOS
+INFO :[2021-10-16 18:34:28,053] analizador [limpiador Linea : 197] --> Acomodando legajo 641, dia de analisis: 2021-10-11,Condicion DOS
+INFO :[2021-10-16 18:34:28,057] analizador [limpiador Linea : 197] --> Acomodando legajo 641, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:28,061] analizador [limpiador Linea : 197] --> Acomodando legajo 641, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:28,065] analizador [limpiador Linea : 197] --> Acomodando legajo 641, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:28,183] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (645) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:28,273] analizador [limpiador Linea : 197] --> Acomodando legajo 645, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:28,276] analizador [limpiador Linea : 197] --> Acomodando legajo 645, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:28,280] analizador [limpiador Linea : 197] --> Acomodando legajo 645, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:28,348] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (647) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:28,397] analizador [limpiador Linea : 182] --> Acomodando legajo 647, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:28,400] analizador [limpiador Linea : 268] -->  legajo 647, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,403] analizador [limpiador Linea : 287] --> Acomodando legajo 647, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:28,407] analizador [limpiador Linea : 287] --> Acomodando legajo 647, dia de analisis: 2021-10-08,Condicion SEIS
+INFO :[2021-10-16 18:34:28,416] analizador [limpiador Linea : 268] -->  legajo 647, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,419] analizador [limpiador Linea : 268] -->  legajo 647, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,422] analizador [limpiador Linea : 268] -->  legajo 647, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,468] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (648) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:28,532] analizador [limpiador Linea : 197] --> Acomodando legajo 648, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:28,542] analizador [limpiador Linea : 244] --> Acomodando legajo 648, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:28,545] analizador [limpiador Linea : 264] --> Acomodando legajo 648, dia de analisis: 2021-10-10,Condicion CINCO
+INFO :[2021-10-16 18:34:28,550] analizador [limpiador Linea : 244] --> Acomodando legajo 648, dia de analisis: 2021-10-12,Condicion CUATRO
+INFO :[2021-10-16 18:34:28,553] analizador [limpiador Linea : 287] --> Acomodando legajo 648, dia de analisis: 2021-10-13,Condicion SEIS
+INFO :[2021-10-16 18:34:28,557] analizador [limpiador Linea : 213] --> Acomodando legajo 648, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:28,618] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (653) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:28,688] analizador [limpiador Linea : 197] --> Acomodando legajo 653, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:28,706] analizador [limpiador Linea : 182] --> Acomodando legajo 653, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:28,709] analizador [limpiador Linea : 268] -->  legajo 653, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,713] analizador [limpiador Linea : 287] --> Acomodando legajo 653, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:28,717] analizador [limpiador Linea : 213] --> Acomodando legajo 653, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:28,771] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (655) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:28,815] analizador [limpiador Linea : 182] --> Acomodando legajo 655, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:28,817] analizador [limpiador Linea : 268] -->  legajo 655, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,821] analizador [limpiador Linea : 182] --> Acomodando legajo 655, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:34:28,823] analizador [limpiador Linea : 268] -->  legajo 655, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,827] analizador [limpiador Linea : 244] --> Acomodando legajo 655, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:28,835] analizador [limpiador Linea : 182] --> Acomodando legajo 655, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:28,837] analizador [limpiador Linea : 268] -->  legajo 655, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,841] analizador [limpiador Linea : 287] --> Acomodando legajo 655, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:28,845] analizador [limpiador Linea : 213] --> Acomodando legajo 655, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:28,884] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (657) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:28,923] analizador [limpiador Linea : 287] --> Acomodando legajo 657, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:34:28,931] analizador [limpiador Linea : 268] -->  legajo 657, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,934] analizador [limpiador Linea : 268] -->  legajo 657, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,936] analizador [limpiador Linea : 268] -->  legajo 657, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,939] analizador [limpiador Linea : 268] -->  legajo 657, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,952] analizador [limpiador Linea : 182] --> Acomodando legajo 657, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:28,954] analizador [limpiador Linea : 268] -->  legajo 657, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:28,958] analizador [limpiador Linea : 213] --> Acomodando legajo 657, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:29,033] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (661) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:29,096] analizador [limpiador Linea : 268] -->  legajo 661, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,111] analizador [limpiador Linea : 182] --> Acomodando legajo 661, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:29,113] analizador [limpiador Linea : 268] -->  legajo 661, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,117] analizador [limpiador Linea : 287] --> Acomodando legajo 661, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:29,121] analizador [limpiador Linea : 213] --> Acomodando legajo 661, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:29,228] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (666) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:29,297] analizador [limpiador Linea : 197] --> Acomodando legajo 666, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:29,314] analizador [limpiador Linea : 197] --> Acomodando legajo 666, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:29,317] analizador [limpiador Linea : 197] --> Acomodando legajo 666, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:29,320] analizador [limpiador Linea : 197] --> Acomodando legajo 666, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:29,395] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (670) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:29,434] analizador [limpiador Linea : 287] --> Acomodando legajo 670, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:34:29,441] analizador [limpiador Linea : 268] -->  legajo 670, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,444] analizador [limpiador Linea : 268] -->  legajo 670, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,446] analizador [limpiador Linea : 268] -->  legajo 670, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,449] analizador [limpiador Linea : 268] -->  legajo 670, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,461] analizador [limpiador Linea : 197] --> Acomodando legajo 670, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:29,465] analizador [limpiador Linea : 197] --> Acomodando legajo 670, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:29,469] analizador [limpiador Linea : 197] --> Acomodando legajo 670, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:29,574] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (679) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:29,636] analizador [limpiador Linea : 268] -->  legajo 679, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,642] analizador [limpiador Linea : 268] -->  legajo 679, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,659] analizador [limpiador Linea : 197] --> Acomodando legajo 679, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:29,663] analizador [limpiador Linea : 197] --> Acomodando legajo 679, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:29,666] analizador [limpiador Linea : 197] --> Acomodando legajo 679, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:29,722] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (681) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:29,790] analizador [limpiador Linea : 197] --> Acomodando legajo 681, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:29,807] analizador [limpiador Linea : 197] --> Acomodando legajo 681, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:29,810] analizador [limpiador Linea : 197] --> Acomodando legajo 681, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:29,813] analizador [limpiador Linea : 197] --> Acomodando legajo 681, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:29,873] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (683) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:29,902] analizador [limpiador Linea : 268] -->  legajo 683, dia de analisis: 2021-10-02,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,908] analizador [limpiador Linea : 182] --> Acomodando legajo 683, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:34:29,910] analizador [limpiador Linea : 268] -->  legajo 683, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,914] analizador [limpiador Linea : 287] --> Acomodando legajo 683, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:34:29,917] analizador [limpiador Linea : 287] --> Acomodando legajo 683, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:29,921] analizador [limpiador Linea : 213] --> Acomodando legajo 683, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:29,924] analizador [limpiador Linea : 268] -->  legajo 683, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,929] analizador [limpiador Linea : 268] -->  legajo 683, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,932] analizador [limpiador Linea : 268] -->  legajo 683, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:29,934] analizador [limpiador Linea : 268] -->  legajo 683, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,218] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (697) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:30,273] analizador [limpiador Linea : 182] --> Acomodando legajo 697, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:30,276] analizador [limpiador Linea : 268] -->  legajo 697, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,280] analizador [limpiador Linea : 287] --> Acomodando legajo 697, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:30,284] analizador [limpiador Linea : 213] --> Acomodando legajo 697, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:30,293] analizador [limpiador Linea : 268] -->  legajo 697, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,296] analizador [limpiador Linea : 268] -->  legajo 697, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,298] analizador [limpiador Linea : 268] -->  legajo 697, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,602] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (735) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:30,632] analizador [limpiador Linea : 287] --> Acomodando legajo 735, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:34:30,637] analizador [limpiador Linea : 304] --> Acomodando legajo 735, dia de analisis: 2021-10-02,Condicion SIETE
+INFO :[2021-10-16 18:34:30,643] analizador [limpiador Linea : 197] --> Acomodando legajo 735, dia de analisis: 2021-10-04,Condicion DOS
+INFO :[2021-10-16 18:34:30,647] analizador [limpiador Linea : 197] --> Acomodando legajo 735, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:30,653] analizador [limpiador Linea : 264] --> Acomodando legajo 735, dia de analisis: 2021-10-07,Condicion CINCO
+INFO :[2021-10-16 18:34:30,659] analizador [limpiador Linea : 268] -->  legajo 735, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,667] analizador [limpiador Linea : 182] --> Acomodando legajo 735, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:30,670] analizador [limpiador Linea : 268] -->  legajo 735, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,673] analizador [limpiador Linea : 213] --> Acomodando legajo 735, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:30,719] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (736) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:30,823] analizador [limpiador Linea : 197] --> Acomodando legajo 736, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:30,848] analizador [limpiador Linea : 182] --> Acomodando legajo 736, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:34:30,851] analizador [limpiador Linea : 268] -->  legajo 736, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,855] analizador [limpiador Linea : 213] --> Acomodando legajo 736, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:30,923] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (737) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:30,973] analizador [limpiador Linea : 287] --> Acomodando legajo 737, dia de analisis: 2021-10-01,Condicion SEIS
+INFO :[2021-10-16 18:34:30,977] analizador [limpiador Linea : 304] --> Acomodando legajo 737, dia de analisis: 2021-10-02,Condicion SIETE
+INFO :[2021-10-16 18:34:30,981] analizador [limpiador Linea : 268] -->  legajo 737, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,984] analizador [limpiador Linea : 268] -->  legajo 737, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,987] analizador [limpiador Linea : 268] -->  legajo 737, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,990] analizador [limpiador Linea : 268] -->  legajo 737, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:30,993] analizador [limpiador Linea : 268] -->  legajo 737, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,003] analizador [limpiador Linea : 197] --> Acomodando legajo 737, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:31,127] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (744) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:31,213] analizador [limpiador Linea : 182] --> Acomodando legajo 744, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:31,216] analizador [limpiador Linea : 268] -->  legajo 744, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,220] analizador [limpiador Linea : 287] --> Acomodando legajo 744, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:31,224] analizador [limpiador Linea : 213] --> Acomodando legajo 744, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:31,281] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (745) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:31,356] analizador [limpiador Linea : 244] --> Acomodando legajo 745, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:34:31,368] analizador [limpiador Linea : 268] -->  legajo 745, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,370] analizador [limpiador Linea : 268] -->  legajo 745, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,373] analizador [limpiador Linea : 268] -->  legajo 745, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,477] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (748) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:31,540] analizador [limpiador Linea : 268] -->  legajo 748, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,543] analizador [limpiador Linea : 268] -->  legajo 748, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,555] analizador [limpiador Linea : 197] --> Acomodando legajo 748, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:31,559] analizador [limpiador Linea : 197] --> Acomodando legajo 748, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:31,563] analizador [limpiador Linea : 197] --> Acomodando legajo 748, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:31,617] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (749) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:31,678] analizador [limpiador Linea : 182] --> Acomodando legajo 749, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:34:31,680] analizador [limpiador Linea : 268] -->  legajo 749, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,684] analizador [limpiador Linea : 213] --> Acomodando legajo 749, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:31,693] analizador [limpiador Linea : 268] -->  legajo 749, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,696] analizador [limpiador Linea : 268] -->  legajo 749, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,698] analizador [limpiador Linea : 268] -->  legajo 749, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,798] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (751) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:31,883] analizador [limpiador Linea : 268] -->  legajo 751, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,886] analizador [limpiador Linea : 268] -->  legajo 751, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,889] analizador [limpiador Linea : 268] -->  legajo 751, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:31,950] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (752) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,019] analizador [limpiador Linea : 197] --> Acomodando legajo 752, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:32,023] analizador [limpiador Linea : 244] --> Acomodando legajo 752, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:34:32,026] analizador [limpiador Linea : 197] --> Acomodando legajo 752, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:32,039] analizador [limpiador Linea : 182] --> Acomodando legajo 752, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:32,042] analizador [limpiador Linea : 268] -->  legajo 752, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,045] analizador [limpiador Linea : 287] --> Acomodando legajo 752, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:32,049] analizador [limpiador Linea : 213] --> Acomodando legajo 752, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:32,105] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (755) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,188] analizador [limpiador Linea : 182] --> Acomodando legajo 755, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:32,192] analizador [limpiador Linea : 268] -->  legajo 755, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,195] analizador [limpiador Linea : 287] --> Acomodando legajo 755, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:32,199] analizador [limpiador Linea : 213] --> Acomodando legajo 755, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:32,259] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (757) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,321] analizador [limpiador Linea : 197] --> Acomodando legajo 757, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:32,324] analizador [limpiador Linea : 244] --> Acomodando legajo 757, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:34:32,338] analizador [limpiador Linea : 182] --> Acomodando legajo 757, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:32,341] analizador [limpiador Linea : 268] -->  legajo 757, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,344] analizador [limpiador Linea : 182] --> Acomodando legajo 757, dia de analisis: 2021-10-14,Condicion UNO
+INFO :[2021-10-16 18:34:32,347] analizador [limpiador Linea : 268] -->  legajo 757, dia de analisis: 2021-10-15,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,402] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (758) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,470] analizador [limpiador Linea : 182] --> Acomodando legajo 758, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:34:32,473] analizador [limpiador Linea : 268] -->  legajo 758, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,482] analizador [limpiador Linea : 268] -->  legajo 758, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,484] analizador [limpiador Linea : 268] -->  legajo 758, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,487] analizador [limpiador Linea : 268] -->  legajo 758, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,542] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (759) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,591] analizador [limpiador Linea : 182] --> Acomodando legajo 759, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:32,594] analizador [limpiador Linea : 268] -->  legajo 759, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,597] analizador [limpiador Linea : 287] --> Acomodando legajo 759, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:32,601] analizador [limpiador Linea : 213] --> Acomodando legajo 759, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:32,607] analizador [limpiador Linea : 268] -->  legajo 759, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,611] analizador [limpiador Linea : 182] --> Acomodando legajo 759, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:32,613] analizador [limpiador Linea : 268] -->  legajo 759, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,617] analizador [limpiador Linea : 213] --> Acomodando legajo 759, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:32,663] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (760) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,724] analizador [limpiador Linea : 268] -->  legajo 760, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,740] analizador [limpiador Linea : 182] --> Acomodando legajo 760, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:32,743] analizador [limpiador Linea : 268] -->  legajo 760, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,747] analizador [limpiador Linea : 287] --> Acomodando legajo 760, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:32,750] analizador [limpiador Linea : 213] --> Acomodando legajo 760, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:32,801] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (761) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,861] analizador [limpiador Linea : 197] --> Acomodando legajo 761, dia de analisis: 2021-10-08,Condicion DOS
+INFO :[2021-10-16 18:34:32,870] analizador [limpiador Linea : 268] -->  legajo 761, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:32,879] analizador [limpiador Linea : 213] --> Acomodando legajo 761, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:32,922] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (763) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:32,989] analizador [limpiador Linea : 197] --> Acomodando legajo 763, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:33,005] analizador [limpiador Linea : 182] --> Acomodando legajo 763, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:33,008] analizador [limpiador Linea : 268] -->  legajo 763, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,011] analizador [limpiador Linea : 287] --> Acomodando legajo 763, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:33,015] analizador [limpiador Linea : 213] --> Acomodando legajo 763, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:33,069] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (764) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:33,133] analizador [limpiador Linea : 268] -->  legajo 764, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,136] analizador [limpiador Linea : 268] -->  legajo 764, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,150] analizador [limpiador Linea : 264] --> Acomodando legajo 764, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:34:33,153] analizador [limpiador Linea : 264] --> Acomodando legajo 764, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:33,211] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (765) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:33,266] analizador [limpiador Linea : 268] -->  legajo 765, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,274] analizador [limpiador Linea : 244] --> Acomodando legajo 765, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:33,277] analizador [limpiador Linea : 264] --> Acomodando legajo 765, dia de analisis: 2021-10-10,Condicion CINCO
+INFO :[2021-10-16 18:34:33,284] analizador [limpiador Linea : 182] --> Acomodando legajo 765, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:33,286] analizador [limpiador Linea : 268] -->  legajo 765, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,290] analizador [limpiador Linea : 287] --> Acomodando legajo 765, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:33,293] analizador [limpiador Linea : 213] --> Acomodando legajo 765, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:33,450] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (776) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:33,510] analizador [limpiador Linea : 197] --> Acomodando legajo 776, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:33,516] analizador [limpiador Linea : 197] --> Acomodando legajo 776, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:33,529] analizador [limpiador Linea : 182] --> Acomodando legajo 776, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:33,533] analizador [limpiador Linea : 268] -->  legajo 776, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,542] analizador [limpiador Linea : 213] --> Acomodando legajo 776, dia de analisis: 2021-10-14,Condicion TRES
+INFO :[2021-10-16 18:34:33,593] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (777) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:33,678] analizador [limpiador Linea : 182] --> Acomodando legajo 777, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:33,681] analizador [limpiador Linea : 268] -->  legajo 777, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,685] analizador [limpiador Linea : 287] --> Acomodando legajo 777, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:33,688] analizador [limpiador Linea : 213] --> Acomodando legajo 777, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:33,754] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (778) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:33,836] analizador [limpiador Linea : 244] --> Acomodando legajo 778, dia de analisis: 2021-10-12,Condicion CUATRO
+INFO :[2021-10-16 18:34:33,840] analizador [limpiador Linea : 182] --> Acomodando legajo 778, dia de analisis: 2021-10-13,Condicion UNO
+INFO :[2021-10-16 18:34:33,842] analizador [limpiador Linea : 268] -->  legajo 778, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:33,846] analizador [limpiador Linea : 213] --> Acomodando legajo 778, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:33,908] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (779) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:33,997] analizador [limpiador Linea : 182] --> Acomodando legajo 779, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:34,000] analizador [limpiador Linea : 268] -->  legajo 779, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,003] analizador [limpiador Linea : 287] --> Acomodando legajo 779, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:34,007] analizador [limpiador Linea : 213] --> Acomodando legajo 779, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:34,072] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (780) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:34,142] analizador [limpiador Linea : 182] --> Acomodando legajo 780, dia de analisis: 2021-10-07,Condicion UNO
+INFO :[2021-10-16 18:34:34,145] analizador [limpiador Linea : 268] -->  legajo 780, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,156] analizador [limpiador Linea : 182] --> Acomodando legajo 780, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:34,158] analizador [limpiador Linea : 268] -->  legajo 780, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,162] analizador [limpiador Linea : 287] --> Acomodando legajo 780, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:34,166] analizador [limpiador Linea : 213] --> Acomodando legajo 780, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:34,221] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (781) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:34,289] analizador [limpiador Linea : 197] --> Acomodando legajo 781, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:34,306] analizador [limpiador Linea : 182] --> Acomodando legajo 781, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:34,308] analizador [limpiador Linea : 268] -->  legajo 781, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,312] analizador [limpiador Linea : 287] --> Acomodando legajo 781, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:34,316] analizador [limpiador Linea : 213] --> Acomodando legajo 781, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:34,369] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (782) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:34,436] analizador [limpiador Linea : 197] --> Acomodando legajo 782, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:34,452] analizador [limpiador Linea : 268] -->  legajo 782, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,454] analizador [limpiador Linea : 268] -->  legajo 782, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,457] analizador [limpiador Linea : 268] -->  legajo 782, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,513] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (783) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:34,575] analizador [limpiador Linea : 268] -->  legajo 783, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,577] analizador [limpiador Linea : 268] -->  legajo 783, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,590] analizador [limpiador Linea : 197] --> Acomodando legajo 783, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:34,593] analizador [limpiador Linea : 197] --> Acomodando legajo 783, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:34,596] analizador [limpiador Linea : 197] --> Acomodando legajo 783, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:34,669] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (785) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:34,732] analizador [limpiador Linea : 197] --> Acomodando legajo 785, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:34,738] analizador [limpiador Linea : 197] --> Acomodando legajo 785, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:34,749] analizador [limpiador Linea : 197] --> Acomodando legajo 785, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:34,753] analizador [limpiador Linea : 197] --> Acomodando legajo 785, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:34,756] analizador [limpiador Linea : 197] --> Acomodando legajo 785, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:34,827] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (787) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:34,877] analizador [limpiador Linea : 182] --> Acomodando legajo 787, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:34,884] analizador [limpiador Linea : 268] -->  legajo 787, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,891] analizador [limpiador Linea : 244] --> Acomodando legajo 787, dia de analisis: 2021-10-07,Condicion CUATRO
+INFO :[2021-10-16 18:34:34,897] analizador [limpiador Linea : 213] --> Acomodando legajo 787, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:34,903] analizador [limpiador Linea : 244] --> Acomodando legajo 787, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:34,912] analizador [limpiador Linea : 268] -->  legajo 787, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,916] analizador [limpiador Linea : 268] -->  legajo 787, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,920] analizador [limpiador Linea : 268] -->  legajo 787, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:34,969] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (788) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:35,037] analizador [limpiador Linea : 197] --> Acomodando legajo 788, dia de analisis: 2021-10-07,Condicion DOS
+INFO :[2021-10-16 18:34:35,049] analizador [limpiador Linea : 268] -->  legajo 788, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,052] analizador [limpiador Linea : 268] -->  legajo 788, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,054] analizador [limpiador Linea : 268] -->  legajo 788, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,118] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (789) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:35,189] analizador [limpiador Linea : 197] --> Acomodando legajo 789, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:35,206] analizador [limpiador Linea : 182] --> Acomodando legajo 789, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:35,208] analizador [limpiador Linea : 268] -->  legajo 789, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,212] analizador [limpiador Linea : 287] --> Acomodando legajo 789, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:35,219] analizador [limpiador Linea : 213] --> Acomodando legajo 789, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:35,280] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (790) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:35,340] analizador [limpiador Linea : 182] --> Acomodando legajo 790, dia de analisis: 2021-10-08,Condicion UNO
+INFO :[2021-10-16 18:34:35,342] analizador [limpiador Linea : 268] -->  legajo 790, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,346] analizador [limpiador Linea : 182] --> Acomodando legajo 790, dia de analisis: 2021-10-10,Condicion UNO
+INFO :[2021-10-16 18:34:35,348] analizador [limpiador Linea : 268] -->  legajo 790, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,353] analizador [limpiador Linea : 320] --> Acomodando legajo 790, dia de analisis: 2021-10-12,Condicion OCHO
+INFO :[2021-10-16 18:34:35,356] analizador [limpiador Linea : 287] --> Acomodando legajo 790, dia de analisis: 2021-10-13,Condicion SEIS
+INFO :[2021-10-16 18:34:35,360] analizador [limpiador Linea : 287] --> Acomodando legajo 790, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:35,364] analizador [limpiador Linea : 213] --> Acomodando legajo 790, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:35,412] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (791) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:35,465] analizador [limpiador Linea : 197] --> Acomodando legajo 791, dia de analisis: 2021-10-05,Condicion DOS
+INFO :[2021-10-16 18:34:35,468] analizador [limpiador Linea : 197] --> Acomodando legajo 791, dia de analisis: 2021-10-06,Condicion DOS
+INFO :[2021-10-16 18:34:35,482] analizador [limpiador Linea : 182] --> Acomodando legajo 791, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:35,484] analizador [limpiador Linea : 268] -->  legajo 791, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,488] analizador [limpiador Linea : 287] --> Acomodando legajo 791, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:35,492] analizador [limpiador Linea : 213] --> Acomodando legajo 791, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:35,576] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (793) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:35,633] analizador [limpiador Linea : 182] --> Acomodando legajo 793, dia de analisis: 2021-10-05,Condicion UNO
+INFO :[2021-10-16 18:34:35,636] analizador [limpiador Linea : 268] -->  legajo 793, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,640] analizador [limpiador Linea : 287] --> Acomodando legajo 793, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:35,644] analizador [limpiador Linea : 213] --> Acomodando legajo 793, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:35,655] analizador [limpiador Linea : 182] --> Acomodando legajo 793, dia de analisis: 2021-10-12,Condicion UNO
+INFO :[2021-10-16 18:34:35,657] analizador [limpiador Linea : 268] -->  legajo 793, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,661] analizador [limpiador Linea : 287] --> Acomodando legajo 793, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:35,664] analizador [limpiador Linea : 213] --> Acomodando legajo 793, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:35,712] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (794) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:35,771] analizador [limpiador Linea : 268] -->  legajo 794, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,773] analizador [limpiador Linea : 268] -->  legajo 794, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:35,779] analizador [limpiador Linea : 244] --> Acomodando legajo 794, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:35,787] analizador [limpiador Linea : 197] --> Acomodando legajo 794, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:35,791] analizador [limpiador Linea : 197] --> Acomodando legajo 794, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:35,795] analizador [limpiador Linea : 197] --> Acomodando legajo 794, dia de analisis: 2021-10-14,Condicion DOS
+INFO :[2021-10-16 18:34:36,145] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (812) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:36,212] analizador [limpiador Linea : 244] --> Acomodando legajo 812, dia de analisis: 2021-10-06,Condicion CUATRO
+INFO :[2021-10-16 18:34:36,224] analizador [limpiador Linea : 268] -->  legajo 812, dia de analisis: 2021-10-11,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,227] analizador [limpiador Linea : 268] -->  legajo 812, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,229] analizador [limpiador Linea : 268] -->  legajo 812, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,232] analizador [limpiador Linea : 268] -->  legajo 812, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,324] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (815) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:36,392] analizador [limpiador Linea : 182] --> Acomodando legajo 815, dia de analisis: 2021-10-06,Condicion UNO
+INFO :[2021-10-16 18:34:36,394] analizador [limpiador Linea : 268] -->  legajo 815, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,406] analizador [limpiador Linea : 268] -->  legajo 815, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,409] analizador [limpiador Linea : 268] -->  legajo 815, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,411] analizador [limpiador Linea : 268] -->  legajo 815, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,645] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (826) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:36,690] analizador [limpiador Linea : 268] -->  legajo 826, dia de analisis: 2021-10-04,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,692] analizador [limpiador Linea : 268] -->  legajo 826, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,695] analizador [limpiador Linea : 268] -->  legajo 826, dia de analisis: 2021-10-06,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,698] analizador [limpiador Linea : 268] -->  legajo 826, dia de analisis: 2021-10-07,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,700] analizador [limpiador Linea : 268] -->  legajo 826, dia de analisis: 2021-10-08,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,709] analizador [limpiador Linea : 268] -->  legajo 826, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:36,712] analizador [limpiador Linea : 268] -->  legajo 826, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:37,157] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (841) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:37,220] analizador [limpiador Linea : 244] --> Acomodando legajo 841, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:37,227] analizador [limpiador Linea : 268] -->  legajo 841, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:37,230] analizador [limpiador Linea : 268] -->  legajo 841, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:37,232] analizador [limpiador Linea : 268] -->  legajo 841, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:37,299] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (843) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:37,333] analizador [limpiador Linea : 320] --> Acomodando legajo 843, dia de analisis: 2021-10-01,Condicion OCHO
+INFO :[2021-10-16 18:34:37,336] analizador [limpiador Linea : 320] --> Acomodando legajo 843, dia de analisis: 2021-10-02,Condicion OCHO
+INFO :[2021-10-16 18:34:37,342] analizador [limpiador Linea : 182] --> Acomodando legajo 843, dia de analisis: 2021-10-04,Condicion UNO
+INFO :[2021-10-16 18:34:37,344] analizador [limpiador Linea : 268] -->  legajo 843, dia de analisis: 2021-10-05,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:37,348] analizador [limpiador Linea : 287] --> Acomodando legajo 843, dia de analisis: 2021-10-06,Condicion SEIS
+INFO :[2021-10-16 18:34:37,351] analizador [limpiador Linea : 287] --> Acomodando legajo 843, dia de analisis: 2021-10-07,Condicion SEIS
+INFO :[2021-10-16 18:34:37,355] analizador [limpiador Linea : 213] --> Acomodando legajo 843, dia de analisis: 2021-10-08,Condicion TRES
+INFO :[2021-10-16 18:34:37,365] analizador [limpiador Linea : 197] --> Acomodando legajo 843, dia de analisis: 2021-10-12,Condicion DOS
+INFO :[2021-10-16 18:34:37,369] analizador [limpiador Linea : 197] --> Acomodando legajo 843, dia de analisis: 2021-10-13,Condicion DOS
+INFO :[2021-10-16 18:34:37,372] analizador [limpiador Linea : 197] --> Acomodando legajo 843, dia de analisis: 2021-10-14,Condicion DOS
+WARNING :[2021-10-16 18:34:37,404] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (844) no se encuentra en la BD
+INFO :[2021-10-16 18:34:37,700] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (874) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:37,792] analizador [limpiador Linea : 268] -->  legajo 874, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:37,794] analizador [limpiador Linea : 268] -->  legajo 874, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:37,866] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (875) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:37,960] analizador [limpiador Linea : 264] --> Acomodando legajo 875, dia de analisis: 2021-10-13,Condicion CINCO
+INFO :[2021-10-16 18:34:37,964] analizador [limpiador Linea : 264] --> Acomodando legajo 875, dia de analisis: 2021-10-14,Condicion CINCO
+INFO :[2021-10-16 18:34:38,032] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (876) No paso las validaciones, se las castea en cero.
+WARNING :[2021-10-16 18:34:38,035] Vulcano [frameAnalisisIndividual Linea : 654] --> El siguiente legajo (876) No paso en sanitycheck, ni pudo ser casteado
+ERROR :[2021-10-16 18:34:38,035] Vulcano [frameAnalisisIndividual Linea : 655] --> The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().
+INFO :[2021-10-16 18:34:38,089] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (880) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:38,159] analizador [limpiador Linea : 244] --> Acomodando legajo 880, dia de analisis: 2021-10-09,Condicion CUATRO
+INFO :[2021-10-16 18:34:38,165] analizador [limpiador Linea : 268] -->  legajo 880, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:38,168] analizador [limpiador Linea : 268] -->  legajo 880, dia de analisis: 2021-10-13,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:38,173] analizador [limpiador Linea : 268] -->  legajo 880, dia de analisis: 2021-10-14,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:38,241] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (882) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:38,301] analizador [limpiador Linea : 182] --> Acomodando legajo 882, dia de analisis: 2021-10-08,Condicion UNO
+INFO :[2021-10-16 18:34:38,304] analizador [limpiador Linea : 268] -->  legajo 882, dia de analisis: 2021-10-09,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:38,307] analizador [limpiador Linea : 213] --> Acomodando legajo 882, dia de analisis: 2021-10-10,Condicion TRES
+INFO :[2021-10-16 18:34:38,311] analizador [limpiador Linea : 182] --> Acomodando legajo 882, dia de analisis: 2021-10-11,Condicion UNO
+INFO :[2021-10-16 18:34:38,313] analizador [limpiador Linea : 268] -->  legajo 882, dia de analisis: 2021-10-12,SIN PASAR POR NINGUN LADO
+INFO :[2021-10-16 18:34:38,317] analizador [limpiador Linea : 287] --> Acomodando legajo 882, dia de analisis: 2021-10-13,Condicion SEIS
+INFO :[2021-10-16 18:34:38,320] analizador [limpiador Linea : 287] --> Acomodando legajo 882, dia de analisis: 2021-10-14,Condicion SEIS
+INFO :[2021-10-16 18:34:38,324] analizador [limpiador Linea : 213] --> Acomodando legajo 882, dia de analisis: 2021-10-15,Condicion TRES
+INFO :[2021-10-16 18:34:38,424] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (884) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:38,500] analizador [limpiador Linea : 213] --> Acomodando legajo 884, dia de analisis: 2021-10-01,Condicion TRES
+INFO :[2021-10-16 18:34:38,600] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (885) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:38,681] analizador [limpiador Linea : 213] --> Acomodando legajo 885, dia de analisis: 2021-10-01,Condicion TRES
+INFO :[2021-10-16 18:34:38,781] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (886) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:38,857] analizador [limpiador Linea : 213] --> Acomodando legajo 886, dia de analisis: 2021-10-01,Condicion TRES
+INFO :[2021-10-16 18:34:39,017] Vulcano [logicaRotativos Linea : 532] --> El siguiente legajo (888) No paso las validaciones, se las castea en cero.
+INFO :[2021-10-16 18:34:39,094] analizador [limpiador Linea : 213] --> Acomodando legajo 888, dia de analisis: 2021-10-01,Condicion TRES
+WARNING :[2021-10-16 18:34:39,533] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10030) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,534] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10190) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,535] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10218) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,536] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10221) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,537] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10222) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,538] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10224) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,539] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10226) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,540] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (10229) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,541] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (100047) no se encuentra en la BD
+WARNING :[2021-10-16 18:34:39,542] Vulcano [frameAnalisisIndividual Linea : 631] --> El siguiente legajo (100052) no se encuentra en la BD
+INFO :[2021-10-16 18:34:39,556] Vulcano [limpiezaDeRegistros Linea : 685] --> Limpiando registros
+INFO :[2021-10-16 18:34:39,556] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:34:46,149] analizador [informeNoFichadas Linea : 1816] --> Comenzando escritura en el word
+INFO :[2021-10-16 18:34:46,163] createDB [conexion Linea : 27] --> Iniciando conexion
+INFO :[2021-10-16 18:34:51,272] createDB [conexion Linea : 27] --> Iniciando conexion

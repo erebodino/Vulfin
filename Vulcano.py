@@ -343,8 +343,9 @@ def empleadosFrame():
     
     legajosNoRotativos = consultaEmpleados.loc[(consultaEmpleados['AREA'] != 'INYECCION') 
                                                 &(consultaEmpleados['AREA'] != 'SOPLADO') 
-                                                & (consultaEmpleados['AREA'] != 'MECANIZADO')
-                                                & (consultaEmpleados['AREA'] != 'ALUMINIO')] #Filtrado con las areas que NO son rotativas
+                                                & (consultaEmpleados['AREA'] != 'MECANIZADO ROTATIVO')
+                                                & (consultaEmpleados['AREA'] != 'MANGUERAS')
+                                                & (consultaEmpleados['AREA'] != 'MOTORES ALUMINIO')] #Filtrado con las areas que NO son rotativas
     legajosNoRotativos = legajosNoRotativos['LEG'].unique()
     legajosNoRotativos = [int(x) for x in legajosNoRotativos]#los pasa de numpy.int64 a int
 
@@ -532,7 +533,7 @@ def logicaRotativos(frame,fechaInicio,fechaFin,legajo,area=False):
         newFrame = limpiador.castMascara(area=area)
         newFrame = limpiador.limpiador(area=area)
         newFrame = limpiador.castMascara(area=area)
-        print('\nNOGOOD: ',newFrame,newFrame.iloc[1,4],newFrame.iloc[1,5])   
+        #print('\nNOGOOD: ',newFrame,newFrame.iloc[1,4],newFrame.iloc[1,5])   
         mascaraNewFrame = (newFrame['Fecha'] >= fechaInicio) & (newFrame['Fecha'] <= fechaFin)
         newFrame = newFrame.loc[mascaraNewFrame].copy()
 
