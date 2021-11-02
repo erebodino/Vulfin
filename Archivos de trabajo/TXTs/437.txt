@@ -1,0 +1,41 @@
+
+Empleado:        437 - BRITOS PAULO ARIEL                                         Tarjeta Nº         437
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Lunes      18/10/2021 15:58
+Martes     19/10/2021          00:01   15:58
+Miércoles  20/10/2021          00:01   15:59
+Jueves     21/10/2021          00:04   15:59
+Viernes    22/10/2021          00:00   15:59
+Sábado     23/10/2021          00:00
+Lunes      25/10/2021 23:56
+Martes     26/10/2021          08:04   23:58
+Miércoles  27/10/2021          08:02   23:59
+Jueves     28/10/2021          08:01
+Viernes    29/10/2021 00:08    08:01   23:59
+
+
+
+Empleado:        438 - RIVERO LUIS ALBERTO                                        Tarjeta Nº         438
+
+Día        Fecha      Entró    Salió   Entró   Salió   Entró   Salió   Entró   Salió    Entró   Salió
+
+
+
+Sábado     16/10/2021 07:45    16:00
+Domingo    17/10/2021 07:34    16:00
+Lunes      18/10/2021 19:31
+Martes     19/10/2021          08:01   19:31           19:43
+Miércoles  20/10/2021          08:01   19:39
+Jueves     21/10/2021          08:01   19:30
+Viernes    22/10/2021          08:01   19:34
+Sábado     23/10/2021          05:00
+Lunes      25/10/2021 07:31    20:00
+Martes     26/10/2021 07:25    20:01
+Miércoles  27/10/2021 07:31    19:05
+Jueves     28/10/2021 07:34    20:00
+Viernes    29/10/2021 07:30    19:13
+
