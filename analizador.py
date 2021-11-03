@@ -1690,9 +1690,9 @@ class CalculadorHoras:
 
             
             else:
-                if salidaOperario > horaSalida:
+                if salidaOperario > horaSalida + timedelta(minutes= 45):
                     minutosExtras50 += ((salidaOperario - horaSalida).seconds)/3600
-                if ingresoOperario < horaIngreso:
+                if ingresoOperario < horaIngreso - timedelta(minutes= 45):
                     minutosExtras50 += ((horaIngreso - ingresoOperario).seconds)/3600
 
             
