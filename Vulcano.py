@@ -1170,8 +1170,9 @@ def retTarRotativos(frame,legajo,medioDias):
                                         
                                     
             
-                        if tardanza != 0:                    
+                        if tardanza != 0:
                             frame.iloc[x,19] = tardanza
+
                         if retiro != 0:
                             frame.iloc[x,20] = retiro
 
@@ -1321,6 +1322,23 @@ def cambioPorMotivos(frame,motivos):
     
     return frame
 
+def cambioColRetrasosTardanza(frame):
+
+
+    for x in range(len(frame)):
+        retraso = frame.iloc[x,20]
+        tardanza = frame.iloc[x,19]
+
+        if retraso > 30:
+            frame.iloc[x,31] = retraso
+            frame.iloc[x,20] = 0
+        if tardanza > 30:
+            tardanza += frame.iloc[x,31]
+            frame.iloc[x,31] = tardanza
+            frame.iloc[x,19] = 0
+    
+    return frame
+
 def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriados,empleados,empleadosExtras):
     """
     
@@ -1370,6 +1388,9 @@ def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriado
     
     frameFinalExtras['Legajo'] = frameFinalExtras['Legajo'].astype(str)
     frameFinalExtras = frameFinalExtras.merge(frameConAreas,on='Legajo',how='left') #agregado de la columna extra al frame para ver el area.
+
+    frameFinalExtras = cambioColRetrasosTardanza(frameFinalExtras)
+
     frameFinalExtras.to_excel(nombre,sheet_name='Registros',index=False)
         
     book = load_workbook(nombre)
@@ -1388,6 +1409,8 @@ def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriado
     frameTotalizado.to_excel(writer, sheet_name = 'Totalizado',index=False)
     writer.save()
     writer.close()     
+
+
 
     
 
