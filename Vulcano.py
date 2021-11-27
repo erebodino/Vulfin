@@ -1060,6 +1060,8 @@ def agregadoColumnas(frame):
     frame['Retiros'] = 0
     return frame
 
+
+
 def retTarRotativos(frame,legajo,medioDias):
     """
     Funcion que se encarga de contar los retrasos y retiros anticipados por cada registro de cada empleado
@@ -1324,20 +1326,50 @@ def cambioPorMotivos(frame,motivos):
 
 def cambioColRetrasosTardanza(frame):
 
+    """"
+    Funcion que se encarga de analizar si el retiro o la tardanza es mayor a 30 mins y lo pasa a la columna Hs. no trabajdas.
+
+    Returns:
+        [dataframe]: frame con las columnas corregidas
+    """
+
 
     for x in range(len(frame)):
         retraso = frame.iloc[x,20]
         tardanza = frame.iloc[x,19]
 
         if retraso > 30:
-            frame.iloc[x,31] = retraso
+            frame.iloc[x,31] = round((retraso/60),2)
             frame.iloc[x,20] = 0
         if tardanza > 30:
             tardanza += frame.iloc[x,31]
-            frame.iloc[x,31] = tardanza
+            frame.iloc[x,31] = round((tardanza/60),2)
             frame.iloc[x,19] = 0
     
     return frame
+
+def agregadoColumnaTotal(frame):
+
+    frame['Hs Totales'] = 0
+
+    orden = ['Legajo','Nombre','Dia','Fecha','Ingreso_0','Egreso_0','Ingreso_1','Egreso_1','Ingreso_2','Egreso_2',
+    'Ingreso_3','Egreso_3','Ingreso_4','Egreso_4','Motivo','Observación','Hs Totales','H.Norm','H. 50','H. 100','Tardanzas','Retiros','HS ENFERMEDAD','HS ACCIDENTE',
+    'FERIADO','FALLECIMIENTO FAMILIAR','LIC S GOCE','SUSPENSION','LIC POR PATERNIDAD','EXAMEN','FALTA FAMILIAR ENFERMO','RETIRO EN HS','HS NO TRABAJADAS',
+    'LLEG TARDE','FALTAS INJUSTIFICADAS','FALTA JUSTIFICADA','VACUNACION COVID','AREA']
+
+
+    for x in range(len(frame)):
+        normales = frame.iloc[x,16]
+        al50 = frame.iloc[x,17]
+        al100 = frame.iloc[x,18]
+
+        totales = normales + al50 + al100
+        frame.iloc[x,(len(frame.columns)- 1)] = totales
+    
+    frame = frame[orden]
+    return frame
+
+
 
 def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriados,empleados,empleadosExtras):
     """
@@ -1407,6 +1439,21 @@ def calculosAdicionalesTotalizados(frameFinalExtras,fechaInicio,fechaFin,feriado
     frameTotalizado = frameTotalizado.merge(frameConAreas,on='Legajo',how='left') #agregado de la columna extra al frame para ver el area.
 
     frameTotalizado.to_excel(writer, sheet_name = 'Totalizado',index=False)
+    writer.save()
+    writer.close()
+
+    frameColumnaTotal = agregadoColumnaTotal(frameFinalExtras)
+
+    book = load_workbook(nombre)
+    del book['Registros']
+    book.save(nombre)
+    book.close()
+
+
+    writer = pd.ExcelWriter(nombre, engine = 'openpyxl') #writer para escribir 2 hojas en el excel
+    writer.book = book      
+    frameColumnaTotal.to_excel(writer, sheet_name = 'Registros',index=False)
+
     writer.save()
     writer.close()     
 
