@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import pandas as pd
 
 class CorrectorExcel:
@@ -21,11 +21,21 @@ class CorrectorExcel:
             for y in range (4,14):
                 celda = self.frame.iloc[x,y]
                 if 'datetime.time' in str(type(celda)).split()[1]: # Chequea si en el type de la celda la misma es una hora (12:30)
-                    hora_corregida = pd.to_datetime(('{} {}').format(self.frame.iloc[x,3],str(celda)))
+                    try:
+                        hora_corregida = pd.to_datetime(('{} {}').format(str(celda).split()[0],str(celda).split()[1]))
+                    except:
+                        hora_corregida = pd.to_datetime(('{} {}').format(self.frame.iloc[x,3],str(celda)))
                     self.frame.iloc[x,y] = hora_corregida
                 
                 elif 'datetime.datetime' in str(type(celda)).split()[1]: #Cheque si el type de la celda es el formato dd/mm/yyyy hh:mm:ss, si es asi rearma la fecha.
-                    hora_corregida = pd.to_datetime(('{} {}').format(self.frame.iloc[x,3],str(celda).split()[1]))
+                    if str(self.frame.iloc[x,0]) == '782':
+                        pass
+
+                    if pd.to_datetime(str(celda).split()[0]) == pd.to_datetime(self.frame.iloc[x,3])- timedelta(days=1):
+                        hora_corregida = pd.to_datetime(('{} {}').format(str(celda).split()[0],str(celda).split()[1]))
+                    else:
+                        hora_corregida = pd.to_datetime(('{} {}').format(str(celda).split()[0],str(celda).split()[1]))
+                        #hora_corregida = pd.to_datetime(('{} {}').format(self.frame.iloc[x,3],str(celda).split()[1]))
                     self.frame.iloc[x,y] = hora_corregida
 
                 elif type(celda) != type(patron): #En el resto de los casos los pasa a 00:00
